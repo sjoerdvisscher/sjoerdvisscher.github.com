@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/04/30.xml">
+<head>
+<title>Tuesday, April 30, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:21:48 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/04/30.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/04/30.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/04/30.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/04/20.xml#a92' title='Saturday, April 20, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/04/30.xml">Tuesday, April 30, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/05/04.txt#a96' title='Saturday, May 04, 2002'>&#160;&gt;</a></h>
+<a name="a95"></a>
+<section id="a95">
+<h id='inreplytoHttpwwwtreedragoncomgedmaptinewapr02htm21apr02scraping'><a href="http://w3future.com/weblog/2002/04/30.xml#a95" class="weblogItemTitle">In-Reply-To: http://www.treedragon.com/ged/map/ti/newApr02.htm#21apr02-scraping</a></h>
+<blockquote cite="http://www.treedragon.com/ged/map/ti/newApr02.htm#21apr02-scraping"><p>
+Sjoerd Visscher wrote me to describe his recent scraping of my site.
+Below I reprint parts of his email, which I expect Sjoerd won't mind.
+(This is part of a drift in the direction of expecting public exchanges.) [...] If you don't mind, I could put a link to it here for other folks to use. [<a href="http://www.treedragon.com/ged/map/ti/newApr02.htm#21apr02-scraping">David McCusker</a>]</p></blockquote>
+<p>I don't mind. Already 20 people are downloading <a href="http://w3future.com/weblog/staplerFeeds/mccusker.xml">the feed</a> every day. There are probably plenty more people interested. The use of public weblogs instead of e-mail is interesting. But there's  a lot to be done before it's really going to work. The biggest problem that prevents building cool tools is that there's no way to get the post that goes with a permalink.</p>
+</section><a name="a94"></a>
+<section id="a94">
+<h id='daveWinerAboutVerbsAndNouns'><a href="http://w3future.com/weblog/2002/04/30.xml#a94" class="weblogItemTitle">Dave Winer about verbs and nouns</a></h>
+<p><a href="http://scriptingnews.userland.com/backissues/2002/04/29#lde6cd7c3b4ba8ac69448509c66036e87">Dave comments</a> about REST as a programming style. If there's something left of the AppleScript discussion online, I'd like to read it. I'm in the REST camp because I think it's less work. Reducing the number of verbs in <a href="http://www.xmlrpc.com/manilarpc">the Manila-RPC interface</a>, with the advancedPrefs API, was a big improvement IMHO.</p>
+</section><a name="a93"></a>
+<section id="a93">
+<h id='restAsAProgrammingStyle'><a href="http://w3future.com/weblog/2002/04/30.xml#a93" class="weblogItemTitle">REST as a programming style</a></h>
+<blockquote cite="http://radio.weblogs.com/0101679/2002/04/28.html"><p>I'm now convinced that one can architect a system in accordance to the principles of REST and then implement that system using RPC style, HTTP transport, POST binding, SOAP. [<a href="http://radio.weblogs.com/0101679/2002/04/28.html">Sam Ruby</a>]</p></blockquote>
+<p>This really opened my eyes to look for what REST is really about. If I understand it correctly a RESTful RPC system has a small API. What really happens depends on the parameters, ideally some kind of (global) id. In most cases the API is something like: read, create, change and delete in one form or another. Translated to programming terms it is like having a huge set of global variables (the state of the program) which are read and written directly. Sounds like REST violates a lot of rules of both functional <i>and</i> object oriented programming.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/04/30.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

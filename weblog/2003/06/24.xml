@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/06/24.xml">
+<head>
+<title>Tuesday, June 24, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:27:45 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/06/24.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/06/24.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/06/24.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/06/08.xml#a207' title='Sunday, June 08, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/06/24.xml">Tuesday, June 24, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/06/25.txt#a210' title='Wednesday, June 25, 2003'>&#160;&gt;</a></h>
+<a name="a238"></a>
+<section id="a238">
+<h id='replacingTheOrangeXmlIcon'><a href="http://w3future.com/weblog/2003/06/24.xml#a238" class="weblogItemTitle">Replacing the orange XML icon</a></h>
+<blockquote cite="http://backend.userland.com/2003/06/24#a302"><p>We haven't quite worked out how to publicise them yet, we need to persuade our graphic designers that the orange XML lozenge is a beautiful complement for their delightful layout. [<a href="http://backend.userland.com/2003/06/24#a302">Kevin Hinde at BBC News Interactive</a>]</p></blockquote>
+<p>The orange button was fine for weblogs, but on websites with corporate design it's not going to work. Also technical terms like XML should be avoided. The BBC has a line at the bottom with the items &#8220;E-mail services | Desktop ticker | News on mobiles/PDAs&#8221;. It is the obvious place to add a link to the RSS feed. But what should the text of the link be?</p>
+</section><a name="a237"></a>
+<section id="a237">
+<h id='unboxedSequences'><a href="http://w3future.com/weblog/2003/06/24.xml#a237" class="weblogItemTitle">Unboxed sequences</a></h>
+<p>About a month ago I wrote about <a href="http://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">XPath 2.0 Sequences</a>. This weekend I read <a href="http://www.jsoftware.com/books/help/primer/contents.htm">a primer about the language J</a> which has lists that work similarly to the XPath sequences. What's interesting about J is that when you apply a function to a sequence, f.e. <code>1,2,3 + 2</code>, the function is applied to each item in the sequence, and the results are collected in a new sequence, giving <code>3,4,5</code>.</p>
+<p>J also has something called <a href="http://www.jsoftware.com/books/help/primer/box_monad.htm">boxing</a> which literally puts a box around a sequence, so it can be treated as one item. In OOP terms you could say that a boxed sequence is an object, but an unboxed sequence is not. (This is a nice match with the current use of the term boxing in C# and Java.)</p>
+<p>Now I want to implement this in <a href="http://w3future.com/html/loell/">Loell</a>. If you know J a little bit, you'll understand I'm not going to borrow the syntax, so I had to look elsewhere. The syntax for boxing a sequence is easy: just put square brackets around it. For unboxing I'm thinking to use the <code>*</code> as a prefix operator. This is taken from Python, where AFAIK it only works when you want to use the items in a list as arguments to a function.</p><p>Some code with the new syntax:</p>
+<pre>  a = [1 to 3]   // [1, 2, 3]
+  // old code for adding 2 to each item:
+  a all {this + 2}
+  // new code:
+  [ *a + 2 ]</pre>
+<p>Another interesting example is: <code>(1 to 3) to 2</code>. These are the intermediate and final results:</p>
+<pre>  (1, 2, 3) to 2
+  (1 to 2), (2 to 2), (3 to 2)
+  (1, 2), (2), ()
+  1, 2, 2</pre>
+<p>As you see it doesn't matter if a method returns more than one, or even zero results. Which makes this also a good way to filter: <code>(1 to 5).odd</code> gives <code>1, 3, 5</code>, where <code>odd</code> is a &#8220;goal directed&#8221; function that returns the input when it's odd, and an empty sequence when it's even.</p>
+<p>Another interesting effect I discovered when wondering how I should  model boxing. Because properties can store sequences, I only have to create a new object and assign the sequence to a property. And because all properties by default don't contain a value, or put differently, contain an empty sequence, every object is automatically an empty list. Then I remembered something I read a while ago about <a href="http://www.prescod.net/groves/shorttut/">groves</a>, so I'm going to use the property named <code>content</code>. Which brings us back at where I started this post: XML. Then things become really interesting...</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/06/24.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

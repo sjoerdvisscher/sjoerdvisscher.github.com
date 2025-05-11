@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/04/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:29:47 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/04/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/04/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/04/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2004/04/13.xml">Tuesday, April 13, 2004</a></h>
+<a name="a273"></a>
+<section id="a273">
+<h id='googlesGmailCouldBeBlocked'><a href="http://w3future.com/weblog/2004/04/13.xml#a273" class="weblogItemTitle">&#8220;Google&#8217;s Gmail could be blocked&#8221;</a></h>
+<blockquote cite="http://news.bbc.co.uk/2/hi/business/3621169.stm"><p>Gmail, the planned free e-mail service from Google, could be facing strong legal opposition in California.</p><p>Google's plans have already come under fire from privacy campaigners objecting to adverts linked to the content of messages, and to the permanent storage of email. [<a href="http://news.bbc.co.uk/2/hi/business/3621169.stm">BBC News</a>]</p></blockquote>
+<p>I find this <em>so</em> annoying. Gmail should not be cancelled because of this! I think it's time to start an anti privacy lobby:</p>
+<ul>
+<li>It's not up to someone else to decide how much privacy I need.</li>
+<li>Users should be given a choice. Gmail could be available without advertising for a few dollars per month.</li>
+<li>Before signing up to a service, the privacy issues should be explained clearly in plain English. <a href="http://toolbar.google.com/privacy.html">Google has been very good at this.</a></li>
+<li>Privacy campaigners should stop spreading paranoia about privacy issues in new media and instead compare the privacy issues to existing technology (regular mail in this case) so users can draw their own conclusions without having to know the details of the technologies involved.</li>
+</ul>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2004/04/03.xml">Saturday, April 03, 2004</a></h>
+<a name="a272"></a>
+<section id="a272">
+<h id='areYouAProblemSolverOrAControlFreak'><a href="http://w3future.com/weblog/2004/04/03.xml#a272" class="weblogItemTitle">Are you a problem solver or a control freak?</a></h>
+<p><em>Part of <a href="http://lambda.weblogs.com/discuss/msgReader$11658">a discussion on measuring language quality and utility on LtU</a>.</em></p>
+<p>There are two types of programmers: those who like to solve problems, and those who just like to be in control.</p>
+<p>Problem solvers like bugs, it's a new problem to set your teeth into. Control freaks hate bugs, they just lost a bit of control.</p>
+<p>Problem solvers like high level languages, those languages let them focus on the problem better. Control freaks like low level languages, those languages give them a finer grained control.</p>
+<p>Problem solvers like learning other languages. New languages give opportunities to solve more problems than before. Control freaks hate learning other languages. Switching to a new language means a huge drop in control.</p>
+<p>Historically programming was only for the control freaks, code needed fine tuning to be of any use. That's why a lot of senior programmers stick to C, they are control freaks.</p>
+<p>Hardware gives the problem solvers more and more the advantage, so ultimately the low level languages will mostly disappear. But this will take a while as long as the older control freak generation make the important decisions.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/04/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

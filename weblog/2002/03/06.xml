@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/03/06.xml">
+<head>
+<title>Wednesday, March 06, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:21:08 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/03/06.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/03/06.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/03/06.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/03/01.xml#a76' title='Friday, March 01, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/03/06.xml">Wednesday, March 06, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/03/08.txt#a78' title='Friday, March 08, 2002'>&#160;&gt;</a></h>
+<a name="a77"></a>
+<section id="a77">
+<h id='typeFiltering'><a href="http://w3future.com/weblog/2002/03/06.xml#a77" class="weblogItemTitle">Type filtering?</a></h>
+<blockquote cite="http://radio.weblogs.com/0100812/2002/03/05.html#a304"><blockquote cite="http://radio.weblogs.com/0101679/"><p>In the long run the scripting culture has to win. Tightly coupled and brittle interfaces aren't particularly enduring. We also need a protocol which enables people to initially develop simple interfaces and then gradually evolve them to be more adaptive without breaking deployed clients and servers. [<A href="http://radio.weblogs.com/0101679/">Sam Ruby's Radio Weblog</A>]</p></blockquote>
+<p>I could not agree more with this. The software world is becoming more dynamic, not less. We need more runtime tools. Here's some <a href="http://www.adaptiveobjectmodel.com/">interesting reading</a> along those lines. [<a href="http://radio.weblogs.com/0100812/2002/03/05.html#a304">Patrick Logan's Radio Weblog</a>]</p></blockquote>
+<p>We need more freedom, that's true. But type freedom the way Javascript has is not the solution. Type filtering is something I'm looking for. In a far from perfect way this is possible in XSLT. For example a template that requires an <code>x</code> element with an <code>a</code> subelement, would have a <code>match="x[a]"</code> attribute. If then later <code>x</code> elements need more subelements, the template won't break. And if the template needs a subelement, say <code>b</code>, you change the match to <code>match="x[a][b]"</code>. And then <code>x</code> elements without <code>b</code> will simply not match anymore. There's no "<code>b is not defined</code>" error.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/03/06.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

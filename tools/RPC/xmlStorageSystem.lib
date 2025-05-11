@@ -1,0 +1,65 @@
+<?
+include_once("../db.inc");
+
+
+function saveMultipleFiles($root, $password, $relativepathList, $fileTextList) {
+	if ($password!="3771747a4fc0164c91164a1096fe7051") {
+		trigger_error("Wrong password!");
+	}
+	$r=array();
+	$l=sizeof($relativepathList);
+	for ($i=0;$i<$l;$i++) {
+		$rp=$relativepathList[$i];
+		$s="weblog/".$root.substr($rp,0,2).substr($rp,3,2);
+		$path="weblog/$root/$rp";
+		$r[$i]='http://w3future.com/'.$path;
+		if (($s<"weblog/20020125") or ($rp>"99/99.html")) {$r[$i]='not saved';continue;}
+		$o=$fileTextList[$i];
+		if (gettype($o)=="object"&&get_class($o)=="xmlrpcbase64") $o=$o->data;
+		$pos = strpos($o, "<!--start-->");
+		if (is_integer($pos)) {
+			$o=substr($o, $pos+12);
+		}
+		$pos = strpos($o, "<!--end-->");
+		if (is_integer($pos)) {
+			$o=substr($o, 0, $pos);
+		}
+		mysql_query("DELETE FROM rdf WHERE s='$s' AND p='html'");
+		mysql_query("INSERT INTO rdf SET s='$s', p='html', o='".addslashes($o)."'");
+	}
+	return array(
+		"flError" => false,
+		"urlList" => $r
+	);
+}
+
+function deleteMultipleFiles($root, $password, $relativepathList) {
+	if ($password!="3771747a4fc0164c91164a1096fe7051") {
+		trigger_error("Wrong password!");
+	}
+	$r=array();
+	$l=sizeof($relativepathList);
+	for ($i=0;$i<$l;$i++) {
+		$rp=$relativepathList[$i];
+		$s="weblog/".$root.substr($rp,0,2).substr($rp,3,2);
+		if ($s<"weblog/20020125") {$r[$i]=false;continue;}
+		mysql_query("DELETE FROM rdf WHERE s='$s' AND p='html'");
+		$r[]=true;
+	}
+	return array(
+		"flError" => false,
+		"errorList" => $r
+	);
+}
+
+function getServerCapabilities($email, $password) {
+	return array(
+		"flError" => false,
+		"legalFileExtensions" => array("txt", "opml", "rss", "html", "htm", "xml", "xsl", "css", "js"),
+		"maxFileSize" => 1000000,
+		"maxBytesPerUser" => 10000000,
+		"ctBytesinUse" => 0,
+		"yourUpstreamFolderUrl" => 'http://w3future.com/tools/getFile.phtml?path='
+	);
+}
+?>

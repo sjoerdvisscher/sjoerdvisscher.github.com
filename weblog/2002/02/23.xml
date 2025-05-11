@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/02/23.xml">
+<head>
+<title>Saturday, February 23, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:20:43 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/02/23.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/02/23.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/02/23.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/02/22.xml#a73' title='Friday, February 22, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/02/23.xml">Saturday, February 23, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/03/01.txt#a75' title='Friday, March 01, 2002'>&#160;&gt;</a></h>
+<a name="a74"></a>
+<section id="a74">
+<h ></h>
+<blockquote cite="http://radio.weblogs.com/0100812/2002/02/22.html#a262"><blockquote cite="http://w3future.com/weblog/2002/02/22.html#a73"><p>OK, <a href="http://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">the Javascript version of Y</a> needs apply too. <a href="http://radio.weblogs.com/0100812/2002/02/22.html#a261">Patrick explains</a>.</p></blockquote><p>I think it is fantastic that relatively new, yet widely popular, languages like Python, Ruby, and JavaScript have adopted such useful Lisp features as closures, apply, etc. (Now if only they'd adopt the syntax!) [<a href="http://radio.weblogs.com/0100812/2002/02/22.html#a262">Patrick Logan's Radio Weblog</a>]</p></blockquote>
+<p>What I like about the Lisp syntax is how it shows the simple model of Lisp so clearly. But I think that syntactic shortcuts makes the code easier to read, although everyone seems to like different shortcuts. Everybody should have his own editor that let's you edit the code in your prefered syntax, but saves it in standard syntax. F.e. I prefer <code>f(a,b)</code> or <code>a.f(b)</code> over <code>f a b</code> and <code>{|x| ...}</code> over <code>(lambda (x) ...)</code>. So the Y combinator should look like this in my editor:</p>
+<pre>define(Y, {|gen| {|f| f(f)}({|f| gen({|x| f(f).apply(x)})})})</pre>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/02/23.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

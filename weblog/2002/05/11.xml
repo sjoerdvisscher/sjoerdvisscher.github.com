@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/05/11.xml">
+<head>
+<title>Saturday, May 11, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:22:12 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/05/11.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/05/11.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/05/11.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/05/08.xml#a98' title='Wednesday, May 08, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/05/11.xml">Saturday, May 11, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/05/15.txt#a100' title='Wednesday, May 15, 2002'>&#160;&gt;</a></h>
+<a name="a99"></a>
+<section id="a99">
+<h id='hoverNowWorksHierarchical'><a href="http://w3future.com/weblog/2002/05/11.xml#a99" class="weblogItemTitle">:hover now works hierarchical</a></h>
+<blockquote cite='http://markpasc.org/blog/2002/05/10.html#i33037PM'><p>The annoying part for me is he proceeds to demonstrate using display:blocked anchors for box-shaped links and how easily a :hover style is applied, when my sidebar boxes (at least on the main page) have :hover styles that (again, at least in K-Meleon 0.6) only work if you don't mouse over the content in the boxes, just the boxes. Gah. [<a href='http://markpasc.org/blog/'>markpasc.blog</a>]</p></blockquote>
+<p>Then I think you'd like to know <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=5693">this bug has just been fixed</a> in <a href="http://www.mozilla.org/releases/#1.0rc2">Mozilla RC2.</a></p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/05/11.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

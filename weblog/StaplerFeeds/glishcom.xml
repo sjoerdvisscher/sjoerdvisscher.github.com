@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.2.6" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>glish.com</title>
+		<description>eric costello&apos;s onLine weblog where coding and internet matters are discussed</description>
+		<link>http://www.glish.com/</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Tue, 26 Apr 2005 16:55:02 GMT</lastBuildDate>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;94279929d&quot; href=&quot;http://www.glish.com/archive.asp?file=&quot; title=&quot;&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;&lt;a href=&quot;http://www.flickr.com&quot;&gt;&lt;/a&gt;&lt;br /&gt;
+is the thing most proud of which I am to have been a part of building, so far; there is more and better stuff to come, and soon!&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93884209&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_05_04_archive.xml#93884209&quot; title=&quot;4:53:34 PM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Read &lt;a href=&quot;http://www.mindjack.com/feature/gne.html&quot;&gt;this interview with Stewart at Mindjack.com&lt;/a&gt; to get a good idea of what I have been working so hard on lately. It&apos;s a great interview, full of tidbits and insights into the vision behind &lt;a href=&quot;http://www.gne.net&quot;&gt;The GNE&lt;/a&gt;. (If it wasn&apos;t a sort of self-link, I would post it to MetaFilter&lt;/a&gt;).&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93878630&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_05_04_archive.xml#93878630&quot; title=&quot;3:05:33 PM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Must explore this bit of code for enabling PNG alpha transparency in IE PC:  &lt;a href=&quot;http://webfx.eae.net/dhtml/pngbehavior/pngbehavior.html&quot;&gt;WebFX: PNG Behavior&lt;/a&gt;.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93809040&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_05_04_archive.xml#93809040&quot; title=&quot;12:54:45 PM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Well, so Caterina pointed out to me yesterday that GNE&apos;s &lt;a href=&quot;http://www.gne.net/about.gne&quot;&gt;about page&lt;/a&gt; still had the &quot;do-funnies&quot; in Safari, and guess what I discovered? I&apos;ll tell you! A &amp;lt;/p&amp;gt; tag where there should have been a &amp;lt;/ul&amp;gt; tag! Fixing that fixed the page&apos;s display in Safari. Now I really love Safari. Every other browser happily rendered the page with my stupid markup error, which is how browsers have worked since a swarm of Liberal Arts educated persons like myself were unleashed on the web in the 90&apos;s, using HTML like they used word processors, twiddling things until documents displayed like they wanted them to, without a thought in the world to the validity of the markup itself. But oh! How the web would be different if browsers did not accept bad input!&lt;br /&gt;&lt;br /&gt;Now, I&apos;m sure Safari does not choke on all bad markup; you simply can&apos;t release a browser that won&apos;t deal gracefully with all the malformed HTML out there on the Web. But oh, the tingly pleasure I got when I saw just a glimpse of how things could be if bad HTML produced the &quot;do-funnies&quot; everywhere!&lt;br /&gt;&lt;br /&gt;** Yes, I know I should have validated the page before we launched the site. But oh! I&apos;m not very smart.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93606631&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_27_archive.xml#93606631&quot; title=&quot;1:54:24 PM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;So I take it back, all the way back. I got Jaguar running on my Mac and installed Safari beta 2, and whammo! &lt;a href=&quot;http://www.gne.net&quot;&gt;gne.net&lt;/a&gt; works just fine! &lt;a href=&quot;http://www.caterina.net&quot;&gt;Caterina&lt;/a&gt; had sent some screenshots of the site and it was all wonky, but whatever the problem was, it must have been fixed in the beta 2 release. Of course, &lt;a href=&quot;http://www.ludicorp.com&quot;&gt;the ludicorp site&lt;/a&gt; needed a tiny fix, but if Safari can handle all the crazy GNE site&apos;s CSS and scripts which were coded even before Safari existed, then I have nothing to complain about! Go &lt;a href=&quot;http://www.mozillazine.org/weblogs/hyatt/&quot;&gt;Dave Hyatt&lt;/a&gt; and team!&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93594521&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_27_archive.xml#93594521&quot; title=&quot;10:03:28 AM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;I will be here tonight: &lt;a href=&quot;http://www.camworld.com/party/2003/&quot;&gt;GEL Conference and Blogger/Industry Networking Cocktails&lt;/a&gt;.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93594262&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_27_archive.xml#93594262&quot; title=&quot;9:58:38 AM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Dave over at mezzoblue.com &lt;a href=&quot;http://www.mezzoblue.com/cgi-bin/mt/mezzo/archives/000077.asp&quot;&gt;talks about the failings of CSS&lt;/a&gt;, and gets some interesting comments.&lt;br /&gt;&lt;br /&gt;I myself am currently in the middle of an upgrade from plan-old OS X to Jaguar, just so I can test sites in &lt;a href=&quot;http://www.apple.com/safari/&quot;&gt;Safari&lt;/a&gt;, which is the new IE5 Mac, which was the new NS4. I hate fiddling around with sites to support in-beta browsers, but Stewart insists that all the cool people use Safari, and we want cool people to be able to see the &lt;a href=&quot;http://www.gne.net/&quot;&gt;Game Neverending site&lt;/a&gt; too. Currently Safari chokes on some part of the CSS in use.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93593457&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_27_archive.xml#93593457&quot; title=&quot;9:41:36 AM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Over at web-graphics.com, &lt;a href=&quot;http://www.web-graphics.com/mtarchive/000848.php&quot;&gt;pixy proposes an in-browser, sort-of-WYSIWYG CSS editor&lt;/a&gt; and gets some interesting comments. (Also see: &lt;a href=&quot;http://www.pixy.cz/webedit/&quot;&gt;pixy&apos;s implementation of such an editor&lt;/a&gt;.)&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;92664569&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_13_archive.xml#92664569&quot; title=&quot;2:27:09 PM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Newly launched and worth reading: &lt;a href=&quot;http://www.moock.org/blog/&quot;&gt;moockblog&lt;/a&gt;, by Colin Moock, author of &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/059600396X/ref=nosim/glishcom-20&quot;&gt;ActionScript for Flash MX: The Definitive Guide&lt;/a&gt;.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;92500053&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_06_archive.xml#92500053&quot; title=&quot;5:13:32 PM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Hey look! &lt;a href=&quot;http://www.discover.com/may_03/gthere.html?article=feattech.html&quot;&gt;The Game Neverending found its way into Discover Magazine&lt;/a&gt;!&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;92271438&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_06_archive.xml#92271438&quot; title=&quot;1:15:45 AM&quot;&gt;&amp;#187;&amp;#160;&lt;/a&gt;Neat thing &lt;a href=&quot;http://www.gne.net&quot;&gt;we&lt;/a&gt; are launching, over to the right--&amp;gt;&lt;br /&gt;&lt;br /&gt;
+Stewart explains:&lt;blockquote&gt;
+What you&apos;re looking at here is a little thing we call the GNE neighborhood browser. One player is &quot;in focus&quot;. The widget lists all the other players who count that person as a friend AND all the people who that person counts as a friend, as long as those other players also listed a website address in the GNE profiles.&lt;br /&gt;&lt;br /&gt;The names are links to the websites listed for each person and the magnifying glass icon causes the focus to shift to the person whose name is listed next to the icon. Click on one of the names and that person&apos;s listed website will open in a new window.&lt;br /&gt;&lt;br /&gt;
+And that&apos;s it.&lt;/blockquote&gt;And &lt;a href=&quot;http://www.sylloge.com/personal/2003_04_01_s.html#92192502&quot;&gt;more from Stewart&lt;/a&gt;, too.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;93569050&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_27_archive.xml#93569050&quot; title=&quot;10:21:28 PM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;There can be no excuse! over two weeks of nothing here! But it has been because of two weeks of too many things in other places, so you will forgive me, no? O, that&apos;s right, you stopped reading months ago. Anyway, I think I set a personal record for hours worked in a week, the week that ended last Tuesday. Those hours were spent getting ready to launch &lt;a href=&quot;http://etcon.gne.net/&quot;&gt;ConFab&lt;/a&gt;, &quot;An Ad-Hoc Conversational Space for the O&apos;Reilly Emerging Technology Conference 2003&quot;, which was/is a great idea that went over kinda poorly because of some frustrating network issues that kept people from the conferencee from being able to access the thing.&lt;br /&gt;&lt;br /&gt;
+
+While the conference was going on, the family and I flew to St Louis, where I have not been since moving away nearly 2 years ago.
+The weather was beautiful, the friends a site for sore eyes, and the $1200 in travel vouchers for getting bumped a day on our return trip a welcome addition to our vacation fund.&lt;br /&gt;&lt;br /&gt;
+
+So anyway. I am back. I had hoped to be back with tons of pictures, but of course my camera&apos;s memory card and card reader were lost in the idiotic airport-security-empty-your-bags-and prove-this-isn&apos;t-a-bomb-routine* on the way to St. Louis, so I took nary a snapshot.&lt;br /&gt;&lt;br /&gt;
+
+
+*Did I mention that on my last trip to Vancouver and back I carried on my leatherman knife both ways without notice, despite having three separate baggage inspections in the Vancouver airport? Well I did. On the way there it was a packing oversight on my part, on the way back it was just to see if I could do it.
+&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;92633018&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_13_archive.xml#92633018&quot; title=&quot;1:45:14 AM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;I think maybe the most important dividing line (a sort of mendoza
+line, if you speak baseball) on the spectrum that stretches from &quot;being
+stupid&quot; to &quot;being smart&quot; is that line to the right of which fall
+people that are stupid, but smart enough to know it.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;92631992&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_13_archive.xml#92631992&quot; title=&quot;1:19:53 AM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;I think &quot;ammended&quot; is a pretty amusing misspelling of &quot;amended&quot;. But then, I&apos;mm easily ammended.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;92631738&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_04_13_archive.xml#92631738&quot; title=&quot;1:13:35 AM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;More on my 4 year old daughter:
+
+&lt;br /&gt;&lt;br /&gt;Phoebe makes up games. The other day she drew some marks on a sheet of paper and said, (really, she said it): &quot;these guys are the good guys, and these guys are the bad guys. If the good guys win, they still lose, but if the bad guys win, they really win&quot;
+&lt;br /&gt;&lt;br /&gt;She made up another game today. In it, &quot;you can do anything&quot; and that is the only rule. She promptly started playing the game, and decided she was going to make movies. Her first movie was to be called Saddam. Then she changed it to &quot;A Man in Town&quot;.
+&lt;br /&gt;&lt;br /&gt;Also, later she ammended the rules to include an injunction against &quot;battle stuff&quot;. And no &quot;sprawts&quot;, which is how she pronounces &quot;sports&quot;.
+&lt;br /&gt;&lt;br /&gt;Except Tennis ball, which is her favorite sprawt.
+&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;91995654&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_03_30_archive.xml#91995654&quot; title=&quot;1:20:41 PM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;In order to keep up the appearance of posting, I present this actual dialogue between myself and 4-year-old daughter Phoebe:
+
+&lt;blockquote&gt;
+Me: Phoebe, why are pigs your favorite animal?&lt;br /&gt;&lt;br /&gt;
+Phoebe: Because they start with &quot;P&quot; and so do I, and because I like to eat them, and because they are pink and pink is my favorite color.
+
+&lt;/blockquote&gt;&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;91281298&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_03_23_archive.xml#91281298&quot; title=&quot;9:54:17 AM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;Friend &lt;a href=&quot;http://www.meaningless.com&quot;&gt;Aaron&lt;/a&gt; posted this E.A. Robinson poem to a mailing list today:
+
+&lt;blockquote&gt;
+Cliff Klingenhagen&lt;br /&gt;
+
+Cliff Klingenhagen had me in to dine&lt;br /&gt;
+With him one day; and after soup and meat,&lt;br /&gt;
+And all the other things there were to eat,&lt;br /&gt;
+Cliff took two glasses and filled one with wine&lt;br /&gt;
+And one with wormwood.  Then, without a sign&lt;br /&gt;
+For me to choose at all, he took the draught&lt;br /&gt;
+Of bitterness himself, and lightly quaffed&lt;br /&gt;
+It off, and said the other one was mine.&lt;br /&gt;&lt;br /&gt;
+
+And when I asked him what the deuce he meant&lt;br /&gt;
+By doing that, he only looked at me&lt;br /&gt;
+And grinned, and said it was a way of his.&lt;br /&gt;
+And though I know the fellow, I have spent&lt;br /&gt;
+Long time a-wondering when I shall be&lt;br /&gt;
+As happy as Cliff Klingenhagen is.&lt;br /&gt;
+&lt;/blockquote&gt;
+
+The happiness of people (or lack thereof) seems to be a &lt;a href=&quot;http://www.bartleby.com/104/45.html&quot;&gt;theme&lt;/a&gt; with E.A. (Oh, and check out this &lt;a href=&quot;http://www.llamas.org/corey.html&quot;&gt;Richard Cory Interactive Adventure&lt;/a&gt;.)
+
+
+&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;89969239&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_02_23_archive.xml#89969239&quot; title=&quot;5:00:01 PM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;Some random moments in Canada:
+
+Ben: &quot;Excuse me, but you wouldn&apos;t happen to have two loonies for a toonie?&quot;
+&lt;a href=&quot;http://caterina.net&quot;&gt;Caterina&lt;/a&gt;: &quot;Would you like some milk in your Golden Monkey?&quot;
+&lt;a href=&quot;http://sylloge.com/personal/&quot;&gt;Stewart&lt;/a&gt;: &quot;I have a lot of gold. Anybody need some gold?&quot;
+&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;89936326&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_02_23_archive.xml#89936326&quot; title=&quot;10:26:51 PM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;Reading &lt;a href=&quot;http://www.daniel-libeskind.com/press/index.html?ID=41&quot;&gt;Daniel Libeskind&apos;s World Trade Center Design Study&lt;/a&gt; and seeing &lt;a href=&quot;http://www.daniel-libeskind.com/press/middle/view_west_street.jpg&quot;&gt;this image&lt;/a&gt; of &quot;Memory Foundations&quot; impresses me with just how focused Libeskind&apos;s proposal is. I wish I had a better vocabulary for talking about architecture, but since I don&apos;t... Oh hell, here goes: from early viewings of Memory Foundations I came away with a wrong impression of a jumble of buildings, of architecture for the sake of architecture, of style without substance; but reading Libeskind&apos;s design study and seeing how much the location of the rebuild affected his design decisions, and looking at the image (linked above) and seeing how much the buildings themselves focus your attention down towards the ground, where the Ground Zero Memorial will exist in the very foundations of the former WTC, I now am really quite happy Libeskind&apos;s proposal won. See also: Trachtenberg&apos;s &lt;a href=&quot;http://www.nytimes.com/2003/02/23/arts/design/23TRAC.html&quot;&gt;A New Vision for Ground Zero Beyond Mainstream Modernism&lt;/a&gt;. &lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;89916301&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_02_23_archive.xml#89916301&quot; title=&quot;2:25:53 PM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;&lt;a href=&quot;http://www.observer.co.uk/magazine/story/0,11913,841549,00.html&quot;&gt;Another interview with Will Oldham&lt;/a&gt;, from Nov. 2002. An odd fellow he is.&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;89689401&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_02_23_archive.xml#89689401&quot; title=&quot;11:05:35 PM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;Oh, BTW, I saw Bonnie &quot;Prince&quot; Billy a couple of weeks ago here in NY at Irving Plaza, and after giving myself time to digest it, I think I can safely say it was the best show I&apos;ve ever seen (supplanting either Television at the 40 Watt Club in Athens, 1996, or The Flaming Lips, same; I can&apos;t remember which). He started by playing most of the songs off his new album &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/B000083ME8/glishcom-20&quot;&gt;Master and Everyone&lt;/a&gt;, but unlike the album, which is pretty mellow, Oldham and his band simply tore the place up. Nearly every song was a mad crescendo, a wall of sound which was all the more amazing considering it was built with naught but some drums, a couple of guitars and an accordian.&lt;br /&gt;&lt;br /&gt;Anyway, here&apos;s &lt;a href=&quot;http://www.timmcmahan.com/oldham.htm&quot;&gt;an interview with Oldham&lt;/a&gt; wherein his charming oddness shines through nicely:
+
+&lt;blockquote&gt;If the general public welcomed one of my songs, the logical thing to do would be to retire or not make music anymore, because I could never to make it the same way again. If I had a hit song tonight I wouldn&apos;t be able to approach music the same way tomorrow morning. Rather than try to pretend that I could, I would rather pursue surfing. People would be buying my next record based on the acceptance of that one song, and it would create disappointment that isn&apos;t a part of the process now.&lt;/blockquote&gt;&lt;/div&gt;</description>
+			</item>
+		<item>
+			<description>&lt;div class=&quot;post&quot;&gt;&lt;a name=&quot;89649138&quot; href=&quot;http://www.glish.com/archive.asp?file=2003_02_23_archive.xml#89649138&quot; title=&quot;11:12:44 AM&quot;&gt;&amp;#171;&amp;#160;&lt;/a&gt;So the bearings were shot on our heating system&apos;s circulating pump, which means it made an awful lot of noise for just moving hot water around the house. So on Saturday I took the motor in to one of the more wonderfully named Queens establishments, &quot;Three Way Plumbing&quot;, to purchase a replacement. Not heeding lessons already learned in previous dealings with the fine sales staffs of Queens establishments, I did not open the box until I got home, which is when I found that I had been sold a pump, not a motor. So I turned around to return it and get the PART I ASKED FOR, but they were closed by the time I got there. So I went back this morning, and turns out they only sell the motor and pump as a unit, not the motor itself. So I uttered the S word and bought the D thing. Now the movement of water throughout our house is accomplished with a minimum of noise. Why do you care? I don&apos;t know. Here are some other things you may not care about:
+
+
+On cause of the snow-melting rock salt laid down on the streets here in New York (and elsewhere), and because snow melted with rock salt tends to drip as salt water down through manholes, underground cables often suffer salt corrosion which can expose copper wiring. Salt water being a nice conductor, and under street tunnels being a nice place for all sorts of combustible gasses, such corrosion can lead to under street explosions ignited by a spark from said corroded cables. This can result in flying manhole covers. Should there be any flying manhole covers in front of your house, even at 1 AM, expect some nice firemen to want to inspect your basement for carbon monoxide. But don&apos;t expect them to be particularly forthcoming about what the H is going on. Continue to depend on the internet for &lt;a href=&quot;http://www.platts.com/engineering/issues/ElectricalWorld/0111/0111ew_distexplosion.shtml&quot;&gt;explanations&lt;/a&gt;.
+
+Even if you wait a day to travel from Chattanooga home to NY because your path up I81 leads right were a blizzard recently was, you can probably expect to be delayed an hour or two by accident clean ups. 4 wrecked semi rigs, one truck with a frame twisted a full 90&amp;#176;, that might be par for the course.
+
+Vancouver, here I come! (For a spell.)
+
+&lt;a href=&quot;http://www.caterina.net&quot;&gt;Caterina&lt;/a&gt; called me an idiot last night when I wasn&apos;t around on IM. I don&apos;t know why, but I categorically concede her point.
+
+&lt;/div&gt;</description>
+			</item>
+		</channel>
+	</rss>

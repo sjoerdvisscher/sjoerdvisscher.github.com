@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/03/12.xml">
+<head>
+<title>Tuesday, March 12, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:21:16 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/03/12.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/03/12.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/03/12.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/03/11.xml#a82' title='Monday, March 11, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/03/12.xml">Tuesday, March 12, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/03/13.txt#a84' title='Wednesday, March 13, 2002'>&#160;&gt;</a></h>
+<a name="a83"></a>
+<section id="a83">
+<h id='siteUpdates'><a href="http://w3future.com/weblog/2002/03/12.xml#a83" class="weblogItemTitle">Site updates</a></h>
+<p>I updated <a href="http://w3future.com/html/weblogsources.html">the weblog sources page</a> and <a href="http://w3future.com/html/opmlloader.html">the OPML Loader</a>. These pages now have their own specific sidebar OPML files, which you can load with the OPML loader. I mailed Dave Winer once how OPML could have been much cooler with a more general approach. But some of the nicest demos on w3future are OPML related, which shows clearly that OPML is more than good enough. "Dare to keep it simple" is something Dave keeps reminding me of.</p>
+<p>Sadly the OPML Loader suffers from cutting edge problems. Both IE and Mozilla screw up in completely different ways.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/03/12.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+	<TITLE>Test</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondBrowser.js></SCRIPT>
+<HEAD>
+<BODY>
+	<H2>Iterator sample:</H2>
+
+<SCRIPT>
+
+function w(v, r, i) {
+	"DIV".write(i + " -> " + ( typeof(v) == "string" ? "'" + v + "'" : v ));
+}
+
+function makeIterator(include, exclude, sort) {
+	function foreach(f, r) {
+		var self = this;
+		var p = Object.propertyNames(this).filter(function(v) { return v != "foreach" });
+
+		if ( typeof(this.foreach.include) == "function" ) {
+			var filter = this.foreach.include;
+			p = p.filter(function(v) { return filter(v, self[v], self); });
+		}
+		else if ( this.foreach.include ) {
+			var regexp = this.foreach.include;
+			p = p.filter(function(v) { return regexp.test(v); });
+		}
+
+		if ( typeof(this.foreach.exclude) == "function" ) {
+			var filter = this.foreach.exclude;
+			p = p.filter(function(v) { return !filter(v, self[v], self); });
+		}
+		else if ( this.foreach.exclude ) {
+			var regexp = this.foreach.exclude;
+			p = p.filter(function(v) { return !regexp.test(v); });
+		}
+
+		if ( typeof(this.foreach.sort) == "function" )
+			p.sort(this.foreach.sort.length <= 2 ? 
+				this.foreach.sort : 
+				this.foreach.sort.curry({ "-1" : self }));
+		else if ( this.foreach.sort )
+			p.sort();
+
+		return p.foreach(function(v, r) { return f(self[v], r, v, self); }, r);
+	}
+	foreach.include = include;
+	foreach.exclude = exclude;
+	foreach.sort = sort;
+	return foreach;
+}
+
+var x = {
+	Hello : "Dan",
+	World : true,
+	0 : "zero",
+	1 : 1,
+	foreach : makeIterator()
+};
+
+"H3".write("All the properties (except the foreach itself):");
+x.foreach(w);
+
+"H3".write("All the numeric properties:");
+x.foreach.include = /^\d+$/;
+x.foreach(w);
+
+"H3".write("All the properties that have a string value:");
+x.foreach.include = function(i, v) { return typeof(v) == "string"; };
+x.foreach(w);
+
+"H3".write("All the properties that have a string value 4 chars or longer:");
+x.foreach.exclude = function(i, v) { return v.length < 4; };
+x.foreach(w);
+
+"H3".write("All the properties sorted alphabetically:");
+x.foreach.include = null;
+x.foreach.exclude = null;
+x.foreach.sort = true;
+x.foreach(w);
+
+"H3".write("All the properties sorted alphabetically on value:");
+x.foreach.sort = function(a, b, x) { return x[a] < x[b] ? -1 : x[a] == x[b] ? 0 : 1; };
+x.foreach(w);
+
+</SCRIPT>
+</HTML>

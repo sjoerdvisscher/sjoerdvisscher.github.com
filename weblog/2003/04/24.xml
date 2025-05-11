@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/04/24.xml">
+<head>
+<title>Thursday, April 24, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:26:57 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/04/24.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/04/24.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/04/24.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/04/12.xml#a190' title='Saturday, April 12, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/04/24.xml">Thursday, April 24, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/04/25.txt#a192' title='Friday, April 25, 2003'>&#160;&gt;</a></h>
+<a name="a220"></a>
+<section id="a220">
+<h id='cssIsNotGoingToBeEasyAnyTimeSoon'><a href="http://w3future.com/weblog/2003/04/24.xml#a220" class="weblogItemTitle">CSS is not going to be easy any time soon</a></h>
+<p><a href="http://scriptingnews.userland.com/2003/04/23#forgetTheFlamers">Dave Winer gets flamed a lot again.</a> In the past I've responded to other seemingly ignorant remarks from Dave too (though I tried to be constructive). But Dave had a very good point each time. As a programmer it's tough to face the truth that technology often fails, but Dave seems to be an exception.</p>
+<p>Probably a lot of the flames are about <a href="http://blogs.law.harvard.edu/crimson1/2003/04/17#a44">the problems Dave has with CSS</a>. My first reaction was the programmer speaking: that HTML is not valid, it probably confuses Internet Explorer. However, Dave has used this style of HTML for a long time, and without CSS the browser is not confused.</p>
+<p>CSS adds a layer of complexity to the browser. Plain HTML, no matter how invalid, is just a chain of commands to the browser, which is easy for the browser to render. CSS requires this HTML to be a nice tree, and each branch has a set of default style rules, which can conflict if your HTML isn't following the spec.</p>
+<p>But with valid HTML and CSS everything should be relatively easy. But in practice this is not true either. At <a href="http://q42.nl">Q42</a> we regularly have problems getting the HTML and CSS to look the way we want, even though we consider ourselves to be intelligent and experienced HTML and CSS coders. <a href="http://wired.com/">Wired</a> and <a href="http://espn.go.com/main.html">ESPN</a> recently switched to CSS, but they are still considered pioneers among the large sites.</p>
+<p>Even if all browsers support CSS level 3, there still will be problems. Mozilla uses CSS to create skins, but they needed to add a big list of extra properties to make it work. Especially -moz-flex is something that I would like to see implemented in browsers. It makes an element take up any remaining space, without reducing the surrounding element to the smallest size possible. In HTML you can do this easily with tables, putting <code>width="100%"</code> on a table cell.</p>
+<p>Then there's the problem of the lack of tools. The current HTML editors build on the exprience from WYSIWYG DTP tools. But WYSIWYG isn't enough anymore. New editors have to created that help and educate users to create HTML that expresses the structure of what they want to write. The basics for CSS editing are there, but I'm wondering if new editors can provide good interfaces for the more advanced CSS features, instead of just letting you enter the values of every possible CSS property.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/04/24.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

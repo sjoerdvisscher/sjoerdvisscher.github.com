@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+	<TITLE>Count words</TITLE>
+</HEAD>
+<BODY>
+	<DIV>Count words in: "<SPAN ID=txt>three two one two three three</SPAN>"</DIV>
+	<DIV ID=result></DIV>
+</BODY>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondBrowser.js></SCRIPT>
+	<SCRIPT>
+		var w = {};
+		'txt'.element().innerHTML.split(/\s/).foreach(function(v) { w[v] = w[v] ? w[v] + 1 : 1; });
+		Object.propertyNames(w).foreach(function(v) { 'result'.append("'" + v + "' appears " + w[v] + " times<BR>"); });
+	</SCRIPT>
+</HTML>
+ 

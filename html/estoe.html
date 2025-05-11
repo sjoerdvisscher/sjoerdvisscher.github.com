@@ -1,0 +1,476 @@
+<html>
+  <head>
+    <title>View of an "Exceptionally Simple Theory of Everything"</title>
+    <style type="text/css">
+      html, body { width: 100%; height: 100%; }
+      body {
+        font-family: "Lucida Sans unicode";
+        font-size: 13px;
+      }
+      em {
+        font-family: "Times new roman";
+        font-size: 17px;
+      }
+      #center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+      }
+      #center1 {
+        position: absolute;
+        left: -410px;
+        top: -310px;
+      }
+      #canvas {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 820px;
+        height: 620px;
+        border: 1px solid #555;
+        background: #eee;
+      }
+      #info {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 1;
+        width: 500px;
+      }
+      #help {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        z-index: 1;
+      }
+      #e8 {
+        position: absolute;
+        left: 500px;
+        top: 300px;
+        font-size: 15px;
+        cursor: default;
+        text-shadow: #555 0 0.1em 0.3em;
+      }
+      #e8 div {
+        position: absolute;
+        line-height: 14px;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        margin: -8 0 0 -8;
+        cursor: pointer;
+      }
+      #e8 .selected {
+        border: 1px solid #800;
+        margin: -9 0 0 -8;
+      }
+      #e8 .interacts {
+        border: 1px solid #88f;
+        margin: -9 0 0 -8;
+        z-index: 2;
+      }
+      #e8 .target {
+        border: 1px solid #080;
+        margin: -9 0 0 -8;
+      }
+      * {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="center">
+      <div id="center1">
+        <div id="info">
+          <div>Projection: <select id="projSelect"></select></div>
+          <div id="details"></div>
+        </div>
+        <div id="canvas">
+          <div id="e8"></div>
+          <div id="help">Hover over a particle to see its details.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+
+    Array.prototype.times = function(as)
+    {
+      var r = [];
+      for (var i = 0; i < this.length; i++)
+        for (var j = 0; j < as.length; j++)
+          r.push(this[i].concat(as[j]));
+      return r;
+    }
+    Array.prototype.addMult = function(a, f)
+    {
+      var r = this.concat([]);
+      for (var i = 0; i < a.length; i++)
+        r[i] += f * a[i];
+      return r;
+    }
+    Array.prototype.unit = function()
+    {
+      var l2 = 0;
+      for (var i = 0; i < this.length; i++)
+        l2 += this[i] * this[i];
+      var f = 1 / Math.sqrt(l2);
+      for (var i = 0; i < this.length; i++)
+        this[i] *= f;
+      return this;
+    }
+
+    function pn(v) { return {pn:v} };
+    function all(arrs) {
+      var newArrs = [];
+      for (var i = 0; i < arrs.length; i++)
+        newArrs = newArrs.concat(all1(arrs[i]));
+      return newArrs;
+    }
+    function all1(arr) {
+      for (var i = 0; i < arr.length; i++)
+        if (arr[i].pn)
+        {
+          var arr1 = arr.concat([]); arr1[i] =  arr[i].pn;
+          var arr2 = arr.concat([]); arr2[i] = -arr[i].pn;
+          return all([arr1, arr2]);
+        }
+      return [arr];
+    }
+    function perm(a) {
+      if (a.length == 1)
+        return [a];
+      var perms = perm(a.slice(1));
+      var r = [];
+      for (var i = 0; i < perms.length; i++)
+      {
+        var p = perms[i];
+        for (var j = 0; j <= p.length; j++)
+          r.push(p.slice(0, j).concat([a[0]]).concat(p.slice(j)));
+      }
+      r.sort();
+      for (var i = r.length - 1; i > 0; i--)
+        if (r[i] + "" == r[i - 1] + "")
+          r.splice(i, 1);
+      return r;
+    }
+
+    function pp(x)
+    {
+      if (x < 0) return "-" + pp(-x);
+      if (x >= 1) return (x - x % 1) + (x % 1 ? " " + pp(x % 1) : "");
+      x *= 6;
+      switch (true)
+      {
+        case x < 0.5: return "0";
+        case x < 1.5: return "1/6";
+        case x < 2.5: return "1/3";
+        case x < 3.5: return "1/2";
+        case x < 4.5: return "2/3";
+        case x < 5.5: return "5/6";
+      }
+    }
+
+    var projSelect = document.getElementById("projSelect");
+
+    var projx = {};
+    var projy = {};
+    var projectionAnims = [];
+    function addProj(name, px, py)
+    {
+      projx[name] = px;
+      projy[name] = py;
+      projSelect.options.add(new Option(name, name));
+    }
+    function addAnim(name)
+    {
+      projSelect.value = name;
+      if (projectionAnims.length < 2)
+        animStart = new Date();
+      projectionAnims.push(name);
+    }
+
+    var animStart;
+    projSelect.onchange = function()
+    {
+      addAnim(projSelect.value);
+    }
+
+    var e8 = document.getElementById("e8");
+
+    var r   = Math.sqrt(5) - 1
+        zy  = r - 1;
+        xyy = r * Math.cos(Math.PI / 15 * 1) - 1,
+        xyx = r * Math.sin(Math.PI / 15 * 1),
+        uvy = r * Math.cos(Math.PI / 15 * 2) - 1,
+        uvx = r * Math.sin(Math.PI / 15 * 2);
+        wx  = r * Math.sin(Math.PI / 15 * 3),
+        tx  = 2*uvx * Math.sin(Math.PI / 15 / 2);
+
+    addProj("E8",
+      [0, tx, -uvx, uvx, -wx, xyx, -xyx,  0],
+      [1,  0,  uvy, uvy,   0, xyy,  xyy, zy]);
+
+    addProj("F4",
+      [0, 0.45,  0.6, 0.6, 0, 0, 0, 0],
+      [0.45, 0, -0.6, 0.6, 0, 0, 0, 0]);
+
+    addProj("G2",
+      [0, 0, 0, 0, 0, -0.7,  0.7, 0],
+      [0, 0, 0, 0, 0, -0.4, -0.4, 0.8]);
+
+    addProj("Triality",
+      [0, 0, 0, 0, 0, 0.5, 0.5, 0.5],
+      [0, 0, 0, 0, -1, 0, 0, 0]);
+
+    //var projxTri2 = [0, 0, 0, 0, -0.75, -0.25, -0.25, -0.25];
+    //var projyTri2 = [0, 0, 0, 0, 0.5, -0.5, -0.5, -0.5];
+
+    addProj("F4 toward G2",
+      projx.F4.addMult(projx.G2, 0.1),
+      projy.F4.addMult(projy.G2, 0.1));
+
+    addProj("G2 toward F4",
+      projx.G2.addMult(projx.F4, 0.3),
+      projy.G2.addMult(projy.F4, 0.3));
+
+    addProj("Overview",
+      projx.Triality.addMult(projx.F4, 0.13).addMult(projx.G2, 0.15),
+      projy.Triality.addMult(projy.F4, 0.13).addMult(projy.G2, 0.15));
+
+    addProj("Zero", [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0]);
+
+    var quarkNames = [["up", "charm", "top"],["down", "strange", "bottom"]];
+    var leptonNames = ["electron", "muon", "tau"];
+
+    var tot = {};
+    function p(vectors)
+    {
+      for (var i = 0; i < vectors.length; i++)
+      {
+        var v = vectors[i];
+        var o = tot[v] = { v: v, x: {}, y: {} };
+        var u = document.createElement("div");
+        u.v = ""+v;
+        o.el = u;
+
+        var isBoson = (v[0] == 0 && v[1] == 0 && v[2] == 0 && v[3] == 0) ||
+                      (v[4] == 0 && v[5] == 0 && v[6] == 0 && v[7] == 0);
+        var isFermion = !isBoson;
+
+        var gravSpinL    = (v[1] + v[0]) / 2;
+        var gravSpinR    = (v[1] - v[0]) / 2;
+        var weakIsospinL = (v[3] + v[2]) / 2;
+        var weakIsospinR = (v[3] - v[2]) / 2;
+        var w = v[4];
+        var isRed   = v[5] != v[6] && v[5] != v[7];
+        var isGreen = v[5] != v[6] && v[6] != v[7];
+        var isBlue  = v[7] != v[6] && v[5] != v[7];
+        var B2 = -(v[5] + v[6] + v[7]) / 3;
+
+        var generation;
+        switch (w / B2)
+        {
+          case  3: generation = 1; break;
+          case -3: generation = 2; break;
+          case  0: generation = 3; break;
+
+          case -1: generation = 1; break;
+          case  1: generation = 2; break;
+          case -Infinity:
+          case  Infinity:
+                   generation = 3; break;
+        }
+
+        if (isFermion)
+        {
+          var isQuark = isRed || isGreen || isBlue;
+          var isLepton = !isQuark;
+
+          for (var g = generation; g > 1; g--)
+          {
+            var t = gravSpinL; gravSpinL = gravSpinR; gravSpinR = weakIsospinR; weakIsospinR = t;
+          }
+
+          if (generation == 3)
+          {
+            B2 = (v[4] - B2) / 2;
+            w  = -v[4] / 2;
+          }
+        }
+
+        var Q = weakIsospinL + weakIsospinR - B2;
+
+        var name, shape;
+        if (isFermion)
+        {
+          var isAntiMatter = (Q == 1) || (Q * 3 == 1) || (Q == -2/3) || (Q == 0 && w == 1/2);
+          var isUpTypeQuark = isQuark && (Q == 2/3 || Q == -2/3);
+          var isNeutrino = isLepton && (Q == 0);
+
+          name = (isAntiMatter ? "anti " : "") + (isQuark
+            ? quarkNames[1 - isUpTypeQuark][generation - 1] + " Quark"
+            : leptonNames[generation - 1] + (isNeutrino ? " Neutrino" : ""));
+          shape = isAntiMatter ? "\u25BC" : "\u25B2";
+        }
+        else
+        {
+          switch (true)
+          {
+            case gravSpinL != 0 && weakIsospinL != 0:
+              name = "e&phi;"; shape = "\u25A0"; break;
+            case v[0] != 0:
+              name = "&omega;"; shape = "\u25CF"; break;
+            case weakIsospinL != 0:
+              name = "W"; shape = "\u25CF"; break;
+            case weakIsospinR != 0:
+              name = "B"; shape = "\u25CF"; break;
+            case B2 != 0:
+              name = "x&Phi;"; shape = "\u25A0"; break;
+            default:
+              name = "gluon"; shape = "\u25CF"; break;
+          }
+
+          name = "<em>" + name + "</em> gauge boson";
+        }
+
+        for (var p in projx)
+        {
+          var x = 0, y = 0;
+          for (var j = 0; j < 8; j++)
+          {
+            x += projx[p][j] * v[j];
+            y += projy[p][j] * v[j];
+          }
+          o.x[p] =  x*200;
+          o.y[p] = -y*200;
+        }
+        u.innerHTML = shape;
+        u.style.left = o.x[p];
+        u.style.top = o.y[p];
+        u.style.fontSize = (17 - (generation || 3) * 2) + "px";
+
+        u.txt = "<b>" + name + "</b>" +
+          "<br>Q: " + pp(Q) +
+          "<br>Weak isospin (L, R): " + pp(weakIsospinL) + ", " + pp(weakIsospinR) +
+          "<br>Gravitational spin (L, R): " + pp(gravSpinL) + ", " + pp(gravSpinR) +
+          "<br>E8 coords: (" + (v+"").replace(/0\.5/g, "\u00BD") + ")";
+        l = 160;
+        var r = l*isRed + (weakIsospinL ? 80 : 0),
+            g = l*isGreen + (weakIsospinL ? 80 : 0),
+            b = l*isBlue;
+        u.style.color = "rgb(" + r + ", " + g + ", " + b + ")";
+        e8.appendChild(u);
+      }
+      return vectors;
+    }
+
+    function interactions(p)
+    {
+      var r = [];
+      for (var id in tot)
+      {
+        var q = tot[id].v;
+        var a = [];
+        for (var i = 0; i < 8; i++)
+          a[i] = p[i] + q[i];
+        if (tot[a])
+          r.push([q, a]);
+      }
+      return r;
+    }
+
+    pn1 = pn(1); pnh = pn(0.5); ph = 0.5; nh = -0.5;
+    even2h  = [[ph, ph], [nh, nh]];
+    odd2h   = [[ph, nh], [nh, ph]];
+    even4h  = even2h.times(even2h).concat(odd2h.times(odd2h));
+    odd4h   = even2h.times(odd2h).concat(odd2h.times(even2h));
+    even8h  = even4h.times(even4h).concat(odd4h.times(odd4h));
+
+    p(all(even8h.concat(perm([pn1, pn1, 0, 0, 0, 0, 0, 0]))));
+
+    var details = document.getElementById("details");
+    var help = document.getElementById("help");
+    var canvas = document.getElementById("canvas");
+    var defaultHelp = "Hover over a particle to see its details.";
+
+    canvas.onmouseover = function(evt)
+    {
+      var el = evt ? evt.target : event.srcElement;
+      if (el.txt)
+        details.innerHTML = el.txt;
+      if (el.tgt)
+        tot[el.tgt].el.className = "target";
+      if (el.txt && !el.tgt)
+        help.innerHTML = "Click on a particle to see with which particles it interacts.";
+    };
+
+    canvas.onmouseout = function(evt)
+    {
+      var el = evt ? evt.target : event.srcElement;
+      if (el.txt)
+      {
+        details.innerHTML = "";
+        help.innerHTML = defaultHelp;
+      }
+      if (el.tgt)
+        tot[el.tgt].el.className = "";
+      help.innerHTML = defaultHelp;
+    };
+
+    canvas.onclick = function(evt)
+    {
+      for (var id in tot)
+      {
+        tot[id].el.className = "";
+        tot[id].el.tgt = "";
+      }
+      help.innerHTML = defaultHelp = "Hover over a particle to see its details.";
+      var el = evt ? evt.target : event.srcElement;
+      if (el.v)
+      {
+        var o = tot[el.v];
+        o.el.className = "selected";
+        var l = interactions(o.v);
+        for (var i = 0; i < l.length; i++)
+        {
+          tot[l[i][0]].el.className = "interacts";
+          tot[l[i][0]].el.tgt = ""+l[i][1];
+        }
+        help.innerHTML = defaultHelp = "Particles that interact with this particle (red) are indicated with blue.<br>Hover over them to see which particle is the result (green).";
+      }
+    };
+
+
+    function anim()
+    {
+      if (projectionAnims.length > 1)
+      {
+        var t = (new Date() - animStart) / 3000;
+        var curId = projectionAnims[0];
+        var nextId = projectionAnims[1];
+        var t1 = Math.min(t, 1);
+        var f = t1 - Math.sin(2 * Math.PI * t1) / 2 / Math.PI;
+        for (var id in tot)
+        {
+          var o = tot[id];
+          o.el.style.left = o.x[curId] * (1 - f) + o.x[nextId] * f;
+          o.el.style.top  = o.y[curId] * (1 - f) + o.y[nextId] * f;
+        }
+
+        if (t > 1)
+        {
+          projectionAnims.shift();
+          animStart = new Date();
+        }
+      }
+      setTimeout(anim, 20);
+    }
+
+    addAnim("Zero");
+    addAnim("Overview");
+    anim();
+
+  </script>
+</html>

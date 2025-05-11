@@ -1,0 +1,30 @@
+.box {
+  padding:0.5em 1em;
+  margin:0em;
+  border:1px solid black;
+  background:yellow;
+  color:black;
+}
+.boxc {
+  padding:0em 0.3em;
+  text-align:center;
+}
+.boxc TABLE {
+  margin:auto;
+}
+.lineright {
+  border-right:1px solid black;
+  font-size:50%;
+}
+.leftabove {
+  border-right:1px solid black;
+  border-top:1px solid black;
+  font-size:50%;
+}
+.rightabove {
+  border-top:1px solid black;
+  font-size:50%;
+}
+.nolines {
+  font-size:50%;
+}

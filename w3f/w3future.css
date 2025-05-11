@@ -1,0 +1,165 @@
+BODY,TD,TH {
+  font-family: Tahoma;
+  font-size: 70%;
+}
+BODY {
+  background: #C0FF40;
+  color: #000040;
+  margin: 0em;
+  padding: 0em;
+}
+A {
+  color: #708020;
+  text-decoration: none;
+  font-weight: bold;
+}
+A:hover, A:visited {
+  color: #4040A0;
+}
+TD {
+  vertical-align: top;
+}
+TABLE {
+  width: 100%;
+}
+
+TABLE.root {
+  height: 100%;
+}
+#header {
+  height: 80px;
+  font-weight:bold;
+  background-image:url("300x80.jpg");
+  background-repeat:no-repeat;
+  vertical-align: bottom;
+}
+#body {
+  padding: 0em;
+  border-top: 1px solid #000040;
+  border-bottom: 1px solid #000040;
+  height: 100%;
+}
+TABLE.body {
+  height: 100%;
+}
+#footer {
+  height: 16px;
+  font-size: 60%;
+  padding: 0px 3px 2px 3px;
+  background-image: url("strip.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  vertical-align: bottom;
+}
+
+.tab {
+  background: #F5FFE2;
+  border-left: 2px solid #FCFFF5;
+  border-right: 2px solid #CCDFA5;
+  border-top: 2px solid #FCFFF5;
+  padding: 1px 3px 1px 3px;
+  color: #000040;
+}
+.tab-hover {
+  background: #FFFFFF;
+  border-left: 2px solid #F0F0F8;
+  border-right: 2px solid #E0E0F0;
+  border-top: 2px solid #F8F8FC;
+  padding: 1px 3px 1px 3px;
+  color: #4040A0;
+  cursor:pointer;cursor:hand;
+}
+TABLE.tab-container {
+  width:auto;
+}
+
+TD.sidebar-container {
+  width: 13em;
+  border: 2px solid #000040;
+  border-top: none;
+  background: #F5FFE2;
+}
+TABLE.sidebar-container {
+  border-bottom: 1px solid #000040;
+}
+.sidebar {
+  padding: 0em;
+  background: #F5FFE2;
+}
+.sidebar-header {
+  border-top: 2px solid #000040;
+  background: #000040;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 1px 3px 1px;
+}
+.sidebar-empty {
+  padding: 2px;
+  text-align: center;
+  font-style: italic;
+  color: #AAAFC0;
+  background: #ECFFC5;
+}
+.button {
+  background: #ECFFC5;
+  border-left: 2px solid #FCFFF5;
+  border-bottom: 2px solid #CCDFA5;
+  border-right: 2px solid #CCDFA5;
+  border-top: 2px solid #FCFFF5;
+  padding: 1px;
+  color: #000040;
+}
+.button-hover {
+  background: #FFFFFF;
+  border-left: 2px solid #F0F0F8;
+  border-right: 2px solid #E0E0F0;
+  border-top: 2px solid #F8F8FC;
+  border-bottom: 2px solid #E0E0F0;
+  padding: 1px;
+  color: #4040A0;
+  cursor:pointer;cursor:hand;
+}
+
+.weblog-hover,.title-date-list-hover {
+  background: #F8F8FC;
+  cursor:pointer;cursor:hand;
+}
+.title-date-list-hover {
+  text-decoration: underline;
+}
+
+.content {
+  border: 2px solid #000040;
+  background: #FFFFFF;
+  padding: 1em;
+}
+.note {
+  width: 15em;
+  border-left: 3px solid #C0FF40;
+  background: #ECFFC5;
+  padding: 0em 0em 0.5em 0em;
+}
+
+H1 {
+  margin: 0em;
+  border-bottom: 2px solid #000040;
+  font-size: 200%;
+}
+H2 {
+  margin: 1em 0.5em 0.5em 0.5em;
+  border-bottom: 1px solid #000040;
+  font-size: 150%;
+}
+H3 {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 1em 1.5em 0.5em 1.5em;
+}
+P {
+  margin: 0em 1.5em 0.5em 1.5em;
+}
+UL {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}

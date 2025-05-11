@@ -1,0 +1,99 @@
+<body></body>
+<script src="adt.js" type="text/javascript;version=1.8"></script>
+<script type="text/javascript;version=1.8">
+function print() 
+{
+  var p = document.body.appendChild(document.createElement("p"))
+  p.appendChild(document.createTextNode(Array.join(arguments, ", ")))
+}
+
+Color = Data(function() ({ Red: {}, Green: {}, Blue: {}, Yellow: {}}))
+Point = Data(function() ({ Pt: { x: Number, y: Number, color: Color }}))
+
+// data Odd e = SO e
+// data Even = Z | SE (Odd Even)
+Odd = Data(function(_, Even) ({ SO: [Even] }))
+Even = Data(function(Even) ({ Z: [], SE: [Odd(Even)] }))
+
+print(SE(SO(Z)))
+
+List = Data(function(list, a) ({ Nil : [], Cons: [a, list] }))
+var counter = List.unfold(function(n, c) n ? c.Cons(n, n - 1) : c.Nil)
+var prod = List.fold({ Nil: 1, Cons: function(h, t) h * t })
+var fact = counter.merge(prod);
+print(fact(5))
+
+Attrs = Data(function(_, n, v) ({ Attr: {name: n, value: v} }))
+Node = Data(function(node, n, v) ({
+  Elem: { name: n, attributes: List(Attrs(n, v)), childNodes: List(node) },
+  Text: v
+}))
+
+var serialize = Node.fold({
+  Elem: function(name, attrs, children) "<" + name + attrs + ">" + children + "</" + name + ">",
+  Text: function(s) s,
+  Attr: function(name, value) " " + name + "='" + value + "'",
+  Cons: function(h, t) h + t,
+  Nil : ""
+})
+
+var addPrefix = Node.map(function (name) "x:" + name, id)
+var normalizeSpace = Node.map(id, function (value) value.replace(/^\s+|\s+$/g, ""))
+
+var xml = Elem("test", Nil, Cons(
+  Elem("hoi", Cons(Attr("href", "w3future.com"), Nil), Nil), Cons(
+  Text(" bla "), Cons(
+  Elem("doei", Nil, Nil), Nil))))
+
+print(serialize.merge(addPrefix).merge(normalizeSpace)(xml))
+print(
+  xml.size, xml.equals(xml.clone),
+  Node.getCollectFn(true, false)(xml).join(" "), 
+  Node.getCollectFn(false, true)(xml).join(" ")
+)
+
+// From: Data types à la carte, Wouter Swierstra
+
+// data Expr f = In (f (Expr f))
+// data (f :+: g) e = Inl (f e) | Inr (g e)
+// data Val e = Val Int 
+// data Add e = Add e e 
+// type ExprValAdd = Expr (Add :+: Val)
+Expr = function(f) Data(function(expr) ({ In: f(expr) }))
+Plus = function(f, g) Data(function(_, e) ({ Inl: f(e), Inr: g(e) }))
+ValT = Data(function(_, e) ({ Val: Number }))
+AddT = Data(function(_, e) ({ Add: [e, e] }))
+ExprValAdd = Expr(Plus(ValT, AddT))
+
+var evalAlgebra = {
+  Val: function(x) x,
+  Add: function(e1, e2) e1 + e2,
+  In: id, Inl: id, Inr: id
+};
+var ev = ExprValAdd.fold(evalAlgebra)
+
+var val = function(x) In(Val(x))
+var add = function(x, y) In(Add(x, y))
+var addExample = add(val(30000), add(val(1330), val(7)))
+print(ev(addExample))
+
+MulT = Data(function(_, e) ({ Mul: [e, e] }))
+var mul = function(x, y) In(Mul(x, y))
+
+ExprValAddMul = Expr(Plus(ValT, Plus(AddT, MulT)))
+evalAlgebra.Mul = function(e1, e2) e1 * e2
+var ev = ExprValAddMul.fold(evalAlgebra)
+
+var example = add(mul(val(80), val(5)), val(4))
+print(ev(example))
+
+render = ExprValAddMul.fold({
+  Val: function(x) "" + x,
+  Add: function(e1, e2) "(" + e1 + " + " + e2 + ")",
+  Mul: function(e1, e2) "(" + e1 + " * " + e2 + ")",
+  In: id, Inl: id, Inr: id
+})
+
+print(render(example))
+
+</script>

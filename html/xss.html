@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - xmlStorageSystem client</TITLE>
+	<SCRIPT src="/w3f/w3f.js"></SCRIPT>
+	<SCRIPT src="/tools/funclib.js"></SCRIPT>
+	<SCRIPT src="/tools/md5.js"></SCRIPT>
+	<STYLE>
+		@import "/w3f/w3f.css";
+	</STYLE>
+	<SCRIPT>
+		function xmlrpc_call(methodName,args,callback) {
+			var service=new w3f_XMLRPCService(document.forms['base'].url.value);
+			service.onload2=callback;
+			service.onload=function() {
+				if (this.error||this.result.flError) {
+					alert('Error: '+(this.error||this.result.message));
+					return;
+				}
+				this.onload2();
+			}
+			service.call('xmlStorageSystem.'+methodName,args);
+		}
+		
+		function regUser(form) {
+			xmlrpc_call('registerUser',[
+				document.forms['base'].email.value,
+				form.name.value,
+				getPassword(),
+				0,
+				'http://w3future.com/html/xss.html'],
+				function() {
+					'P'.w(this.result.message).into('registered');
+				}
+			)
+		}
+		
+		function saveFile(form) {
+			xmlrpc_call('saveMultipleFiles',[
+				document.forms['base'].email.value,
+				getPassword(),
+				[form.path.value],
+				[form.fileText.value]],
+				function() {
+					'P'.w(
+						'File stored at: '+
+						('A href="'+this.result.urlList[0]+'"').w(this.result.urlList[0])
+					).into('saved');
+				}
+			)
+		}
+
+		function getMyDirectory() {
+			xmlrpc_call('getMyDirectory',[
+				document.forms['base'].email.value,
+				getPassword()],
+				function() {
+					var list=this.result.directory;
+					var a=[]; for (var f in list) a[a.length]=list[f];
+					'P'.w(
+						'TABLE width="95%"'.w(
+							'TR'.w('TH'.w('Path')+'TH'.w('Size')+'TH'.w('Created')+'TH'.w('Modified'))+
+							a.reduce(function(f,s) {
+								return s+'TR'.w(
+									'TD'.w(
+										('A href="'+f.url+'"').w(f.relativePath)
+									)+
+									'TD style="font-size:70%;text-align:right"'.w(formatSize(f.size)+'&nbsp;')+
+									'TD style="font-size:70%;text-align:center"'.w(formatDate(f.whenCreated)+'&nbsp;')+
+									'TD style="font-size:70%;text-align:center"'.w(formatDate(f.whenLastUploaded))
+								)
+							})
+						)
+					).into('directory');
+				}
+			)
+		}
+		
+		function getServerCaps() {
+			xmlrpc_call('getServerCapabilities',[
+				document.forms['base'].email.value,
+				getPassword()],
+				function() {
+					'P'.w(
+						'TABLE'.w(
+							'TR'.w(
+								'TD'.w('Legal File Extensions:')+
+								'TD'.w(''+this.result.legalFileExtensions)
+							)+
+							'TR'.w(
+								'TD'.w('Maximum File Size:')+
+								'TD'.w(''+formatSize(this.result.maxFileSize))
+							)+
+							'TR'.w(
+								'TD'.w('Maximum Storage Space per User:')+
+								'TD'.w(''+formatSize(this.result.maxBytesPerUser))
+							)+
+							'TR'.w(
+								'TD'.w('Your Amount of Storage in Use:')+
+								'TD'.w(''+formatSize(this.result.ctBytesInUse))
+							)
+						)
+					).into('servercaps');
+				}
+			)
+		}
+		
+		function getPassword() {
+			var f=document.forms['base'];
+			var pw=f.password.value;
+			if (f.md5.checked) pw=calcMD5(pw);
+			return pw;
+		}
+		
+		function formatSize(s) {
+			if (s>1024*1024) return oneDecimal(s/1024/1024)+' MB';
+			if (s>1024) return oneDecimal(s/1024)+' KB';
+			return s+'&nbsp;B&nbsp;&nbsp;';
+		}
+		
+		function oneDecimal(f) {
+			var s=''+Math.floor(f*10);
+			var l=s.length;
+			s=s.substr(0,l-1)+'.'+s.charAt(l-1);
+			return s;
+		}
+		
+		function n2(n) {return (n<10)?'0'+n:''+n;}
+
+		function formatDate(d) {
+			return d.getFullYear()+'-'+n2(d.getMonth()+1)+'-'+n2(d.getDate())+
+				' '+n2(d.getHours())+':'+n2(d.getMinutes());
+		}
+
+	</SCRIPT>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>
+document.write('<TD>'+createButton({style:'tab',content:'Weblog',go:'/weblog'})+'</TD>');
+document.write('<TD>&nbsp;</TD><TD>'+createButton({style:'tab',content:'Examples',go:'/html/tools.html'})+'</TD>');
+</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar-container" width="100%">
+<TR><TD>
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%">
+<TR><TD class="sidebar-header">
+Links
+</TD></TR>
+<SCRIPT>
+document.write('<TR><TD>'+createButton({style:'button2',content:'xmlStorageSystem',gonew:'http://www.soapware.org/xmlStorageSystem'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'ourFavoriteSongs.com',gonew:'http://www.ourfavoritesongs.com'})+'</TD></TR>');
+</SCRIPT>
+</TABLE>
+
+</TD></TR>
+</TABLE>
+
+</TD><TD id="content">
+
+<H1>xmlStorageSystem client</H1>
+<P>basic access to 'the cloud'</P>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%" height="80%">
+<TR><TD>
+
+<H2>XmlStorageSystem data</H2>
+<FORM onsubmit="return false;" name="base">
+<P>Service URL: (http://<i>hostname</i>:<i>portnr</i>/<i>path</i>)<BR><INPUT type="text" size="40" style="width:90%" name="url" value="http://data.ourfavoritesongs.com/RPC2"></P>
+<P>Your e-mail address:<BR><INPUT type="text" size="40" style="width:90%" name="email" value=""></P>
+<P>Your password: (<INPUT type="checkbox" checked name="md5"> Use MD5 scrambling, like Radio Userland)<BR><INPUT type="password" size="40" style="width:90%" name="password" value=""></P>
+</FORM>
+
+<H2>Register</H2>
+<FORM onsubmit="regUser(this);return false;" name="regUserForm">
+<P>Your name:<BR><INPUT type="text" size="40" style="width:90%" name="name" value=""></P>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Register me',action:"regUser(document.forms['regUserForm'])"}))</SCRIPT>
+</TD></TR></TABLE></P>
+<DIV id="registered"></DIV>
+</FORM>
+
+<H2>Save Files</H2>
+<FORM onsubmit="saveFile(this);return false;" name="saveFileForm">
+<P>File path: (may not start with '/')<BR><INPUT type="text" size="40" style="width:90%" name="path" value=""></P>
+<P>File content: <BR><TEXTAREA rows="10" cols="40" style="width:90%" name="fileText"></TEXTAREA></P>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Save file',action:"saveFile(document.forms['saveFileForm'])"}))</SCRIPT>
+</TD></TR></TABLE></P>
+<DIV id="saved"></DIV>
+</FORM>
+
+<H2>Directory Contents</H2>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Show Directory Contents',action:"getMyDirectory()"}))</SCRIPT>
+</TD></TR></TABLE></P>
+<DIV id="directory"></DIV>
+
+<H2>Server Info</H2>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Get Server Info',action:"getServerCaps()"}))</SCRIPT>
+</TD></TR></TABLE></P>
+<DIV id="servercaps"></DIV>
+
+</TD><TD id="note">
+
+<H3>Note</H3>
+<P>The nicest feature of xmlStorageSystem, update notification, cannot be tested here.
+But you could try to upload an RSS file with a <A href="http://www.thetwowayweb.com/soapmeetsrss">
+&lt;cloud&gt;</A> element, register it with Radio Userland, and then manually update it here,
+and see if Radio Userland will receive a call that the RSS channel has changed.</P>
+
+</TD></TR></TABLE>
+
+<SCRIPT src="/tools/xmlrpc.js"></SCRIPT>
+<SCRIPT src="/tools/xmlload.js"></SCRIPT>
+<SCRIPT>
+initButtons();
+</SCRIPT>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+</TD></TR></TABLE>
+</BODY>
+</HTML>

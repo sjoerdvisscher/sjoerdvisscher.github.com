@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+<TITLE>Create tree charts</TITLE>
+<STYLE>
+BODY,TD,TH {
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+}
+.box {
+  border:1px solid black;
+  background:yellow;
+  padding:0.5em 1em;
+  margin:0em;
+}
+.topleft {
+  border-bottom:1px solid black;
+}
+.aboveleft {
+  border-left:1px solid black;
+  border-bottom:1px solid black;
+}
+.belowleft {
+  border-left:1px solid black;
+}
+.topright {
+  border-bottom:1px solid black;
+}
+TD {
+  vertical-align:middle;
+}
+</STYLE>
+<SCRIPT id="code">
+function Node(text,childNodes) {
+  this.text=text;
+  this.childNodes=childNodes;
+}
+Node.prototype.render=function(first,last) {
+  var s='';var next='';this.rows=1;
+  if (this.childNodes) {
+    var l=this.childNodes.length;
+    this.rows=0;
+    for (var i=0;i<l;i++) {
+      if (i!=0) next+='<TR>';
+      next+=this.childNodes[i].render(i==0,i==l-1);
+      this.rows+=this.childNodes[i].rows;
+    }
+  }
+  s+='<TD rowspan='+this.rows+'>';
+  s+='<TABLE style="height:'+(this.rows*3.0)+'em;" width="100%;" cellspacing=0 cellpadding=0>'
+  s+='<TR style="height:'+(this.rows*1.5)+'em;">';
+  s+='<TD class="'+(first?'topleft':'aboveleft')+'">&nbsp;&nbsp;&nbsp;</TD>';
+  s+='<TD rowspan=2 width="100%"><DIV class="box">'+this.text+'</DIV></TD>';
+  s+='<TD'+(this.childNodes?' class="topright"':'')+'>&nbsp;&nbsp;&nbsp;</TD>';
+  s+='</TR><TR>';
+  s+='<TD class="'+(last?'bottomleft':'belowleft')+'">&nbsp;</TD>';
+  s+='<TD class="bottomright">&nbsp;</TD>';
+  s+='</TR></TABLE>';
+  s+=next;
+  return s;
+}
+
+function dorender(tree) {
+  var html='<TABLE cellspacing=0 cellpadding=0><TR>'+tree.render(true,true)+'</TABLE>';
+  document.getElementById('chart').innerHTML=html;
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<H1>Create tree charts</H1>
+<P>Dave Winer posted a new design challenge on <A href="http://www.scripting.com">Scripting News</A>.<P>
+<P>This is my go at it. I hope the example explains the syntax good enough.
+<BR>Also try changing the text size
+(View -> Text Size in IE). You'll see that the tree chart will resize with the font-size.
+</P>
+<P>This is all in one TABLE and a bit of CSS. No images are needed.</P>
+<P>UPDATE: <A href="orgcharts.html">Click here<A> to create organizational charts through a nice interface.</P>
+
+<FORM onsubmit="try{dorender(eval(this.source.value))}catch(e){alert(e.description+'This is not a valid syntax.')};return false">
+<TEXTAREA name="source" cols=80 rows=20>
+new Node('Platforms',[
+  new Node('Macintosh OS',[
+    new Node('Classic'),
+    new Node('Darwin')
+  ]),
+  new Node('Windows',[
+    new Node('98'),
+    new Node('NT4'),
+    new Node('2000',[
+      new Node('Professional'),
+      new Node('Server')
+    ])
+  ]),
+  new Node('Unix',[
+    new Node('Linux'),
+    new Node('Solaris'),
+    new Node('FreeBSD')
+  ])
+])
+</TEXTAREA>
+<BR><INPUT type=submit value="render tree chart">
+</FORM>
+
+<DIV id='chart'></DIV>
+
+<P><HR>
+Created by <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>. 2001/03/23</P>
+
+</BODY>
+</HTML>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/stories/2003/03/29/xmlToRdf.txt">
+<head>
+<title>RFC: XML to RDF</title>
+</head>
+<body>
+<section id="content">
+	<h>RFC: XML to RDF</h>
+	<p>From structure to semantics</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:34:42 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/stories/2003/03/29/xmlToRdf.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/stories/2003/03/29/xmlToRdf.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/stories/2003/03/29/xmlToRdf.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+<h>Purpose</h>
+<p>XML to RDF is a transformation format that indicates how RDF can be extracted from
+a certain XML format. Once a transformation for a certian XML format is defined,
+RDF can be automatically extracted from every XML file in that format.</p>
+</section>
+<section>
+<h>Understanding the format</h>
+<p>It is clear that few people find RDF easy to understand.
+Creating a tranformation to RDF adds another level of complexity.
+So XML to RDF will probably be usable by a small number of people.
+This is not a problem, because only one transformation has to be defined
+for each XML format.</p>
+<p>Required knowledge for XML to RDF is the RDF model and XPath.
+Because almost everyone doesn't like the standard RDF/XML syntax, XML to RDF
+uses it's own simplified RDF/XML syntax. The tutorial will first show
+how to create RDF in this format, and then show how to adapt the static
+RDF to an XML to RDF transformation by adding XPath expressions.</p>
+</section>
+<section>
+<h>Tutorial</h>
+<section>
+<h>Creating RDF data</h>
+<p>Resources have properties. The following example shows that the
+resource at URI <code>http://www.w3.org/</code> has a <code>dc:title</code>
+property with value "World Wide Web Consortium".</p>
+<pre class="code">&lt;xr:transform 
+  xmlns:xr="http://w3future.com/ns/xr"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:h="http://www.w3.org/1999/xhtml">
+  
+  &lt;xr:introducing>
+    &lt;rdfs:Resource xr:uri="http://www.w3.org/">
+      &lt;dc:title>World Wide Web Consortium&lt;/dc:title>
+    &lt;/rdfs:Resource>
+  &lt;/xr:introducing>
+  
+&lt;/xr:transform></pre>
+<p>A property value can also be another resource.
+<code>http://www.w3.org/</code> also has a <code>dc:rights</code>
+property. The value of this property is another resource.
+This resource also has it's own <code>dc:title</code> property.
+(I'll leave out the root element from now on, it's the same every time.)</p>
+<pre class="code">&lt;xr:introducing>
+  &lt;rdfs:Resource xr:uri="http://www.w3.org/">
+    &lt;dc:title>World Wide Web Consortium&lt;/dc:title>
+    &lt;dc:rights>
+      &lt;rdfs:Resource xr:uri="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">
+        &lt;dc:title>IPR Notice and Disclaimers&lt;/dc:title>
+      &lt;/rdfs:Resource>
+    &lt;/dc:rights>
+  &lt;/rdfs:Resource>
+&lt;/xr:introducing></pre>
+</section>
+<section>
+<h>Transforming</h>
+<p>Now we'll do the above for all xhtml documents. Let's first create a transformation
+that extracts the title. The static information from the first example above will be replaced
+by xpaths.</p>
+<ul><li>The <code>xr:uri</code> attribute is replaced by a <code>xr:uriSelect</code> attribute.
+The xpath expression for the URI is <code>$documentURI</code>, which is the URI of the document
+being transformed.</li><li>The text content of the <code>dc:title</code> property is replaced by
+a <code>xr:select</code> attribute. The xpath expression selects the title element of the xhtml file.</li>
+</ul>
+<pre class="code">
+&lt;xr:introducing>
+  &lt;rdfs:Resource xr:uriSelect="$documentURI">
+    &lt;dc:title xr:select="/h:html/h:head/h:title" />
+  &lt;/rdfs:Resource>
+&lt;/xr:introducing>
+</pre>
+<p>The <code>dc:rights</code> property can be extracted from xhtml documents
+by looking for <code>&lt;a></code> elements with a <code>rel='Copyright'</code> attribute.
+So the xpath for the <code>dc:rights</code> property is <code>//h:a[@rel='Copyright']</code>.
+The URI for the copyright webpage is in the <code>href</code> attribute.
+The title from that webpage can then be looked up by selecting the <code>title</code>
+element and using the <code>document()</code> function from XSLT.</p>
+<pre class="code">&lt;xr:introducing>
+  &lt;rdfs:Resource xr:uriSelect="$documentURI">
+    &lt;dc:title xr:select="/h:html/h:head/h:title" />
+    &lt;dc:rights xr:select="//h:a[@rel='Copyright']">
+      &lt;rdfs:Resource xr:uriSelect="@href">
+        &lt;dc:title xr:select="document(@href)/h:html/h:head/h:title" />
+      &lt;/rdfs:Resource>
+    &lt;/dc:rights>
+  &lt;/rdfs:Resource>
+&lt;/xr:introducing></pre>
+<p>Instead of transforming the copyright webpage in the <code>dc:rights</code> element,
+it can also be separated. This is usually more readable, and it is preferred when several
+properties point to the same resource.</p>
+<pre class="code">&lt;xr:introducing>
+  &lt;rdfs:Resource xr:uriSelect="$documentURI">
+    &lt;dc:title xr:select="/h:html/h:head/h:title" />
+    &lt;dc:rights xr:select="//h:a[@rel='Copyright']" />
+  &lt;/rdfs:Resource>
+&lt;/xr:introducing>
+ 
+&lt;xr:introducing xr:select="//h:a[@rel='Copyright']">
+  &lt;rdfs:Resource xr:uriSelect="@href">
+    &lt;dc:title xr:select="document(@href)/h:html/h:head/h:title" />
+  &lt;/rdfs:Resource>
+&lt;/xr:introducing></pre>
+</section>
+</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/stories/2003/03/29/xmlToRdf.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

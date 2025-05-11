@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - article - higher order programming</TITLE>
+	<META NAME="author" CONTENT="Sjoerd Visscher">
+	<META NAME="keywords" CONTENT="www, world, wide, web, future, examples, tools, programming, functional, data, model, javascript, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic, higher, order, ruby, array, reduce">
+	<META NAME="description" CONTENT="The w3future.com article 'Higher order programming in Javascript' discusses all tricks needed to do some functional programming to help script webpages.">
+	<SCRIPT src="/w3f/w3f.js"></SCRIPT>
+	<STYLE>
+		@import "/w3f/w3f.css";
+	</STYLE>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>createSectionButtons()</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar-container" width="100%">
+<TR><TD>
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%">
+<TR><TD class="sidebar-header">
+Links
+</TD></TR>
+<SCRIPT>
+document.write('<TR><TD>'+createButton({style:'button2',content:'OOP in Javascript, part I',gonew:'http://www.webreference.com/js/column79/'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'OOP in Javascript, part II',gonew:'http://www.webreference.com/js/column80/'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'Ruby Home Page',gonew:'http://www.ruby-lang.org/en/index.html'})+'</TD></TR>');
+</SCRIPT>
+</TABLE>
+
+</TD></TR>
+</TABLE>
+
+</TD><TD id="content">
+<H1>Higher Order Programming</H1>
+<P>In Javascript</P>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%">
+<TR><TD>
+
+<H2>Introduction</H2>
+<P>Higher Order Programming is the ability to use functions as values.
+So you can pass functions as arguments to other functions and
+functions can be the return value of other functions.
+This style of programming is mostly used in functional programming,
+but it can also be very useful in 'regular' object oriented
+programming. A good example of this is the Ruby Scripting Language,
+which combines all the advantages of pure object oriented programming 
+and higher order programming. Sadly, Ruby is not supported by
+any browser, so it cannot be used for websites. We are lucky 
+however that Javascript is available in every browser, and that 
+Javascript is so flexible that it can be extended to make higher 
+order programming a helpful tool in scripting webpages.</P>
+
+<H3>The <code>sort</code> method</H3>
+<P>Most people will know Javascript only as a scripting language
+that makes image switching and annoying popup windows possible.
+However the Javascript implementations hint at the more advanced
+programming possibilities through the sort Method of arrays.
+In it's simple form <code>sort()</code> will just sort the array:
+The code <code>document.write([2,3,1,4].sort())</code> will 
+write "1,2,3,4". But the sort method can do more. It allows a
+compare function as an optional argument. That's higher order
+programming right there. Suppose we have an array of objects.
+Each object has a <code>date</code> property, and we want to
+sort the objects by their date value:</P>
+<PRE>
+  arrayOfObjects.sort(
+    function (x,y) {
+      return x.date-y.date;
+    }
+  );
+</PRE>
+<P>The compare function is called regularly during sorting.
+It must return a negative value when <code>x</code> comes
+before <code>y</code>, zero when the are equal and a 
+possitive value when <code>x</code> comes after <code>y</code>.
+This is exactly what substraction does for numbers and dates,
+for strings you can just use <code>&lt;</code> and 
+<code>&gt;</code>.</P>
+
+<H2>Generating HTML</H2>
+<H3>Using functions as arguments</H3>
+<P>If you have generated HTML from arrays before, this code will
+look familiar:</P>
+<PRE>
+  var s='';
+  for (var i=0;i&lt;arr.length;i++) {
+    var item=arr[i];
+    s+=<I>...generate some HTML...</I>
+  }
+  document.write(s);
+</PRE>
+<P>We will now create a <code>reduce</code> method, that will
+make this a bit more readable, and make the code more modular.
+The above code will then look like this:</P>
+<PRE>
+  function prettyTemplate(item) {
+    return <I>...generate some HTML...</I>
+  }
+  document.write(arr.reduce(prettyTemplate));  
+</PRE>
+<P>To create the reduce method, we can use much of the previous
+example. We'll extend the array prototype, so all arrays will
+have the reduce method available:</P>
+<PRE>
+  Array.prototype.reduce=function(templateFunction) {
+    var l=this.length;
+    var s='';
+    for (var i=0;i&lt;l;i++) s+=templateFunction(this[i]);
+    return s;
+  }
+</PRE>
+<H3>Using a function as return value</H3>
+<P>The template function will often be simple: It will just wrap
+each item in the array with one HTML element. F.e. when creating
+a table, the template function won't do much more than:
+<code>return '&lt;TD&gt;'+item+'&lt;/TD&gt;';</code>. Let's
+create a function that generates these simple element wrappers:</P>
+<PRE>
+  function wrap(tag) {
+    var stag='&lt;'+tag+'>';
+    var etag='&lt;/'+tag.replace(/\s.*/,'')+'>';
+    return function(x) {
+      return stag+x+etag;
+    }
+  }
+  
+  // examples:
+
+  document.write(wrap('B')('This is bold.'));
+  var B=wrap('B');
+  document.write(B('This is bold too.'));
+
+  document.write(
+    '&lt;TABLE>&lt;TR>'+
+      arr.reduce(wrap('TD class="small"'))+
+    '&lt;/TR>&lt;/TABLE>'
+  );
+</PRE>
+<P>In the first example you can see that you can immediately call 
+the returned function, which results in a somewhat unusual syntax
+of two argument lists next to eachother.
+There's another special thing happening here: the returned function
+referes to the <code>stag</code> and <code>etag</code> variables.
+That this works outside of the <code>wrap</code> function
+is because of the closure like behaviour of
+functions in Javascript. When a function is defined, it stores a
+pointer to the current scope. This scope is restored when the
+function is called.</P>
+<H3>Using functions as objects</H3>
+<P>In the last example, an array is converted to a table,
+each item in the array is wrapped with a <code>&lt;TD></code> element.
+If we want a vertical table layout, instead of horizontal, each item
+must be wrapped with both a <code>&lt;TR></code> element and a
+<code>&lt;TD></code> element. So we must create a new function again:</P>
+<PRE>
+  var TABLE=wrap('TABLE');var TR=wrap('TR');var TD=wrap('TD');
+  document.write(TABLE(arr.reduce(
+    function (item) {
+      return TR(TD(item));
+    }
+  )));
+</PRE>
+<P><code>TR(TD(item))</code> is like function composition, 
+written as 'TR o TD', and pronounced as 'TR after TD'. 
+So we'd like to write this as:</P>
+<PRE>
+  document.write(TABLE(arr.reduce(TR.after(TD))));
+</PRE>
+<P>In Javascript functions are objects too, and they can also have 
+methods. So we can extend the function prototype so that the
+<code>after</code> method is available to all functions.</P>
+<PRE>
+  Function.prototype.after=function(g) {
+    var f=this;
+    return function(x) {
+      return f(g(x));
+    }
+  }
+</PRE>
+<H2>Using methods as functions</H2>
+<P><I><B>Update:</B> Dan Shappir pointed out to me that is useful for
+event handlers and callback function too. 
+<A href="http://w3future.com/html/stories/callbacks.html">Read more
+about that here.</A></I></P>
+<P>When doing higher order programming in an object oriented language,
+you'd want to pass methods as arguments. But there's a problem.
+Let's make an <code>element</code> class with a <code>wrap</code> method:</P>
+<PRE>
+  function element(tag) {
+    this.stag='&lt;'+tag+'>';
+    this.etag='&lt;/'+tag.replace(/\s.*/,'')+'>';
+    this.wrap=function(x) {
+      return this.stag+x+this.etag;
+    }
+  }
+  
+  P=new element('P');
+  // this works:
+  document.write(P.wrap('This is a paragraph.'));
+  // this fails:
+  document.write(arr.reduce(P.wrap));
+</PRE>
+<P>Why does this fail? Because when <code>P.wrap</code> is passed
+to the reduce function, only the function is passed, where 
+<code>this</code> has a different meaning. But there's a little
+trick that makes method passing work:</P>
+<PRE>
+  function element(tag) {
+    this.stag='&lt;'+tag+'>';
+    this.etag='&lt;/'+tag.replace(/\s.*/,'')+'>';
+    var me=this;
+    this.wrap=function(x) {
+      return me.stag+x+me.etag;
+    }
+  }
+  
+  P=new element('P');
+  // this still works:
+  document.write(P.wrap('This is a paragraph.'));
+  // and now this works too:
+  document.write(arr.reduce(P.wrap));
+</PRE>
+<P>It looks like it's the same, but <code>me</code> is just a variable
+where <code>this</code> has a special meaning to every function.
+Javascript will make sure the <code>wrap</code> method will still
+know what <code>me</code> points to, no matter where the method is used.
+</P>
+
+<H2>When should you use this?</H2>
+<H3>Modularisation</H3>
+<P>When you have 2 (or several) functions that are almost the same 
+except for a small part of the code, then you should consider to
+combine these functions into one. Replace the part that is different
+with a function call to a separate function. This function is passed
+to the new more general function as an argument.</P>
+<H3>Something different</H3>
+<P>When you've grown bored of writing for-loops (like I did), 
+methods like <code>reduce</code> will be a welcome change in 
+programming style. For me, higher order programming has made Javascript
+a lot more fun, and I hope you'll have fun with this too!</P>
+
+</TD><TD id="note">
+<H3>Required knowledge</H3>
+<P>You'll have to know how to program object oriented with Javascript.
+Read the articles at Webreference (links at the left of the article) to catch up on that.</P>
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>
+</TD></TR></TABLE>
+
+<SCRIPT>initButtons()</SCRIPT>
+</BODY>
+</HTML>

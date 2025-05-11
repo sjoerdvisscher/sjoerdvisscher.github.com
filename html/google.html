@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - weblog</TITLE>
+	<SCRIPT src="/w3f/w3f.js"></SCRIPT>
+	<STYLE>
+		@import "/w3f/w3f.css";
+
+		.em {
+			color:#708020;
+		}			
+		#ResultDiv {
+			margin-left: 1em;
+		}
+		TD.border {
+			text-align:left;
+		}
+		TH.props {
+			text-align:center;
+		}
+	</STYLE>
+	<SCRIPT>
+		var GL_terms='';
+		var GL_url='';
+	
+		function start_search(terms,start) {
+			start=start||0;
+			GL_terms=terms;
+			document.forms['loader'].q.value=terms;
+			var doc=new w3f_XMLDocument();
+			doc.onload=function() {
+				render(this);
+			}
+			GL_url='http://www.google.com/xml?q='+escape(terms)+'&start='+start;
+			doc.load(GL_url);
+		}
+		
+		function render(tree) {
+			var div=document.getElementById('result');
+			var t=tree.getSimpleTree();
+			var s='<TABLE width="100%" cellspacing=0 cellpadding=0>';
+			if (!t.RES) {
+				div.innerHTML='<TABLE width="100%" cellspacing=0 cellpadding=0><TR><TD class="border" style="padding:0.5em"><B>No results found!</B></TD></TR></TABLE>';
+				return;
+			}
+			var r=w3f_ensureList(t.RES.R);
+			var f=function(o) {
+				var s='';
+				s+='<TR><TD class="border">';
+				s+='<DIV style="margin:0.3em 0.3em 0.3em '+((o.L||1)*2-1.5)+'em">';
+				s+='<A href="'+o.U+'">'+(o.T||'[no title]')+'</A><BR>';
+				if (''+o.S) s+=o.S+'<BR>';
+				s+='<SPAN class="em">'+(''+o.U).replace(/(.{60}\/)/,'$1 ');
+				if (o.HAS) {
+					if (o.HAS.C) s+=' - '+o.HAS.C.SZ;
+					if (o.HAS.RT) s+=' - '+'<A href="javascript:start_search(\'related:'+o.U+'\')">Similar&nbsp;Pages</A>';
+					if (o.HAS.L) s+=' - '+'<A href="javascript:start_search(\'link:'+o.U+'\')">Referer&nbsp;Pages</A>';
+				}
+				s+='</SPAN>';
+				if (o.HN) s+='<BR>[ <A href="javascript:start_search(\'site:'+o.HN+' \'+GL_terms)">More results from '+o.HN+'</A> ]';
+				s+='</DIV>';
+				s+='</TD></TR>';
+				return s;
+			}
+			if (t.RES.NB) {
+				s+='<TR><TH class="props">';
+				if (t.RES.NB.PU) s+='<A href="javascript:start_search(GL_terms,'+(t.RES.SN-11)+')">Previous 10</A>';
+				if (t.RES.NB.PU&&t.RES.NB.NU) s+=' - ';
+				if (t.RES.NB.NU) s+='<A href="javascript:start_search(GL_terms,'+t.RES.EN+')">Next 10</A>';
+				s+='</TH></TR>';
+			}
+			for (var i=0;i<r.length;i++) s+=f(r[i]);
+			s+='</TABLE>';
+			div.innerHTML=s;
+		}
+		
+		function fixText(s) {
+			return s.replace(/</g,'&lt;');
+		}
+		
+		function err(e,s) {
+		  for (var i in e) {
+		    s+='\n'+i+': '+e[i];
+		  }
+		  alert(s);
+		}
+		
+		function show(o) {
+			if (''+o===o||1*o===o) return o;
+			if (o.shown) return '<i>Loop</i>';
+			o.shown=true;
+			var s='<DIV style="margin-left:2em">';
+			for (var i in o) {
+				if (i=='shown') continue;
+				s+='<P>'+i+'='+show(o[i]);
+			}
+			s+='</DIV>';
+			delete o.shown;
+			return s;
+		}
+
+	</SCRIPT>		
+</HEAD>
+<BODY>
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>createSectionButtons()</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar-container" width="100%">
+<TR><TD>
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%">
+<TR><TD class="sidebar-header">
+Links
+</TD></TR>
+<SCRIPT>
+document.write('<TR><TD>'+createButton({style:'button2',content:'Google',gonew:'http://www.google.com/'})+'</TD></TR>');
+</SCRIPT>
+</TABLE>
+
+</TD></TR>
+</TABLE>
+
+</TD><TD id="content">
+
+<H1>Was: Searching with Google</H1>
+<P>This no longer works.</P>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%">
+<TR><TD>
+
+<H2>Enter Search Terms</H2>
+<FORM onsubmit="start_search(document.forms['loader'].q.value);return false;" name="loader">
+<P><INPUT type="text" size="80" name="q" value=""></P>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Google Search',action:"start_search(document.forms['loader'].q.value)"}))</SCRIPT>
+</TD></TR></TABLE></P>
+</FORM>
+
+<DIV style="text-align:center">
+<TABLE width="90%" class="border" cellspacing=0 cellpadding=0 style="margin:auto">
+<TR><TD class="header">Result</TD></TR>
+<TR><TD id="result">
+<TABLE width="100%" cellspacing=0 cellpadding=0>
+<TR><TD class="border">&nbsp;</TD></TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</DIV>
+
+<H2>Details</H2>
+<P>Google could return it's search results in XML.
+These results were then parsed on the server, and a script would be generated containing the data. 
+This script would then be loaded by this page using a hidden IFrame.
+However, Google no longer permits this feature, so this doesn't work anymore.
+</P>
+
+</TD><TD id="note">
+
+<H3>Privacy Warning</H3>
+<P>Because the XML file is parsed on the server, I can see what your search terms in the usage statistics.</P>
+
+</TD></TR></TABLE>
+
+<SCRIPT>initButtons()</SCRIPT>
+<SCRIPT src="/tools/xmlload.js"></SCRIPT>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+</TD></TR></TABLE>
+</BODY>
+</HTML>

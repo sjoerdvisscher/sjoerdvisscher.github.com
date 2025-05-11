@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.2.0" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>Paul Thurrott&apos;s SuperSite for Windows</title>
+		<description></description>
+		<link>http://www.winsupersite.com/</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Sun, 06 Oct 2002 20:25:22 GMT</lastBuildDate>
+		<item>
+			<description>&lt;font face=&quot;Verdana&quot; color=&quot;#049CFC&quot;&gt;Latest Updates&lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font FACE=&quot;Verdana&quot; COLOR=&quot;#000000&quot; SIZE=&quot;1&quot;&gt;
+                        &lt;a href=&quot;http://www.winsupersite.com/reviews/winnetserver_rc1.asp&quot;&gt;&lt;IMG height=48 src=&quot;http://www.winsupersite.com/images/showcase/showcase_winnetserver_sm.gif&quot; width=64 align=left border=0&gt;&lt;/a&gt;&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;October 
+                        4&lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font size=&quot;2&quot; face=&quot;Verdana&quot;&gt;
+                        &lt;a href=&quot;http://www.winsupersite.com/reviews/wm9series.asp&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://www.winsupersite.com/images/showcase/showcase_wmp_sm.gif&quot; width=&quot;64&quot; height=&quot;48&quot; align=&quot;left&quot;&gt;&lt;/a&gt;&lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font size=&quot;1&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;September 
+                        27-October 4&lt;/b&gt;: &lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font size=&quot;1&quot; face=&quot;Verdana&quot;&gt;
+                        Check out  my massive
+                        &lt;a href=&quot;http://www.winsupersite.com/reviews/wm9series.asp&quot;&gt;Windows Media 9 Series                        
+                        review&lt;/a&gt;, which includes information about Windows 
+                        Media Player 9, Windows Media Encoder 9, Windows 
+                        Media 9 DRM, Windows Media Services 9, and much more. 
+                        The full review is now available, my longest write-up 
+                        yet!&lt;br&gt;
+                        &lt;br&gt;
+                        &lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font size=&quot;2&quot; face=&quot;Verdana&quot;&gt;
+                        &lt;a href=&quot;http://www.winsupersite.com/reviews/ms_broadband_networking.asp&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://www.winsupersite.com/images/showcase/showcase_networking_sm.gif&quot; width=&quot;64&quot; height=&quot;48&quot; align=&quot;left&quot;&gt;&lt;/a&gt;&lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font size=&quot;1&quot; face=&quot;Verdana&quot;&gt;September 
+                        19: &lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font face=&quot;Verdana&quot; size=&quot;1&quot;&gt;My review of
+                        &lt;a href=&quot;http://www.winsupersite.com/reviews/ms_broadband_networking.asp&quot;&gt;
+                        Microsoft&apos;s exciting&lt;span style=&quot;background-color: #FFFFFF&quot;&gt; 
+                        new line of Broadband Networking hardware&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;background-color: #FFFFFF&quot;&gt;, 
+                        which includes wireless and wired base stations, network 
+                        adapters, and full kits!&lt;/span&gt;&lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font face=&quot;Verdana&quot;&gt;Site Features&lt;/font&gt;</description>
+			</item>
+		<item>
+			<description>&lt;font face=&quot;Verdana&quot; color=&quot;#000000&quot; size=&quot;2&quot;&gt;&lt;br&gt;
+                        &lt;/font&gt;</description>
+			</item>
+		</channel>
+	</rss>

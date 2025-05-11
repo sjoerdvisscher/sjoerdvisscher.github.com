@@ -1,0 +1,12 @@
+<?
+include_once("../db.inc");
+
+function newPost($appkey, $blogid, $username, $password, $content, $publish) {
+	return $postid;
+}
+
+function editPost($appkey, $postid, $username, $password, $content, $publish) {
+	return true;
+}
+
+?>

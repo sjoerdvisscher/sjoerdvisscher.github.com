@@ -1,0 +1,443 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Create organizational charts</title>
+<!-- please remove this counter if you want to use this code -->
+<script type="text/javascript" src="http://statistics.q42.nl/counter/default.asp?id=w3future"></script>
+<script src="/w3f/w3f.js"></script>
+<style>
+@import "/w3f/w3f.css";
+.box, .boxHover, .boxChecked, .boxCheckedHover {
+  padding:0.5em 1em;
+  margin:0em;
+  cursor:default;
+  border:1px solid #000040;
+  background:#ECFFC5;
+  color:#000040;
+}
+.boxHover {
+  background:white;
+}
+.boxCheckedHover {
+  border-color: #4040A0;
+  color: #4040A0;
+  background:white;
+}
+.boxChecked {
+  background: #F8F8FC; 
+  border-color: #4040A0;
+  color: #4040A0;
+}
+.boxc {
+  padding:0em 0.3em;
+  text-align:center;
+}
+.boxc TABLE {
+  margin:auto;
+}
+.lineright {
+  border-right:1px solid #000040;
+  font-size:50%;
+}
+.leftabove {
+  border-right:1px solid #000040;
+  border-top:1px solid #000040;
+  font-size:50%;
+}
+.rightabove {
+  border-top:1px solid #000040;
+  font-size:50%;
+}
+.nolines {
+  font-size:50%;
+}
+TD#chart {
+  padding:1em;
+}
+DIV.message {
+  color:#4040A0;
+  font-weight:bold;
+  background-color:#F8F8FC;
+  border:1px solid #4040A0;
+  margin:1em 0em;
+  padding:0em 0.5em;
+}
+DIV.somespace {
+  padding:0.2em;
+  text-align:center;
+}
+DIV.somespace TABLE {
+  margin:auto;
+}
+</style>
+<script>
+var nr=1;
+var nodeBag={};
+var sel=0;var attach_sel=0;
+var selnode;
+
+function Node(data,childNodes) {
+  this.data=data;
+  this.id=nr++;
+  nodeBag[this.id]=this;
+  if (childNodes) {
+    this.first=childNodes[0];
+    for (var i=0;i<childNodes.length;i++) {
+      childNodes[i].prev=childNodes[i-1];
+      childNodes[i].next=childNodes[i+1];
+      childNodes[i].parent=this;
+    }
+  }
+}
+Node.prototype={
+render:function(finalver) {
+  var s='';var next='';var l=1;
+  if (this.first) {
+    l=0;var node=this.first;
+    while (node) {
+      next+='<TD valign="top">'+node.render(finalver)+'</td>';
+      node=node.next;l++;
+    }
+  }
+  s+='\n<table cellspacing="0" cellpadding="0" width="100%"><tr><td colspan='+l+'>';
+  s+='\n<table cellspacing="0" cellpadding="0" width="100%">';
+  if (this.parent) {
+    s+='\n<tr><td width="50%" class="'+(!this.prev?'lineright':'leftabove')+'">&nbsp;</td>';
+    s+='<td width="50%" class="'+(!this.next?'nolines':'rightabove')+'">&nbsp;</td></tr>';
+  }
+  s+='\n<tr><td colspan="2" class="boxc">\n<table cellspacing="0" cellpadding="0">';
+  s+='\n<tr><td class="'+(sel==this.id&&!finalver?'boxChecked':'box')+'"'
+  if (!finalver) s+=' onclick="unhover(this);choose('+this.id+');hover(this);" id="box'+this.id+'" onmouseover="hover(this)" onmouseout="unhover(this)"';
+  s+='"><nobr>';
+  if (finalver&&this.data.email) s+='<a href="mailto:'+this.data.email+'">';
+  s+=(this.data.name||'(no name)');
+  if (finalver&&this.data.email) s+='</a>';
+  s+='</nobr></td></tr></table>\n</td></tr>';
+  if (this.first) s+='\n<tr><td width="50%" class="lineright">&nbsp;</td><td width="50%"></td></tr>';
+  s+='</table></td></tr><tr>'+next+'</tr></table>';
+  return s;
+},
+getCode:function(indent) {
+  indent=indent||'';
+  var s='';
+  for (var p in this.data) s+=","+p+":'"+this.data[p]+"'";
+  var s="new Node({"+s.substr(1)+"}";  
+  if (this.first) {
+    var a='';
+    var node=this.first;
+    while (node) {
+      a+=',\n  '+indent+node.getCode(indent+'  ');
+      node=node.next;
+    }
+    s+=",["+a.substr(1)+"\n"+indent+"]";
+  }
+  s+=")";
+  return s;
+},
+detach:function() {
+  if (!this.parent) return;
+  if (this.prev) this.prev.next=this.next; else this.parent.first=this.next;
+  if (this.next) this.next.prev=this.prev;
+  delete this.parent;
+  delete this.next;
+  delete this.prev;
+},
+moveLeft:function() {
+  if (!this.prev) return;
+  var n0=this.prev.prev;
+  var n2=this.prev;
+  var n1=this;
+  var n3=this.next;
+  if (n0) n0.next=n1; else this.parent.first=n1;
+  n1.prev=n0;n1.next=n2;
+  n2.prev=n1;n2.next=n3;
+  if (n3) n3.prev=n2;
+},
+moveRight:function() {
+  if (!this.next) return;
+  var n0=this.prev;
+  var n2=this;
+  var n1=this.next;
+  var n3=this.next.next;
+  if (n0) n0.next=n1; else this.parent.first=n1;
+  n1.prev=n0;n1.next=n2;
+  n2.prev=n1;n2.next=n3;
+  if (n3) n3.prev=n2;
+},
+del:function() {
+  this.detach();
+  var node=this.first;
+  while (node) {
+    var nodenext=node.next;
+    node.detach();
+    node=nodenext;
+  }
+  delete nodeBag[sel];
+  unselect();
+},
+delBranch:function() {
+  this.detach();
+  var node=this.first;
+  while (node) {
+    node.delBranch();
+    node=node.next;
+  }
+  delete nodeBag[this.id];
+  unselect();
+},
+attach:function() {
+  var c=document.getElementById('chart');
+  c.innerHTML=c.innerHTML+'<div class="message">Select the target box</div>';
+  attach_sel=sel;
+},
+doAttach:function(s) {
+  attach_sel=0;
+  var par=nodeBag[s];
+  var node=par;
+  while (node) {
+    if (node==this) {
+      alert('ERROR: Attaching to this node would create a loop.');
+      return;
+    }
+    node=node.parent;
+  }
+  if (this.parent) this.detach();
+  this.parent=par;
+  if (!par.first) {
+    par.first=this;
+    return;
+  }
+  var node=par.first;
+  while (node.next) {node=node.next;}
+  this.prev=node;
+  node.next=this;
+},
+update:function() {
+  var f=document.forms[0];
+  for (var i=0;i<f.elements.length;i++)
+    this.data[f.elements[i].name]=f.elements[i].value;
+}
+
+} //end node prototype definition
+
+function choose(s) {
+  if (attach_sel) {selnode.doAttach(s);renderIt();return;}
+  if (sel) try{document.getElementById('box'+sel).className='box';}catch(e){unselect()}
+  if (sel!=s) {
+    sel=s;selnode=nodeBag[sel];
+    document.getElementById('box'+sel).className='boxChecked';
+    var f=document.forms[0];f.reset();
+    for (var p in selnode.data) f[p].value=selnode.data[p];
+    document.getElementById('props').style.display=document.getElementById('chartpart').style.display;
+  } else {
+    unselect();
+  }
+}
+
+function unselect() {
+  sel=0;selnode=false;document.forms[0].reset();
+  document.getElementById('props').style.display='none';
+}
+
+function parseIt() {
+  nr=1;nodeBag={};unselect();
+  try {
+    eval(document.forms[1].source.value);
+  } catch(e) {
+    alert('error: '+(e.message)+'\nthis is not valid syntax.');
+  }
+}
+
+function generate() {
+  var s='';
+  for (var i in nodeBag)
+    if (!nodeBag[i].parent) s+=nodeBag[i].getCode()+';\n';
+  document.forms[1].source.value=s;
+}
+
+function renderIt() {
+  var s='';var l="0;"
+  for (var i in nodeBag)
+    if (!nodeBag[i].parent) {
+      if (l) s+='<HR width="70%">';
+      s+=nodeBag[i].render();
+      l++;
+    }
+  document.getElementById('chart').innerHTML=s||'&nbsp;';
+}
+
+function getfinalHTML() {
+  var s='';var l=0;
+  for (var i in nodeBag)
+    if (!nodeBag[i].parent) {
+      if (l) s+='<hr width="70%" />';
+      s+=nodeBag[i].render(true);
+      l++;
+    }
+  document.forms[2].source.value=s;
+}
+
+function showfinalHTML() {
+  var s='<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Chart preview</title>';
+  s+='<style type="text/css" media="all">@import "orgcharts.css";';
+  s+='TD {font-family: Arial, sans-serif;font-size: 80%;}</style></head><body>';
+  s+=document.forms[2].source.value;
+  s+='</body></html>';
+  var w=window.open();
+  w.document.write(s);
+}
+
+function hover(el) {
+  el.oldclass=el.className;
+  el.className=el.className+'Hover';
+}
+
+function unhover(el) {
+  el.className=el.oldclass;
+}
+
+function addOne() {
+  new Node({name:''});
+}
+
+function loadExample() {
+  new Node({name:'Boss of Org',email:'boss@example.com'},[
+    new Node({name:'One Manager',email:'man1@example.com'},[
+      new Node({name:'B. Fast',email:'bfast@example.com'},[
+        new Node({name:'Bea Worker',email:'beaworker@example.com'}),
+        new Node({name:'D. Plebian',email:'dplebian@example.com'})
+      ])
+    ]),
+    new Node({name:'Manny Two',email:'man2@example.com'},[
+      new Node({name:'Slick Talkman',email:'stalkman@example.com'},[
+        new Node({name:'Patricia Guru',email:'pguru@example.com'}),
+        new Node({name:'Mark Time',email:'mtime@example.com'})
+      ]),
+      new Node({name:'D. Warbucks',email:'dwarbucks@example.com'}),
+      new Node({name:'Berry Smart',email:'bsmart@example.com'})
+    ])
+  ]);
+  renderIt();
+}
+
+</script>
+</head>
+<body onload="loadExample();">
+
+<table width="100%" height="100%" cellspacing="0" cellpadding="0">
+<tr><td id="header">
+<table cellspacing="0" cellpadding="0" style="margin-left:4px"><tr>
+<script>
+document.write('<td>'+createButton({style:'tab',content:'Weblog',go:'/weblog'})+'</td>');
+document.write('<td>&nbsp;</td><td>'+createButton({style:'tab',content:'Examples',go:'/html/examples.xml'})+'</td>');
+</script>
+</tr></table>
+</td></tr><tr><td id="body">
+
+    <script type="text/javascript">
+      google_ad_client = "pub-9281881402552436"; 
+      google_ad_width = 728; 
+      google_ad_height = 90; 
+      google_ad_format = "728x90_as"; 
+      google_color_border = "000033"; 
+      google_color_bg = "d5d5dd"; 
+      google_color_link = "000033"; 
+      google_color_url = "7f5f30"; 
+      google_color_text = "000033"; 
+      google_ad_channel = "9082005354";
+    </script>
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+<h1>Create organizational charts</h1>
+<p>This is some experimental code from 2001. Now (2004) this code has been used as a basis
+for <a href="http://www.xopus.com/demo/orgchart/demos/orgcharts/orgcharts.xsl">an xsl</a>
+that transforms an xml file containing the orgchart data. 
+<a href="http://www.xopus.com/">Xopus, the friendly (and coolest) XML editor</a>,
+is turned into an orgchart editor with this transformation. Being able to change the
+organisational data format, and the rendering by changing the XSL, Xopus is absolutely
+the most configurable orgchart editor. 
+<a href="http://www.xopus.com/demo/">Go take a look at the demo</a>.</p>
+
+<table width="100%" class="border"0 cellspacing="0" cellpadding="0" id="chartpart">
+<tr><td class="header">Chart</td></tr>
+<tr><td id="chart" class="border">&nbsp;</td></tr>
+<tr><td class="border">
+<div class="somespace">
+<table cellspacing="0" cellpadding="0"><tr>
+<script>
+document.write('<td>'+createButton({style:'button',content:'Add New Box',action:'addOne();renderIt();choose(nr-1);document.forms[0].name.focus()'})+'</td><td>&nbsp;&nbsp;&nbsp;</td>');
+document.write('<td>'+createButton({style:'button',content:'Detach',action:'if (selnode) selnode.detach();renderIt();'})+'</td>');
+document.write('<td>'+createButton({style:'button',content:'Attach',action:'if (selnode) selnode.attach();'})+'</td><td>&nbsp;&nbsp;&nbsp;</td>');
+document.write('<td>'+createButton({style:'button',content:'Move Left',action:'if (selnode) selnode.moveLeft();renderIt();'})+'</td>');
+document.write('<td>'+createButton({style:'button',content:'Move Right',action:'if (selnode) selnode.moveRight();renderIt();'})+'</td><td>&nbsp;&nbsp;&nbsp;</td>');
+document.write('<td>'+createButton({style:'button',content:'Delete',action:'if (selnode) selnode.del();renderIt();'})+'</td>');
+document.write('<td>'+createButton({style:'button',content:'Delete Branch',action:'if (selnode) selnode.delBranch();renderIt();'})+'</td>');
+</script>
+</tr></table>
+</div>
+</td></tr>
+</table>
+
+<form onsubmit="return false">
+<table class="border" cellspacing="0" cellpadding="0" style="display:none" id="props">
+<tr><td class="header" colspan="2">Box Properties</td></tr>
+<tr><th class="props">Name:</th><td class="border"><input class="props" size="30" type="text" name="name" value="" onblur="if (selnode) selnode.update();renderIt();" /></td></tr>
+<tr><th class="props">E-mail:</th><td class="border"><input class="props" size="30" type="text" name="email" value="" onblur="if (selnode) selnode.update();renderIt();" /></td></tr>
+</table>
+</form>
+
+<hr />
+
+<div id="showcodepart"><a href="Show" onclick="document.getElementById('codepart').style.display='block';document.getElementById('showcodepart').style.display='none';return false;">Show advanced features >>></a></div>
+<div style="display:none" id="codepart">
+<form onsubmit="return false">
+<table width="100%" class="border" cellspacing="0" cellpadding="0">
+<tr><td class="header">Code</td></tr>
+<tr><td class="border">
+<textarea name="source" cols="80" style="width:100%" rows="12" class="noborder">
+</textarea>
+</td></tr>
+<tr><td class="border">
+<div class="somespace">
+<table cellspacing="0" cellpadding="0"><tr>
+<script>
+document.write('<td>'+createButton({style:'button',content:'Create Code From Chart',action:'generate();'})+'</td>');
+document.write('<td>'+createButton({style:'button',content:'Create Chart From Code',action:'parseIt();renderIt();'})+'</td>');
+</script>
+</tr></table>
+</div>
+</td></tr>
+</table>
+</form>
+<form onsubmit="return false">
+<table width="100%" class="border" cellspacing="0" cellpadding="0">
+<tr><td class="header">HTML Code</td></tr>
+<tr><td class="border">
+<textarea name="source" cols="80" style="width:100%" rows="12" class="noborder"></textarea>
+</td></tr>
+<tr><td class="border">
+<div class="somespace">
+<table cellspacing="0" cellpadding="0"><tr>
+<script>
+document.write('<td>'+createButton({style:'button',content:'Get HTML Code',action:'getfinalHTML();showfinalHTML();'})+'</td>');
+</script>
+</tr></table>
+</div>
+</td></tr>
+<tr><td class="border">
+<div class="somespace">
+For correct rendering <a href="orgcharts.css">orgcharts.css</a> is also needed.
+</div>
+</td></tr>
+</table>
+</form>
+<a href="Show" onclick="document.getElementById('showcodepart').style.display='block';document.getElementById('codepart').style.display='none';return false;"><<< Hide advanced features</A>
+</div>
+
+</td></tr><tr><td id="footer">
+&copy; Copyright <script>document.write((new Date()).getFullYear())</script> <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="http://w3future.com">w3future.com</a>.
+2001/04/05
+</td></tr></table>
+
+<script>initButtons()</script>
+</body>
+</html>

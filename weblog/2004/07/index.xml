@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/07/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:30:05 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/07/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/07/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/07/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2004/07/28.xml">Wednesday, July 28, 2004</a></h>
+<a name="a279"></a>
+<section id="a279">
+<h id='implementingXhtml20'><a href="http://w3future.com/weblog/2004/07/28.xml#a279" class="weblogItemTitle">Implementing XHTML 2.0</a></h>
+<p>Well, I slept off most of my desire to blog about <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> 2.0, but here's a post anyway. The thing is, I don't think implementing elements using behaviors is really a good idea, although I feel bad saying it while the W3C is linking to my test implementation.</p>
+<p>The problem is that behaviors are just that: a description of the behavior of an element. Add a bit of style and you have a webpage that looks and feels like one. Great! Everybody seems to fall for it. But the browser has right at this point stopped being a browser, and is just a CSS and Javascript engine. The semantics are lost.</p>
+<p>The browser has no idea what it is doing, which results in great loss of usability and accessibility. If the browser does not know something is a link, you don't have a proper context menu, no configurable mouse clicks for new window / new tab. There's a <code>title</code> element, but the browser hasn't got a clue, and doesn't show it in the title bar of the window.</p>
+<p>Now there are some tricks to get the semantics back. In Mozilla the XBL bindings create XHTML 1.0 elements. That doesn't work in IE, because it doesn't support XHTML 1.0. And once you are in XML mode, there's no way to get IE in HTML mode again. Well, just one, and I'm using that all over this site: XSL. XSL is perfect for translating XHTML 2.0 into a format that browsers really <em>understand</em>: HTML 4.01. It's simple and boring, nobody ever linked to that.</p>
+<p>Serverside XSL is a nice solid solution, but when you are writing CSS an Javascript, you have to target the HTML 4.01 result. So let's keep looking for more options. One way in IE to get the HTML semantics is to never go to XML mode, and serve your XHTML 2.0 documents as <code>text/html</code>. With IE's own namespaces in HTML solution there are still a lot of possibilities.</p>
+<p>I think we can learn something from this for the future. With CSS style was separated from the markup. With Javascript and behaviors, the behavior was separated from the markup. The next step is to separate the semantics from the markup. <a href="http://www.w3.org/TR/hlink/">HLink</a> is an attempt to do that, although with limited scope. At least there is the beginning of the realisation that semantics tied to markup, as <a href="http://www.w3.org/TR/xlink/">XLink</a> does, is a suboptimal solution. <a href="http://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> (xml to rdf) is an option, but I'm not sure if we need to drag RDF into this.</p>
+<p>There is a very simple solution that I quite like: <a href="http://www.blooberry.com/indexdot/css/properties/extensions/operaextensions.htm">Opera's CSS extensions</a>. With a few extra CSS properties you can say to Opera: "This is a link" or "Replace this element with an image". It's so simple something like that might actually work. But <a href="http://www.w3.org/TR/2004/WD-css3-hyperlinks-20040224/#requirements">the CSS WG has decided not to pursue that route</a>. It's the old problem that CSS should only be style, while the syntax and the matching algorithms are actually useful for a lot of things. (I really liked the <a href="http://www.w3.org/TR/NOTE-AS">Action Sheets</a> too.)</p>
+<p>A last interesting note is that the recent issues with the Safari extensions and the WHAT WG would have been far less of a problem if semantics were not tied to markup. With the separation browsers can implement new functionality, and this functionality can then be tied at will to any markup. With experience at hand, it could later be standardised into a standard. This is already rather common with CSS and to certain extent the DOM.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2004/07/24.xml">Saturday, July 24, 2004</a></h>
+<a name="a278"></a>
+<section id="a278">
+<h id='muchOfXhtml20WorksAlready'><a href="http://w3future.com/weblog/2004/07/24.xml#a278" class="weblogItemTitle">Much of XHTML 2.0 works already</a></h>
+<p>A few days ago the W3C released <a href="http://www.w3.org/MarkUp/2004/xhtml-faq">the HTML and XHTML FAQ</a>. I skimmed over it and saw no interesting things. So that was that.</p>
+<p>Just now I saw a dramatic increase of visitors to this site. I was a bit surprised because there hasn't been any news on my site lately, and I had seen no new interesting referrers. Well, it turns out that the XHTML FAQ links to <a href="http://w3future.com/weblog/gems/xhtml2.xml">my xhtml2 implementation</a>!</p>
+<p>Now that I'm getting a lot of visitors who are apparently interested, I feel the urge to write a bit more about that implementation, and my current use of XHTML2. But first I'm going to get some sleep...</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/07/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

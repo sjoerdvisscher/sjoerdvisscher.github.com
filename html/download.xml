@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/html/download.txt">
+<head>
+<title>Downloads</title>
+</head>
+<body>
+<section id="content">
+	<h>Downloads</h>
+	<p>Pages on w3future.com where you can download something</p>
+	<section id="note">
+		<h>Just use it!</h><p>Unless specified otherwise, these downloads can be used freely, but please mail me if you create something cool with these downloads.</p><h>Warning</h><p>I can't guaranty this code will work, or that it is easy to use.</p><h>Last Update</h>
+		<p>10/16/2005; 1:22:32 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/html/download.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/html/download.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/html/download.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+<h>Javascript Code</h>
+<section>
+<h href="/html/beyondJS/">Beyond js</h>
+<p>Beyond js is a Javascript library that lets you write Javascript unlike anything you've ever written. Your code will never be the same again. It contains both useful, functional, tricky and freakish extentions and additions to Javascript. It can make your code more readable and less debugable, and even the other way around. <a href="/html/beyondJS">Go there.</a></p>
+</section>
+</section>
+<section>
+<h>Javascript+PHP Code</h>
+<p>This is mostly browser code, but it uses some serverside PHP code.</p>
+<section>
+<h href="/tools/opmlloader.zip">OPML Renderer</h>
+<p>This package contains all the code to build a DHTML OPML loader/renderer. XML and RSS files are shown in outliner format too. It needs to be installed on a PHP server. <a href="/tools/opmlloader.zip">Download</a> or <a href="/html/opmlloader.html">Demo</a></p>
+</section>
+</section>
+<section>
+<h>Radio Userland Code</h>
+<section><h href="/weblog/gems/navigationLinks.zip">Navigation Links</h>
+<p>A package of 4 simple macros (put the files in the Macros folder) to create links to the previous and next archive pages.</p>
+<ul><li><code>navigationLinks()</code> creates <code>&lt;link></code> elements for the Top, Previous and Next buttons in the Site Navigation Bar of Mozilla.</li>
+<li><code>prevDayLink(preHtml, postHtml)</code> and <code>nextDayLink(preHtml, postHtml)</code> create the links to the previous and next archive pages, when they exist.</li>
+<li><code>permalinkUrl(adrPost)</code> returns the permalink Url for a post.</li></ul>
+<p>If you need more information, read the <a href="http://www.dixiblog.com/stories/2002/08/01/previousNextLinksMinitutorial.html">mini-tutorial</a> provided by <a href="http://www.dixiblog.com/">dixiblog</a>.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/html/download.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

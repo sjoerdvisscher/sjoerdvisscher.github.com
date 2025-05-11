@@ -1,0 +1,153 @@
+<HTML>
+<BODY>
+<SCRIPT>
+function serialize(value) {
+  var s='';
+  switch (value.constructor) {
+    case Object:
+      for (var i in value) s+='\n'+i+serialize(value[i]);
+      return '%['+s+']';
+    case Array:
+      for (var i=0;i<value.length;i++) s+=serialize(value[i]);
+      return '@['+s+']';
+    case Pointer:
+      return '*['+value.path+']';
+    default: 
+      return '['+value+']';
+  }
+}
+
+function YAMLDoc(source) {
+	this.source=source;
+	this.setCursor(0);
+	if (!this.more) {alert('Bad format');throw '';}
+	this.value=this.parseValue();
+}
+YAMLDoc.prototype={
+	setCursor:function(c) {
+		this.cursor=c;
+		this.lb=this.source.indexOf('[',this.cursor);
+		if (this.lb==-1) this.lb=this.source.length+1;
+		this.rb=this.source.indexOf(']',this.cursor);
+		if (this.rb==-1) this.rb=this.source.length+1;
+		this.more=(this.lb<this.rb);
+	},
+	parseValue:function() {
+		var t=this.source.substr(this.cursor,this.lb-this.cursor);
+		t=t.replace(/\s/g,'');
+		var v;
+		switch (t) {
+			case '': // scalar
+				v=this.source.substr(this.lb+1,this.rb-this.lb-1);
+				break;
+			case '%': // map
+				this.setCursor(this.lb+1);
+				v=this.parseMap();
+				break;
+			case '@': // list
+				this.setCursor(this.lb+1);
+				v=this.parseList();
+				break;
+			case '*': // pointer
+				v=new Pointer(this.source.substr(this.lb+1,this.rb-this.lb-1));
+				break;
+			default: alert('Unknown type indicator: '+t);throw '';
+		}
+		this.setCursor(this.rb+1);
+		return v;
+	},
+	parseList:function() {
+		var a=[];
+		while (this.more) a[a.length]=this.parseValue();
+		return a;
+	},
+	parseMap:function() {
+		var o={};
+		while (this.more) {
+			var k=this.source.substr(this.cursor,this.lb-this.cursor);
+			key=k.replace(/\s*([^\s\@\%\*\[]+).*/,'$1');
+			this.setCursor(this.cursor+k.indexOf(key)+key.length);
+			o[key]=this.parseValue();
+		}
+		return o;
+	}
+}
+
+function Pointer(path) {
+	this.path=path;
+}
+</SCRIPT>
+<FORM name="a" onsubmit="this.output.value=serialize(new YAMLDoc(this.input.value).value);return false">
+<TEXTAREA name="input" rows=15 style="width:100%">
+@[
+
+%[
+  invoice            [00034843]
+  date               [12-JAN-2001]
+  buyer %[
+      given-name     [Chris]
+      family-name    [Dumars]
+      address %[
+          line1      [458 Wittigen's Way]
+          line2      [Suite #292]
+          city       [Royal Oak]
+          state      [MI]
+          postal     [48046]
+      ]
+  ]
+  product @[
+      %[
+          id         [BL394D]
+          desc       [Grade A, Leather Hide Basketball]
+          price      [$450.00]
+          quantity   [4]
+      ]
+      %[
+          id         [BL4438H]
+          desc       [Super Hoop (tm)]
+          price      [$2,392.00]
+          quantity   [1]
+      ]
+  ]
+  comments[
+      Mr. Dumars is frequently gone in the morning
+      so it is best advised to try things in late
+      afternoon. \nIf Joe isn't around, try his house\
+      keeper, Nancy Billsmer @ (734) 338-4338.
+  ]
+  delivery%[
+      method         [UZS Express Overnight]
+      price          [$45.50]
+  ]
+  tax                [$0.00]
+  total              [$4237.50]
+]
+
+%[
+   foo %[
+      ham  [Yumm!]
+      eggs [Over Easy]
+      fish @[
+          [One Fish]
+          [Two Fish]
+          [Red Fish]
+          [Blue Fish]
+      ]
+   ]
+   ham    *[/foo/ham]
+   fish   *[/foo/fish]
+   red    *[/fish/2]
+] 
+
+%[foo%[ham[Yumm!]eggs[Over Easy]fish@[[One Fish][Two Fish][Red Fish][Blue Fish]]]ham*[/foo/ham]fish*[/foo/fish]red*[/fish/2]]
+
+]
+</TEXTAREA>
+<INPUT type=submit value="parse!">
+<TEXTAREA name="output" rows=15 style="width:100%">
+</TEXTAREA>
+</FORM>
+<HR>
+<A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A> - <A href="http://w3future.com">w3future.com</A>
+</BODY>
+</HTML>

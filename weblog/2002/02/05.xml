@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/02/05.xml">
+<head>
+<title>Tuesday, February 05, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:20:28 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/02/05.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/02/05.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/02/05.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/02/04.xml#a54' title='Monday, February 04, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/02/05.xml">Tuesday, February 05, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/02/06.txt#a62' title='Wednesday, February 06, 2002'>&#160;&gt;</a></h>
+<a name="a61"></a>
+<section id="a61">
+<h ></h>
+I've put the notification code in its own thread and added it to the postItem callbacks. From the 29 notification subscriptions I've received, only 7 notification actually succeed. I suppose must people aren't running their computers 24 hours a day. Therefore I've shortened the XML-RPC timeout to 5 seconds. This post is to test if it all really works.
+</section><a name="a60"></a>
+<section id="a60">
+<h ></h>
+I've added a download section to my site, which is now pointing to Beyond JS only. Beyond has a new version too, by the way.
+</section><a name="a59"></a>
+<section id="a59">
+<h ></h>
+OK, putting the notification code in the template wasn't very smart. It caused Radio to first notify everyone, before actually publishing the changes. But I'm sure I can hook it up somewhere else.
+</section><a name="a58"></a>
+<section id="a58">
+<h ></h>
+Over night the number of notification subscriptions increased to 24! This is fun! It's the first true peer-to-peer thing I've done.
+</section><a name="a57"></a>
+<section id="a57">
+<h ></h>
+Ok, the IP-number is available in the "client" variable. I've put a notifyClients macro into the homepage template, so 6 people will already get notified of this update. If everything works that is.
+</section><a name="a56"></a>
+<section id="a56">
+<h ></h>
+I've received the first two rssPleaseNotify calls, so I suppose that works. But I can't send notifications yet, because I don't know the IP numbers of the callers.
+</section><a name="a55"></a>
+<section id="a55">
+<h ></h>
+I've changed my rss.xml so that it contains a cloud element, that points to my homecomputer. So if you've subscribed to my rss file with Radio 8, it should call the radio.rssPleaseNotify xml-rpc call I've implemented at home. It's hard to test, so let's just wait and see what happens.
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/02/05.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

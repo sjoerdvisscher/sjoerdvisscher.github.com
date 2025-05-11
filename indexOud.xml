@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/">
+<head>
+<title>Welcome to w3future.com</title>
+</head>
+<body>
+<section id="content">
+	<h>Welcome to w3future.com</h>
+	<p>Sjoerd Visscher's website</p>
+	<div id="home">
+		<xi:include href="http://w3future.com/w3f/sections.xml" />
+	</div>
+</section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"></section>
+</body>
+</html>

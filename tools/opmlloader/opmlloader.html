@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - OPML Loader</TITLE>
+	<STYLE>
+		.details {
+			display: none;
+		}
+	</STYLE>
+	<STYLE>
+		.indent {
+			border-left:1px dotted #E0E0F0;
+			padding-left:0.6em;
+			margin-left:0.6em;
+		}
+		TABLE.border {
+			margin:0em;
+		}
+		TH.props {
+			font-size: 7pt;
+		}
+		INPUT.props {
+			font-family: Tahoma, Helvetica, sans-serif;
+			font-size: 7pt;
+		}
+		.openclose {
+			width:1.2em;
+			text-align:center;
+			cursor:pointer;
+			cursor:hand;
+			color:#708020;
+		}
+		#OPMLDiv {
+			margin-left: 2em;
+		}
+		.text {
+			font-weight:bold;
+		}
+	</STYLE>
+	<SCRIPT>
+	
+		function w3fNode(o) {
+			if (o) this.set(o);
+		};
+		w3fNode.prototype={
+			set:function(o) {
+				for (var i in o) this[i]=o[i];
+			},
+			expand:function(redraw) {
+				var target=document.getElementById('childrenOf'+this.id);
+				if (!target.innerHTML||redraw) {
+					var c='';
+					for (var i=0;i<this.childNodes.length;i++) {
+						c+='\r<TR><TD>'+this.childNodes[i].render()+'</TD></TR>';
+					}
+					c='<TABLE cellspacing=0 cellpadding=0>'+c+'</TABLE>';
+					target.innerHTML=c;
+					if (this.loadUrl) window.setTimeout('nc.bag["'+this.id+'"].insertFile()',1);
+					this.loadUrl=false;
+				}
+				target.style.display='';
+				document.getElementById('openclose'+this.id).innerHTML='<SPAN class="openclose" onclick="nc.bag[\''+this.id+'\'].collapse()">v</SPAN>';
+			},
+			collapse:function() {
+				var target=document.getElementById('childrenOf'+this.id);
+				target.style.display='none';
+				document.getElementById('openclose'+this.id).innerHTML='<SPAN class="openclose" onclick="nc.bag[\''+this.id+'\'].expand()">&gt;</SPAN>';
+			},
+			insertFile:function() {
+				this.loadXML(this.props.url||this.props.xmlUrl);
+			},
+			loadXML:function(url) {
+				var doc=new w3f_XMLDocument();
+				doc.rootNode=this;
+				doc.onload=function() {
+					if (this.documentElement.nodeName=='!error') {
+						alert('Error parsing '+this.url+' at line '+this.documentElement.attributes.line+': '+this.documentElement.attributes.code);
+					}
+					if (this.documentElement.nodeName.toLowerCase()=='opml') 
+						this.rootNode.parseOPML(this);
+					else
+						this.rootNode.parseXMLFragment(this.documentElement);
+					this.rootNode.expand(true);
+				}
+				doc.load(url);
+			},
+			parseOPML:function(doc) {
+				var root=doc.documentElement;
+				this.parseOPMLFragment(root.childNodes.item(1));
+				var head=root.childNodes.item(0);
+				var nl=head.childNodes;
+				for (var i=0;i<nl.length;i++) {
+					var n=nl.item(i);
+					if (n.nodeType!=1) continue; // only elements
+					this.props[n.nodeName]=n.text;
+				}
+			},
+			parseOPMLFragment:function(fragment) {
+				this.childNodes=[];
+				this.props={};
+				var attrs=fragment.attributes;
+				for (var i=0;i<attrs.length;i++) {
+					var a=attrs[i];
+					this.props[a.nodeName]=a.nodeValue;
+				}
+				this.text=fixText(''+this.props.text);
+				var l=0;
+				var nl=fragment.childNodes;
+				for (var i=0;i<nl.length;i++) {
+					var n=nl.item(i);
+					if (n.nodeType!=1) continue; // only elements
+					var c=this.childNodes[l++]=nc.createNode();
+					c.parseOPMLFragment(n);
+				}
+			},
+			parseXMLFragment:function(fragment) {
+				this.set({childNodes:[],text:'&lt;'+fragment.nodeName});
+				var attrs=fragment.attributes;
+				for (var i=0;i<attrs.length;i++) {
+					var a=attrs[i];
+					this.text+=' '+a.nodeName+'="'+a.nodeValue+'"';
+				}
+				this.text+='&gt;';
+				var l=0;
+				var nl=fragment.childNodes;
+				for (var i=0;i<nl.length;i++) {
+					var n=nl.item(i);
+					var c=this.childNodes[l++]=nc.createNode();
+					switch (n.nodeType) {
+						case 1:/*element*/c.parseXMLFragment(n);break;
+						case 3:/*text*/c.set({text:n.nodeValue});break;
+						default:c.set({text:'NodeType: '+n.nodeType});break;
+					}
+				}
+			},
+			render:function() {
+				var s='';
+				if (this.props) {
+					switch (this.props.type) {
+						case 'link':
+					 	case 'file':
+							var url=this.props.url;var dotPos=url.lastIndexOf('.');
+							var ext=url.substr(dotPos).toLowerCase();
+							if (ext=='.opml'||ext=='.xml') {
+								this.childNodes=[nc.createNode({text:'Loading...'})];
+								this.loadUrl=true;
+								s=this.text+' (<A href="'+url+'">link</A>)';
+							} else s='<A href="'+url+'">'+this.text+'</A>';
+							break;
+						case 'folder':
+							s=this.text;
+							break;
+						case 'rss':
+							this.childNodes=[nc.createNode({text:'Loading...'})];
+							this.loadUrl=true;
+							s=this.text+' (<A href="'+this.props.htmlUrl+'">html</A>,<A href="'+this.props.xmlUrl+'">xml</A>)';
+							break;
+						case 'opmlroot':
+							this.childNodes=[nc.createNode({text:'Loading...'})];
+							this.loadUrl=true;
+							s=this.props.url;
+							break;
+						default:
+							if (this.text) s=this.text;
+							break;
+					}
+				} else if (this.text) s=this.text;
+				var a='';
+				if (this.props) for (var p in this.props) {
+					if (p=='text') continue;
+					a+='<TR><TH class="props">'+p+'</TH><TD class="border"><INPUT class="props" readonly value="'+this.props[p]+'" size="60"></TD></TR>';
+				}
+				if (a) {
+					s+='<SPAN class="details"><DIV class="indent"><TABLE class="border" cellspacing=0 cellpadding=0>'+a+'</TABLE></DIV></SPAN>';
+				}
+				if (this.childNodes&&this.childNodes.length) {
+					s='<SPAN id="openclose'+this.id+'"><SPAN class="openclose" onclick="nc.bag[\''+this.id+'\'].expand()">&gt;</SPAN></SPAN> '+s;
+					s+='<DIV id="childrenOf'+this.id+'" style="display:none" class="indent"></DIV>';
+				} else s='<SPAN class="text">'+s+'</SPAN>';
+				return s;
+			}
+		}
+
+		function NodeContainer() {};
+		NodeContainer.prototype={
+			bag:{},
+			counter:0,
+			createNode:function(o) {
+				var n=new w3fNode(o);
+				n.id=this.counter++;
+				this.bag[n.id]=n;
+				return n;
+			}
+		}
+		var nc=new NodeContainer();
+	
+		function loadXML(url) {
+			var doc=nc.createNode();
+			doc.props={url:url,type:'opmlroot'};
+			document.getElementById('OPMLDiv').innerHTML=doc.render();
+			doc.expand(true);
+		}
+
+		function fixText(s) {
+			return s.replace(/</g,'&lt;');
+		}
+		
+		function err(e,s) {
+		  for (var i in e) {
+		    s+='\n'+i+': '+e[i];
+		  }
+		  alert(s);
+		}
+
+	</SCRIPT>		
+</HEAD>
+<BODY>
+
+	<H1>Loading OPML documents</H1>
+	<P>Using server side XML parsing</P>
+
+	<H2>Enter URL of OPML document</H2>
+	<FORM onsubmit="return false;" name="loader">
+		<P>
+			<INPUT type="text" size="80" name="url" value="">
+			<BUTTON onclick="loadXML(document.forms['loader'].url.value)"}))">Load</BUTTON>
+		</P>
+		<P>
+			<INPUT type="checkbox" name="showdetails" id="showdetails" onclick="this.blur()" onchange="var s=document.styleSheets[0].disabled=this.checked;">
+			<LABEL for="showdetails">Show w3fNode Properties</LABEL>
+		</P>
+	</FORM>
+
+	<H2>Result</H2>
+	<DIV id="OPMLDiv"></DIV>
+
+	<SCRIPT src="xmlload.js"></SCRIPT>
+
+</BODY>
+</HTML>

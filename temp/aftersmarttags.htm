@@ -1,0 +1,21 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" 
+xmlns:wea="urn:schemas-microsoft-com:office:smarttags">
+    <head>
+        <o:SmartTagType 
+            name="weather" 
+            namespaceuri="urn:schemas-microsoft-com:office:smarttags">
+        </o:SmartTagType>
+        <object 
+            classid ="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui>
+        </object>
+        <style>
+            wea\:*{behavior:url(#ieooui)}
+        </style>
+    </head>
+    <body>
+        <p>Get weather reports for the following ZIP codes:
+             <wea:weather>98052</wea:weather>, <wea:weather>02134</wea:weather>.
+        </p>
+    </body>
+</html>
+

@@ -1,0 +1,7 @@
+<?
+
+function tryService($nr) {
+	print "Received: $nr";
+}
+
+?>

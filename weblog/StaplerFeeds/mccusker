@@ -1,0 +1,2258 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.0.3" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>David McCusker</title>
+		<description></description>
+		<link>http://www.treedragon.com/ged/map/ti/new.htm</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Sat, 22 Jun 2002 14:22:50 GMT</lastBuildDate>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#21jun02</link>
+			<title>21jun02 Friday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;The tree specialist made a painfully high bid for removing the bad tree.
+
+&lt;br&gt;But I stood in the back yard and looked at it, and could see the point.
+
+&lt;br&gt;It&apos;s located in about the worst possible position for such a problem.
+
+&lt;br&gt;It&apos;s right next to the corner where fences in four different yards meet.
+
+&lt;br&gt;But it&apos;s in my yard, so it&apos;s my tree.  So mine alone is the cost to bear.
+
+&lt;p&gt;It must be removed without damaging fences, or working in the yards.
+
+&lt;br&gt;But it&apos;s tucked right against them, and up on a raised landscape feature.
+
+&lt;br&gt;The bid was $1200 to have it removed, as in cut fully down to the grade.
+
+&lt;br&gt;But I can&apos;t see getting a better bid by more than a few hundred dollars.
+
+&lt;br&gt;It&apos;s annoying to pay out the price of a computer for a major fallen limb.
+
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#21jun02-pruning</link>
+			<title>expensive pruning</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;I was hoping to respond to both
+&lt;a href=&quot;http://radio.weblogs.com/0100812/&quot;&gt;Patrick Logan&lt;/a&gt;
+and to
+&lt;a href=&quot;http://radio.weblogs.com/0100887/&quot;&gt;Jon Udell&lt;/a&gt; today.
+
+&lt;br&gt;But I only have time to start this cursory setup for more discussion later.
+
+&lt;br&gt;Jon Udell 
+&lt;a href=&quot;http://radio.weblogs.com/0100887/2002/06/19.html#a312&quot;&gt;cites the same&lt;/a&gt;
+section about 
+&lt;a href=&quot;http://radio.weblogs.com/0100812/2002/06/17.html#a457&quot;&gt;shared 
+nothing message passing&lt;/a&gt;.
+
+&lt;br&gt;Udell says, 
+&quot;I might have entitled
+ it &apos;Multithreading Considered Harmful&apos;.&quot;
+ 
+&lt;br&gt;This is strongly related to async events and my Mithril messaging plans.
+
+&lt;blockquote&gt;Patrick Logan: 
+
+The guys who invented shared-memory
+multi-threading in the late 60s, early 70s
+discovered these problems early on. Which is
+why they went on to develop higher-level,
+shared-nothing mechanisms in the mid/late 70s.
+&lt;p&gt;
+Why Java and subsequently dotNET adopted this
+troublesome 1960s technology at the core of
+their architecture is curious if the intent is an
+efficient but widely applicable language for
+developing concurrent Internet applications.
+&lt;p&gt;
+It&apos;s like managing your own memory allocation,
+only worse.
+&lt;/blockquote&gt;
+
+This is another case where I concur with Patrick Logan&apos;s perspective.
+
+&lt;br&gt;Async event passing is a form of &quot;shared nothing&quot; messaging style.
+
+&lt;br&gt;When you receive an event, the data belongs to you and isn&apos;t shared.
+
+&lt;br&gt;In my Mithril memory design, cities will use single threaded gc space.
+
+&lt;br&gt;This is another &quot;shared nothing&quot; design to keep any threads far apart.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#21jun02-shared-nothing</link>
+			<title>shared nothing</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;These links to
+&lt;a href=&quot;http://www.advogato.org/person/raph/&quot;&gt;Raph Levien&lt;/a&gt;
+are the same
+&lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=219&quot;&gt;diary
+entry&lt;/a&gt; as the next ones.
+
+&lt;br&gt;I was going to address this question entirely in my next blog section.
+
+&lt;br&gt;But it would be a shame to pass completely on open ended questions.
+
+&lt;br&gt;They&apos;re such good starting places.  We can come back to it repeatedly.
+
+&lt;br&gt;An answer anticipating the next section is it depends on dependencies.
+
+&lt;blockquote&gt;Raph Levien: 
+
+Is it possible to use a much simpler technique to accomplish 
+nearly the same results, nearly as well? 
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+
+Which results do we want to accomplish nearly as well? If the goal is to
+implement async event systems, then yes, this can be done in most systems
+without the cost being too painful.  This is partly because async events
+are so much better that it&apos;s worth it no matter how horrible the
+host system is in typical cases.  But it can be a major problem when
+the host runtime is already quite complex.
+&lt;p&gt;
+I was looking forward to doing async events in Mithril where they&apos;d be 
+a trivial problem when the microthread scheduling algorithm considers them
+primitive.  In that context I can also arrange large numbers of
+compound savings by leveraging common avoidances of inefficiency.
+For example, centralized tokenizing of metainfo symbols would improve
+both time and space behavior in low complexity.
+&lt;p&gt;
+However, what if you meant accomplishing what a Mithril city does instead?
+There isn&apos;t a simpler technique for getting similar results at all,
+let alone nearly as well, as far as I can see.  Generally the semantics
+of space allocation in a system must be primitive or it&apos;s a no go if one
+wishes to compete with &quot;native&quot; memory efficiency.  Among other things,
+I really intend to see very small gc latencies.
+&lt;p&gt;
+Regarding the problem of implementing async event systems -- I don&apos;t
+find this intrinsically interesting.  I wouldn&apos;t invest a substantial
+amount of time doing what amounts to make-work trying to subvert stupid
+runtimes like the one in Java.  I only consider async events a useful
+feature to have on the way to somewhere else, if I can have them for
+less than a man-month of labor.  And I will in Mithril.
+&lt;/blockquote&gt;
+
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#21jun02-complexity</link>
+			<title>complexity</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;&lt;a href=&quot;http://www.advogato.org/person/raph/&quot;&gt;Raph Levien&lt;/a&gt;
+wrote an interesting new essay about
+&lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=219&quot;&gt;tech
+food chains&lt;/a&gt;.
+
+&lt;br&gt;Despite my extended quotes, I have omitted parts wholly unmarked.
+
+&lt;br&gt;So you&apos;ll need to read the original for all of Raph&apos;s original context.
+
+&lt;br&gt;I just pulled out parts I wanted to address in more detail than others.
+
+&lt;blockquote&gt;Raph Levien: 
+
+Like the food chain, the software project network has one-way links. Mozilla
+depends on C++, but C++ does not depend on Mozilla. (Of course, as in real
+food chains, all kinds of complex interactions can occur once you start looking
+at second-order effects). I think it&apos;s worth looking at the properties of these
+links in more detail. What follows is a rough cut. I&apos;m sure I didn&apos;t think of
+everything. 
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;(Why do I always save the hardest parts to answer at 2:30 in
+the morning?  The ideas I had earlier begin to lose the illustrations I
+had imagined adding to my points.  And I forget some points outright.)
+&lt;p&gt;
+I find the view of software dependency graphs especially interesting.
+This view strongly informs my grasp of runtime systems and design factors
+for choosing development plans.  I&apos;m glad you wrote this essay because it
+makes me think I can write better descriptions of my runtime ideas in
+the future with this perpective as the primary backbone.  The whole
+point in many cases is about dependencies.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+In an &quot;A depends on B&quot; relationship, B is always more focussed on
+performance, robustness, and stability than A. If B is lacking in any of these,
+then the combined A+B system is also. (Fault tolerance would seem to be the
+exception that proves the rule.) At the lower levels of the food chain, you see
+an almost fanatical attention to these issues.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Another exception related to performance occurs with caching.
+A reverse proxy server depends on an origin web server for content, and
+yet can serve that content faster than the origin web site when either of
+two things occurs.  First, the proxy might be on a better network
+than the origin web site.  And second, the proxy might have content
+cached most directly in the form for serving.
+&lt;p&gt;
+However, for the most part I entirely agree with your perspective.
+Normally when A depends on B, things cannot be better than the minimum
+cost that B imposes on the runtime in terms of space
+footprint and time latency.  In this sense, runtime work seldom
+composes very well, because adding new A layers on native B layers
+will run at least slightly slower than B at best.  What if B sucks?
+&lt;p&gt;
+Generally speaking, I work on software near the very low levels
+of the food chain, and I&apos;m fanatical about performance, robustness,
+and stability.  I find existing low level platforms almost 
+universally inadequate on all three counts, so I have very little
+interest in depending on them, since it subverts my work from the start.
+I can hardly get anywhere working with tech higher than basic C or C++.
+&lt;p&gt;
+Even then, I need to cut away some parts of C and C++ normally
+bundled together with them in the form of libraries, because the
+standard libraries already incur high costs in the form of
+synchronous APIs and winding the C stack in a way that necessitates
+the use of low level native multithreading for concurrency.
+Continuations and trampoline dispatch get me around the C stack.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+
+The higher levels of the food chain start to be concerned with user needs,
+which are famously complex. If you had to meet these needs and optimize
+performance to the bone, the problem becomes intractable. That&apos;s why the food
+chain exists. Filesystems are a lot closer to user needs than raw disk. Thus,
+applications rely on the filesystem to map performance and robustness
+reasonably well, and save a huge amount of complexity. Once this relationship
+is established, then quantitative work at the lower level (improving caching
+algorithms, say) has a positive effect on the entire system. Note, however, the
+downward pressure when the next level up is a database. 
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;My approach to improving high level systems is through fixing
+and optimizing low level elements on which they depend.  This is 
+typically what I
+do in my professional work.  I cut some middlemen out of the
+loop in crucial places within the low level layer cake, in order to
+effect dramatic improvements in runtime costs and algorithmic speeds.
+If we work together, this is what I&apos;d plan to do for you as well.
+&lt;p&gt;
+My Mithril designs are basically the culmination of all my laundry
+lists for cutting all the middlemen out of all the places in which
+I hated finding them in runtimes I used in the past.  (I understand
+perfectly how this pisses off folks who want me to use their
+middleware instead of cooking my own shortcuts that make them unnecessary.)
+However, I work with folks on existing systems as they currently are.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+
+Just as the food chain is critical for the health of an ecosystem, I believe the
+software project network is critical for the health of a software community. We
+are blessed with many good things at the lower levels: the Linux kernel, gcc,
+etc. They&apos;re not perfect, of course, but they don&apos;t prevent you from doing
+good work at the higher levels either. 
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;I&apos;m not very community oriented.  This is my telling on myself
+with regard to respecting the well being of the software project ecosystem
+when it comes to supporting the current food chain.  I&apos;m not interesting
+in protecting the ecological niches of projects for the good of the many
+when I think I have more efficient substitutes I intend to pursue.
+I don&apos;t expect encouragement here.
+&lt;p&gt;
+However, I plan to work with projects based on the current offerings in
+the software ecosystem.  But not at a higher rate than 50 percent of my
+personal disposable time bandwidth.  Working in clunky runtimes is still
+a way to learn and work out designs in a rough cut fashion, since they
+can always be rewritten much faster a second time in a better runtime.
+I don&apos;t need perfection in my worse-is-better trial runs.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+Now I&apos;ll make some people mad. In language communities, these relationships
+are especially important. Everything written in a language depends critically on
+the performance and stability of that languages&apos;s implementation. Thus, there is
+an important role for a project to do hardcore quantitative performance work,
+combined with a process that ensures stability. If that role isn&apos;t strongly filled,
+I think the language community is in trouble.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;I&apos;m entirely sympathetic toward your criticism.  I like languages
+and I&apos;d enjoy nothing more than helping to optimize the runtimes used.
+But not at the cost of wasting my time with politics and other forms
+of passive aggressive resistance.
+&lt;p&gt;
+But I don&apos;t even want to use languages unless I can improve their 
+performance and tune their runtimes.  All languages that allow me only
+a role as layman and consumer are not attractive, and are only my list
+of things to be avoided.  I even plan to dump C and C++ in the long
+run, when they are the last middlemen causing the most annoyance.
+It&apos;s important for languages to be tunable.
+&lt;p&gt;
+One very big factor in prevent langauge hackind and optimization is
+complexity.  The more features a language has, the more impossible the
+task of resisting the inertia of where the current runtime is dragging
+the practitioner and maintainers.  Simplicity is a form of agility,
+with potentially compounding effects below some magic threshold.
+&lt;/blockquote&gt;
+                       
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#21jun02-food-chain</link>
+			<title>food chain</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#20jun02</link>
+			<title>20jun02 Thursday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Yesterday I posted a link to my local copy of Angela Wong&apos;s
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/../fg/angelawong.DOC&quot;&gt;resume&lt;/a&gt;.
+
+&lt;br&gt;That&apos;s a Word document.  I never use that. I&apos;ll try plain text conversion.
+
+&lt;br&gt;She&apos;s a young woman in her 20&apos;s.  She&apos;s clever and seems good at Java.
+
+&lt;br&gt;(I&apos;m not experienced in Java myself, but all the other signs look good.)
+
+&lt;br&gt;Angela&apos;s unassuming, but strikingly clever at recognizing patterns fast.
+
+&lt;p&gt;She underestimates how intelligent she is because it seems so natural.
+
+&lt;br&gt;Angela has neither an angry nor a haughty bone in her body.  She&apos;s nice.
+
+&lt;br&gt;But she doesn&apos;t sell herself very well.  She fits into things too quietly.
+
+&lt;br&gt;However, I expect she can do complex work correctly the first time.
+
+&lt;br&gt;Angela seems to operate at a more application than a systems level.
+
+&lt;p&gt;However, she grasps and reasons about the systems level in her work.
+
+&lt;br&gt;It&apos;s just that systems work doesn&apos;t seem to fire her passions as much.
+
+&lt;br&gt;Her experience level is good CS degree and several years related work.
+
+&lt;br&gt;I think of her as still junior, but I don&apos;t know if she&apos;ll agree with that.
+
+&lt;br&gt;Naturally the current job market is not an easy one for her to navigate.
+
+&lt;p&gt;I&apos;ve known her a few months, and I interviewed her informally once.
+
+&lt;br&gt;When I asked what she was particularly good at, she said debugging.
+
+&lt;br&gt;That fits the mental view I&apos;ve formed, because she seems to track well.
+
+&lt;br&gt;I&apos;d guess her memory and retention is quite high, and that helps a lot.
+
+&lt;br&gt;So far I don&apos;t have any good idea what ideal situation she&apos;d like most.
+
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#20jun02-angela-wong</link>
+			<title>angela wong</title>
+			</item>
+		<item>
+			<description>
+
+
+&lt;pre&gt;                        Angela Wong
+                     103 Bascom Court
+                    Campbell, CA 95008
+                      (408) 761-3599
+                     aywong@yahoo.com
+
+Objective
+    A position that will allow me to further develop my skills
+    in software design and implementation.
+
+Experience
+   Senior Software Engineer, iDini Corporation, San Jose, CA      1/01 - 2/02
+   o  Developed and maintained a product to deliver personal 
+      documents, email and email attachments to wireless devices.
+   o  Developed a more flexible, better performing platform on 
+      which existing and future products would be developed.
+   o  Dealt with a range of Java technologies and issues, including
+      servlets, JSPs, RMI, JDBC, JNI, localization and 
+      internationalization.
+
+   Software Engineer, America Tae Kwon Do Center, San Jose, CA    8/00 - Present
+   o  Designing and assisting with the implementation of a scalable
+      system to manage financial, inventory, attendance and student 
+      information customized for the studio.
+
+   Software Engineer, BLOSM.com, Cupertino, CA                    4/00 - 12/00
+   o  Worked in a startup environment to produce a web site to 
+      link authors and publishers.
+   o  Designed, implemented, maintained and enhanced core areas of the
+      site as well as assisted other members of the team when requested.
+   o  Gained experience with critical issues involved with producing 
+      web sites, including web metrics, performance requirements, and 
+      the intricacies of making a startup successful.
+
+   IT Specialist, IBM Corporation, San Jose, CA                   2/98 - 4/00
+   o  Supported and developed software that manipulates the data 
+      generated during the process of manufacturing hard disk drives.
+   o  Led a small team to develop an application to enable access to 
+      the data through the company intranet.
+   o  Responsibilities included assisting team members, maintaining 
+      and enhancing existing applications, and assisting customers 
+      to help pinpoint problems.
+
+   Software Engineer, Virtual Mirror Corporation, San Rafael, CA  6/97 - 9/97
+   o  Assisted in the design, specification and testing of        6/96 - 9/96
+      Ink Pen 2.0 for Adobe Illustrator.
+   o  Completed in 8 weeks tasks allocated for 13 weeks during the 
+      first summer, which allowed me to experience the entire 
+      lifecycle of software development.
+   o  Topics dealt with span the areas of rasterization, texture 
+      generation, color spaces, halftone methods, caching, image 
+      processing, Bezier curves, particle systems, and fractals.
+
+Computer Skills
+   o  Fluent in Java, C and C++
+   o  Proficient with SQL Server 7.0, DB2 v2.1.2, DB2 UDB
+   o  Familiar with SQL
+   o  Skilled with CS/2 and MQSeries
+   o  Capable with XML, HTML, JavaScript, ASP, and VBScript
+   o  Experienced with Windows 2000, Windows NT 4.0, Windows 98, 
+      Solaris Intel, Solaris SPARC, OS/2 Warp 4.0, OS/2 Warp 3.0, 
+      Unix, and Macintosh environments
+
+Certification
+  Sun Certified Java Programmer v2.0               12/99
+
+Education
+  University of California at Davis, Davis, CA     9/93 - 12/97
+  Bachelor of Science in Computer Science
+  Overall GPA - 3.70/4.00
+  Major GPA - 3.75/4.00
+&lt;/pre&gt;
+                        
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#20jun02-angela-resume</link>
+			<title>angela&apos;s resume</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#19jun02</link>
+			<title>19jun02 Wednesday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;I like that signature.  The snake is nice, and goes with your cool logo.
+
+&lt;br&gt;No, I didn&apos;t know anything except the name was cool.  I was reaching.
+
+&lt;br&gt;So it&apos;s funny and unintentional if there&apos;s actually something to my joke.
+
+&lt;br&gt;Another odd coincidence I noticed very recently involves
+&lt;a href=&quot;http://poe.perl.org/?What_POE_Is&quot;&gt;POE&lt;/a&gt; in Perl.
+
+&lt;br&gt;Last March I wrote
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newMar02.htm#31mar02-stars&quot;&gt;some fiction&lt;/a&gt; about my Poe and using Perl.  Hmm.
+
+&lt;blockquote&gt;Rocco (I think) says: 
+
+POE parcels out execution time among one or more tasks, 
+called sessions. Sessions multitask through cooperation 
+(at least until Perl&apos;s threads become
+mainstream). That is, each session returns execution 
+to POE as quickly as possible so it can parcel out time to the next. 
+
+&lt;/blockquote&gt;
+
+Even more disturbing, POE also does multitasking network applications.
+
+&lt;br&gt;So it feels like I have my finger on a bigger pulse of tech coincidence.
+
+&lt;br&gt;Honest, I&apos;d never heard of Rocco&apos;s POE before.  No offense intended.
+
+&lt;br&gt;Similarly, I don&apos;t mean any harm by wisecracking jokes about names.
+
+&lt;br&gt;I like odd names.  I need one myself.  David, bah.  Got to work on that.
+
+ 
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#19jun02-coiled-snake</link>
+			<title>coiled snake</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Yesterday Glyph Lefkowitz sent this email to me (and to Raph too).
+
+&lt;br&gt;Also to his discussion list, which explains the funny salutation. :-)
+
+&lt;br&gt;I&apos;ve been reading many interesting documents on your site lately.
+
+&lt;br&gt;Soon I&apos;d like to quote and comment on parts that struck my interest.
+
+&lt;br&gt;Sorry my response below is a little too cursory since I rushed it a bit.
+
+&lt;blockquote&gt;Glyph Lefkowitz: 
+
+Hello David &amp; Raph (and my Legion of Adoring Fans),
+&lt;p&gt;
+I caught both of your (linked) diary entries on asynchrony today:
+&lt;p&gt;
+    &lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=216&quot;&gt;http://www.advogato.org/person/raph/diary.html?start=216&lt;/a&gt;&lt;br&gt;
+    &lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newJun02.htm#16jun02-asynchrony&quot;&gt;http://www.treedragon.com/ged/map/ti/newJun02.htm#16jun02-asynchrony&lt;/a&gt;
+&lt;p&gt;
+
+Strangely enough, as I was in the middle of a minor refactoring in Twisted&apos;s
+abstraction for asynchronous handling of events.  Cool post!  I especially
+liked the bit about transparency, which has been a wacky opinion I&apos;ve held for
+some time.  I plan to quote you directly on &quot;CORBA made the mistake of trying
+to make object location transparent, so local and remote objects could not be
+easily distinguished. This is a terrible idea because location matters.&quot;  PB
+makes location matter :-)
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Yes, it&apos;s interesting how many folks and systems seem
+to be thinking more about async messaging approaches.  You also say
+things about transparency I agree with in your Twisted documentation.
+Here&apos;s an excerpt from your
+&lt;a href=&quot;http://www.twistedmatrix.com/documents/howto/ipc10paper&quot;&gt;
+Twisted Network Framework&lt;/a&gt;. The section heading is
+&quot;Translucent, not Transparent.&quot;
+
+  &lt;blockquote&gt;Glyph and Moshe Zadke:
+
+In a server application where a large number of clients may be interacting at once, it is not feasible to have an arbitrarily large number of OS threads blocking and
+waiting for remote method calls to return. Additionally, the ability for any client to call any method of an object would present a significant security risk.
+Therefore, rather than attempting to provide a transparent interface to remote objects, twisted.spread.pb is &quot;translucent&quot;, meaning that while remote method
+calls have different semantics than local ones, the similarities in semantics are mirrored by similarities in the syntax. Remote method calls impose as little
+overhead as possible in terms of volume of code, but &quot;as little as possible&quot; is unfortunately not &quot;nothing&quot;.
+  &lt;/blockquote&gt;
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+David -- I don&apos;t think it&apos;s good to look at synchronous programs in order to
+figure out how to reduce complexity in asynchronous programs.  The ways in
+which complexity can be reduced in asynchronous programs do not make them more
+like their blocking cousins; in fact, they start to look very strange indeed,
+when reduced to their essentials, if you look at them next to synchronous
+versions of the same thing.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+Well I didn&apos;t want to mimic synchronous systems in async systems.
+Instead I want to mimic async email systems.  When sending to a &quot;to&quot; dock,
+one annotates an event with a &quot;from&quot; dock, a &quot;reply-to&quot; dock, and as
+many other dock IDs as are necessary to receive different responses
+anticipated.  (Locally these would be interned symbols, but they&apos;d
+be pickled as headers going to remote places.)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+The abstraction for asynchrony in Twisted is the Deferred
+(twisted.internet.defer.Deferred).  The basic gist of it is that there is a
+list of callbacks for success, and another list for failure.  The first
+argument to any given function is the result.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;I&apos;ll see if I can figure out how the Deferred system works.
+Instead of callbacks, I&apos;d rather have return events.  I see Twisted has
+a kind of centralized event loop that necessitates a callback type
+system.  In Mithril the VM will be the event loop, and waking a 
+fiber blocked on a dock event queue corresponds to a callback.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+Deferreds make asynchronous event handling a lot easier than I&apos;ve found it in
+just about any other system.  Nevertheless, some problems persist due to
+Python&apos;s poor syntactic support for closures; I have to declare a lot of named
+functions in non-intuitive scopes and in a strange order.  I imagine if I were
+implementing Twisted in Smalltalk, where I think it would be more natural, I
+would be able to do something like this:
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Deferred&apos;s sound similar in nature to Promises in Scheme,
+and to Futures in languages that use them for delayed concurrent
+evaluation.  Except the flow of control is push instead of pull with
+a Deferred, it looks like.  Your pseudo Smalltalk below is not bad,
+though not exactly right.  I won&apos;t correct it just now.  Blocks do not
+need to take arguments (before the &apos;|&apos; as shown).
+I should write a Smalltalk syntax tutorial here soon.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;&lt;pre&gt;doNextRemoteThing ||
+    &quot;Make remote calls one after another, only calling the next one
+     when the previous has completed.&quot;
+    ^ (remoteObject callRemote: &apos;remoteMethod&apos;) andThen: [result |
+        (result callRemote &apos;otherRemoteMethod&apos;) andThen: [ otherResult |
+            self logResult: otherResult.
+            result callRemote: &apos;done&apos;.
+        ]
+    ] orElse: [ failure |
+        (failure isInstance: TimeoutError) ifTrue: [
+            Transcript write: &apos;Timed out.&apos;
+        ] else: [
+            self logFailure: failure.
+        ]
+    ] inEitherCase: [|
+        self doNextRemoteThing.
+    ] timeOutIn: 30.&lt;/pre&gt;&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+In lisp I could probably write a macro (but it would be less obvious what I was
+doing there, so I didn&apos;t post a code example).  Sorry if the smalltalk is
+wrong; I really haven&apos;t used it for much, it just has closure syntax I like :)
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;The Smalltalk isn&apos;t bad.  I suppose it&apos;s hard on folks who have
+no idea how it should look.  I ought to write a simple explanation of the
+syntax.  That would be fun, and I&apos;ve been considering it for a while.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+
+Notice the parallel in the structure of this pattern to try:except:finally: --
+the most common omission of event-based APIs is a concise and robust mechanism
+for handling errors.  This also dovetails nicely with supporting event timeouts
+conveniently: the &apos;timeOutIn:&apos; argument to the message is just a utility that
+specifies an amount of time to wait before passing a TimeoutError to the orElse
+block.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Yes the branching conditions are similar to exception
+handling.  I was planning to do this with explicit event data objects,
+but I should also support a standard mapping of event data to object
+method calls, so programmers can write responsive logic instead of
+data examination code.  I also plan to send explicit timeout events
+that arrive in normal control flow with actual responses.
+&lt;/blockquote&gt;
+
+
+&lt;blockquote&gt;
+I hope you find this pattern helpful in structuring patterns for reducing
+complexity in your respective asynchronous apps.
+&lt;p&gt;
+Feel free to Cc: the mailing list in the To: line if you want to reply -- it&apos;s
+my equivalent to a &apos;blog.
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;It will probably be very helpful in getting me to design
+simple usage patterns for end user programming, rather than focusing
+on the data formats and timing of the data flows involved.  I will
+cc your discussion list with a plain text version of this blog entry,
+along with a link for folks so inclined.
+&lt;/blockquote&gt;
+
+
+
+
+
+ 
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#19jun02-twisted-async</link>
+			<title>twisted async</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;&lt;a href=&quot;http://www.advogato.org/person/raph/&quot;&gt;Raph Levien&lt;/a&gt;
+makes a good point about
+&lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=218&quot;&gt;necessity&lt;/a&gt;
+in Mithril vaporware.
+
+&lt;br&gt;Please feel free to suggest I&apos;m full of shit as often as possible, or fun.
+
+&lt;br&gt;You can be polite and circumspect, or more aggressive and I won&apos;t bite.
+
+&lt;br&gt;Most criticism is a great motivation for further explanation. So I love it.
+
+&lt;br&gt;Oddly, the mostly strongly stated objections are often the most useful.
+
+&lt;blockquote&gt;Raph Levien: 
+
+The subtext of yesterday&apos;s  
+&lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=217&quot;&gt;async&lt;/a&gt;
+musing was to express 
+skepticism that all the city/fiber/dock/boat mechanism in Mithril was
+actually needed. But, of course, not having seen the design in 
+detail, I can&apos;t really criticize it. 
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Skepticism is terrific so don&apos;t let me stop you.
+Yes, all that mechanism in my proposed vaporware is not necessary.
+Turing complete is Turing complete (as I wish they&apos;d say). However,
+it&apos;s often useful to have extra mechanism above and beyond the
+simplest possible Turing machine.  So maybe the question concerns
+how useful those mechanisms really are.
+&lt;p&gt;
+The concept of a city is the weird one.  All the others are
+perfectly conventional, albeit oddly named.  My city design 
+primarily targets programming in the large.  It&apos;s a space scoping
+device that stops large amounts of code from swimming in one soup,
+which would require hideously complex rocket science to run
+and still keep performance.
+&lt;p&gt;
+First let me briefly discuss the others. I prefer using new names
+that still relate to the concept that I want them to mean.  This is
+because I often don&apos;t have enough terms to make code clear, and
+having two synonyms is very useful.  One can be abstract when the
+other is concrete.  For example, a dock is a specific concrete
+instance of the general idea of event queue.
+&lt;p&gt;
+It&apos;s not unusual for programming languages and code systems to have
+threads, event queues, and events.  Those correspond to fiber,
+dock, and ship terms in Mithril.  (I&apos;m not sure I like the ship
+term, so it might only be used as the internal name of some code.)
+But it&apos;s very important that folks not think that fibers are native
+pthread style system threads.  They&apos;re not.
+&lt;p&gt;
+If someone writes a simple Mithril script composed of classes and
+methods and calls to perform various effects, the result might be an
+executable that never explicitly refers to cities, docks, and events.
+In this sense, they are also unnecessary for a programmer to pay
+attention to if they don&apos;t give a damn.  It would run in the
+single startup city (Oz) provided by default.
+&lt;p&gt;
+Whether or not cities are necessary, I intend to put them in my
+system because I like them since they greatly simplify the rocket
+science I must consider to get high performance under scaling and
+programming in the large.  For example, scoping garbage collection
+to a city will make gc latency very, very small -- on the order
+of a millisecond for small cities.
+&lt;p&gt;
+Minimizing gc latency is a really big deal to me, as is minimizing
+the actual amount of memory that moves due to collection.  Cities
+that avoid generating garbage won&apos;t need collection and will be
+immune to the time costs involved.  Other cities that generate
+garbage won&apos;t force the stable cities to be physically moved.
+I think this is a really good design.
+&lt;p&gt;
+I expect simple stop-and-copy will be sufficient for very high
+performance garbage collection in Mithril.  The amount of free
+space needed for a copy need only be as big as the largest city
+that gets moved, which can be much less than the total space
+occupied inside a Mithril world.  So space efficiency is good.
+I&apos;ll get simple incremental gc with generational character.
+&lt;p&gt;
+I roll my eyeballs in the general direction of folks who have
+invented the byzantine global garbage collection algorithms in
+the past.  I think it&apos;s those overly complex systems 
+for garbage collection that are truly not necessary. However,
+my city idea is a bit weird and unconventional, so I don&apos;t
+expect much interest until I publish quantitative benchmarks.
+&lt;p&gt;
+On a side note, my early statement that cities are spatially
+closed is a simplification.  Actually it&apos;s only the gc space
+that is closed under mutation.  Immutable space owned by the
+containing world can be referenced by cities.  For example,
+all cities will share the same global symbol atomizing table
+for interned strings.  And then there&apos;s non-gc space.
+&lt;p&gt;
+The Mithril runtime will tend to have a lot of refcounting for
+objects below the radar of the garbage collected language.
+This space takes care of things best done directly in a lower
+level language either for speed, or for atomicity, or to avoid
+the generation of garbage that might otherwise occur.
+For example, I&apos;d like most event sending not to create garbage.
+&lt;p&gt;
+Because I plan to use cities as one form of scoping mechanism,
+I can continue that theme and use them for still more scoping
+problems that would otherwise be difficult.  For example, I
+can engineer sandboxing of untrusted code by running it in
+cities that lack code bindings for dangerous actions.  So the
+proof of harmlessness is rather tractable.
+&lt;/blockquote&gt;
+
+ 
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#19jun02-unnecessary</link>
+			<title>unnecessary</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Dang, I ran out of time for posting Angela Wong&apos;s resume tonight.
+
+&lt;br&gt;I want to do a good job, not a sloppy one, so I&apos;ll save it for tomorrow.
+
+&lt;br&gt;Oh wait, if nothing else, here&apos;s a link to the
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/../fg/angelawong.DOC&quot;&gt;Word DOC file format&lt;/a&gt;.
+
+&lt;br&gt;Tomorrow I&apos;ll work on a plain text version and personal introduction.
+
+&lt;br&gt;Below I&apos;ve cited the email about yoga I received from Mr. Hansen.
+
+&lt;blockquote&gt;&lt;a href=&quot;http://askbjoernhansen.com/&quot;&gt;Ask Bjoern Hansen&lt;/a&gt;: 
+You need Iyengar Yoga.  It might take a few tries to find a teacher
+you like and get into it; but it will help.  I promise.
+&lt;p&gt;
+&lt;a href=&quot;http://www.iyengar-yoga.com/iyengaryoga/&quot;&gt;http://www.iyengar-yoga.com/iyengaryoga/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.iyengar-yoga.com/Yoga_Centers/United_States/California/&quot;&gt;http://www.iyengar-yoga.com/Yoga_Centers/United_States/California/&lt;/a&gt;
+&lt;p&gt;
+Slightly related, this books is really good.  Order it now.  It&apos;s
+thin, so you can read it quickly.
+&lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/0965510999/&quot;&gt;http://www.amazon.com/exec/obidos/ASIN/0965510999/&lt;/a&gt;
+&lt;/blockquote&gt;
+                        
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#19jun02-timeout</link>
+			<title>another timeout</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#18jun02</link>
+			<title>18jun02 Tuesday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;I hear &lt;a href=&quot;http://www.scripting.com/&quot;&gt;Dave Winer&lt;/a&gt;&apos;s 
+in the hospital.  D&apos;oh! I hope he gets better soon.
+
+&lt;br&gt;If nothing else, I hope he has something good to read while he&apos;s in stir.
+
+&lt;br&gt;When my herniated disk was cut out eleven years ago, I read Xenocide.
+
+&lt;br&gt;I hope Dave isn&apos;t undergoing surgery.  It hurts like the blazes afterward.
+
+&lt;br&gt;And morphine has wretched side effects, like nausea and hot flashes.
+  
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#18jun02-winer</link>
+			<title>dave winer</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;&lt;a href=&quot;http://www.advogato.org/person/raph/&quot;&gt;Raph Levien&lt;/a&gt;&apos;s
+gonna lap me with his two new 
+&lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=216&quot;&gt;asynchrony&lt;/a&gt;
+diary
+&lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=217&quot;&gt;posts&lt;/a&gt;.
+
+&lt;br&gt;The last has an amusing echo of
+&lt;a href=&quot;http://www.joelonsoftware.com/&quot;&gt;Joel Spolsky&lt;/a&gt;&apos;s
+new
+&lt;a href=&quot;http://www.joelonsoftware.com/articles/StrategyLetterV.html&quot;&gt;complements&lt;/a&gt; piece.
+
+&lt;br&gt;I quote that part below, regarding Sun&apos;s Java motivation and hardware.
+
+&lt;br&gt;I wish I had time to write about Joel&apos;s useful microeconomics piece now.
+
+&lt;br&gt;Instead I&apos;ll comment briefly on Mithril threads and garbage collection.
+
+&lt;blockquote&gt;Raph Levien: 
+
+Matt chose Java for his implementation. On the surface, 
+this is a strange choice. For one, until quite recently,
+Java didn&apos;t even have a nonblocking I/O library. Matt 
+had to implement his own, using JNI. The path of least
+resistance is to use a thread per connection, which has 
+scaling problems as the number of connections grows
+large. Of course, it&apos;s possible to mitigate these scaling 
+problems by throwing more hardware at the problem.
+Now why would Sun do a thing like that? 
+
+&lt;/blockquote&gt;
+
+Elsewhere Raph notes lock contention, memory, and garbage collection.
+
+&lt;br&gt;Mithril will not need any heap mutexes to allocate memory internally.
+
+&lt;br&gt;In fact, memory allocation is a place I expect to see good performance.
+
+&lt;br&gt;A Mithril city allocates boxes (i.e. cons cells) from large chapter blocks.
+
+&lt;br&gt;Cities are single threaded so no mutex is needed in heap box allocation.
+
+&lt;p&gt;In fact, box allocation can approach pointer bumping as average cost.
+
+&lt;br&gt;Overhead for fragmentation and node size stats is much less than C++.
+
+&lt;br&gt;Except when gc happens, Mithril box allocation is atomic and unlocked.
+
+&lt;br&gt;Also, gc scoped within a city approximates generational gc performance.
+
+&lt;br&gt;There are fast, simple ways to do these things without complex research.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#18jun02-async</link>
+			<title>async runtimes</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Glyph Lefkowitz&apos;s lead Twisted developer at
+&lt;a href=&quot;http://www.twistedmatrix.com&quot;&gt;www.twistedmatrix.com&lt;/a&gt;.
+
+&lt;br&gt;Oh man, what a good name. (The artist formerly known as Lefkowitz.)
+
+&lt;br&gt;Glyph send me a cool email on asynchrony I don&apos;t have time to post.
+
+&lt;br&gt;But I will tomorrow, and I&apos;ll comment a bunch as well.  That&apos;ll be fun.
+
+&lt;br&gt;Twisted is a really cool async event framework in Python.  Check it out.
+
+&lt;p&gt;I suspect I&apos;ll be very interested in seeing how it works for my stuff.
+
+&lt;br&gt;I might find a use for copying some of the high level Twisted patterns.
+
+&lt;br&gt;And it would be interesting to test interoperability using async events.
+
+&lt;br&gt;If nothing else, it&apos;ll probably be great fodder for design discussions.
+
+&lt;br&gt;Actually, I expect it&apos;s probably great code.  Just a pattern hunch feeling.
+ 
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#18jun02-twisted</link>
+			<title>twisted asynchrony</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Tomorrow I also aim to put up the resume of a friend looking for work.
+
+&lt;br&gt;She&apos;s the extremely clever person who guessed the &quot;engineer&quot; 
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newJun02.htm#01jun02-pictionary&quot;&gt;puzzle&lt;/a&gt;.
+
+&lt;br&gt;I&apos;ll also post yoga links that Ask Bjoern Hansen emailed for my back.
+
+&lt;br&gt;Lisa&apos;s often pushed me to take yoga classes to cope with my back pain.
+
+&lt;br&gt;But I fear they don&apos;t know how to handle post back surgery patients.
+                     
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#18jun02-todo</link>
+			<title>todo list</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#16jun02</link>
+			<title>16jun02 Sunday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;I found stretching my leg&apos;s hamstrings made my back hurt less tonight.
+
+&lt;br&gt;My back was hurting like hell all this week and made walking difficult.
+
+&lt;br&gt;Today it seems it might have been more muscular than spinal trouble.
+
+&lt;br&gt;You wouldn&apos;t believe my hamstrings.  I can hardly reach past my knees.
+
+&lt;br&gt;Walking and staying thin isn&apos;t enough.  I need to work on my flexibility.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#16jun02-back</link>
+			<title>crummy back</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Happy father&apos;s day to my Dad if he&apos;s reading. (I&apos;m not clear on that.)
+
+&lt;br&gt;My sons Ian and Kyle gave me hand drawn cards, both on computers.
+
+&lt;br&gt;Ian says I&apos;m good at working on &quot;con putirs.&quot;  Alright, my little dude.
+
+&lt;br&gt;Kyle drew his with a ruler, and shows way too much rectilinear law.
+
+&lt;br&gt;See, I work on computing too much.  It&apos;s all they often say about me.
+
+&lt;p&gt;We played Magic cards for two or three hours with decks I prepared.
+
+&lt;br&gt;Actually just Kyle and Ian played, and I helped both sides proceed.
+
+&lt;br&gt;Ian thrashed Kyle with his green deck.  Kyle tried blue and then red.
+
+&lt;br&gt;I&apos;m better at green decks from lots of experience.  I&apos;ll even the odds.
+
+&lt;br&gt;I didn&apos;t turn Kyle&apos;s red deck up to full power.  It&apos;s a little too brutal.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#16jun02-fathers-day</link>
+			<title>father&apos;s day</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;I know I&apos;m spending too much time talking about async event systems.
+
+&lt;br&gt;But 
+&lt;a href=&quot;http://www.advogato.org/person/raph/&quot;&gt;Raph Levien&lt;/a&gt;
+had more
+&lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=213&quot;&gt;
+good remarks&lt;/a&gt; in his weblog on async APIs.
+
+&lt;br&gt;Below I&apos;ve quoted just three of the several paragraphs. There are more.
+
+&lt;br&gt;I hope Raph didn&apos;t take my &quot;app writer&quot; remarks yesterday personally.
+
+&lt;br&gt;I didn&apos;t have anyone in mind at all when I disclaimed my own style bias.
+
+&lt;blockquote&gt;Raph Levien: 
+
+Every time you do something over the network, it&apos;s asynchronous whether you like it or not.
+Yet, event-driven programs seem a lot more complex than their simple, synchronous cousins.
+David would like to recapture that simplicity in asynchronous programs. A lot of other people
+have tried things in this direction, without very happy results so far. I feel that CORBA is a
+cautionary tale in this regard. It pretends that method calls are really local, when in reality
+they&apos;re decomposed into two asynchronous events, and of course all kinds of things can
+happen in the meantime. 
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+CORBA made the mistake of trying to make object location transparent,
+so local and remote objects could not be easily distinguished.  This
+is a terrible idea because location matters.  I&apos;ve spend a fair amount
+of time trashing transparency in general in the past.  The following is
+a sample of something I wrote five years ago on orthogonal persistence.
+
+  &lt;blockquote&gt;I wrote
+  &lt;a href=&quot;http://www.treedragon.com/ged/mc/wr/do07Sep97.htm&quot;&gt;on distobj&lt;/a&gt;:
+  
+  My opinion is that complete and utter transparency of some features is a flaw that fails under analysis using
+  first principles. Extreme transparency prevents handling and control, hence practical failure. A feature must
+  manifest concretely enough to permit theorems about invariants to be applicable, or otherwise little
+  reasoning is possible. 
+  &lt;/blockquote&gt;
+  
+I&apos;m not sure exactly how I plan to recapture simplicity in async systems.
+I find message sending simple in general, but other folks might disagree.
+For example, I find it easy to reason about the meaning of email when it
+arrives in a certain order that reflects the sequence of antecedents.  I
+want to reason about event sending logic the same way.
+&lt;p&gt;
+Of course async event sending is low level, and one ought to use some
+higher level combinations of the low level primitive effects.  But the
+process of debugging ought to directly reveal the low level parts on demand.
+I want high level uses of events to be libraries using simple primitives.
+But code will be robust if it plans what happens when no reply is seen.
+
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Raph Levien: 
+I haven&apos;t seen any of the details of Mithril yet, but I&apos;m fairly skeptical that it will make
+asynchronous programming accessible to less-skilled programmers. On the other hand, I am
+perfectly willing to believe that it will be a good tool for expressing asynchrony concisely, and
+thus useful for people who know what they&apos;re doing. 
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+I haven&apos;t said a lot about events in Mithril besides the 
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/../../../ged/ag/no/ev/model.htm&quot;&gt;model page&lt;/a&gt; and the
+assciated &lt;a href=&quot;http://www.treedragon.com/ged/map/ti/../../../ged/ag/no/ev/model2.htm&quot;&gt;dialog&lt;/a&gt;.
+But I also discuss Mithril events in this exchange with Wes Felter
+ 
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/../../../ged/mc/in/wf27Mar00.htm&quot;&gt;concerning BXXP&lt;/a&gt;, which
+has since been renamed to BEEP.  I didn&apos;t have accessibility to 
+less skilled programmers in mind when I was designing.
+But I wasn&apos;t trying to exclude them either.
+
+&lt;p&gt;
+I suspect if less skilled coders are told to treat events like email
+messages that won&apos;t necessarily see any reply, they might start to get
+the hang of how things get organized when writing async systems.
+Then coders might correctly design systems to react only to what is
+known for sure from the last event received.
+But we&apos;d need norms to avoid code bloat.
+&lt;/blockquote&gt;
+
+
+&lt;blockquote&gt;
+I mentioned that the CSP way might be easier to reason about. There&apos;s another issue that came
+to mind after our call: the queue required for the fully asynchronous case requires unbounded
+resources in the general case. Obviously, in tiny embedded systems, this can be a real
+problem. On desktops, it&apos;s less clear. But if a system is operating under very high load, you
+probably want to worry about whether the queues will keep growing. Of course you can
+always implement flow control on top of async messages, but that&apos;s not really the point. On
+CSP, the default is not to grow unboundedly. 
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;As I mentioned here recently, I plan to have dock buffer sizing
+for events explicitly managed as part of event usage.  Total transparency
+of policies is wrong.  However, default policies that go in patterns is
+a good way to avoid manually setting every dial and meter.  I worry about
+the unbounded resource usage in the general case.
+I&apos;d disallow it by default.
+&lt;p&gt;
+In our phone conversation I mentioned something I&apos;d like to repeat for
+other folks.  (I mentioned it to my boss last week too.)  This was that
+I&apos;d like to provide async event protocol APIs for libraries that I write.
+Instead of using the option of embedding a library, you could instead
+interact with a library as a server, using async events to communicate.
+&lt;p&gt;
+Raph objected that this sort of async event API would not normally map
+onto a typical code library that is organized as synchronous method
+calls.  That&apos;s when I told him the idea was to have the library itself
+also be async event driven internally as well.  So the async event
+protocol would actually map directly to the native representation.
+&lt;p&gt;
+For example, an async event version of IronDoc would be much better at
+fostering useful app progress when waiting for database disk i/o to
+happen.  But that would probably require a rewrite after the next rewrite
+to integrate with Mithril using normal synchronous styles.  One of the
+reasons I wanted to rewrite IronDoc in Mithril was to use continuations.
+&lt;p&gt;
+Using continuations and trampolined execution, I could suspend a fiber
+asynchronously waiting for disk i/o, and run other code instead, without
+the agonizing overhead of lacing IronDoc infrastructure with 
+threading assumptions.  I&apos;d use async events at the very least for
+handling my disk i/o and fiber scheduling, if not the IronDoc API
+itself at first.
+&lt;/blockquote&gt;
+
+
+                        
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#16jun02-asynchrony</link>
+			<title>asynchrony</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#15jun02</link>
+			<title>15jun02 Saturday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;The other day I pointed my boss at the Matt Welsh&apos;s
+&lt;A HREF=&quot;http://www.cs.berkeley.edu/~mdw/proj/seda/&quot;&gt;SEDA&lt;/A&gt; system.
+
+&lt;br&gt;Then we talked for a while about what I intended with async events.
+
+&lt;br&gt;This doesn&apos;t figure into any job plans, but we often discuss pure tech.
+
+&lt;br&gt;That way we get our expectations in sync about what&apos;s really possible.
+
+&lt;br&gt;He noticed Mithril&apos;s design sounded like hardware discrete simulation.
+
+&lt;p&gt;That&apos;s when I told him it was based on college work to do just that.
+
+&lt;br&gt;I&apos;m going somewhere with this.  I&apos;m still leading up to the good part. 
+
+&lt;br&gt;The key concept you should attend here is a basic idea of simulation.
+
+&lt;br&gt;I asked my boss, &quot;What&apos;s the difference between real and simulation?&quot;
+
+&lt;br&gt;In this case, real referred to any async systems talking to one another.
+
+&lt;p&gt;&quot;None at all, of course,&quot; he replied, knowing that&apos;s what I&apos;d intended.
+
+&lt;br&gt;If all you know is based on message evidence, messages are reality.
+
+&lt;br&gt;This came up in the context of my describing staged distributed apps.
+
+&lt;br&gt;Mithril aims to simulate distribution within a local context using cities.
+
+&lt;br&gt;In one process, fibers in two cities can communicate via events alone.
+
+&lt;p&gt;When you have this debugged, you can separate the cities more widely.
+
+&lt;br&gt;First you move them into different processes, then different machines.
+
+&lt;br&gt;My boss said it was hard to simulate realistic latency in the local case.
+
+&lt;br&gt;I said, no it&apos;s not.  You can merely put a noisy intermediary in between.
+
+&lt;br&gt;You can programmatically induce latency, or even lose events outright.
+
+&lt;p&gt;The nice thing about event-oriented apps is that routing is so explicit.
+
+&lt;br&gt;You can write routing intermediaries that explicitly fudge mappings.
+
+&lt;br&gt;Obviously time latency is a main mapping that needs careful fudging.
+
+&lt;br&gt;You can just test what an async system will do in a good simulation.
+
+&lt;br&gt;The next section is an expansion of what I told him only very briefly.
+
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#15jun02-servers</link>
+			<title>async servers</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Much of my work does code and data multiplexing of various kinds.
+
+&lt;br&gt;I told my boss that a coupling of granularity is what chokes systems.
+
+&lt;br&gt;When your system requires one-to-one relationships, this will clot.
+
+&lt;br&gt;I use the word clot in the same sense as a blood clot inside a vein.
+
+&lt;br&gt;A bottleneck chokes with a clot if an element cannot be multiplexed.
+
+&lt;p&gt;For example, conventional servers associate one thread per request.
+
+&lt;br&gt;When neither can be multiplexed, this represents a system bottleneck.
+
+&lt;br&gt;The design of Mithril really aims to multiplex many such bottlenecks.
+
+&lt;br&gt;For example, modules multiplex global namespace of other languages.
+
+&lt;br&gt;Fibers multiplex threads, cities multiplex processes, etc.  It goes on.
+
+&lt;p&gt;Async events can multiplex a traditional synchronous subroutine call.
+
+&lt;br&gt;Each sync method call expects one (and exactly one) function response.
+
+&lt;br&gt;But it&apos;s a problem whenever zero or more than one response are better.
+
+&lt;br&gt;Async systems are hard to break on first principles.  They expect little.
+
+&lt;br&gt;When sending doesn&apos;t expect a response, lack of response is no problem.
+
+&lt;p&gt;If you react only to messages received, expectations can stay very low.
+
+&lt;br&gt;If you infer a message is received when it appears, this is very likely so.
+
+&lt;br&gt;In contrast, synchronous systems expect things that haven&apos;t happened.
+
+&lt;br&gt;When an error occurs, this can stymie and fubar a synchronous system.
+
+&lt;br&gt;Async systems are more complex because they must handle all the cases.
+
+&lt;p&gt;But that&apos;s exactly why they can be much more robust than sync systems.
+
+&lt;br&gt;When you write an async system with a stupid expectation, it&apos;s explicit.
+
+&lt;br&gt;You can always rewrite dumb assumptions to act on positive evidence.
+
+&lt;br&gt;Somehow I veered too far from my multiplexing topic, so I&apos;ll return.
+
+&lt;br&gt;IronDoc is mainly about multiplexing the contents of files and memory.
+
+&lt;p&gt;You have a problem when your system puts each little thing in one file.
+
+&lt;br&gt;When you have a zillion little things, you&apos;ll lose big on open latency.
+
+&lt;br&gt;So the one-thing-one-file coupling causes a clot in system granularity.
+
+&lt;br&gt;The data channel plugs up as soon as time to access a file gets too big.
+
+&lt;br&gt;Conventional systems have granularity problems in both code and data.
+
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#15jun02-multiplexing</link>
+			<title>multiplexing</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Two days ago 
+&lt;a href=&quot;http://wmf.editthispage.com/&quot;&gt;Wes Felter&lt;/a&gt; sent
+an email in response to my
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newJun02.htm#12jun02-event-queues&quot;&gt;event piece&lt;/a&gt;.
+
+&lt;br&gt;I had used the word &quot;obvious&quot; in that context, about async event use.
+
+&lt;br&gt;I guess it wouldn&apos;t hurt to spell out more clearly what&apos;s so obvious.
+
+&lt;br&gt;Otherwise it might sound like I&apos;m belittling Matt Welsh&apos;s research.
+
+&lt;br&gt;Hey, I&apos;m just some guy.  What I discuss here is either useful or not.
+
+&lt;blockquote&gt;Wes Felter: 
+The implementation is Java-specific, but the SEDA papers are pretty
+general and IMO interesting. Before SEDA, I don&apos;t think anyone had
+figured out how to easily compose event-driven servers from components.
+Maybe this is already obvious to you, though.
+&lt;p&gt;
+&lt;a href=&quot;http://www.cs.berkeley.edu/~mdw/papers/seda-sosp01.pdf&quot;&gt;
+http://www.cs.berkeley.edu/~mdw/papers/seda-sosp01.pdf&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;No, it wasn&apos;t already obvious to me how to 
+easily compose event-driven servers.  The words &quot;easily&quot; and 
+&quot;compose&quot; both individually imply a great deal of work, of the
+sort that&apos;s seldom obvious without living and breathing the problem
+space for a while.  And the words &quot;figured out&quot; imply a highly
+satisfactory level of quality which is even harder yet.
+&lt;p&gt;
+However, that servers would be most efficient if designed as
+highly granular data flow engines with async events as the
+comm backbone was already obvious.  Using threads heavily in a
+granularity that closes follows the granularity of requests
+obviously uses resources in a heavy handed way that could be
+better used to get actual work done.
+&lt;p&gt;
+This doesn&apos;t mean I&apos;m smart enough to figure out how to easily
+compose servers using that kind of architecture.  That&apos;s something
+that requires actual performance of the feat to form an opinion.
+However, it would certainly be fun to try.  And it figures into
+my medium range interests as applications of Mithril and IronDoc.
+(Which are both vaporware, for new readers.)
+&lt;p&gt;
+Servers are so clearly stimulus and response systems that pay
+quite a bit less attention to the vagaries of user interface
+interaction, in comparison to typical desktop app design and
+implementation.  This makes it easier to view them as pure
+data flow functional computing problems.  This is a problem
+I already spent time thinking about years ago.
+
+&lt;p&gt;
+On other occasions I described by job at C*ATS in Palo Alto,
+after leaving Taligent in 1993 and before joining the OpenDoc
+team in 1995.  (I didn&apos;t join OpenDoc instead in 1993 because
+Apple had a savage hiring freeze at the crucial moment of truth.)
+Previously I said my work was adding polymorphic dispatching
+to a graphical programming language.
+&lt;p&gt;
+That&apos;s true, but I never really emphasized before that the language
+was a lazy functional language, which intended to settle financial
+accounts in large distributed systems, and would rely upon
+parallel computation whenever possible based on knowledge of
+immutable data patterns.  And only the computations needed to
+satisfy demanded outputs would execute.
+&lt;p&gt;
+(This part of the problem reminds me a bit of Raph Levien&apos;s
+recent &lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=214&quot;&gt;
+change notification&lt;/a&gt; piece for display updating.  Strictly speaking,
+a display view need only recompute what is demanded for current
+display in visible areas.  This resembles the lazy output
+computation problem we had at C*ATS.  But our problem had the
+benefit of being generally more static in nature.)
+&lt;p&gt;
+Anyway, the basic idea (... wait for it...) is that everything is
+a graph ... again! (It&apos;s always a graph in a every problem.  Why do you
+suppose that is? :-)  In this case, the interesting part of the graph
+is the dependency graph between what is demanded and the inputs
+that feed into the computations that generate the outputs.
+Dependencies drive computation.
+&lt;p&gt;
+(And this part of the problem reminds me of Raph Levien&apos;s interest
+in writing a new kind of make build system named rebar.
+Obviously building generated object code from statically defined source 
+code inputs is a lazy evaluation problem based on component dependencies.
+(How much do you want to bet some idiot patented that idea?))
+&lt;p&gt;
+Similarly, you can view a server&apos;s typical behavior as executing a
+dependency graph to generate a response that satisfies the demand
+of a client request, given a model of server component dependencies
+that are involved in building a suitable output response.  This is
+even more so in the context of caching (AKA memoization).
+&lt;p&gt;
+Maybe I&apos;m abnormal for viewing a lot of computation
+primarily as data flows, which get serviced by code that performs
+the necessary transformations and bit movement.  I&apos;m aware many
+folks focus instead on code that &quot;does stuff&quot; -- which is sort
+of idiotic when the patterns involved in what &quot;gets done&quot; never
+get examined in detail. (It&apos;s data flows.)
+&lt;p&gt;
+I&apos;m not an app writer.  I&apos;m not obsessed with apps that &quot;do stuff&quot;
+and look pretty for admiring audiences.  I&apos;m a runtime hacker, and
+I obsess about data flows -- exactly when bits changes, and how, and
+why, and what a programmer does in order to control this.  I&apos;m pissed
+off that queueing and async events are not already network norms.
+&lt;p&gt;
+For example, when I talked to Raph Levien on the phone yesterday,
+he discussed some existing networking metaphors, like leases. 
+I told him as far as I was concerned, as long as I was denied
+access to async events directly, every networking API was broken.
+I only want high level APIs when I also have a low level async back door.
+&lt;p&gt;
+So basically, most server design stuff I heard sounds overtly 
+stupid when it seems behavior centric (around code in threads) instead
+of being content flow centric (around data funneled through queues).
+I think Matt Welsh is to be congratulated for seeing things
+the more natural and intelligible way.  But I don&apos;t see why I
+should pretend it&apos;s not obvious.
+&lt;p&gt;
+Maybe my saying it&apos;s obvious is my way of intimidating folks who would
+otherwise be unable to judge for themselves, and might otherwise say it
+must be wrong because it&apos;s not the Apache way.  Sometimes I have indirect
+and obtuse approaches to picking fights with incumbents.  It sets the
+stage for a more amusing exchange with folks who say, &quot;Nuh uh!&quot;
+&lt;/blockquote&gt;
+                        
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#15jun02-obvious</link>
+			<title>obvious is as obvious does</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#14jun02</link>
+			<title>14jun02 Friday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Advance warning: Mithril is vaporware.  It&apos;s an unfinished language.
+
+&lt;br&gt;It&apos;s best to consider Mithril a design currently, with some work done.
+
+&lt;br&gt;My main reason for describing it now is to clarify async event features.
+
+&lt;br&gt;Since these are uncommon in languages, a design seems more relevant.
+
+&lt;br&gt;(Mere design is more forgiveable in the absence of concrete options.)
+
+&lt;p&gt;All the following definitions of terminology apply to Mithril&apos;s design.
+
+&lt;br&gt;(I say this now so I needn&apos;t add &quot;Mithril&quot; to every sentence below.)
+
+&lt;br&gt;The term fiber means microthread: lighter weight than system threads.
+
+&lt;br&gt;Get it? A thread is composed of fibers.  A fiber is a very small thread.
+
+&lt;br&gt;A fiber is a semantic feature.  It doesn&apos;t appear in syntax or grammar.
+
+&lt;p&gt;In this sense, neither fibers nor events are part of the basic language.
+
+&lt;br&gt;Instead they are part of runtime operations, but not a separate library.
+
+&lt;br&gt;They&apos;ll behave a bit like a library, but they need to be very primitive.
+
+&lt;br&gt;Mithril&apos;s syntax, grammar, and execution will be very like Smalltalk&apos;s.
+
+&lt;br&gt;Operating with events, fibers, and docks work like any other objects.
+
+&lt;p&gt;But using them always implicitly drives the fiber scheduler&apos;s behavior.
+
+&lt;br&gt;None of these things need to exist until Mithril has fiber scheduling.
+
+&lt;br&gt;A dock means something similar to port, or 
+channel, or mailbox.
+
+&lt;br&gt;I chose the term dock to imply much higher granularity than port.
+
+&lt;br&gt;A dock is something in which discrete messages arrive, like a ship.
+
+&lt;p&gt;The metaphor fits the model of event ships arriving in a Mithril city.
+
+&lt;br&gt;This is roughly depicted in the image below.  A city is a state locus.
+
+&lt;br&gt;A city is roughly a carefully closed subset of a process address space.
+
+&lt;br&gt;Garbage collection happens in city granularity.  This implies something.
+
+&lt;br&gt;Objects in a city cannot refer to objects outside a city.  A city is closed.
+
+&lt;p&gt;
+
+
+&lt;p&gt;All the garbage collection roots in a city are inside the city.  This matters.
+
+&lt;br&gt;It&apos;s why a city can be garbage collected without regard for other cities.
+
+&lt;br&gt;Code within a city acts just like ordinary code in any language today.
+
+&lt;br&gt;If you write one-city apps, they&apos;ll be rather like simple Smalltalk apps.
+
+&lt;br&gt;Message sending inside an city is synchronous just like function calls.
+
+&lt;p&gt;You only need one fiber in a city to do such plain vanilla programming.
+
+&lt;br&gt;Every fiber lives in exactly one city.  A city is each fiber&apos;s state horizon.
+
+&lt;br&gt;Every fiber can reference objects by pointer in at most one city, for gc.
+
+&lt;br&gt;Each city hosts some F fibers and some D docks. Docks receive events.
+
+&lt;br&gt;Any fiber can block by synchronously reading an event from a dock.
+
+&lt;p&gt;Or a fiber can check for events without blocking.  I&apos;ll have much variety.
+
+&lt;br&gt;I think fibers should have many options in the way events are handled.
+
+&lt;br&gt;If a dock is zero-buffered, it will behavior just like a Limbo channel.
+
+&lt;br&gt;In this case, a sending fiber will block until a receiver gets an event.
+
+&lt;br&gt;But it&apos;s important to note this is an optional usage choice for any fiber.
+
+&lt;p&gt;Generally speaking, every city is single-threaded to avoid all lock usage.  
+
+&lt;br&gt;Locks need only be used at event queues at city boundaries for threads.
+
+&lt;br&gt;Threads can be assigned to handle various cities to use multiple CPUs.
+
+&lt;br&gt;(Or cities in a world might be single threaded with a world per thread.)
+
+&lt;br&gt;The important idea is that event queueing discipline is thread agnostic.
+
+&lt;p&gt;An event is a message, much like a server request or an email message.
+
+&lt;br&gt;Each event has metainformation headers and a body to contain content.
+
+&lt;br&gt;Header metainfo indicates many things, like where a response should go.
+
+&lt;br&gt;In fact, email message formats are a great thing to imagine for events.
+
+&lt;br&gt;In this sense, a dock is very similar to a mailbox, with store and forward.
+
+&lt;p&gt;Yes, there&apos;s a problem with using unbounded space for events in docks.
+
+&lt;br&gt;This is why dock usage must specify what the resource constraints are.
+
+&lt;br&gt;Different policies for dock event capacity and handling can be enforced.
+
+&lt;br&gt;So it needn&apos;t be a unbounded space usage problem unless you really want.
+
+&lt;br&gt;Conditions like dock overflow can be handled by sending notifications.
+
+&lt;p&gt;And the notifications will themselves be events send to other docks.
+
+&lt;br&gt;Basically you do complex state machines with fibers, events, and docks.
+
+&lt;br&gt;Events are asynchronous messages.  You can reply to get a rendezvous.
+
+&lt;br&gt;Or you can use zero-buffered docks to get rendezvous.  Sure, why not.
+
+&lt;br&gt;You can&apos;t block forever on a dock because timeouts deliver events.
+
+&lt;p&gt;The Mithril event/dock system is basically a general simulation engine.
+
+&lt;br&gt;If you were modeling some hardware, an event would be like a signal.
+
+&lt;br&gt;My design comes from discrete simulation stuff I did back in college.
+
+&lt;br&gt;You can build up any kind of complex high level semantics you want.
+
+&lt;br&gt;But you aren&apos;t screwed by bad high level choices someone else made.
+
+&lt;p&gt;You can write your libraries using normal synchronous style coding.
+
+&lt;br&gt;But you can also write them using async event dock interfaces instead.
+
+&lt;br&gt;This is what you want to do for servers and for distributed computing.
+
+&lt;br&gt;But you needn&apos;t go to that level of complexity unless you really want.
+
+&lt;br&gt;And you could use wrappers for sockets in totally conventional code.
+
+&lt;p&gt;But Mithril will give you an option of writing async data driven code.
+
+&lt;br&gt;It might be complex, but you can react in exactly the way you want.
+
+&lt;br&gt;All errors caused by absence of events received can be handled well.
+
+&lt;br&gt;A user interface need never freeze while waiting for a stupid timeout.
+
+&lt;br&gt;And you can write event based staged servers like Matt Welsh likes.
+                       
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#14jun02-terminology</link>
+			<title>mithril terminology</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#13jun02</link>
+			<title>13jun02 Thursday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Yesterday &lt;a href=&quot;http://www.advogato.org/person/raph/&quot;&gt;Raph Levien&lt;/a&gt;
+
+wrote about &lt;a href=&quot;http://www.advogato.org/person/raph/diary.html?start=211&quot;&gt;
+caching in trees&lt;/a&gt;, so I&apos;ll comment.
+
+&lt;br&gt;But I didn&apos;t leave myself time to say a lot, so I might come back to it.
+
+&lt;br&gt;Tonight I&apos;ll just quickly cover a pair of basic caching techniques I use.
+
+&lt;br&gt;D&apos;oh, I can&apos;t find a reference to my long lookaside cache description.
+
+&lt;br&gt;I think I wrote about it at some length in the last year.  But where is it?
+
+&lt;p&gt;So far I only see the reference to usage in 
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newApr01.htm#14apr01-dispatching&quot;&gt;Smalltalk method dispatch&lt;/a&gt;.
+
+&lt;br&gt;Anyway, both techniques apply to storing a limited size cache of info.
+
+&lt;br&gt;If you&apos;re willing to annotate content arbitrarily, it&apos;s not really a cache.
+
+&lt;br&gt;A cache implies you can throw it away, and later recompute at need.
+
+&lt;br&gt;Two favorites are fixed size lookaside and least recently used caches.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#13jun02-tree-caching</link>
+			<title>caching in trees</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;I use lookaside caches wherever such a cache must be extremely fast.
+
+&lt;br&gt;This is when table maintenance itself might rival the computation cost.
+
+&lt;br&gt;So the table in this case must cost almost nothing itself to use often.
+
+&lt;br&gt;Typically I allocate a fixed sized hash table to contain key+value pairs.
+
+&lt;br&gt;A bucket is simply the hash of a key modulo the number of table pairs.
+
+&lt;p&gt;The secret to a lookaside cache is what happens for a bucket collision.
+
+&lt;br&gt;If a new pair is added to a bucket, it simply removes the old member.
+
+&lt;br&gt;This simply overwrites the bucket (and maybe deallocates the old pair).
+
+&lt;br&gt;It works great when a cache merely avoids doing unnecessary rework.
+
+&lt;br&gt;If a bucket gets thrashed, the work gets redone anyway in that case.
+
+&lt;p&gt;Using a lookaside cache merely involves looking in a bucket for a hit.
+
+&lt;br&gt;If the key matches, it&apos;s a hit.  A miss eventually overwrites the bucket.
+
+&lt;br&gt;Basically you keep the last N instances of a given cached computation.
+
+&lt;br&gt;But the size of N is a probablistic fraction of the total hash buckets B.
+
+&lt;br&gt;This approach is good when other collision resolutions cost too much.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#13jun02-lookaside</link>
+			<title>lookaside caches</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;An LRU cache re-uses cache space for a least recently used member.
+
+&lt;br&gt;This is the kind of cache I use for IronDoc pages in my pseudo VM.
+
+&lt;br&gt;I used the very same design for my high speed threaded cache at Pivia.
+
+&lt;br&gt;(At Pivia we keep in-memory content in this particular cache I wrote.)
+
+&lt;br&gt;Below is a really old (and ugly) diagram I drew for IronDoc illustration.
+
+&lt;p&gt;
+
+
+&lt;p&gt;I should redraw this someday in a really snappy Photoshop rendering.
+
+&lt;br&gt;But the basic idea is that each cache member belongs to two collections.
+
+&lt;br&gt;One collection is the index that finds members by cache identity key.
+
+&lt;br&gt;In IronDoc page identity is block offset in a file. Here it&apos;s a hash table.
+
+&lt;br&gt;It needn&apos;t be a hash table.  It can be another other kind of map instead.
+
+&lt;p&gt;In this indexing map, members of the same bucket are chained in lists.
+
+&lt;br&gt;The other collection is an LRU list, with members ordered by usage.
+
+&lt;br&gt;The LRU list is doubly linked for fast O(1) removal and re-insertion.
+
+&lt;br&gt;Whenever a member is used, it&apos;s removed and re-added at MRU end.
+
+&lt;br&gt;MRU is most recently used.  The other list end is least recently used.
+
+&lt;p&gt;Whenever a cache has reached a size limit, adding must re-use space.
+
+&lt;br&gt;In this case, the simplest thing is popping from the list&apos;s LRU end.
+
+&lt;br&gt;Of course removing from LRU list implies removing from the map.
+
+&lt;br&gt;In multi-threaded collections, this requires a careful lock ordering.
+
+&lt;br&gt;You always lock mutexes in some canonical order to avoid deadlock.
+
+&lt;p&gt;The canonical lock order for this kind of cache can get sorta complex.
+
+&lt;br&gt;I&apos;ll describe that some other time when I have a longer writing slot.
+
+&lt;br&gt;The main idea is dual membership in collections, where one is LRU.
+
+&lt;br&gt;The LRU description controls what gets removed from a member map.
+
+&lt;br&gt;This allows you to limit re-used cached resources to a given fixed size.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#13jun02-lru</link>
+			<title>lru caches</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#12jun02</link>
+			<title>12jun02 Wednesday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;A couple days ago my father sent me the NY Times Etherlinx story.
+
+&lt;br&gt;(I&apos;d include the link but I didn&apos;t get one.  It was megs of multipart.)
+
+&lt;br&gt;He asked me, &quot;Anything to this?&quot; (It&apos;s longer than his other emails.)
+
+&lt;br&gt;Yes, Wi-Fi is up and coming, modulo bad news
+&lt;a href=&quot;http://www.pbs.org/cringely/pulpit/pulpit20020606.html&quot;&gt;
+reported by Cringely&lt;/a&gt;.
+
+&lt;br&gt;Cringely warns about the new bulb that interferes with that bandwidth.
+
+&lt;p&gt;I&apos;m about to order a new Titanium laptop with a 802.11b card installed.
+
+&lt;br&gt;I&apos;m a very late adopter, and now I&apos;m paying attention, so it&apos;s old news.
+
+&lt;br&gt;I expect radio will play a big role in the last mile net hookup problem.
+
+&lt;br&gt;It has that sensible good-fit feeling to it -- sloppy where sloppy works.
+
+&lt;br&gt;Close counts in horseshoes, hand grenades, and now 802.11 access.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#12jun02-wifi</link>
+			<title>801.11b and wifi</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;&lt;a href=&quot;http://wmf.editthispage.com/&quot;&gt;Wes Felter&lt;/a&gt;
+sent email in response to yesterday&apos;s
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newJun02.htm#11jun02-picoservers&quot;&gt;picoserver piece&lt;/a&gt;.
+
+&lt;br&gt;He cited my &quot;standard pico async event passing framework&quot; phrase.
+
+&lt;br&gt;Then Wes asked, 
+&quot;Did I bug you about Matt Welsh&apos;s SEDA yet?&quot;
+
+&lt;br&gt;I didn&apos;t remember, so I performed a search to found several things.
+
+&lt;br&gt;For example, Duncan Wilcox mentioned it
+&lt;a href=&quot;http://wmf.editthispage.com/discuss/msgReader$7364?mode=topic&quot;&gt;on Wes&apos;s site last April&lt;/a&gt;.
+
+&lt;blockquote&gt;Duncan Wilcox: 
+Matt Welsh&apos;s &lt;A HREF=&quot;http://www.cs.berkeley.edu/~mdw/proj/seda/&quot;&gt;SEDA&lt;/A&gt; 
+is pretty impressive, though. I have only run through the papers very 
+quickly, but it would seem that in addition to using an event driven 
+architecture the stages of event processing are also decoupled. 
+This is a different approach compared to flash, and the latency 
+is measured and seems reasonable. It could also solve the 
+problem of scaling to multiple CPUs, that a straightforward 
+single process event driven implementation (like 
+&lt;A HREF=&quot;http://www.acme.com/software/thttpd/&quot;&gt;thttpd&lt;/A&gt;) can&apos;t do.
+&lt;/blockquote&gt;
+
+My own Mithril work aims to end up with single threaded systems.
+
+&lt;br&gt;However, I plan to take advantage of multiple processors anyway.
+
+&lt;br&gt;I think using multiple instances of single-threaded systems is good.
+
+&lt;br&gt;They can be serviced and fed by queues that interact with threads.
+
+&lt;br&gt;I talked about this a couple years ago in email with Luther Huffman.
+
+&lt;blockquote&gt;&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/../../../ged/mc/in/lh09Feb00.htm&quot;&gt;I once told
+Luther Huffman&lt;/a&gt;: 
+I usually respond I&apos;m not thinking about that; but that&apos;s only close to true. In fact, I think the only way to exploit
+many processors is by using async event passing, with as much overhead stripped as possible. 
+
+&lt;/blockquote&gt;
+
+However, this architecture requires a reasonable async model.
+
+&lt;br&gt;Most language coding systems presume a synchronous call model.
+
+&lt;br&gt;So async is only natural in a language that defines async support.
+
+&lt;br&gt;The interface to the outside world depends on non-blocking i/o.
+
+&lt;br&gt;Matt Welsh says the following in his April description of 
+&lt;a href=&quot;http://www.cs.berkeley.edu/~mdw/proj/java-nbio/&quot;&gt;NBIO&lt;/a&gt;.
+
+&lt;blockquote&gt;Matt Welsh: 
+I am using NBIO as the basis for my thesis research on
+&lt;a href=&quot;http://www.cs.berkeley.edu/~mdw/proj/seda&quot;&gt;the staged event-driven architecture (or SEDA)&lt;/a&gt;. While NBIO provides a low-level nonblocking 
+I/O library for Java, SEDA is a complete architecture and runtime system 
+for building well-conditioned Internet services. In particular, our
+Java-based Web server, using NBIO, 
+outperforms both Apache and Flash, which are written in C.
+More information can be found at the
+&lt;a href=&quot;http://www.cs.berkeley.edu/~mdw/proj/seda/&quot;&gt;SEDA web pages&lt;/a&gt;.
+&lt;/blockquote&gt;
+
+I haven&apos;t looked into any of Welsh&apos;s stuff.  I&apos;ve no interest in Java.
+
+&lt;br&gt;But I might be interested in this low level non-blocking i/o code.
+
+&lt;br&gt;I&apos;d like to position anything I do against some well known factor.
+
+&lt;br&gt;I guess non-blocking i/o is standard for fast web servers lately.
+
+&lt;br&gt;I&apos;m interested in the part that routes requests into async events.
+
+&lt;blockquote&gt;Matt Welsh
+&lt;a href=&quot;http://www.cs.berkeley.edu/~mdw/proj/seda/&quot;&gt;writes 
+last March&lt;/a&gt;: 
+SEDA is an acronym for staged event-driven architecture, and
+decomposes a complex, event-driven application into a set of
+stages connected by queues. This design
+avoids the high overhead associated with thread-based concurrency
+models, and decouples event and thread scheduling from application
+logic. By performing admission control on each
+event queue, the service can be well-conditioned to load, preventing
+resources from being overcommitted when demand exceeds service
+capacity.
+SEDA employs dynamic control to automatically tune runtime parameters
+(such as the scheduling parameters of each stage), as well as to
+manage load, for example, by performing adaptive load shedding.
+Decomposing services into a set of stages also enables modularity and
+code reuse, as well as the development of debugging tools for complex
+event-driven applications.
+&lt;/blockquote&gt;
+
+As source code SEDA is of no use to me in Java, except for reading.
+
+&lt;br&gt;It sounds like it might be too high level for me to get practical benefit.
+
+&lt;br&gt;If so, then I might pick up useful conventions in the low level NBIO.
+
+&lt;br&gt;Frankly I don&apos;t expect to read this.  But I might get to it eventually.
+
+&lt;br&gt;However, I greatly appreciate the validation of my own preferences.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#12jun02-seda</link>
+			<title>matt welsh</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;The following is from
+&lt;a href=&quot;http://groups.google.com/groups?q=mccusker+threads+netscape&amp;hl=en&amp;lr=&amp;safe=off&amp;selm=3666F32C.C501134B%40netscape.com&amp;rnum=3&quot;&gt;
+google groups: mccusker+threads+netscape&lt;/a&gt;.
+
+&lt;br&gt;I wrote it in 1998 at Netscape, about topics I considered obvious.
+
+&lt;br&gt;I first worked on such related queueing concepts ten years earlier.
+
+&lt;br&gt;It was ignored. (Netscape folks were less bright than I&apos;d thought.)
+
+&lt;br&gt;I&apos;ve added some highlighting to emphasize more interesting parts.
+
+
+&lt;pre&gt;[ I wrote the material below at the end of October, obviously, and I
+  want to repost it here in case it helps give ideas related to the
+  pluggable protocol handlers being designed, or related to Brendan
+  Eich&apos;s wish for generic thread switchers for MIME-type converters.
+  Sorry I&apos;m being lazy and not updating this content to address those
+  issues precisely; but I want to later if time permits. ]
+
+Subject: send/receive event queues to promote threading in data flows
+Date: Tue, 27 Oct 1998 15:45:31 -0800
+From:  davidmc@netscape.com (David McCusker)
+
+topic: send/receive event queues to promote threading in data flows.
+
+(Sorry for this spam to client eng, but now is a good time for such a
+spam on any topic affecting general architecture plans for future
+products, when one wants to find out who has answers or suggestions.
+I bcc&apos;d clienteng to reduce echo spam, so please email me directly if
+you have anything to say about this material.  If you have no real
+interest in threading, synchronization mechanisms, or improving the
+architecture of future inter-component communication, then please
+don&apos;t even bother reading this message.)
+
+First I will explain what this is all about, and then I&apos;ll give more
+specific details about intended product applications.  The current
+status of this inquiry is blue sky assessment that will very rapidly
+devolve to practical short term plans to do the most expedient thing.
+Some folks might send only a link to a local web page accompanied by
+only a word or two of comment; but other folks might want to have a
+conversation or a meeting (or two, no more please :-) for discussion.
+
+But more is going to be needed than an injuction to &quot;use class X in
+NSPR because this already exists&quot;, because that is insufficient since
+to date we are already not using such pre-existing mechanisms.
+
+threading and data flow
+
+Our current browser+mail/news product is not very thread safe, though
+we wish it were, and has some pretty complex control mechanisms to
+effect async data flow patterns in Netlib which must be used in the
+context of some amount of real threading that is awkward to control.
+
+We also plan to separate the browser and mail/news portions more while
+maintaining cooperation and integration between these parts.  It would
+be nice to make the architecture suck less, while rationalizing data
+flows between the parts, while staging other potential improvements in
+future threading architecture by loosening unnecessary overt coupling.
+
+Trying to make the product thread safe in a single go would be a silly
+goal to attempt.  But it is much more feasible to consider using styles
+of coding that are thread neutral, in the sense that they could be made
+thread safe in the future without change, while having an appearance of
+better organization in the short term that makes interfaces rational.
+
+So I am looking into the possibility of using event queues with basic
+send/receive semantics (look in an undergraduate operating systems text
+under synchronization primitives near semaphores and monitors) in order
+to exchange messages between objects without sharing memory structures
+(other than the potentially thread safe event queue) for data flows.
+
+Because one avoids sharing access to memory among threads, one only has
+to guard against race conditions at the points where threads exchange
+messages with each other through event queues, so a fairly simple queue
+structure guarded by a monitor or some other synchronization primitive
+is all one needs to make basic thread safe data flow channels.  (The
+abstract interface can hide any complex and/or platform specific things
+that might be required in order to make things work between processes.)
+
+runtime agnostic
+
+These notions might remind folks of one or another feature provided by
+specific microkernels and/or runtimes implemented here or elsewhere.  I
+don&apos;t really care how the implementation is effected, as long as the
+interface for event queues is available in a platform neutal way that
+can be applied with only an understanding of event queues.  No one
+should need to go study a specific system to use these interfaces.
+
+incremental staging
+
+Using event queues for data flows does not commit to using threads in
+any particular engineering schedule, while adding such usage makes the
+future use of threads more feasible, so any amount of event queue usage
+can be declared victory as soon as one runs out of development time.
+This is the only prudent scenario in which to consider such changes.
+
+basic semantics and usage patterns
+
+An event queue is like mailbox with a specific owner that is permitted
+to pull events from the queue.  But anyone can send events to a queue,
+which does conventional store-and-forward memory management for all
+events received and stored in the queue.  Most semantics of mailboxes
+also apply to event queues.  To broadcast notification to many parties
+interested in an event, one can send it to an event queue that resends
+to &quot;mailing list&quot; of interested event queues.
+
+Event queues should be identified with an abstract id that acts like 
+an integer of 32 bits or 64 bits (or more), because a simple memory
+address is not abstract enough.  Senders only need to know where to
+send an event, addressed to an event queue with an appropriate id, by
+knowing the interface to some context that intends to deliver events.
+
+At minium, an event needs to be a blob of untyped data that presumably
+encodes the message content in some way.  Some metainformation outside
+the blob is nice but not required to make binding of handlers more
+convenient.  The content should not contain address pointers, or else
+one has simply cloaked the previous thread-safety issues in a different
+guise.  If the sender needs a response, then they should put the id for
+a &quot;return address&quot; event queue in the event itself or it&apos;s metainfo.
+
+control flow in same-thread event queue usage
+
+Control flow for event queues works very well when queue owners are in 
+different threads, because an owner can block until an event appears.
+But when the sender and receiver of an event are running in the same
+thread, how does the &apos;receiver&apos; ever get prompted to look for events?
+For same-thread scenarios, some kind of postmaster manager is required
+to see who has received events, and to poke receivers in a timely
+fashion.  The coding of a postmaster is a lot like other kinds of time
+slicing mechanisms, of course.  But this particular brand of slicing is
+mostly transparent to the event queue users who see behavior that looks
+more like rational send/receive data flows.  The interfaces of such a
+system that uses a postmaster should be replaceable with one that is
+more thread-based; we can incrementally decide how many threads to use
+later, and keep the postmaster for all same-thread queue users.
+
+Note that I don&apos;t consider this kind of thing hard engineering, because
+more than ten years ago I wrote my first simulation system based on
+sending messages with time delays to event queues, using a centralized
+dispatcher to wake up threads receiving events at the soonest moment in
+logical time in which an event could arrive.  (Of course the result had
+a re-invention of Lamport style clock synchronization algoritms.)
+
+specific product applications
+
+I&apos;m going to look at data flows in mail/news to see whether they can
+be rationalized using event queues, and to see whether such interfaces
+will simplify communication with other components, including both the
+browser and third party applications.  No commitment to go in such a
+direction is implied by this, but the idea seems promising.
+
+If such event queue interfaces would also make raptor and browser
+communications more rational, then that&apos;s cool and it&apos;s up to folks in
+those areas to consider such application.  It would be fun and perhaps
+very useful to have a discussion with folks about this kind of thing.
+But the intention is to get results and avoid wasting time dreaming.
+
+David McCusker, peon loose cannon with a dash of subordinate flavoring
+Values have meaning only against the context of a set of relationships. 
+&lt;/pre&gt;                
+
+You might ask me where this suggestion of mine failed to get traction.
+
+&lt;br&gt;The number one design factor in Mozilla then was to accomodate RDF.
+
+&lt;br&gt;The Gecko engine was done -- everything else was to to be RDF-ized.
+
+&lt;br&gt;So no one gave a shit about architecture issues related to performance.
+
+&lt;br&gt;All our non-RDF square pegs had to be shoved into RDF round holes.
+
+&lt;p&gt;I was invited to meetings to hear folks praise Windows event pumps.
+
+&lt;br&gt;During which youngsters prattled about perferred socket usage and i/o.
+
+&lt;br&gt;My idea was as weird as NASA proposing manned missions to Mars.
+
+&lt;br&gt;So I merely resolved to add such features to my own future software.
+
+&lt;br&gt;The basic value in my suggestion can be boiled down to the following.
+
+&lt;p&gt;Strictly speaking, very little software needs to know about any threads.
+
+&lt;br&gt;Our code need only pay attention to event queues.  Threads are optional.
+
+&lt;br&gt;It means threads and event queues can be decoupled from each other.
+
+&lt;br&gt;Lack of such coupling enables flexible options in architecture choice.
+
+&lt;br&gt;As a result, a system is simpler and has fewer maintenance demands.
+                          
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#12jun02-event-queues</link>
+			<title>event queues</title>
+			</item>
+		<item>
+			<description></description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#11jun02</link>
+			<title>11jun02 Tuesday</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Dethe Elza has an interesting piece on
+&lt;a href=&quot;http://livingcode.ManilaSites.Com/discuss/msgReader$363&quot;&gt;
+Python &quot;weightless&quot; threading&lt;/a&gt;.
+
+&lt;br&gt;He also references my piece on cheap
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newOct01.htm#14oct01-mummy&quot;&gt;microthreading&lt;/a&gt; last October.
+
+&lt;br&gt;I should look into this soon since microthreads interest me quite a bit.
+
+&lt;br&gt;I plan to use them in my own runtimes to get blazing fast picoservers.
+
+&lt;br&gt;It&apos;s also a nice way to get safe threading styles in dynamic languages.
+  
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#11jun02-snakes</link>
+			<title>threaded snakes</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;Raph and I are starting to talk about what we might work on together.
+
+&lt;br&gt;I might want to help out with some application of site trust metrics.
+
+&lt;br&gt;For example, metainformation for computing hardware might work.
+
+&lt;br&gt;Many folks might prefer their hardware info with some certification.
+
+&lt;br&gt;I could see working on runtime libraries to go generic trust analyses.
+  
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#11jun02-trust</link>
+			<title>trust metrics</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;It would also be fun to work on some web microservers in fine detail.
+
+&lt;br&gt;In the future I&apos;d like to be able to crank out ever smaller picoservers.
+
+&lt;br&gt;You can always make &apos;em bigger by piling on more crap and features.
+
+&lt;br&gt;But it would be useful to identify the minimal skeletons for additions.
+
+&lt;br&gt;This would lower barriers to entry for any new tiny server you want.
+
+&lt;p&gt;Perhaps I can take existing picoservers and make them perform better.
+
+&lt;br&gt;I have specific requirements for memory usage and zero copy effects.
+
+&lt;br&gt;My idea of &quot;minimal overhead&quot; is typically less than most folks&apos; idea.
+
+&lt;br&gt;I also want to provide a standard pico async event passing framework.
+
+&lt;br&gt;That way folks can write servers as message passing, not connections.
+
+&lt;p&gt;When I write libraries in the future, I&apos;d also like a tiny server protocol.
+
+&lt;br&gt;For example, you could choose embedded IronDoc or server IronDoc.
+
+&lt;br&gt;So it would be trivial to write a tiny address book server, for example.
+
+&lt;br&gt;I&apos;d like server-izing my code libraries to be a matter of turning a crank.
+
+&lt;br&gt;And I&apos;d like to do it without swallowing a huge morass of W3C junk.
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#11jun02-picoservers</link>
+			<title>picoservers</title>
+			</item>
+		<item>
+			<description>
+
+&lt;br&gt;I last discussed my
+&lt;a href=&quot;http://www.treedragon.com/ged/map/ti/newApr02.htm#25apr02-indexing&quot;&gt;ybRun utility class&lt;/a&gt;
+last April.  Below&apos;s a snapshot.
+
+&lt;br&gt;While I&apos;m at it, I renamed the size field to &quot;fill&quot;, anticipating
+ybBuf.
+
+&lt;br&gt;ybBuf adds physical capacity in
+contrast to logical content in ybRun.
+
+&lt;br&gt;The material below is about using zero copy techniques in servers.
+
+&lt;br&gt;It means copying bytes as seldom as possible for good performance.
+
+&lt;pre&gt;class ybRun { // moral equivalent of a &quot;Pascal&quot; string
+public:
+  void* sRun_body; // location of bytes in run
+  long  sRun_fill; // bytes of logical content in body
+  // in real life, the type of sRun_fill is unsigned long
+
+public: // make (a sample of constructors)
+  ybRun()
+  : sRun_body( 0 ), sRun_fill( 0 ) { }
+
+  ybRun(void* body, long fill)
+  : sRun_body( body ), sRun_fill( fill ) { }
+
+  ybRun(const ybRun&amp; r)
+  : sRun_body( r.sRun_body ), sRun_fill( r.sRun_fill ) { }
+};&lt;/pre&gt;
+
+Notice I added more constructors.  There are even more I don&apos;t show.
+
+&lt;br&gt;In fact, I&apos;m not showing a zillion class instance methods for 
+ybRun.
+
+&lt;br&gt;(Or a zillion more static class methods. This is just the member vars.)
+
+&lt;br&gt;Imagine that I&apos;m rewriting the whole standard C libary around 
+ybRun.
+
+&lt;br&gt;I do this because null terminated C strings are awful for zero copy.
+
+&lt;pre&gt;class ybBuf : public ybRun {
+public:
+  long  sBuf_size; // bytes of physical capacity in body
+  // in real life, the type of sBuf_size is unsigned long
+
+public: // make (a sample of constructors)
+  ybBuf()
+  : ybRun(), sBuf_size( 0 ) { }
+
+  ybBuf(void* body, long fill, long size)
+  : ybRun(body, fill), sBuf_size( size ) { }
+
+  ybBuf(const ybBuf&amp; b)
+  : ybRun(b), sBuf_size( b.sBuf_size ) { }
+};&lt;/pre&gt;
+
+Class ybBuf is one of the reasons I
+rarely have any buffer overruns.
+
+&lt;br&gt;When I write content, I know exactly how many bytes of room exist.
+
+&lt;br&gt;I use other subclasses of ybRun;
+this is just a representative example.
+
+&lt;br&gt;N.b. ybRun does NOT own the
+memory to which sRun_body points.
+
+&lt;br&gt;I think absence of ownership is the part that irritates folks the most.
+
+&lt;p&gt;Someone else owns  space described by 
+ybRun.  The run doesn&apos;t care.
+
+&lt;br&gt;A run instance is descriptive and not prescriptive.  It&apos;s very primitive.
+
+&lt;br&gt;Its very simplicity makes ybRun
+ a very powerful and flexible device.
+ 
+&lt;br&gt;Other classes move bytes and own space.  A run just describes them. 
+
+&lt;br&gt;This is enough for searching, hashing, and lots of other base utilities.
+
+&lt;p&gt;How does this relate to zero copy as a high performance technique?
+
+&lt;br&gt;Say I read request or response bytes off the wire into memory buffers.
+
+&lt;br&gt;This is where all the bytes stay, right where they land the first time.
+
+&lt;br&gt;They get read directly from a socket into the long term living space.
+
+&lt;br&gt;Then when I parse the content, I don&apos;t make copies of strings inside.
+
+&lt;p&gt;(Except when a logically contiguous run gets broken at buffer edges.)
+
+&lt;br&gt;Instead, I use ybRun to
+point at the bytes wherever they sit already.
+
+&lt;br&gt;I don&apos;t need to make copies just to add a stupid terminating null byte.
+
+&lt;br&gt;I don&apos;t even need null bytes, so I don&apos;t care. My runs even overlap.
+
+&lt;br&gt;Using a slew of preallocated 
+ybRun&apos;s, I index many
+strings cheaply.
+
+&lt;p&gt;So parsing only involves finding where the byte patterns are situated.
+
+&lt;br&gt;I can easily refer to them as offset ranges or as many ybRun
+instances.
+
+&lt;br&gt;But I don&apos;t need to allocate strings, and I rarely need to copy them.
+
+&lt;br&gt;So speeds I see are somewhere in the ballpark of optimum, I guess.
+
+&lt;br&gt;In complex situations, tracking space ownership is tricky, it&apos;s true.
+
+&lt;p&gt;But everything I do that involves reading is incredibly easy to code.
+
+&lt;br&gt;I can split runs into many pieces without needing to modify anything.
+
+&lt;br&gt;In some situations, lack of mutation is good thread-safe optimization.
+
+&lt;br&gt;Sometimes I tell folks C would use 
+ybRun if re-invented again today.
+
+&lt;br&gt;Null terminated strings only made sense with tiny system memories.
+
+
+</description>
+			<link>http://www.treedragon.com/ged/map/ti/newJun02.htm#11jun02-zero-copy</link>
+			<title>zero copy</title>
+			</item>
+		</channel>
+	</rss>

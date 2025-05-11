@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/01/30.xml">
+<head>
+<title>Wednesday, January 30, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:19:42 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/01/30.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/01/30.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/01/30.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/01/29.xml#a50' title='Tuesday, January 29, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/01/30.xml">Wednesday, January 30, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/01/31.txt#a52' title='Thursday, January 31, 2002'>&#160;&gt;</a></h>
+<a name="a51"></a>
+<section id="a51">
+<h ></h>
+<p>I'm slowly starting to understand what "semantics" means, how it works and how it could be used for the web. Semantics is defined as the study of the meaning of language. And language is defined as the means to convey or transport meaning. In programming terms this can be (freely) translated to: The encoding and decoding of information (meaning) into a string. So maybe it's not so surprising that programming seems to be largly actually performing those encoding and decoding steps. Every bit of information has to fit on Alan Turing's infinite tape, filled with ones and zeros.</p><p>The question that arises then is: How can a computer actually <em>know</em> anything? How can a computer ever "get it"? But of course we can also ask how a <em>person</em> can know something. We just don't know (yet), although those neurons probably have something to do with it. But here semantics research helps us out. Apparently we only need two principles: equivalence and relations.</p><p>Equivalence has two important effects. 1: once we've encountered some "thing", and we encounter it a second time, we know it's the same "thing". And 2: we don't confuse two different "things" for the same "thing". And relations allow us to express how these "things" are related, i.e. how one "thing" is something of another "thing".</p><p>That's all there is to it. And I think this is also the way it works in the brain. You don't actually know apples, but you only know their description; how they are related to concepts like color or size. So now that we know how to know, let's see how this works on the web. (Some other time...)</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/01/30.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

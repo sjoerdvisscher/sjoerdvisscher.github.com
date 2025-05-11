@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body {overflow-y:scroll; //overflow-y:none; background-image:url(images/bg.jpg); background-repeat:repeat-y; background-position:center; background-color:#afbece; margin:0px; padding:0px;}
+div {overflow:hidden;}
+.bg_w {background-color:#ffffff; padding-left:10px;}
+img, table {border-width:0px;}
+form {display:inline;}
+a {margin:0px; padding:0px; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#006ec7; font-weight:bold; cursor:pointer;}
+a:hover {text-decoration:underline;}
+p {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; margin:0px; padding:0px; font-weight:normal;}
+.comm { font-family:Arial, Helvetica, sans-serif; font-size:30px; color:#8cc63f; margin:0px; padding:0px; font-weight:bold;}
+.blue { color:#006ec7;}
+
+.block1 {
+	width:946px;
+	height:174px;
+	background:url(images/block1.jpg) no-repeat left top;
+	overflow:hidden;
+	}
+	
+.name_txt {
+	font-size:30px;
+	color:#006ec7;
+	}
+	
+.blue_14 {font-size:14px; color:#006ec7;}
+.blue_16 {font-size:16px; color:#006ec7;}
+.green_18 {font-size:18px; color:#8cc63f;}
+.black_11 {font-size:11px; color:#000000;}
+.line_h18 {line-height:18px;}
+.text_f {width:171px; height:20px; background:url(images/text_field_bg.jpg) no-repeat left top;}
+.text_field {width:125px; height:16px; border-width:0px; background:url(images/trans.gif) repeat; font-size:11px; color:#000000;}
+
+.list1 {padding-left:12px; margin-left:2px; background:url(images/arrow1.gif) no-repeat 0px 4px;}
+
+.bottom {background:url(images/bottom_bg.jpg) repeat-x left top; height:134px;}
+.copy_txt {font-size:10px; color:#5d7690;}

@@ -1,0 +1,222 @@
+html {
+  padding: 0em;
+  color: #000033;
+  background: #ff9900;
+  font-size: 78%;
+}
+body {
+  margin:0em;
+  padding:0em;
+  padding-top: 5em;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+#pagetitle {
+  position: absolute;
+  top: -0.4em;
+  left: -0.24em;
+  font-size: 700%;
+  font-weight: bold;
+  color: #DF7900;
+  border: none;
+  margin: 0em;
+  padding: 0em;
+}
+#content {
+  padding: 1em 10.5em 1em 15em;
+  margin: 0em;
+  display: block;
+  font-size: 100%;
+  width: 100%;
+  background: #EDEDF0;
+  border-top: 0.08em solid #000033;
+}
+body>#content {
+	width: auto;
+}
+#note {
+  font-size: 90%;
+  font-family: Tahoma, Helvetica, sans-serif;
+  float: right;
+  width: 12em;
+  border-left: 0.27em solid #ff9900;
+  border-top: 0.27em solid #FFDFB0;
+  border-bottom: 0.27em solid #FFDFB0;
+  background: #FFDFB0;
+  padding: 1em 1em 1em 0.5em ;
+  margin: 0.5em -6em 1em 1em;
+}
+#note h3 {
+	font-size: 100%;
+	text-decoration: none;
+	border: none;
+	margin: 0em;
+}
+#footer {
+  font-size: 77%;
+  padding: 0em 0.23em 0.23em 0.24em;
+  border-top: 0.10em solid #000033;
+  display: block;
+  clear: both;
+}
+
+ul li {
+  display: block;
+  color: #000033;
+  background: #FFDFB0;
+  border-left: 0.18em solid #FFF7EC;
+  border-bottom: 0.18em solid #DFBF90;
+  border-right: 0.18em solid #DFBF90;
+  border-top: 0.18em solid #FFF7EC;
+}
+ul li:hover {
+  background: #FFFFFF;
+  border-left: 0.18em solid #EAEAEE;
+  border-right: 0.18em solid #D5D5DD;
+  border-top: 0.18em solid #F5F5F7;
+  border-bottom: 0.18em solid #D5D5DD;
+}
+
+#sidebar {
+  border: 0.16em solid #000033;
+  border-top: none;
+  background: #FFEFD8;
+  padding: 0em;
+  position: absolute;
+  top: 5.3em;
+  left: 0.3em;
+}
+#sidebar ul {
+  margin: 0em;
+  padding: 0em;
+}
+#sidebar li.name {
+  background: #000033;
+  border: 0.18em solid #000033;
+  border-bottom: none;
+  color: #EDEDF0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 90%;
+  padding: 0em 0.27em 0.27em 0.27em;
+  width: 12em;
+}
+#sidebar li {
+  margin: 0em;
+  padding: 0.09em 0.27em;
+  font-size: 90%;
+  font-family: Tahoma, Helvetica, sans-serif;
+  width: 12em;
+  list-style:none;  
+}
+#sidebar li a {
+  font-weight: normal;
+  color: #000033;
+}
+
+#navigation {
+  position: absolute;
+  top: -1.2em;
+  left: 0em;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 5.5em;
+}
+#navigation ul {
+  margin: 0em;
+  padding: 0em;
+}
+#navigation li.name {
+  position: relative;
+  top: 0.15em;
+  left: 0em;
+  font-size: 384%;
+  font-weight: bold;
+  z-index: 2;
+  padding: 0em;
+  margin: 0em;
+  background: transparent;
+  border: none;
+  float: none;
+  display: block;
+  list-style:none;
+}
+#navigation li {
+  position: relative;
+  top: 0em;
+  border-bottom:none;
+  padding: 0.08em 0.24em 0.08em 0.24em;
+  text-align: center;
+  float:left;
+  margin: 0em 0.24em 0em 0.16em;
+  width: 8em;
+  z-index: 3;
+}
+#navigation>ul>li {
+  top: -0.3em;
+}
+#navigation li a {
+  font-weight: normal;
+  color: #000033;
+}
+head:first-child+body #navigation li {
+  margin-bottom: 0.08em;
+}
+
+p {
+  margin: 0.5em 0em 0.5em 0em;
+  text-align: justify;
+}
+ul, ol, pre {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+ul, ol {
+  margin-left: 0em;
+  padding-left: 1.5em;
+}
+blockquote {
+  background-color: #D5D5DD;
+  margin: 0.5em 0em 0.5em 0em;
+  padding: 0em 1em;
+  border-left: 0.16em solid #000033;
+  border-top: 0.16em solid #D5D5DD;
+  border-bottom: 0.16em solid #D5D5DD;
+}
+blockquote blockquote {
+	padding-right: 0em;
+}
+h2 {
+  margin: 0em -5.34em -0.24em -0.9em;
+  border-bottom: 0.08em solid #000033;
+  border-left: 0.08em solid #EDEDF0;
+  border-right: 0.08em solid #EDEDF0;
+  font-size: 180%;
+  font-weight: bold;
+}
+h3 {
+  margin: 1em -6.68em 0.5em -0.75em;
+  border-bottom: 0.08em solid #000033;
+  font-size: 135%;
+  font-weight: bold;
+}
+h4 {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 1em 0em 0.5em 0em;
+  border: none;
+}
+
+a {
+  color: #7F5F30;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover, a:visited {
+  color: #000033;
+}
+
+img {
+	border: none;
+}

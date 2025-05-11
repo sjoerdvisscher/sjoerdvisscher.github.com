@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/02/10.xml">
+<head>
+<title>Tuesday, February 10, 2004 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:29:38 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/02/10.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/02/10.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/02/10.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2004/02/05.xml#a240' title='Thursday, February 05, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/02/10.xml">Tuesday, February 10, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/02/13.txt#a242' title='Friday, February 13, 2004'>&#160;&gt;</a></h>
+<a name="a270"></a>
+<section id="a270">
+<h id='providingContextInProgrammingpart2'><a href="http://w3future.com/weblog/2004/02/10.xml#a270" class="weblogItemTitle">Providing context in programming (part 2)</a></h>
+<p>(Read <a href="http://w3future.com/weblog/2003/12/15.xml#providingContextInProgrammingpart1">part 1</a> first.)</p>
+<p>When reading code, a lot of people like to <a href="http://lambda.weblogs.com/discuss/msgReader$10353">print out the code</a> and read it on paper. One of the reasons for that is that it is easier to switch from function call to the function specification and back. However functions are supposed to provide abstraction. You should be able to understand the function call without the function specification. Why is this often not possible? Because the function call doesn't provide enough context for the arguments.</p>
+<p>Take for example this function from the DOM: <code>parent.insertBefore(nodeA, nodeB)</code>. Is nodeA inserted before nodeB, or is nodeB inserted before nodeA? I keep forgetting that. And the more arguments, the more ridiculous it gets: <code>mouseEvent.initMouseEvent("DOMMouseScroll", true, true, view, numLines, refPoint.x, refPoint.y, point.x, point.y, isControl, isAlt, isShift, isMeta, 0, null)</code> (Simplified from <a href="http://lxr.mozilla.org/seamonkey/source/content/events/src/nsEventStateManager.cpp#1565">the Mozilla source code</a>). It's impossible to tell what each argument does.</p>
+<p>I think almost any programmer can relate to this problem. But functions with multiple arguments seem to be so fundamental in programming that solutions to this problem never actually involve abandoning their use. These solutions are f.e. IntelliSense and using properly named constants. They reintroduce the missing context.</p>
+<p>But proper language design can fix this problem more elegantly. Smalltalk provides an interesting solution: each extra argument is separated by a word. F.e. <code>parent insert: nodeA before: nodeB</code> is as clear as it can be. The only languages I know that actually restrict the number of arguments are APL and its derivatives. In APL functions are monadic (one argument, prefix notation) or dyadic (two arguments, infix notation).</p>
+<p>That functions with 2 arguments are written with infix notation is very important. Using the DOM example again, but now assuming we don't need the parent: <code>insertBefore nodeA, nodeB</code> is not clear, but <code>nodeA insertBefore nodeB</code> is clear. With infix notation you have more options to choose a clear function name. Note that a method call with one argument on an object can be seen as infix: <code>nodeA.insertBefore(nodeB)</code>.</p>
+<p>Is a maximum of 2 arguments realistic for everyday programming? I'd say yes, and thinking about this problem actually improved my code! It forces you to really think about the structure of your data. F.e. when you'd normally be lazy and pass a point on the screen as two arguments <code>x</code> and <code>y</code>, you're now forced to create a Point object. It's hard to prove this is a good thing, but I've found it improves my code a lot. And again, programming language design comes into play, because creating simple intermediate objects is too much work, and often performs bad.</p>
+<p>More later&#8230;</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/02/10.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

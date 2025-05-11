@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/html/beyondJS/index.txt">
+<head>
+<title>Beyond JS</title>
+</head>
+<body>
+<section id="content">
+	<h>Beyond JS</h>
+	<p>A javascript library</p>
+	<section id="note">
+		<h>The game</h><p><l><input id='doStar' type='checkbox' /><span id='star' style='position:absolute'>*</span></l>Check the box to let the star follow your cursor. It will circle the position of your cursor when it moves with a 1 second delay. Now try to move your cursor in such a way that the star staysat about the same position.</p><h>Last Update</h>
+		<p>10/16/2005; 1:22:09 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/html/beyondJS/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/html/beyondJS/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/html/beyondJS/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+<h>Download</h>
+<p><a href="beyond/beyond.zip">Beyond JS v1.0</a></p>
+</section>
+<section>
+<h>What is Beyond JS</h>
+<p>Beyond JS is a Javascript library that lets you write Javascript unlike anything you've ever written. Your code will never be the same again. It contains both useful,
+functional, tricky and freakish extentions and additions to Javascript. It can make
+your code more readable and less debugable, and even the other way around.</p>
+<p>It started with a trick, my funclib.js and a mail from <a href="http://ericomguy.blogspot.com/">Dan Shappir</a>,
+which resulted in <a href="http://w3future.com/html/stories/callbacks.html">this article</a>.
+Since then new versions of the library have been sent to and fro between me and Dan.
+We had great fun, and the library grew with each new idea. Now we felt it was time for
+others to try the code. We try to support IE4+ and Mozilla. But we've not yet tested very much,
+there might even be some completely untested code in there.</p>
+</section>
+<section>
+<h>Example</h>
+<p>In the right sidebar you find a little 'game'. Here's the code, which shows some of
+the important functions of the library: <code>curry</code>, <code>using</code> and <code>Function.from</code>.</p>
+<pre>document.body.onmousemove = Function.from("star", "moveTo").delay(1000).using(
+  "+".using(
+    Function.from(event, ×), 
+    "*".using("radius", Function.from(Math, "sin", "angle"))),
+  "+".using(
+    Function.from(event, "y"), 
+    "*".using("radius", Function.from(Math, "cos", "angle")))
+).curry({
+  radius: 30, 
+  angle: function() {return (new Date)/50;}.asValue()
+}).gate(Function.from("doStar".element(),"checked"));</pre>
+<p>(The example doesn't work with Mozilla, because of the differences in event handling. BeyondJS <b>is</b> cross-platform.)</p>
+</section>
+<script src="beyond/beyond.js" type="text/javascript"></script>
+<script src="beyond/beyondBrowser.js" type="text/javascript"></script>
+<script type="text/javascript"><![CDATA[
+	function follow()
+	{
+		document.body.onmousemove = Function.from("star", "moveTo").delay(1000).using(
+		  "+".using(
+		    Function.from(event, "x"), 
+		    "*".using("radius", Function.from(Math, "sin", "angle"))),
+		  "+".using(
+		    Function.from(event, "y"), 
+		    "*".using("radius", Function.from(Math, "cos", "angle")))
+		).curry({
+		  radius: 30,
+		  angle: function() {return (new Date)/50;}.asValue()
+		}).gate(Function.from("doStar".element(),"checked"));
+	}
+	document.body.onload=new Function("","follow()");
+]]></script>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/html/beyondJS/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<?
+header ("Content-type: text/css");
+$c=split(',',$HTTP_GET_VARS["colors"]);
+if (count($c)!=15) {
+	$colors = "ff9900,000033,176,128,128,32,128,32,0,213,0,128,40,128,256";
+	$c=split(',',$colors);
+}
+$c[0]='#'.$c[0];
+$c[1]='#'.$c[1];
+$c[2]=lighten($c[0],$c[2]);
+$c[3]=lighten($c[2],$c[3]);
+$c[4]=lighten($c[3],$c[4]);
+$c[5]=darken($c[2],$c[5]);
+$c[6]=darken($c[2],$c[6]);
+$c[7]=darken($c[0],$c[7]);
+$c[8]=darken($c[1],$c[8]);
+$c[9]=lighten($c[1],$c[9]);
+$c[10]=lighten($c[9],$c[10]);
+$c[11]=lighten($c[9],$c[11]);
+$c[12]=lighten($c[11],$c[12]);
+$c[13]=lighten($c[11],$c[13]);
+$c[14]=lighten($c[13],$c[14]);
+function lighten($orig, $amount) {
+	$realc=fromRGB($orig);
+	return toRGB(
+		$realc["r"]+((256-$realc["r"])*$amount/256),
+		$realc["g"]+((256-$realc["g"])*$amount/256),
+		$realc["b"]+((256-$realc["b"])*$amount/256)
+	);
+}
+function darken($orig, $amount) {
+	$realc=fromRGB($orig);
+	return toRGB($realc["r"]-$amount, $realc["g"]-$amount, $realc["b"]-$amount);
+}
+function toRGB($r, $g, $b) {
+	if ($r<0) $r=0; else if ($r>255) $r=255;
+	if ($g<0) $g=0; else if ($g>255) $g=255;
+	if ($b<0) $b=0; else if ($b>255) $b=255;
+	return sprintf("#%02X%02X%02X",$r,$g,$b);
+}
+function fromRGB($color) {
+	return array(
+		"r" => hexdec(substr($color, 1, 2)),
+		"g" => hexdec(substr($color, 3, 2)),
+		"b" => hexdec(substr($color, 5, 2))
+	);
+}
+?>
+html {
+  background: <? echo $c[0]; ?>;
+  margin: 0em;
+  padding:0em;
+}
+body {
+  margin:0em;
+  padding:0em;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 78%;
+  line-height: 130%;
+  color: <? echo $c[8]; ?>;
+  background: <? echo $c[0]; ?>;
+}
+td,th {
+  vertical-align: top;
+}
+img {
+	border: none;
+}
+
+#header {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  height: 5em;
+  padding: 0em;
+  background: <? echo $c[0]; ?>;
+  overflow: hidden;
+  z-index: 2;
+  width: 100%;
+}
+#header-title-shadow {
+  position: absolute;
+  z-index: 3;
+  font-size: 700%;
+  font-weight: bold;
+  line-height: 110%;
+  top: -0.4em;
+  left: -0.24em;
+  color: <? echo $c[7]; ?>;
+  height: 1em;
+}
+#header-title {
+  z-index: 4;
+  position: absolute;
+  top: -0.17em;
+  left: 0.15em;
+/*  clip: rect(0em 100% 90% 0em);*/
+  font-size: 384%;
+  font-weight: bold;
+  line-height: 110%;
+}
+#header-tabs {
+  z-index: 5;
+  position: absolute;
+  top: 3.52em;
+  left: 0em;
+  width: 100%;
+  padding: 0em;
+}
+#footer {
+  clear: both;
+  font-size: 77%;
+  padding: 0em 0.23em 0.23em 0.24em;
+  height: 1.33em;
+  background: <? echo $c[0]; ?>;
+  border-top: 0.10em solid <? echo $c[8]; ?>;
+}
+#layout {
+  position: absolute;
+  top: 5em;
+  left: 0em;
+  background: <? echo $c[12]; ?>;
+  border-top: 0.08em solid <? echo $c[8]; ?>;
+  z-index: 7;
+}
+#content {
+  margin: 0.16em 0.16em 1.16em 13.15em;
+  padding: 1em 10.5em 1em 2.5em;
+}
+#note {
+  font-size: 90%;
+  font-family: Tahoma, Helvetica, sans-serif;
+  line-height: 110%;
+  float: right;
+  width: 13em;
+  border-left: 0.27em solid <? echo $c[0]; ?>;
+  border-top: 0.27em solid <? echo $c[2]; ?>;
+  border-bottom: 0.27em solid <? echo $c[2]; ?>;
+  background: <? echo $c[2]; ?>;
+  padding: 1em 0.5em 1em 0.5em ;
+  margin: 0.5em -4.44em 1em 1.5em;
+}
+#content>#note {
+	margin-right: -8.89em;
+}
+
+#sidebar, .sidebar {
+  float: left;
+  margin: 0.24em 0.16em 0.16em 0.16em;
+  border: 0.16em solid <? echo $c[8]; ?>;
+  border-top: none;
+  background: <? echo $c[3]; ?>;
+  padding: 0em;
+}
+.sidebar-header {
+  background: <? echo $c[8]; ?>;
+  border: 0.18em solid <? echo $c[8]; ?>;
+  border-bottom: none;
+  color: <? echo $c[12]; ?>;
+  text-align: center;
+  font-weight: bold;
+  font-size: 90%;
+  line-height: 110%;
+  width: 13em;
+  padding: 0em 0.27em 0.27em 0.27em;
+  margin: 0em;
+}
+
+.tab, .tab-hover {
+  background: <? echo $c[3]; ?>;
+  border-left: 0.16em solid <? echo $c[4]; ?>;
+  border-right: 0.16em solid <? echo $c[5]; ?>;
+  border-top: 0.16em solid <? echo $c[4]; ?>;
+  padding: 0.08em 0.24em 0.08em 0.24em;
+  cursor:pointer;cursor:hand;
+  text-align: center;
+  float:left;
+  margin-left: 0.16em;
+  margin-right: 0.24em;
+  width: 7em;
+  height: 2em;
+  line-height: 110%;
+}
+.tab, .tab a {
+  color: <? echo $c[8]; ?>;
+  font-weight:normal;
+  text-decoration:none;
+}
+.tab-hover {
+  background: <? echo $c[14]; ?>;
+  border-left: 0.16em solid <? echo $c[11]; ?>;
+  border-right: 0.16em solid <? echo $c[9]; ?>;
+  border-top: 0.16em solid <? echo $c[13]; ?>;
+}
+.tab-hover, .tab-hover a {
+  color: <? echo $c[1]; ?>;
+  font-weight:normal;
+  text-decoration:none;
+}
+.button, .button-hover, .button2, .button2-hover, .buttonflat, .buttonflat-hover {
+  background: <? echo $c[2]; ?>;
+  border-left: 0.18em solid <? echo $c[4]; ?>;
+  border-bottom: 0.18em solid <? echo $c[5]; ?>;
+  border-right: 0.18em solid <? echo $c[5]; ?>;
+  border-top: 0.18em solid <? echo $c[4]; ?>;
+/*  -moz-border-left-colors: #F4FFDD <? echo $c[4]; ?>;
+  -moz-border-bottom-colors: #DCEFB5 <? echo $c[5]; ?>;
+  -moz-border-right-colors: #DCEFB5 <? echo $c[5]; ?>;
+  -moz-border-top-colors: #F4FFDD <? echo $c[4]; ?>;*/
+  padding: 0.18em 1em;
+  cursor:pointer;cursor:hand;
+  text-align:center;
+}
+.button, .button2, .button a, .button2 a {
+  color: <? echo $c[8]; ?>;
+  font-weight:normal;
+  text-decoration:none;
+}
+.button-hover,.button2-hover {
+  background: <? echo $c[14]; ?>;
+  border-left: 0.18em solid <? echo $c[11]; ?>;
+  border-right: 0.18em solid <? echo $c[9]; ?>;
+  border-top: 0.18em solid <? echo $c[13]; ?>;
+  border-bottom: 0.18em solid <? echo $c[9]; ?>;
+}
+.button-hover, .button2-hover, .button-hover a, .button2-hover a {
+  color: <? echo $c[1]; ?>;
+  font-weight:normal;
+  text-decoration:none;
+}
+.button2, .button2-hover {
+  width: 13em;
+  text-align:left;
+  padding: 0.09em 0.27em;
+  font-size: 90%;
+  line-height: 110%;
+  font-family: Tahoma, Helvetica, sans-serif;
+}
+.buttonflat {
+	border-color: <? echo $c[12]; ?>;
+	background-color: <? echo $c[12]; ?>;
+}
+.buttonflat, .buttonflat-hover {
+  padding: 0.16em;
+}
+
+.header {
+  background: <? echo $c[8]; ?>;
+  color: <? echo $c[13]; ?>;
+  border-right:0.08em solid <? echo $c[8]; ?>;
+  border-bottom:0.16em solid <? echo $c[8]; ?>;
+  padding:0.08em 0.5em;
+  font-weight:bold;
+  text-align:center;
+}
+table.border {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-top:0.08em solid <? echo $c[8]; ?>;
+  border-left:0.08em solid <? echo $c[8]; ?>;
+}
+td.border {
+  border-right:0.08em solid <? echo $c[8]; ?>;
+  border-bottom:0.08em solid <? echo $c[8]; ?>;
+  text-align:center;
+}
+th.props {
+  background: <? echo $c[2]; ?>;
+  vertical-align: middle;
+  font-weight:normal;
+  border-right:0.08em solid <? echo $c[8]; ?>;
+  border-bottom:0.08em solid <? echo $c[8]; ?>;
+  padding:0.08em 0.5em;
+  text-align:right;
+}
+input.props, textarea.noborder {
+  border:none !important;
+  padding:0em;
+  margin:0em;
+}
+input.props {
+  padding:0em 0.24em;
+  height: 1.2em;
+  background-color: <? echo $c[13]; ?>;
+}
+textarea {
+  border:0.08em solid <? echo $c[8]; ?>;
+  scrollbar-track-color: <? echo $c[9]; ?>;
+}
+input, select, textarea {
+  background-color: <? echo $c[13]; ?>;
+}
+.itemExt {
+  float: right;
+  font-size: 80%;
+  line-height: 110%;
+  margin: 0em 0em 0em 0.24em;
+  padding: 0em 0.5em;
+  border-left: 0.08em solid <? echo $c[8]; ?>;
+  border-bottom: 0.08em solid <? echo $c[8]; ?>;	
+  width: 8.5em;
+  text-align: right;
+}
+
+a {
+  color: <? echo $c[6]; ?>;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover, a:visited {
+  color: <? echo $c[1]; ?>;
+}
+h1 {
+  margin: 0em -5.34em -0.24em -0.9em;
+  border-bottom: 0.08em solid <? echo $c[8]; ?>;
+  border-left: 0.08em solid <? echo $c[12]; ?>;
+  border-right: 0.08em solid <? echo $c[12]; ?>;
+  font-size: 180%;
+  line-height: 100%;
+}
+h2 {
+  margin: 1em -6.68em 0.5em -0.75em;
+  border-bottom: 0.08em solid <? echo $c[8]; ?>;
+  font-size: 135%;
+  line-height: 100%;
+}
+h3 {
+  font-size: 100%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 1em 0em 0.5em 0em;
+}
+p {
+  margin: 0.5em 0em 0.5em 0em;
+  text-align: justify;
+}
+ul, ol, pre, dl {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+ul, ol {
+  margin-left: 0em;
+  padding-left: 1.5em;
+}
+blockquote {
+  background-color: <? echo $c[10]; ?>;
+  margin: 0.5em 0em 0.5em 0em;
+  padding: 0em 1em;
+  border-left: 0.16em solid <? echo $c[1]; ?>;
+  border-top: 0.16em solid <? echo $c[10]; ?>;
+  border-bottom: 0.16em solid <? echo $c[10]; ?>;
+}
+blockquote blockquote {
+	padding-right: 0em;
+}
+q:before, q:after {
+	content: '';
+}
+cite {
+	font-style: normal;
+}
+code {
+	white-space: pre;
+}

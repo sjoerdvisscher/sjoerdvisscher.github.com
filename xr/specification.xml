@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/xr/specification.txt">
+<head>
+<title>XR Specification</title>
+</head>
+<body>
+<section id="content">
+	<h>XR Specification</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:29:10 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/xr/specification.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/xr/specification.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/xr/specification.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+<h>RELAX NG Compact Syntax</h>
+<pre>
+namespace xr = "http://w3future.com/xr/ns/"
+ 
+start = 
+  element xr:transform {
+    introducing*
+  }
+    
+introducing = 
+  element xr:introducing {
+    select?,
+    resource
+  }
+ 
+resource =
+  element * {
+    ( uri | uriSelect )?,
+    property*
+  }
+ 
+property = 
+  element * {
+    ( select, collectionType? )?,
+    ( text | resource )?
+  }
+    
+uri = 
+  attibute xr:uri { xsd:anyURI }
+  
+uriSelect = 
+  attribute xr:uriSelect { xpath }
+  
+select = 
+  attribute xr:select { xpath }
+ 
+collectionType = 
+  attribute xr:collectionType {
+    "bag" | "sequence" | "alternatives" | "collection"
+  }
+ 
+xpath =
+  text
+</pre>
+</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/xr/specification.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/xr.opml" /></section>
+</body>
+</html>

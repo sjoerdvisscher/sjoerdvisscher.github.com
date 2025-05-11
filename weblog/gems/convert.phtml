@@ -1,0 +1,23 @@
+<?php
+
+// Allocate a new XSLT processor
+$xh = xslt_create();
+
+// Process the document, returning the result into the $result variable
+$result = xslt_process($xh, 'xhtml2b.xml', 'xhtml2.xsl');
+if ($result) {
+    print "SUCCESS, sample.xml was transformed by sample.xsl into the \$result";
+    print " variable, the \$result variable has the following contents\n<br>\n";
+    print "<pre>\n";
+    print $result;
+    print "</pre>\n";
+}
+else {
+    print "Sorry, sample.xml could not be transformed by sample.xsl into";
+    print "  the \$result variable the reason is that " . xslt_error($xh) .
+    print " and the error code is " . xslt_errno($xh);
+}
+
+xslt_free($xh);
+
+?>

@@ -1,0 +1,111 @@
+<rdf:RDF
+      xml:base="http://w3future.com/people/sjoerd_visscher/foaf.rdf"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:geo="http://www.perceive.net/schemas/geo">
+<foaf:Person rdf:about="http://w3future.com/people/sjoerd_visscher/">
+	<foaf:name>Sjoerd Visscher</foaf:name>
+	<foaf:title>Mr</foaf:title>
+	<foaf:firstName>Sjoerd</foaf:firstName>
+	<foaf:surname>Visscher</foaf:surname>
+	<foaf:mbox_sha1sum>eecd181ed69c352b4c3ebb42fb360388736d0aee</foaf:mbox_sha1sum>
+	<foaf:mbox>
+		<rdfs:Resource rdf:about="mailto:sjoerd%40w3future.com"/>
+	</foaf:mbox>	
+	<foaf:homepage>
+	  <foaf:Document rdf:about="http://w3future.com/"/>
+	</foaf:homepage>
+	<foaf:weblog>
+	  <foaf:Document rdf:about="http://w3future.com/weblog/"/>
+	</foaf:weblog>
+	<foaf:depiction>
+	  <foaf:Image rdf:about="http://w3future.com/people/images/sjoerd_front.jpg"/>
+	</foaf:depiction>
+	<foaf:depiction>
+	  <foaf:Image rdf:about="http://mgnt.khm.de:8080/images/owrede/snd07.jpg"/>
+	</foaf:depiction>
+	<foaf:workplaceHomepage>
+	  <foaf:Document rdf:about="http://www.q42.nl/">
+	    <dc:title>Q42</dc:title>
+	  </foaf:Document>
+	</foaf:workplaceHomepage>
+	<foaf:schoolHomepage>
+	  <foaf:Document rdf:about="http://www.skos.nl/index.asp?pagina=/scholenoverzicht.asp?idx=36">
+	    <dc:title>Basisschool St. Bernadette</dc:title>
+	  </foaf:Document>
+	</foaf:schoolHomepage>
+	<foaf:schoolHomepage>
+	  <foaf:Document rdf:about="http://www.schoolbank.nl/rs6/cl.asp?action=view_school&amp;school_id=114583&amp;atp=schoolbank">
+	    <dc:title>Florens Radewijns College Raalte</dc:title>
+	  </foaf:Document>
+	</foaf:schoolHomepage>
+	<foaf:schoolHomepage>
+	  <foaf:Document rdf:about="http://www.math.utwente.nl/index_eng.htm">
+	    <dc:title>University of Twente, Applied Mathematics</dc:title>
+	  </foaf:Document>
+	</foaf:schoolHomepage>
+	<geo:location>
+	  <geo:Position>
+	    <geo:lat>52.0788</geo:lat>
+	    <geo:lon>4.3092</geo:lon>
+	  </geo:Position>
+	</geo:location>
+	<foaf:knows>
+		<foaf:Person>
+			<foaf:name>Lon Boonen</foaf:name>
+			<foaf:mbox_sha1sum>ca4f1160680d612642f3154d689e1645e0d9f8f1</foaf:mbox_sha1sum>
+			<rdfs:seeAlso>
+			  <rdfs:Resource rdf:about="http://www.q42.nl/media/lon.rdf"/>
+			</rdfs:seeAlso>
+		</foaf:Person>
+	</foaf:knows>
+	<foaf:knows>
+		<foaf:Person>
+			<foaf:name>Gregor J. Rothfuss</foaf:name>
+			<foaf:mbox_sha1sum>f91c4b774172fc1c5f298b80f224bf9b74c46262</foaf:mbox_sha1sum>
+			<rdfs:seeAlso>
+			  <rdfs:Resource rdf:about="http://greg.abstrakt.ch/foaf.rdf"/>
+			</rdfs:seeAlso>
+		</foaf:Person>
+	</foaf:knows>
+	<foaf:knows>
+		<foaf:Person>
+			<foaf:name>Sam Ruby</foaf:name>
+			<foaf:mbox_sha1sum>703471c6f39094d88665d24ce72c42fdc5f20585</foaf:mbox_sha1sum>
+			<rdfs:seeAlso>
+			  <rdfs:Resource rdf:about="http://www.intertwingly.net/public/foaf.rdf"/>
+			</rdfs:seeAlso>
+		</foaf:Person>
+	</foaf:knows>
+	<foaf:knows>
+		<foaf:Person rdf:about="http://dave.editthispage.com/myNameIsDaveWiner">
+			<foaf:name>Dave Winer</foaf:name>
+			<foaf:mbox_sha1sum>edb2e2ba4d800af4bccccce49a92964fe9953aeb</foaf:mbox_sha1sum>
+			<foaf:depiction>
+				<foaf:Image rdf:about="http://static.userland.com/images/dave/daveAtEsthers.gif" />
+			</foaf:depiction>
+			<foaf:depiction>
+				<foaf:Image rdf:about="http://mgnt.khm.de:8080/images/owrede/snd07.jpg"/>
+			</foaf:depiction>
+		</foaf:Person>
+	</foaf:knows>
+</foaf:Person>
+
+<foaf:Image rdf:about="http://mgnt.khm.de:8080/images/owrede/snd07.jpg">
+  <dc:title>Dave is talking to Sjoerd Visscher (about geek stuff for sure!)</dc:title>
+  <dc:date>2001-05-26</dc:date>
+  <dc:coverage>Amsterdam, NL</dc:coverage>
+  <dc:source>
+    <foaf:Document rdf:about="http://owrede.khm.de/stories/storyReader$189" />
+  </dc:source>
+  <foaf:depicts>
+    <foaf:Person rdf:about="http://w3future.com/people/sjoerd_visscher/" />
+  </foaf:depicts>
+  <foaf:depicts>
+    <foaf:Person rdf:about="http://dave.editthispage.com/myNameIsDaveWiner" />
+  </foaf:depicts>
+</foaf:Image>
+
+</rdf:RDF>

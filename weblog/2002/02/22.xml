@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/02/22.xml">
+<head>
+<title>Friday, February 22, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:20:41 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/02/22.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/02/22.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/02/22.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/02/21.xml#a71' title='Thursday, February 21, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/02/22.xml">Friday, February 22, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/02/23.txt#a74' title='Saturday, February 23, 2002'>&#160;&gt;</a></h>
+<a name="a73"></a>
+<section id="a73">
+<h ></h>
+<p>OK, <a href="http://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">the Javascript version of Y</a> needs apply too. <a href="http://radio.weblogs.com/0100812/2002/02/22.html#a261">Patrick explains</a>.</p>
+</section><a name="a72"></a>
+<section id="a72">
+<h ></h>
+<blockquote><p>Here's a <a href="http://www.dreamsongs.com/NewFiles/WhyOfY.pdf">famous</a> and <a href="http://radio.weblogs.com/0100812/stories/2002/02/22/favoriteLambdaTricks.html">amazing lambda trick</a>. [<a href="http://radio.weblogs.com/0100812/">Patrick Logan's Radio Weblog</a>]</p></blockquote>
+<p><a href="http://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">And the same famous trick in Javascript.</a> May I say I like the Javascript function more than the Lisp or Python version? Because there's no <code>apply</code> needed.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/02/22.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<script src="parser.js" type="application/javascript;version=1.7"></script>
+<script src="core.js" type="application/javascript;version=1.7"></script>
+<textarea id="sourcecode" style="width: 100%; height: 20em">(
+  "Quicksort:"
+
+  ?QSort = ?x,?xs =>
+    xs And (QSort(xs < x); x; QSort(xs >= x)) Or x
+
+  QSort(5,2,3,6,4) Show 5
+)
+
+(
+  "Fibonacci:"
+
+  ?Tail = ?x,?xs => xs
+
+  ?PairwiseAdd = ?x,?xs => ?y,?ys =>
+    x + y
+    xs PairwiseAdd ys
+
+  ?fib = 1, 1, fib PairwiseAdd fib.Tail
+
+  fib Show 10
+)
+
+(
+  "Prime numbers:"
+
+  ?primeFilter = ?p,?ns => p, primeFilter(ns[[_ mod p != 0]])
+  ?primeInput = 2, primeInput + 1
+
+  primeFilter(primeInput) Show 10
+)
+
+## Helper functions.
+
+?Take = ?x,?xs => ?n ->
+  (n != 0) And (x; xs Take n - 1)
+
+?Join = ?x,?xs => ?sep ->
+  xs And (x + sep + (xs Join sep)) Or x
+
+?Show = ?xs => ?max -> xs Take max Join ", "
+</textarea>
+<button onclick="if (!window.run) alert('The current version of Moiell only runs with Javascript 1.7. Try Firefox 2.0.'); else run(document.getElementById('sourcecode').value)" accesskey="R">
+<u>R</u>un
+</button>
+<button onclick="next()" accesskey="N">
+<u>N</u>ext
+</button>
+<pre id="compileDebug"> </pre>

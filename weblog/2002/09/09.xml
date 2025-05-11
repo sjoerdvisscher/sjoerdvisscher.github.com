@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/09/09.xml">
+<head>
+<title>Monday, September 09, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:23:35 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/09/09.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/09/09.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/09/09.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/09/08.xml#a127' title='Sunday, September 08, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/09/09.xml">Monday, September 09, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/09/10.txt#a130' title='Tuesday, September 10, 2002'>&#160;&gt;</a></h>
+<a name="a129"></a>
+<section id="a129">
+<h id='rss09420ToRdfConverter'><a href="http://w3future.com/weblog/2002/09/09.xml#a129" class="weblogItemTitle">RSS 0.94/2.0 to RDF converter</a></h>
+<p>One possible implementation of semantic schemas is to convert XML to RDF with XSLT. So I created <a href="http://w3future.com/weblog/gems/rss2rdf.xsl">an XSLT file to convert RSS 0.94/2.0 to RDF</a>. The result is better than RSS 1.0, because it doesn't have to be backwards compatible. For example, <code>title</code> elements can become <code>dc:title</code> elements. I only used the standard modules, not the proposed ones. If anyone has suggestions for improvement (like an <a href="http://www.aaronsw.com/weblog/">RDF/RSS specialist</a>) I'd like to hear them. You can try it for your own RSS file at <a href="http://www.w3.org/2001/05/xslt">the W3C XSLT service</a>. Examples: <a href="http://www.w3.org/2000/06/webdata/xslt?xslfile=http%3A%2F%2Fw3future.com%2Fweblog%2Fgems%2Frss2rdf.xsl&amp;xmlfile=http%3A%2F%2Fw3future.com%2Fweblog%2Frss.xml&amp;transform=Submit">w3future</a>, 
+<a href="http://www.w3.org/2000/06/webdata/xslt?xslfile=http%3A%2F%2Fw3future.com%2Fweblog%2Fgems%2Frss2rdf.xsl&amp;xmlfile=http%3A%2F%2Fwww.scripting.com%2Frss.xml&amp;transform=Submit">Scripting News</a>. Try to post the results in the <a href="http://www.w3.org/RDF/Validator/">W3C RDF Validator</a>. That will result in some fancy graph images.</p>
+</section><a name="a128"></a>
+<section id="a128">
+<h id='rss20'><a href="http://w3future.com/weblog/2002/09/09.xml#a128" class="weblogItemTitle">RSS 2.0</a></h>
+<blockquote cite="http://scriptingnews.userland.com/backissues/2002/09/09#attnSpecWonks">
+<p>Tomorrow morning I plan to remove the <a href="http://backend.userland.com/rss#thisIsADraft">caveat</a> on the draft RSS 2.0 <a href="http://backend.userland.com/rss">specification</a>. Before then, if you see any problems (not mega-problems, please), let me know. [<a href="http://scriptingnews.userland.com/backissues/2002/09/09#attnSpecWonks">Scripting News</a>]</p></blockquote>
+<p>There's one thing: most blogs have permalinks, so the <code>guid</code> element is almost always going to be a permalink. Therefore I suggest to make a guid to be a permalink by default. Add <code>noLink="true"</code> if it is not a URL.</p><p>Also my gut feeling is that calling this RSS 2.0 is a bit hasty. Let's first call it 0.94 and play with it a bit. It's the first time that namespaces are allowed. Maybe this adds big incompatibilities nobody thought of yet. RSS 2.0 deserves a bit of practical experience.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/09/09.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

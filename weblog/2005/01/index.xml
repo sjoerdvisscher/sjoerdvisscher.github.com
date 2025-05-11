@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/01/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:30:22 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2005/01/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2005/01/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/01/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2005/01/13.xml">Thursday, January 13, 2005</a></h>
+<a name="a283"></a>
+<section id="a283">
+<h id='stillBugsInTheImplementationOfHtmlHyperlinks'><a href="http://w3future.com/weblog/2005/01/13.xml#a283" class="weblogItemTitle">Still bugs in the implementation of HTML hyperlinks?!</a></h>
+<p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=275689">Yes</a>. What's the problem? Same-document references are resolved using the base URI <a href="http://www.hixie.ch/tests/adhoc/uri/002.html">in most browsers</a>. (Only Lynx gets it right!) What does that mean? It means that in most browsers same-document links (like <code>&lt;a href="#identifier"&gt;</code>) don't point to another location in the current document, but point to the document linked to in the base href.</p>
+<p>Is this a rare? Not really. F.e. the Google cache adds a base href to a page. <a href="http://66.102.9.104/search?q=cache:aamBexQO_XMJ:www.w3.org/TR/REC-html40/intro/intro.html">So the links in TOCs are wrong.</a> The Wayback machine uses base href too, and a base href is added when you save an HTML page. Also most people don't know of this bug; <a href="http://annevankesteren.nl/">Anne van Kesteren</a> found <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=275689#c22">an example</a>.</p>
+<p>So how did this happen? The history is interesting. Fragment identifiers and the base address were already clearly specified &#8212; also their interaction &#8212; in the oldest HTML standard I could find, from November 1992. <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html#4">It says:</a></p>
+<blockquote cite="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html#4"><p>This allows for the form HREF=#identifier to refer to another anchor in the same document. If the anchor is in another document, the atribute is a relative name , relative to the documents address (or specified base address if any).</p></blockquote>
+<p>This text ultimately ends up in <a href="http://www.ietf.org/rfc/rfc1866">HTML 2.0 (RFC 1866)</a>, section 7.4:</p>
+<blockquote cite="http://www.ietf.org/rfc/rfc1866"><p>Any characters following a &#8216;#&#8217; character in a hypertext address constitute a fragment identifier. In particular, an address of the form &#8216;#fragment&#8217; refers to an anchor in the same document.</p></blockquote>
+<p>In HTML 2.0 a same-document reference is not considered to be a relative URL, so <a href="http://www.ietf.org/rfc/rfc1808">RFC 1808</a> remains vague about them. Then in 1997 <a href="http://www.w3.org/TR/REC-html32">HTML 3.2</a> becomes a W3C Recommendation. It refers to fragment identifiers only in the context of image maps and does not contain &#8220;hyperlink&#8221; at all! So at that moment fragment identifiers are essentially left unspecified. Unfortunately this is also <a href="http://www.blooberry.com/indexdot/history/browsers.htm">the time IE 4 and Netscape 4 are finalised and released</a>.</p>
+<p>Half a year later <a href="http://www.w3.org/TR/WD-html40-970708/">the first HTML 4.0 WD</a> is released. In a <a href="http://www.w3.org/TR/WD-html40-970708/htmlweb.html">section about URLs</a> it sais:</p>
+<blockquote cite="http://www.w3.org/TR/WD-html40-970708/htmlweb.html"><p>The URL specification en vigeur at the writing of this document ([RFC1738]) offers a mechanism to refer to a resource, but not to a location within a resource. The Web community has adopted a convention called "fragment URLs" to refer to anchors within an HTML document.</p></blockquote>
+<p>What used to be clearly specified is now a &#8220;convention&#8221;. In the next WD version this text is removed, and it sais that RFC 1808 specifies fragment identifiers. (It doesn't.) The whole problem seems to be solved when <a href="http://www.ietf.org/rfc/rfc2396">RFC 2396</a> is published, which specifies fragment identifiers, and has a special section about same-document references (4.2). But it's too late for <a href="http://www.w3.org/TR/1998/REC-html40-19980424/">HTML 4.0</a>. Even in <a href="http://www.w3.org/TR/html401/">the 4.01 update from December 1999</a> this is not corrected. <a href="http://www.w3.org/TR/xhtml1/">XHTML 1.0</a> does reference the new RFC, but that reference is informative. Finally in 2001 <a href="http://www.w3.org/TR/xhtml-modularization/">XHTML Modularization</a> makes clear that the <code>href</code> attribute of an <code>a</code> element is a URI as defined in RFC 2396.</p>
+<p>By this time however <a href="http://bonsai.mozilla.org/cvslog.cgi?file=/mozilla/netwerk/base/public/nsIURI.idl&amp;root=/cvsroot">the URI code for Mozilla was already written</a> and not much later frozen. Which makes fixing the bug a <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=275689#c28">problem</a>.  But maybe someone finds this a challenge, and the fixer of this bug can proudly say he or she made the web work the way it was intended more than 12 years ago.</p>
+<p><em>Update:</em> Somehow I completely missed (or forgot about) <a href="http://gbiv.com/protocols/uri/rev-2002/rfc2396bis.html">RFC 2396 bis</a>. It completely turnes the same-document reference idea around. They <em>must</em> be resolved using the base URI, as the current browsers do. But if you click on a link that &#8212; except for the fragment identifier part &#8212; is the same as the base URI, then you should stay in the current document.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/01/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

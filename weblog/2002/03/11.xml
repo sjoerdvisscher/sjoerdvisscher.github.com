@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/03/11.xml">
+<head>
+<title>Monday, March 11, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:21:15 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/03/11.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/03/11.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/03/11.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/03/10.xml#a81' title='Sunday, March 10, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/03/11.xml">Monday, March 11, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/03/12.txt#a83' title='Tuesday, March 12, 2002'>&#160;&gt;</a></h>
+<a name="a82"></a>
+<section id="a82">
+<h id='funWithFilters'><a href="http://w3future.com/weblog/2002/03/11.xml#a82" class="weblogItemTitle">Fun with filters</a></h>
+<p>At <a href="http://www.q42.nl">Q42</a> I created a <a href="http://www.q42.nl/demos/colorblindnesssimulator/">color blindness simulator</a> using the filters of Internet Explorer. There are in total 6 layers of filters and it's horribly slow, but <a href="http://www.q42.nl/demos/colorblindnesssimulator/colors.html?http%3A//images.google.com/images%3Fas_q%3Dheadshot%26imgsz%3Dmedium%26as_filetype%3Djpg%26imgc%3Dcolor"> it looks very cool on photographs</a>.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/03/11.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

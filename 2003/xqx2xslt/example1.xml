@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='http://w3future.com/2003/xqx2xslt/xqx2xslt.xsl'?>
+<xqx:module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xqx="http://www.w3.org/2003/12/XQueryX" 
+      xsi:schemaLocation="http://www.w3.org/2003/12/XQueryX xqueryx.xsd">
+  <xqx:mainModule>
+    <xqx:queryBody>
+      <xqx:expr xsi:type="xqx:elementConstructor">
+        <xqx:tagName>bib</xqx:tagName>
+        <xqx:elementContent>
+          <xqx:expr xsi:type="xqx:flworExpr">
+            <xqx:forClause>
+              <xqx:forClauseItem>
+                <xqx:typedVariableBinding>
+                  <xqx:varName>b</xqx:varName>
+                </xqx:typedVariableBinding>
+                <xqx:forExpr>
+                  <xqx:expr xsi:type="xqx:pathExpr">
+                    <xqx:expr xsi:type="xqx:functionCallExpr">
+                      <xqx:functionName>document</xqx:functionName>
+                      <xqx:parameters>
+                        <xqx:expr xsi:type="xqx:stringConstantExpr">
+                          <xqx:value>bib.xml</xqx:value>
+                        </xqx:expr>
+                      </xqx:parameters>
+                    </xqx:expr>
+                    <xqx:stepExpr>
+                      <xqx:xpathAxis>child</xqx:xpathAxis>
+                      <xqx:elementTest>
+                        <xqx:nodeName>
+                          <xqx:QName>bib</xqx:QName>
+                        </xqx:nodeName>
+                      </xqx:elementTest>
+                    </xqx:stepExpr>
+                    <xqx:stepExpr>
+                      <xqx:xpathAxis>child</xqx:xpathAxis>
+                      <xqx:elementTest>
+                        <xqx:nodeName>
+                          <xqx:QName>book</xqx:QName>
+                        </xqx:nodeName>
+                      </xqx:elementTest>
+                    </xqx:stepExpr>
+                  </xqx:expr>
+                </xqx:forExpr>
+              </xqx:forClauseItem>
+            </xqx:forClause>
+            <xqx:whereClause>
+              <xqx:expr xsi:type="xqx:operatorExpr">
+                <xqx:infixOp />
+                <xqx:opType>AND</xqx:opType>
+                <xqx:parameters>
+                  <xqx:expr xsi:type="xqx:operatorExpr">
+                    <xqx:infixOp />
+                    <xqx:opType>=</xqx:opType>
+                    <xqx:parameters>
+                      <xqx:expr xsi:type="xqx:pathExpr">
+                        <xqx:expr xsi:type="xqx:variable">
+                          <xqx:name>b</xqx:name>
+                        </xqx:expr>
+                        <xqx:stepExpr>
+                          <xqx:xpathAxis>child</xqx:xpathAxis>
+                          <xqx:elementTest>
+                            <xqx:nodeName>
+                              <xqx:QName>publisher</xqx:QName>
+                            </xqx:nodeName>
+                          </xqx:elementTest>
+                        </xqx:stepExpr>
+                      </xqx:expr>
+                      <xqx:expr xsi:type="xqx:stringConstantExpr">
+                        <xqx:value>Addison-Wesley</xqx:value>
+                      </xqx:expr>
+                    </xqx:parameters>
+                  </xqx:expr>
+                  <xqx:expr xsi:type="xqx:operatorExpr">
+                    <xqx:infixOp />
+                    <xqx:opType>&gt;</xqx:opType>
+                    <xqx:parameters>
+                      <xqx:expr xsi:type="xqx:pathExpr">
+                        <xqx:expr xsi:type="xqx:variable">
+                          <xqx:name>b</xqx:name>
+                        </xqx:expr>
+                        <xqx:stepExpr>
+                          <xqx:xpathAxis>child</xqx:xpathAxis>
+                          <xqx:attributeTest>
+                            <xqx:nodeName>
+                              <xqx:QName>year</xqx:QName>
+                            </xqx:nodeName>
+                          </xqx:attributeTest>
+                        </xqx:stepExpr>
+                      </xqx:expr>
+                      <xqx:expr xsi:type="xqx:integerConstantExpr">
+                        <xqx:value>1991</xqx:value>
+                      </xqx:expr>
+                    </xqx:parameters>
+                  </xqx:expr>
+                </xqx:parameters>
+              </xqx:expr>
+            </xqx:whereClause>
+            <xqx:returnClause>
+              <xqx:expr xsi:type="xqx:elementConstructor">
+                <xqx:tagName>book</xqx:tagName>
+                <xqx:attributeList>
+                  <xqx:expr xsi:type="xqx:attributeConstructor">
+                    <xqx:attributeName>year</xqx:attributeName>
+                    <xqx:attributeValue>
+                      <xqx:expr xsi:type="xqx:pathExpr">
+                        <xqx:expr xsi:type="xqx:variable">
+                          <xqx:name>b</xqx:name>
+                        </xqx:expr>
+                        <xqx:stepExpr>
+                          <xqx:xpathAxis>child</xqx:xpathAxis>
+                          <xqx:attributeTest>
+                            <xqx:nodeName>
+                              <xqx:QName>year</xqx:QName>
+                            </xqx:nodeName>
+                          </xqx:attributeTest>
+                        </xqx:stepExpr>
+                      </xqx:expr>
+                    </xqx:attributeValue>
+                  </xqx:expr>
+                </xqx:attributeList>
+                <xqx:elementContent>
+                  <xqx:expr xsi:type="xqx:pathExpr">
+                    <xqx:expr xsi:type="xqx:pathExpr">
+                      <xqx:expr xsi:type="xqx:variable">
+                        <xqx:name>b</xqx:name>
+                      </xqx:expr>
+                      <xqx:stepExpr>
+                        <xqx:xpathAxis>child</xqx:xpathAxis>
+                        <xqx:elementTest>
+                          <xqx:nodeName>
+                            <xqx:QName>title</xqx:QName>
+                          </xqx:nodeName>
+                        </xqx:elementTest>
+                      </xqx:stepExpr>
+                    </xqx:expr>
+                  </xqx:expr>
+                </xqx:elementContent>
+              </xqx:expr>
+            </xqx:returnClause>
+          </xqx:expr>
+        </xqx:elementContent>
+      </xqx:expr>
+    </xqx:queryBody>
+  </xqx:mainModule>
+</xqx:module>

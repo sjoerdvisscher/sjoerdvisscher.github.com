@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/12/10.xml">
+<head>
+<title>Tuesday, December 10, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:24:45 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/12/10.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/12/10.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/12/10.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/12/08.xml#a149' title='Sunday, December 08, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/12/10.xml">Tuesday, December 10, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/12/16.txt#a151' title='Monday, December 16, 2002'>&#160;&gt;</a></h>
+<a name="a150"></a>
+<section id="a150">
+<h id='contenteditableInMozilla13'><a href="http://w3future.com/weblog/2002/12/10.xml#a150" class="weblogItemTitle">ContentEditable in Mozilla 1.3</a></h>
+<p>My colleague Lon Boonen has built <a href="http://xopus.org/index.jsp?menu=downloads">a much improved version of contentEditable for Mozilla</a>. It uses the new <a href="http://w3future.com/weblog/2002/11/14.html#a142">designMode feature</a> in Mozilla 1.3, which makes cursor and selection handling much better. And, because at <a href="http://q42.nl">Q42</a> we can't resist to sometimes just give things away for free, you can <a href="http://xopus.org/index.jsp?menu=downloads">download it from the Xopus site</a>.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/12/10.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

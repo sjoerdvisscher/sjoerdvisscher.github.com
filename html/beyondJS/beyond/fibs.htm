@@ -1,0 +1,17 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<HTML>
+<HEAD>
+	<TITLE>fibs</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondLazy.js></SCRIPT>
+	<SCRIPT SRC=beyondBrowser.js></SCRIPT>
+</HEAD>
+<BODY>
+<SCRIPT>
+//	var fibs = function(v) { return !v.length ? [ 0, 1 ] : [ v[1], v[0]+v[1] ]; }.lazy();
+	var fibs = (0).lazy(1);
+	fibs.extend(fibs.zipWith("+", fibs.tail()));
+	fibs.head(30).foreach(Function.from("DIV", "write"));
+</SCRIPT>
+</BODY>
+</HTML>

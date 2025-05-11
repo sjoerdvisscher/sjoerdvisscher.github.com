@@ -1,0 +1,83 @@
+<? 
+$dd = opendir($dir) ; 
+
+$handle = fopen ("$dir/index.txt", "r");
+$title = fgets($handle);
+?>
+<html> 
+<head>
+<title><?= $title ?></title>
+<style type="text/css" media="all">@import "http://joeri.mulder.com/homepage.css";</style>
+<style type="text/css" media="all">
+td { text-align: center; }
+.r {
+  background-image: url(http://joerimulder.com/photos/rechts.jpg);
+  background-repeat: repeat-y;
+  vertical-align: top;
+  text-align: left;
+}
+.o {
+  background-image: url(http://joerimulder.com/photos/onder.jpg);
+  background-repeat: repeat-x;
+  vertical-align: top;
+}
+.rb {
+  background-image: url(http://joerimulder.com/photos/rb.jpg);
+  width: 10px;
+  height: 10px;
+  font-size: 1px;
+}
+.lo {
+  background-image: url(http://joerimulder.com/photos/lo.jpg);
+  width: 10px;
+  height: 10px;
+  font-size: 1px;
+  float: left;
+  margin: 0px;
+}
+.ro {
+  background-image: url(http://joerimulder.com/photos/ro.jpg);
+  width: 10px;
+  height: 10px;
+  font-size: 1px;
+  float: right;
+  margin: 0px;
+}
+.o p {
+  padding: 8px 1em 1em 1em;
+}
+</style>
+</head>
+
+<body> 
+<h3><?= $title ?></h3>
+<table>
+<tr>
+<?
+        for( $i = 0 ; $filename = readdir($dd) ; ){ 
+            if( is_file("$dir/$filename") ){ 
+                if( $imgSize = getImageSize("$dir/$filename") ){ 
+
+                    $w0 = $imgSize[0] ; 
+                    $h0 = $imgSize[1] ; 
+
+                    $title = fgets($handle);
+
+?><td><table cellspacing=0 cellpadding=0 border=0 style="width:<?= $w0+10 ?>px"><tr>
+<td><img src="<?= $dir ?>/<?= $filename ?>" width="<?= $w0 ?>" height="<?= $h0 ?>" alt="<?= $title ?>" /></td>
+<td class="r"><div class="rb"></div></td></tr><tr>
+<td class="o" colspan="2"><span class="lo"></span><span class="ro"></span><p><i><?= $title ?></i></p></td>
+</tr></table></td><? 
+                    $i++ ; 
+                    if ($i % 2 == 0) {?></tr><tr><?}
+                } 
+            } 
+        } 
+?> 
+</p>
+</body> 
+</html> 
+<? 
+closedir($dd) ; 
+fclose ($handle);
+?> 

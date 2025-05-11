@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+	<TITLE>Lazy Quick Sort</TITLE>
+</HEAD>
+<BODY>
+	Lazy Quick sort an array of numbers
+</BODY>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondLazy.js></SCRIPT>
+	<SCRIPT>
+		_LP.qsort = Lazy.recurse(function(head, tail) {
+			var elts_greq = new Lazy;
+			var elts_lt = tail.filter(">".using(head), elts_greq);
+			return elts_lt.qsort().concat(head, elts_greq.qsort());
+		});
+		[ 5, 3, 4, 2, 1 ].lazy().qsort().foreach(alert);
+	</SCRIPT>
+</HTML>

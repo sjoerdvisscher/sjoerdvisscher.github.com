@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/07/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:22:50 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/07/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/07/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/07/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2002/07/27.xml">Saturday, July 27, 2002</a></h>
+<a name="a112"></a>
+<section id="a112">
+<h id='xoomleImprovements'><a href="http://w3future.com/weblog/2002/07/27.xml#a112" class="weblogItemTitle">Xoomle improvements</a></h>
+<blockquote cite='http://radio.weblogs.com/0101679/2002/07/26.html#a676'><p><a href="http://weblogs.userland.com/eclectic/2002/07/26">eclectic</a>: <!--StartFragment --><a href="http://www.dentedreality.com.au/xoomle/"><em>Xoomle</em></a><em> ... is a very nice RESTful interface to the Google API... Paul Prescod provided </em><a href="http://groups.yahoo.com/group/rest-discuss/message/1953"><em>some constructive comments</em></a><em> and suggestions though.</em>  Paul's top comment is that the characters "method=" in the URL (<strong>note</strong>: not the design, but <strong>the characters themselves</strong>) make it less than perfect case study in REST.  Weird.  [<a href='http://radio.weblogs.com/0101679/2002/07/26.html#a676'>Sam Ruby</a>]</p></blockquote>
+<p>I think Paul's comments are really helpful. The 3 values for "method=" provide 3 totally different services, each requiring different parameters. It makes a lot of sense to make 3 URLs for each service.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/07/26.xml">Friday, July 26, 2002</a></h>
+<a name="a111"></a>
+<section id="a111">
+<h id='semanticWebInTheFuture'><a href="http://w3future.com/weblog/2002/07/26.xml#a111" class="weblogItemTitle">Semantic Web in the future</a></h>
+<blockquote cite='http://markpasc.org/blog/2002/07/26.html#i125222'><p>More ftrain goodness in <a href="http://ftrain.com/google_takes_all.html">August 2009: How Google beat Amazon and Ebay to the Semantic Web</a>. [<a href='http://markpasc.org/blog/2002/07/26.html#i125222'>markpasc.blog</a>]</p></blockquote>
+<p>This is a really nice article about the Semantic Web. Read it if you still can't put your finger on what it's good for.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/07/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

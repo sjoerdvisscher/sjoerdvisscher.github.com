@@ -1,0 +1,119 @@
+<?
+ini_set("magic_quotes_gpc", "0");
+?>
+<HTML>
+<BODY>
+<FORM id="inputform" method="post" action="xmlrpccl.phtml">
+<INPUT type=hidden name="url">
+<INPUT type=hidden name="inputXml">
+<INPUT type=hidden name="number">
+<INPUT type=hidden name="queue" value="<? echo $queue; ?>">
+</FORM>
+<SCRIPT>
+parent.<? echo $queue; ?>.setForm(document.getElementById('inputform'));
+<?
+if (isset($url)) {
+	
+	$errno=0;$errstr='';
+
+	$inputXml = stripslashes($inputXml);
+	$u=parse_url($url); 
+	$port=$u["port"];if (!$port) $port=80;
+	$fp=fsockopen($u["host"], $port, &$errno, &$errstr, 30);
+	if ($fp) {   
+		$op= "POST " . $u["path"]. " HTTP/1.0\r\nUser-Agent: JS/PHP XMLRPC 0.1\r\n" .
+			"Host: ". $u["host"]  . "\r\n" .
+			"Content-Type: text/xml\r\nContent-Length: " .
+			strlen($inputXml) . "\r\n\r\n" . $inputXml;
+		
+		print "\r\n/* op\r\n" . $op . "*/\r\n";
+		
+		if (!fputs($fp, $op, strlen($op))) {
+			$errstr="Could not send data to XML-RPC service.";
+		} else {
+			$ipd="";
+			while($data=fread($fp, 32768)) {
+			  $ipd.=$data;
+			}
+		}
+		fclose($fp);
+	}
+
+	$data=strstr($ipd,"<?xml");
+
+	print "\r\n/* data: \r\n" . $data . "*/\r\n";
+	
+	
+	error_reporting(0);
+
+	$depth=0;
+	$first=array();
+	$first[0]=true;
+	$text='';
+
+	function startElement($parser, $name, $attrs) {
+		global $depth,$first;
+		finishtext();
+		if ($first[$depth]) {
+			if ($depth>0) print ",c:["; else print "var data=";
+		} else print ",";
+		print "{n:'$name'";
+		$s="";
+		while (list($k, $v) = each($attrs)) $s.=',"' .$k. '":"' .ereg_replace('("|\\\\)','\\'.'\\1',$v). '"';
+		if ($s) print ',a:{'.substr($s,1).'}';
+		$first[++$depth]=true;
+	}
+
+	function endElement($parser, $name) {
+		global $depth,$first;
+		finishtext();
+		if (!$first[$depth]) print "]";
+		print "}";
+		$first[--$depth]=false;
+	}
+
+	function characterData($parser, $data) {
+		global $text;
+		$text.=$data;
+	}
+
+	function finishtext() {
+		global $depth,$first,$text;
+		if (!ereg("^[[:space:]]*$",$text)) {
+			if ($first[$depth]) {
+				print ",c:["; 
+				$first[$depth]=false;
+			} else print ",";
+			$text=ereg_replace("(\r|\n)","\\n",ereg_replace("('|\\\\)","\\"."\\1",ltrim(rtrim($text))));
+			print "\n'$text'";
+			$text='';
+		}
+	}
+
+	if (!$errstr) {
+		$xml_parser = xml_parser_create();
+		xml_set_element_handler($xml_parser, "startElement", "endElement");
+		xml_set_character_data_handler($xml_parser, "characterData");
+		xml_parser_set_option($xml_parser, XML_OPTION_CASE_FOLDING, false);
+
+		if (!xml_parse($xml_parser, $data, true)) {
+			while ($depth) endElement($xml_parser,'');
+			$errno=xml_get_error_code($xml_parser);
+			$errstr="XML parse error: ".xml_error_string($errno);
+			$errstr.=" at line ".xml_get_current_line_number($xml_parser);
+		}
+
+		xml_parser_free($xml_parser);
+	}
+
+	if ($errstr) {
+		print ";\ndata={n:'!error',a:{text:'$errstr',code:'$errno'}};\n";
+		print "/*$op -> $ipd*/\n";
+	}
+
+	print ";\nparent.$queue.set($number,data)";
+}
+?>
+</SCRIPT>
+</BODY>
+</HTML>

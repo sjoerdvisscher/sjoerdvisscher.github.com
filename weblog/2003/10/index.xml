@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/10/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:28:53 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/10/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/10/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/10/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2003/10/04.xml">Saturday, October 04, 2003</a></h>
+<a name="a259"></a>
+<section id="a259">
+<h id='encloseOrStream'><a href="http://w3future.com/weblog/2003/10/04.xml#a259" class="weblogItemTitle">Enclose or stream</a></h>
+<p><a href="http://blogs.law.harvard.edu/lydon/2003/10/03#a360">Christopher Lydon Interviews Adam Curry</a>. I had not yet listened to any of these interviews, and as <a href="http://live.curry.com/">Adam Curry</a> always as something interesting to say, I thought I'd listen to this one.</p>
+<p>So I clicked on the link to the mp3 of the interview, expecting a Save to disk dialog. To my surprise a Quicktime bar appeared in page, and <em>immediately</em> started playing the interview. The download progress bar vastly outpaced the current playing position slider, and the interview played to the end without interruption.</p>
+<p>In the interview Adam talks about RSS enclosures. I've never really liked enclosures because you can only listen to them the day after you've read the item it belongs to. So I always forget to listen to them because they are by then right at the bottom of the aggregator page, and it fills the harddisks with things you only want listen to once.</p>
+<p>Adam specifically mentions the interview as a good example of an enclosure. So now I wonder if Adam actually knows about streaming mp3.</p>
+<p>I'm using Mozilla Firebird, so I tried the same thing in Internet Explorer and it didn't work. IE started to download the mp3. It's probably possible to configure IE the same way, but with the mess between file extensions and mime-types, I've no idea how. However, copying the URL and opening it in WMP9 also streamed the mp3 instantly. So there has to be a way to get one-click mp3 streaming in Internet Explorer too.</p>
+<p>Then there is the issue of bandwidth. I have a 768kbit/s ADSL connection, and not everybody has that. But for downloading enclosures at night, you need an always-on connection. And most of them are at least 128kbit/s. And that's certainly enough, because this mp3 file is only 64kbit/s.</p>
+<p>So do enclosures have a future? I don't think so given the following:</p>
+<ul>
+<li>Streaming audio does no longer require a special server. Just put the files online, and the audio starts playing while the file is being downloaded.</li>
+<li>File sizes are dropping. With the newest compression formats, 64kbit/s sounds really good.</li>
+<li>Broadband is widely available. My parents live in a village of about 4000 people. Not commercially interesting enough for cable and phone companies to upgrade the hardware. But <a href="http://www.skyaccess.nl/">a company</a> jumped in and now provides wireless access at 128kbit/s and 512kbit/s.</li>
+</ul>
+<p>So the only good reason to use enclosures is when you have high-quality video with high bitrates. That said, it doesn't actually hurt anyone to use enclosures, as long as you also provide a link to the enclosure in the description of the item.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/10/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

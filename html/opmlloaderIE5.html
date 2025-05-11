@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - weblog</TITLE>
+	<SCRIPT src="/w3f/w3f.js"></SCRIPT>
+	<STYLE>
+		@import "/w3f/w3f.css";
+
+		.details {
+			display: none;
+		}
+		.indent {
+			border-left:1px dotted #E0E0F0;
+			padding-left:0.6em;
+			margin-left:0.6em;
+		}
+		TABLE.border {
+			margin:0em;
+		}
+		TH.props {
+			font-size: 7pt;
+		}
+		INPUT.props {
+			font-family: Tahoma, Helvetica, sans-serif;
+			font-size: 7pt;
+		}
+		.openclose {
+			width:1.2em;
+			text-align:center;
+			cursor:pointer;
+			cursor:hand;
+			color:#708020;
+		}
+		#OPMLDiv {
+			margin-left: 2em;
+		}
+		.text {
+			font-weight:bold;
+		}
+	</STYLE>
+	<SCRIPT>
+		var nodeBag={};
+		
+		function loadXML(url,rootId) {
+			rootId=rootId||'/';
+			var doc=new ActiveXObject("Microsoft.XMLDOM");
+			if (!doc) {
+				alert('ActiveX Object missing');
+				return;
+			}
+			doc.validateOnParse = false;
+			doc.async = false;
+			doc.load(url);
+			if (doc.documentElement.nodeName.toLowerCase()=='opml') 
+				return loadOPML(doc,rootId);
+			else
+				return parseNode(doc.documentElement,rootId);
+		}
+		
+		function loadOPML(doc,rootId) {
+			var root=doc.documentElement;
+			var tree=parseOPMLNode(root.childNodes.item(1),rootId);
+			var head=root.childNodes.item(0);
+			var nl=head.childNodes;
+			for (var i=0;i<nl.length;i++) {
+				var n=nl.item(i);
+				if (n.nodeType!=1) continue; // only elements
+				tree[n.nodeName]=n.text;
+			}
+			tree.text=doc.url;
+			tree.type='opml';
+			return tree;
+		}
+		
+		function parseOPMLNode(node,id) {
+			var o={id:id,childNodes:[]};
+			var attrs=node.attributes;
+			for (var i=0;i<attrs.length;i++) {
+				var a=attrs[i];
+				o[a.nodeName]=a.nodeValue;
+			}
+			o.text=fixText(''+o.text);
+			var l=0;
+			var nl=node.childNodes;
+			for (var i=0;i<nl.length;i++) {
+				var n=nl.item(i);
+				if (n.nodeType!=1) continue; // only elements
+				o.childNodes[l++]=parseOPMLNode(n,id+'/'+i);
+			}
+			return nodeBag[id]=o;
+		}
+		
+		function parseNode(node,id) {
+			var o={id:id,childNodes:[],text:'&lt'+node.nodeName};
+			var attrs=node.attributes;
+			for (var i=0;i<attrs.length;i++) {
+				var a=attrs[i];
+				o.text+=' '+a.nodeName+'="'+a.nodeValue+'"';
+			}
+			o.text+='&gt;';
+			var l=0;
+			var nl=node.childNodes;
+			for (var i=0;i<nl.length;i++) {
+				var newid=id+'/'+i;
+				var n=nl.item(i);
+				var c;
+				switch (n.nodeType) {
+					case 1:c=parseNode(n,newid);break;
+					case 3:c=nodeBag[newid]={id:newid,text:n.nodeValue,childNodes:[]};break;
+					case 8:c=nodeBag[newid]={id:newid,text:'&lt;!--',childNodes:[{text:fixText(n.nodeValue)+'<BR>--&gt;',childNodes:[]}]};break;
+					default:c=nodeBag[newid]={id:newid,text:'NodeType: '+n.nodeType,childNodes:[]};break;
+				}
+				o.childNodes[l++]=c;
+			}
+			return nodeBag[id]=o;
+		}
+		
+		function expandNode(id,render) {
+			var target=document.getElementById('childrenOf'+id);
+			if (!target.innerHTML||render) {
+				var n=nodeBag[id];
+				var c='';
+				if (!n) alert(id); else
+				for (var i=0;i<n.childNodes.length;i++) {
+					c+='\r<TR><TD>'+renderNode(n.childNodes[i])+'</TD></TR>';
+				}
+				c='<TABLE cellspacing=0 cellpadding=0>'+c+'</TABLE>';
+				target.innerHTML=c;
+				if (n.loadUrl) window.setTimeout('insertFile("'+id+'")',1);
+			}
+			target.style.display='';
+			document.getElementById('openclose'+id).innerHTML='<SPAN class="openclose" onclick="collapseNode(\''+id+'\')">v</SPAN>';
+		}
+
+		function insertFile(id) {
+			var n=nodeBag[id];
+			var t=n.text;
+			nodeBag[id]=loadXML(n.url||n.xmlUrl,n.id);
+			nodeBag[id].text=t;
+			expandNode(id,true);
+		}
+		
+		function collapseNode(id) {
+			var target=document.getElementById('childrenOf'+id);
+			target.style.display='none';
+			document.getElementById('openclose'+id).innerHTML='<SPAN class="openclose" onclick="expandNode(\''+id+'\')">&gt;</SPAN>';
+		}
+
+		function renderNode(n) {
+			var s='';
+			switch (n.type) {
+				case 'link':
+			 	case 'file':
+					var url=n.url;var dotPos=url.lastIndexOf('.');
+					var ext=url.substr(dotPos).toLowerCase();
+					if (ext=='.opml'||ext=='.xml') {
+						n.childNodes=[{text:'Loading...',childNodes:[]}];
+						n.loadUrl=true;
+						s=n.text+' (<A href="'+url+'">link</A>)';
+					} else s='<A href="'+url+'">'+n.text+'</A>';
+					break;
+				case 'folder':
+					s=n.text;
+					break;
+				case 'rss':
+					n.childNodes=[{text:'Loading...',childNodes:[]}];
+					n.loadUrl=true;
+					s=n.text+' (<A href="'+n.htmlUrl+'">html</A>,<A href="'+n.xmlUrl+'">xml</A>)';
+					break;
+				default:
+					if (n.text) s=n.text;
+					break;
+			}
+			var a='';
+			for (var p in n) {
+				if (p=='childNodes'||p=='text'||p=='id') continue;
+				a+='<TR><TH class="props">'+p+'</TH><TD class="border"><INPUT class="props" readonly value="'+n[p]+'" size="60"></TD></TR>';
+			}
+			if (a) {
+				s+='<SPAN class="details"><DIV class="indent"><TABLE class="border" cellspacing=0 cellpadding=0>'+a+'</TABLE></DIV></SPAN>';
+			}
+			if (n.childNodes.length) {
+				s='<SPAN id="openclose'+n.id+'"><SPAN class="openclose" onclick="expandNode(\''+n.id+'\')">&gt;</SPAN></SPAN> '+s;
+				s+='<DIV id="childrenOf'+n.id+'" style="display:none" class="indent"></DIV>';
+			} else s='<SPAN class="text">'+s+'</SPAN>';
+			return s;
+		}
+		
+		function renderOPML(doc) {
+		  document.getElementById('OPMLDiv').innerHTML=renderNode(doc);
+		}
+
+		function fixText(s) {
+			return s.replace(/</g,'&lt;');
+		}
+		
+		function err(e,s) {
+		  for (var i in e) {
+		    s+='\n'+i+': '+e[i];
+		  }
+		  alert(s);
+		}
+
+	</SCRIPT>		
+</HEAD>
+<BODY>
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>
+document.write('<TD>'+createButton({style:'tab',content:'Weblog',go:'/weblog'})+'</TD>');
+document.write('<TD>&nbsp;</TD><TD>'+createButton({style:'tab',content:'Examples',go:'/html/tools.html'})+'</TD>');
+</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar-container" width="100%">
+<TR><TD>
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%">
+<TR><TD class="sidebar-header">
+Links
+</TD></TR>
+<SCRIPT>
+document.write('<TR><TD>'+createButton({style:'button2',content:'OPML standard',gonew:'http://www.opml.org/'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'Radio Userland',gonew:'http://radio.userland.com/'})+'</TD></TR>');
+</SCRIPT>
+</TABLE>
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%">
+<TR><TD class="sidebar-header">
+Examples
+</TD></TR>
+<SCRIPT>
+document.write('<TR><TD>'+createButton({style:'button2',content:'My Radio Userland OPML',action:'document.forms.loader.url.value="http://www.ourfavoritesongs.com/users/sjoerd_visscher@hotmail.com/directory.opml"'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'My Subscriptions',action:'document.forms.loader.url.value="http://www.ourfavoritesongs.com/users/sjoerd_visscher@hotmail.com/rss/misc/mySubscriptions.opml"'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'Dave\'s Radio Userland OPML',action:'document.forms.loader.url.value="http://www.ourfavoritesongs.com/users/dave@userland.com/directory.opml"'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'Userland Directory',action:'document.forms.loader.url.value="http://www.userland.com/discuss/reader$71.opml"'})+'</TD></TR>');
+</SCRIPT>
+</TABLE>
+</TD></TR>
+</TABLE>
+
+</TD><TD id="content">
+
+<H1>Loading OPML documents</H1>
+<P>Using IE 5.0</P>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%">
+<TR><TD>
+
+<H2>Enter URL of OPML document</H2>
+<P>Or select one of the examples on the left.</P>
+<FORM onsubmit="return false;" name="loader">
+<P><INPUT type="text" size="80" name="url" value=""></P>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Load and Render',action:"renderOPML(loadXML(document.forms['loader'].url.value))"}))</SCRIPT>
+</TD></TR></TABLE></P>
+<P><INPUT type="checkbox" name="showdetails" id="showdetails" onclick="this.blur()" onchange="document.styleSheets[0].rules[0].style.display=(this.checked?'':'none');">Show Node Properties</P>
+</FORM>
+
+<H2>Result</H2>
+<DIV id="OPMLDiv"></DIV>
+
+<H2>Details</H2>
+<P>The XML parser that ships with Microsoft Internet Explorer 5 is used to parse the XML documents.
+When a branch is encountered with type="file" or type="link" and the url ends with ".opml" or ".xml" or with
+type="rss" then the file is automatically loaded into the tree.</P>
+
+</TD><TD id="note">
+
+<H3>Note</H3>
+<P>Some documents can take a long time to load.</P>
+<H3>Access Denied</h3>
+<P>If you get an 'Access Denied' error, then that's because you try to load a resource from a different domain
+than w3future.com. (which is usually what you want) You must enable "Access data sources across domains" in
+the security settings of Internet Explorer. (Tools -> Internet Options -> Secutiry Tab -> Custom Level ->
+Miscellaneous -> Access data sources across domains)</P>
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+</TD></TR></TABLE>
+
+<SCRIPT>initButtons()</SCRIPT>
+</BODY>
+</HTML>

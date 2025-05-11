@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE>Sjoerd Visscher's weblog - w3future.com - w3future.com</TITLE>
+  <META NAME="author" CONTENT="Sjoerd Visscher">
+  <META NAME="keywords" CONTENT="w3, www, world, wide, web, future, weblog, latest, news, javascript, js, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic"> 
+  <META NAME="description" CONTENT="My ideas about new web technology that can change the future of the world wide web.">
+  <LINK REL="author" TITLE="Sjoerd Visscher" HREF="mailto:sjoerd@w3future.com">
+  <LINK REL="search" TITLE="Archive Search" HREF="http://w3future.com/html/weblogarchive.html">
+  <LINK REL="sources" TITLE="Weblog Sources" HREF="http://w3future.com/html/weblogsources.html">
+  <LINK REL="alternate" TYPE="text/rss" TITLE="RSS 0.92" HREF="http://w3future.com/weblog/rss.xml">
+<STYLE>
+BODY {
+  margin:0px;
+  padding:0px;
+  background-color:#ff9900;
+}
+BODY,TD,TH {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 78%;
+  color: #000033;
+  vertical-align: top;
+}
+
+#outertable {
+  position: relative;
+  top: 0em; left: 0em;
+  z-index: 2;
+  width: 100%; height: 100%;
+}
+#header {
+  height: 4em;
+  font-size: 100%;
+  font-weight: bold;
+  vertical-align:bottom;
+}
+#header-title {
+  position: absolute;
+  top: -0.15em;
+  left: 0.15em;
+  clip: rect(0em 100% 90% 0em);
+  font-size: 300%;
+  font-weight: bold;
+}
+#header-title-shadow {
+  position: absolute;
+  z-index: 1;
+  font-size: 700%;
+  font-weight: bold;
+  top: -0.4em;
+  left: -0.3em;
+  color: #DF7900;
+}
+#body,#body2 {
+  border-top: 1px solid #000033;
+  border-bottom: 1px solid #000033;
+}
+#body {
+  padding: 0.5em;
+  height: 100%;
+}
+#body2 {
+  background-color:#ff9900;
+}
+#footer {
+  font-size: 60%;
+  padding: 0px 3px 2px 3px;
+  vertical-align: bottom;
+  height: 1em;
+}
+#content {
+  border: 2px solid #000033;
+  background: #EDEDF0;
+  padding: 1em;
+}
+#note {
+  width: 14em;
+  border-left: 3px solid #ff9900;
+  background: #FFDFB0;
+  padding: 0em 0em 0.5em 0em;
+  font-size: 70%;
+  font-family: Tahoma, Helvetica, sans-serif;
+}
+
+TD.sidebar-container {
+  width: 12em;
+  border: 2px solid #000033;
+  border-top: none;
+  background: #FFEFD8;
+}
+TABLE.sidebar-container {
+  border-bottom: 1px solid #000033;
+}
+.sidebar {
+  padding: 0em;
+  background: #FFEFD8;
+}
+.sidebar-header {
+  background: #000033;
+  color: #EDEDF0;
+  text-align: center;
+  font-weight: bold;
+  border-top: 2px solid #000033;
+  padding: 0px 1px 3px 1px;
+}
+
+.tab {
+  background: #FFEFD8;
+  border-left: 2px solid #FFF7EC;
+  border-right: 2px solid #DFBF90;
+  border-top: 2px solid #FFF7EC;
+  padding: 1px 3px 1px 3px;
+  cursor:pointer;cursor:hand;
+}
+.tab, .tab A {
+  color: #000033;
+  font-weight:normal;
+  text-decoration:none;
+}
+.button2 {
+  background: #FFDFB0;
+  border-left: 2px solid #FFF7EC;
+  border-bottom: 2px solid #DFBF90;
+  border-right: 2px solid #DFBF90;
+  border-top: 2px solid #FFF7EC;
+  cursor:pointer;cursor:hand;
+  text-align:left;
+  padding: 1px 3px;
+  font-size: 70%;
+  font-family: Tahoma, Helvetica, sans-serif;
+}
+.button2, .button2 A {
+  color: #000033;
+  font-weight:normal;
+  text-decoration:none;
+}
+
+A {
+  color: #7F5F30;
+  text-decoration: none;
+  font-weight: bold;
+}
+A:hover, A:visited {
+  color: #000033;
+}
+H1 {
+  margin: 0em;
+  border-bottom: 2px solid #000033;
+  font-size: 180%;
+  font-family: Tahoma, Helvetica, sans-serif;
+}
+H2 {
+  margin: 1em 0.5em 0.5em 0.5em;
+  border-bottom: 1px solid #000033;
+  font-size: 135%;
+  font-family: Tahoma, Helvetica, sans-serif;
+}
+H3 {
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  margin: 1em 1.5em 0.5em 1.5em;
+}
+P {
+  margin: 0em 1.5em 0.5em 1.5em;
+}
+</STYLE>
+</HEAD>
+<BODY>
+<div id="header-title-shadow">w3future.com</div>
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0 id="outertable">
+<TR><TD id="header">
+<div id="header-title">w3future.com</div>
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<DIV id=header-title>w3future.com</DIV>
+<TABLE style="MARGIN-LEFT: 4px" cellSpacing=0 cellPadding=0><TR>
+<TD class=tab title="Open http://w3future.com/weblog"><A href="http://w3future.com/weblog"><NOBR>Weblog</NOBR></A></TD>
+<TD>&nbsp;</TD>
+<TD class=tab title="Open http://w3future.com/html/tools.html"><A href="http://w3future.com/html/tools.html"><NOBR>Examples</NOBR></A></TD>
+<TD>&nbsp;</TD>
+<TD class=tab title="Open http://w3future.com/html/stories/"><A href="http://w3future.com/html/stories/"><NOBR>Articles</NOBR></A></TD>
+<TD>&nbsp;</TD>
+<TD class=tab title="Open http://w3future.com/html/download.html"><A href="http://w3future.com/html/download.html"><NOBR>Downloads</NOBR></A></TD>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+<TABLE class=sidebar-container cellSpacing=0 cellPadding=0 width="100%"><TR>
+<TD><TABLE class=sidebar cellSpacing=0 cellPadding=0 width="100%">
+<TR><TD class=sidebar-header>What I read</TD></TR>
+<TR><TD class=button2 title="Open http://jake.editthispage.com/ in new window."><A href="http://jake.editthispage.com/" target=_blank><NOBR>Jake's Brainpan</NOBR></A></TD></TR>
+<TR><TD class=button2 title="Open http://joel.editthispage.com/ in new window."><A href="http://joel.editthispage.com/" target=_blank><NOBR>Joel on Software</NOBR></A></TD></TR>
+<TR><TD class=button2 title="Open http://lambda.weblogs.com/ in new window."><A href="http://lambda.weblogs.com/" target=_blank><NOBR>Lambda the Ultimate</NOBR></A></TD></TR>
+<TR><TD class=button2 title="Open http://markpasc.org/blog/ in new window."><A href="http://markpasc.org/blog/" target=_blank><NOBR>markpasc.blog</NOBR></A></TD></TR>
+<TR><TD class=button2 title="Open http://owrede.khm.de/ in new window."><A href="http://owrede.khm.de/" target=_blank><NOBR>owrede_log</NOBR></A></TD></TR>
+<TR><TD class=button2 title="Open http://www.scripting.com in new window."><A href="http://www.scripting.com/" target=_blank><NOBR>Scripting News</NOBR></A></TD></TR>
+<TR><TD class=button2 title="Open http://www.xmlhack.com/ in new window."><A href="http://www.xmlhack.com/" target=_blank><NOBR>XMLHack</NOBR></A></TD></TR>
+<TR><TD class=button2 title="Open http://w3future.com/html/weblogsources.html"><A href="http://w3future.com/html/weblogsources.html"><NOBR><B>All sources</B></NOBR></A></TD></TR>
+</TABLE>
+</TD></TR></TABLE>
+</TD><TD id="content">
+<H1>Sjoerd Visscher's weblog - w3future.com</H1>
+<P>Layout test page</P>
+<TABLE cellpadding=0 cellspacing=0 width="100%">
+<TR><TD>
+<h2>The problem for me</h2>
+<p>Expecting it to be a one hour job, I tried to redo my site template without using tables.
+But I couldn't even get close. Getting the heights right of the sidebar and the main area was impossible.
+And the mixture of pixel borders and em sizes doesn't make it easier.
+I've used CSS for more than 2 years now, but not so much for layout, so maybe I don't know all the tricks yet.</p>
+<h2>The challenge for you</h2>
+<p>So I challenge you to give it a try too. My guess is that it's probably not possible to
+create an exact copy of the page. Forget about the tables for the tabs and sidebar buttons.
+My problem is mainly the overal layout of the page.
+So the challenge is: to recreate this page without using html tables 
+<strong>with the least caveats</strong>.</p>
+<h2>A special page?</h2>
+<p>To keep things simple I created this page which has the CSS included and all scripts removed.
+This page is completely self-contained.</p>
+</TD><TD id="note">
+<h3>Last Update</h3>
+<P>2/21/2002; 10:53:56 PM</P>
+</TD></TR></TABLE>
+</TD></TR></TABLE>
+</TD></TR><TR><TD id="footer">
+&copy; Copyright 2002 <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>
+</TD></TR></TABLE>
+</BODY>
+</HTML>

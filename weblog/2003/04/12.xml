@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/04/12.xml">
+<head>
+<title>Saturday, April 12, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:26:55 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/04/12.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/04/12.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/04/12.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/04/09.xml#a189' title='Wednesday, April 09, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/04/12.xml">Saturday, April 12, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/04/24.txt#a191' title='Thursday, April 24, 2003'>&#160;&gt;</a></h>
+<a name="a219"></a>
+<section id="a219">
+<h id='theHundredyearLanguage'><a href="http://w3future.com/weblog/2003/04/12.xml#a219" class="weblogItemTitle">The Hundred-Year Language</a></h>
+<p><a href="http://www.paulgraham.com/hundred.html">Paul Graham writes about the languages for over a 100 years.</a> I'm deeply tuning in here, because <a href="http://w3future.com/html/loell/">Loell</a> is my ideal language, and as I don't care about its speed, anything that's good for over a 100 years, should also be good for Loell. (Unless it takes too much effort to implement) I'll comment on Pauls article piece by piece.</p>
+<blockquote><p>At any given time, you're probably happiest on the main branches of an evolutionary tree.</p></blockquote>
+<p>I don't think this is true. A language should indeed be close to the main branche. But if it doesn't take some pragmatical sidesteps, the language would probably miss a few practical features.</p>
+<blockquote><p>I think it's important not just that the axioms be well chosen, but that there be few of them. Mathematicians have always felt this way about axioms-- the fewer, the better-- and I think they're onto something.</p></blockquote>
+<p>This is exactly the basic design principle of Loell. It's great that someone like Paul Graham refers to this. It has always annoyed me that language comparisons so often are about the available libraries. Instead, we should identify the axioms of each language, and see which are the most elegant. It is also important that these axioms are directly accessible to the programmer, and not tied to a particular part of the language. Otherwise programmers will still try to access that feature using tricks, which results in unmaintainable code.</p>
+<blockquote><p>The right way to solve that problem, I think, is to separate the meaning of a program from the implementation details. Instead of having both lists and strings, have just lists, with some way to give the compiler optimization advice that will allow it to lay out strings as contiguous bytes if necessary.</p></blockquote>
+<p>I don't even think there's a need to give the compiler advice. The programmer probably won't even know there is a compiler. I think languages will behave more and more like scripting languages. Optimisations will only happen through profiling. Complex mathematics may be an exception, but the slow pieces of code in everyday programming are the ones with many loops and a lot of data. These pieces of code are perfect for profiling.</p>
+<blockquote><p>How far will this flattening of data structures go? I can think of possibilities that shock even me, with my conscientiously broadened mind. Will we get rid of arrays, for example? After all, they're just a subset of hash tables where the keys are vectors of integers.</p></blockquote>
+<p>Get ready for a shock: Javascript already does this. Even worse: the integer keys are first converted to strings!</p>
+<blockquote><p>Unlike physics in a hundred years, which is almost necessarily impossible to predict, I think it may be possible in principle to design a language now that would appeal to users in a hundred years.</p></blockquote>
+<p>I'm not sure. I think one area of expertise is still missing: continuous data transformation. Something like XSL, but in such a way that the result changes automatically when the input changes, as in Excel. This will become more and more important. Historically programs are written to execute with existing data as input. But to be competitive on the internet, results need to be continuously updated while new input comes in. For example, you can sum live data by summing your input every time it changes. But this pseudo code would be much faster:</p>
+<pre>
+initial:      sum = 0
+on add(v):    sum += v
+on remove(v): sum -= v
+</pre>
+<p>I'm not even sure if i'd prefer to program this way, or if I'd just program summation for a collection, and let the compiler figure out the above code.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/04/12.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

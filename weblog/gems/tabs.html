@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Joshua Kaufman - CSS Tabs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script language="JavaScript">
+  function doClickTab(evt) {
+    var el = evt.srcElement||evt.target;
+    if (el.nodeName.toLowerCase() != 'a') el = el.parentNode;
+    el = el.parentNode;
+    if (el.className != 'inactive') return;
+
+    pel = el.parentNode;
+    if (pel.className != 'tabnav') return;
+
+    for (i=0; i<pel.childNodes.length; i++) {
+      var e = pel.childNodes[i];
+      if (e.nodeName.toLowerCase() == 'li')
+        e.className = 'inactive';
+    }
+
+    el.className = 'active';
+  }
+</script>
+<style type="text/css">
+
+body {
+  font:100% verdana, arial, sans-serif;
+  background-color:#fff;
+}
+
+h2 {
+  margin-top:2em;
+}
+
+ul.tabnav {
+  display: block;
+  list-style-type: none;
+  padding: 0px;
+  padding-left: 1em;
+  margin: 0px;
+  white-space:nowrap;
+  height: 0em;
+}
+
+ul.tabnav li {
+  position:relative; top:1px;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.6em;
+  font:bold 75% verdana, arial, sans-serif;
+  border:solid 1px;
+}
+
+ul.tabnav li a {
+  display: block;
+  padding:0.2em 0.3em 0.2em 0.3em;
+  color:#000;
+  text-decoration:none;
+}
+
+ul.tabnav li.inactive {
+  border-color: #6c6;
+  background-color:#cfc; 
+}
+
+ul.tabnav li.active {
+  border-color:#6c6 #6c6 #fff #6c6;
+  background-color:#fff;
+}
+
+ul.tabnav .active   a       { cursor:default; }
+ul.tabnav .inactive a:hover { cursor:pointer; cursor:hand; background:#f8fff8; }
+
+.tabsheet {
+  border: 1px solid #6c6;
+  padding: 1em;
+  clear: both;
+}
+
+</style>
+</head>
+
+<body onclick="doClickTab(event);">
+
+  <h1>CSS Tabs</h1>
+
+  <ul class="tabnav">
+    <li class="active"><a href="#">Tab One</a></li>
+    <li class="inactive"><a href="#">Tab Two</a></li>
+    <li class="inactive"><a href="#">Tab Three</a></li>
+    <li class="inactive"><a href="#">Tab Four</a></li>
+  </ul>
+  <div class="tabsheet">
+    bla bla bla
+  </div>
+
+</body>
+</html>

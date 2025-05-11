@@ -1,0 +1,45 @@
+/* some default xhtml2 css */
+
+html, body, h, address, blockquote, div, p, pre, dl, nl, ul, ol {
+	display: block;
+}
+head {
+	display: none;
+}
+nl, ul, ol {
+	counter-reset: item;
+}
+ol {
+	list-style-type: decimal;
+}
+li {
+	display: block;
+/*	display: inline;*/
+	counter-increment: item;
+	margin-left: 2em;
+}
+nl {
+	display:inline;
+}
+name {
+	display: inline;
+}
+
+*[href] {
+  -set-link-source: attr(href);
+  -use-link-source: current;
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+
+object[data] {
+  -replace: attr(data);
+}
+
+nl[class=decimal-marker] li:before {
+	content: counters(item, ".") " ";
+}
+nl[class=upper-latin-marker] li:before {
+	content: counters(item, ".", upper-alpha) " ";
+}

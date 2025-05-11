@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/03/25.xml">
+<head>
+<title>Tuesday, March 25, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:26:27 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/03/25.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/03/25.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/03/25.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/03/24.xml#a180' title='Monday, March 24, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/03/25.xml">Tuesday, March 25, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/03/28.txt#a182' title='Friday, March 28, 2003'>&#160;&gt;</a></h>
+<a name="a181"></a>
+<section id="a181">
+<h id='rdfAndOtherMonkeyWrenches'><a href="http://w3future.com/weblog/2003/03/25.xml#a181" class="weblogItemTitle">RDF and other monkey wrenches</a></h>
+<p><a href="http://www.itworld.com/nl/ebiz_ent/03182003/">Sean McGrath</a>: &#8220;I think it's time for the Semantic Web proponents to stop trying to teach us all to think at their level of abstraction.&#8221;</p><p>Great article. Of course, the proponents are quick to reply. <a href="http://dannyayers.com/ideagraph-blog/archives/001028.html">Danny Ayers</a> seems to forget that using <a href="http://www.w3.org/RDF/"><acronym title="Resource Description Framework">RDF</acronym></a> is not enough to interoperate. You'll need a common vocabulary. If all parties want to use this vocabulary internaly, they'll argue for years to get their little details in, which most other parties don't care about. If on the other hand all parties create their own internal format, they'll be able to get everything up and running. The experience grows, and it'll be a lot easier to agree on a common vocabulary of the data that needs to be shared among the parties.</p><p><a href="http://www.oreillynet.com/pub/wlg/2961">Uche Ogbuji</a> thinks that Sean is arguing to quit RDF. I don't think he does. Some tasks (like gripping monkeys) don't have any better tools than monkey wrenches. If you acknowledge this, then it's obvious that development should focus on tools that allow everyone to use what they understand, instead of explaining RDF over and over again.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/03/25.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

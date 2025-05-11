@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/08/04.xml">
+<head>
+<title>Monday, August 04, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:28:41 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/08/04.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/08/04.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/08/04.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/07/26.xml#a224' title='Saturday, July 26, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/08/04.xml">Monday, August 04, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/08/13.txt#a226' title='Wednesday, August 13, 2003'>&#160;&gt;</a></h>
+<a name="a254"></a>
+<section id="a254">
+<h id='theSemanticWebIsDangerous'><a href="http://w3future.com/weblog/2003/08/04.xml#a254" class="weblogItemTitle">The semantic web is dangerous</a></h>
+<p>I went to see <a href="http://us.imdb.com/Title?0181852">Terminator 3</a> with the <a href="http://xopus.com">Xopus</a> team. Afterwards we had some discussion about machine intelligence, not about the movie itself. That's usually a sign of a good movie.</p>
+<p>On a related subject, <a href="http://greg.abstrakt.ch/archives/000312.html">Gregor linked</a> to <a href="http://www.intothematrix.com/rl_cmp/animatrix_site_ep1_480.html">The Second Renaissance</a>, a history of the world before the Matrix was created. Like the Terminator movies, this gave me the feeling that machines will always win, they simply have a evolutionary advantage. Lon told me that <a href="http://www.tecsoc.org/innovate/focusbilljoy.htm">Bill Joy has the same ideas</a>. He even recommended that scientists halt potentially dangerous research. In a certain way, Terminator 3 shows that the Semantic Web is the biggest danger. We should stop developing it!</p>
+<p>I'm not even sure if I should say that I'm only kidding.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/08/04.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

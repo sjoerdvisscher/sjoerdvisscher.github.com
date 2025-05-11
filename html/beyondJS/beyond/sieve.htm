@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+	<TITLE>Sieve of Eratosthenes</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondLazy.js></SCRIPT>
+</HEAD>
+<BODY>
+Sieve of Eratosthenes
+<SCRIPT>
+function sieve(limit) {
+	var a = new Array(limit), r = new Array;
+	for ( var i = 2 ; i < limit ; ++i ) a[i] = i;
+	for ( var i = 2 ; i < limit ; ++i )
+		if ( a[i] ) {
+			r.push(i);
+			for ( var j = i + 1 ; j < limit ; ++j )
+				if ( a[j]%i == 0 )
+					a[j] = 0;
+		}
+	return r;
+}
+var primes = sieve(100);
+alert(primes);
+
+function sieve2(l) {
+	return l.head(1).extend(sieve2.using(l.tail().filter("%".curry(undefined,l.head()))));
+}
+var primes = sieve2((2).lazy());
+alert(primes.head(25));
+alert(primes.head(25));
+</SCRIPT>
+</BODY>
+</HTML>

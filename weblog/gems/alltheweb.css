@@ -1,0 +1,801 @@
+/*
+ * Example style sheet for AlltheWeb Alchemist(tm)
+ *
+ * Please see http://www.alltheweb.com/help/alchemist/styles.html
+ * for more details.
+ * 
+ */
+
+/* {{{ ======== General page elements ========= */
+
+body {
+	margin:20px 20px 0px 20px;
+	font:x-small verdana, arial, helvetica, sans-serif;
+	color:#333;
+	background-color:#fff;
+}
+
+strong { font-weight:bold; }
+
+img { border:none; }
+
+
+/* Form elements */
+input, select, option {
+	font:x-small verdana, arial, helvetica, sans-serif;
+}
+
+/* Style used on all form buttons */
+.button {
+	text-transform:Uppercase;
+}
+
+/* Lists */
+ul {
+	list-style-type:square;
+	padding:5px 5px 5px 0px;
+	margin:0px 0px 0px 20px;
+}
+
+li {
+	padding:2px;
+}
+
+
+/* Links */
+a, a:link, a:visited {
+	color:#415481;
+}
+
+a:hover {
+	color:#f80;
+}
+
+
+/* Branding bar (the bar at the top with the AlltheWeb logo and ads) */
+table.brandingBar {
+	margin-bottom: 15px;
+}
+
+.brandingBar img {
+	background-color: transparent;
+}
+
+.warning {
+	 font-size:small;
+}
+.warning h1 {
+	 color:#f00;
+	 font-size:large;
+}
+
+
+/* }}} ====== End general page elements ======= */
+
+/* {{{ ============ Main toolbar ============== */
+
+/* style for the main toolbar */
+#mainToolbar { }
+
+#homePage #mainToolbar { margin:20px 0px 20px 0px; }
+
+
+/** Catalog tabs/links **
+ *
+ * .catList   - style surrounding all catalog links
+ * .tabOn     - style for the selected catalog
+ * .tabOnEnd  - style for the last catalog when selected
+ * .tabOff    - style for the other catalogs
+ * .tabOffEnd - style for the last catalog when not selected
+ * .tabSpace  - span between the catalogs
+ * #catTab<Catalog> - id on the catalog link when used in main toolbar
+ *      <Catalog> is one of Web, News, Img, Vid, Mp3 or Ftp
+ *
+ */
+.catList a {
+	color:#333;
+	text-decoration:none;
+	text-transform:lowercase;
+	font-weight:normal;
+	float: left;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff, endColorstr=#3f000000);
+}
+.catList a.tabOff, .catList a.tabOff:hover, .catList a.tabOn, .catList a.tabOn:hover {
+	border-style:solid;
+	border-width:1px 0px 0px 1px;
+	border-color:#333;
+	padding:5px 10px 5px 10px;
+}
+.catList a.tabOffEnd, .catList a.tabOffEnd:hover, .catList a.tabOnEnd, .catList a.tabOnEnd:hover {
+	border-style:solid;
+	border-width:1px 1px 0px 1px;
+	border-color:#333;
+	padding:5px 10px 5px 10px;
+}
+.catList a.tabOff, .catList a.tabOffEnd {
+	background-color:#eee;
+}
+.catList a.tabOff:hover, .catList a.tabOffEnd:hover {
+	color:#333;
+	text-decoration:underline;
+	background-color:#fff;
+}
+.catList a.tabOn, .catList a.tabOnEnd {
+	color:#fff;
+	font-weight:bold;
+	background-color:#34558A;
+}
+.tabSpace { }
+
+#catTabWeb.tabOff, #catTabNews.tabOff, #catTabImg.tabOff, 
+ #catTabVid.tabOff, #catTabMp3.tabOff, #catTabFtp.tabOffEnd { }
+
+/* Style used after catalog links */
+.afterCatList {}
+
+
+/** Search bar elements **
+ *
+ * .searchBar - style surrounding entire search bar
+ * .query     - style on query input field(s)
+ * .button    - style on search button
+ */
+.searchBar {
+	text-align:left;
+	padding:6px 5px 10px 10px;
+	margin:5px 0px 0px 0px;
+	background-color:#34558A;
+	border:1px solid #333;
+	clear:both;
+}
+.searchBar .query, .searchBar .button, .searchBar .checkbox { }  /* defined above */
+.searchBar span.exactPh { color:#fff; }
+
+/* Style used after search bar elements */
+.afterSearchBar {clear:both;}
+
+/** Search info elements **
+ *
+ * .searchInfo - style surrounding entire search info
+ * .sinfo      - style on search info text and links
+ * .sisep      - style on search info separators
+ */
+.searchInfo {
+	text-align:left;
+	color:#fff;
+	background-color:#9AA5B6;
+	border-style:solid;
+	border-width:0px 1px 1px 1px;
+	border-color:#333;
+	padding:6px 5px 6px 10px;
+}
+.searchInfo .sisep { color:#fff; }
+.searchInfo .sinfo { color:#fff; }
+
+/* Style used after search info */
+.afterSearchInfo {}
+
+
+/** Tool links (advanced, customize etc.) **
+ *
+ * .toolLinks - style surrounding links
+ * .tabOff    - style for the tools
+ * .tabOffEnd - style for the last tool
+ */
+.toolLinks {
+	text-align:right;
+	padding:0px 0px 5px 0px;
+	margin:5px 0px 0px 0px;
+	text-transform:Uppercase;
+	color:#333;
+}
+
+.toolLinks a {
+	color:#333;
+	text-decoration:none;
+	background-color:#eee;
+	border-style:solid;
+	border-color:#333;
+	padding:5px 10px 5px 10px;	
+}
+.toolLinks a:hover {
+	color:#333;
+	text-decoration:underline;
+	background-color:#fff;
+}
+.toolLinks a.tabOff { border-width:0px 0px 1px 1px; }
+.toolLinks a.tabOffEnd { border-width:0px 1px 1px 1px; }
+.toolLinks a.tabOn {
+	color:#fff;
+	font-weight:bold;
+	background-color:#34558A;
+	border-width:0px 0px 1px 1px;
+}
+
+/* Style used after tool links */
+.afterToolLinks {}
+
+/* Style used after top toolbar */
+#afterMainToolbar {}
+
+/* }}} ========== End main toolbar ============ */
+
+/* {{{ ========= Page footer elements ========= */
+
+/* Page footer */
+.footer {
+	text-align:left;
+	color:#999;
+	padding:10px 0px 5px 0px;
+}
+.footer p {
+	margin:0px 0px 8px 0px;
+}
+
+#homePage div.footer {
+	border-top:1px solid #333;
+	margin-top:10px;
+}
+
+#advanced div.footer {
+	border-top:1px solid #333;
+	margin-top:10px;
+}
+
+
+/* logos */
+.logos {
+	text-align:right;
+	border:1px solid #999;
+	background-color:#fafafa;
+	margin:5px 0px 5px 0px;
+	padding:5px;
+}
+
+.afterLogos { clear:both; }
+
+/* }}} ======= End page footer elements ======= */
+
+/* {{{ ============= Home page ================ */
+
+#dbStats p {
+	text-align:center;
+	font-size:small;
+	padding:20px 0px 20px 0px;
+	margin:0px;
+}
+
+p.featuredLink {
+	text-align: center;
+	padding: 5px;
+}
+
+table#headlines {
+	display:table;
+	margin:30px 0px 20px 0px;
+	padding:0px;
+	border-collapse:collapse;
+	background-color:#f7f7f7;
+}
+
+#headlines ul { margin:10px 20px 0px 20px; }
+#headlines li {
+	list-style-type:none;
+	margin:0px 0px 12px 0px;
+}
+#headlines tr.headlineRow {
+	display:table-row;
+}
+#headlines td.headlinegroup {
+	display:table-cell;
+	width:33.33%;
+	border-style:solid;
+	border-width:0px 1px 1px 1px;
+	border-color:#333;
+	padding:0px;
+	vertical-align:top;
+}
+#headlines .hdlTitle {
+	color:#fff;
+	text-align:left;
+	background-color:#34558A;
+	border-style:solid;
+	border-color:#333;
+	border-width:0px 0px 1px 0px;
+	padding:5px;
+	margin:0px;
+	font-size:small;
+}
+
+/* }}} ============ End home page ============= */
+
+/* {{{ ============ Main results ============== */
+
+/* {{{ Generic result styles */
+
+/* Insered before mainResults if there are no sponsored results */
+#noSponsorLinks { padding:20px 0px 0px 0px; }
+
+/* Spans the Results heading all the way to the results navigation */
+.mainResults {
+	float:left;
+	width:70%;
+}
+
+.afterMainResults {}
+
+/* Padding around main results */
+.mainResults .padder {
+	margin:0px 5px 20px 0px;
+}
+
+/* No results message */
+.mainResults .noResults {
+	margin:0px 0px 0px 30px;
+}
+
+/* Header above results (i.e. "web pages found") */
+h1.resultHeading {
+	color:#fff;
+	text-align:left;
+	text-transform:Uppercase;
+	background-color:#34558A;
+	border:1px solid #333;
+	padding:5px;
+	margin:0px;
+	font-size:x-small;
+}
+
+/* Result information (i.e. "Displaying results 1-10 of 830,815") */
+.resultInfo {
+	color:#f80;
+	text-align:left;
+	text-transform:Uppercase;
+	background-color:#fff;
+	border-style:solid;
+	border-width:0px 1px 1px 1px;
+	border-color:#999;
+	padding:5px;
+}
+
+/* Style that surround all result elements */
+.mainResults .resultWell {
+	text-align:left;
+	color:#333;
+	border-style:solid;
+	border-width:0px 1px 0px 1px;
+	border-color:#999;
+	padding:0px;
+	background-color:#fff;
+}
+
+.result {
+	text-align:left;
+	color:#333;
+	margin:0px;
+	padding:5px;
+}
+
+/* }}} */
+
+/* {{{ Elements found in every result */
+
+/* Result title, teaser (text) and static site description */
+.resTitle, .resTeaser, .resDescr {}
+
+/* URL, date and size of the result */
+.resURL, .resDate, .resSize, .resType {
+	font-size:xx-small;
+	color:#999;
+	white-space:nowrap;
+	text-transform:none;
+}
+/* PDF indicator in title */
+.resPDF { color:#090; }
+
+/* Highlighted results (we want highlighting to be different
+ * for  title, teaser and url) 
+ */
+.resTitle .hlight {
+	font-weight:bold;
+}
+.resTeaser .hlight {
+	background-color:#fff;
+	font-weight:bold;
+}
+.resURL .hlight {
+	color:#f77;
+}
+
+/* The "More hits from" link */
+.mhf, a.mhf, a.mhf:visited, a.mhf:link {
+	color:#34558A;
+	font-size:xx-small;
+}
+a.mhf:before {
+	content:url("http://www.alltheweb.com/g/more.gif");
+}
+
+/* }}} */
+
+/* {{{ Styles for web and news results */
+
+/* Style for each result */
+#webResults .result, #newsResults .result {
+	background-color:#fff;
+	padding-bottom:15px;
+}
+
+/* ID for each result so we can have some fun with them. If you
+ * use more than 10 hits per page, you'll have to expand the list.
+ */
+#webResults #res1, #webResults #res3, #webResults #res5, #webResults #res7, #webResults #res9 {
+	background-color:#fff;
+}
+#newsResults #res1, #newsResults #res3, #newsResults #res5, #newsResults #res7, #newsResults #res9 {
+	background-color:#fff;
+}
+
+/* }}} */
+
+/* {{{ Styles for image results */
+
+/* Special styles for image results */
+#imgResults .resultWell {
+	width:100%;
+	display:table;
+	padding:0px;
+}
+
+#imgResults .result {
+	width:33%;
+	display:table-cell;
+	vertical-align:top;
+}
+
+#imgResults #res4, #imgResults #res5, #imgResults #res6 {
+	background-color:#eee;
+}
+
+
+/** Image browser **/
+
+div#imgBrowseResults {
+	width:100%;
+}
+#imgBrowseResults .padder {
+	margin:0px 5px 20px 0px;
+	width:100%;
+}
+#imgBrowseResults .resultInfo {
+	border-width:1px;
+}
+#imgBrowseResults .resultWell {
+	padding:10px;
+}
+#imgBrowseResults .resultWell img {
+	border:1px solid #000;
+	padding:2px;
+}
+#imgBrowseResults .result#image {
+	float:left;
+	margin:0px 10px 10px 0px;
+	padding:0px;
+}
+#imgBrowseResults .result#text {
+	float:left;
+	width:50%;
+}
+#imgBrowseResults .result#text p {
+	margin:0px 0px 10px 0px;
+}
+
+#imgBrowseResults .resTitle {
+	font-weight:bold;
+	font-size:small;
+}
+
+.imgNav {
+	color:#f80;
+	border:1px solid #999;
+	padding: 10px;
+	text-align:left;
+	background-color:#eee;
+}
+.imgNavBack { float:left; }
+.imgNavNext { float:right; }
+.imgNavReturn {
+	clear:both;
+	float:left;
+	margin:10px 0px 5px 0px;
+}
+#afterImgNav, #afterImgRes { clear:both; }
+
+/* }}} */
+
+/* {{{ Styles for video results */
+
+#vidResults #res1, #vidResults #res3, #vidResults #res5, #vidResults #res7, #vidResults #res9 {
+	background-color:#eee;
+}
+#vidResults .resTitle { float: left;}
+
+#vidResults .resSize, #vidResults .resType {
+	float: right;
+	width: 12%;
+	text-align:right;
+}
+/* }}} */
+
+/* {{{ Styles for FTP and MP3 results */
+
+#ftpResults table.resultWell, #ftpBrowseResults table.resultWell,
+#mp3Results table.resultWell, #mp3BrowseResults table.resultWell {
+	width:100%;
+	display:table;
+	padding:4px;
+}
+
+#ftpResults tr.resultLegend, #ftpBrowseResults tr.resultLegend,
+#mp3Results tr.resultLegend, #mp3BrowseResults tr.resultLegend {
+	display:table-row;
+	white-space:nowrap;
+}
+
+#ftpResults td, #ftpBrowseResults td, #mp3Results td, #mp3BrowseResults td {
+	display:table-cell;
+	vertical-align:top;
+	padding:2px;
+	font-size:x-small;
+}
+.resultLegend th {
+	font-weight:bold;
+	color:#000;
+	display:table-cell;
+	font-size:x-small; 
+}
+
+td.navIcons {
+	white-space:nowrap;
+}
+
+#ftpResults .resSize, #ftpResults .resDate,
+#mp3Results .resSize, #mp3Results .resDate {
+	text-align:right;
+	white-space:nowrap;
+	padding-left: 10px;
+}
+.resultLegend th.resTitle, .resultLegend td.resTitle {
+	text-align:left;
+}
+
+/*** FTP match search results ***/
+
+#ftpMatchResults .resultWell {
+	padding:4px;
+}
+
+/*** FTP and MP3 browse search results ***/
+
+#ftpBrowseResults .resultInfo, #mp3BrowseResults .resultInfo {
+	border-bottom-width:0px;
+}
+div#ftpBrowseResults, div#mp3BrowseResults {
+	width:100%;
+}
+#ftpBrowseResults .resultWell, #mp3BrowseResults .resultWell {
+	border-width:1px;
+}
+#ftpBrowseResults .padder, #mp3BrowseResults .padder {
+	margin:0px 5px 20px 0px;
+	width:100%;
+}
+#ftpBrowseResults .resTitle, #mp3BrowseResults .resTitle {
+	text-align:left;
+	width:95%;
+}
+#ftpBrowseResults .resSize, #ftpBrowseResults .resDate,
+#mp3BrowseResults .resSize, #mp3BrowseResults .resDate {
+	text-align:right;
+	white-space:nowrap;
+	padding-left: 15px;
+}
+
+
+/* }}} */
+
+/* {{{ Result navigation 
+ * 
+ * .rnav      - style surrounding all result navigation text
+ * .rnavLabel - the "Results: " label before the links
+ * .rnavLink  - the navigation links
+ */
+.rnav {
+	color:#f80;
+	text-align:left;
+	background-color:#eee;
+	padding:5px;
+	border:1px solid #999;
+	font-weight:bold;
+}
+.rnavLabel {
+	text-align:left;
+	text-transform:Uppercase;
+	color:#f80;
+}
+.rnavCurr {
+	  font-weight:bold;
+	  color: #8799C2;
+}
+.rnavLink, a.rnavLink, a.rnavLink:visited, a.rnavLink:hover {
+	color:#415481;
+}
+
+
+/* }}} */
+
+/* }}} ========== End main results ============ */
+
+/* {{{ ========= Additional results =========== */
+
+/* Style applied around all additional results ("teaser" results for
+ * other catalogs */
+#moreRes {
+	float:right;
+	width:29%;
+}
+#moreRes .padder { }
+
+/* Style that surround all result elements */
+#moreRes .resultWell {
+	text-align:left;
+	border:1px solid #999;
+	background-color:#fff;
+	margin:0px 0px 20px 0px;
+}
+
+/* Additional results label/title */
+#moreRes h2.resLabel {
+	font-size:x-small;
+	color:#fff;
+	text-align:left;
+	text-transform:Uppercase;
+	background-color:#34558A;
+	padding:5px;
+	margin:0px;
+}
+
+#moreRes .resultWell#topics, #webExtra, #newsExtra, #mp3Extra, #ftpExtra {
+	padding:0px 0px 10px 0px;
+}
+#moreRes .resultWell#mmExtra {}
+
+#moreRes .navExtra {
+	padding:0px 0px 0px 20px;
+}
+
+
+#moreRes img.thumbnail {
+	border-style:none;
+	padding:6px 0px 0px 22px;
+}
+
+#moreRes .queryInfoBody, #moreRes .searchTipBody {
+	margin:6px 10px 6px 10px;
+}
+
+#moreRes li {
+	padding:0px;
+}
+
+#moreRes #narrow p {
+	margin:6px 0px 0px 6px;
+}
+
+#afterMoreRes { clear:both; }
+
+/* }}} ======== End additional results ======== */
+
+/* {{{ =========== Advanced forms ============= */
+
+#advanced div.advForms {
+	border-style:dashed;
+	border-width:1px 0px 0px 0px;
+	border-color:#ddd;
+	margin:30px 0px 20px 0px; 
+	padding:0px;
+}
+
+.advForms .padder {	padding: 10px 10px 10px 40px; }
+
+table.advForm {
+	display:table;
+}
+.advForm tr {
+	display:table-row;
+}
+.advForm td {
+	display:table-cell;
+}
+.advButtonRow td {
+	text-align:right;
+	padding-top:10px;
+	border-top: 1px dashed #999;
+}
+td.advOpt, td.advTitle {
+	display:table-cell;
+	padding: 12px 0px 5px 0px;
+}
+.advTitle {
+	font-size: small;
+	font-weight:bold;
+	white-space:nowrap;
+	color:#666;
+}
+.advDescr {
+	font-size:x-small;
+	font-weight:normal;
+	padding-left:5px;
+}
+.advOptLabel {
+	text-align:right;
+}
+
+#vidForm td.advTitle, #imgForm td.advTitle {
+	text-align: right;
+}
+.advOptGroup td {
+	border-top: 1px dashed #999;
+}
+.advOptGroup#firstOptGroup td {
+	border:none;
+}
+
+#webForm table.advSubForm {
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+#webForm .advSubForm td {
+	border:0px;
+	padding:0px;
+}
+#webForm .advSubForm td.advTitle {
+	padding: 12px 0px 5px 0px;
+}
+
+#ftpForm .advOptGroup#firstOptGroup td {
+	border-top: 1px dashed #999;
+}
+#ftpForm .advTitle {
+	font-size:x-small;
+	text-align:right;
+	padding:0px 5px 0px 10px;
+}
+#ftpForm .advOptLabel {
+	text-align:left;
+	padding-right:5px;
+}
+
+#ftpForm td.advOpt { padding:2px 0px 0px 0px;}
+
+/* Style used after advanced form */
+#afterAdvanced {
+	clear:both;
+}
+
+.searchBar a.advFormLink { color:#fff; }
+.searchBar a.advFormLink:visited { color:#fff; }
+.searchBar a.advFormLink:hover { color:#f80; }
+
+#advToolbar .searchBar { margin: 0px; }
+#advToolbar {
+	border-width: 0px 1px 1px 1px;
+	border-style: solid;
+	border-color: #999;
+}
+
+#advToolbar, #afterAdvToolbar { clear:both; }
+
+
+/* }}} ========= End advanced forms =========== */

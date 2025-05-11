@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>URIs for dynamic pages. - w3future.com</title>
+  <meta name="author" content="Sjoerd Visscher" />
+  <meta name="keywords" content="w3, www, world, wide, web, future, weblog, latest, news, javascript, js, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic" />
+  <meta name="description" content="My ideas about new web technology that can change the future of the world wide web." />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="author" title="Sjoerd Visscher" href="mailto:sjoerd@w3future.com" />
+  <link rel="top" href="http://w3future.com/weblog/" />
+  <link rel="icon" href="http://w3future.com/w3f/icon.png" type="image/png" />
+  <script type="text/javascript" src="http://w3future.com/w3f/w3f.js"></script>
+  <script type='text/javascript'><!--
+document.write('<'+'style>@import "http://w3future.com/w3f/w3f.phtml?'+document.cookie+'";<'+'/style>');
+//--></script>
+  
+</head>
+<body>
+<div id="header">
+	<a href="#"></a>
+	<div id="header-title-shadow">w3future.com</div>
+	<div id="header-title">w3future.com</div>
+	<div id="header-tabs">
+<div class='tab'><a href='http://w3future.com/weblog/'>Weblog</a></div>
+<div class='tab'><a href='http://w3future.com/html/examples.html'>Examples</a></div>
+<div class='tab'><a href='http://w3future.com/html/stories/'>Articles</a></div>
+<div class='tab'><a href='http://w3future.com/html/download.html'>Downloads</a></div>
+</div>
+</div>
+<div id="layout">
+	<div id="sidebar">
+<div class='sidebar-header'>What I read</div>
+<div class='button2'><a href='http://diveintomark.org/'>Dive into Mark</a></div>
+<div class='button2'><a href='http://www.joelonsoftware.com/'>Joel on Software</a></div>
+<div class='button2'><a href='http://radio.weblogs.com/0100887/'>Jon Udell</a></div>
+<div class='button2'><a href='http://lambda.weblogs.com/'>Lambda the Ultimate</a></div>
+<div class='button2'><a href='http://markpasc.org/blog/'>markpasc_blog</a></div>
+<div class='button2'><a href='http://radio.weblogs.com/0101679/'>Sam Ruby</a></div>
+<div class='button2'><a href='http://www.scripting.com/'>Scripting News</a></div>
+<div class='button2'><a href='http://www.xmlhack.com/'>XMLHack</a></div>
+<div class='button2'><a href='http://w3future.com/html/weblogsources.html'><b>All sources</b></a></div>
+<div class='sidebar-header'>Friends/Family</div>
+<div class='button2'><a href='http://joeri.mulder.com/'>Joeri</a></div>
+<div class='button2'><a href='http://www.maggerydoo.net/'>Marco</a></div>
+<div class='button2'><a href='http://uitdeschaduw.blogspot.com/'>Jelle</a></div>
+<div class='button2'><a href='http://www.q42.nl/'>Q42</a></div>
+</div>
+	<div id="content">
+		<h1>URIs for dynamic pages.</h1>
+		<p></p>
+		<div id="note">
+			<h3>Last Update</h3>
+			<p>10/25/2002; 8:43:50 PM</p>
+		</div>
+	<h3>The problem</h3>
+<p>There's one thing the web gurus agree on. It's <a href="http://www.w3.org/DesignIssues/Axioms.html#Universality2">axiom 0 in Tim Berners-Lee's web architecture</a>: "Any resource of significance should be given a URI." There are all kinds of good theoretical reasons. And in the practice of the browsable web there are 2 good reasons: What has a URL can be bookmarked and linked to.</p>
+<p>One area where this has been problematic is dynamic webpages. These pages load once, and then provide navigation through scripting. If the page needs extra data it is also loaded with scripting. All the time the url doesn't change, so when you bookmark the page, or link to it, it will always show up in its initial state.</p>
+<p>Some pages try to solve this by providing a link to the current state, f.e. <a href="http://youngpup.net/">youngpup.net</a>. This does work, but it requires action from the user. But as dynamic pages are still quite rare, the user will probably find it hard to understand the problem and will not understand why bookmarking doesn't work. For a good user experience the URL in the location bar just has to change automatically.</p>
+<p>The problem with changing the url is that the browser will unload the current page and do a new http request. Which is exactly what you don't want with dynamic pages. But there's one exception, which we found out when we were researching this problem at <a href="http://q42.nl">Q42</a>.</p>
+<h3>The solution</h3>
+<p>It turns that browsers don't leave the page when you only change the fragment identifier. A fragment identifier is the part of the URI after the '#' sign and they are used to scroll to a specific point on the page. But when there's no anchor with the name of the fragment id, the browser will simply do nothing.</p>
+<h3>The code</h3>
+<p>An additional advantage of this method is that the code is really simple. The following function will change the fragment identifier:</p>
+<pre>
+function saveStateInURL(state) {
+	location.replace('#'+state);
+}
+</pre>
+<script type="text/javascript">
+function saveStateInURL(state) {
+	if (document.links[0].click) {
+		document.links[0].href="#"+state;
+		document.links[0].click();
+	} else location.replace('#'+state);
+}
+</script>
+<p><button onclick="saveStateInURL('ButtonIsClicked')">Show me!</button></p>
+<p>Now that we can change the URL, there has to be script that gets the fragment identifier when the URL has one. Here's the code that does that:</p>
+<pre>
+function loadStateFromURL() {
+	var hash=location.hash;
+	return hash?hash.substr(1):'';
+}
+</pre>
+<script>
+function loadStateFromURL() {
+	var hash=location.hash;
+	return hash?hash.substr(1):'';
+}
+</script>
+<p><button onclick="alert('loadStateFromURL returned: '+loadStateFromURL())">Show me!</button></p>
+<p>What actually is used as state depends on the page. For the OPML loader I simply used the URL for the loaded OPML file. But you can store anything, as long as it can be serialized to a reasonably sized string.</p>
+<h3>Examples</h3>
+<ul>
+<li><b><a href="http://w3future.com/html/opmlloader.html#http://w3future.com/weblog/sidebars/opmlloader.opml">The OPML loader.</a></b> I used this fragment id trick in my OPML loader, without explaining the trick. I wanted to see if people would understand that they could use the URL to link to the loader with a given OPML file. And indeed several weblogs have used this feature.</li>
+<li><b><a href="http://maggerydoo.net/maggerydoo/frames.php3#pid=14">URIs for Frames.</a></b> The same trick can also be used with frames, which have the same problem as dynamic pages. A friend of mine allowed me to experiment with this in his portal system.</li>
+</ul></div>
+	<div id="footer">&#x00A9; Copyright 2002 <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="http://w3future.com/">w3future.com</a></div>
+</div>
+<script type='text/javascript'><!--
+initButtons(true);initSectionTabs();initSidebarButtons();staticSiteStatsImage()
+//--></script>
+</body>
+</html>

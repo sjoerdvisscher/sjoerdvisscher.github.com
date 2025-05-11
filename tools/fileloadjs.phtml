@@ -1,0 +1,17 @@
+<?
+error_reporting(0);
+
+if ($fp = fopen($url, "r")) {
+	$text='';
+	while ($data = fread($fp, 4096)) {
+		$text .= $data;
+	}
+	print "var data='".ereg_replace("(\r|\n)","\\n",ereg_replace("('|\\\\)","\\"."\\1",$text))."'";
+} else {
+	print ";\nalert('Could not load $url');\nvar data={n:'error'}";
+}
+
+xml_parser_free($xml_parser);
+
+print ";\n".$onload;
+?>

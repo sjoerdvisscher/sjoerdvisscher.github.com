@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.2.6" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>John Baez&apos;s Stuff</title>
+		<description>I&apos;m a mathematical physicist. I specialize in quantum gravity and n-categories.</description>
+		<link>http://math.ucr.edu/home/baez/</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Fri, 29 Dec 2006 22:55:07 GMT</lastBuildDate>
+		<item>
+			<description> From January 9th to 13th there will be a workshop on &lt;a href = &quot;http://www.fields.utoronto.ca/programs/scientific/06-07/homotopy/highercat/index.html&quot;&gt;Higher Categories and Their Applications&lt;/a&gt;, organized by Eugenia Cheng, Peter May and myself. This is part of the Fields Institute program &lt;A HREF = &quot;http://www.fields.utoronto.ca/programs/scientific/06-07/homotopy/&quot;&gt;Geometric Applications of Homotopy Theory&lt;/A&gt;, organized by Rick Jardine, Gunnar Carlsson and Dan Christensen. You can see the &lt;a href = &quot;http://www.fields.utoronto.ca/programs/scientific/06-07/homotopy/highercat/index.html&quot;&gt;official Fields Institute schedule&lt;/a&gt; of this workshop or &lt;a href = &quot;http://golem.ph.utexas.edu/category/2006/12/higher_categories_at_the_field.html&quot;&gt;my own more detailed, more up-to-date schedule&lt;/a&gt;. </description>
+			</item>
+		<item>
+			<description> &lt;a href = &quot;http://www.phys.lsu.edu/dept/people/smithb.html&quot;&gt;Blair Smith&lt;/a&gt; surfed in to LA bringing presents for all the good boys and girls: &lt;p&gt; &lt;div align = &quot;center&quot;&gt; &lt;a href = &quot;http://www.latimes.com/news/nationworld/nation/la-1223weekinphotos-pg,0,1172011.photogallery?coll=la-home-headlines&quot;&gt;  &lt;/a&gt; &lt;/div&gt; &lt;p&gt; He brought me a typeset version of my &lt;em&gt;&lt;a href = &quot;classical/&quot;&gt;Lectures on Classical Mechanics&lt;/a&gt;!&lt;/em&gt; Check it out! And if you spot typos or other mistakes, please &lt;a href = &quot;http://golem.ph.utexas.edu/category/2006/12/lectures_on_classical_mechanic.html#more&quot;&gt;let me know&lt;/a&gt;. </description>
+			</item>
+		<item>
+			<description> What&apos;s this? &lt;p&gt; &lt;div align = center&gt; &lt;a href = &quot;http://antwrp.gsfc.nasa.gov/apod/ap060906.html&quot;&gt;  &lt;/a&gt; &lt;/div&gt; &lt;p&gt; Take a guess; then look at the September 6th &lt;a href = &quot;http://antwrp.gsfc.nasa.gov/apod/ap060906.html&quot;&gt;Astronomy Picture of the Day&lt;/a&gt;. </description>
+			</item>
+		<item>
+			<description> This fall the &lt;a href = &quot;qg-fall2006/&quot;&gt;Quantum Gravity Seminar&lt;/a&gt; is divided into two parts, on &lt;a href = &quot;qg-fall2006/index.html#quantization&quot;&gt;Quantization and Cohomology&lt;/a&gt; and &lt;a href = &quot;qg-fall2006/index.html#computation&quot;&gt;Classical vs. Quantum Computation&lt;/a&gt;. Both these have blogs to go with them, where we can discuss things! Try it. </description>
+			</item>
+		<item>
+			<description> Watch Michael Trott&apos;s &lt;A HREF = &quot;http://www.americanscientist.org/AssetDetail/assetid/52247&quot;&gt;movie&lt;/A&gt; of a knotted torus morphing into a sphere - a soccer ball, just for fun. The &lt;A HREF = &quot;http://www.mathematicaguidebooks.org/soccer/&quot;&gt;math behind this&lt;/A&gt; involves a smooth homotopy between the identity map and the Weierstrass elliptic function, which is a branched double cover of the sphere by the torus. I explained in &lt;A HREF = &quot;week229.html&quot;&gt;week229&lt;/A&gt; how Charles Saunders Peirce used this to make an interesting map of the world. &lt;p&gt; &lt;DIV ALIGN = CENTER&gt; &lt;A HREF = &quot;everest.html&quot;&gt;  &lt;/A&gt; &lt;/DIV&gt; </description>
+			</item>
+		<item>
+			<description> &lt;A NAME = &quot;about&quot;&gt; &lt;H3&gt;What&apos;s on This Site&lt;/H3&gt;  &lt;A HREF = &quot;TWF.html&quot;&gt;This Week&apos;s Finds in Mathematical Physics&lt;/A&gt; (my column) &lt;A HREF = &quot;FUN.html&quot;&gt;Fun Stuff&lt;/A&gt; (expository writings and other diversions) &lt;A HREF = &quot;NASTY.html&quot;&gt;Nasty Stuff&lt;/A&gt; (human rights, economics and other scandals) &lt;A HREF = &quot;QG.html&quot;&gt;The Quantum Gravity Seminar&lt;/A&gt; (lots of course notes) &lt;A HREF = &quot;SERIOUS.html&quot;&gt;Serious Stuff&lt;/A&gt; (my actual research) &lt;A HREF = &quot;TALKS.html&quot;&gt;Talks&lt;/A&gt; (transparencies of my talks, info on forthcoming talks) &lt;A HREF = &quot;diary/index.html#now&quot;&gt;Diary&lt;/A&gt; (random thoughts)  Also try my blog at:  &lt;A HREF = &quot;http://golem.ph.utexas.edu/category/&quot;&gt;The n-Category Caf&amp;eacute;&lt;/A&gt;  </description>
+			</item>
+		<item>
+			<description> For common questions about physics, you can&apos;t beat this:   &lt;A HREF = &quot;physics/&quot;&gt;Frequently Asked Questions in Physics&lt;/A&gt;  I don&apos;t maintain this Physics FAQ - &lt;a href = &quot;physics/&quot;&gt;Don Koks&lt;/a&gt; does, so please send any comments about it to him, not me! </description>
+			</item>
+		<item>
+			<description> For more on relativity, check out Chris Hillman&apos;s stuff:   &lt;A HREF = &quot;relativity.html&quot;&gt;Relativity on the World-Wide Web&lt;/A&gt;  </description>
+			</item>
+		<item>
+			<description> If reading my stuff makes you want to ask questions, take a look at &lt;A HREF = &quot;questions.html&quot;&gt;this&lt;/A&gt;. &lt;br&gt; If you want to search my website for a particular word or phrase, try &lt;A HREF = &quot;http://mad.epfl.ch/twf/wgindex.html&quot;&gt;this&lt;/A&gt;. </description>
+			</item>
+		<item>
+			<description> </description>
+			</item>
+		<item>
+			<description> </description>
+			</item>
+		<item>
+			<description>  &lt;em&gt; The universe is full of magical things, patiently waiting for our wits to grow sharper.&lt;/em&gt; - Eden Philpotts </description>
+			</item>
+		<item>
+			<description> &amp;#169; 2006 John Baez&lt;br&gt; baez@math.removethis.ucr.andthis.edu &lt;p&gt; &lt;DIV ALIGN = CENTER&gt; &lt;A HREF = &quot;milky_way.html&quot;&gt;  &lt;/A&gt; &lt;/DIV&gt; </description>
+			</item>
+		</channel>
+	</rss>

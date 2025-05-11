@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+	<TITLE>Lazy</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondLazy.js></SCRIPT>
+</HEAD>
+<BODY>
+Lazy
+</BODY>
+<SCRIPT>
+
+// show numbers 1..10 - no array allocated, numbers calculated on at a time
+// (1).lazy(10).foreach(alert);
+
+// show odd numbers in 1..10 range - numbers calculated on demand
+// (1).lazy(10).filter(Math.odd).foreach(alert);
+
+// show numbers from 0 on up until user press cancel
+// (0).lazy().search(function(v) { return !confirm(v); });
+
+// show characters
+// "a".lazy("f").foreach(alert);
+
+// show results of successfull search - values after success not calculated
+// alert((1).lazy(10).search(function(v) { return (v % 2) == 0 && (v % 3) == 0; }));
+
+// unsuccessfull search returns -1
+// alert((1).lazy(10).search(function(v) { return v > 10; }));
+
+// lazy object can even be sliced (doesn't support negative end values)
+// (0).lazy(9).slice(2, 5).foreach(alert);
+
+// array converted to lazy object and filtered twice
+// since filtering is on demand reduced cpu and memory usage
+// (1).to(10).lazy().filter("<".using(3)).filter(">".using(8)).foreach(alert);
+
+// support also DOM objects
+// Lazy.from(document.all).filter(function(v) { return v.innerText == "Lazy"; }).foreach(function(v) { alert(v.tagName); });
+
+// support Enumerator object (if defined)
+// (new Enumerator(document.all)).lazy().foreach(function(v) { alert(v.tagName); });
+// Note: this is a very good combination because Enumerator intrinsically retrieves one element at a time
+
+// asLongAs returns a lazy collection that is stopped the first time the test returns false
+// alert(Lazy.from(1).asLongAs(">".using(5)).fold("+"));
+
+// another impl of fac
+// var facs = Lazy.fill(function(i, v) { return isDefined(v) ? v*i : 1; });
+// alert(facs.itemAt(4));
+// Note: itemAt() can be inefficient as it needs to calculate all the preceeding items
+// OTOH by default values once calculated are cached for future use
+
+// and yet another
+// var facs = (0).lazy(1);
+// facs.extend(facs.tail().zipWith("*", (2).lazy()));
+// alert(facs.itemAt(4));
+
+// concat connects lazy arrays, real arrays and stand-alone items
+// var x = (0).lazy(2).concat(4, [6, 7], (9).lazy(11));
+// x.foreach(alert);
+// x.foreach(alert);
+
+// join method for better array compatability
+// alert("hello,there,world".split(",").lazy().join(" "));
+
+// lazy lists can be useful for complex sequences
+// var y = (1).lazy(10);
+// y.filter(Math.even).concat(y.filter(Math.odd)).foreach(alert);
+
+// a more efficient impl
+// (2).lazy(10, 2).concat((1).lazy(10, 2)).foreach(alert);
+
+// lazy append works like array append
+// (0).lazy(3).append((4).lazy(6)).foreach(alert);
+
+// so does unshift
+// (1).lazy(3).unshift(4, 5, 6).foreach(alert);
+
+// and shift
+// var x = (1).lazy(4);
+// alert(x.shift());
+// x.foreach(alert);
+
+// and also splice
+// var x = (1).lazy(10);
+// var y = x.splice(2, 5, "a", "b", "c");
+// x.foreach(alert);
+// y.foreach(alert);
+
+</SCRIPT>
+</HTML>
+

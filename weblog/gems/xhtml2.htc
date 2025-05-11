@@ -1,0 +1,26 @@
+<PUBLIC:ATTACH EVENT="onmouseover" ONEVENT="showHref()" />
+<PUBLIC:ATTACH EVENT="onmouseout"  ONEVENT="hideHref()" />
+<PUBLIC:ATTACH EVENT="onclick" ONEVENT="doClick()" />
+<SCRIPT LANGUAGE="JScript">
+var href=this.getAttribute('href');
+var clsName=this.getAttribute('class')||'';
+if (href) this.style.cursor='pointer';
+
+function showHref() {
+	if (href) {
+		window.status=href;
+		this.className=clsName+'hover';
+	}
+}
+
+function hideHref() {
+	if (href) {
+		window.status=window.defaultStatus;
+		this.className=clsName;
+	}
+}
+
+function doClick() {
+	if (href) location=href;
+}
+</SCRIPT>

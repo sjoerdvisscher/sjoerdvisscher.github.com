@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/07/26.xml">
+<head>
+<title>Friday, July 26, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:22:28 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/07/26.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/07/26.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/07/26.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/06/20.xml#a110' title='Thursday, June 20, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/07/26.xml">Friday, July 26, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/07/27.txt#a112' title='Saturday, July 27, 2002'>&#160;&gt;</a></h>
+<a name="a111"></a>
+<section id="a111">
+<h id='semanticWebInTheFuture'><a href="http://w3future.com/weblog/2002/07/26.xml#a111" class="weblogItemTitle">Semantic Web in the future</a></h>
+<blockquote cite='http://markpasc.org/blog/2002/07/26.html#i125222'><p>More ftrain goodness in <a href="http://ftrain.com/google_takes_all.html">August 2009: How Google beat Amazon and Ebay to the Semantic Web</a>. [<a href='http://markpasc.org/blog/2002/07/26.html#i125222'>markpasc.blog</a>]</p></blockquote>
+<p>This is a really nice article about the Semantic Web. Read it if you still can't put your finger on what it's good for.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/07/26.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

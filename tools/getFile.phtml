@@ -1,0 +1,21 @@
+<?
+$ct = array(
+	'txt' => 'text/plain',
+	'opml' => 'text/xml',
+	'rss' => 'text/xml',
+	'html' => 'text/html',
+	'htm' => 'text/html',
+	'xml' => 'text/xml',
+	'xsl' => 'text/xml',
+	'css' => 'text/css',
+	'js' => 'text/javascript'
+);
+Header("Content-type: ".$ct[substr($path,strrpos($path,'.')+1)]);
+
+include_once("db.inc");
+
+$r = new resultSet("SELECT o FROM rdf WHERE s='$path' AND p='fileText'");
+$r->findItem();
+print $r->val('o');
+
+?>

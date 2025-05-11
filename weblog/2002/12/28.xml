@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/12/28.xml">
+<head>
+<title>Saturday, December 28, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:24:48 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/12/28.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/12/28.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/12/28.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/12/16.xml#a151' title='Monday, December 16, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/12/28.xml">Saturday, December 28, 2002</a><a rel='next' href='http://w3future.com/weblog/2003/01/16.txt#a154' title='Thursday, January 16, 2003'>&#160;&gt;</a></h>
+<a name="a153"></a>
+<section id="a153">
+<h id='accidentalWebarcheology'><a href="http://w3future.com/weblog/2002/12/28.xml#a153" class="weblogItemTitle">Accidental web-archeology</a></h>
+<p>While searching for something completely different, <a href="http://ksi.cpsc.ucalgary.ca/archives/WWW-TALK/www-talk-1993q3.messages/722.html">I found this message</a> from August 1993. What if Marc Andreessen had written &#8220;OK, we'll add an error indicator&#8221;.</p>
+</section><a name="a152"></a>
+<section id="a152">
+<h id='reANoteOnTheDesignOfMarkupLanguages'><a href="http://w3future.com/weblog/2002/12/28.xml#a152" class="weblogItemTitle">Re: A note on the design of markup languages</a></h>
+<p><a href="http://mpt.phrasewise.com/2002/12/18#a415">Matthew Thomas pointed to me</a> some days ago. I have to respond (though a bit late) because I'm a big fan of Matthew's ideas about UI design. They are a lot more refreshing and inspiring than the usual 'look at the Mac' UI suggestions. At <a href="http://q42.nl">Q42</a> we try to avoid a save button in our web applications since Matthew wrote <a href="http://mpt.phrasewise.com/stories/storyReader$374">When good interfaces go crufty</a>.</p>
+<p>About Matthew's note: I don't really agree. The main reason is that it's a bit late. RSS always has had links in the contents of elements. For the sake of consistency it's better to leave it that way, even for new elements. Matthew's main argument is that an attribute would work better for styling with CSS. But making a arbitrary XML document readable with CSS should be considered nothing more than a trick, XSL should be used instead. The fact that CSS makes better use of attributes than element content, is a design issue of CSS. If that doesn't fit well with the RSS format, then CSS shouldn't be used with RSS.</p><p>I do agree with Matthew's argument that because the URIs are intended more for machine consumption than human consumption, it should be an attribute, rather than the contents of an element. When I design XML formats I always put URIs in attributes, even if they are the only attributes in the whole format. In this case I would have preferred the rdf:resource attribute, because that's the suggested use of the element, and it's also used with the <code>admin</code> elements.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/12/28.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

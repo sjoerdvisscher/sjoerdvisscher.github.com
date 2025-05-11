@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/12/08.xml">
+<head>
+<title>Sunday, December 08, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:24:43 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/12/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/12/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/12/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/11/27.xml#a147' title='Wednesday, November 27, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/12/08.xml">Sunday, December 08, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/12/10.txt#a150' title='Tuesday, December 10, 2002'>&#160;&gt;</a></h>
+<a name="a149"></a>
+<section id="a149">
+<h id='assertionsInLoell'><a href="http://w3future.com/weblog/2002/12/08.xml#a149" class="weblogItemTitle">Assertions in Loell</a></h>
+<p>I've found 2 good uses of the new goal directed execution of Loell. One is that <code>failure</code> together with <code>else</code> works the same as <code>throw</code> and <code>catch</code> in Javascript. The other one (maybe rather obvious) is assertions. To the shapes example I added this precondition to the moveTo method:</p>
+<p><code>pos {.x isA Number gt 0;.y isA Number gt 0};</code></p>
+<p>Which means that <code>pos</code> has to be an object with 2 properties, <code>x</code> and <code>y</code>, which both have to be of type Number, and greater than 0. You see that you don't have to write <code>.x isA Number;.x gt 0</code>. This is because the methods that previously returned a boolean value, now return <code>this</code> (the left-hand expression) instead of <code>true</code>. In <a href="http://www.cs.arizona.edu/icon/">Icon</a> tests return the right-hand expression with success, but I figured the left-hand side makes more sense in an OO language.</p>
+</section><a name="a148"></a>
+<section id="a148">
+<h id='goalDirectedProgrammingWithLoell'><a href="http://w3future.com/weblog/2002/12/08.xml#a148" class="weblogItemTitle">Goal directed programming with Loell</a></h>
+<p>Inspired by <a href="http://lambda.weblogs.com/discuss/msgReader$5239">an article on Ltu</a> today, I implemented a goal directed programming feature into <a href="http://w3future.com/html/loell/">Loell</a>. No more booleans, instead there are now <code>success</code> and <code>failure</code>. When an expression returns <code>failure</code>, the whole closure immediately returns <code>failure</code>. This was only a small change in the code, and the examples hardly changed. I only had to add <code>else success</code> to the while code to indicate that failing the while test is not a failure. I haven't found a really cool example for this yet, but you can try the following in the shapes example:</p>
+<p><code>scribble each {that isA Shape}</code></p>
+<p>This will test if the <code>scribble</code> list only contains shapes. (Remember that <code>that</code> is the default method argument)</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/12/08.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

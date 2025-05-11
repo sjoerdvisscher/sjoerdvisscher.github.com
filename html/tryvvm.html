@@ -1,0 +1,155 @@
+<HTML>
+<HEAD>
+<TITLE>Outliner view for VVM</TITLE>
+<STYLE>
+TH.m,TD.m {border-top: 1px solid #888888;border-left: 1px solid #888888;}
+TABLE.m {border-bottom: 1px solid #888888;border-right: 1px solid #888888;}
+TH.m {text-align:left;background:#EEEEEE;padding:0px 0px 0px 1px;font-weight:normal}
+TD.m {text-align:left;background:#FFFFFF;padding:0px 0px 0px 1px;width:100%;}
+TABLE {margin:1px;}
+.w {font-size:80%;cursor:pointer;cursor:hand;color:#884444}
+BODY,TD,TH {font-family:arial,helvetica,sans-serif;font-size:10pt;}
+</STYLE>
+<SCRIPT>
+function Node(name) {
+  this._text='';
+  this._children=[];
+  this._name=name;
+}
+
+function Parser(name,doc) {
+  this.doc=doc;
+  this.node=new Node(name);
+  this.start('base');
+  while (this.state) try {
+    var c=doc.getChar();
+    this.f=this.stt[this.state][c];
+    if (this.f) this.f(); else {
+      if (c=='\0') throw 'Unexpected end of file'; 
+      else this[this.state]+=c;
+    }
+  } catch(e) {throw e+'\nError in '+name;}
+}
+Parser.prototype={
+  start:function (s) {this.state=s;this[s]='';},
+  cont:function (s) {this.state=s;},
+  stop:function () {this.state='';},
+  entlist:{lt:'<',gt:'>',amp:'&'},
+  stt:{
+   base:{
+    '<':function () {this.start('tag')},
+    '&':function () {this.start('ent')},
+    '\0':function () {if (this.node._name!='{document}') throw 'Unexpected end of file'; else this.stop()}},
+   tag:{
+    '>':function () {
+      if (!this.tag) throw 'Tag may not be empty';
+      var n=new Parser(this.tag,this.doc).node;
+      if (this.tag=='_') {this.node._children[this.node._children.length]=n;this.node._text+=n._text} 
+      else {if (this.node[this.tag]) throw 'Double property: '+this.tag; this.node[this.tag]=n}
+      this.cont('base');},
+    '/':function () {
+      if (this.tag) throw 'Unexpected / in tag: '+this.tag;
+      this.start('endtag')},
+    '?':function () {this.start('ignoretag')},
+    '!':function () {this.start('ignoretag')}},
+   endtag:{
+    '>':function () {
+      if (this.endtag!=this.node._name) throw 'End-tag ('+this.endtag+') does not match start-tag ('+this.node._name+').';
+      if (!this.node._text) this.node._text=this.base;this.stop();}},
+   ent:{
+    '#':function () {this.start('nument')},
+    ';':function () {
+      if (!this.entlist[this.ent]) throw 'Unknown entity: '+this.ent;
+      this.base+=this.entlist[this.ent];this.cont('base');}},
+   nument:{
+    ';':function () {this.base+=String.fromCharCode(this.nument);this.cont('base');}},
+   ignoretag:{
+    '>':function () {this.cont('base')}}
+  }
+}
+
+function Document(source) {
+  this.source=source+'\0';
+  this.cursor=0;
+  var uberroot=new Parser('{document}',this).node;
+  for (var i in uberroot) if (uberroot[i].constructor==Node) {this.root=uberroot[i];break;}
+}
+Document.prototype.getChar=function() {
+  return this.source.charAt(this.cursor++);
+}
+
+var list0=[];var list1=[];var listl=0;
+function blockview(node) {
+  var s='';var l=node._children.length;var p=0;
+  for (var i in node) if (i.charAt(0)!='_') {
+    s+=blockview(node[i]);
+    p++;
+  }
+  for (var i=0;i<l;i++) {
+    s+=blockview(node._children[i]);
+    p++;
+  }
+  if (p>0) {
+    list0[listl]='<TABLE style="width:99%" cellspacing=0 cellpadding=0><TR><TD class="w" style="width:0px" onclick="this.parentNode.parentNode.parentNode.parentNode.innerHTML=list1['+listl+']" valign=top><NOBR>&nbsp;v&nbsp;</NOBR></TD><TD style="width:100%"><TABLE style="width:99%" cellspacing=0 class="m">'+s+'</TABLE></TD></TR></TABLE>';
+    s=list1[listl]='<NOBR><SPAN onclick="this.parentNode.parentNode.innerHTML=list0['+listl+'];event.cancleBubble=true" class="w">&nbsp;&gt;&nbsp;</SPAN>'+node._text.substr(0,80)+(node._text.length>80?'...':'')+'</NOBR>';
+    if (node._name=='_') s='<TR><TD class="m" colspan=2><SPAN>'+s+'</SPAN></TD></TR>';
+    else s='<TR><TH class="m" colspan=2><B>'+node._name+'</B><BR /><SPAN>'+s+'</SPAN></TH></TR>';
+    listl++;
+  } else {
+    if (node._name=='_')
+      s='<TR><TD class="m" colspan=2>'+node._text+'</TD></TR>';
+    else
+      s='<TR><TH class="m"><b>'+node._name+'</b></TH><TD class="m">'+node._text+'</TD></TR>';
+  }
+  return s;
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>Outliner view for VVM</H1>
+<P>
+In VVM, the value of a node is the value of it's content nodes concatenated.
+<BR />This allows an outliner view of the document,
+<BR />because the value of the node is the collection of the content of it's subtree.
+</P>
+<FORM id="data">
+<TEXTAREA id="source" cols=80 rows=10>
+&lt;?xml blabla should be ignored?>
+&lt;!DOCTYPE blabla should be ignored>
+   &lt;html>
+      &lt;title>Example document&lt;/title>
+      &lt;base>
+         &lt;target>_blank&lt;/target>
+         &lt;_>http://w3future.com&lt;/_>
+      &lt;/base>
+      &lt;_>&lt;type>H1&lt;/type>
+         &lt;_>Outliner view for VVM. &lt;/_>
+      &lt;/_>
+      &lt;_>&lt;type>P&lt;/type>
+         &lt;_>In VVM, the value of a node is the value
+         of it's content nodes concatenated.
+         This allows an outliner view of the document,
+         because the value of the node is the collection 
+         of the content of it's subtree.&lt;/_>
+      &lt;/_>
+      &lt;_>&lt;type>H1&lt;/type>
+         &lt;_>Header text. &lt;/_>
+      &lt;/_>
+      &lt;_>&lt;type>P&lt;/type>
+         &lt;_>Some plain text, &lt;/_>
+         &lt;_>&lt;type>A&lt;/type>
+            &lt;href>http://w3future.com&lt;/href>
+            &lt;_>a link to my site&lt;/_>
+         &lt;/_>
+         &lt;_> and some character references: 
+         &amp;#60;(&amp;lt;),&amp;#62;(&amp;gt;) and &amp;#38;(&amp;amp;).&lt;/_>
+      &lt;/_>
+   &lt;/html>
+</TEXTAREA>
+</FORM>
+<BR />
+<DIV><BUTTON onclick="try{var tim=new Date();/*for (q=0;q<100;q++)*/ doc=new Document(document.forms.data.elements.source.value);tim=new Date()-tim;this.parentNode.childNodes[1].innerHTML='Parsing took '+tim/1000+' seconds.';this.parentNode.childNodes[1].innerHTML+='<BR /><BR /><TABLE cellspacing=0 style=\'border-right: 1px solid #888888;border-bottom: 1px solid #888888;width:600px\'>'+blockview(doc.root)+'</TABLE>'}catch(e){alert(e)}"
+>Click here to parse and show an outliner view.</BUTTON><DIV></DIV></DIV>
+<BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR /><BR />
+</BODY>
+</HTML>

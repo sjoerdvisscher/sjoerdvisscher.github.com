@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>test</title>
+<style>
+body {
+-moz-binding:url('data:text/xml,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Cbindings%20xmlns%3D%22http%3A//www.mozilla.org/xbl%22%3E%3Cbinding%20id%3D%22test%22%3E%3Cimplementation%3E%3Cconstructor%3Eeval%28eval%28document.defaultView.getComputedStyle%28this%2C%22%22%29.getPropertyValue%28%22font-family%22%29%29%29%3C/constructor%3E%3C/implementation%3E%3C/binding%3E%3C/bindings%3E#test');
+top:expression(this.DONE?0:(eval(eval(this.currentStyle.fontFamily)),this.DONE=true));
+font-family:"alert('hoi')";
+}
+</style>
+</head>
+<body>
+
+</body>
+</html>

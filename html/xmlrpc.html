@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - spell-checker</TITLE>
+	<SCRIPT src="/w3f/w3f.js"></SCRIPT>
+	<STYLE>
+		@import "/w3f/w3f.css";
+
+		.em {
+			color:#708020;
+		}			
+		#ResultDiv {
+			margin-left: 1em;
+		}
+		TD.border {
+			text-align:left;
+		}
+		TH.props {
+			text-align:center;
+		}
+		#result {
+			padding:2px;
+		}
+		.badword {
+			cursor:pointer;cursor:hand;
+			text-decoration:underline;
+			font-weight:bold;
+		}
+		.select {
+			font-weight:bold;
+			background-color:#F0F0F8;
+		}
+	</STYLE>
+	<SCRIPT>
+		var GL_terms='';
+		var GL_words=[];
+		var GL_current=-1;
+	
+		function start_check(terms) {
+ 			GL_terms=terms.replace(/(\n|\r)+/g,' ').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+			var s=new w3f_XMLRPCService('http://www.stuffeddog.com/speller/speller-rpc.cgi');
+			s.onload=function () {
+				if (this.error) {
+					var div=document.getElementById('result');
+					div.innerHTML='<TABLE width="100%" cellspacing=0 cellpadding=0><TR><TD class="border">'+this.error+'</TD></TR></TABLE>';
+				} else render(this.result)
+			};
+			s.call('speller.spellCheck',[GL_terms,{}]);
+			GL_words=[];GL_current=-1;
+			var div=document.getElementById('result');
+			div.innerHTML='Working...';
+			document.getElementById('word').value='';
+			document.getElementById('sugs').innerHTML='<SELECT size=6 style="width: 100px;"></SELECT>';
+			document.getElementById('correct').style.display='block';
+			document.getElementById('edit').style.display='none';
+		}
+		
+		function render(r) {
+			var t=GL_terms;var s='';
+			var l0=0;
+			for (var i=0;i<r.length;i++) {
+				var l=r[i].location-1;
+				var wl=r[i].word.length;
+				s+=t.substr(l0,l-l0);l0=l+wl;
+				s+='<SPAN id="word'+i+'" onclick="choose('+i+')" class="badword">'+r[i].word+'</SPAN>';
+				GL_words[i]='<SELECT size=6 style="width: 100px;" onclick="selectbox(this.options)">';
+				if (r[i].suggestions) {
+					var sug=r[i].suggestions;
+					for (var j=0;j<sug.length;j++) GL_words[i]+='<OPTION>'+sug[j];
+				}
+				GL_words[i]+='</SELECT>';
+			}
+			s+=t.substr(l0);
+			var div=document.getElementById('result');
+			div.innerHTML=s;
+		}
+		
+		function fixText(s) {
+			return s
+		}
+		
+		function err(e,s) {
+		  for (var i in e) {
+		    s+='\n'+i+': '+e[i];
+		  }
+		  alert(s);
+		}
+		
+		function show(o) {
+			if (''+o===o||1*o===o) return o;
+			if (o.shown) return '<i>Loop</i>';
+			o.shown=true;
+			var s='<DIV style="margin-left:2em">';
+			for (var i in o) {
+				if (i=='shown') continue;
+				s+='<P>'+i+'='+show(o[i]);
+			}
+			s+='</DIV>';
+			delete o.shown;
+			return s;
+		}
+		
+		function choose(nr) {
+			if (GL_current>-1) document.getElementById('word'+GL_current).className='badword';
+			var w=document.getElementById('word'+nr);
+			w.className='select';
+			document.getElementById('word').value=w.innerHTML;
+			document.getElementById('sugs').innerHTML=GL_words[nr];
+			GL_current=nr;
+		}
+		
+		function selectbox(opts) {
+			for (var p=0;p<opts.length;p++) {
+				if (opts[p].selected) {
+					changeTo(opts[p].text);
+					return;
+				}
+			}
+		}
+
+		function changeTo(newtext,fromInput) {
+			if (!fromInput) document.getElementById('word').value=newtext;
+			document.getElementById('word'+GL_current).innerHTML=newtext;
+		}
+		
+		function go_edit() {
+			var s=document.getElementById('result').innerHTML;
+			if (s=='Working...') return;
+			s=s.replace(/\<[^>]*\>/g,'').replace(/\&lt\;/g,'<').replace(/\&gt\;/g,'>').replace(/\&amp\;/g,'&');
+			document.getElementById('edit').style.display='block';
+			document.getElementById('correct').style.display='none';
+			document.forms['loader'].q.value=s;
+		}
+	</SCRIPT>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>
+document.write('<TD>'+createButton({style:'tab',content:'Weblog',go:'/weblog'})+'</TD>');
+document.write('<TD>&nbsp;</TD><TD>'+createButton({style:'tab',content:'Examples',go:'/html/tools.html'})+'</TD>');
+</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar-container" width="100%">
+<TR><TD>
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%">
+<TR><TD class="sidebar-header">
+Links
+</TD></TR>
+<SCRIPT>
+document.write('<TR><TD>'+createButton({style:'button2',content:'Speller Homepage',gonew:'http://www.stuffeddog.com/speller/index.html'})+'</TD></TR>');
+document.write('<TR><TD>'+createButton({style:'button2',content:'XML-RPC Homepage',gonew:'http://www.xml-rpc.com'})+'</TD></TR>');
+</SCRIPT>
+</TABLE>
+
+</TD></TR>
+</TABLE>
+
+</TD><TD id="content">
+
+<H1>Spell-Checker</H1>
+<P>Fun with XML-RPC</P>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%">
+<TR><TD>
+
+<H2>Enter some text to check</H2>
+<FORM onsubmit="start_check(document.forms['loader'].q.value);return false;" name="loader">
+<DIV id="edit">
+<P><TEXTAREA rows=10 name="q" cols=60 style="width:100%">This smple text containe some errrors on prupose.</TEXTAREA></P>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Spell Check',action:"start_check(document.forms['loader'].q.value)"}))</SCRIPT>
+</TD></TR></TABLE></P>
+</DIV>
+</FORM>
+
+<DIV id="correct" style="display:none">
+<P style="text-align:center">
+<TABLE width="90%" class="border" cellspacing=0 cellpadding=0 style="margin:auto">
+<TR>
+<TD class="header" colspan=2>Correct Spelling</TD>
+</TR><TR>
+<TD id="result" class="border" rowspan=2 width="100%">&nbsp;</TD>
+<TD class="border"><INPUT type="input" id="word" style="width: 100px;border:none" onchange="changeTo(this.value,true)" onkeyup="changeTo(this.value,true)"></TD>
+</TR><TR>
+<TD class="border" id="sugs"><SELECT size=6 style="width: 100px;"></SELECT></TD>
+</TR>
+</TABLE></P>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Edit Text',action:"go_edit()"}))</SCRIPT>
+</TD></TR></TABLE></P>
+</DIV>
+
+<H2>Details</H2>
+<P><A href="http://www.stuffeddog.com/index.html">David Adams</A> has created Speller, 
+"a lightweight spell-checking application tailored for the web.". It's latest version also has a
+<A href="http://www.stuffeddog.com/speller/doc/rpc.html">RPC interface</A> which uses 
+XML-RPC over HTTP as the RPC mechanism. For me it was the perfect application to test my new
+XML-RPC client for IE5 and Mozilla. The XML-RPC client sends the input text to the spell-check
+service, which returns the misspelled words and the alternatives. Then an interface is dynamically
+created from that data.</P>
+
+</TD><TD id="note">
+
+<H3>Note</H3>
+<P>When correcting the spelling, you can either select one of the suggestions or manually change
+the spelling in the box above the suggestions.</P>
+
+</TD></TR></TABLE>
+
+<SCRIPT>initButtons()</SCRIPT>
+<SCRIPT src="/tools/xmlrpc.js"></SCRIPT>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+</TD></TR></TABLE>
+</BODY>
+</HTML>

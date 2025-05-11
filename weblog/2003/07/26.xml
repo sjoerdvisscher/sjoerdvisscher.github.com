@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/07/26.xml">
+<head>
+<title>Saturday, July 26, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:28:37 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/07/26.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/07/26.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/07/26.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/07/19.xml#a223' title='Saturday, July 19, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/07/26.xml">Saturday, July 26, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/08/04.txt#a225' title='Monday, August 04, 2003'>&#160;&gt;</a></h>
+<a name="a253"></a>
+<section id="a253">
+<h id='onResources'><a href="http://w3future.com/weblog/2003/07/26.xml#a253" class="weblogItemTitle">On Resources</a></h>
+<p><a href="http://www.tbray.org/ongoing/When/200x/2003/07/24/HTTP-14">Tim Bray has posted his view on resources</a>. He asks in what way the TAG should deal with them. He gives two unsatifactory options: either don't mention them at all, or say that the nature of resources is outside of the scope of the Architecture document. Here's my take on this.</p>
+<p>First we should collect minimal requirements about resources and URIs, <a href="http://www.w3.org/DesignIssues/Axioms">the axioms of the web</a>. Let's start with this one:</p>
+<ul><li>A URI identifies a resource.</li></ul>
+<p>It's a simple axiom, but actually very powerful. For example, this means that every resource for which a URI exists has an infinite life span: A URI is a string, and a string has an infinite life span. (Just like any number will always exist) As each URI maps to a resource, the resource must have an infinite life span too. This means f.e. that HTTP's <code>410 GONE</code> means that there are no more representations available for the resource, not that the resource doesn't exist anymore. This is all the result of this one axiom. Let's do another axiom:</p>
+<ul><li>Information about the nature of a resource that has a URI can only either be obtained by dereferencing its URI or simply declared to be true.</li></ul>
+<p>You can not for example look at the content of the URI for more information. Also, each time a URI is dereferenced, more information about the resource is known. But as a resource has an infinite life span, we can never know everything about the resource. So because we can never know the exact nature of a resource, it is enough to define it as everything there is to know about that resource:</p>
+<ul><li>A resource is the collection of all results of all possible dereferencing methods at any time of its URI combined with all that is simply declared to be true about that resource.</li></ul>
+<p>If we don't like this conclusion then we should choose other axioms.</p>
+<p>(It's very late, and it is very well possible that my logic is flawed. It certainly isn't solid enough to be called a proof.)</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/07/26.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

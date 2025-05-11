@@ -1,0 +1,11 @@
+<upstream type="xmlStorageSystem" version="1.0">
+	<usernum>100323</usernum>
+	<name>Sjoerd Visscher</name>
+	<passwordName>default</passwordName>
+	<server>radio.xmlstoragesystem.com</server>
+	<port>80</port>
+	<protocol>xml-rpc</protocol>
+	<rpcPath>/RPC2</rpcPath>
+	<soapAction>/xmlStorageSystem</soapAction>
+	</upstream>
+

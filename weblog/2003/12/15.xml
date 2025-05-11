@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/12/15.xml">
+<head>
+<title>Monday, December 15, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:29:19 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/12/15.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/12/15.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/12/15.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/11/11.xml#a235' title='Tuesday, November 11, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/12/15.xml">Monday, December 15, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/12/16.txt#a237' title='Tuesday, December 16, 2003'>&#160;&gt;</a></h>
+<a name="a265"></a>
+<section id="a265">
+<h id='providingContextInProgrammingpart1'><a href="http://w3future.com/weblog/2003/12/15.xml#a265" class="weblogItemTitle">Providing context in programming (part 1)</a></h>
+<p><a href="http://www.xoltar.org/2003/dec/04/impotence-of-functional.html">Bryn Keller</a> is right, my previous post needs a bit more explanation. The point Sean McGrath was making is that a number is as good as meaningless without context. XML nicely provides this context. I want to translate that to programming.</p>
+<p>The importance of context for data structures in a datafile is probably more obvious than context for data structures in a program. But if you think about the problems with understanding a program, there can be two issues. Either you don't understand the syntax or semantics of the programming language, or you don't understand the relation between the purpose of the program and the data structures and the operations (algorithms) on them. The former part is probably better solved by educating those who have to understand the program. (Not using the full power of the programming language would be a waist.) So writing understandable programs means focusing on the latter part.</p>
+<p>The obvious translation of the way XML provides context to data is using objects or records. But also assigning data to a properly named variable could be enough to provide the context. Now the problem with lists and tuples: they provide very little context. This does not mean they should never be used, only that little bit of context conforms with how the data is used in the program. What this means is actually very different for tuples and lists.</p>
+<p>What context provides a list? Nothing more than that there's a list of items. The number of items is variable, possibly empty. The order of the items might have meaning, but is certainly not fixed. And all items in the list have the same role in the program. This means that when someone has to update your program, he can decide to f.e. filter the list or sort the list, <em>anywhere in your program</em>. If the way your program uses a list puts extra restrictions on the ways to modify the list, you'd better fill your program chock-full of comments to prevent future bugs.</p>
+<p>More later&#8230; <a href="http://w3future.com/weblog/2004/02/10.xml#providingContextInProgrammingpart2">part 2</a></p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/12/15.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

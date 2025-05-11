@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/09/18.xml">
+<head>
+<title>Wednesday, September 18, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:23:38 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/09/18.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/09/18.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/09/18.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/09/10.xml#a130' title='Tuesday, September 10, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/09/18.xml">Wednesday, September 18, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/09/19.txt#a132' title='Thursday, September 19, 2002'>&#160;&gt;</a></h>
+<a name="a131"></a>
+<section id="a131">
+<h id='rssModulesInRadio'><a href="http://w3future.com/weblog/2002/09/18.xml#a131" class="weblogItemTitle">RSS Modules in Radio</a></h>
+<blockquote cite="http://scriptingnews.userland.com/backissues/2002/09/17#When:2:10:15PM"><p>Based on a feature <a href="http://diveintomark.org/archives/2002/09/17.html#blink_and_youll_miss_it">request</a> by Mark Pilgrim, I designed my first <a href="http://backend.userland.com/blogChannelModule">RSS module</a> today, called blogChannel. It was fun. Scripting News already <a href="http://www.scripting.com/rss.xml">supports</a> it. [<a href="http://scriptingnews.userland.com/backissues/2002/09/17#When:2:10:15PM">Scripting News</a>]</p></blockquote>
+<p>Interesting module. Looks fine with me! It would be cool if Userland would add some code to Radio to make it easy to implement RSS modules. Something like a table for each module with namespace and defaultPrefix fields, 2 scripts for serializing extra elements for the channel and for an item and 2 scripts as callbacks. The callbacks are called by the aggregator whenever a channel or an item contains elements from the module.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/09/18.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

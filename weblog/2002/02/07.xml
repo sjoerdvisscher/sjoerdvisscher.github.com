@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/02/07.xml">
+<head>
+<title>Thursday, February 07, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:20:31 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/02/07.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/02/07.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/02/07.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/02/06.xml#a64' title='Wednesday, February 06, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/02/07.xml">Thursday, February 07, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/02/12.txt#a66' title='Tuesday, February 12, 2002'>&#160;&gt;</a></h>
+<a name="a65"></a>
+<section id="a65">
+<h ></h>
+<blockquote><P>Yet each of us "know" apples in a slightly different way. Most of the time, the way we each know something is so much alike, that we communicate well enough to accomplish our goal. Every now and then we have a communication breakdown, and so we try to fall back to a less powerful, but more common level of understanding. Then we build from there.</P>
+<P>The challenge with a "semantic web" is to build powerful *and* <A href="http://www.amazon.com/exec/obidos/ASIN/0201112973/qid=1012966644/sr=8-1/ref=sr_8_7_1/104-8677222-8179152">common levels of "understanding"</A>. In this case, "understanding" means "same set of definitions for the symbols being exchanged". Each system's symbols have to be grounded in the same definitions. (And any of the systems may be human or non-human.)</P>
+<P>Even more challenging is for a system to recognize a "communication breakdown" (i.e. the "<A href="http://cogprints.ecs.soton.ac.uk/~harnad/Papers/Harnad/harnad90.sgproblem.html">symbol grounding problem</A>") and then to repair the problem well enough to accomplish the goal.</P>
+<P>[<a href="http://radio.weblogs.com/0100812/">Patrick Logan's Radio Weblog</a>]</P></blockquote>
+<P>Interesting comments. However I don't think it's a really big challenge to have this common level of "understanding". That is because  the symbols (or the <A href="http://w3future.com/weblog/2002/01/30.html">"things"</A> I talked about) of the semantic web are URI's. This means that anyone can introduce symbols. What I think what will happen is that companies and individuals will introduce task specific symbols. Simply because it makes work much easier.</P><P>Then this company or individual, or maybe someone else, can provide a grounding (transformation) into a set of symbols that is in common use within the appropriate community. And a smart person within that community may provide a transformation to symbols from another community.</P><P>But just like spoken languages, there's not reason to have a basic level. Whenever there's a transformation from one symbol to another, or several others, someone will provide it. And when there is no transformation of symbol A into language B, there's no reason to use symbol A in language B. Spoken languages regularly borrow words from other languages too.</P><P>I see more challenge in building the global system that takes care of all those tranformations. The most logic systems I've seen assume total knowledge. There has to be infrastructure to acquire required knowledge. Anyone has some docs?</P>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/02/07.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/10/31.xml">
+<head>
+<title>Sunday, October 31, 2004 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:30:10 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/10/31.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/10/31.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/10/31.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2004/09/22.xml#a251' title='Wednesday, September 22, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/10/31.xml">Sunday, October 31, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/12/24.txt#a253' title='Friday, December 24, 2004'>&#160;&gt;</a></h>
+<a name="a281"></a>
+<section id="a281">
+<h id='dutchGovernmentSiteInXhtml11'><a href="http://w3future.com/weblog/2004/10/31.xml#a281" class="weblogItemTitle">Dutch government site in XHTML 1.1 </a></h>
+<p>I just found <a href="http://annevankesteren.nl/archives/2004/08/xhtml">this discussion about XHTML</a> on the site of Anne van Kesteren. In <a href="http://annevankesteren.nl/archives/2004/08/xhtml#comment-2123">the last comment</a> Faruk Ates hopes that the Dutch government will make more valid websites in the future.</p>
+<p>Well, he doesn't have to wait any longer. In the last few months I've had the privilege at <a href="http://q42.nl">Q42</a> to build <a href="http://www.advies.overheid.nl/">the new Dutch Government's Advisory website</a>. As this advisory is <a href="http://webrichtlijnen.overheid.nl/">telling</a> all Dutch Government sites that they should make valid websites, we had to make this site as valid as possible. The CMS generates <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> 1.1 with mime-type <code>application/xhtml+xml</code> for browsers and other clients that support it, and HTML 4.01  for browsers that don't. The markup is meaningful and so are the <acronym title="Uniform Resource Locator">URL</acronym>s.</p>
+<p>In this case it was not that hard. If your CMS is based on XSL, te output is automatically well formed XML. With well formed XML creating valid XHTML is just as hard as creating valid HTML. And a simple last transformation can convert the XHTML to HTML. To convert other sites like <a href="http://www.overheid.nl/">the main government site</a> is going to be a lot harder. But if it wasn't hard, it wouldn't be necessary to convert it.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/10/31.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

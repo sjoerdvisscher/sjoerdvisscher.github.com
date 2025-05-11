@@ -1,0 +1,61 @@
+<?
+
+function arrayOfStructsTest($a) {
+	$t=0;
+	$l=sizeof($a);
+	for ($i=0;$i<$l;$i++) $t+=$a[$i]['curly'];
+	return $t;
+}
+
+function countTheEntities($s) {
+	$r=array(
+		"ctLeftAngleBrackets" => 0,
+		"ctRightAngleBrackets" => 0,
+		"ctAmpersands" => 0,
+		"ctApostrophes" => 0,
+		"ctQuotes" => 0
+	);
+	$l=strlen($s);
+	for ($i=0;$i<$l;$i++) {
+		switch ($s[$i]) {
+			case '<':$r["ctLeftAngleBrackets"]++;break;
+			case '>':$r["ctRightAngleBrackets"]++;break;
+			case '&':$r["ctAmpersands"]++;break;
+			case "'":$r["ctApostrophes"]++;break;
+			case '"':$r["ctQuotes"]++;break;
+		}
+	}
+	return $r;
+}
+
+function easyStructTest($s) {
+	return $s['moe']+$s['larry']+$s['curly'];
+}
+
+function echoStructTest($s) {
+	return $s;
+}
+
+function manyTypesTest($number, $boolean, $string, $double, $dateTime, $base64) {
+	return array($number, $boolean, $string, $double, $dateTime, $base64);
+}
+
+function moderateSizeArrayCheck($a) {
+	$l=sizeof($a);
+	return $a[0].$a[$l-1];
+}
+
+function nestedStructTest($a) {
+	$s=$a['2000']['04']['01'];
+	return $s['moe']+$s['larry']+$s['curly'];
+}
+
+function simpleStructReturnTest($n) {
+	return array(
+		"times10" => $n*10,
+		"times100" => $n*100,
+		"times1000" => $n*1000
+	);
+}
+
+?>

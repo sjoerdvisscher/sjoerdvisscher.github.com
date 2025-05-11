@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/07/24.xml">
+<head>
+<title>Saturday, July 24, 2004 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:30:01 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/07/24.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/07/24.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/07/24.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2004/06/08.xml#a248' title='Tuesday, June 08, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/07/24.xml">Saturday, July 24, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/07/28.txt#a250' title='Wednesday, July 28, 2004'>&#160;&gt;</a></h>
+<a name="a278"></a>
+<section id="a278">
+<h id='muchOfXhtml20WorksAlready'><a href="http://w3future.com/weblog/2004/07/24.xml#a278" class="weblogItemTitle">Much of XHTML 2.0 works already</a></h>
+<p>A few days ago the W3C released <a href="http://www.w3.org/MarkUp/2004/xhtml-faq">the HTML and XHTML FAQ</a>. I skimmed over it and saw no interesting things. So that was that.</p>
+<p>Just now I saw a dramatic increase of visitors to this site. I was a bit surprised because there hasn't been any news on my site lately, and I had seen no new interesting referrers. Well, it turns out that the XHTML FAQ links to <a href="http://w3future.com/weblog/gems/xhtml2.xml">my xhtml2 implementation</a>!</p>
+<p>Now that I'm getting a lot of visitors who are apparently interested, I feel the urge to write a bit more about that implementation, and my current use of XHTML2. But first I'm going to get some sleep...</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/07/24.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

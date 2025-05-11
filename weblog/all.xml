@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/all.xml">
+<head>
+<title>All weblog posts</title>
+<style type="text/css">
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    overflow: hidden;
+  }
+  #content {
+    overflow: auto;
+    height: 2000px;
+  }
+</style>
+<!--script src="http://w3future.com/tools/scroller.js" /-->
+</head>
+<body onload="initScroller()" onscroll="doScroll()">
+<section id="content">
+  <div class="all" /><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/all.xml" />
+</section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+</body>
+</html>

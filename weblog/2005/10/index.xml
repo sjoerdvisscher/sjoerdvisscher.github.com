@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/10/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/20/2005; 10:56:34 PM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2005/10/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2005/10/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/10/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2005/10/20.xml">Thursday, October 20, 2005</a></h>
+<a name="a297"></a>
+<section id="a297">
+<h id='leakFreeJavascriptClosures'><a href="http://w3future.com/weblog/2005/10/20.xml#a297" class="weblogItemTitle">Leak Free Javascript Closures</a></h>
+<p>If you're confused about how closures in JavaScript cause memory leaks in Internet Explorer, this is for you: <a href="http://laurens.vd.oever.nl/weblog/items2005/closures/">Leak Free Javascript Closures</a>. Then, without leakage, you can write code like this:</p>
+<pre>function attach()
+{
+  var element = document.getElementById("my-element");
+  element.attachEvent("onclick", function()
+    {
+      alert("Clicked: " + this.innerHTML);
+    }.closure(element));
+}</pre>
+<p>Also if you want to do something like this: <code>setTimeout(obj.method, 1000)</code>, and you find out that inside the method <code>this</code> is not <code>obj</code>, you can now do this: <code>setTimeout(obj.method.closure(obj), 1000)</code> to fix it.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/10/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

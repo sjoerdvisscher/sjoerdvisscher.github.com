@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>Windows Longhorn Glass Look</title>
+<style>
+body { 
+  background: #667788;
+  font-family: tahoma;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+img#background {
+}
+
+h1 {
+  font-size: 140%;
+}
+
+#window1 { 
+  top: 50px;
+  left: 150px;
+  width: 400px;
+  height: 200px;
+}
+#window2 { 
+  top: 270px;
+  left: 250px;
+  width: 500px;
+  height: 300px;
+}
+#window3 { 
+  top: 150px;
+  left: 400px;
+  width: 400px;
+  height: 400px;
+}
+#window4 { 
+  top: 200px;
+  left: 100px;
+  width: 400px;
+  height: 400px;
+}
+
+#window1 .border {
+  border-color: #F8E0C0;
+}
+#window1 .glass {
+  background: #F8E0C0; 
+}
+
+#window2 .border {
+  border-color: #E0F8C0;
+}
+#window2 .glass {
+  background: #E0F8C0; 
+}
+
+#window3 .border {
+  border-color: #E0F0F8;
+}
+#window3 .glass {
+  background: #E0F0F8; 
+}
+
+.window {
+  position: absolute;
+}
+.shadow {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background: #002030;
+  filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=4, makeShadow=true, shadowOpacity=.20);
+}
+.glass {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #F0F0F0; 
+  filter: 
+    alpha(opacity=100, style=1, finishOpacity=50, startx=60, starty=50, finishx=20, finishy=70)
+    alpha(opacity=50, style=1, finishOpacity=100, startx=100, starty=50, finishx=60, finishy=70);
+}
+.border {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #F0F0F0;
+  padding: 80px 10px 10p 10px;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: white;
+  padding: 0.5em;
+  cursor: default;
+  filter: alpha(opacity=60);
+}
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  padding: 25px 20px;
+  cursor: move;
+}
+.current .shadow {
+  top: 1px;
+  left: 1px;
+}
+.current .content {
+  filter: none;
+}
+.current .title {
+  z-index: 1;
+}
+
+#menu { 
+  position: absolute; 
+  border: 1px solid rgb(182, 184, 196); 
+  padding: 1px 2px; 
+  background: #f4f4f5;
+  font-family: trebuchet ms; 
+  font-size: 9pt; 
+}
+#menu a { 
+  display: block; 
+  width: 200px; 
+  color: black; 
+  text-decoration: none; 
+  height: 18px; 
+  cursor: default;
+}
+#menu a i { 
+  display: block; float: left;
+  position:relative; 
+  height: 14px; width: 26px;
+  background: #ececed;
+  border-left: 1px solid #ffffff; 
+  border-right: 1px solid #e0e0e1;
+  margin-left: -2px; 
+  margin-right: -3px;
+  padding: 2px 0px;
+}
+#menu a span { 
+  display: block; 
+  position:relative; 
+  height: 14px; 
+  background: #f4f4f5;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  padding: 2px 3px;
+  margin-right: -2px;
+}
+.current #menu a:hover { 
+  border: 1px solid; border-color: rgb(158, 215, 240) #ffffff; 
+  padding: 0px;
+}
+.current #menu a:hover i { 
+  border: 1px solid; 
+  border-color: #ececed #e0e0e1 #d8e0f0 rgb(158, 215, 240); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe2eaf2, endColorstr=#ffd8e0f0);
+  padding: 0px;
+  width: 25px;
+}
+.current #menu a:hover span { 
+  border: 1px solid; 
+  border-color: #f4f4f5 rgb(158, 215, 240) #e8f2f8 #e8f2f8; 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffeef2f8, endColorstr=#ffddedf8);
+  padding: 0px 3px;
+}
+</style>
+<!-- please remove this counter if you want to use this code -->
+<script type="text/javascript" src="http://statistics.q42.nl/counter/default.asp?id=w3future"></script>
+<script>
+var current = null;
+var dragging = false;
+var startedDragging = false;
+function setCurrent(w)
+{
+  if (w != current)
+  {
+    // unset old current
+    if (current)
+      current.className = 'window';
+    // set current
+    current = w;
+    current.className = 'current window';
+    // put current on top
+    document.getElementById("windows").appendChild(current);
+  }
+
+  // init drag
+  var offsetX = event.x - parseInt(w.currentStyle.left);
+  var offsetY = event.y - parseInt(w.currentStyle.top);
+  if (offsetY < 80)
+  {
+    dragging = true;
+    dragEffect = function()
+    {
+      w.style.pixelLeft = event.x - offsetX;
+      w.style.pixelTop = event.y - offsetY;
+    }
+  } 
+  else 
+  {
+    var width = parseInt(w.currentStyle.width);
+    var resizeX = offsetX > width - 10;
+    var height = parseInt(w.currentStyle.height);
+    var resizeY = offsetY > height - 10;
+    if (resizeX || resizeY)
+    {
+      dragging = true;
+      var offsetX = event.x - width;
+      var offsetY = event.y - height;
+
+      dragEffect = function()
+      {
+        if (resizeX)
+          w.style.pixelWidth = event.x - offsetX;
+        if (resizeY)
+          w.style.pixelHeight = event.y - offsetY;
+      }
+    }
+  } 
+}
+
+function calcResize(w)
+{
+  var offsetX = event.x - parseInt(w.currentStyle.left);
+  var offsetY = event.y - parseInt(w.currentStyle.top);
+  var width = parseInt(w.currentStyle.width);
+  var resizeX = offsetX > width - 10;
+  var height = parseInt(w.currentStyle.height);
+  var resizeY = offsetY > height - 10;
+  w.style.cursor = (resizeX||resizeY)?(resizeY?"S":"")+(resizeX?"E":"")+"-resize":"default";
+}
+
+var dragEffect;
+function moveCurrent()
+{
+  if (!dragging || !current)
+    return;
+    
+  if (event.button == 0)
+  {
+    releaseCurrent();
+    return;
+  }
+  
+  if (!startedDragging)
+  {
+    current.className = 'dragging current window';
+    startedDragging = true;
+  }
+  
+  dragEffect();
+}
+
+function releaseCurrent()
+{
+  if (!current)
+    return;
+    
+  current.className = 'current window';
+  dragging = false;
+  startedDragging = false;
+}
+
+function makeUnselectable(e)
+{
+  e.unselectable=true;
+  if (e.className == 'content')
+    return;
+  
+  for (var c=e.firstChild;c;c=c.nextSibling)
+    if (c.nodeType == 1)
+      makeUnselectable(c);
+}
+</script>
+</head>
+<body onload="makeUnselectable(document.body);setCurrent(window1)" onmouseup="releaseCurrent()" onmousemove="moveCurrent()">
+<img id="background" src="grass.jpg" />
+<div id="windows">
+<div class="window" id="window1" onmousedown="setCurrent(this)" onmousemove="calcResize(this)">
+  <div class="shadow"></div>
+  <div class="title">w3future.com</div>
+  <div class="glass"></div>
+  <div class="border">
+    <div class="content">
+      <h1>Windows Longhorn Glass Look</h1>
+      <p>This page uses no images, except the background image. Everything is done with
+      HTML, CSS, a bit of JavaScript and a lot of Internet Explorer filters.</p>
+      <p>Yes, it's slow, but it's pretty isn't it?</p>
+      <p>Looks horrible in any browser but Internet Explorer.</p>
+      <p>&nbsp;</p>
+      <p align="right">Sjoerd Visscher, <a href="http://w3future.com/weblog/">w3future.com</a>, 2003</p>
+    </div>
+  </div>
+</div>
+<div class="window" id="window3" onmousedown="setCurrent(this)" onmousemove="calcResize(this)">
+  <div class="shadow"></div>
+  <div class="title">Blue Window</div>
+  <div class="glass"></div>
+  <div class="border">
+    <div class="content">
+      <script type="text/javascript">
+        google_ad_client = "pub-9281881402552436"; 
+        google_ad_width = 300; 
+        google_ad_height = 250; 
+        google_ad_format = "300x250_as"; 
+        google_color_border = "000033"; 
+        google_color_bg = "d5d5dd"; 
+        google_color_link = "000033"; 
+        google_color_url = "7f5f30"; 
+        google_color_text = "000033"; 
+        google_ad_channel = "2888498877";
+      </script>
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+    </div>
+  </div>
+</div>
+<div class="window" id="window4" onmousedown="setCurrent(this)" onmousemove="calcResize(this)">
+  <div class="shadow"></div>
+  <div class="title">Longhorn Menu</div>
+  <div class="glass"></div>
+  <div class="border">
+    <div class="content">
+      <div id="menu">
+        <a href="#"><i></i><span>Menu Item 1</span></a>
+        <a href="#"><i></i><span>Menu Item 2</span></a>
+        <a href="#"><i></i><span>Menu Item 3</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="window" id="window2" onmousedown="setCurrent(this)" onmousemove="calcResize(this)">
+  <div class="shadow"></div>
+  <div class="title">Green Window</div>
+  <div class="glass"></div>
+  <div class="border">
+    <div class="content">
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

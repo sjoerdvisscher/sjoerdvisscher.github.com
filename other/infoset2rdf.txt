@@ -1,0 +1,93 @@
+rdfNS	= "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+doc
+	= Document(
+		documentElement=RDF,
+		children=list(RDF))
+RDF
+	= Element(
+		namespaceName=rdfNS, 
+		localName="RDF",
+		attributes=set(),
+		children=nodeElementList)
+nodeElementList
+	= ws* (nodeElement ws*)*
+nodeElement
+	= Element(
+		attributes=set((idAttr | aboutAttr)?, bagIdAttr?, propertyAttr*)
+		children=propertyEltList)
+ws
+	= Character(
+		elementContentWhitespace=Boolean.true)
+propertyEltList
+	= ws* (propertyElt ws*)*
+propertyElt
+	= resourcePropertyElt 
+	| literalPropertyElt 
+	| parseTypeLiteralPropertyElt 
+	| parseTypeResourcePropertyElt 
+	| parseTypeOtherPropertyElt 
+	| emptyPropertyElt 
+resourcePropertyElt
+	= Element(
+		attributes=set(idAttr?),
+		children=ws* nodeElement ws*)
+literalPropertyElt
+	= Element(
+		attributes=set(idAttr?),
+		children=list(Character))
+parseTypeLiteralPropertyElt
+	= Element(
+		attributes=set(idAttr?, parseLiteral))
+parseTypeResourcePropertyElt
+	= Element(
+		attributes=set(idAttr?, parseResource),
+		children=propertyEltList)
+parseTypeOtherPropertyElt
+	= Element(
+		attributes=set(idAttr?, parseOther),
+		children=propertyEltList)
+emptyPropertyElt
+	= Element(
+		attributes=set((idAttr | resourceAttr)?, bagIdAttr?, propertyAttr*)
+		children=list())
+idAttr
+	= Attribute(
+		namespaceName=rdfNS, 
+		localName="ID",
+		normalizedValue=rdf-id)
+aboutAttr
+	= Attribute(
+		namespaceName=rdfNS, 
+		localName="about",
+		normalizedValue=URI-reference)
+bagIdAttr
+	= Attribute(
+		namespaceName=rdfNS, 
+		localName="bagID",
+		normalizedValue=rdf-id)
+propertyAttr
+	= Attribute(
+		namespaceName!=rdfNS)
+	| Attribute(
+		namespaceName=rdfNS,
+		localName!=(RDF | Description | ID | about | bagID | parseType | resource | li))
+resourceAttr
+	= Attribute(
+		namespaceName=rdfNS, 
+		localName="resource",
+		normalizedValue=URI-reference)
+parseLiteral
+	= Attribute(
+		namespaceName=rdfNS, 
+		localName="parseType",
+		normalizedValue="Literal")
+parseResource
+	= Attribute(
+		namespaceName=rdfNS, 
+		localName="parseType",
+		normalizedValue="Resource")
+parseOther
+	= Attribute(
+		namespaceName=rdfNS, 
+		localName="parseType",
+		normalizedValue!=("Literal" | "Resource"))

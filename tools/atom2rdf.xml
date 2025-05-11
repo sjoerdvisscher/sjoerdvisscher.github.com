@@ -1,0 +1,81 @@
+<xr:transform 
+  xmlns:xr="http://w3future.com/xr/ns/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"  
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:atom="http://purl.org/atom/ns#">
+  
+  <xr:introducing xr:select="/atom:feed">
+
+    <atom:Feed xr:uriSelect="atom:id">
+      <!-- required elements -->
+      <dc:title xr:select="atom:title" />
+      <atom:link xr:select="atom:link">
+        <rdfs:Resource xr:uriSelect="." />
+      </atom:link>
+      <dcterms:modified xr:select="atom:modified" />
+      <!-- optional elements -->
+      <dc:description xr:select="tagline" />
+      <admin:generatorAgent xr:select="atom:generator">
+        <rdfs:Resource xr:uriSelect=".">
+          <dc:title xr:select="@name" />
+        </rdfs:Resource>
+      </admin:generatorAgent>
+      <dc:rights xr:select="atom:copyright" />
+
+      <atom:entries xr:select="atom:entry" xr:collectionType="collection">
+        <atom:Entry xr:uriSelect="atom:id">
+          <!-- required elements -->
+          <dc:title xr:select="atom:title" />
+          <atom:link xr:select="atom:link">
+            <rdfs:Resource xr:uriSelect="." />
+          </atom:link>
+          <dcterms:issued xr:select="atom:issued" />
+          <dcterms:modified xr:select="atom:modified" />
+          <!-- optional elements -->
+          <dcterms:created xr:select="atom:created" />
+          <dc:description xr:select="atom:summary" />
+          <foaf:maker xr:select="ancestor-or-self::*[atom:author][1]/atom:author">
+            <foaf:Person>
+              <foaf:name xr:select="atom:name" />
+              <foaf:weblog xr:select="atom:url">
+                <rdfs:Resource xr:uriSelect="." />
+              </foaf:weblog>
+              <foaf:mbox xr:select="atom:email">
+                <rdfs:Resource xr:uriSelect="." />
+              </foaf:mbox>
+            </foaf:Person>
+          </foaf:maker>
+          <atom:contributors xr:select="atom:contributor" xr:collectionType="collection">
+            <foaf:Person>
+              <foaf:name xr:select="atom:name" />
+              <foaf:weblog xr:select="atom:url">
+                <rdfs:Resource xr:uriSelect="." />
+              </foaf:weblog>
+              <foaf:mbox xr:select="atom:email">
+                <rdfs:Resource xr:uriSelect="." />
+              </foaf:mbox>
+            </foaf:Person>
+          </atom:contributors>
+
+          <atom:content xr:select="atom:content">
+            <rdfs:Resource>
+              <atom:type xr:select="@type" />
+              <atom:encoding xr:select="@mode[.='xml']">
+                <rdfs:Resource xr:uri="http://purl.org/atom/ns#xml" />
+              </atom:encoding>
+              <rdf:value xr:select="." />
+            </rdfs:Resource>
+          </atom:content>
+
+        </atom:Entry>
+      </atom:entries>
+
+    </atom:Feed>
+
+  </xr:introducing>
+
+</xr:transform>

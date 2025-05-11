@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/05/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:22:19 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/05/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/05/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/05/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2002/05/28.xml">Tuesday, May 28, 2002</a></h>
+<a name="a104"></a>
+<section id="a104">
+<h id='wysiwygEditingInMozilla'><a href="http://w3future.com/weblog/2002/05/28.xml#a104" class="weblogItemTitle">WYSIWYG editing in Mozilla</a></h>
+<p>As a by-product of the <a href="http://xopus.org">Xopus project</a>, <a href="http://q42.nl">Q42</a> has released code to enable <a href="http://xopus.org/index.jsp?menu=mozce">basic WYSIWYG editing in Mozilla</a>. It's not complete, because every special key has to be scripted individually. It's not very hard to add more features, and useful additions are welcome.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/05/20.xml">Monday, May 20, 2002</a></h>
+<a name="a103"></a>
+<section id="a103">
+<h id='andBackItIs'><a href="http://w3future.com/weblog/2002/05/20.xml#a103" class="weblogItemTitle">And back it is!</a></h>
+<blockquote cite='http://scriptingnews.userland.com/backissues/2002/05/20#l49da5567a4d8aa519dde6f47413a16ee'><p>
+<a href='http://backend.userland.com/ideasForEvolutionOfRss'>Ideas for RSS Evolution</a>: "Sjoerd Visscher and Rahul Dave both offered the same convincing argument for global IDs instead of local ones, so I flipped it back." [<a href='http://scriptingnews.userland.com/backissues/2002/05/20#l49da5567a4d8aa519dde6f47413a16ee'>Dave Winer</a>]</p></blockquote>
+<p>Yes! Thanks Dave!</p>
+</section><a name="a102"></a>
+<section id="a102">
+<h id='giveMeBackThatGuid'><a href="http://w3future.com/weblog/2002/05/20.xml#a102" class="weblogItemTitle">Give me back that GUID</a></h>
+<blockquote cite='http://scriptingnews.userland.com/backissues/2002/05/20#lb7d637646b41482cf36ef20296e4edb5'><p>I updated my Ideas for Evolution of RSS page, posted yesterday. I realized that there was no need for global uniqueness of the id's, that uniqueness to the channel is good enough [<a href='http://scriptingnews.userland.com/backissues/2002/05/20#lb7d637646b41482cf36ef20296e4edb5'>Dave Winer</a>]</p></blockquote>
+<p>I liked a GUID much more. Sometimes one item ends up in more than one channel. With a GUID you can tell it is the same item. Also, once you have a GUID, you can build from that. If a post is a reply to another post, the RSS file could point to that other post (using f.e. an &lt;inReplyTo&gt; element).</p>
+</section><a name="a101"></a>
+<section id="a101">
+<h id='radioCanOutputXhtml'><a href="http://w3future.com/weblog/2002/05/20.xml#a101" class="weblogItemTitle">Radio can output XHTML</a></h>
+<blockquote cite='http://diveintomark.org/archives/2002/05/19.html#ping_weblogscom_from_movabletype'><p>It's a safe bet that none of these are Radio weblogs, since Radio makes it virtually impossible to output XHTML. [<a href='http://diveintomark.org/archives/2002/05/19.html#ping_weblogscom_from_movabletype'>dive into mark/May 19, 2002</a>]</p></blockquote>
+<p>That's not really correct. This is an XHTML Radio weblog. It's true that Radio doesn't help you to output XHTML, but it's far from impossible.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/05/15.xml">Wednesday, May 15, 2002</a></h>
+<a name="a100"></a>
+<section id="a100">
+<h id='aBadUseOfFragmentIdentifiers'><a href="http://w3future.com/weblog/2002/05/15.xml#a100" class="weblogItemTitle">A bad use of fragment identifiers?</a></h>
+<p>I received an e-mail from <a href="http://idontsmoke.co.uk/">Paul Sowden</a>, with his comments about the <a href="http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.html">URIs for dynamic pages</a> article. It is an interesting e-mail, because Paul's conclusion is exactly the opposite of my opinion. I'm showing here a large part of the e-mail.</p>
+<blockquote>
+<blockquote><p>A fragment identifier is the part of the URI after the '#' sign and they are used to scroll to a specific point on the page.</p></blockquote>
+<p>This statement is wrong, the fragment identifier is not part of a URL or its parent family, URIs.</p>
+<blockquote><p>The problem with changing the url is that the browser will unload the current page and do a new http request.</p></blockquote>
+<p>This is obviously what you would expect, the different URL is pointing to a different location and as far as the client is concerned, a completely different document. It would be wrong for the client to
+behave otherwise.</p>
+<blockquote><p>There's one thing the web gurus agree on. It's axiom 0 in Tim Berners-Lee's web architecture: "Any resource of significance should be given a URI."</p></blockquote>
+<p>This statement stays true due to my above statement. Your article is implying otherwise, that a fragment identifier can be used to signify a different document.</p>
+<p>I think it would be extremely bad behaviour to use the fragment
+identifier to refer to a document other than that at the URI. The
+fragment identifier is only meant to reference material inside of the
+document at the current URI. Using the behaviour you have described,
+whilst it could be made to degrade and universily work, would be very
+bad, imo.</p>
+</blockquote>
+<p>I've found <a href="http://www.w3.org/DesignIssues/Fragment.html">a page on the w3c site</a> that says: <q cite="http://www.w3.org/DesignIssues/Fragment.html">Formally, the URI does include the fragment ID</q>. So there's no factual error. But "URI reference" would have been the better term.</p><p>My article is not implying that a fragment identifier can be used to signify a different document. The trick is using the fragment identifier to signify the same document, but in a different state. I think this is a proper use of the fragment ID, certainly when comparing it to the examples in the same w3c document:</p>
+<blockquote cite="http://www.w3.org/DesignIssues/Fragment.html"><p>For example, for a 3D object the fragment ID could give a viewport. For a music object, the Fragment ID could give a section in time, or a set of parts, or it could include a suggested tempo.</p></blockquote>
+<p>I cannot think of a more appropriate use of the fragment ID with framesets than indicating which documents it is showing. And for dynamic pages the fragment ID should indicate as much of the state of the page as possible. My opinion is that is better to use the trick, than not using it. Not only from a usability viewpoint, but also from a technical, semantic viewpoint.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/05/11.xml">Saturday, May 11, 2002</a></h>
+<a name="a99"></a>
+<section id="a99">
+<h id='hoverNowWorksHierarchical'><a href="http://w3future.com/weblog/2002/05/11.xml#a99" class="weblogItemTitle">:hover now works hierarchical</a></h>
+<blockquote cite='http://markpasc.org/blog/2002/05/10.html#i33037PM'><p>The annoying part for me is he proceeds to demonstrate using display:blocked anchors for box-shaped links and how easily a :hover style is applied, when my sidebar boxes (at least on the main page) have :hover styles that (again, at least in K-Meleon 0.6) only work if you don't mouse over the content in the boxes, just the boxes. Gah. [<a href='http://markpasc.org/blog/'>markpasc.blog</a>]</p></blockquote>
+<p>Then I think you'd like to know <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=5693">this bug has just been fixed</a> in <a href="http://www.mozilla.org/releases/#1.0rc2">Mozilla RC2.</a></p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/05/08.xml">Wednesday, May 08, 2002</a></h>
+<a name="a98"></a>
+<section id="a98">
+<h id='aimInRadio'><a href="http://w3future.com/weblog/2002/05/08.xml#a98" class="weblogItemTitle">AIM in Radio</a></h>
+<p><a href="http://www.wiredfool.com/">Eric Soroos</a> is implementing <a href="http://www.wiredfool.com/ftoc">AIM in Radio</a>. I've got it
+<a href="http://w3future.com/pics/aimInRadio.png">working</a>, but I get a lot of TCP/IP errors. I want to use it to let Radio Userland send me notifications.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/05/07.xml">Tuesday, May 07, 2002</a></h>
+<a name="a97"></a>
+<section id="a97">
+<h id='troubleAtHome'><a href="http://w3future.com/weblog/2002/05/07.xml#a97" class="weblogItemTitle">Trouble at home?</a></h>
+<blockquote cite="http://live.curry.com/2002/05/07.html#a1475"><p>Rioting continues at the 'Binnenhof", where parliment sits. Protestors on the scene are blaming incumbent paolitical parties for his murder. It seems to be reasonable under control. Riots always look worse on tv at night. [<a href="http://live.curry.com/2002/05/07.html#a1475">Adam Curry's Weblog</a>]</p></blockquote>
+<p>That's right. I live at the 'Buitenhof', right next to the 'Binnenhof'. And I'm just comming home. (1:15 AM) I was quite nervous to go home, because of the footage on TV about the riots. But thankfully there wasn't any noticable trouble anymore.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/05/04.xml">Saturday, May 04, 2002</a></h>
+<a name="a96"></a>
+<section id="a96">
+<h id='urisForDynamicPages'><a href="http://w3future.com/weblog/2002/05/04.xml#a96" class="weblogItemTitle">
+URIs for dynamic pages</a></h>
+<p>I've put <a href="http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.html">a new story online</a>. It tries to give a solution to the problem of bookmarking and linking to dynamic pages.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/05/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?
+
+include_once("../db.inc");
+
+function addComment($c) {
+	$r = mysql_query("select * from rdf");
+	$id = mysql_num_rows($r);
+	$s = "comments/$id";
+
+	rdf_addTriple($s,'about',$c['about']);
+	rdf_addTriple($s,'authorname',$c['authorname']);
+	rdf_addTriple($s,'authormail',$c['authormail']);
+	rdf_addTriple($s,'subject',$c['subject']);
+	rdf_addTriple($s,'body',$c['body']);
+	rdf_addTriple($s,'timestamp',time());
+	
+	return $s;
+}
+
+function getComment($s) {
+	$c=array();
+	
+	$r = new resultSet("SELECT * FROM rdf WHERE s='".addslashes($s)."'");
+	while ($r->findItem()) $c[$r->val('p')]=$r->val('o');
+
+	$c['timestamp'] = new xmlrpcDate($c['timestamp']);
+
+	$r = mysql_query("SELECT s FROM rdf WHERE p='about' AND o='".addslashes($s)."'");
+	$c['replyCount'] = mysql_num_rows($r);
+	
+	$c['uri'] = $s;
+	
+	return $c;
+}
+
+function getReplies($uri) {
+	$a=array();
+
+	$r = new resultSet("SELECT s FROM rdf WHERE p='about' AND o='".addslashes($uri)."'");
+	while ($r->findItem()) $a[]=getComment($r->val('s'));
+
+	return $a;
+}
+
+?>

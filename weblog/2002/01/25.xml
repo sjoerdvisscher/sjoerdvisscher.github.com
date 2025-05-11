@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/01/25.xml">
+<head>
+<title>Friday, January 25, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:19:36 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/01/25.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/01/25.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/01/25.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2002/01/25.xml">Friday, January 25, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/01/26.txt#a48' title='Saturday, January 26, 2002'>&#160;&gt;</a></h>
+<a name="a47"></a>
+<section id="a47">
+<h ></h>
+The first bunch of problems seem to be solved. Now I have to convert older pages to the new skin.
+</section><a name="a46"></a>
+<section id="a46">
+<h ></h>
+The eventlog showed: "Notified Weblogs.Com that Sjoerd Visscher's weblog - w3future.com  updated. And it said in response -- Thanks for the ping, however we can only accept one ping every five minutes. It's cool that you're updating so often, however, if I may be so bold as to offer some advice -- take a break, you'll enjoy life more."
+</section><a name="a45"></a>
+<section id="a45">
+<h ></h>
+Still some bugs to solve...
+</section><a name="a44"></a>
+<section id="a44">
+<h ></h>
+And this post is made to see if the xmlStorageSystem creates the archive file.
+</section><a name="a43"></a>
+<section id="a43">
+<h ></h>
+This test is to see if today's posts will show up in the <a href="http://w3future.com/html/weblogarchive.html">weblog archive</a>.
+</section><a name="a42"></a>
+<section id="a42">
+<h ></h>
+That worked! However, the macros that create the orange xml button and the coffee mug button, don't point to w3future.com. No, I'm wrong. They do point to w3future.com now.
+</section><a name="a41"></a>
+<section id="a41">
+<h ></h>
+This post should appear on w3future.com
+</section><a name="a40"></a>
+<section id="a40">
+<h ></h>
+<blockquote><p><img src="http://www.scripting.com/images/2002/01/25/adam.gif" height="51" width="45" border="0" hspace="15" vspace="0" align="right" /><a href="http://www.telegraaf.nl/crazylife/teksten/crazylife.curry.radio.programma.html">Adam gets a radio show</a>. And guess what, we're going to integrate his show with <a href="http://radio.weblogs.com/">our Radio show</a>. This is so cool. The Netherlands is leading the way. [<a href="http://scriptingnews.userland.com/backissues/2002/01/25#l0ca7dda2cb00bc9af0a50e71d2ae3591">Scripting News</a>]</p></blockquote>
+<p>Yes, we (the Dutch) always do... No, really! And of course I'm going to <a href="mms://media.omroep.nl/radio2-55">listen</a>.</p>
+</section><a name="a39"></a>
+<section id="a39">
+<h ></h>
+hmm. it works. weird.
+</section><a name="a38"></a>
+<section id="a38">
+<h ></h>
+trying out 8.0.2 again.
+</section><a name="a37"></a>
+<section id="a37">
+<h ></h>
+Hmmm. 8.0.2 crashes when upstreaming. 8.0.1 does not. Investigating...
+</section><a name="a36"></a>
+<section id="a36">
+<h ></h>
+Testing the mug!
+</section><a name="a35"></a>
+<section id="a35">
+<h ></h>
+Testing w3future.com's xmlStorageSystem
+</section><a name="a34"></a>
+<section id="a34">
+<h ></h>
+and another one
+</section><a name="a33"></a>
+<section id="a33">
+<h ></h>
+another test
+</section><a name="a32"></a>
+<section id="a32">
+<h ></h>
+Testing Manila publishing.
+</section><a name="a31"></a>
+<section id="a31">
+<h ></h>
+It works! Great.
+</section><a name="a30"></a>
+<section id="a30">
+<h ></h>
+Does storing the colors work now? Let's test!
+</section><a name="a29"></a>
+<section id="a29">
+<h ></h>
+I've created <A href="http://radio.weblogs.com/0100323/cssedit.html">a color editor</A> to make it easier to find different colors for my website. It doesn't save anything yet, and I don't know what to do with the logo.
+</section><a name="a28"></a>
+<section id="a28">
+<h ></h>
+Testing...
+</section><a name="a27"></a>
+<section id="a27">
+<h ></h>
+<p>The sidebar on the left is now generated from an OPML file:</p>
+<p><img src="http://w3future.com/pics/sidebar_opml.GIF" /></p>
+<p>The script then generates this piece of javascript code:</p>
+<pre>
+weblogSidebar={
+  'What I read':[
+    {style:'button2', content:'Jake's Brainpan',
+      gonew:'http://jake.editthispage.com/'}
+    ,{style:'button2', content:'Joel on Software',
+      gonew:'http://joel.editthispage.com/'}
+    ,{style:'button2', content:'Lambda the Ultimate',
+      gonew:'http://lambda.weblogs.com/'}
+    ,{style:'button2', content:'markpasc_blog',
+      gonew:'http://markpasc.org/blog/'}
+    ,{style:'button2', content:'owrede_log',
+      gonew:'http://owrede.khm.de/'}
+    ,{style:'button2', content:'Scripting News',
+      gonew:'http://www.scripting.com/'}
+    ,{style:'button2', content:'XMLHack',
+      gonew:'http://www.xmlhack.com/'}
+    ,{style:'button2', content:'&lt;b&gt;All sources&lt;/b&gt;',
+      gonew:'http://w3future.com/html/weblogsources.html'}
+  ]
+  ,'Friends/Family':[
+    {style:'button2', content:'Joeri',
+      gonew:'http://joeri.mulder.com/'}
+    ,{style:'button2', content:'Marco',
+      gonew:'http://www.maggerydoo.net/'}
+    ,{style:'button2', content:'Jelle',
+      gonew:'http://uitdeschaduw.blogspot.com/'}
+    ,{style:'button2', content:'Q42',
+      gonew:'http://www.q42.nl/'}
+  ]
+};
+</pre>
+<p>The template contains a script that creates the buttons from the data. I named the opmlfile <code>#sidebar.opml</code>. The # means that files in subdirectories can have their own sidebar links, but they default to the one from the parent directory.</p>
+</section><a name="a26"></a>
+<section id="a26">
+<h ></h>
+Testing categories. Let's start with checking all of them.
+</section><a name="a25"></a>
+<section id="a25">
+<h ></h>
+Is there a problem with the Userland staticSiteStats server? Every radio.weblogs.com page I go to, and even scripting.com, leaves the browser status bar saying: "(1 item remaining) Download picture <A href="http://subhonker6.userland.com/staticSiteStats/count.gif">http://subhonker6.userland.com/staticSiteStats/count.gif</A>?...."
+</section><a name="a24"></a>
+<section id="a24">
+<h ></h>
+The new <a href="http://radio.weblogs.com">Radio Feed Top-100</a> has much higher numbers than <a href="http://www.ourfavoritesongs.com">the old list</a> has ever had. I'm in it too. Higher than <a href="http://www.joelonsoftware.com/">Joel on Software</a>. That can't be right. Oh, wait, it's the old RSS URL. For all the Joel fans, it's here: <a href="http://www.joelonsoftware.com/rss.xml">http://www.joelonsoftware.com/rss.xml</a>. (Joel should read <a href="http://radio.userland.com/stories/storyReader$7607">this</a>.)
+</section><a name="a23"></a>
+<section id="a23">
+<h ></h>
+<a href="http://radio.weblogs.com/0001195/2002/01/14.html#a2">Alan A. Reiter complains</a> that it's too complicated in RU to change the template for a non-programmer. He's right, I guess. (I'm not a non-programmer). But RU is improving, and I wouldn't be surprised if the next version of RU would indeed have easier template images support and a better navigator links interface. (XML *is* too complicated for something as simple as that.)
+</section><a name="a22"></a>
+<section id="a22">
+<h ></h>
+<blockquote>
+<p>OK, what's the number one glaring hole in Radio 8 (aside from the bugs and glitches, which we're <a href="http://radio.weblogs.com/0001015/2002/01/12.html">working</a> on after spending much of the weekend overloading on excitement and sleeping)? It doesn't connect to <a href="http://manila.userland.com/">Manila</a>. It will. I'm working on a Tool that mirrors your posts to Manila sites. I have it working here. Now here's a heads-up to developers of other centralized blogging tools like Manila. We're <a href="http://frontier.userland.com/emulatingBloggerInManila">using</a> the <a href="http://plant.blogger.com/api/index.html">Blogger API</a>. That means it will also work <a href="http://frontier.userland.com/blogger">with</a> Blogger, naturally, and any other centralized blogging tool that supports the API. [<a href="http://scriptingnews.userland.com/">Scripting News</a>]</p></blockquote>
+<p>This is really cool. Dave, if I may, can I beta test this, please?</p>
+</section><a name="a21"></a>
+<section id="a21">
+<h ></h>
+HTML can look so weird when you forget a quote. ;-)
+</section><a name="a20"></a>
+<section id="a20">
+<h ></h>
+Google has already <A href="http://www.google.com/search?sourceid=navclient&amp;q=site:radio.weblogs.com+Sjoerd">scanned</A> radio.weblogs.com.
+</section><a name="a19"></a>
+<section id="a19">
+<h ></h>
+Trying out the calendar. There are classes. Nice. I hope this is going to be standard practice at Userland. <EM>Kill the font tag!</EM>
+</section><a name="a18"></a>
+<section id="a18">
+<h ></h>
+<BLOCKQUOTE>
+<P>Dan Gillmor: <A href="http://www.siliconvalley.com/docs/opinion/dgillmor/dg011301.htm">Google effect reduces need for many domains</A>. [<A href="http://scriptingnews.userland.com/backissues/2002/01/13#l87b61544b126fd59129d88fb77b9dc54">Scripting News</A>]</P></BLOCKQUOTE>
+<P>Dan says that you don't need short easy to guess domainnames anymore. But it&#180;s still smart to have an easy to remember URL once you've found it. (Or just provide an RSS file of course)</P>
+</section><a name="a17"></a>
+<section id="a17">
+<h ></h>
+Small template update.
+</section><a name="a16"></a>
+<section id="a16">
+<h ></h>
+I'm still not sure how to get the archives into the database on <A href="http://w3future.com/weblog/">w3future.com</A> without the post to Manila feature. The #upstream.xml doesn't seem to support more than 1 upstream location.
+</section><a name="a15"></a>
+<section id="a15">
+<h ></h>
+Post to force a republish. Again.
+</section><a name="a14"></a>
+<section id="a14">
+<h ></h>
+<P>A remote post. No problem.</P>
+</section><a name="a13"></a>
+<section id="a13">
+<h ></h>
+OK, <a href="http://radio.userland.com/discuss/msgReader$7280">the referer problem</a> solved. Again within 10 minutes. Great support!
+</section><a name="a12"></a>
+<section id="a12">
+<h ></h>
+What do the Referes and Page-Reads count? <a href="http://www.scripting.com">Dave pointed</a> to <a href="http://radio.weblogs.com/0100323/2002/01/12.html">my radio.weblogs.com page</a>, but that doesn't show up in <a href="http://referers.userland.com/staticSiteStats/referers?group=radio1&amp;site=0100323">
+my referers list</a>.
+</section><a name="a11"></a>
+<section id="a11">
+<h ></h>
+Where did the "update now" feature of the news aggregator go?
+</section><a name="a10"></a>
+<section id="a10">
+<h ></h>
+One feature request resolved: I wanted the system pages to have the default theme, but all the other pages my w3future theme. It was as easy as putting the #template.txt file from the default theme into the www/system/pages dir. One strange thing though: the maintemplate pref shows the default theme, not my w3future theme.
+</section><a name="a9"></a>
+<section id="a9">
+<h ></h>
+I've been checking out Radio Userland since I woke up. I was planning to go to my parents today, but that'll have to wait.
+</section><a name="a8"></a>
+<section id="a8">
+<h ></h>
+I've all kinds of feature requests for RU8. That's not a good sign for programs, but a good sign for a platform, which is what RU8 is. It initiates new ideas.
+</section><a name="a7"></a>
+<section id="a7">
+<h ></h>
+One tip for the Userland programmers: remove all &lt;font&gt; stuff from the code and add class attributes. It makes changing the templates so much easier. (f.e. the adminMenu code)
+</section><a name="a6"></a>
+<section id="a6">
+<h ></h>
+Hmmm. RU 8.0 adds &lt;P&gt; elements in templates with empty lines. I do that to make the source a bit more readable... (Maybe it's a pref, haven't seen them all yet)
+</section><a name="a5"></a>
+<section id="a5">
+<h ></h>
+Template updated.
+</section><a name="a4"></a>
+<section id="a4">
+<h ></h>
+Time to take a look at all the prefs. (what a list! I love prefs)
+</section><a name="a3"></a>
+<section id="a3">
+<h ></h>
+Upstreaming didn't work, but it was <a href="http://radio.userland.com/discuss/msgReader$7160">fixed very quickly.</a>
+</section><a name="a2"></a>
+<section id="a2">
+<h ></h>
+...in 1 minute 52 seconds, and it can be done faster I'm sure!
+</section><a name="a1"></a>
+<section id="a1">
+<h ></h>
+<STRONG>First post!</STRONG>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/01/25.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

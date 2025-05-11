@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Beyond JS - w3future.com</title>
+  <meta name="author" content="Sjoerd Visscher" />
+  <meta name="keywords" content="w3, www, world, wide, web, future, weblog, latest, news, javascript, js, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic" />
+  <meta name="description" content="My ideas about new web technology that can change the future of the world wide web." />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="author" title="Sjoerd Visscher" href="mailto:sjoerd@w3future.com" />
+  <link rel="top" href="http://w3future.com/weblog/" />
+  <link rel="icon" href="http://w3future.com/w3f/icon.png" type="image/png" />
+  <script type="text/javascript" src="http://w3future.com/w3f/w3f.js"></script>
+  <script type='text/javascript'><!--
+document.write('<'+'style>@import "http://w3future.com/w3f/w3f.phtml?'+document.cookie+'";<'+'/style>');
+//--></script>
+  
+</head>
+<body>
+<div id="header">
+	<a href="#"></a>
+	<div id="header-title-shadow">w3future.com</div>
+	<div id="header-title">w3future.com</div>
+	<div id="header-tabs">
+<div class='tab'><a href='http://w3future.com/weblog/'>Weblog</a></div>
+<div class='tab'><a href='http://w3future.com/html/examples.html'>Examples</a></div>
+<div class='tab'><a href='http://w3future.com/html/stories/'>Articles</a></div>
+<div class='tab'><a href='http://w3future.com/html/download.html'>Downloads</a></div>
+</div>
+</div>
+<div id="layout">
+	<div id="sidebar">
+<div class='sidebar-header'>What I read</div>
+<div class='button2'><a href='http://diveintomark.org/'>Dive into Mark</a></div>
+<div class='button2'><a href='http://www.joelonsoftware.com/'>Joel on Software</a></div>
+<div class='button2'><a href='http://radio.weblogs.com/0100887/'>Jon Udell</a></div>
+<div class='button2'><a href='http://lambda.weblogs.com/'>Lambda the Ultimate</a></div>
+<div class='button2'><a href='http://markpasc.org/blog/'>markpasc_blog</a></div>
+<div class='button2'><a href='http://radio.weblogs.com/0101679/'>Sam Ruby</a></div>
+<div class='button2'><a href='http://www.scripting.com/'>Scripting News</a></div>
+<div class='button2'><a href='http://www.xmlhack.com/'>XMLHack</a></div>
+<div class='button2'><a href='http://w3future.com/html/weblogsources.html'><b>All sources</b></a></div>
+<div class='sidebar-header'>Friends/Family</div>
+<div class='button2'><a href='http://joeri.mulder.com/'>Joeri</a></div>
+<div class='button2'><a href='http://www.maggerydoo.net/'>Marco</a></div>
+<div class='button2'><a href='http://uitdeschaduw.blogspot.com/'>Jelle</a></div>
+<div class='button2'><a href='http://www.q42.nl/'>Q42</a></div>
+</div>
+	<div id="content">
+		<h1>Beyond JS</h1>
+		<p>A javascript library</p>
+		<div id="note"><H3>The game</H3><P><INPUT id=doStar type='checkbox'><SPAN ID='star' STYLE='position:absolute'>*</SPAN><BR>Check the box to let the star follow your cursor. It will circle the position of your cursor when it moves with a 1 second delay. Now try to move your cursor in such a way that the star staysat about the same position.</P>
+			<h3>Last Update</h3>
+			<p>9/19/2002; 11:40:45 PM</p>
+		</div>
+	<H2>Download</H2>
+<P><A href="beyond/beyond.zip">Beyond JS v1.0 beta</A></P>
+<H2>What is Beyond JS</H2>
+<P>Beyond JS is a Javascript library that lets you write Javascript unlike anything you've ever written. Your code will never be the same again. It contains both useful,
+functional, tricky and freakish extentions and additions to Javascript. It can make
+your code more readable and less debugable, and even the other way around.</P>
+<P>It started with a trick, my funclib.js and a mail from <a href="mailto:shappir@hotmail.com">Dan Shappir</a>,
+which resulted in <a href="http://w3future.com/html/stories/callbacks.html">this article</a>.
+Since then new versions of the library have been sent to and fro between me and Dan.
+We had great fun, and the library grew with each new idea. Now we felt it was time for
+others to try the code. We try to support IE4+ and Mozilla. But we've not yet tested very much,
+there might even be some completely untested code in there.</P>
+<H2>Example</H2>
+<P>In the right sidebar you find a little 'game'. Here's the code, which shows some of
+the important functions of the library: <code>curry</code>, <code>using</code> and <code>Function.from</code>.</P>
+<PRE>
+document.body.onmousemove = Function.from("star", "moveTo").delay(1000).using(
+  "+".using(
+    Function.from(event, "x"), 
+    "*".using("radius", Function.from(Math, "sin", "angle"))),
+  "+".using(
+    Function.from(event, "y"), 
+    "*".using("radius", Function.from(Math, "cos", "angle")))
+).curry({
+  radius: 30, 
+  angle: function() {return (new Date)/50;}.asValue()
+}).gate(Function.from("doStar".element(),"checked"));
+</PRE>
+<P>(The example doesn't work with Mozilla, because of the differences in event handling. BeyondJS <b>is</b> cross-platform.)</P>
+<H2>Documentation</H2>
+<P>There's no documentation yet. I'm planning to explain one feature at a time on 
+<a href="http://w3future.com/weblog/">my weblog</a>.</P>
+<SCRIPT SRC="beyond/beyond.js"></SCRIPT>
+<SCRIPT SRC="beyond/beyondBrowser.js"></SCRIPT>
+<SCRIPT>
+	function follow()
+	{
+		document.body.onmousemove = Function.from("star", "moveTo").delay(1000).using(
+		  "+".using(
+		    Function.from(event, "x"), 
+		    "*".using("radius", Function.from(Math, "sin", "angle"))),
+		  "+".using(
+		    Function.from(event, "y"), 
+		    "*".using("radius", Function.from(Math, "cos", "angle")))
+		).curry({
+		  radius: 30,
+		  angle: function() {return (new Date)/50;}.asValue()
+		}).gate(Function.from("doStar".element(),"checked"));
+	}
+	document.body.onload=new Function("","follow()");
+</SCRIPT>
+</div>
+	<div id="footer">&#x00A9; Copyright 2002 <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="http://w3future.com/">w3future.com</a></div>
+</div>
+<script type='text/javascript'><!--
+initButtons(true);initSectionTabs();initSidebarButtons();staticSiteStatsImage()
+//--></script>
+</body>
+</html>

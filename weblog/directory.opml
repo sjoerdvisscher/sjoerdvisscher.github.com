@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="1.0">
+	<head>
+		<ownerName>Sjoerd Visscher</ownerName>
+		<ownerEmail>sjoerd@w3future.com</ownerEmail>
+		<dateCreated>1/12/2002; 11:53:52 AM</dateCreated>
+		<dateModified>4/10/2002; 11:00:07 PM</dateModified>
+		</head>
+	<body>
+		<outline type="folder" text="2002">
+			<outline type="folder" text="01">
+				<outline type="file" text="25.html" size="98" whenCreated="Fri, 25 Jan 2002 18:17:48 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/01/25.html"/>
+				<outline type="file" text="26.html" size="98" whenCreated="Tue, 29 Jan 2002 19:36:00 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/01/26.html"/>
+				<outline type="file" text="29.html" size="98" whenCreated="Tue, 29 Jan 2002 20:20:17 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/01/29.html"/>
+				<outline type="file" text="30.html" size="98" whenCreated="Wed, 30 Jan 2002 22:04:40 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/01/30.html"/>
+				<outline type="file" text="31.html" size="98" whenCreated="Thu, 31 Jan 2002 18:31:39 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/01/31.html"/>
+				</outline>
+			<outline type="folder" text="02">
+				<outline type="file" text="04.html" size="98" whenCreated="Mon, 04 Feb 2002 00:28:06 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/04.html"/>
+				<outline type="file" text="05.html" size="98" whenCreated="Mon, 04 Feb 2002 23:17:42 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/05.html"/>
+				<outline type="file" text="06.txt" size="98" whenCreated="Wed, 06 Feb 2002 08:44:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT"/>
+				<outline type="file" text="07.html" size="98" whenCreated="Wed, 06 Feb 2002 23:11:59 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/07.html"/>
+				<outline type="file" text="12.html" size="98" whenCreated="Tue, 12 Feb 2002 22:11:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/12.html"/>
+				<outline type="file" text="13.html" size="98" whenCreated="Wed, 13 Feb 2002 19:04:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/13.html"/>
+				<outline type="file" text="14.html" size="98" whenCreated="Thu, 14 Feb 2002 20:27:57 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/14.html"/>
+				<outline type="file" text="16.html" size="98" whenCreated="Sat, 16 Feb 2002 10:29:56 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/16.html"/>
+				<outline type="file" text="21.html" size="98" whenCreated="Thu, 21 Feb 2002 20:31:15 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/21.html"/>
+				<outline type="file" text="22.html" size="98" whenCreated="Fri, 22 Feb 2002 18:52:07 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/22.html"/>
+				<outline type="file" text="23.html" size="98" whenCreated="Sat, 23 Feb 2002 13:22:06 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/02/23.html"/>
+				</outline>
+			<outline type="folder" text="03">
+				<outline type="file" text="01.html" size="98" whenCreated="Thu, 28 Feb 2002 23:06:48 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/01.html"/>
+				<outline type="file" text="06.html" size="98" whenCreated="Tue, 05 Mar 2002 23:09:31 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/06.html"/>
+				<outline type="file" text="08.html" size="98" whenCreated="Thu, 07 Mar 2002 23:27:00 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/08.html"/>
+				<outline type="file" text="09.html" size="98" whenCreated="Sat, 09 Mar 2002 13:10:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/09.html"/>
+				<outline type="file" text="10.html" size="98" whenCreated="Sun, 10 Mar 2002 14:34:21 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/10.html"/>
+				<outline type="file" text="11.html" size="98" whenCreated="Mon, 11 Mar 2002 11:17:50 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/11.html"/>
+				<outline type="file" text="12.html" size="98" whenCreated="Tue, 12 Mar 2002 00:24:00 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/12.html"/>
+				<outline type="file" text="13.html" size="98" whenCreated="Wed, 13 Mar 2002 08:21:13 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/13.html"/>
+				<outline type="file" text="14.html" size="98" whenCreated="Thu, 14 Mar 2002 00:06:43 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:00:31 GMT" url="http://w3future.com/weblog/2002/03/14.html"/>
+				<outline type="file" text="30.html" size="98" whenCreated="Sat, 30 Mar 2002 14:58:46 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:01 GMT" url="http://w3future.com/weblog/2002/03/30.html"/>
+				</outline>
+			<outline type="file" text="directory.opml" size="3259" whenCreated="Mon, 04 Feb 2002 01:00:05 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:01 GMT" url="http://w3future.com/weblog/2002/directory.opml"/>
+			<outline type="file" text="xxx-#upstream.xml" size="319" whenCreated="Wed, 23 Jan 2002 10:45:14 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:01 GMT" url="http://w3future.com/weblog/2002/xxx-#upstream.xml"/>
+			</outline>
+		<outline type="folder" text="categories">
+			<outline type="folder" text="personal">
+				<outline type="folder" text="2002">
+					<outline type="folder" text="01">
+						<outline type="file" text="15.html" size="124" whenCreated="Tue, 15 Jan 2002 19:08:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:01 GMT" url="http://w3future.com/weblog/categories/personal/2002/01/15.html"/>
+						</outline>
+					</outline>
+				<outline type="file" text="index.html" size="98" whenCreated="Tue, 15 Jan 2002 19:08:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:01 GMT" url="http://w3future.com/weblog/categories/personal/index.html"/>
+				<outline type="file" text="rss.xml" size="839" whenCreated="Tue, 15 Jan 2002 19:08:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:01 GMT" url="http://w3future.com/weblog/categories/personal/rss.xml"/>
+				</outline>
+			<outline type="folder" text="userland">
+				<outline type="folder" text="2002">
+					<outline type="folder" text="01">
+						<outline type="file" text="15.html" size="124" whenCreated="Tue, 15 Jan 2002 19:08:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:01 GMT" url="http://w3future.com/weblog/categories/userland/2002/01/15.html"/>
+						</outline>
+					</outline>
+				<outline type="file" text="index.html" size="98" whenCreated="Tue, 15 Jan 2002 19:08:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/categories/userland/index.html"/>
+				<outline type="file" text="rss.xml" size="839" whenCreated="Tue, 15 Jan 2002 19:08:21 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/categories/userland/rss.xml"/>
+				</outline>
+			<outline type="folder" text="w3future">
+				<outline type="folder" text="2002">
+					<outline type="folder" text="01">
+						<outline type="file" text="15.html" size="124" whenCreated="Tue, 15 Jan 2002 19:08:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/categories/w3future/2002/01/15.html"/>
+						</outline>
+					</outline>
+				<outline type="file" text="index.html" size="98" whenCreated="Tue, 15 Jan 2002 19:08:20 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/categories/w3future/index.html"/>
+				<outline type="file" text="rss.xml" size="839" whenCreated="Tue, 15 Jan 2002 19:08:21 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/categories/w3future/rss.xml"/>
+				</outline>
+			</outline>
+		<outline type="file" text="cssedit.html" size="8208" whenCreated="Fri, 18 Jan 2002 22:12:47 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/cssedit.html"/>
+		<outline type="folder" text="gems">
+			<outline type="file" text="mySubscriptions.opml" size="9821" whenCreated="Sat, 12 Jan 2002 15:11:08 GMT" whenLastUploaded="Wed, 10 Apr 2002 21:30:30 GMT" url="http://w3future.com/weblog/gems/mySubscriptions.opml"/>
+			<outline type="file" text="navigationLinks.zip" size="1506" whenCreated="Sun, 10 Mar 2002 13:26:22 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/gems/navigationLinks.zip"/>
+			<outline type="file" text="opml2xml.xsl" size="1076" whenCreated="Wed, 13 Mar 2002 22:55:55 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:02:02 GMT" url="http://w3future.com/weblog/gems/opml2xml.xsl"/>
+			</outline>
+		<outline type="folder" text="images">
+			<outline type="file" text="bg.jpg" size="597" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/bg.jpg"/>
+			<outline type="file" text="bottomBg.gif" size="117" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/bottomBg.gif"/>
+			<outline type="file" text="bottomLeft.gif" size="217" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/bottomLeft.gif"/>
+			<outline type="file" text="bottomRight.gif" size="257" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/bottomRight.gif"/>
+			<outline type="file" text="curveRest.jpg" size="492" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/curveRest.jpg"/>
+			<outline type="file" text="dot11.jpg" size="5886" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/dot11.jpg"/>
+			<outline type="file" text="dot21.jpg" size="1325" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/dot21.jpg"/>
+			<outline type="file" text="dot22.jpg" size="3145" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/dot22.jpg"/>
+			<outline type="file" text="dotBG.jpg" size="389" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/dotBG.jpg"/>
+			<outline type="file" text="editbutton.gif" size="159" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/editbutton.gif"/>
+			<outline type="file" text="header1.gif" size="2386" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/header1.gif"/>
+			<outline type="file" text="header2.gif" size="1965" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/header2.gif"/>
+			<outline type="file" text="header3.gif" size="3083" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/header3.gif"/>
+			<outline type="file" text="headerBg.gif" size="83" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:36 GMT" url="http://w3future.com/weblog/images/headerBg.gif"/>
+			<outline type="file" text="help.gif" size="184" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:37 GMT" url="http://w3future.com/weblog/images/help.gif"/>
+			<outline type="file" text="htmlEditor.gif" size="1478" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:37 GMT" url="http://w3future.com/weblog/images/htmlEditor.gif"/>
+			<outline type="file" text="leftBg.gif" size="65" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:37 GMT" url="http://w3future.com/weblog/images/leftBg.gif"/>
+			<outline type="file" text="menuBG.gif" size="94" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:37 GMT" url="http://w3future.com/weblog/images/menuBG.gif"/>
+			<outline type="file" text="menuLeft.jpg" size="5740" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:03:37 GMT" url="http://w3future.com/weblog/images/menuLeft.jpg"/>
+			<outline type="file" text="radioBadge.gif" size="1841" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/radioBadge.gif"/>
+			<outline type="file" text="rightBg.gif" size="95" whenCreated="Wed, 21 Nov 2001 20:56:09 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/rightBg.gif"/>
+			<outline type="file" text="topBg.gif" size="61" whenCreated="Wed, 21 Nov 2001 20:56:09 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/topBg.gif"/>
+			<outline type="file" text="topLeft.gif" size="183" whenCreated="Wed, 21 Nov 2001 20:56:09 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/topLeft.gif"/>
+			<outline type="file" text="topRight.gif" size="219" whenCreated="Wed, 21 Nov 2001 20:56:09 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/topRight.gif"/>
+			<outline type="file" text="userLand.gif" size="634" whenCreated="Wed, 21 Nov 2001 20:56:09 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/userLand.gif"/>
+			<outline type="file" text="userLandLogo.gif" size="1704" whenCreated="Tue, 08 Jan 2002 01:36:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/userLandLogo.gif"/>
+			<outline type="file" text="xml.gif" size="429" whenCreated="Wed, 21 Nov 2001 20:56:08 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/xml.gif"/>
+			<outline type="file" text="xmlCoffeeCup.gif" size="1693" whenCreated="Wed, 23 Jan 2002 09:38:38 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/images/xmlCoffeeCup.gif"/>
+			</outline>
+		<outline type="file" text="index.html" size="92" whenCreated="Sat, 11 Aug 2001 14:34:40 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:11 GMT" url="http://w3future.com/weblog/index.html"/>
+		<outline type="file" text="plainpage.html" size="8029" whenCreated="Thu, 21 Feb 2002 21:45:59 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:12 GMT" url="http://w3future.com/weblog/plainpage.html"/>
+		<outline type="file" text="radio_weblog_com_upstream.xml" size="331" whenCreated="Fri, 25 Jan 2002 19:20:00 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:12 GMT" url="http://w3future.com/weblog/radio_weblog_com_upstream.xml"/>
+		<outline type="file" text="rss.xml" size="10777" whenCreated="Sat, 12 Jan 2002 09:55:21 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:12 GMT" url="http://w3future.com/weblog/rss.xml"/>
+		<outline type="folder" text="sidebars">
+			<outline type="file" text="dhtml.opml" size="745" whenCreated="Thu, 14 Mar 2002 21:34:22 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:12 GMT" url="http://w3future.com/weblog/sidebars/dhtml.opml"/>
+			<outline type="file" text="opmlloader.opml" size="1219" whenCreated="Mon, 11 Mar 2002 23:10:48 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:12 GMT" url="http://w3future.com/weblog/sidebars/opmlloader.opml"/>
+			<outline type="file" text="stories.opml" size="919" whenCreated="Thu, 14 Mar 2002 22:44:32 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:12 GMT" url="http://w3future.com/weblog/sidebars/stories.opml"/>
+			<outline type="file" text="weblog.opml" size="1707" whenCreated="Tue, 15 Jan 2002 20:45:41 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:12 GMT" url="http://w3future.com/weblog/sidebars/weblog.opml"/>
+			<outline type="file" text="weblogSources.opml" size="910" whenCreated="Mon, 11 Mar 2002 22:59:27 GMT" whenLastUploaded="Wed, 10 Apr 2002 21:55:07 GMT" url="http://w3future.com/weblog/sidebars/weblogSources.opml"/>
+			</outline>
+		<outline type="folder" text="StaplerFeeds">
+			<outline type="file" text="glishcom.xml" size="15421" whenCreated="Sat, 30 Mar 2002 13:00:26 GMT" whenLastUploaded="Wed, 10 Apr 2002 21:00:53 GMT" url="http://w3future.com/weblog/staplerFeeds/glishcom.xml"/>
+			<outline type="file" text="mccusker.xml" size="115550" whenCreated="Wed, 10 Apr 2002 21:18:40 GMT" whenLastUploaded="Wed, 10 Apr 2002 21:18:43 GMT" url="http://w3future.com/weblog/staplerFeeds/mccusker.xml"/>
+			<outline type="file" text="msdn.xml" size="2299" whenCreated="Sat, 30 Mar 2002 16:08:47 GMT" whenLastUploaded="Wed, 10 Apr 2002 18:00:27 GMT" url="http://w3future.com/weblog/staplerFeeds/msdn.xml"/>
+			</outline>
+		<outline type="folder" text="stories">
+			<outline type="folder" text="2002">
+				<outline type="folder" text="01">
+					<outline type="folder" text="12">
+						<outline type="file" text="thisIsATest.html" size="87" whenCreated="Sat, 12 Jan 2002 12:27:31 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:55 GMT" url="http://w3future.com/weblog/stories/2002/01/12/thisIsATest.html"/>
+						</outline>
+					</outline>
+				<outline type="folder" text="02">
+					<outline type="folder" text="22">
+						<outline type="file" text="javascriptYCombinator.html" size="886" whenCreated="Fri, 22 Feb 2002 18:36:30 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:55 GMT" url="http://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html"/>
+						</outline>
+					</outline>
+				<outline type="folder" text="03">
+					<outline type="folder" text="12">
+						<outline type="file" text="mathml.xml" size="2048" whenCreated="Tue, 12 Mar 2002 21:57:44 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:04:55 GMT" url="http://w3future.com/weblog/stories/2002/03/12/mathml.xml"/>
+						</outline>
+					</outline>
+				</outline>
+			<outline type="file" text="index.html" size="35" whenCreated="Sat, 11 Aug 2001 14:34:40 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:18 GMT" url="http://w3future.com/weblog/stories/index.html"/>
+			</outline>
+		</body>
+	</opml>

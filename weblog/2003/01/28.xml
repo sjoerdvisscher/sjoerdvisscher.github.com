@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/01/28.xml">
+<head>
+<title>Tuesday, January 28, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:25:18 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/01/28.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/01/28.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/01/28.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/01/26.xml#a157' title='Sunday, January 26, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/01/28.xml">Tuesday, January 28, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/01/30.txt#a159' title='Thursday, January 30, 2003'>&#160;&gt;</a></h>
+<a name="a158"></a>
+<section id="a158">
+<h id='dynamicallyExtendingApis'><a href="http://w3future.com/weblog/2003/01/28.xml#a158" class="weblogItemTitle">Dynamically extending APIs</a></h>
+<p>Usually when a cool Python script comes along, I'm thinking if Javascript can do this too. It almost always can. Yet there are so few Javascript fans that I can't help but showing what Javascript can do to anybody that will listen.</p>
+<p>Today <a href="http://diveintomark.org/archives/2003/01/27/dynamically_extending_apis.html">
+Mark Pilgrim shows how to dynamically extend APIs with Python</a>. Javascript can do this too, it's almost trivial even. At <a href="http://q42.nl">Q42</a> we use this a lot in Mozilla to extend the DOM with some of the more useful Internet Explorer features. (We would like to be able to do this the other way around, but IE's DOM is not implemented in a very Javascript compatible way.) Here's one example how to extend the DOM to support the selectSingleNode method. Note that after the code has executed, all XML <em>and HTML</em> nodes support the method.</p>
+<pre>
+Node.prototype.selectSingleNode = function(xpath)
+{
+  var xpe = new XPathEvaluator();
+  return xpe.evaluate(xpath, this, xpe.createNSResolver(this), 
+    XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+};
+</pre>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/01/28.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/stories/2002/03/12/mathml.txt">
+<head>
+<title>MathML</title>
+</head>
+<body>
+<section id="content">
+	<h>MathML</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:34:37 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/stories/2002/03/12/mathml.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/stories/2002/03/12/mathml.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/stories/2002/03/12/mathml.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><script type="text/javascript">document.insertBefore(document.createProcessingInstruction('xml-stylesheet',' href="http://w3future.com/w3f/w3f.phtml?'+document.cookie+'" type="text/css"'), document.firstChild);</script>
+<p style='font-size:50px'>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<msup><mo>&#x2207;</mo><mn>2</mn></msup>
+<mi>f</mi><mo>=</mo>
+<mfrac>
+	<mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>f</mi></mrow>
+	<mrow><mo>&#x2202;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow>
+</mfrac>
+<mo>+</mo>
+<mfrac>
+	<mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>f</mi></mrow>
+	<mrow><mo>&#x2202;</mo><msup><mi>y</mi><mn>2</mn></msup></mrow>
+</mfrac>
+<mo>+</mo>
+<mfrac>
+	<mrow><msup><mo>&#x2202;</mo><mn>2</mn></msup><mi>f</mi></mrow>
+	<mrow><mo>&#x2202;</mo><msup><mi>z</mi><mn>2</mn></msup></mrow>
+</mfrac>
+</math>
+</p>
+<p>From <a href="http://mozilla.org/projects/mathml/demo/texvsmml.xml">MathML Torture Test</a>:</p>
+<p style='font-size:30px'>
+<math xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo>
+	<mrow><mo>{</mo>
+		<mtable><mtr>
+			<mtd columnalign="center"><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mtd>
+			<mtd columnalign="left">
+				<mrow><mtext>if&nbsp;</mtext><mn>0</mn><mo>&leq;</mo><mi>x</mi><mo>&leq;</mo><mn>1</mn><mo>;</mo></mrow>
+			</mtd>
+		</mtr><mtr>
+			<mtd columnalign="center"><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mtd>
+			<mtd columnalign="center">
+				<mrow><mtext>if&nbsp;</mtext><mn>3</mn><mo>&leq;</mo><mi>x</mi><mo>&leq;</mo><mn>4</mn><mo>;</mo></mrow>
+			</mtd>
+		</mtr><mtr>
+			<mtd columnalign="center"><mn>0</mn></mtd>
+			<mtd columnalign="left">
+				<mtext>elsewhere.</mtext>
+			</mtd>
+		</mtr></mtable>
+	</mrow>
+</mrow>
+</math>
+</p><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/stories/2002/03/12/mathml.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

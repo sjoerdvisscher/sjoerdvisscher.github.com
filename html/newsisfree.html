@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - News Is Free</TITLE>
+	<SCRIPT src="/w3f/w3f.js"></SCRIPT>
+	<SCRIPT src="/tools/funclib.js"></SCRIPT>
+	<STYLE>
+		@import "/w3f/w3f.css";
+		
+		.show,SPAN.calnav {
+			cursor:pointer;cursor:hand;
+		}
+		.calnav, .show, .noshow, .weekday {
+			text-align: center;
+		}
+		.show, .calheader {
+			background: #F8F8FC; 
+			border: 1px solid #4040A0;
+			color: #4040A0;
+		}
+		.noshow {
+			border: 1px solid #FFFFFF;
+			background: #FFFFFF;
+		}
+		.weekday {
+			color: #4040A0;
+			font-size:60%;
+		}
+		TD.calnav {
+			border-top: 1px solid #000040;
+		}
+		SPAN.calnav {
+			font-weight:bold;
+			text-decoration:underline;
+		}
+		.calheader {
+			font-weight:bold;
+			text-align: center;
+		}
+		#calendar {
+			text-align:center;
+			padding-top:10px;
+		}
+		#weblog {
+			margin: 10px;
+			height: 15em;
+			overflow: auto;
+		}
+	</STYLE>
+	<SCRIPT>
+		var dayI2N,dayN2I={},firstDay,lastDay,texts={};
+		var monthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
+		var dayNames=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+		var webmasterTag='CQGWYL6CXN';
+		
+		function init() {
+/*			var service=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+			service.onload=function() {
+				if (this.error) alert(this.error); else init2(this.result);
+			}
+			service.call('rdf.getList',['MID(s,8,8)',"s LIKE 'weblog/%'"]);*/
+			show(1811);
+		}
+		
+		function init2(result) {
+			dayI2N=result;
+			dayI2N.each(function(day,index){
+				dayN2I[day]=index;
+			});
+			firstDay=dayI2N[0];lastDay=dayI2N[dayI2N.length-1];
+			makeCalendar(lastDay.substr(0,6));
+			show(lastDay);
+		}
+		
+		function show(id) {
+			if (!texts[id]) {
+				(
+					'H2'.w('Loading...')+
+					'P'.w('Retrieving data from server.')
+				).into('weblog');
+				var service=new w3f_XMLRPCService('http://www.newsisfree.com/export-xmlrpc.php3');
+				service.id=id;
+				service.onload=function() {
+					if (this.error) {
+						'P'.w(this.error).into('weblog');
+					} else {
+						texts[this.id]=renderNews(this.result);
+						show(this.id);
+					}
+				}
+				service.call('hpe.getData',[webmasterTag,id]);
+			} else {
+				texts[id].into('weblog');
+			}
+		}
+		
+		function renderNews(data) {
+			return inspect(data);
+			/*var year=day.substr(0,4);
+			var month=day.substr(4,2);
+			var date=day.substr(6,2);
+			var wd=(new Date(1*year,1*month-1,1*date)).getDay();
+			(
+				'H2'.w(
+					('a href="/weblog/'+year+'/'+month+'/'+date+'.html"').w(
+						'<img src="http://scripting.com/images/dailyLinkIcon.gif" height="15" width="12" alt="Permanent link to archive for '+year+'/'+month+'/'+date+'." border="0">'
+					)+'&nbsp;'+dayNames[wd]+', '+monthNames[1*month-1]+' '+date+', '+year
+				)+'P'.w(texts[day])
+			).into('weblog');*/
+		}
+		
+		function n2(n) {return (n<10)?'0'+n:''+n;}
+		
+		function date2N(d) {
+			return ''+d.getFullYear()+n2(d.getMonth()+1)+n2(d.getDate());
+		}
+		
+		function makeCalendar(m) {
+			var year=1*m.substr(0,4);
+			month=1*m.substr(4,2)-1;
+			var one=new Date(year,month,1);
+			var wd=one.getDay();
+			var s='TR'.w(
+				'TD class="calheader" colspan=7'.w(
+					monthNames[month].substr(0,3)
+				)
+			)+'TR'.w(
+				dayNames.reduce(function(x,s) {
+					return s+'TD class="weekday"'.w(x.substr(0,3));
+				})
+			);
+			if (wd) {
+				s+='<TR>';
+				for (var i=0;i<wd;i++) s+='TD'.w('');
+			}
+			for (var d=one;d.getMonth()==month;d.setDate(d.getDate()+1)) {
+				var wd=d.getDay();
+				if (wd==0) s+='<TR>';
+				var id=date2N(d);
+				if (dayN2I[id]) s+=('TD class="show" onclick="show(\''+id+'\')"').w(d.getDate());
+					else s+='TD class="noshow"'.w(d.getDate());
+				if (wd==6) s+='</TR>';
+			}
+			s+='<TR><TD colspan=7 class="calnav">';
+			if (firstDay.substr(0,6)<m) {
+				if (month==0) m2=''+(year-1)+'12';
+					else m2=''+year+n2(month);
+				s+=(
+					'SPAN onclick="makeCalendar(\''+m2+'\')" class="calnav"'
+				).w(
+					monthNames[1*m2.substr(4,2)-1].substr(0,3)
+				);
+			}
+			s+='&nbsp;';
+			if (lastDay.substr(0,6)>m) {
+				if (month==11) m2=''+(year+1)+'01';
+					else m2=''+year+n2(month+2);
+				s+=(
+					'SPAN onclick="makeCalendar(\''+m2+'\')" class="calnav"'
+				).w(
+					monthNames[1*m2.substr(4,2)-1].substr(0,3)
+				);
+			}
+			s+='</TD></TR>';
+			'TABLE width="90%"'.w(s).into('calendar');
+		}
+
+		function compare(a,b) {
+			if (a<b) return -1; else if (a==b) return 0; else return 1;
+		}
+
+		function renderSubs(tree) {
+			return;
+			'TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%"'.w(
+				'TR'.w('TD class="sidebar-header"'.w('My Subscriptions'))+
+				w3f_listToArray(tree.body.outline).sort(function(a,b) {
+					return compare(a.title.toLowerCase(),b.title.toLowerCase());
+				}).reduce(function(l,s) {
+					var c=l.title;
+					if (c.length>25) c=c.substr(0,23)+'...';
+					return s+'TR'.w('TD'.w(
+						createButton({style:'button2',content:c,gonew:l.htmlUrl,title:l.description})
+					));
+				})
+			).into('subscriptions');
+			initButtons();
+		}
+
+		function start_search(terms) {
+			var service=new w3f_XMLRPCService('http://www.newsisfree.com/export-xmlrpc.php3');
+			service.onload=function() {
+				if (this.error) {
+					(
+						'H3'.w('Search Error')+
+						'P'.w(this.error)
+					).into('result');
+				} else {
+					searchresult(this.result);
+				}
+			}
+			service.call('hpe.search',[webmasterTag,terms]);
+		}
+		
+		function searchresult(res) {
+			res=w3f_structToArray(res);
+			(
+				'H2'.w('Search Results')+
+				'P'.w(
+					res.reduce(function(source,s) {
+						return s+('SPAN class="calnav" onclick="show('+source.id+')"').w(
+							source.name
+						)+'<BR>';
+					})||'No results.'
+				)
+			).into('result');
+		}
+
+	</SCRIPT>
+</HEAD>
+<BODY onload="init()">
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>
+document.write('<TD>'+createButton({style:'tab',content:'Weblog',go:'/weblog'})+'</TD>');
+document.write('<TD>&nbsp;</TD><TD>'+createButton({style:'tab',content:'Examples',go:'/html/tools.html'})+'</TD>');
+</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar-container" width="100%">
+<TR><TD id="subscriptions">
+
+</TD></TR>
+</TABLE>
+
+</TD><TD id="content">
+
+<H1>News Is Free</H1>
+<P>Serious XML-RPC business again</P>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%" height="80%">
+<TR><TD>
+
+<DIV id="weblog">
+<H2>Loading...</H2>
+<P>Retrieving data from server.</P>
+</DIV>
+
+<H2>Search</H2>
+<FORM onsubmit="start_search(document.forms['loader'].q.value);return false;" name="loader">
+<P><INPUT type="text" size="80" style="width:90%" name="q" value=""></P>
+<P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
+<SCRIPT>document.write(createButton({style:'button',content:'Search News Sources',action:"start_search(document.forms['loader'].q.value)"}))</SCRIPT>
+</TD></TR></TABLE></P>
+<DIV id="result"></DIV>
+</FORM>
+
+<H2>Technical Details</H2>
+
+</TD><TD id="note">
+
+<DIV id="calendar"></DIV>
+
+<IMG src="http://www.newsisfree.com/Images/nifbutton.gif">
+
+</TD></TR></TABLE>
+
+<SCRIPT src="/tools/xmlrpc.js"></SCRIPT>
+<SCRIPT src="/tools/xmlload.js"></SCRIPT>
+<SCRIPT>
+initButtons();
+/*var doc=new w3f_XMLDocument();
+doc.onload=function() {
+	renderSubs(this.getSimpleTree());
+}
+doc.load('http://www.ourfavoritesongs.com/users/sjoerd_visscher@hotmail.com/rss/misc/mySubscriptions.opml');*/
+</SCRIPT>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+</TD></TR></TABLE>
+</BODY>
+</HTML>

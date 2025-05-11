@@ -1,0 +1,30 @@
+<xr:transform 
+  xmlns:xr="http://w3future.com/xr/ns/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:h="http://www.w3.org/1999/xhtml">
+
+  <xr:introducing xr:select="/h:html/h:head">
+    <rdfs:Resource xr:uriSelect="$documentURI">
+      <dc:title xr:select="h:title" />
+      <dc:description xr:select="h:meta[@name='description']/@content" />
+      <dc:subject xr:select="h:meta[@name='keywords']/@content" />
+      <dc:format xr:select="h:meta[@http-equiv='Content-Type']/@content" />
+      <dc:language xr:select="/h:html/@lang" />
+      <dc:contributor xr:select="h:meta[@name='author']/@content" />
+      <dc:contributor xr:select="h:link[@rel='author']">
+        <rdfs:Resource xr:uriSelect="@href">
+          <foaf:name xr:select="@title" />
+        </rdfs:Resource>
+      </dc:contributor>
+      <dc:rights xr:select="//h:a[@rel='Copyright']">
+        <rdfs:Resource xr:uriSelect="@href">
+          <dc:title xr:select="document(@href)//h:title" />
+        </rdfs:Resource>
+      </dc:rights>
+    </rdfs:Resource>
+  </xr:introducing>
+  
+</xr:transform>

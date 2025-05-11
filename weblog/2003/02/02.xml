@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/02/02.xml">
+<head>
+<title>Sunday, February 02, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:25:24 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/02/02.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/02/02.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/02/02.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/01/30.xml#a159' title='Thursday, January 30, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/02/02.xml">Sunday, February 02, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/02/03.txt#a161' title='Monday, February 03, 2003'>&#160;&gt;</a></h>
+<a name="a160"></a>
+<section id="a160">
+<h id='noMoreReferrerHunting'><a href="http://w3future.com/weblog/2003/02/02.xml#a160" class="weblogItemTitle">No more referrer hunting</a></h>
+<p>It's hard not to check the stats every 10 minutes to see if anybody linked to me. To help my weak will not to do this, I created <a href="http://w3future.com/tools/refsrss.php">an RSS file that shows all referrers of the current day</a>. It even tries to show the title of the referring page and an excerpt. The excerpt is simply the whole line that contains "w3future.com", with the html tags stripped. It works surprisingly well for such a simple hack.</p>
+<p>The information that is gathered for the referrer RSS is stored in my RDF database. You can now query this information. An example: <a href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/">RDF data for http://w3future.com/weblog/</a>.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/02/02.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

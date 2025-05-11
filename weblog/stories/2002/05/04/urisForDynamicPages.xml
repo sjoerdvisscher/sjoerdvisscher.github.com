@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.txt">
+<head>
+<title>URIs for dynamic pages.</title>
+</head>
+<body>
+<section id="content">
+	<h>URIs for dynamic pages.</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:34:40 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+<h>The problem</h>
+<p>There's one thing the web gurus agree on. It's <a href="http://www.w3.org/DesignIssues/Axioms.html#Universality2">axiom 0 in Tim Berners-Lee's web architecture</a>: "Any resource of significance should be given a URI." There are all kinds of good theoretical reasons. And in the practice of the browsable web there are 2 good reasons: What has a URL can be bookmarked and linked to.</p>
+<p>One area where this has been problematic is dynamic webpages. These pages load once, and then provide navigation through scripting. If the page needs extra data it is also loaded with scripting. All the time the url doesn't change, so when you bookmark the page, or link to it, it will always show up in its initial state.</p>
+<p>Some pages try to solve this by providing a link to the current state, f.e. <a href="http://youngpup.net/">youngpup.net</a>. This does work, but it requires action from the user. But as dynamic pages are still quite rare, the user will probably find it hard to understand the problem and will not understand why bookmarking doesn't work. For a good user experience the URL in the location bar just has to change automatically.</p>
+<p>The problem with changing the url is that the browser will unload the current page and do a new http request. Which is exactly what you don't want with dynamic pages. But there's one exception, which we found out when we were researching this problem at <a href="http://q42.nl">Q42</a>.</p>
+</section>
+<section>
+<h>The solution</h>
+<p>It turns that browsers don't leave the page when you only change the fragment identifier. A fragment identifier is the part of the URI after the '#' sign and they are used to scroll to a specific point on the page. But when there's no anchor with the name of the fragment id, the browser will simply do nothing.</p>
+</section>
+<section>
+<h>The code</h>
+<p>An additional advantage of this method is that the code is really simple. The following function will change the fragment identifier:</p>
+<pre>
+function saveStateInURL(state) {
+	location.replace('#'+state);
+}
+</pre>
+<script type="text/javascript">
+function saveStateInURL(state) {
+	if (document.links[0].click) {
+		document.links[0].href="#"+state;
+		document.links[0].click();
+	} else location.replace('#'+state);
+}
+</script>
+<p><button onclick="saveStateInURL('ButtonIsClicked')">Show me!</button></p>
+<p>Now that we can change the URL, there has to be script that gets the fragment identifier when the URL has one. Here's the code that does that:</p>
+<pre>
+function loadStateFromURL() {
+	var hash=location.hash;
+	return hash?hash.substr(1):'';
+}
+</pre>
+<script>
+function loadStateFromURL() {
+	var hash=location.hash;
+	return hash?hash.substr(1):'';
+}
+</script>
+<p><button onclick="alert('loadStateFromURL returned: '+loadStateFromURL())">Show me!</button></p>
+<p>What actually is used as state depends on the page. For the OPML loader I simply used the URL for the loaded OPML file. But you can store anything, as long as it can be serialized to a reasonably sized string.</p>
+</section>
+<section>
+<h>Examples</h>
+<ul>
+<li><a href="http://w3future.com/html/opmlloader.html#http://w3future.com/weblog/sidebars/opmlloader.opml">The OPML loader.</a> I used this fragment id trick in my OPML loader, without explaining the trick. I wanted to see if people would understand that they could use the URL to link to the loader with a given OPML file. And indeed several weblogs have used this feature.</li>
+<li><a href="http://maggerydoo.net/maggerydoo/frames.php3#pid=14">URIs for Frames.</a> The same trick can also be used with frames, which have the same problem as dynamic pages. A friend of mine allowed me to experiment with this in his portal system.</li>
+</ul>
+</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

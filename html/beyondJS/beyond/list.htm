@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+	<TITLE>List</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+</HEAD>
+<BODY>
+	Simple linked list sample
+</BODY>
+<SCRIPT>
+
+function List() {}
+
+List.prototype = new function() {
+	function Node(v) {
+		this.v = v;
+		this.next = null;
+	}
+	this.append = function() {
+		var self = this;
+		Array.from(arguments).foreach(function(v) {
+			if ( isDefined(v) ) {
+				var n = new Node(v);
+				self.last = self.last ? self.last.next = n : self.first = n;
+			}
+		});
+		return self;
+	};
+
+	this.foreach = function(f) {
+		for ( var p = this.first ; p ; p = p.next )
+			if ( f(p.v, p, this) === false )
+				return p;
+		return null;
+	};
+
+	this.first = this.last = null;
+};
+
+iteratable(List);
+
+// Build a list
+var x = "hello there world".split(" ").collect(Function.NOP, new List);
+
+alert("** Explicit iteraion **");
+for ( var p = x.first ; p ; p = p.next )
+	alert(p.v);
+
+alert("** foreach iteraion **");
+x.foreach(alert);
+
+alert("** convert to array and iterate **");
+Array.from(x).foreach(alert);
+
+alert("** coalesce **");
+alert(x.coalesce(function(r, v) { return r + v; }, ""));
+
+alert("** filtering **");
+x.filter(function(v) { return v != "there"; }).foreach(alert);
+
+alert("** another way to build a list **");
+var y = List.from("hello there world".split(" "));
+y.foreach(alert);
+
+alert("** and another **");
+var a = "hello there world".split(" ");
+debugger;
+var z = List.fill(function(i) { return a[i]; });
+z.foreach(alert);
+
+</SCRIPT>
+</HTML>

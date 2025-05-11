@@ -1,0 +1,28 @@
+<xr:transform 
+  xmlns:xr="http://w3future.com/xr/ns/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:rss="http://purl.org/rss/1.0/"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  
+  <xr:introducing xr:select="/rss/channel">
+    <rss:channel xr:uriSelect="link">
+      <dc:title xr:select="title" />
+      <rss:items xr:select="item" xr:collectionType="sequence" />
+    </rss:channel>
+  </xr:introducing>
+
+  <xr:introducing xr:select="//item">
+    <rss:item xr:uriSelect="link">
+      <dc:title xr:select="title" />
+      <dc:description xr:select="description" />
+    </rss:item>
+  </xr:introducing>
+    
+  <xr:introducing>
+    <rdfs:Resource xr:uriSelect="$documentURI">
+      <dc:title>RSS file for {/rss/channel/title} ({/rss/channel/link})</dc:title>
+    </rdfs:Resource>
+  </xr:introducing>
+  
+</xr:transform>

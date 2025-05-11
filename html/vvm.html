@@ -1,0 +1,283 @@
+<HTML>
+<HEAD>
+<TITLE>Vector Value Model (VVM), a proposal for Minimal XML</TITLE>
+</HEAD>
+<BODY>
+
+<H1>Vector Value Model (VVM)</H1>
+<H2>Proposal for Minimal XML</H2>
+
+<P>
+Author: <A href="mailto:sjoerd_visscher@hotmail.com">Sjoerd Visscher</A><BR />
+Date: 2001/02/08
+</P>
+
+<HR />
+
+<P>
+<A href="#s1">1. Introduction</A><BR />
+<A href="#s2">2. The vector value model explained</A><BR />
+<A href="#s3">3. DOM discussion</A><BR />
+<A href="#s4">4. SAX discussion</A><BR />
+<A href="#s5">5. Schema discussion</A><BR />
+<A href="#s6">6. Examples</A><BR />
+<A href="#s7">7. Open Issues</A><BR />
+</P>
+
+<HR />
+
+<H2><A name="s1">1. Introduction</A></H2>
+<P>The Vector Value Model tries to give a solution to two problems.</P>
+<H3>1.1 Two types of data</H3>
+<P>Data in XML and HTML documents can generally be devided in two categories:</P>
+<UL><B>Content</B>
+<LI>Complex structures; deeply nested and mixed content</LI>
+<LI>Element order is important</LI>
+<LI>Element name describes the type of content or is a placeholder name like &lt;Item&gt;</LI>
+<LI>Examples: the elements in the body of HTML, elements that represent rows from databases</LI>
+</UL>
+<UL><B>Properties</B>
+<LI>Simple structures; undeep</LI>
+<LI>Element order is unimportant</LI>
+<LI>Element name describes the relation to it's parent</LI>
+<LI>Examples: elements in the head of HTML, elements that represent columns from databases and most attributes</LI>
+</UL>
+<P>Content and properties have to be treated very differently, so it's important for applications
+to know the difference. The most popular method is to use attributes for the properties and
+elements for content. This is not possible in Minimal XML, neither is it ideal because
+attribute values can only be strings.</P>
+<P>Another solutions which HTML uses too is separating properties and content in a head
+and a body part. But that would require reserving two seemingly arbitrairy elements,
+and makes nesting twice as deep.</P>
+<H3>1.2 Extensibility</H3>
+<P>XML, the eXtensible Markup Language, is called extensible because it allows the creation
+of new elements and attributes. However, most data formats using XML are hardly extensible.
+Adding new attributes is usually not a problem, but adding elements is often not allowed.
+In most cases, that is because all elements are treated as content, so if you try to add a
+new element, application will try to parse it as content.</P>
+<P>Most XML schema languages are also modeled for the use of elements as content. So adding
+a new element to a document, will make it incompatible with it's schema. This makes most
+XML formats completely inextensible.</P>
+
+<H2><A name="s2">2. The Vector Value Model explained</A></H2>
+<H3>2.1 The concepts</H3>
+<P>The Vector Value Model is built on three concepts:</P>
+<UL>
+<LI>The <B>Content Element</B>. One special element is reserved for content: <B><CODE>&lt;_v&gt;</CODE></B>.</LI>
+<LI>The <B>Value Algorithm</B>. The value of an element is either it's textual content, or the value of
+it's first content element.</LI>
+<LI><B>Order importance</B>. Only the order between elements with the same element name is important.</LI>
+</UL>
+<P>The "v" stands for value or vector, depending on how it is used.</P>
+<H3>2.2 The content element explained</H3>
+<P>All elements are concidered to be properties of the parent element.
+For content only one element can be used: <CODE>&lt;_v&gt;</CODE>. <BR />
+A book containing two chapters could look like this:</P>
+<PRE>
+  &lt;book>
+    &lt;title>A book about VVM&lt;/title>
+    &lt;author>Sjoerd Visscher&lt;/author>
+    &lt;_v>
+      &lt;title>Chapter 1&lt;/title>
+      &lt;_v>The text for chapter one.&lt;/_v>
+    &lt;/_v>
+    &lt;_v>
+      &lt;title>Chapter 2&lt;/title>
+      &lt;_v>The text for chapter two.&lt;/_v>
+    &lt;/_v>
+  &lt;/book>
+</PRE>
+<P>Here <CODE>&lt;title></CODE> and <CODE>&lt;author></CODE> are 
+property elements. <BR />The contents of the book, and the contents of
+the chapters use the <CODE>&lt;_v&gt;</CODE> element.</P>
+<H3>2.3 The value algorithm explained</H3>
+<P>The value of an element is either it's textual content, or the value of
+it's first content element (<CODE>&lt;_v&gt;</CODE>). <BR />
+This means that in the following examples, 
+the <CODE>&lt;title&gt;</CODE> element has always the same value:</P>
+<PRE>
+  &lt;title>A title element&lt;/title>
+
+  &lt;title>
+    &lt;_v>A title element&lt;/_v>
+  &lt;/title>
+
+  &lt;title>
+    &lt;class>special&lt;/green>
+    &lt;_v>A title element&lt;/_v>
+  &lt;/title>
+
+  &lt;title>
+    &lt;_v>A title element&lt;/_v>
+    &lt;_v>This is not part of the value&lt;/_v>
+  &lt;/title>
+</PRE>
+<P>Such equivalence is needed because Minimal XML does not allow attributes
+nor mixed content. It would otherwise not be possible to add a class property
+to the title element, without breaking compatibility with applications that
+only expect a value for the title element.</P>
+<H3>2.4 Order importance explained</H3>
+<P>Only the order between elements <I>with the same element name</I> is important.<BR />
+This means that the following examples are equivalent:</P>
+<PRE>
+  &lt;a>value 1&lt;/a>
+  &lt;a>value 2&lt;/a>
+  &lt;b>value 3&lt;/b>
+  &lt;b>value 4&lt;/b>
+
+  &lt;b>value 3&lt;/b>
+  &lt;b>value 4&lt;/b>
+  &lt;a>value 1&lt;/a>
+  &lt;a>value 2&lt;/a>
+
+  &lt;a>value 1&lt;/a>
+  &lt;b>value 3&lt;/b>
+  &lt;a>value 2&lt;/a>
+  &lt;b>value 4&lt;/b>
+</PRE>
+<P>But the following example is not equivalent, because the order between the
+two <CODE>&lt;a></CODE> elements is different.</P>
+<PRE>
+  &lt;a>value 2&lt;/a>
+  &lt;a>value 1&lt;/a>
+  &lt;b>value 3&lt;/b>
+  &lt;b>value 4&lt;/b>
+</PRE>
+<P>This semi-importance is possible because property elements don't care about order.<BR />
+Content elements do care about order, which is still preserved because the content
+elements all have the same name with the VVM.</P>
+<P>This also makes true extensibility possible. Any element that is not defined in the schema
+can be placed anywhere in a document, without breaking applications that follow that schema.</P>
+
+<H2><A name="s3">3. DOM discussion</A></H2>
+<H3>3.1 the <CODE>getValue</CODE> method</H3>
+<PRE>
+  <B>getValue</B>([Path])
+    
+     Path ::= ( elementname? ('[' index ']')? '/')* elementname? ('[' index ']')?
+</PRE>
+<P>Such a getValue function makes it easy to retrieve content. The elementname
+defaults to <CODE>_v</CODE> and the index default to the first elements.</P>
+<P>Example document:</P>
+<PRE>
+  &lt;document>
+    &lt;title>
+      &lt;class>special&lt;/green>
+      &lt;_v>A title element&lt;/_v>
+    &lt;/title>
+  &lt;/document>
+</PRE>
+<P>Example code:</P>
+<PRE>
+  document.getValue("title") // returns "A title element"
+  document.getValue("title/class") // returns "special"
+</PRE>
+
+<H2><A name="s4">4. SAX discussion</A></H2>
+<P>In SAX, and event handler looks always the same with VVM:</P>
+<PRE>
+  SWITCH elementname
+    CASE "A" OR "B"
+      DoAorB()
+    CASE "C"
+      DoC()
+    CASE "_v"
+      DoContent()
+    DEFAULT
+      Ignore
+</PRE>
+<P>This show clearly that such documents are very extensible. Every unknown
+element is ignored.</P>
+<P>It could also be interesting to have separate events for properties and content.</P>
+
+<H2><A name="s5">5. Schema discussion</A></H2>
+<P>
+VVM makes elements very similar to object from Object Oriented Programming.
+It would be interesting to see how a schema language for VVM documents
+could use ideas from this well researched field, like sub-classing and interface
+implementation.
+</P>
+
+<H2><A name="s6">6. Examples</A></H2>
+<H3>6.1 HTML in Minimal XML with VVM</H3>
+<P>Strictly differentiating between properties and content, HTML
+looks quite different. HEAD and BODY are no longer needed, and most
+elements are content elements. To differentiate between different
+content elements, a <CODE>&lt;type></CODE> property element is introduced.</P>
+<PRE>
+  &lt;html>
+      &lt;title>Example document&lt;/title>
+      &lt;base>
+        &lt;target>_blank&lt;/target>
+      &lt;/base>
+      &lt;_v>&lt;type>H1&lt;/type>
+          &lt;_v>Header text&lt;/_v>
+      &lt;/_v>
+      &lt;_v>&lt;type>P&lt;/type>
+          &lt;_v>Some plain text&lt;/_v>
+          &lt;_v>&lt;type>A&lt;/_type>
+              &lt;href>http://w3future.com&lt;/href>
+              &lt;_v>A link to my site&lt;/_v>
+          &lt;/_v>
+          &lt;_v>Some plain text&lt;/_v>
+      &lt;/_v>
+  &lt;/html>
+</PRE>
+<P>This probably won't convince hardcore HTML programmers. It actually looks quite messy,
+as do most other attempts to store HTML in Minimal XML.
+However, it does look much like the DOM for HTML: the type element is the nodeName property
+from the DOM and the content elements are the childNodes list.</P>
+<P>The mess could be reduced by a VVM aware editor, which could render it 
+somewhat more attractive.<BR />Here properties are grey and content white:</P>
+
+<STYLE>
+TH,TD {border-top: 1px solid #888888;border-left: 1px solid #888888}
+TH {text-align:left;background:#EEEEEE;padding:1px 0px 0px 2px;}
+TD {text-align:left;background:#FFFFFF;padding:1px 0px 0px 2px;}
+TD {width: 100%}
+TABLE {margin:0px 0px 0px 5px}
+</STYLE>
+
+<TABLE cellspacing=0 style="border-right: 1px solid #888888;border-bottom: 1px solid #888888">
+<TR><TH>html<BR />
+  <TABLE cellspacing=0>
+  <TR><TH>title&nbsp;</TH><TD>Example document</TD></TR>
+  <TR><TH colspan=2>base<BR />
+    <TABLE cellspacing=0>
+    <TR><TH>target&nbsp;</TH><TD>_blank</TD></TR>
+    </TABLE>
+  </TH></TR>
+  <TR><TD colspan=2 style="padding-top:7px">
+    <TABLE cellspacing=0>
+    <TR><TH>type&nbsp;</TH><TD>H1</TD></TR>
+    <TR><TD colspan=2>Header text</TD></TR>
+    </TABLE>
+  </TD></TR>
+  <TR><TD colspan=2 style="padding-top:7px">
+    <TABLE cellspacing=0>
+    <TR><TH>type&nbsp;</TH><TD>P</TD></TR>
+    <TR><TD colspan=2>Some plain text</TD></TR>
+    <TR><TD colspan=2 style="padding-top:7px">
+      <TABLE cellspacing=0>
+      <TR><TH>type&nbsp;</TH><TD>A</TD></TR>
+      <TR><TH>href&nbsp;</TH><TD>http://w3future.com</TD></TR>
+      <TR><TD colspan=2>A link to my site</TD></TR>
+      </TABLE>
+    </TD></TR>
+    <TR><TD colspan=2>Some plain text</TD></TR>
+    </TABLE>
+  </TD></TR>
+  </TABLE>
+</TH></TR>
+</TABLE>
+
+<H2><A name="s7">7. Open Issues</A></H2>
+<P>
+Instead of defaulting to the first element when no index is given,
+it is also possible to return an array (nodelist). Then it would be an issue
+what should be returned when there is only one element:
+return a single value or return an array with one node.
+</P>
+
+</BODY>
+</HTML>

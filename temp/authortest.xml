@@ -1,0 +1,15 @@
+<feed xmlns="http://purl.org/atom/ns#">
+  <id>tag:w3future.com,2000:feed/1</id>
+  <author>
+    <name>Sjoerd</name>
+  </author>
+  <entry>
+    <id>tag:w3future.com,2000:entry/1</id>
+    <author>
+      <name>not Sjoerd</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:w3future.com,2000:entry/1</id>
+  </entry>
+</feed>  

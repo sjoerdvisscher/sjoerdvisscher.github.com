@@ -1,0 +1,31 @@
+.indent {
+	border-left:1px dotted #E0E0F0;
+	padding-left:0.6em;
+	margin-left:0.6em;
+}
+table.border {
+	margin:0em;
+}
+th.props {
+	font-size: 7pt;
+}
+input.props {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 7pt;
+}
+.openclose {
+	width:1.2em;
+	text-align:center;
+	cursor:pointer;
+	cursor:hand;
+	font-weight: bold;
+}
+.leaf {
+	width:1.2em;
+	text-align:center;
+}
+#OPMLDiv {
+	margin-left: 2em;
+}
+.text {
+}

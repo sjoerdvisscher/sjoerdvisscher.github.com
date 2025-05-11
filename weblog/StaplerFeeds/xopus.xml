@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.2.6" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>Xopus</title>
+		<description>Xopus News</description>
+		<link>http://www.xopus.com/</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Thu, 22 Jul 2004 14:43:26 GMT</lastBuildDate>
+		<item>
+			<description>International bank &lt;a href=&quot;http://www.abnamro.nl&quot; target=&quot;_blank&quot;&gt;ABN AMRO&lt;/a&gt;, a client of our partner &lt;a href=&quot;http://www.cumquat.nl&quot; target=&quot;_blank&quot;&gt;Cumquat&lt;/a&gt;, is now building their orgcharts using Xopus. Xopus not only provides ABN AMRO with pretty pictures, but also with reusable XML data representing their internal organizational structure.</description>
+			<title>Orgcharts for ABN AMRO</title>
+			</item>
+		<item>
+			<description>&lt;a href=&quot;http://www.design.philips.com/&quot; target=&quot;_blank&quot;&gt;Philips Design&lt;/a&gt; chooses Xopus to maintain their web- and intranet sites. Xopus enables them to use XML Schema and XSLT to enforce their strict style guidelines. </description>
+			<title>PHILIPS CHOOSES XOPUS</title>
+			</item>
+		<item>
+			<description>&lt;a href=&quot;http://www.wyona.com&quot; target=&quot;_blank&quot;&gt;Wyona&lt;/a&gt; is the principal contributor to the &lt;a href=&quot;http://cocoon.apache.org/lenya/&quot; target=&quot;_blank&quot;&gt;Apache Lenya&lt;/a&gt; open source project. Wyona delivers state of the art XML based content management solutions and uses Xopus in projects if a powerful XML editor is needed.</description>
+			<title>NEW PARTNER: WYONA</title>
+			</item>
+		</channel>
+	</rss>

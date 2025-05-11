@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.2.6" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>Push Button Paradise</title>
+		<description>From an XML and XForms geek</description>
+		<link>http://dubinko.info/blog/</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Sat, 01 May 2004 10:55:01 GMT</lastBuildDate>
+		<item>
+			<description>The indefatigable Mark Birbeck pointed me to &lt;a href=&quot;http://www.formsplayer.com/products/add-ons.html&quot;&gt;this&lt;/a&gt;-- a toolkit to write IE sidebars in pure XForms. Included are Amazon and Google search. This is a sign of changes to come in the development of Internet Apps. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108338669568974724</link>
+			<title>Write IE extensions in XForms</title>
+			</item>
+		<item>
+			<description>On the other hand, if your day job deadlines leave you completely exhausted at the end of the day, electronic notes or not, you&apos;ll tend to blog less (or at least blog in the morning, when you&apos;re still semi-conscious). -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108333927894219328</link>
+			<title>Then Again..</title>
+			</item>
+		<item>
+			<description>Notice I&apos;ve been posting more lately? I have. At the day job, I&apos;ve switched to an online note format (plain text + jEdit is an amazing combination).&lt;br /&gt;&lt;br /&gt;It&apos;s probably not a coincidence that getting into the habit of posting your thoughts online carries over to the off hours. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108321298738638758</link>
+			<title>Posting Frequency</title>
+			</item>
+		<item>
+			<description>Courtesy of &quot;pinko-rat-bastard&quot; on &lt;a href=&quot;http://slashdot.org/comments.pl?sid=105631&amp;amp;cid=8991604&quot;&gt;slashdot&lt;/a&gt;...&lt;br /&gt;&lt;br /&gt;Somewhere on the path to Mordor....&lt;br /&gt;&lt;br /&gt;&quot;We hates them, the nasty Linuxies!&quot;, hissed Darllum. &quot;They STOLE the precious from us. Evil Linuxies! We hates them!&quot;&lt;br /&gt;&quot;But Linuxies helps us!&quot;, he wimpered. &quot;They gives us nice IPO...they gives us Kernel Personality. SAMBA is our friend!&quot;&lt;br /&gt;&quot;We don&apos;t have any friends!&quot;, he spat, eyes glowing with hatred and fury. &quot;Evil, tricksie Linuxies! They STOLE it! We HATES them!&quot;&lt;br /&gt;&lt;br /&gt;&quot;OK, Sam&quot;, sighed Frodo, &quot;I&apos;ve changed my mind. You can kill him now.&quot;&lt;br /&gt;&lt;br /&gt;-m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108321185620402824</link>
+			<title>SCO Humor</title>
+			</item>
+		<item>
+			<description>I&apos;ve been nominated for an InfoWorld Innovators Award. More details here later. The results &lt;a href=&quot;http://www.infoworld.com/awards/&quot;&gt;will be announced here&lt;/a&gt; on May 24. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108313117992502770</link>
+			<title>Newsflash</title>
+			</item>
+		<item>
+			<description>Uh, yes. Link: &lt;a href=&quot;http://battellemedia.com/archives/000617.php&quot;&gt;John Batelle&apos;s searchblog&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&quot;It made me think, and I realized that in fact, enterprise search will probably rise again, and end up being one of the coolest things in search in the next few years. Why? Because it sucks so badly now, fixing it will be the kind of 10X revelation we had when we moved from Yahoo to Google in 1998-99.&quot;&lt;br /&gt;&lt;br /&gt;-m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108309699098891739</link>
+			<title>Is enterprise search heating up?</title>
+			</item>
+		<item>
+			<description>Interestingly, Jon Udell&apos;s &lt;a href=&quot;http://www.infoworld.com/article/04/04/23/17OPstrategic_1.html&quot;&gt;latest column&lt;/a&gt; at InfoWorld has the following title: &quot;InfoWorld: E-mail&amp;#195;&amp;#162;&amp;#194;&amp;#128;&amp;#194;&amp;#153;s many hats: April 23, 2004: By Jon Udell : APPLICATIONS&quot;. (because this will likely get mangled further in the publishing stream, that&apos;s a-circumflex, then two of what looks like an A-in-a-box instead of the apostrophe in &quot;E-mail&apos;s&quot;.&lt;br /&gt;&lt;br /&gt;Unicode is hard. Even if your content is fine, chances are good that your content management or publishing system will come in and muck things up. Actually, Unicode isn&apos;t what&apos;s hard--if the whole world used it exclusively we&apos;d be sailing smooth--what&apos;s hard is transitions between encodings. Throw in a few unhelpful substitutions by Microsoft Office&apos;s aggravating, so-called &quot;smart quotes&quot; features, and you&apos;ve got a mess on your hands.&lt;br /&gt;&lt;br /&gt;A straight-quotes-are-your-friends production. -m&lt;br /&gt;&lt;br /&gt;Update: &lt;a href=&quot;http://www.intertwingly.net/blog/1772.html&quot;&gt;More related discussion&lt;/a&gt;. But not directly related. The web page is still titled oddly, as above. Also, interestingly, RSS readers and Atom readers see the above differently. Which just goes to show...</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108300793527506560</link>
+			<title>Unipain</title>
+			</item>
+		<item>
+			<description>At the &lt;a href=&quot;http://conferences.oreillynet.com/os2004/&quot;&gt;O&apos;Reilly Open Source Convention&lt;/a&gt; in Portland, come see my presentation &lt;a href=&quot;http://conferences.oreillynet.com/cs/os2004/view/e_sess/4970&quot;&gt;Seeing XForms Inside Out:: Inside an XForms Validator&lt;/a&gt; (Thurs July 29). Whether you&apos;re just learning about XForms, or been working with it already, you will find some interesting insights by looking at XForms from the perspective of a &lt;a href=&quot;http://xformsinstitute.com&quot;&gt;validation tool&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;If you can make it for the full week, I also have a &lt;a href=&quot;http://conferences.oreillynet.com/cs/os2004/view/e_sess/4971&quot;&gt;half-day tutorial&lt;/a&gt; on Monday (July 26). Check it out! -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108299725244442519</link>
+			<title>Seeing XForms Inside Out</title>
+			</item>
+		<item>
+			<description>Has anyone written a search engine that, by virtue of blinding speed, plus using a few tricks like client-side XMLHTTP, can provide preliminary results in the browser *before* the search query is submitted? -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108295175951259011</link>
+			<title>Superfast Search</title>
+			</item>
+		<item>
+			<description>OK, knock off the jokes about oxymorons. Today, on my daughter&apos;s 1998-vintage computer, I installed Windows 98. I had completely forgotten the pain involved with that particular task. IBM hardware, as ordinary off-the-shelf as it could be, and the install doesn&apos;t recognize the onboard video card. No Internet, and hardly any other machines in the house have a floppy. Ungh. Several hours later, I&apos;m finished.&lt;br /&gt;&lt;br /&gt;Today, we basically take it for granted that you just pop in an OS CD and install away. Not terribly long ago, care and feeding of a computer was an intensely geeky proposition. Only recently has it become mainstream. For Desktop Linux, the bar has been raised much, much higher. This is a good thing. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108293560556845809</link>
+			<title>Microsoft Innovation</title>
+			</item>
+		<item>
+			<description>I&apos;ve been particularly inspired lately by the problem of Search. Between the &lt;a href=&quot;http://www.verity.com/&quot;&gt;new employer&lt;/a&gt;, and reports of &lt;a href=&quot;http://www.acmqueue.com/modules.php?name=Content&amp;amp;pa=printer_friendly&amp;amp;pid=135&amp;amp;page=1&quot; title=&quot;A Conversation with Matt Wells&quot;&gt;one-man search companies&lt;/a&gt; and &lt;a href=&quot;http://www.pbs.org/cringely/pulpit/pulpit20040422.html&quot; title=&quot;Cringely on MeaningMaster&quot;&gt;reports of completely new technologies&lt;/a&gt;, this is getting to be quite an interesting space.&lt;br /&gt;&lt;br /&gt;Which happens to mesh with my gradual project the last few months--converting all my stored information into good old UTF-8 plain text. The nexus of all these things is David Mertz&apos;s book &lt;a href=&quot;http://gnosis.cx/TPiP&quot;&gt;Text Processing in Python&lt;/a&gt;, which references his excellent &lt;a href=&quot;http://www-106.ibm.com/developerworks/xml/library/l-pyind.html&quot;&gt;public domain text indexer code&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;It wouldn&apos;t take much to convert my whole blog over to this system. Hmm. -m&lt;br /&gt;&lt;br /&gt;</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108269344946965094</link>
+			<title>Search</title>
+			</item>
+		<item>
+			<description>TV sets, inside, used to include a full schematic diagram. You&apos;d unfold it, then again, and again, and again. There were huge, tablecloth-sized sheets. Back &apos;in the day&apos;, I used to go through these. You could point to any random symbol representing a component somewhere in the thing, and determine exactly what the purpose of that component was. What would happen if you suddenly yanked it out of a running TV?&lt;br /&gt;&lt;br /&gt;That&apos;s how writing works. Every word, every sentence, every paragraph has to be active doing something for the piece.&lt;br /&gt;&lt;br /&gt;To design a big circuit, you wouldn&apos;t start with a blank sheet and just start drawing components hooked together. You&apos;d start with a general block diagram, then reduce that into smaller blocks, then figure out how everything interconnects, THEN start arranging individual components to make each block.&lt;br /&gt;&lt;br /&gt;That&apos;s how writing works. You don&apos;t start with a blank page and write a story A to Z. You start with the big picture, flesh it out more, then finally down the the level of words. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108252447197913970</link>
+			<title>Is writing like electronics?</title>
+			</item>
+		<item>
+			<description>Record Industry Execs: File sharers are a bunch of freeloaders. Sharing hurts sales.&lt;br /&gt;Geeks, etc.: File sharers are samplers. Sharing helps sales.&lt;br /&gt;Ed Felten: &lt;a href=&quot;http://www.freedom-to-tinker.com/archives/000574.html&quot;&gt;Yes.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;This seems dead on. The same dynamics apply to &lt;a href=&quot;http://xformsinstitute.com/&quot;&gt;books&lt;/a&gt; available under an open content license as well as for sale. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108182259175407956</link>
+			<title>Sharing vs. Sales</title>
+			</item>
+		<item>
+			<description>All the formerly scattered errata for _XForms Essentials_ are now collected at the &lt;a href=&quot;http://www.oreilly.com/catalog/xforms/errata/&quot;&gt;official publisher&apos;s page&lt;/a&gt;. If you spot more report away! -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108138559691956057</link>
+			<title>Errata the Night Away</title>
+			</item>
+		<item>
+			<description>..if someone handed you a piece of code that could solve NP-hard problems in a reasonably short time? All ideas welcome. Be creative! &lt;a href=&quot;http://dubinko.info/blog/mailto:mdubinko@yahoo.com&quot;&gt;email me&lt;/a&gt;. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108132386296567270</link>
+			<title>What would you do?</title>
+			</item>
+		<item>
+			<description>Here&apos;s &lt;a href=&quot;http://www.x-cp.org/&quot;&gt;an interesting new Internet specification&lt;/a&gt;. Actually, I haven&apos;t looked at it in the slightest, but it has an &apos;X&apos; in the name, so it must be good. -m</description>
+			<link>http://dubinko.info/blog/2004_04_01_archive.html#108080188609221409</link>
+			<title>X-CP</title>
+			</item>
+		<item>
+			<description>&lt;a href=&quot;http://www.planamesa.com/neojava/en/index.php&quot;&gt;NeoOffice/J 0.8.2&lt;/a&gt; is highly recommended if you&apos;re on OS X. It has tons of scary this-is-beta-and-might-not-even-work warnings, but it does. It seems snappier, looks somehow better (is it the font smoothing?), the command/ctrl keys work like you&apos;d expect (not reversed, as with the X11 version), and it works better for drag-n-drop opening files. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108078835224483185</link>
+			<title>NeoOffice/J</title>
+			</item>
+		<item>
+			<description>Apparently, the Apple store does &lt;strong&gt;not&lt;/strong&gt; let you redownload songs you&apos;ve paid for. Despite the &quot;FairPlay&quot; DRM, that the tracks are only authorized to play on up to 3 computers. It would be trivial for them to allow this, but they prefer to have their customers pay again. Since you&apos;re not buying any physical media, you&apos;d think they&apos;d attempt to make it a little more robust.&lt;br /&gt;&lt;br /&gt;The system seems to conspire against you. Tracks on your iPod aren&apos;t visible as files. Then when you connect your iPod to a newly-formatted Mac, it cheerfully offers to wipe all the tracks off your iPod. So there&apos;s a point there where you still have the track--could even listen to it--but have no choice but to erase it. Grr. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108078802006974585</link>
+			<title>Lost Songs</title>
+			</item>
+		<item>
+			<description>For the 2nd time in two months, my hard drive has been corrupted beyond what fsck/Disk Utility/DiskWarrior can repair. Even the TechTool software that comes with the AppleCare package reported &quot;Surface Scan Failed&quot; and &quot;Volume Structure Failed&quot;. If anyone else has seen this, please &lt;a href=&quot;http://dubinko.info/blog/mailto:mdubinko@yahoo.com&quot;&gt;send me mail&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Specifically, 1) is this a sign of an impending catastrophic hard drive failure? 2) Are there any utilities that can provide a definitive report that the Apple technicians will take as a &quot;replace that hard drive now&quot; situation? Or am I being overly-paranoid again?&lt;br /&gt;&lt;br /&gt;The friendly Apple guys reformatted my hard drive, which made the errors go away (for the time being). So, what&apos;s up?&lt;br /&gt;&lt;br /&gt;-m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108070827717598027</link>
+			<title>Hard drive corruption on OS X?</title>
+			</item>
+		<item>
+			<description>So, you&apos;ve been hanging around on the edges of XForms--why don&apos;t you take the plunge and learn it from the inside out?&lt;br /&gt;&lt;br /&gt;Come see me at the &lt;a href=&quot;http://conferences.oreillynet.com/os2004/&quot;&gt;O&apos;Reilly Open Source conference&lt;/a&gt; in Portland, for a half-day tutorial, on the afternoon of Monday, July 26. There&apos;s also a shorter 45-minute session on Thursday the 29th. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108060942064348393</link>
+			<title>Come learn XForms</title>
+			</item>
+		<item>
+			<description>This is essentially a snapshot of today&apos;s talk at the Gilbane conference.&lt;br /&gt;&lt;br /&gt;So why should you pick XForms vs. some non-XForms system?&lt;br /&gt;&lt;br /&gt;1) The uninstaller argument&lt;br /&gt;If you had two functionally similar pieces of software, one with a great uninstaller, and one with a tedious/manual uninstall, which would you install first on your own system? I thought so. Ironically, having a great uninstaller gives users peace of mind, making them *less* likely to actually uninstall the program. Open standards, with the associated non-lock-in, have the same effect.&lt;br /&gt;&lt;br /&gt;2) Cost of change&lt;br /&gt;Another way to look at the lock-in situation: even a mid-sized organization can have 1000 forms around. If each has a design/production/review cycle of 8hrs, that&apos;s an investment of 4 Man-years. Does it make more sense to invest that much in a single-source solution, or something that could be reused/shopped around? If you have a dozen forms, go ahead and try anything. For serious amounts of, use standards.&lt;br /&gt;&lt;br /&gt;3) Metadata needs standards too&lt;br /&gt;Forms are metadata. It doesn&apos;t seem obvious at first, but it&apos;s true. Forms provide a context and interpretation for a core piece of data. Metadata needs to be standardized as much as regular data, maybe more.&lt;br /&gt;&lt;br /&gt;4) Choosing your point on the continuum&lt;br /&gt;It&apos;s not like you can draw a black and white diagram of &quot;standards-based&quot; and &quot;non-standards-based&quot; software. It&apos;s all shades of gray. The flipside of this is that useful standards support isn&apos;t a checklist feature. Lots of forms systems have long lists of individual standards supported, but still use a proprietary layer that effectively negates many of the usual benefits of open standards. You have to pick the point on the continuum at which you are comfortable. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108028496019183940</link>
+			<title>Why Pick XForms?</title>
+			</item>
+		<item>
+			<description>Somebody running the Gilbane conference &lt;a href=&quot;http://www.lighthouseseminars.com/gccmcon-speakers.html#MicahDubinko&quot;&gt;had fun with Photoshop&lt;/a&gt;. :-)  Yes, that&apos;s the same as my Orkut photo. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108018987021780451</link>
+			<title>Life in a Hexagon</title>
+			</item>
+		<item>
+			<description>I&apos;m on the way to the &lt;a href=&quot;http://www.gilbane.com/CM_conference_LA_04.html#sessions&quot;&gt;Gilbane Conference on Content Management&lt;/a&gt;. I&apos;m part of the double-length session _ Electronic Forms &amp; Content Management_, moderated by Bill Trippe and additionally featuring speakers from Microsoft and Adobe.&lt;br /&gt;&lt;br /&gt;This will be my first speaking assignment for my new employer, &lt;a href=&quot;http://www.verity.com&quot;&gt;Verity&lt;/a&gt;. In preparation, I have updated the &lt;a href=&quot;http://xformsinstitute.com/ubl/&quot; title=&quot;for formsPlayer, pick the text/html version&quot;&gt;UBL+XForms example&lt;/a&gt; to work much better with &lt;a href=&quot;http://formsplayer.com&quot; title=&quot;by x-port, ltd.&quot;&gt;formsPlayer&lt;/a&gt;. Check it out. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108014483187470939</link>
+			<title>Off to L.A.</title>
+			</item>
+		<item>
+			<description>Of the 7 regular readers around here, four generous souls (none of whom I&apos;d met previously) offered to volunteer to review my Hack that will be in _XML Hacks_.&lt;br /&gt;&lt;br /&gt;In no particular order:&lt;br /&gt;&lt;br /&gt;Stephen had great comments on the overall flow and structure. Lots of markers where stuff was good too, not just the bad.&lt;br /&gt;&lt;br /&gt;Patrick had too had good comments, especially on the ever-important opening lines. Lots of detailed suggestions and great advice.&lt;br /&gt;&lt;br /&gt;Eric helped me see my blind spots, where I was skipping over material too fast.&lt;br /&gt;&lt;br /&gt;Daniel had lots of detailed comments, almost copyeditor class. Exactly what I needed.&lt;br /&gt;&lt;br /&gt;Good job and thanks to all!&lt;br /&gt;&lt;br /&gt;-m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108000929492932696</link>
+			<title>Thanks ^ 4</title>
+			</item>
+		<item>
+			<description>Here&apos;s an interesting project that ties in nicely with my recent reading of &lt;a href=&quot;http://gnosis.cx/TPiP&quot;&gt;Text Processing in Python&lt;/a&gt;: &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;markdown&lt;/a&gt;, a plain-text-ish format for writing.&lt;br /&gt;&lt;br /&gt;I just used David Mertz&apos;s format in writing a Hack for _XML Hacks_, and I have to admit it was far easier than skipping over the tags, or even the rather good attempt at tagless-WYSIWYG-XML-editing I got from &lt;a href=&quot;http://www.morphon.com/&quot;&gt;Morphon&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;My initial comments:&lt;br /&gt;&lt;br /&gt;Paragraphs should be allowed to be uniformly indented a few spaces. Like code, most text is read far more often than written, and every little bit of extra readablility helps.&lt;br /&gt;&lt;br /&gt;The inline link syntax -- This is [an example](http://example.com/ &quot;Title&quot;) inline link. -- doesn&apos;t seem natural. It&apos;s not the kind of thing you&apos;d see in use anywhere. (The out-of-line links, however, are very slick) The image syntax is even less so -- ![Alt text](/path/to/img.jpg &quot;Optional title&quot;)&lt;br /&gt;&lt;br /&gt;For the image case, I&apos;d take a hint from TPIP and use keywords (which are only recognized at the start of a line) in these cases&lt;br /&gt;IMAGE: &lt;http://some/url/&gt; [alt text] &quot;Optional title&quot;&lt;br /&gt;&lt;br /&gt;-m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#108000889683739874</link>
+			<title>Everything Must Go!</title>
+			</item>
+		<item>
+			<description>&lt;a href=&quot;http://www.mozilla.org/events/dev-day-feb-2004/mozilla-futures/build.html&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Bullet item - Support more standards: SVG, XForms; MNG subset?&lt;br /&gt;- sub bullet -As extensions at first, by default if low overhead&lt;br /&gt;&lt;br /&gt;-m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#107937832742890659</link>
+			<title>Interesting slide from Mozilla devdays:</title>
+			</item>
+		<item>
+			<description>I&apos;m writing a chapter for an upcoming book, _XML Hacks_. If you&apos;re interested in reviewing a whirlwind tour of XForms, &lt;a href=&quot;http://dubinko.info/blog/mailto:mdubinko@yahoo.com&quot;&gt;mail me&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;The objectives here are:&lt;br /&gt;(1) introduce the concepts clearly&lt;br /&gt;(2) demonstrate it in a way the the reader can easily duplicate&lt;br /&gt;(3) reference all resources&lt;br /&gt;(4) do it in roughly 2 to 5 printed pages.&lt;br /&gt;&lt;br /&gt;-m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#107924715610878249</link>
+			<title>Reviewers needed</title>
+			</item>
+		<item>
+			<description>Cool, an &lt;a href=&quot;http://www.orkut.com/Community.aspx?cmm=3174&quot; title=&quot;Orkut membership required, contact me if needed&quot;&gt;Orkut community&lt;/a&gt; for DreamHost. A great, SCO-free Linux Debian host, if I do say so. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#107906176969855931</link>
+			<title>DreamHost</title>
+			</item>
+		<item>
+			<description>On the &lt;a href=&quot;http://www.meyerweb.com/eric/thoughts/200403.html#d08&quot;&gt;forthcoming&lt;/a&gt; CSS book, 2nd edition. Another thing for the reading queue. -m</description>
+			<link>http://dubinko.info/blog/2004_03_01_archive.html#107890264072252800</link>
+			<title>Congrats to Eric Meyer</title>
+			</item>
+		<item>
+			<description>That&apos;s &apos;away from country&apos;.&lt;br /&gt;&lt;br /&gt;Minimal updates for a while: One week in Southern France, for a W3C meeting. Yes, work can be pretty demanding sometimes. -m</description>
+			<link>http://dubinko.info/blog/2004_02_01_archive.html#107799930694262457</link>
+			<title>mdubinko_afc</title>
+			</item>
+		<item>
+			<description>It&apos;s beta, but it&apos;s here. Will check out soon.&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://www.internetnews.com/dev-news/article.php/3316811&quot; title=&quot;Microsoft Gives InfoPath Better Pavement&quot;&gt;Media coverage&lt;/a&gt; with a too-cute headline. The article is pretty blunt in places: &quot;Analysts see InfoPath as part of Microsoft&apos;s strategy for locking businesses in to Microsoft enterprise products.&quot; Huh. -m</description>
+			<link>http://dubinko.info/blog/2004_02_01_archive.html#107767264748993050</link>
+			<title>InfoPath Service Pack 1</title>
+			</item>
+		<item>
+			<description>Now online at &lt;a href=&quot;http://xformsinstitute.com/validator/&quot;&gt;http://xformsinstitute.com/validator/&lt;/a&gt;. Powered by Python, libxml2, and libxslt.&lt;br /&gt;&lt;br /&gt;Includes a bookmarklet and several clickable examples, both valid and invalid. -m</description>
+			<link>http://dubinko.info/blog/2004_02_01_archive.html#107748691389453598</link>
+			<title>XForms Validator</title>
+			</item>
+		</channel>
+	</rss>

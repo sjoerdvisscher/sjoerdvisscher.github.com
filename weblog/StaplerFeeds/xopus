@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.2.6" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>Xopus</title>
+		<description>Xopus News</description>
+		<link>http://xopus.com/</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Fri, 06 Feb 2004 15:55:04 GMT</lastBuildDate>
+		</channel>
+	</rss>

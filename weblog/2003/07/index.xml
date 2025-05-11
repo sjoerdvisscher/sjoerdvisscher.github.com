@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/07/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:28:39 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/07/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/07/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/07/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2003/07/26.xml">Saturday, July 26, 2003</a></h>
+<a name="a253"></a>
+<section id="a253">
+<h id='onResources'><a href="http://w3future.com/weblog/2003/07/26.xml#a253" class="weblogItemTitle">On Resources</a></h>
+<p><a href="http://www.tbray.org/ongoing/When/200x/2003/07/24/HTTP-14">Tim Bray has posted his view on resources</a>. He asks in what way the TAG should deal with them. He gives two unsatifactory options: either don't mention them at all, or say that the nature of resources is outside of the scope of the Architecture document. Here's my take on this.</p>
+<p>First we should collect minimal requirements about resources and URIs, <a href="http://www.w3.org/DesignIssues/Axioms">the axioms of the web</a>. Let's start with this one:</p>
+<ul><li>A URI identifies a resource.</li></ul>
+<p>It's a simple axiom, but actually very powerful. For example, this means that every resource for which a URI exists has an infinite life span: A URI is a string, and a string has an infinite life span. (Just like any number will always exist) As each URI maps to a resource, the resource must have an infinite life span too. This means f.e. that HTTP's <code>410 GONE</code> means that there are no more representations available for the resource, not that the resource doesn't exist anymore. This is all the result of this one axiom. Let's do another axiom:</p>
+<ul><li>Information about the nature of a resource that has a URI can only either be obtained by dereferencing its URI or simply declared to be true.</li></ul>
+<p>You can not for example look at the content of the URI for more information. Also, each time a URI is dereferenced, more information about the resource is known. But as a resource has an infinite life span, we can never know everything about the resource. So because we can never know the exact nature of a resource, it is enough to define it as everything there is to know about that resource:</p>
+<ul><li>A resource is the collection of all results of all possible dereferencing methods at any time of its URI combined with all that is simply declared to be true about that resource.</li></ul>
+<p>If we don't like this conclusion then we should choose other axioms.</p>
+<p>(It's very late, and it is very well possible that my logic is flawed. It certainly isn't solid enough to be called a proof.)</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/07/19.xml">Saturday, July 19, 2003</a></h>
+<a name="a252"></a>
+<section id="a252">
+<h id='aStableRss'><a href="http://w3future.com/weblog/2003/07/19.xml#a252" class="weblogItemTitle">A stable RSS</a></h>
+<blockquote cite="http://scriptingnews.userland.com/stories/storyReader$2115"><p>At some point, I hope RSS stabilizes, people stop fighting over it, and just let it be. It's very useful, really very simple, and it belongs to users, not techies. It's unique in that regard, most XML specs are incomprehensible to people who use the stuff. RSS is quite comprehensible, by design. [<a href="http://scriptingnews.userland.com/stories/storyReader$2115">Dave Winer</a>]</p></blockquote>
+<p>I'm not really following the software industry long enough to say, but it seems to me that every format either evolves or becomes obsolete. Am I wrong here? If I'm not, is there something different about RSS that this rule doesn't apply?</p>
+<p><em>Update:</em> After getting some feedback I realized I meant superseded, not obsolete.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/07/18.xml">Friday, July 18, 2003</a></h>
+<a name="a251"></a>
+<section id="a251">
+<h id='xopusResponse'><a href="http://w3future.com/weblog/2003/07/18.xml#a251" class="weblogItemTitle">Xopus response</a></h>
+<p>Working on <a href="http://xopus.com">Xopus</a> is really fun and challenging, but when you read <a href="http://blogs.hippowebworks.com/hippo/archives/000037.html">this</a> then you know that's really why you don't mind working long hours.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/07/15.xml">Tuesday, July 15, 2003</a></h>
+<a name="a250"></a>
+<section id="a250">
+<h id='newSvg12PublicDraft'><a href="http://w3future.com/weblog/2003/07/15.xml#a250" class="weblogItemTitle">New SVG 1.2 Public Draft</a></h>
+<p><a href="http://groups.yahoo.com/group/svg-developers/message/31701">Antoine Quint announced the release of a new SVG draft.</a> Rendering Custom Content (RCC) is great. I'm looking forward to the examples. I want an SVG only version of my site, but it has to be a quick, easy and elegant job to do. Some server side XSLT, frameworking the layout with RCC and styling with CSS sounds attractive.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/07/12.xml">Saturday, July 12, 2003</a></h>
+<a name="a249"></a>
+<section id="a249">
+<h id='youJustHaveToKnowWhereToLook'><a href="http://w3future.com/weblog/2003/07/12.xml#a249" class="weblogItemTitle">You just have to know where to look</a></h>
+<p>Note to self: If something bugs you in Radio Userland, it is usually very easy to fix. The shortcuts weren't expanded in the RSS feed, so <a href="http://radio.userland.com/discuss/msgReader$26241">I posted a message on de discussion board</a>. Steve Hooker was a great help, and in the meantime I learnt to fix something else that had even annoyed me more the last few years: activeURLs and autoParagraphs. It turns out that it is enough to add this to #prefs.txt:</p>
+<pre>
+#activeURLs false
+#autoParagraphs false
+</pre>
+</section><a name="a248"></a>
+<section id="a248">
+<h id='echoFeedAvailable'><a href="http://w3future.com/weblog/2003/07/12.xml#a248" class="weblogItemTitle">Echo feed available</a></h>
+<p>Yesterday <a href="http://scriptingnews.userland.com/2003/07/11#When:5:35:28PM">Dave Winer added support for Echo to Radio Userland's aggregator</a>. Today I did the same, but at the other end. My Radio Userland now emits <a href="http://w3future.com/weblog/rss.xml?notransform">an Echo feed</a>. <a href="http://w3future.com/weblog/rss.xml">The RSS feed</a> is now created by transforming the Echo feed, using <a href="http://w3future.com/tools/necho2rss091.xsl">this XSLT transformation</a>.</p>
+</section><a name="a247"></a>
+<section id="a247">
+<h id='q42IsHiring'><a href="http://w3future.com/weblog/2003/07/12.xml#a247" class="weblogItemTitle">Q42 is hiring</a></h>
+<p>If you like what <a href="http://q42.nl">Q42</a> is doing, then now is the chance to join us. <a href="http://www.q42.nl" xml:lang="nl">Q42 biedt een uitdaging aan</a>. (You need to be able to read Dutch).</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/07/06.xml">Sunday, July 06, 2003</a></h>
+<a name="a246"></a>
+<section id="a246">
+<h id='thatsMyBrother'><a href="http://w3future.com/weblog/2003/07/06.xml#a246" class="weblogItemTitle">That's my brother!</a></h>
+<p>No, that wasn't a typo. My brother did indeed walk 80km, in one stretch. From here again congratulations, Jelle! Some background information: Jelle participated in what is called the <a href="http://www.kennedymars.nl">Kennedy March</a> in Someren. He and 2444 others started at 10 o'clock in the evening. They walked straight through the night without sleep. Jelle finished more than 18 and a half hours later. A marvelous achievement!</p>
+</section><a name="a245"></a>
+<section id="a245">
+<h id='myBrotherJustWalked80km'><a href="http://w3future.com/weblog/2003/07/06.xml#a245" class="weblogItemTitle">My brother just walked 80km!</a></h>
+<p><object data="http://w3future.com/weblog/images/mailedimages/20030706t1655n2.jpg" class="picture">My brother just walked 80km!</object></p>
+</section><a name="a244"></a>
+<section id="a244">
+<h id='programmingVsXml'><a href="http://w3future.com/weblog/2003/07/06.xml#a244" class="weblogItemTitle">Programming vs. XML</a></h>
+<p>The API discussions during the last week showed clearly that a lot of programmers are not ready for XML. They prefer XML-RPC because they want to send and receive data structures that are in native form for their programming language. Yet everybody seems to agree that when you are creating a new data format, it should use XML.</p><p>For this friction to disappear one of two things has to happen: Either the programming languages change to match XML better, or the other way around. The W3C XML Schema standard was an attempt to the latter, and it works great when you're working in a programming environment like Microsoft's .Net, because it tries to give XML an Object Oriented feel. But when you're working directly with XML, RelaxNG seems to be the better match. RelaxNG works a bit like regular expressions. This is not a coincidence, because regular expressions were designed for text processing, and that's where XML has its roots too.</p><p>In the end I think XML will win. The data structures in programming languages are designed to match the computer's memory model. XML's data structures are a result from it's syntax. Although this does lead to some peculiarities, it has some interesting properties that are <a href="http://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">more natural for the human's memory model</a>. Compare the data model of a book with one author with the data model of a book with one ore more authors. In the human's memory model these are almost similar. In XML it is equally similar, you have either one or one or more author elements. In most programming languages the second suddenly needs an extra data structure: a list of authors.</p><p>As programming languages abstract away from the hardware, they'll probably keep getting better support for XML. But changing the actual data structures, and certainly lists, is a big step for a programming language. This will stay interesting to follow for years to come.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/07/03.xml">Thursday, July 03, 2003</a></h>
+<a name="a243"></a>
+<section id="a243">
+<h id='xmlrpcSoapApisDerivedFromARestfulApi'><a href="http://w3future.com/weblog/2003/07/03.xml#a243" class="weblogItemTitle">XML-RPC, SOAP APIs derived from a RESTful API</a></h>
+<p>This is an idea I had, which I posted on the <a href="http://www.intertwingly.net/blog/1507.html">XML-RPC, SOAP, and/or REST discussion</a>. <a href="http://www.intertwingly.net/blog/1507.html#c1057267860">Sam Ruby thinks</a> this is a &#8220;real winner of an idea&#8221;, so I'll repeat it here:</p><p>I think we can use the general idea from the MetaWeblog API: apply a given set of rules to convert XML data to the XML-RPC model. The problem with the MetaWeblog API is that the XML data model isn't clear enough: If an element can occur more than once, the member in the struct has to contain an array. But it is not clear enough in RSS which items are allowed to occur more than once. Necho doesn't have this problem, because it has a schema.</p><p>It would be very easy to create an XSLT that converts a Necho document into an XML-RPC document. It would even be doable to create an XSLT that converts the Necho schema to a Necho-to-XML-RPC XSLT. I think I'll have a go at that, it's a fun challenge I think.</p><p>The bottomline: let's first create a RESTful API. The SOAP and XML-RPC APIs can then easily be derived from that.</p>
+</section><a name="a242"></a>
+<section id="a242">
+<h id='creatingWellformedXhtmlWithIeOrMozilla'><a href="http://w3future.com/weblog/2003/07/03.xml#a242" class="weblogItemTitle">Creating well-formed XHTML with IE or Mozilla</a></h>
+<blockquote cite="http://weblog.infoworld.com/udell/2003/06/29.html#a734"><p>Sam, we are in violent agreement as to the value of well-formed and XPATH-searchable content, something I have recently sought to demonstrate. I think -- no, I am sure -- that you radically underestimate the distance between possession of a tool (IE or Mozilla) that can validate well-formedness, and ability to produce well-formed content in routine written communication.[<a href="http://weblog.infoworld.com/udell/2003/06/29.html#a734">Jon Udell</a>]</p></blockquote>
+<p>At <a href="http://q42.nl">Q42</a> we deploy purpose-built CMSes with simple WYSIWYG in-browser editors on a regular basis. The editors are comparable to what blogging tools like Radio Userland are using (using the <code>contentEditable</code> attribute). We have a simple client-side clean-up script that extracts well-formed XHTML from the WYSIWYG editor. It even handles pasted HTML from Word rather well. I discussed it with my collegues today, and we are willing to make that script available as open source if people are interested. (We'll have to wrap it up nicely first, so it can be used easily by others.)</p>
+<p>John Udell also talks about credible competition for Microsoft's InfoPath. That's nice timing, because we (Q42) are about to release the first commercial version of <a href="http://xopus.com">Xopus, the friendly XML editor</a>. There's a nicely designed new homepage, not much there yet, but 2 nice screenshots. You can ask for a beta trial version.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/07/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

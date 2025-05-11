@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+	<TITLE>event streams</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondBrowser.js></SCRIPT>
+	<SCRIPT SRC=beyondStreams.js></SCRIPT>
+</HEAD>
+<BODY>
+	<SPAN ID=txt>event streams</SPAN><BR>
+	<SPAN ID=pos></SPAN>
+<INPUT id=doStar type="checkbox"><SPAN ID="star" STYLE="position:absolute">*</SPAN>
+</BODY>
+<SCRIPT>
+
+var st = eventStream(document, "onclick");
+
+// st.foreach(function() { alert("clicked"); });
+
+//st.collect(function(e) { return e.srcElement.tagName; }).foreach(alert);
+
+// st.filter(function(e) { return e.srcElement.tagName == "SPAN"; }).
+//	foreach(function() { alert("clicked"); });
+
+// var a = Array.from(st.collect(function(e) { return e.srcElement.tagName; }));
+// st.foreach(function() { alert(a); });
+
+// var r = st.collect(function(e) { return e.srcElement.tagName; }).foldr("+");
+// r.foreach(function(v) { alert(v); });
+
+// st.collect(function(e) { return e.srcElement.tagName; }).
+//	search("==".curry("SPAN")).
+//	foreach(alert);
+
+// txt.onclick = Function.from(st, "stop");
+// st.collect(function(e) { return [ e.clientX, e.clientY ]; }).feed(propertyStream(pos, "innerText"));
+
+// st.collect(function(e) { return [ e.clientX, e.clientY ]; }).buffer(4).foreach(alert);
+
+var log = logStream();
+st.collect(function(e) { return [ e.clientX, e.clientY ]; }).feed(log);
+txt.onclick = function() {
+	log.owner.foreach(alert);
+	log.flush();
+};
+
+</SCRIPT>
+</HTML>

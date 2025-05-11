@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+	<TITLE>Array Samples</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+</HEAD>
+<BODY>
+	Array Samples
+</BODY>
+<SCRIPT>
+var a = "hello there world".split(" ");
+
+// iterate
+a.foreach(alert);
+
+// search
+alert("index of 'there' == " + a.search(function(v) { return v == "there"; }));
+
+// modify
+a.collect(function(v) { return v.toUpperCase(); }).foreach(alert);
+
+// generate
+(1).to(4).foreach(alert);
+
+// intersection
+var b = "it's a small world".split(" ");
+a.filter(b.toStringSet().include()).foreach(alert);
+
+a.flush(alert);
+alert(a.length);
+</SCRIPT>
+</HTML>

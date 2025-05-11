@@ -1,0 +1,183 @@
+<?
+error_reporting (E_ERROR | E_WARNING | E_PARSE); 
+
+include_once("../db.inc");
+
+function userErrorHandler ($errno, $errmsg, $filename, $linenum, $vars) {
+	global $mname;
+	$payload="<?xml version='1.0'?>
+	<methodResponse>
+		<fault><value><struct>
+			<member><name>faultCode</name><value><int>$errno</int></value></member>
+			<member><name>faultString</name><value><string>$errmsg in $filename on line $linenum</string></value></member>
+		</struct></value></fault>
+	</methodResponse>";
+	Header("Content-type: text/xml\nContent-length: " . strlen($payload));
+	echo $payload;
+	
+	rdf_addTriple($mname,'xmlrpc-error',"($errno) $errmsg in $filename on line $linenum at ".date("Ymd\TH:i:s",time()));
+	
+	die();
+}
+$oldErrorHandler=set_error_handler("userErrorHandler");
+
+function xmlrpcparse($s) {
+	global $source,$cursor;
+	$source=$s;
+	$cursor=0;
+	return w3f_xmltree(false);
+}
+
+$listtags=array("params","struct","data");
+$trans=array(
+	"&amp;" => "&",
+	"&lt;" => "<",	
+	"&gt;" => ">",
+	"&quot;" => '"',
+	"&apos;" => "'"
+);
+function w3f_xmltree($makeList) {
+	global $source,$cursor,$listtags,$trans;
+	$node=array();
+	$i=0;$len=strlen($source);
+	while ($cursor<=$len) {
+		$start=$cursor;
+		$tagStart=strpos($source,'<',$cursor);
+		if ($tagStart===false) return $node;
+		$tagEnd=strpos($source,'>',$tagStart);
+		if ($tagEnd===false) trigger_error("Not well-formed XML: expected '>'");
+		$cursor=$tagEnd+1;
+		$tag=substr($source,$tagStart+1,$tagEnd-$tagStart-1);
+		if ($tag[0]=='/') {// found end tag
+			if (!sizeof($node)) // no child-elements, there was chardata
+				$node=strtr(trim(substr($source,$start,$tagStart-$start)),$trans);
+			return $node;
+		} else {
+			if ($tag[strlen($tag)-1]=='/') $value='';
+				else $value=w3f_xmltree(in_array($tag,$listtags));
+			if ($makeList) $node[$i++]=$value; else $node[$tag]=$value;
+		}
+	}
+	trigger_error("Not well-formed XML: unexpected end");
+}
+
+class xmlrpcDate {
+	var $stamp;
+	var $iso;
+	function xmlrpcDate($t=-1) {
+		if ($t==-1) $t=time();
+		$this->stamp=$t;
+	}
+	function loadIso8601($s) {
+		$this->stamp=mktime(substr($s,9,2),substr($s,12,2),substr($s,15,2),substr($s,4,2),substr($s,6,2),substr($s,0,4));
+	}
+	function getIso8601() {
+		return $this->format("Ymd\TH:i:s");
+	}
+	function format($fmt) {
+		return date($fmt,$this->stamp);
+	}
+}
+
+class xmlrpcBase64 {
+	var $data;
+	function xmlrpcBase64($d='') {
+		$this->data=$d;
+	}
+	function load($b64) {
+		$this->data=base64_decode($b64);
+	}
+	function getBase64() {
+		return base64_encode($this->data);
+	}
+}
+
+function toPHP($tree) {
+	if (gettype($tree)=='string') return $tree;
+	if (gettype($tree)=='NULL') return '';
+	list($kind,$val)=each($tree);
+	switch ($kind) {
+		case 'i4':
+		case 'int': return (int) $val;
+		case 'boolean': return ($val==1);
+		case 'string': return $val;
+		case 'double': return (double) $val;
+		case 'dateTime.iso8601': $date=new xmlrpcDate;$date->loadIso8601($val);return $date;
+		case 'base64': $s=new xmlrpcBase64;$s->load($val);return $s;
+		case 'struct':
+			$a=array();
+			$len=sizeof($val);
+			for ($i=0;$i<$len;$i++) $a[$val[$i]['name']]=toPHP($val[$i]['value']);
+			return $a;
+		case 'array':
+			$a=array();
+			$len=sizeof($val['data']);
+			for ($i=0;$i<$len;$i++) $a[$i]=toPHP($val['data'][$i]);
+			return $a;
+	}
+}
+
+function fromPHP($tree) {
+	$kind = gettype($tree);
+	switch ($kind) {
+		case 'integer': return "<int>$tree</int>";
+		case 'array':
+			$l=sizeof($tree);$a='';$s='';$isArray=true;
+			while (list($name,$val)=each($tree)) {
+				if (gettype($name)=='string') $isArray=false;
+				$s.="<member><name>$name</name><value>".fromPHP($val)."</value></member>";
+				$a.="<value>".fromPHP($val)."</value>";
+			}
+			if ($isArray) return "<array><data>$a</data></array>";
+				return "<struct>$s</struct>";
+		case 'object':
+			$c=get_class($tree);
+			switch ($c) {
+				case "xmlrpcbase64": return "<base64>".$tree->getBase64()."</base64>";
+				case "xmlrpcdate": return "<dateTime.iso8601>".$tree->getIso8601()."</dateTime.iso8601>";
+				default: trigger_error("Class $c not convertable.");
+			}
+		default: return "<$kind>".strtr("".$tree,array("&"=>"&amp;","<"=>"&lt;"))."</$kind>";
+	}
+}
+
+/******** MAIN ********/
+
+$s = $HTTP_RAW_POST_DATA;
+$s = ereg_replace("\<\?[^\?]+\?\>", "", $s);
+
+$m=xmlrpcparse($s);
+$m=$m['methodCall'];
+$mname=$m['methodName'];
+$lib=substr($mname,0,strrpos($mname,'.')).".lib";
+if (!file_exists($lib)) trigger_error("Library $lib not found.");
+include($lib);
+
+$func=substr($mname,strrpos($mname,'.')+1);
+if (!function_exists($func)) trigger_error("Function $func not found.");
+
+$num_params=sizeof($m['params']);
+$p=array();
+$argstring="";
+for ($i=0;$i<$num_params;$i++) {
+	$p[$i]=toPHP($m['params'][$i]['value']);
+	$argstring.=",\$p[$i]";
+}
+$argstring=substr($argstring,1);
+
+$code="return $func($argstring);";
+
+$res=eval($code);
+
+$resXML=fromPHP($res);
+
+$payload="<?xml version='1.0'?>
+<methodResponse>
+	<params><param><value>
+		$resXML
+	</value></param></params>
+</methodResponse>";
+
+Header("Content-type: text/xml\nContent-length: " . strlen($payload));
+print $payload;
+?>

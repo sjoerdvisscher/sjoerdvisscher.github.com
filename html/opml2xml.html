@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>OPML to XML - w3future.com</title>
+  <meta name="author" content="Sjoerd Visscher" />
+  <meta name="keywords" content="w3, www, world, wide, web, future, weblog, latest, news, javascript, js, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic" />
+  <meta name="description" content="My ideas about new web technology that can change the future of the world wide web." />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="author" title="Sjoerd Visscher" href="mailto:sjoerd@w3future.com" />
+  <link rel="top" href="http://w3future.com/weblog/" />
+  <link rel="icon" href="http://w3future.com/w3f/icon.png" type="image/png" />
+  <script type="text/javascript" src="http://w3future.com/w3f/w3f.js"></script>
+  <script type='text/javascript'><!--
+document.write('<'+'style>@import "http://w3future.com/w3f/w3f.phtml?'+document.cookie+'";<'+'/style>');
+//--></script>
+</head>
+<body>
+<a href="#"></a>
+<div id="header">
+	<div id="header-title-shadow">w3future.com</div>
+	<div id="header-title">w3future.com</div>
+	<div id="header-tabs">
+<div class='tab'><a href='http://w3future.com/weblog/'>Weblog</a></div>
+<div class='tab'><a href='http://w3future.com/html/examples.html'>Examples</a></div>
+<div class='tab'><a href='http://w3future.com/html/stories/'>Articles</a></div>
+<div class='tab'><a href='http://w3future.com/html/download.html'>Downloads</a></div>
+</div>
+</div>
+<div id="layout">
+	<div id="sidebar">
+<div class='sidebar-header'>Links</div>
+<div class='button2'><a href='http://www.opml.org/'>OPML standard</a></div>
+<div class='button2'><a href='http://radio.userland.com/'>Radio Userland</a></div>
+<div class='button2'><a href='http://www.xmlrpc.com/googleGateway'>Google XML-RPC Gateway</a></div>
+<div class='button2'><a href='http://w3future.com/weblog/'>w3future.com home</a></div>
+<div class='sidebar-header'>Examples</div>
+<div class='button2'><a href='http://w3future.com/weblog/sidebars/opmlloader.opml'>This Sidebar (recursive!)</a></div>
+<div class='button2'><a href='http://w3future.com/weblog/directory.opml'>Weblog Directory</a></div>
+<div class='button2'><a href='http://w3future.com/weblog/gems/mySubscriptions.opml'>My Subscriptions</a></div>
+<div class='button2'><a href='http://www.scripting.com/xml/currentOutline.xml'>Scripting News</a></div>
+<div class='button2'><a href='http://radio.weblogs.com/0001015/instantOutliner/daveWiner.opml'>Dave Winer's Instant Outline</a></div>
+</div>
+	<div id="content">
+		<h1>OPML to XML</h1>
+		<p>An xslt transformation</p>
+		<div id="note">
+			<h3>Last Update</h3>
+			<p>6/1/2002; 1:41:44 AM</p>
+		</div>
+	<h2>See what I mean.</h2>
+<p>Type in an URL of an OPML file, and press Transform. <a href="http://www.w3.org/2001/05/xslt">
+The W3C XSLT Servlet</a> will then perform a transformation using <a href="http://w3future.com/weblog/gems/opml2xml.xsl">
+this XSLT file.</a></p>
+<form method="get" action="http://www.w3.org/2000/06/webdata/xslt" target="_blank">
+<input type="hidden" name="xslfile" value="http://w3future.com/weblog/gems/opml2xml.xsl" />
+<p><input type="text" name="xmlfile" style="width:80%" /></p>
+<p><input type="submit" name="transform" value="Transform" /></p>
+</form>
+</div>
+	<div id="footer">&#x00A9; Copyright 2002 <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="http://w3future.com/">w3future.com</a></div>
+</div>
+<script type='text/javascript'><!--
+initButtons(true);initSectionTabs();initSidebarButtons();staticSiteStatsImage()
+//--></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:r="http://backend.userland.com/rss2" xmlns="http://purl.org/rss/1.0/">
+<channel rdf:about="http://ilrt.org/discovery/2000/11/rss-query/">
+<dc:title>A hypothetical job listings channel</dc:title>
+<dc:description>
+    This example shows RSS used as a lightweight data transport mechanism
+  </dc:description>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource="http://example.com/job1.html " />
+<rdf:li rdf:resource="http://example.com/job2.html " />
+</rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://example.com/job1.html " xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:r="http://backend.userland.com/rss2" xmlns="http://purl.org/rss/1.0/">
+<dc:title>The title of job1 goes here</dc:title>
+<dc:description>
+      (Job1-Job1-Job1...)
+    </dc:description>
+<content:encoded><![CDATA[
+      (Job1-Job1-Job1...)
+    ]]></content:encoded>
+<job:advertises xmlns:wn="http://xmlns.com/wordnet/1.6/" xmlns:job="http://ilrt.org/discovery/2000/11/rss-query/jobvocab.rdf#">
+<wn:Job>
+<job:orgHomepage>
+</job:orgHomepage>
+</wn:Job>
+</job:advertises>
+</item>
+<item rdf:about="http://example.com/job2.html " xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:r="http://backend.userland.com/rss2" xmlns="http://purl.org/rss/1.0/">
+<dc:title>The title of job1 goes here</dc:title>
+<dc:description>
+       (Job2-Job2-Job2...)
+    </dc:description>
+<content:encoded><![CDATA[
+       (Job2-Job2-Job2...)
+    ]]></content:encoded>
+<job:advertises xmlns:wn="http://xmlns.com/wordnet/1.6/" xmlns:job="http://ilrt.org/discovery/2000/11/rss-query/jobvocab.rdf#">
+<wn:Job>
+<job:orgHomepage>
+</job:orgHomepage>
+</wn:Job>
+</job:advertises>
+</item>
+</rdf:RDF>

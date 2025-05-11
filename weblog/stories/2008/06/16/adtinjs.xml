@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/stories/2008/06/16/adtinjs.txt">
+<head>
+<title>Algebraic Data Types in JavaScript</title>
+</head>
+<body>
+<section id="content">
+	<h>Algebraic Data Types in JavaScript</h>
+	<p>Merging unfold, fold and map transformations</p>
+	<section id="note">
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/stories/2008/06/16/adtinjs.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/stories/2008/06/16/adtinjs.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/stories/2008/06/16/adtinjs.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section>
+	<section>
+		<h>Download</h>
+		<p><a href="adt.js">adt.js</a> (9.2Kb)</p>
+	</section>
+	<section>
+	  <h>Introduction</h>
+	  <p>Algebraic data types are types like you can declare in Haskell with <code>data</code> declarations.
+	  If you are not familiar with Haskell, you can try <a href="http://en.wikipedia.org/wiki/Algebraic_data_type">the
+	  Wikipedia page about algebraic data types</a>.</p>
+	  <p>I have written the library in <a href="http://developer.mozilla.org/en/docs/New_in_JavaScript_1.8">Javascript 1.8</a>,
+	  which means that as of this writing it only runs in Firefox 3.0. 
+	  I have chosen to keep it 1.8, because the code is a lot cleaner, thanks to the new expression closures.
+	  But there is nothing that cannot be made to work in ECMAScript edition 3. And I have no doubt 
+	  that the same thing could be done in Python or Ruby.</p>
+	</section>
+	<section>
+		<h>Declaring algebraic data types</h>
+		<p>A first example:</p>
+		<blockcode>// Haskell:
+// data Color = Red | Green | Blue | Yellow
+// data Point = Pt Float Float Color
+Color = Data(function() ({ Red: {}, Green: {}, Blue: {}, Yellow: {} }))
+Point = Data(function() ({ Pt: { x: Number, y: Number, color: Color } }))</blockcode>
+    <p>Now you can create point objects like this: <code>Pt(1, 2, Red)</code>. Note that you don't need <code>new</code>,
+    alltough you could; <code>Pt</code> is a real constructor. All of the following works as expected:</p>
+    <blockcode>Pt(1, 2, Red).x == 1
+Pt(1, 2, Red).color == Red
+Pt(1, 2, Red).constructor == Pt
+Pt(1, 2, Red) instanceof Pt
+Pt(1, 2, Red) instanceof Point</blockcode>
+		<p>You can also define recursive types. F.e. Peano numbers:</p>
+		<blockcode>// Haskell: data Peano = Z | S Peano
+Peano = Data(function(peano) ({ Z: {}, S: { prev: peano }}))</blockcode>
+    <p>With Peano numbers you would represent f.e. 2 as <code>S(S(Z))</code>. Note that for the recursion, 
+    we use the first argument of the declaration function.</p>
+    <p>Now lets take a look at type parameters. We take lists as example:</p>
+    <blockcode>// Haskell: data List a = Nil | Cons a (List a)
+List = Data(function(list, a) ({ Nil : {}, Cons: { head: a, tail: list } }))</blockcode>
+    <p>Type parameters become extra arguments of the declaration function, after the recursion argument.</p>
+    <p>Finally, let's take a look at a more complete example, a simplified XML data structure:</p>
+    <blockcode>// Haskell:
+// data Attrs n v = Attr n v
+// data Node  n v = Elem n (List (Attrs n v)) (List (Node n v)) | Text v
+Attrs = Data(function(_, n, v) ({ Attr: {name: n, value: v} }))
+Node = Data(function(node, n, v) ({
+  Elem: { name: n, attributes: List(Attrs(n, v)), childNodes: List(node) },
+  Text: v
+}))</blockcode>
+    <p>There are two things to note here: one is that we instantiate the parameterized types <code>List</code>
+    and <code>Attrs</code>, and the second is that adding names to the constructor arguments makes the type easier to understand.</p>
+  </section>
+  <section>
+    <h>Using algebraic data types</h>
+    <section>
+      <h>Unfold</h>
+      <p>With unfold you can easily generate algebraic data structures from other data.
+        The following example shows how to generate a decreasing list of numbers.</p>
+      <blockcode>var counter = List.unfold(function(n, c) n ? c.Cons(n, n - 1) : c.Nil)</blockcode>
+      <p>Unfolds do not use the actual constructors, but stand-ins that perform recursion at the right places.
+        In this example <code>c.Cons</code> recursively calls the unfold function for it's second argument,
+        and then calls the <code>Cons</code> constructor with the result. Let's try it out:</p>
+      <blockcode>>>> counter(5)
+Cons(5, Cons(4, Cons(3, Cons(2, Cons(1, Nil)))))</blockcode>
+    </section>
+    <section>
+      <h>Fold</h>
+      <p><a href="http://en.wikipedia.org/wiki/Fold_(higher-order_function)">Fold</a> is the reverse of unfold.
+      It destructs data into a return value. Here is an example that multiplies a list of numbers.</p>
+      <blockcode>var prod = List.fold({ Nil: 1, Cons: function(h, t) h * t })</blockcode>
+      <p>You can understand a fold as replacing the constructors with the given functions. Let's test this code:</p>
+      <blockcode>>>> prod(counter(5))
+120</blockcode>
+    </section>
+    <section>
+      <h>Merging unfold and fold</h>
+      <p>You may have noticed that with combining <code>prod</code> and <code>counter</code> we have created the
+      factorial function. However, it is quite wasteful as it builds up a list which it then destroys again.
+      But this adt library has a solution for that, it allows you to merge functions that are defined over the same
+      data type:</p>
+      <blockcode>>>> var fact = counter.merge(prod)
+>>> fact(5)
+120</blockcode>
+      <p>Now we have a factorial function that was neatly defined using the structure of List, but no list is created.
+        <code>c.Cons</code> instead of calling the <code>Cons</code> constructor, now directly calls the <code>Cons</code>
+        function from <code>prod</code>.</p>
+    </section>
+    <section>
+      <h>Map</h>
+      <p>With <code>map</code> you provide a function for each type parameter. Here are 2 examples using the XML data types:</p>
+      <blockcode>var addPrefix = Node.map(function (name) "x:" + name, id)
+var normalizeSpace = Node.map(id, function (value) value.replace(/^\s+|\s+$/g, ""))</blockcode>
+      <p>The first adds a prefix to each name, leaving values alone (using the <code>id</code> function), and the second strips whitespace from
+      values, leaving names alone. For a more complete example, let's write a serialization function for the XML data:</p>
+      <blockcode>var serialize = Node.fold({
+  Elem: function(name, attrs, children) "&lt;" + name + attrs + ">" + children + "&lt;/" + name + ">",
+  Text: function(s) s,
+  Attr: function(name, value) " " + name + "='" + value + "'",
+  Cons: function(h, t) h + t,
+  Nil : ""
+})</blockcode>
+      <p>Now if we wanted to add prefixes, normalize space and then serialize the xml, we could write:</p>
+      <blockcode>serialize(normalizeSpace(addPrefix(xml)))</blockcode>
+      <p>But then we would traverse the data structure 3 times. We would like to merge these functions so that the data
+        structure is traversed only once. (When this is done in the compiler it is called deforestation or fusion.)</p>
+      <blockcode>>>> var prefixNormalizeAndSerialize = addPrefix.merge(normalizeSpace).merge(serialize)
+>>> var xml = Elem("test", Nil, Cons(
+  Elem("hoi", Cons(Attr("href", "w3future.com"), Nil), Nil), Cons(
+  Text(" bla "), Cons(
+  Elem("doei", Nil, Nil), Nil))))
+>>> prefixNormalizeAndSerialize(xml)
+"&lt;x:test>&lt;x:hoi x:href='w3future.com'>&lt;/x:hoi>bla&lt;x:doei>&lt;/x:doei>&lt;/x:test>"</blockcode>
+      <p>In general you can merge one fold, one unfold and any number of maps, as long as they are defined on the same data type.</p>
+    </section>
+  </section>
+  <section>
+    <h>Advanced uses</h>
+    <section>
+      <h>Transformers</h>
+      <p>All these unfolds, folds, maps and any merged combination of them are special cases of transformers. A transformer
+        declaration has 4 parts: a generator (unfold), transformation of constructors (fold), transformation of type parameters
+        (map) and transformation of non-algebraic types. The last tree are best explained with an example:</p>
+      <blockcode>Test = Data(function(test, a) ({ Foo: Number, Bar: [a, test] }))
+var xf = Test.getTransformer({
+  getCtorXF : function(ctor) f,
+  getParamXF: function(pos ) g,
+  getAtomXF : function(ctor) h
+})</blockcode>
+      <p>Then the following are equivalent:</p>
+      <blockcode>xf(Bar("x", Bar("y", Foo(1))))</blockcode>
+      <blockcode>f(g("x"), f(g("y"), f(h(1))))</blockcode>
+      <p>Ie. each constructor is replaced with <code>f</code>, each value in a type parameter position is wrapped with <code>g</code>,
+      and other (non-algebraic) values are wrapped with <code>h</code>.</p>
+    </section>
+    <section>
+      <h>Derived properties</h>
+      <p>Derived properties are like derived classes in Haskell, they apply to every algebraic data object that is created.</p>
+      <p>The adt library already contains <code>clone</code>, <code>source</code>, <code>equals</code>, <code>size</code> and
+        <code>items</code>. Some examples for the previously defined <code>xml</code> object:</p>
+      <blockcode>>>> xml.size
+6
+>>> xml.items
+["test", "hoi", "href", "w3future.com", " bla ", "doei"]
+>>> xml.equals(xml.clone)
+true
+>>> xml.source
+"Elem("test", Nil, Cons(Elem("hoi", Cons(Attr("href", "w3future.com"), Nil), Nil), Cons(Text(" bla "), 
+Cons(Elem("doei", Nil, Nil), Nil))))"</blockcode>
+      <p>But you can also add your own derived properties. Here is how you would define <code>items</code>:</p>
+      <blockcode>Array.collect = function(list) Array.reduce(list, function(a, b) a.concat(b), [])
+Data.addDerivedProperty("items", {
+  getCtorXF : function(ctor) function() Array.collect(arguments),
+  getParamXF: function(pos ) function(x) [x],
+  getAtomXF : function(ctor) function(x) [x]
+})</blockcode>
+    </section>
+    <section>
+      <h>Data types &#224; la carte</h>
+      <p>To see if even advanced Haskell code would work in JavaScript, I took a shot at 
+        <a href="http://www.cs.nott.ac.uk/~wss/Publications/DataTypesALaCarte.pdf">Data types &#224; la carte</a> by Wouter Swierstra.
+        It addresses the <em>Expression Problem</em>:</p>
+      <blockquote>The goal is to define a data type by cases, where one can add new cases to the data 
+        type and new functions over the data type, without recompiling existing code, and while 
+        retaining static type safety.</blockquote>
+      <p>Of course, that last property is lost in the translation to JavaScript, but otherwise this code works.</p>
+      <p>First the initial data type, expressions with values and addition.</p>
+      <blockcode>Expr = function(f) Data(function(expr) ({ In: f(expr) }))
+Plus = function(f, g) Data(function(_, e) ({ Inl: f(e), Inr: g(e) }))
+ValT = Data(function(_, e) ({ Val: Number }))
+AddT = Data(function(_, e) ({ Add: [e, e] }))
+ExprValAdd = Expr(Plus(ValT, AddT))</blockcode>
+      <p>Next, we create an evaluation function with <code>fold</code>.</p>
+      <blockcode>var evalAlgebra = {
+  Val: function(x) x,
+  Add: function(e1, e2) e1 + e2,
+  In: id, Inl: id, Inr: id
+};
+var ev = ExprValAdd.fold(evalAlgebra)
+
+var val = function(x) In(Val(x))
+var add = function(x, y) In(Add(x, y))</blockcode>
+      <blockcode>>>> ev(add(val(30000), add(val(1330), val(7))))
+31337</blockcode>
+      <p>Now we can add multiplication to the expression type.</p>
+      <blockcode>MulT = Data(function(_, e) ({ Mul: [e, e] }))
+var mul = function(x, y) In(Mul(x, y))
+
+ExprValAddMul = Expr(Plus(ValT, Plus(AddT, MulT)))
+evalAlgebra.Mul = function(e1, e2) e1 * e2
+var ev = ExprValAddMul.fold(evalAlgebra)</blockcode>
+      <blockcode>>>> ev(add(mul(val(80), val(5)), val(4)))
+404</blockcode>
+      <p>And finally we add a <code>render</code> function.</p>
+      <blockcode>var render = ExprValAddMul.fold({
+  Val: function(x) "" + x,
+  Add: function(e1, e2) "(" + e1 + " + " + e2 + ")",
+  Mul: function(e1, e2) "(" + e1 + " * " + e2 + ")",
+  In: id, Inl: id, Inr: id
+})</blockcode>
+      <blockcode>>>> render(add(mul(val(80), val(5)), val(4)))
+((80 * 5) + 4)</blockcode>
+    </section>
+  </section>
+</section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

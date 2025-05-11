@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="1.0">
+	<head>
+		<ownerName>Sjoerd Visscher</ownerName>
+		<ownerEmail>sjoerd@w3future.com</ownerEmail>
+		<dateCreated>1/12/2002; 12:14:59 PM</dateCreated>
+		<dateModified>2/4/2002; 1:38:46 AM</dateModified>
+		</head>
+	<body>
+		<outline type="folder" text="01">
+			<outline type="file" text="not saved" size="98" whenCreated="Sat, 12 Jan 2002 11:14:59 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:27 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Sun, 13 Jan 2002 16:33:48 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:27 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Mon, 14 Jan 2002 11:07:06 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:27 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Tue, 15 Jan 2002 00:27:33 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Wed, 16 Jan 2002 00:05:51 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Sat, 19 Jan 2002 02:16:06 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Tue, 22 Jan 2002 09:41:13 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Wed, 23 Jan 2002 10:39:06 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="not saved"/>
+			<outline type="file" text="not saved" size="98" whenCreated="Thu, 24 Jan 2002 19:02:36 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="not saved"/>
+			<outline type="file" text="25.html" size="98" whenCreated="Fri, 25 Jan 2002 18:17:48 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="http://w3future.com/weblog/2002/01/25.html"/>
+			<outline type="file" text="26.html" size="98" whenCreated="Tue, 29 Jan 2002 19:36:00 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="http://w3future.com/weblog/2002/01/26.html"/>
+			<outline type="file" text="29.html" size="98" whenCreated="Tue, 29 Jan 2002 20:20:17 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="http://w3future.com/weblog/2002/01/29.html"/>
+			<outline type="file" text="30.html" size="98" whenCreated="Wed, 30 Jan 2002 22:04:40 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="http://w3future.com/weblog/2002/01/30.html"/>
+			<outline type="file" text="31.html" size="98" whenCreated="Thu, 31 Jan 2002 18:31:39 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:28:28 GMT" url="http://w3future.com/weblog/2002/01/31.html"/>
+			</outline>
+		<outline type="folder" text="02">
+			<outline type="file" text="04.html" size="98" whenCreated="Mon, 04 Feb 2002 00:28:06 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:39:15 GMT" url="http://w3future.com/weblog/2002/02/04.html"/>
+			</outline>
+		<outline type="file" text="xxx-#upstream.xml" size="319" whenCreated="Wed, 23 Jan 2002 10:45:14 GMT" whenLastUploaded="Mon, 04 Feb 2002 00:38:36 GMT" url="http://w3future.com/weblog/2002/xxx-#upstream.xml"/>
+		</body>
+	</opml>

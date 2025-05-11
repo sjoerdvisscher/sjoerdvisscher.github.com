@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/06/08.xml">
+<head>
+<title>Tuesday, June 08, 2004 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:29:58 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/06/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/06/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/06/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2004/06/01.xml#a247' title='Tuesday, June 01, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/06/08.xml">Tuesday, June 08, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/07/24.txt#a249' title='Saturday, July 24, 2004'>&#160;&gt;</a></h>
+<a name="a277"></a>
+<section id="a277">
+<h id='quicksortInMoiell'><a href="http://w3future.com/weblog/2004/06/08.xml#a277" class="weblogItemTitle">Quicksort in Moiell</a></h>
+<p>An update on Moiell. Since <a href="http://w3future.com/weblog/2004/05/13.xml#moiellTeaser">the first post on Moiell</a> I've been wanting to show you the quicksort example. But there was a bug in the implementation that prevented the example to run. And I wanted to be sure that I wasn't making a thinking error. The code is running now so here it is:</p>
+<pre>qsort : [|x::more|
+  xs := more
+  &gt; qsort(xs &lt; x), x, qsort(xs &gt;= x)
+]
+
+&gt; qsort(5,7,9,3,6,7,0,3,4)</pre>
+<p>First, to get that out of the way, <code>xs := more</code> is to kill the lazyness that was so useful in the prime sieve. The <code>more</code> variable is implemented using a single-shot continuation, but we need the values twice this time.</p>
+<p>The next line shows the advantages of sequences and goal-directed programming. A part like <code>qsort(xs &lt; x)</code> may seem odd for the average programmer, but not (and that's my hope) to the average person. This is because you can pronounce this as "qsort the X's smaller than X". Which is exactly what it does.</p>
+<p>Compare this to <a href="http://www.haskell.org/aboutHaskell.html">the Haskell version of quicksort</a>. The Moiell code is shorter, but still (I believe) easier to understand. Also note that the Moiell code doesn't need the special case for sorting no values. When pattern matching fails, the function simply returns no value. This is goal directed programming again.</p>
+<p>I'll leave you with a more imperative flavored implementation of quicksort:</p>
+<pre>qsort : [|x::xs|
+  lt := (); gte := ()
+  xs.[(lt ,= me &lt; x) or (gte ,= me)]
+  &gt; qsort(lt), x, qsort(gte)
+]</pre>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/06/08.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+	<TITLE>event streams</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondLazy.js></SCRIPT>
+</HEAD>
+<BODY>
+	<SPAN>hello there world</SPAN>
+</BODY>
+<SCRIPT>
+
+function Stream(source) {
+	this.source = source;
+	this.callbacks = [];
+}
+var _STP = Stream.prototype;
+
+_STP.foreach = function(f) {
+	return this.callbacks.append(f).length-1;
+};
+_STP.stop = function(x) {
+	if ( typeof(x) == "function" || typeof(x) == "object" )
+		x = this.callbacks.search("===".curry(x));
+	if ( x < 0 || x >= this.callbacks.length )
+		return false;
+	var callbacks = x > 0 ? this.callbacks.slice(0, x-1) : [];
+	this.callbacks = callbacks.concat(this.callbacks.slice(x+1));
+	return true;
+};
+
+_STP.push = function(v) {
+	var self = this;
+	this.callbacks.foreach(function(f) {
+		f(v, self.source, self);
+	});
+	return this;
+};
+_STP.append = function() {
+	Array.from(arguments).filter(isDefined).foreach(Function.from(this, "push"));
+	return this;
+};
+_STP.extend = function(x) {
+	if ( isUndefined(x.foreach) )
+		return this.append(x);
+	x.foreach(function(v) { this.append(v); });
+	return this;
+};
+
+_STP.fold = function(f, r) {
+	if ( typeof(f) == "string" ) f = f.toFunction();
+	this.coalesce(function(x, v) {
+		r = isDefined(r) ? f(r, v) : v;
+	});
+	return function() { return r; }
+};
+_STP.search = function(f, found) {
+	if ( f.constructor === RegExp )
+		f = Function.from(f, "test");
+	else if ( typeof(f) != "function" ) {
+		var x = f;
+		f = function(y) { return y === x; };
+	}
+	var handle = this.foreach(function(v, s, st) {
+		if ( f(v, s, st) ) {
+			st.stop(handle);
+			found(v, s, st);
+		}
+	});
+};
+
+Stream.from = function(x) {
+	if ( typeof(x.foreach) == "function" ) {
+		var st = new this;
+		x.foreach(function(v) { st.push(v); });
+		return st;
+	}
+	if ( typeof(x.length) == "number" ) {
+		var st = new this;
+		if ( typeof(x) != "string" )
+			for ( i = 0 ; i < x.length ; ++i )
+				st.push(x[i]);
+		else
+			for ( i = 0 ; i < x.length ; ++i )
+				st.push(x.charAt(i));
+		return st;
+	}
+	return (new this).push(x);
+};
+
+iteratable(Stream);
+
+function eventStream(element, eventName) {
+	var st = new Stream(element);
+	if ( element.addEventListener ) {
+		element.addEventListener(eventName, function(evt) { st.push(evt); }, false );
+		return st;
+	} else {
+		if ( element.attachEvent("on" + eventName, function(evt) { st.push(evt ? evt : window.event); }) )
+			return st;
+	}
+};
+var st = eventStream(document.body, "click");
+
+// st.foreach(function(evt) { alert(evt.target + " clicked"); });
+
+// st.collect(function(e) { return e.srcElement.tagName; }).foreach(alert);
+
+// st.filter(function(e) { return e.srcElement.tagName == "SPAN"; }).
+//	foreach(function() { alert("clicked"); });
+
+ var a = Array.from(st.collect(function(e) { return '' + e.srcElement.tagName; }));
+ st.foreach(function() { alert(a); });
+
+// var r = st.collect(function(e) { return e.srcElement.tagName; }).foldr("+");
+// st.foreach(function() { alert(r()); });
+
+// st.collect(function(e) { return e.srcElement.tagName; }).
+//	search("==".curry("SPAN"), alert);
+
+</SCRIPT>
+</HTML>
+

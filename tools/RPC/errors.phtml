@@ -1,0 +1,19 @@
+<HTML>
+<BODY>
+<TABLE>
+<?
+	include_once("../db.inc");
+	
+	if (!isset($p)) $p="xmlrpc-error";
+
+	$r = new resultSet("SELECT * FROM rdf WHERE p LIKE '%$p%'");
+	
+	while ($r->findItem()) {
+		$s=$r->val('s');
+		$o=$r->val('o');
+		print "\n<TR><TD>$s</TD><TD>$o</TD></TR>";
+	}
+?>
+</TABLE>
+</BODY>
+</HTML>

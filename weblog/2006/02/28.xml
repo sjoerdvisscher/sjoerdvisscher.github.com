@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2006/02/28.xml">
+<head>
+<title>Tuesday, February 28, 2006 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>4/23/2006; 7:21:03 PM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2006/02/28.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2006/02/28.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2006/02/28.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2005/12/21.xml#a269' title='Wednesday, December 21, 2005'>&lt;&#160;</a><a href="http://w3future.com/weblog/2006/02/28.xml">Tuesday, February 28, 2006</a></h>
+<a name="a299"></a>
+<section id="a299">
+<h id='tailCallEliminationInJavascript'><a href="http://w3future.com/weblog/2006/02/28.xml#a299" class="weblogItemTitle">Tail call elimination in Javascript</a></h>
+<p>Via <a href="http://lambda-the-ultimate.org/node/1331">LtU</a> I read about a <a href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/474088">tail call optimization decorator</a>. Of course I immediately wondered if it was possible in JavaScript, and it is:</p>
+<pre>Function.prototype.tailCallOptimized = function()
+{
+  var g = this;
+  return function()
+  {
+    for (var caller = arguments.callee.caller; caller; caller = caller.caller)
+      if (caller == arguments.callee)
+        throw {tailCallArgs: arguments, tailCallThis: this};
+      
+    var args = arguments;
+    var me   = this;
+    while (true)
+    {
+      try
+      {
+        return g.apply(me, args);
+      }
+      catch(e)
+      {
+        if (!e.tailCallArgs)
+          throw e;
+          
+        args = e.tailCallArgs;
+        me   = e.tailCallThis;
+      }
+    }
+  };
+}</pre>
+<p>It improves somewhat on the Python example. It allows mutual recursion and recursive methods:</p>
+<pre>Number.prototype.isEven = function()
+{
+  return this == 0 ? true  : (this - 1).isOdd();
+}
+.tailCallOptimized();
+
+Number.prototype.isOdd = function()
+{
+  return this == 0 ? false : (this - 1).isEven();
+};
+
+alert((10001).isEven() ? "even" : "odd");</pre>
+<p>Note the &#8216;decorator style&#8217; in Javascript, simply a method call on the function.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2006/02/28.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

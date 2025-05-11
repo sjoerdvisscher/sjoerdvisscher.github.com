@@ -1,0 +1,105 @@
+<script>
+Function.prototype.subClass = function(mNames)
+{
+  var f = function() {
+    var i = 0;
+    for (var mName in mNames)
+      this[mName] = arguments[i++];
+  };
+  f.prototype = new this();
+  f.prototype.constructor = f;
+  return f;
+};
+
+
+function getCode()
+{
+  var f = gen(yld(123));
+  return gen(
+    fe("i", f[0].id,
+      [js('alert(10 * $.i)')]
+    )
+  ).concat(f);
+}
+
+function compile(code)
+{
+  return new Function("c", "while (c) { var k = c.k; var $ = c.$; switch(k) {\n  " + code.join("\n  ") + "\n  default: alert('wrong jump'); c = null;}}");
+}
+
+var lCount = 0;
+function l() {
+  return new Label(lCount++);
+}
+
+function gen() {
+  var a = [l()];
+  for (var i = 0; i < arguments.length; i++)
+    a = a.concat(arguments[i]);
+  return a.concat([new Inv('done', {})]);
+}
+
+function fe(vName, genName) {
+  var yld = l();
+  var done = l();
+  var a = [
+    new Call(genName, {yld: new Cont(yld), done: new Cont(done)})
+  ].concat([
+    yld, js("$." + vName + " = $.value")
+  ]);
+  for (var i = 2; i < arguments.length; i++)
+    a = a.concat(arguments[i]);
+  return a.concat([
+    new Inv('next', {}), done
+  ]);
+}
+
+function yld(v) {
+  var next = l();
+  return [new Inv('yld', {value: v, next: new Cont(next)}), next];
+}
+
+function js(s) {
+  return s;
+}
+
+Label = Object.subClass({id: Number});
+Call = Object.subClass({lExpr: String, args: Object});
+Inv = Object.subClass({vName: String, args: Object});
+Cont = Object.subClass({l: Label});
+
+Label.prototype.toString = function()
+{
+  return "case " + this.id + ":";
+};
+Call.prototype.toString = function()
+{
+  var a = [];
+  for (var p in this.args)
+    a.push(p + ": " + this.args[p]);
+  return "c = {k: " + this.lExpr + ", $: {" + a.join(", ") + "}}; break;";
+};
+Inv.prototype.toString = function()
+{
+  var v = "$." + this.vName;
+  var a = [];
+  for (var p in this.args)
+    a.push(v + ".$." + p + " = " + this.args[p]);
+  a.push("c = " + v);
+  return a.join("; ") + "; break;";
+};
+Cont.prototype.toString = function()
+{
+  return "{$: $, k: " + this.l.id + "}";
+};
+
+window.onload=function() {
+  var code = getCode();
+  var run = compile(code);
+  alert(run);
+  run({
+    k: code[0].id,
+    $: {}
+  })
+}
+</script>

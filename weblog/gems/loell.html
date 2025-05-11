@@ -1,0 +1,291 @@
+<html>
+<head>
+<script><!--
+_FP=Function.prototype;
+_FP.scope={};
+_FP.e=function(s) {return this.apply(s['this'], [s['_']])}
+LoellNumber = function(n) {this.value=n}
+_NP=LoellNumber.prototype;
+_NP.e=function(s) {return this};
+_NP.toString=function() {return this.value}
+_NP['+']=function(x) {return new LoellNumber(this.value+x.value)};
+_NP['-']=function(x) {return new LoellNumber(this.value-x.value)};
+_NP['*']=function(x) {return new LoellNumber(this.value*x.value)};
+_NP['div']=function(x) {return new LoellNumber(this.value/x.value)};
+_NP['==']=function(x) {return this.value-x.value==0};
+_NP['!=']=function(x) {return this.value-x.value!=0};
+_SP=String.prototype;
+_SP.e=function(s) {return this};
+_SP['+']=function(s) {return new String(this+s)};
+_SP['==']=function(s) {return this==s};
+_SP['!=']=function(s) {return this!=s};
+
+function OP(method, object, arg1, arg2) {
+ this.method = method;
+ this.object = object;
+ this.arg1 = arg1;
+ this.arg2 = arg2;
+}
+OP.GET=function GET(obj, scope, key) {return obj.e(scope)[key.e(scope)]};
+OP.SET=function SET(obj, scope, key, value) {return obj.e(scope)[key.e(scope)]=value.e(scope)};
+OP.NEW=function NEW(obj, scope) {var f=function() {}; f.prototype=obj.e(scope); var n=new f();n.proto=f.prototype;n.scope=scope;return n};
+OP.EXPR=function EXPR(obj, scope) {obj.scope = scope;return obj};
+OP.EVAL=function EVAL(obj, scope, scopeOp) {return obj.e(scope).e(scopeOp.e(scope))};
+OP.THEN=function THEN(obj, scope, next) {obj.e(scope);return next.e(scope)};
+OP.prototype={
+ e:function(scope) {
+  this.color = 'red';
+  return this.method(this.object, scope, this.arg1, this.arg2)
+ },
+ toString:function() {
+  var s='<span style="color:'+(this.color||'black')+'">'+(''+this.method).match(/function (\w+)/)[1]+'</span>';
+  if (this.object) s+=' '+this.object;
+  if (this.arg1) s+=' '+this.arg1;
+  if (this.arg2) s+='='+this.arg2;
+  return '<div>'+s+'</div>';
+ }
+}
+
+var scope=new OP(function(obj, scope){return scope});
+scope.toString=function(){return '$'}
+
+function debug(s) {
+	document.getElementById('result').innerHTML = code;
+	alert(s);
+}
+
+function run() {
+
+	var source = document.getElementById('source').value;
+	var tokens = tokenize(source);
+	document.getElementById('result').innerHTML = tokens;
+	code = new Parser().parse(tokens);
+	if (code) document.getElementById('result').innerHTML = code;
+	eval('var gl='+document.getElementById('glob').value);
+	try {
+		var value = code.e(gl);
+		document.getElementById('result').innerHTML = 'result: '+value;
+	} catch(e) {
+		alert(e.message);
+		document.getElementById('result').innerHTML = code;
+	}
+}
+
+function Parser() {}
+Parser.prototype={
+	parse:function(tokens) {
+		this.pos = 0;
+		this.tokens = tokens.concat([new Token('_END',null)]);
+		var value = this.exprs();
+		if (this.tokens[this.pos].type!='_END') this.error('Unexpected token');
+		return value;
+	},
+	error:function(message) {
+		var token = this.tokens[this.pos];
+		alert('error: '+message + '\ntoken:' + token.type);
+		throw message;
+	},
+	exprs:function() {
+		var prevValue = null;
+		while (true) {
+			var value = this.expr();
+			if (value == null) return prevValue;
+			prevValue = prevValue?new OP(OP.THEN, prevValue, value):value;
+			if (this.tokens[this.pos].type == ';') this.pos++;
+			else return prevValue;
+		}
+	},
+	expr:function() {
+		var value = this.expr_no_methodcall();
+		while (true) {
+			var token = this.tokens[this.pos];
+			switch (token.type) {
+				case 'ident':
+					// o m expr -> o<>#{m.scope<_=scope.scope#{expr};this=scope.proto>#m}
+					// p.o m= expr -> p<>#{proto.o=o.m.scope<_=scope.scope#{expr};this=scope.proto.o>#o.m}
+					this.pos++;
+					if (this.tokens[this.pos].type=='=') {
+						this.pos++;
+						var set = true;
+						if (value.method!=OP.GET) this.error('Cannot assign to '+value);
+						var prop = value.arg1;
+						value = value.object;
+						var method = new OP(OP.GET, new OP(OP.GET, scope, prop), token.value);
+						var thisValue = new OP(OP.GET, new OP(OP.GET, new OP(OP.GET, scope, 'scope'), 'proto'), prop);
+					} else {
+						var method = new OP(OP.GET, scope, token.value);
+						var thisValue = new OP(OP.GET, new OP(OP.GET, scope, 'scope'), 'proto');
+					}
+					var scope_scope = new OP(OP.GET, new OP(OP.GET, scope, 'scope'), 'scope');
+					var newVal = new OP(OP.EVAL, new OP(OP.EXPR, this.expr_no_methodcall()||0), scope_scope);
+					var exprs = new OP(OP.SET, scope, '_', newVal);
+					exprs = new OP(OP.THEN, exprs, new OP(OP.SET, scope, 'this', thisValue));
+					var s = new OP(OP.NEW, new OP(OP.GET, method, 'scope'));
+					s = new OP(OP.EVAL, new OP(OP.EXPR, new OP(OP.THEN, exprs, scope)), s);
+					var outerExprs = new OP(OP.EVAL, method, s);
+					if (set) outerExprs = new OP(OP.SET, new OP(OP.GET, scope, 'proto'), prop, outerExprs);
+					var expr = new OP(OP.EXPR, outerExprs);
+					value = new OP(OP.EVAL, expr, new OP(OP.NEW, value));
+					break;
+				default:
+					return value;
+			}
+		}
+	},
+	expr_no_methodcall:function() {
+		var token = this.tokens[this.pos];
+		var value;
+		switch (token.type) {
+			case '$':	
+				value = scope;
+				this.pos++;
+				break;
+			case 'ident':
+				value = new OP(OP.GET, scope, token.value);
+				this.pos++;
+				break;
+			case 'string':
+				value = eval(token.value);
+				this.pos++;
+				break;
+			case 'number':
+				value = new LoellNumber(eval(token.value));
+				this.pos++;
+				break;
+			case '{':
+				this.pos++;
+				value = new OP(OP.EXPR, this.exprs());
+				token = this.tokens[this.pos];
+				if (token.type != '}') this.error('"}" expected');
+				this.pos++;
+				break;
+			case '(':
+				this.pos++;
+				value = this.exprs();
+				token = this.tokens[this.pos];
+				if (token.type != ')') this.error('")" expected');
+				this.pos++;
+				break;
+			case '<':
+				value = new OP(OP.GET, scope, '__empty__');
+				break;
+			default:
+				return null;
+		}
+		
+		// expression now has a value
+		while (true) {
+			var token = this.tokens[this.pos];
+			switch (token.type) {
+				case '=':
+					if (value.method!=OP.GET) this.error('Cannot assign to '+value);
+					value.method = OP.SET;
+					this.pos++;
+					value.arg2 = this.expr();
+					break;
+				case '.':
+					this.pos++; token = this.tokens[this.pos];
+					if (token.type != 'ident') this.error('Identifier expected');
+					value = new OP(OP.GET, value, token.value);
+					this.pos++;
+					break;
+				case '[':
+					this.pos++;
+					value = new OP(OP.GET, value, this.exprs());
+					token = this.tokens[this.pos];
+					if (token.type != ']') this.error('"]" expected');
+					this.pos++;
+					break;
+				case '#':
+					this.pos++;
+					value = new OP(OP.EVAL, this.expr(), value);
+					break;
+				case '<':
+					this.pos++;
+					value = new OP(OP.NEW, value)
+					var exprs = this.exprs()
+					if (exprs) 
+						value = new OP(OP.EVAL, new OP(OP.EXPR, new OP(OP.THEN, exprs, scope)), value);
+					token = this.tokens[this.pos];
+					if (token.type != '>') this.error('">" expected');
+					this.pos++;
+					break;
+				default:
+					return value;
+			}
+		}
+	}
+}
+
+function Token(type, value)
+{
+	this.type = type;
+	this.value = value;
+}
+Token.prototype.toString = function() {return this.type+' ('+this.value+')'}
+
+function tokenize(source) {
+	var matches = [
+		{match:/^\/\/[^\n]*\n/, type:'NO_TOKEN'},
+		{match:/^\/\*([^*]*\*)*[^*]*\*\//, type:'NO_TOKEN'},
+		{match:/^\s+/, type:'NO_TOKEN'},
+		{match:/^[\[\]\{\}\(\)\#\$\;\.\\\<\>]/},
+		{match:/^[1-9]\d*(\.\d+)?/, type:'number'},
+		{match:/^0/, type:'number'},
+		{match:/^[A-Za-z_][A-Za-z0-9_]*/, type:'ident'},
+		{match:/^(\=\=|\!\=)/, type:'ident'},
+		{match:/^[\*\+\-\&\^\?\|\/]+/, type:'ident'},
+		{match:/^[\=]/},
+		{match:/^\'([^\'\\]*\\.)*[^\'\\]*\'/, type:'string'},
+		{match:/^\"([^\"\\]*\\.)*[^\"\\]*\"/, type:'string'}
+	];
+	var tokens=[];
+	while (source)
+	{
+		var oldLength = source.length;
+		for (var i=0;i<matches.length;i++)
+		{
+			var m = source.match(matches[i].match);
+			if (m)
+			{
+				var type = matches[i].type || m[0];
+				if (type!='NO_TOKEN') tokens.push(new Token(type, m[0]));
+				source = source.substr(m[0].length);
+				break;
+			}
+		}
+		if (source.length == oldLength) {
+			alert('remaining source:' + source);
+			return tokens;
+		}
+	}
+	return tokens;
+}
+
+--></script>
+</head>
+<body>
+<style>div div {margin-left:1em}</style>
+Code:<br/>
+<textarea style="width:100%" rows="15" id="source">
+if={<
+  true=<then={$<else={this.scope.scope.scope#this._}>}>;
+  false=<then={$<else={this.scope.scope.scope#_}>}>
+>[_]};
+while={<
+  true=<do={s=this.scope.scope;s.this#_;s.this while s._ do _}>;
+  false=<do={0}>
+>[this#_]};
+a=2;
+b=$if (1==2) then {a=3} else {a=4};
+$while {a!=1} do {a-=1;b+=5};
+b
+</textarea>
+Initial Scope: (global)<br/>
+<textarea style="width:100%" rows="4" id="glob">
+{__empty__:{}}
+</textarea>
+<button onclick="run()">run</button>
+<div id="result"></div>
+</body>
+</html>

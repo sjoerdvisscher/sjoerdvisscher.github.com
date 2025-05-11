@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/04/13.xml">
+<head>
+<title>Tuesday, April 13, 2004 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:29:46 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/04/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/04/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/04/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2004/04/03.xml#a243' title='Saturday, April 03, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/04/13.xml">Tuesday, April 13, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/05/07.txt#a245' title='Friday, May 07, 2004'>&#160;&gt;</a></h>
+<a name="a273"></a>
+<section id="a273">
+<h id='googlesGmailCouldBeBlocked'><a href="http://w3future.com/weblog/2004/04/13.xml#a273" class="weblogItemTitle">&#8220;Google&#8217;s Gmail could be blocked&#8221;</a></h>
+<blockquote cite="http://news.bbc.co.uk/2/hi/business/3621169.stm"><p>Gmail, the planned free e-mail service from Google, could be facing strong legal opposition in California.</p><p>Google's plans have already come under fire from privacy campaigners objecting to adverts linked to the content of messages, and to the permanent storage of email. [<a href="http://news.bbc.co.uk/2/hi/business/3621169.stm">BBC News</a>]</p></blockquote>
+<p>I find this <em>so</em> annoying. Gmail should not be cancelled because of this! I think it's time to start an anti privacy lobby:</p>
+<ul>
+<li>It's not up to someone else to decide how much privacy I need.</li>
+<li>Users should be given a choice. Gmail could be available without advertising for a few dollars per month.</li>
+<li>Before signing up to a service, the privacy issues should be explained clearly in plain English. <a href="http://toolbar.google.com/privacy.html">Google has been very good at this.</a></li>
+<li>Privacy campaigners should stop spreading paranoia about privacy issues in new media and instead compare the privacy issues to existing technology (regular mail in this case) so users can draw their own conclusions without having to know the details of the technologies involved.</li>
+</ul>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/04/13.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

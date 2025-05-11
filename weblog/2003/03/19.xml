@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/03/19.xml">
+<head>
+<title>Wednesday, March 19, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:26:20 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/03/19.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/03/19.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/03/19.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/03/17.xml#a175' title='Monday, March 17, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/03/19.xml">Wednesday, March 19, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/03/20.txt#a178' title='Thursday, March 20, 2003'>&#160;&gt;</a></h>
+<a name="a177"></a>
+<section id="a177">
+<h id='picturesOnline'><a href="http://w3future.com/weblog/2003/03/19.xml#a177" class="weblogItemTitle">Pictures online!</a></h>
+<blockquote><ul><li><a href="http://joerimulder.com/scripts/images.phtml?dir=../pictures/2003/basel" >Basel 2003</a></li><li><a href="http://joerimulder.com/scripts/images.phtml?dir=../pictures/2003/visitors" >Visitors in Basel</a></li><li><a href="http://joerimulder.com/scripts/images.phtml?dir=../pictures/2003/melchsee-frutt">Melchsee-Frutt 2003-1</a></li></ul><p>[<a href="http://joeri.mulder.com/?2003_03_01_archive.html%23200010157">Joeri's weblog</a>]</p></blockquote>
+<p>Thanks, Joeri! I enter the story halfway the Basel 2003 page, where it looks like I'm thinking very hard while drinking coffee. But it's just that my eyes are still in winter mode.</p>
+</section><a name="a176"></a>
+<section id="a176">
+<h id='chips'><a href="http://w3future.com/weblog/2003/03/19.xml#a176" class="weblogItemTitle">Chips!</a></h>
+<p>I just spent an hour looking for this document: <a href="http://www.w3.org/TR/2003/NOTE-chips-20030128/">Common HTTP Implementation Problems</a>. I post it here to be able to find it back the next time. With <a href="http://www.google.com">Google</a> I rarely have to search longer than a minute, so I was terribly frustrated I couldn't find it. I even started wondering if I just only dreamt it. It turned out my memory of the document was simply too vague. Maybe if I link to it with my own keywords, the next time it might be ranked a little higher in Google: <a href="http://www.w3.org/TR/2003/NOTE-chips-20030128/">Content Management <acronym title="Uniform Resource Indicator">URI</acronym> design</a>.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/03/19.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - article - element names</TITLE>
+	<META NAME="author" CONTENT="Sjoerd Visscher">
+	<META NAME="keywords" CONTENT="www, world, wide, web, future, examples, tools, programming, functional, data, model, javascript, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic">
+	<META NAME="description" CONTENT="The w3future.com examples page list examples of future web technologies, programmed in javascript.">
+	<SCRIPT src="/w3f/w3f.js"></SCRIPT>
+	<STYLE>
+		@import "/w3f/w3f.css";
+	</STYLE>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>
+document.write('<TD>'+createButton({style:'tab',content:'Weblog',go:'/weblog'})+'</TD>');
+document.write('<TD>&nbsp;</TD><TD>'+createButton({style:'tab',content:'Examples',go:'/html/tools.html'})+'</TD>');
+</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar-container" width="100%">
+<TR><TD>
+
+<TABLE cellpadding=0 cellspacing=0 class="sidebar" width="100%">
+<TR><TD class="sidebar-header">
+Links
+</TD></TR>
+<SCRIPT>
+document.write('<TR><TD>'+createButton({style:'button2',content:'Robin Cover',gonew:'http://xml.coverpages.org/elementsAndAttrs.html'})+'</TD></TR>');
+</SCRIPT>
+</TABLE>
+
+</TD></TR>
+</TABLE>
+
+</TD><TD id="content">
+<h1>Element Names</h1>
+<p>Second Draft</p>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%">
+<TR><TD>
+
+<h2>Introduction</h2>
+<p>It seems that about every branche in the IT industry has adopted XML.
+Each branch has been able to serialize its own data model into the same syntax.
+This has only been possible thanks to the enormous flexibility of XML.
+But this flexibility has it's downside. Each branch still uses its own data model
+and it's rare that a program from one branch can read XML from another branch,
+without a transformation.</p>
+<p>What exactly is so flexible about XML? Nowhere in XML is implied what role
+each part of the syntax plays in a data model. This makes sense because XML
+is language independant and can not know what kind of data models are available.
+To be able to access all XML files in a unified way, the Document Object Model
+is introduced. The DOM provides an interface to the XML data, and so hides the
+underlying data model. However, this is a nuisance, particularly to scripters,
+who use a programming style that heavily relies on the available built-in 
+functions that only operate on the built-in data structures.</p>
+<p>The part of XML that has been used in the most inconsistent way is the
+element name. We will list the various ways element names can be used in
+serializing data types, decide which is the best way, and finally creating
+a rule how to consistently use element names.</p>
+
+<h2>XML syntax for various data types</h2>
+<p>So how can XML syntax be (ab)used to serialize data?
+Scalar types are fairly obvious. (And when it's not obvious, it's not within the
+scope of this article.) Structural types are more interesting.
+When XML is concerned, there are only 2 significantly different structural types:
+the <b>list</b> structure and the <b>map</b> structure.
+In programming we find the list structure in f.e. normal (ordinal) arrays, tuples
+and database rows. Examples of map structures are associative arrays, dictionaries,
+records, structs and database columns.
+
+
+</TD><TD id="note">
+&nbsp;
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>
+</TD></TR></TABLE>
+
+<SCRIPT>initButtons()</SCRIPT>
+</BODY>
+</HTML>

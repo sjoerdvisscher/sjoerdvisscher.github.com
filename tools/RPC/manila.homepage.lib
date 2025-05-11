@@ -1,0 +1,12 @@
+<?
+include_once("../db.inc");
+
+function setMultiple($username, $password, $siteName, $dateList, $homePageTextList) {
+	$l=sizeof($dateList);
+	for ($i=0;$i<$l;$i++) {
+		$s='weblog/'.$dateList[$i]->format("Ymd");
+		mysql_query("DELETE FROM rdf WHERE s='$s' AND (p='html' OR p='fileText')");
+		mysql_query("INSERT INTO rdf SET s='$s', p='html', o='".addslashes($homePageTextList[$i])."'");
+	}
+}
+?>

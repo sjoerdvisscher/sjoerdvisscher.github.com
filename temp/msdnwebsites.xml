@@ -1,0 +1,42 @@
+<FL:smarttaglist xmlns:FL="urn:schemas-microsoft-com:smarttags:list">
+<FL:name>MSDN General Web Sites</FL:name> 
+<FL:lcid>1033</FL:lcid> 
+<FL:description>A list of MSDN Web site related terms for recognition, as well as a set of actions that work with them.</FL:description> 
+<FL:moreinfourl>http://msdn.microsoft.com/default.asp</FL:moreinfourl>
+<FL:smarttag type="urn:schemas-microsoft-com:smarttags#msdngenwebsites">
+<FL:caption>MSDN General Web Sites</FL:caption> 
+<FL:terms>
+	<FL:termlist>code, developer, developers, msdn, office, online, vba, visual basic</FL:termlist>
+</FL:terms>
+<FL:actions>
+	<FL:action id="MainWebSite">
+		<FL:caption>&amp;MSDN Online</FL:caption> 
+		<FL:url>http://msdn.microsoft.com/default.asp</FL:url> 
+	</FL:action>
+	<FL:action id="MagazineWebSite">
+		<FL:caption>MSDN &amp;Online Magazines</FL:caption> 
+		<FL:url>http://msdn.microsoft.com/resources/magazines.asp</FL:url>
+	</FL:action>
+ 	<FL:action id="LibrariesWebSite">
+      		<FL:caption>MSDN Online &amp;Libraries</FL:caption> 
+   		<FL:url>http://msdn.microsoft.com/resources/libraries.asp</FL:url>
+      	</FL:action>
+	<FL:action id="DevCentersWebSite">
+      		<FL:caption>MSDN &amp;Developer Centers</FL:caption> 
+   		<FL:url>http://msdn.microsoft.com/resources/devcenters.asp</FL:url>
+      	</FL:action>
+	<FL:action id="ResourceWebSite">
+      		<FL:caption>&amp;Addtional MSDN Online Resources</FL:caption> 
+   		<FL:url>http://msdn.microsoft.com/resources/</FL:url>
+      	</FL:action>
+	<FL:action id="DownloadWebSite">
+      		<FL:caption>MSDN Online Do&amp;wnloads</FL:caption> 
+   		<FL:url>http://msdn.microsoft.com/downloads/default.asp</FL:url>
+      	</FL:action>
+	<FL:action id="SearchMSDN">
+      		<FL:caption>MSDN Online &amp;Search</FL:caption> 
+   		<FL:url>http://search.microsoft.com/us/dev/default.asp</FL:url>
+      	</FL:action>
+</FL:actions>
+</FL:smarttag>
+</FL:smarttaglist>

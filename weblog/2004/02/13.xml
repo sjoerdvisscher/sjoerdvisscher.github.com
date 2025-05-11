@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/02/13.xml">
+<head>
+<title>Friday, February 13, 2004 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:29:40 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/02/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/02/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/02/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2004/02/10.xml#a241' title='Tuesday, February 10, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/02/13.xml">Friday, February 13, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/04/03.txt#a243' title='Saturday, April 03, 2004'>&#160;&gt;</a></h>
+<a name="a271"></a>
+<section id="a271">
+<h id='liberalXmlParsingRelatedToPersonality'><a href="http://w3future.com/weblog/2004/02/13.xml#a271" class="weblogItemTitle">Liberal XML parsing related to personality?</a></h>
+<p>The heat of the discussion on liberal XML parsing has subsided, so this is actually a little late. That's because I wasn't sure if I should post this. But <a href="http://archive.scripting.com/2004/02/12#When:10:44:01AM">a post by Dave Winer today</a> convinced me to post it anyway. Let me just say up front that I could be completely wrong.</p>
+<p>First let me quote <a href="http://www.w3.org/TR/2004/REC-xml-20040204/#dt-fatal">the definition of a fatal error in the XML recommendation</a>:</p>
+<blockquote cite="http://www.w3.org/TR/2004/REC-xml-20040204/#dt-fatal"><p>An error which a conforming XML processor MUST detect and report to the application. After encountering a fatal error, the processor MAY continue processing the data to search for further errors and MAY report such errors to the application. In order to support correction of errors, the processor MAY make unprocessed data from the document (with intermingled character data and markup) available to the application. Once a fatal error is detected, however, the processor MUST NOT continue normal processing (i.e., it MUST NOT continue to pass character data and information about the document's logical structure to the application in the normal way).</p></blockquote>
+<p>RSS and Atom are both XML file formats, they do not accidentally look like XML. Thus according to the XML specification, aggregators are not allowed to try to show broken feeds. If you are doing liberal XML parsing, <em>you are not playing by the rules</em>.</p>
+<p>A lot of people are parsing feeds, or are planning to do so. Most of them do so because they want to do something interesting with the data, it might be an aggregator, but it could also be some cool new application. What they certainly are not interested in is the technology of parsing itself. They simply want to use one of the abundantly available XML parsers. Now there are two ways to do feed parsing. One is to only allow proper XML and patiently educate feed producers who do not use the proper XML tools how to improve. (And almost all feed producers are willing to produce valid XML, but they are not helped enough to actually do that.) The other way is to liberally parse anything that vaguely resembles XML and spoil the fun of using feeds for everybody else. If you are doing liberal XML parsing, <em>you are being inconsiderate</em>.</p>
+<p>Now there are only <a href="http://diveintomark.org/">two</a> <a href="http://www.cincomsmalltalk.com/blog/blogView">blogs</a> that I have stopped to be subscribed to because the level of ranting was simply too annoying. The owners of those blogs also happen to be two very vocal advocates of liberal XML parsing.</p>
+<p>But this could just be a coincidence.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/02/13.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

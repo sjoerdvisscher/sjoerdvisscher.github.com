@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+	<TITLE>Quick Sort</TITLE>
+</HEAD>
+<BODY>
+	Quick sort an array of numbers
+</BODY>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT>
+		_AP.qsort = Array.recurse(function(head, tail) {
+			var elts_greq = [];
+			var elts_lt = tail.filter(function(v) { return v < head; }, elts_greq);
+			return elts_lt.qsort().concat(head, elts_greq.qsort());
+		});
+		[ 5, 3, 4, 2, 1 ].qsort().foreach(alert);
+	</SCRIPT>
+</HTML>

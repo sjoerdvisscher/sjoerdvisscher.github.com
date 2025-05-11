@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/02/22.xml">
+<head>
+<title>Tuesday, February 22, 2005 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:30:24 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2005/02/22.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2005/02/22.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/02/22.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2005/01/13.xml#a254' title='Thursday, January 13, 2005'>&lt;&#160;</a><a href="http://w3future.com/weblog/2005/02/22.xml">Tuesday, February 22, 2005</a><a rel='next' href='http://w3future.com/weblog/2005/03/07.txt#a256' title='Monday, March 07, 2005'>&#160;&gt;</a></h>
+<a name="a284"></a>
+<section id="a284">
+<h id='theEssentialDifferenceBetweenSmarttagsAndAutolink'><a href="http://w3future.com/weblog/2005/02/22.xml#a284" class="weblogItemTitle">The essential difference between SmartTags and AutoLink</a></h>
+<p>I can't believe I'm joining this discussion, but everywhere I read about Google's AutoLink, I never see the essential detail that Google did right: links are only added after the user pressed the AutoLink button. It's not a toggle button, you have to press the button every time you visit a new page for the links to show up.</p>
+<blockquote cite="http://www.thetwowayweb.com/2005/02/22#a272"><p>However, even if Google used a different style of link, we'd still object. Readers probably wouldn't understand the distinction, and it's virtually certain that in a future version of the software the distinction would be removed. <a href="http://www.thetwowayweb.com/2005/02/22#a272">Dave Winer (Draft)</a></p></blockquote>
+<p>The way Google built AutoLink, readers will almost certainly understand the distinction: There are the links that are already there, and the links that show up after the reader presses the AutoLink button. The toolbar doesn't change the content, but the user does: he specifically has to request the links to be added, again and again on every page.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/02/22.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/08/08.xml">
+<head>
+<title>Thursday, August 08, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:22:59 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/08/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/08/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/08/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/08/07.xml#a117' title='Wednesday, August 07, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/08/08.xml">Thursday, August 08, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/08/09.txt#a119' title='Friday, August 09, 2002'>&#160;&gt;</a></h>
+<a name="a118"></a>
+<section id="a118">
+<h id='imagesAddedToTheXhtml20Page'><a href="http://w3future.com/weblog/2002/08/08.xml#a118" class="weblogItemTitle">Images added to the XHTML 2.0 page</a></h>
+<p>Some more info for those who'd like to start using XHTML 2.0 for every day use. <a href="http://w3future.com/weblog/gems/xhtml2.xml">The XHTML 2.0 example page</a> is for the browsers plain XML. So absolutely nothing works what you'd expect from normal HTML. Every functionality has to be explained to the browser. CSS makes it easy to provide the site layout. Yesterday I coded the link functionality. Today I added support for images in Mozilla and Opera 6. But don't expect to be able to add an input element any time soon.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/08/08.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

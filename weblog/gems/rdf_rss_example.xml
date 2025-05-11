@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://weblog.burningbird.net/">
+<title>Burningbird</title>
+<link>http://weblog.burningbird.net/</link>
+<description></description>
+
+<items rdf:parseType="Collection">
+
+<item rdf:about="http://weblog.burningbird.net/archives/000514.php">
+<link>http://weblog.burningbird.net/archives/000514.php</link>
+<title>Myths about RDF/RSS</title>
+<description>Lots of discussion about the direction that RSS is going to take, which I think is good. However, the first thing that
+happens any time a conversation about RSS occurs is people start questioning the use of RDF within the...</description>
+<dc:subject>Technology</dc:subject>
+<dc:creator>shelley</dc:creator>
+<dc:date>2002-09-06T00:53:16-06:00</dc:date>
+</item>
+
+<item rdf:about="http;//weblog.burningbird.net/archives/000515.php">
+<link>http://weblog.burningbird.net/archives/000515.php</link>
+<title>ThreadNeedle Status</title>
+<description>I provided a status on ThreadNeedle at the QuickTopic discussion group. I wish I had toys for you to play with, but no
+such luck. To those who were counting on this technology, my apologies for not having it for...</description>
+<dc:subject>Technology</dc:subject>
+<dc:creator>shelley</dc:creator>
+<dc:date>2002-09-06T00:19:28-06:00</dc:date>
+</item>
+
+</items>
+
+</channel>
+
+</rdf:RDF>

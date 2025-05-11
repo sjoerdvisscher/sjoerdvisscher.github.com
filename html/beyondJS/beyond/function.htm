@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+	<TITLE>Function Samples</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+</HEAD>
+<BODY>
+	Function Samples
+</BODY>
+<SCRIPT>
+
+function twofold(x) {
+	return x + x;
+}
+
+// sequence
+twofold.andThen(alert)("hello");
+
+function multi(n, x) {
+	var s = x;
+	(n-1).times(function() { s += x; });
+	return s;
+}
+
+// bind argument to value (left to right)
+var triple = multi.curry(3);
+triple.andThen(alert)("X");
+
+// bind argument by name
+var space = multi.curry({ x : " " });
+alert("hello" + space(4) + "world");
+
+// bind argument from right to left
+var space2 = multi.curry({ "-1" : " " });
+alert("hello" + space2(32) + "world");
+
+function X(v) {
+	this.v = v;
+	this.display = function() {
+		alert(this.v);
+	}
+}
+var x = new X("hi from X");
+
+// invoke method as function
+var f = Function.from(x, "display");
+f();
+alert(f.field);
+
+// another sample
+var dec = Function.from("0123456789ABCDEF", "indexOf");
+alert(dec("B"));
+
+// bind method (as function) to event
+document.onclick = f;
+
+// delayed function activation
+twofold.andThen(alert).delay(3000)("bye");
+
+</SCRIPT>
+</HTML>

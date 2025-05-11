@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2008/06/16.xml">
+<head>
+<title>Monday, June 16, 2008 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2008/06/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2008/06/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2008/06/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2008/06/16.xml">Monday, June 16, 2008</a></h>
+<a name="a300"></a>
+<section id="a300">
+<h id='AlgebraicDataTypesinJavaScript'><a href="http://w3future.com/weblog/2008/06/16.xml#a300" class="weblogItemTitle">Algebraic Data Types in JavaScript</a></h>
+<p>Since the weblog system for this site broke down, and I have to manually update all pages, not much is happening here.
+  I hope however that some people are still subscribed. If you are reading this then you are probably one of them.</p>
+<p>The reason I am posting again is that I have written a bit of JavaScript 1.8 recently. 
+  <a href="http://ejohn.org/blog/javascript-18-progress/">John Resig was right</a>, 
+  the new expression closures syntax did tickle me. Functional code looks so much nicer!</p>
+<p>The code is a library to work with algebraic data types, which takes some explaining, so
+  <a href="http://w3future.com/weblog/stories/2008/06/16/adtinjs.xml">read more here</a>.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2008/06/16.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

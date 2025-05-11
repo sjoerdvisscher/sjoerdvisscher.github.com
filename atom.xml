@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?>
+
+<feed version="0.3" xmlns="http://purl.org/atom/ns#">
+<link href="http://www.blogger.com/atom/3171313" rel="service.post" title="w3future.com" type="application/x.atom+xml"/>
+<link href="http://www.blogger.com/atom/3171313" rel="service.feed" title="w3future.com" type="application/x.atom+xml"/>
+<title mode="escaped" type="text/html">w3future.com</title>
+<tagline mode="escaped" type="text/html">this is a Blogger test site with an XHTML 2.0 template</tagline>
+<link href="http://w3future.com/" rel="alternate" title="w3future.com" type="text/html"/>
+<id>tag:blogger.com,1999:blog-3171313</id>
+<modified>2004-04-25T16:40:56Z</modified>
+<generator url="http://www.blogger.com/" version="5.15">Blogger</generator>
+<info mode="xml" type="text/html">
+<div xmlns="http://www.w3.org/1999/xhtml">This is an Atom formatted XML site feed. It is intended to be viewed in a Newsreader or syndicated to another site. Please visit the <a href="http://help.blogger.com/bin/answer.py?answer=697">Blogger Knowledge Base</a> for more info.</div>
+</info>
+<entry>
+<link href="http://www.blogger.com/atom/3171313/108291125598679616" rel="service.edit" title="Testing..." type="application/x.atom+xml"/>
+<author>
+<name>Sjoerd Visscher</name>
+</author>
+<issued>2004-04-25T09:40:55-07:00</issued>
+<modified>2004-04-25T16:45:00Z</modified>
+<created>2004-04-25T16:45:00Z</created>
+<link href="#108291125598679616" rel="alternate" title="Testing..." type="text/html"/>
+<id>tag:blogger.com,1999:blog-3171313.post-108291125598679616</id>
+<title mode="escaped" type="text/html">Testing...</title>
+<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<div xmlns="http://www.w3.org/1999/xhtml">Testing...</div>
+</summary>
+</entry>
+<entry>
+<link href="http://www.blogger.com/atom/3171313/83312835" rel="service.edit" title="Another test post.&#10;A couple of New Jersey hunters..." type="application/x.atom+xml"/>
+<author>
+<name>Sjoerd Visscher</name>
+</author>
+<issued>2002-10-21T13:06:29-07:00</issued>
+<modified>2002-10-21T20:23:59Z</modified>
+<created>2002-10-21T20:06:29Z</created>
+<link href="#83312835" rel="alternate" title="Another test post.&#10;A couple of New Jersey hunters..." type="text/html"/>
+<id>tag:blogger.com,1999:blog-3171313.post-83312835</id>
+<title mode="escaped" type="text/html">Another test post.&#13;
+A couple of New Jersey hunters...</title>
+<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<div xmlns="http://www.w3.org/1999/xhtml">Another test post.
+A couple of New Jersey hunters are out in the woods when one of them falls to the ground. He doesn't seem to be breathing, his eyes are rolled back in his head. The other guy whips out his cell phone and calls the emergency services. He gasps to the operator: "My friend is dead! What can I do?" The operator, in a calm soothing voice says: "Just take it easy. I can help. First,</div>
+</summary>
+</entry>
+<entry>
+<link href="http://www.blogger.com/atom/3171313/83309075" rel="service.edit" title="XHTML 2.0 template&#10;I have created an XHTML 2.0 te..." type="application/x.atom+xml"/>
+<author>
+<name>Sjoerd Visscher</name>
+</author>
+<issued>2002-10-21T11:42:02-07:00</issued>
+<modified>2002-10-21T20:24:19Z</modified>
+<created>2002-10-21T18:42:02Z</created>
+<link href="#83309075" rel="alternate" title="XHTML 2.0 template&#10;I have created an XHTML 2.0 te..." type="text/html"/>
+<id>tag:blogger.com,1999:blog-3171313.post-83309075</id>
+<title mode="escaped" type="text/html">XHTML 2.0 template&#13;
+I have created an XHTML 2.0 te...</title>
+<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<div xmlns="http://www.w3.org/1999/xhtml">XHTML 2.0 template
+I have created an XHTML 2.0 template for Blogger. It works quite nicely. There's only one empty section at the top.</div>
+</summary>
+</entry>
+<entry>
+<link href="http://www.blogger.com/atom/3171313/7542245" rel="service.edit" title="Watch out!&#10;A test" type="application/x.atom+xml"/>
+<author>
+<name>Sjoerd Visscher</name>
+</author>
+<issued>2001-11-30T15:01:18-08:00</issued>
+<modified>2002-10-21T20:24:40Z</modified>
+<created>2001-11-30T23:01:18Z</created>
+<link href="#7542245" rel="alternate" title="Watch out!&#10;A test" type="text/html"/>
+<id>tag:blogger.com,1999:blog-3171313.post-7542245</id>
+<title mode="escaped" type="text/html">Watch out!&#13;
+A test</title>
+<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<div xmlns="http://www.w3.org/1999/xhtml">Watch out!
+A test</div>
+</summary>
+</entry>
+</feed>

@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+	<TITLE>Inheritance</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+</HEAD>
+<BODY>
+Test
+</BODY>
+<SCRIPT>
+/*
+function a() { return "a"; }
+function b() { return "b"; }
+
+alert(a.gate(true)());
+alert(a.gate(false)());
+
+alert(a.gate(true, b)());
+alert(a.gate(false, b)());
+
+alert(a.gate(Function.NOP, b)(true));
+alert(a.gate(Function.NOP, b)(false));
+*/
+
+function a() { alert("a"); }
+function b() { alert("b"); }
+
+a.loop(false)();
+b.loop(3)();
+
+function c() { return confirm("continue"); }
+function d(x) { alert(x); }
+
+d.loop(c)("d");
+
+function e() {
+	if ( confirm("stop") ) return true;
+}
+e.loop()();
+
+</SCRIPT>
+</HTML>

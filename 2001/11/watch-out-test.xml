@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://w3future.com/weblog/gems/xhtml2.xsl" ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xml:lang="en">
+<head>
+  <title>w3future.com</title>
+  <link rel="stylesheet" type="text/css" href="http://w3future.com/weblog/gems/xhtml2b.css" />
+</head>
+<body>
+<h id="pagetitle">w3future.com</h>
+
+<section id="content">
+	<h>w3future.com</h>
+	<p>this is a Blogger test site with an XHTML 2.0 template</p>
+
+	<section>
+	</section>
+
+	<section>
+		<h>Friday, November 30, 2001</h>
+		<section id="7542245">
+			<h>Watch out!</h>
+<p>A test</p>
+		</section>
+
+	</section>
+
+</section>
+<section id="footer">
+	<p>&#x00A9; Copyright 2002 <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="http://w3future.com/">w3future.com</a></p>
+</section>
+
+<div id="navigation"> 
+	<nl>
+		<name>w3future.com</name>
+		<li href='http://w3future.com/weblog/'>Weblog</li>
+		<li href='http://w3future.com/html/examples.html'>Examples</li>
+		<li href='http://w3future.com/html/stories/'>Articles</li>
+		<li href='http://w3future.com/html/download.html'>Downloads</li>
+	</nl>
+</div>
+
+<div id="sidebar">
+	<nl>
+		<name>What I read</name>
+		<li href='http://diveintomark.org/'>Dive into Mark</li>
+		<li href='http://www.joelonsoftware.com/'>Joel on Software</li>
+		<li href='http://radio.weblogs.com/0100887/'>Jon Udell</li>
+		<li href='http://lambda.weblogs.com/'>Lambda the Ultimate</li>
+		<li href='http://markpasc.org/blog/'>markpasc_blog</li>
+		<li href='http://radio.weblogs.com/0101679/'>Sam Ruby</li>
+		<li href='http://www.scripting.com/'>Scripting News</li>
+		<li href='http://www.xmlhack.com/'>XMLHack</li>
+		<li href='http://w3future.com/html/weblogsources.html'><strong>All sources</strong></li>
+	</nl>
+	<nl>
+		<name>Friends/Family</name>
+		<li href='http://joeri.mulder.com/'>Joeri</li>
+		<li href='http://www.maggerydoo.net/'>Marco</li>
+		<li href='http://uitdeschaduw.blogspot.com/'>Jelle</li>
+		<li href='http://www.q42.nl/'>Q42</li>
+	</nl>
+</div>
+
+</body>
+</html>

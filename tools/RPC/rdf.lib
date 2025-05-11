@@ -1,0 +1,37 @@
+<?
+
+function getDescription($res,$deep=false) {
+	$r = new resultSet("SELECT DISTINCT * FROM rdf WHERE s='".addslashes($res)."'");
+	$d = array();
+	while ($r->findItem()) {
+		$o=$r->val('o');
+		if ($deep&&strstr($o,'/')) {
+			$o2=getDescription($o,true);
+			if (sizeof($o2)>0) $o=$o2;
+		}
+		$d[$r->val('p')]=$o;
+	}
+	return $d;
+}
+
+function getRows($columns="*",$where=false,$order="s") {
+	$q = "SELECT DISTINCT $columns FROM rdf";
+	if ($where) $q.=' WHERE '.$where;
+	$q.=' ORDER BY '.$order;
+	$r = new resultSet($q);
+	$a = array();
+	while ($r->findItem()) $a[]=$r->row;
+	return $a;
+}
+
+function getList($column="s",$where=false,$order="a") {
+	$q = "SELECT DISTINCT $column AS a FROM rdf";
+	if ($where) $q.=' WHERE '.$where;
+	$q.=' ORDER BY '.$order;
+	$r = new resultSet($q);
+	$a = array();
+	while ($r->findItem()) $a[]=$r->val('a');
+	return $a;
+}
+
+?>

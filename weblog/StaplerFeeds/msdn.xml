@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.2.6" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>MSDN (this feed is dead)</title>
+		<description>Microsoft Developer Network news</description>
+		<link>http://msdn.microsoft.com/</link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Mon, 31 Mar 2003 23:55:04 GMT</lastBuildDate>
+		<item>
+			<description>I'm no longer providing this service, because &lt;a href="http://www.gotdotnet.com/team/tewald/default.aspx?key=2003-04-01T06:03:44Z">Microsoft now has their own rss feeds&lt;/a>.</description>
+			<link>http://www.gotdotnet.com/team/tewald/default.aspx?key=2003-04-01T06:03:44Z</link>
+			<title>MSDN has its own rss feed now.</title>
+			</item>
+		</channel>
+	</rss>

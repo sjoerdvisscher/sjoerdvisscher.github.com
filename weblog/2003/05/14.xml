@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/05/14.xml">
+<head>
+<title>Wednesday, May 14, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:27:10 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/05/14.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/05/14.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/05/14.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/05/13.xml#a197' title='Tuesday, May 13, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/05/14.xml">Wednesday, May 14, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/05/19.txt#a199' title='Monday, May 19, 2003'>&#160;&gt;</a></h>
+<a name="a227"></a>
+<section id="a227">
+<h id='css3GeneratedAndReplacedContentModuleCallForComments'><a href="http://w3future.com/weblog/2003/05/14.xml#a227" class="weblogItemTitle">CSS3 Generated and Replaced Content Module: Call For Comments</a></h>
+<blockquote cite="http://ln.hixie.ch/?start=1052929571&amp;count=1"><p>The first draft of the <a href="http://www.w3.org/TR/css3-content/">CSS3 Generated and Replaced Content Module</a> was published today on <a href="http://www.w3.org/TR/">the W3C Technical Reports page</a> as a Working Draft. I am therefore now soliciting comments and discussions of this draft. Please send your review comments to the <a
+href="http://www.w3.org/Mail/Lists.html#www-style">www-style public mailing list</a> (<a
+href="http://lists.w3.org/Archives/Public/www-style/">archived</a>) (see <a
+href="http://www.w3.org/Mail/Request">subscription instructions</a>). [<a href="http://ln.hixie.ch/?start=1052929571&amp;count=1">Hixie's Natural Log</a>]</p></blockquote>
+<p>Yummy...</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/05/14.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

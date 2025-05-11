@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='http://w3future.com/tools/necho2rss091.xsl' ?>
+<feed xml:lang="none" version="0.2" xmlns="http://purl.org/atom/ns#">
+	<title>Test RSS File</title>
+	<tagline>Oh the buzzing of the bees</tagline>
+	<link>http://www.scripting.com/</link>
+	<modified>2003-08-06T23:30:27Z</modified>
+	<author>
+		<name>Sjoerd Visscher</name>
+		<url>http://w3future.com/people/sjoerd_visscher/</url>
+		<email>sjoerd@w3future.com</email>
+		</author>
+	<generator name="Radio UserLand v8.0.8>http://radio.userland.com/</generator>
+	<entry>
+		<title>The semantic web is dangerous</title>
+		<summary>I went to see Terminator 3 with the Xopus team. Afterwards we had some discussion about machine intelligence, not about the movie itself. That's usually a sign of a good movie.
+On a related subject, Gregor linked to The Second Renaissance, a history of the world before the Matrix was created. &#x2026;</summary>
+		<modified>2003-08-03T23:08:48Z</modified>
+		<issued>2003-08-04T01:08:48+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>I went to see <a href="http://us.imdb.com/Title?0181852">Terminator 3</a> with the <a href="http://xopus.com">Xopus</a> team. Afterwards we had some discussion about machine intelligence, not about the movie itself. That's usually a sign of a good movie.</p>
+<p>On a related subject, <a href="http://greg.abstrakt.ch/archives/000312.html">Gregor linked</a> to <a href="http://www.intothematrix.com/rl_cmp/animatrix_site_ep1_480.html">The Second Renaissance</a>, a history of the world before the Matrix was created. Like the Terminator movies, this gave me the feeling that machines will always win, they simply have a evolutionary advantage. Lon told me that <a href="http://www.tecsoc.org/innovate/focusbilljoy.htm">Bill Joy has the same ideas</a>. He even recommended that scientists halt potentially dangerous research. In a certain way, Terminator 3 shows that the Semantic Web is the biggest danger. We should stop developing it!</p>
+<p>I'm not even sure if I should say that I'm only kidding.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>On Resources</title>
+		<summary>Tim Bray has posted his view on resources. He asks in what way the TAG should deal with them. He gives two unsatifactory options: either don't mention them at all, or say that the nature of resources is outside of the scope of the Architecture document. Here's my take on this. &#x2026;</summary>
+		<modified>2003-07-26T02:15:12Z</modified>
+		<issued>2003-07-26T04:15:12+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://www.tbray.org/ongoing/When/200x/2003/07/24/HTTP-14">Tim Bray has posted his view on resources</a>. He asks in what way the TAG should deal with them. He gives two unsatifactory options: either don't mention them at all, or say that the nature of resources is outside of the scope of the Architecture document. Here's my take on this.</p>
+<p>First we should collect minimal requirements about resources and URIs, <a href="http://www.w3.org/DesignIssues/Axioms">the axioms of the web</a>. Let's start with this one:</p>
+<ul><li>A URI identifies a resource.</li></ul>
+<p>It's a simple axiom, but actually very powerful. For example, this means that every resource for which a URI exists has an infinite life span: A URI is a string, and a string has an infinite life span. (Just like any number will always exist) As each URI maps to a resource, the resource must have an infinite life span too. This means f.e. that HTTP's <code>410 GONE</code> means that there are no more representations available for the resource, not that the resource doesn't exist anymore. This is all the result of this one axiom. Let's do another axiom:</p>
+<ul><li>Information about the nature of a resource that has a URI can only either be obtained by dereferencing its URI or simply declared to be true.</li></ul>
+<p>You can not for example look at the content of the URI for more information. Also, each time a URI is dereferenced, more information about the resource is known. But as a resource has an infinite life span, we can never know everything about the resource. So because we can never know the exact nature of a resource, it is enough to define it as everything there is to know about that resource:</p>
+<ul><li>A resource is the collection of all results of all possible dereferencing methods at any time of its URI combined with all that is simply declared to be true about that resource.</li></ul>
+<p>If we don't like this conclusion then we should choose other axioms.</p>
+<p>(It's very late, and it is very well possible that my logic is flawed. It certainly isn't solid enough to be called a proof.)</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>A stable RSS</title>
+		<summary>At some point, I hope RSS stabilizes, people stop fighting over it, and just let it be. It's very useful, really very simple, and it belongs to users, not techies. It's unique in that regard, most XML specs are incomprehensible to people who use the stuff. &#x2026;</summary>
+		<modified>2003-07-19T18:45:13Z</modified>
+		<issued>2003-07-19T20:45:13+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><blockquote cite="http://scriptingnews.userland.com/stories/storyReader$2115"><p>At some point, I hope RSS stabilizes, people stop fighting over it, and just let it be. It's very useful, really very simple, and it belongs to users, not techies. It's unique in that regard, most XML specs are incomprehensible to people who use the stuff. RSS is quite comprehensible, by design. [<a href="http://scriptingnews.userland.com/stories/storyReader$2115">Dave Winer</a>]</p></blockquote>
+<p>I'm not really following the software industry long enough to say, but it seems to me that every format either evolves or becomes obsolete. Am I wrong here? If I'm not, is there something different about RSS that this rule doesn't apply?</p>
+<p><em>Update:</em> After getting some feedback I realized I meant superseded, not obsolete.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Xopus response</title>
+		<summary>Working on Xopus is really fun and challenging, but when you read this then you know that's really why you don't mind working long hours.</summary>
+		<modified>2003-07-18T11:31:55Z</modified>
+		<issued>2003-07-18T13:31:55+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>Working on <a href="http://xopus.com">Xopus</a> is really fun and challenging, but when you read <a href="http://blogs.hippowebworks.com/hippo/archives/000037.html">this</a> then you know that's really why you don't mind working long hours.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>New SVG 1.2 Public Draft</title>
+		<summary>Antoine Quint announced the release of a new SVG draft. Rendering Custom Content (RCC) is great. I'm looking forward to the examples. I want an SVG only version of my site, but it has to be a quick, easy and elegant job to do. Some server side XSLT, frameworking the layout with RCC and styling with CSS sounds attractive.</summary>
+		<modified>2003-07-15T21:19:22Z</modified>
+		<issued>2003-07-15T23:19:22+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://groups.yahoo.com/group/svg-developers/message/31701">Antoine Quint announced the release of a new SVG draft.</a> Rendering Custom Content (RCC) is great. I'm looking forward to the examples. I want an SVG only version of my site, but it has to be a quick, easy and elegant job to do. Some server side XSLT, frameworking the layout with RCC and styling with CSS sounds attractive.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>You just have to know where to look</title>
+		<summary>Note to self: If something bugs you in Radio Userland, it is usually very easy to fix. The shortcuts weren't expanded in the RSS feed, so I posted a message on de discussion board. Steve Hooker was a great help, and in the meantime I learnt to fix something else that had even annoyed me more the last few years: activeURLs and autoParagraphs. &#x2026;</summary>
+		<modified>2003-07-12T19:42:59Z</modified>
+		<issued>2003-07-12T21:42:59+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>Note to self: If something bugs you in Radio Userland, it is usually very easy to fix. The shortcuts weren't expanded in the RSS feed, so <a href="http://radio.userland.com/discuss/msgReader$26241">I posted a message on de discussion board</a>. Steve Hooker was a great help, and in the meantime I learnt to fix something else that had even annoyed me more the last few years: activeURLs and autoParagraphs. It turns out that it is enough to add this to #prefs.txt:</p>
+<pre>
+#activeURLs false
+#autoParagraphs false
+</pre></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Echo feed available</title>
+		<summary>Yesterday Dave Winer added support for Echo to Radio Userland's aggregator. Today I did the same, but at the other end. My Radio Userland now emits an Echo feed. The RSS feed is now created by transforming the Echo feed, using this XSLT transformation.</summary>
+		<modified>2003-07-12T17:16:18Z</modified>
+		<issued>2003-07-12T19:16:18+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>Yesterday <a href="http://scriptingnews.userland.com/2003/07/11#When:5:35:28PM">Dave Winer added support for Echo to Radio Userland's aggregator</a>. Today I did the same, but at the other end. My Radio Userland now emits <a href="http://w3future.com/weblog/rss.xml?notransform">an Echo feed</a>. <a href="http://w3future.com/weblog/rss.xml">The RSS feed</a> is now created by transforming the Echo feed, using <a href="http://w3future.com/tools/necho2rss091.xsl">this XSLT transformation</a>.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Q42 is hiring</title>
+		<summary>If you like what Q42 is doing, then now is the chance to join us. Q42 biedt een uitdaging aan. (You need to be able to read Dutch).</summary>
+		<modified>2003-07-12T13:00:18Z</modified>
+		<issued>2003-07-12T15:00:18+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>If you like what <a href="http://q42.nl">Q42</a> is doing, then now is the chance to join us. <a href="http://www.q42.nl" xml:lang="nl">Q42 biedt een uitdaging aan</a>. (You need to be able to read Dutch).</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>That&apos;s my brother!</title>
+		<summary>No, that wasn't a typo. My brother did indeed walk 80km, in one stretch. From here again congratulations, Jelle! Some background information: Jelle participated in what is called the Kennedy March in Someren. He and 2444 others started at 10 o'clock in the evening. &#x2026;</summary>
+		<modified>2003-07-06T20:21:53Z</modified>
+		<issued>2003-07-06T22:21:53+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>No, that wasn't a typo. My brother did indeed walk 80km, in one stretch. From here again congratulations, Jelle! Some background information: Jelle participated in what is called the <a href="http://www.kennedymars.nl">Kennedy March</a> in Someren. He and 2444 others started at 10 o'clock in the evening. They walked straight through the night without sleep. Jelle finished more than 18 and a half hours later. A marvelous achievement!</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>My brother just walked 80km!</title>
+		<summary>My brother just walked 80km!</summary>
+		<modified>2003-07-06T14:55:57Z</modified>
+		<issued>2003-07-06T16:55:57+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><object data="http://w3future.com/weblog/images/mailedimages/20030706t1655n2.jpg" class="picture">My brother just walked 80km!</object></p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Programming vs. XML</title>
+		<summary>The API discussions during the last week showed clearly that a lot of programmers are not ready for XML. They prefer XML-RPC because they want to send and receive data structures that are in native form for their programming language. Yet everybody seems to agree that when you are creating a new data format, it should use XML. &#x2026;</summary>
+		<modified>2003-07-05T22:22:56Z</modified>
+		<issued>2003-07-06T00:22:56+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>The API discussions during the last week showed clearly that a lot of programmers are not ready for XML. They prefer XML-RPC because they want to send and receive data structures that are in native form for their programming language. Yet everybody seems to agree that when you are creating a new data format, it should use XML.</p><p>For this friction to disappear one of two things has to happen: Either the programming languages change to match XML better, or the other way around. The W3C XML Schema standard was an attempt to the latter, and it works great when you're working in a programming environment like Microsoft's .Net, because it tries to give XML an Object Oriented feel. But when you're working directly with XML, RelaxNG seems to be the better match. RelaxNG works a bit like regular expressions. This is not a coincidence, because regular expressions were designed for text processing, and that's where XML has its roots too.</p><p>In the end I think XML will win. The data structures in programming languages are designed to match the computer's memory model. XML's data structures are a result from it's syntax. Although this does lead to some peculiarities, it has some interesting properties that are <a href="http://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">more natural for the human's memory model</a>. Compare the data model of a book with one author with the data model of a book with one ore more authors. In the human's memory model these are almost similar. In XML it is equally similar, you have either one or one or more author elements. In most programming languages the second suddenly needs an extra data structure: a list of authors.</p><p>As programming languages abstract away from the hardware, they'll probably keep getting better support for XML. But changing the actual data structures, and certainly lists, is a big step for a programming language. This will stay interesting to follow for years to come.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>XML-RPC, SOAP APIs derived from a RESTful API</title>
+		<summary>This is an idea I had, which I posted on the XML-RPC, SOAP, and/or REST discussion. Sam Ruby thinks this is a &#8220;real winner of an idea&#8221;, so I'll repeat it here:I think we can use the general idea from the MetaWeblog API: apply a given set of rules to convert XML data to the XML-RPC model. &#x2026;</summary>
+		<modified>2003-07-03T21:46:57Z</modified>
+		<issued>2003-07-03T23:46:57+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>This is an idea I had, which I posted on the <a href="http://www.intertwingly.net/blog/1507.html">XML-RPC, SOAP, and/or REST discussion</a>. <a href="http://www.intertwingly.net/blog/1507.html#c1057267860">Sam Ruby thinks</a> this is a &#8220;real winner of an idea&#8221;, so I'll repeat it here:</p><p>I think we can use the general idea from the MetaWeblog API: apply a given set of rules to convert XML data to the XML-RPC model. The problem with the MetaWeblog API is that the XML data model isn't clear enough: If an element can occur more than once, the member in the struct has to contain an array. But it is not clear enough in RSS which items are allowed to occur more than once. Necho doesn't have this problem, because it has a schema.</p><p>It would be very easy to create an XSLT that converts a Necho document into an XML-RPC document. It would even be doable to create an XSLT that converts the Necho schema to a Necho-to-XML-RPC XSLT. I think I'll have a go at that, it's a fun challenge I think.</p><p>The bottomline: let's first create a RESTful API. The SOAP and XML-RPC APIs can then easily be derived from that.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Creating well-formed XHTML with IE or Mozilla</title>
+		<summary>Sam, we are in violent agreement as to the value of well-formed and XPATH-searchable content, something I have recently sought to demonstrate. I think -- no, I am sure -- that you radically underestimate the distance between possession of a tool (IE or Mozilla) that can validate well-formedness, and ability to produce well-formed content in routine written communication. &#x2026;</summary>
+		<modified>2003-07-02T22:54:28Z</modified>
+		<issued>2003-07-03T00:54:28+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><blockquote cite="http://weblog.infoworld.com/udell/2003/06/29.html#a734"><p>Sam, we are in violent agreement as to the value of well-formed and XPATH-searchable content, something I have recently sought to demonstrate. I think -- no, I am sure -- that you radically underestimate the distance between possession of a tool (IE or Mozilla) that can validate well-formedness, and ability to produce well-formed content in routine written communication.[<a href="http://weblog.infoworld.com/udell/2003/06/29.html#a734">Jon Udell</a>]</p></blockquote>
+<p>At <a href="http://q42.nl">Q42</a> we deploy purpose-built CMSes with simple WYSIWYG in-browser editors on a regular basis. The editors are comparable to what blogging tools like Radio Userland are using (using the <code>contentEditable</code> attribute). We have a simple client-side clean-up script that extracts well-formed XHTML from the WYSIWYG editor. It even handles pasted HTML from Word rather well. I discussed it with my collegues today, and we are willing to make that script available as open source if people are interested. (We'll have to wrap it up nicely first, so it can be used easily by others.)</p>
+<p>John Udell also talks about credible competition for Microsoft's InfoPath. That's nice timing, because we (Q42) are about to release the first commercial version of <a href="http://xopus.com">Xopus, the friendly XML editor</a>. There's a nicely designed new homepage, not much there yet, but 2 nice screenshots. You can ask for a beta trial version.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Why Dave Winer&apos;s standards are so popular</title>
+		<summary>Dave Winer is an incredibly interesting person. I just read that he's shutting down Scripting News and then went to bed. But I couldn't sleep. I just have to write down my thoughts. There's no one else that has this effect on me.
+An indirect cause of the shutting down of Scripting News is Sam Ruby starting a wiki &#8220;to describing a conceptual data model of what constitutes a well formed log entry&#8221;. &#x2026;</summary>
+		<modified>2003-06-29T23:56:05Z</modified>
+		<issued>2003-06-30T01:56:05+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://www.scripting.com">Dave Winer</a> is an incredibly interesting person. I just read that he's shutting down Scripting News and then went to bed. But I couldn't sleep. I just have to write down my thoughts. There's no one else that has this effect on me.</p>
+<p>An indirect cause of the shutting down of Scripting News is <a href="http://www.intertwingly.net/blog/1472.html">Sam Ruby starting a wiki &#8220;to describing a conceptual data model of what constitutes a well formed log entry&#8221;</a>. I am participating too, and one of the reasons is that I see a lot of room for technical improvement on RSS 2.0. I think a lot of people agree. Actually I see room for technical improvement in OPML and XML-RPC too. And I know I am not the only one. And Dave Winer knows it: </p>
+<blockquote cite="http://scriptingnews.userland.com/2003/06/29#When:6:21:27AM">Disclaimer: I make shitty software and I write shitty specs, but for all that shittyness, they're amazingly popular and somewhat useful. [<a href="http://scriptingnews.userland.com/2003/06/29#When:6:21:27AM">Scripting News</a>]</blockquote>
+<p><a href="http://w3future.com/html/examples.xml">Most of the experiments I did on this websites</a> involves one of Dave Winer's technologies. How does this work:</p>
+<ol><li>I want to experiment and show it to the world.</li>
+<li>The world reads Scripting News.</li>
+<li>I experiment with Dave Winer technology.</li>
+<li>Dave Winer sees my experiment and puts it on Scripting News.</li>
+<li>The world sees my experiment.</li></ol>
+<p>#2 and #4 is what's special about Dave Winer. There's no other name that you can insert in this list and make it still work. For some reason Dave Winer is able to maintain a constant high volume stream of interesting information on Scripting News. He has good ideas, a nose for good ideas and the ability to discover good ideas in high volume. It must be incredible hard work to keep that up.</p>
+<blockquote cite="http://www.scripting.com/defaultJul29.html"><p>Give it some thought. This is what it would look like if there were no Scripting News. What would it be worth to you, not in monetary terms, but in support terms, to keep this going. [<a href="http://www.scripting.com/defaultJul29.html">Dave Winer</a>]</p></blockquote>
+<p>Dave, my life wouldn't be half as interesting as it is today if it weren't for you. I wouldn't have <a href="http://w3future.com/weblog/2001/05/27.html">met Adam Curry</a>. And most importantly, I wouldn't be <a href="http://w3future.com/weblog/2001/07/10.html">working at Q42</a>. You bet I'm going to give it some thought.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>The difference between RSS and Echo</title>
+		<summary>In the recent heated debates about Echo (I'll call it that for now) the prevailing comment is that Echo is a replacement of RSS because of political issues. While this is not entirely untrue, there are actually big differences between Echo and RSS. I'm going to address the main difference for each version of RSS. &#x2026;</summary>
+		<modified>2003-06-29T15:39:21Z</modified>
+		<issued>2003-06-29T17:39:21+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>In the recent heated debates about Echo (<a href="http://intertwingly.net/wiki/pie/NameItEchoConflict">I'll call it that for now</a>) the prevailing comment is that Echo is a replacement of RSS because of political issues. While this is not entirely untrue, there are actually big differences between Echo and RSS. I'm going to address the main difference for each version of RSS.</p>
+<ol><li><em>Why Echo is different from RSS 1.0</em> Echo is XML. RSS 1.0 is RDF.</li>
+<li><em>Why Echo is different from RSS 0.91</em> RSS 0.91 is designed as a site summary. There is an item for each page on your site with a link and a title and maybe a description. This is the way the BBC and Microsoft use RSS. Echo is for distributing/transmitting content. Each entry contains things like author, an id, a permalink (if it is already published online), the relevant dates, and the actual content. This can be a weblog entry, or a comment or what else.</li>
+<li><em>Why Echo is different from RSS 2.0</em> RSS 2.0 is XML, but Echo is really about XML technology. The only thing that is asked more than once on the RSS2-Support list, I think, is: Where can I find the XML Schema or DTD for RSS 2.0? There is no schema because it cannot be done. That's the backwards compatability burdon RSS is carrying. Echo will probably have a W3C XML Schema and a RelaxNG schema. The dates will be in <code>xs:dateTime</code> format, so languages with schema support (f.e. .net languages, XQuery, XSLT 2.0) can perform date/time calculations directly. Also the preferred format of the content seems going to be XML, where RSS 2.0 uses escaped HTML.</li></ol>
+<p>These differences are IMHO big enough to warrant a new format, and Echo deserves a fair chance.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>An evening of debugging Xopus.</title>
+		<summary>An evening of debugging Xopus.</summary>
+		<modified>2003-06-25T19:34:35Z</modified>
+		<issued>2003-06-25T21:34:35+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><object data="http://w3future.com/weblog/images/mailedimages/20030625t2134n2.jpg" class="picture">An evening of debugging Xopus.</object></p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Replacing the orange XML icon</title>
+		<summary>We haven't quite worked out how to publicise them yet, we need to persuade our graphic designers that the orange XML lozenge is a beautiful complement for their delightful layout. [Kevin Hinde at BBC News Interactive]
+The orange button was fine for weblogs, but on websites with corporate design it's not going to work. &#x2026;</summary>
+		<modified>2003-06-24T21:13:05Z</modified>
+		<issued>2003-06-24T23:13:05+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><blockquote cite="http://backend.userland.com/2003/06/24#a302"><p>We haven't quite worked out how to publicise them yet, we need to persuade our graphic designers that the orange XML lozenge is a beautiful complement for their delightful layout. [<a href="http://backend.userland.com/2003/06/24#a302">Kevin Hinde at BBC News Interactive</a>]</p></blockquote>
+<p>The orange button was fine for weblogs, but on websites with corporate design it's not going to work. Also technical terms like XML should be avoided. The BBC has a line at the bottom with the items &#8220;E-mail services | Desktop ticker | News on mobiles/PDAs&#8221;. It is the obvious place to add a link to the RSS feed. But what should the text of the link be?</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Unboxed sequences</title>
+		<summary>About a month ago I wrote about XPath 2.0 Sequences. This weekend I read a primer about the language J which has lists that work similarly to the XPath sequences. What's interesting about J is that when you apply a function to a sequence, f.e. 1,2,3 + 2, the function is applied to each item in the sequence, and the results are collected in a new sequence, giving 3,4,5. &#x2026;</summary>
+		<modified>2003-06-23T23:22:05Z</modified>
+		<issued>2003-06-24T01:22:05+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>About a month ago I wrote about <a href="http://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">XPath 2.0 Sequences</a>. This weekend I read <a href="http://www.jsoftware.com/books/help/primer/contents.htm">a primer about the language J</a> which has lists that work similarly to the XPath sequences. What's interesting about J is that when you apply a function to a sequence, f.e. <code>1,2,3 + 2</code>, the function is applied to each item in the sequence, and the results are collected in a new sequence, giving <code>3,4,5</code>.</p>
+<p>J also has something called <a href="http://www.jsoftware.com/books/help/primer/box_monad.htm">boxing</a> which literally puts a box around a sequence, so it can be treated as one item. In OOP terms you could say that a boxed sequence is an object, but an unboxed sequence is not. (This is a nice match with the current use of the term boxing in C# and Java.)</p>
+<p>Now I want to implement this in <a href="http://w3future.com/html/loell/">Loell</a>. If you know J a little bit, you'll understand I'm not going to borrow the syntax, so I had to look elsewhere. The syntax for boxing a sequence is easy: just put square brackets around it. For unboxing I'm thinking to use the <code>*</code> as a prefix operator. This is taken from Python, where AFAIK it only works when you want to use the items in a list as arguments to a function.</p><p>Some code with the new syntax:</p>
+<pre>  a = [1 to 3]   // [1, 2, 3]
+  // old code for adding 2 to each item:
+  a all {this + 2}
+  // new code:
+  [ *a + 2 ]</pre>
+<p>Another interesting example is: <code>(1 to 3) to 2</code>. These are the intermediate and final results:</p>
+<pre>  (1, 2, 3) to 2
+  (1 to 2), (2 to 2), (3 to 2)
+  (1, 2), (2), ()
+  1, 2, 2</pre>
+<p>As you see it doesn't matter if a method returns more than one, or even zero results. Which makes this also a good way to filter: <code>(1 to 5).odd</code> gives <code>1, 3, 5</code>, where <code>odd</code> is a &#8220;goal directed&#8221; function that returns the input when it's odd, and an empty sequence when it's even.</p>
+<p>Another interesting effect I discovered when wondering how I should  model boxing. Because properties can store sequences, I only have to create a new object and assign the sequence to a property. And because all properties by default don't contain a value, or put differently, contain an empty sequence, every object is automatically an empty list. Then I remembered something I read a while ago about <a href="http://www.prescod.net/groves/shorttut/">groves</a>, so I'm going to use the property named <code>content</code>. Which brings us back at where I started this post: XML. Then things become really interesting...</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Me at Pinkpop 2003!</title>
+		<summary>Me at Pinkpop 2003!</summary>
+		<modified>2003-06-08T08:59:53Z</modified>
+		<issued>2003-06-08T10:59:53+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><object data="http://w3future.com/weblog/images/mailedimages/20030608t1059n2.jpg" class="picture">Me at Pinkpop 2003!</object></p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>No more Internet Explorer</title>
+		<summary>As part of the OS, IE will continue to evolve, but there will be no future standalone installations. IE6 SP1 is the final standalone installation.Legacy OSes have reached their zenith with the addition of IE 6 SP1. Further improvements to IE will require enhancements to the underlying OS. &#x2026;</summary>
+		<modified>2003-05-30T16:56:03Z</modified>
+		<issued>2003-05-30T18:56:03+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><blockquote cite="http://www.microsoft.com/technet/itcommunity/chats/trans/ie/ie0507.asp"><p>As part of the OS, IE will continue to evolve, but there will be no future standalone installations. IE6 SP1 is the final standalone installation.</p><p>Legacy OSes have reached their zenith with the addition of IE 6 SP1. Further improvements to IE will require enhancements to the underlying OS. [<a href="http://www.microsoft.com/technet/itcommunity/chats/trans/ie/ie0507.asp">Microsoft TechNet</a>]</p></blockquote>
+<p>I'm no expert, but that last part doesn't seem very true. Certainly not regarding the rendering engine. If you're building websites, you'd better make sure your sites work in other browsers, because IE's marketshare is going to decline.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Dauwpop 2003!</title>
+		<summary>Dauwpop 2003!</summary>
+		<modified>2003-05-29T19:53:15Z</modified>
+		<issued>2003-05-29T21:53:15+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><object data="http://w3future.com/weblog/images/mailedimages/20030529t2152n2.jpg" class="picture">Dauwpop 2003!</object></p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Dave Beckett joins the RDF conversation</title>
+		<summary>5 people arrested and a few broken windows was the result of the ADO Den Haag &#8220;party&#8221;, and a response from Dave Beckett was the result from yesterday's post. Yes, that's the Dave Beckett from the examples, the man currently responsible for the RDF/XML syntax. &#x2026;</summary>
+		<modified>2003-05-24T17:12:51Z</modified>
+		<issued>2003-05-24T19:12:51+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>5 people arrested and a few broken windows was the result of the ADO Den Haag &#8220;party&#8221;, and <a href="http://journal.dajobe.org/journal/archives/2003_05.html#001355">a response from Dave Beckett</a> was the result from <a href="http://w3future.com/weblog/2003/05/24.xml#a232">yesterday's post</a>. Yes, that's the Dave Beckett from the examples, the man currently responsible for the RDF/XML syntax. He was already following the conversation, and he has pointed to &#8220;<a href="http://ilrt.org/people/cmdjb/2003/05/iswc/">A retrospective on the development of the RDF/XML Revised Syntax</a>&#8221;. Most of that I had already heard in <a href="http://ilrt.org/people/cmdjb/talks/xmleurope2003/">his presentation at XML Europe 2003</a>. He also has news: &#8220;the W3C's HTML and RDF people are looking at things with respect to syntax&#8221;. But now Dave's response to my post:</p>
+<blockquote cite="http://journal.dajobe.org/journal/archives/2003_05.html#001355"><p>Sjoerd Visscher compains in Graph or triples that the RDF/XML revised syntax specification uses all the abbreviated forms. That, duh, was the point - it is the specification. If he wants examples that use a sensible portion of the syntax, look at the RDF Primer.</p></blockquote>
+<p>Hmm. So examples in a specification don't have to be sensible? That might not the smartest way to get your technology implemented. If you know that Tim Bray's problem is actually <a href="http://ilrt.org/people/cmdjb/2003/05/iswc/paper.html#prob-stripe">RDF/XML's number 1 problem</a>, then why not make sure that every example you publish tries to be as clear on this problem as possible. <a href="http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-property-attributes">In section 2.5 property attributes are introduced</a>, thereby breaking the striping technique. Yet almost any example that follows keeps using property attributes.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>Graph or triples</title>
+		<summary>It is noisy outside, and 2 riot police cars are racing by, because ADO Den Haag has won the 1st division soccer leage. In the meantime I'm going to continue the RDF conversation.
+Tim Bray wants a property element, because element names should be labels to indicate what the content is. &#x2026;</summary>
+		<modified>2003-05-23T23:42:58Z</modified>
+		<issued>2003-05-24T01:42:58+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>It is noisy outside, and 2 riot police cars are racing by, because <a href="http://www.adodenhaag.nl/">ADO Den Haag</a> has won the 1st division soccer leage. In the meantime I'm going to continue <a href="http://www.tbray.org/ongoing/When/200x/2003/05/22/RDFagain">the RDF conversation</a>.</p>
+<p>Tim Bray wants a <code>property</code> element, because element names should be labels to indicate what the content is. I agree, and I think RDF does exactly that. Only on one meta-level higher than Tim Bray is thinking in. Call it an abstraction if you want. So I don't think it is needed to specify which element is a property and which a resource. If you stick to the style of writing RDF I showed yesterday, <a href="http://www.w3.org/2001/10/stripes/">striping</a> makes that rather easy.</p>
+<pre>&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:ex="http://www.example.com/terms/">
+  
+  <strong>&lt;rdfs:Resource rdf:about="http://www.w3.org/TR/rdf-syntax-grammar"></strong>
+    &lt;dc:title>
+      <strong>RDF/XML Syntax Specification (Revised)</strong>
+    &lt;/dc:title>
+    &lt;ex:editor>
+      <strong>&lt;rdfs:Resource></strong>
+        &lt;ex:fullName>
+          <strong>Dave Beckett</strong>
+        &lt;/ex:fullName>
+        &lt;ex:homePage>
+          <strong>&lt;rdfs:Resource rdf:about="http://purl.org/net/dajobe/" /></strong>
+        &lt;/ex:homePage>
+      <strong>&lt;/rdfs:Resource></strong>
+    &lt;/ex:editor>
+  <strong>&lt;/rdfs:Resource></strong>
+  
+&lt;/rdf:RDF></pre>
+<p>Here the bold nodes are resources (or text) and the unbold nodes are properties. Notice that resource element names start with upper case letters, and property element names start with lower case letters.</p>
+<p>Tim Bray thinks of RDF in terms of triples. Maybe that is the best way for him to visualise RDF, but I prefer graphs. Thinking in graphs probably also helps understanding the RDF/XML syntax better. You can think of the bold elements as nodes, and the unbold elements as arcs. (It's unfortunate that <a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML Syntax Specification</a> uses all the shortcut syntaxes in most examples, breaking the simple striping rules.)</p>
+<p>So maybe syntax is a problem, but RDF is cool, so if it were the only problem, then the web would already have routed around it long ago. So I agree with <a href="http://blogs.law.harvard.edu/isItTheSyntax">Dave Winer</a> that the killer app is missing. For <a href="http://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> I can't find any decent examples besides extracting from XHTML and RSS. If you have suggestions for other sources of XML data, please let me know.</p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>RPV, Tim Bray&apos;s thought experiment</title>
+		<summary>Tim Bray shows an example of his syntax for RDF. I'm not really convinced, and I find the short element and attribute names unappealing. The RDF/XML version he offers isn't very pretty either. But RDF/XML can be somewhat prettier: (I tried to follow the structure Tim used in his RPV example)
+&lt;rdf:RDF xmlns:rdf="http://www. &#x2026;</summary>
+		<modified>2003-05-22T21:41:07Z</modified>
+		<issued>2003-05-22T23:41:07+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://www.tbray.org/ongoing/When/200x/2003/05/21/RDFNet">Tim Bray</a> shows an example of his syntax for RDF. I'm not really convinced, and I find the short element and attribute names unappealing. The RDF/XML version he offers isn't very pretty either. But RDF/XML can be somewhat prettier: (I tried to follow the structure Tim used in his RPV example)</p>
+<pre>&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns="http://www.example.com/terms/">
+  
+  &lt;rdfs:Resource rdf:ID="Dave">
+    &lt;fullName>
+      Dave Beckett
+    &lt;/fullName>
+    &lt;homePage>
+      &lt;rdfs:Resource rdf:about="http://purl.org/net/dajobe/" /> 
+    &lt;/homePage>
+  &lt;/rdfs:Resource>
+         
+  &lt;rdfs:Resource rdf:about="http://www.w3.org/TR/rdf-syntax-grammar">
+    &lt;title xmlns="http://purl.org/dc/elements/1.1/">
+      RDF/XML Syntax Specification (Revised)
+    &lt;/title>
+    &lt;editor>
+      &lt;rdfs:Resource rdf:about="#Dave" /> 
+    &lt;/editor>
+  &lt;/rdfs:Resource>
+  
+&lt;/rdf:RDF> 
+</pre>
+<p>I think this is not that bad. It clearly shows the triples I think. (This is called <a href="http://www.w3.org/2001/10/stripes/">striping</a>.) The problem with RDF/XML is not the syntax, the problem is the whole idea of serializing semantics. It's not even a problem restricted to RDF. All content in the html head element of every page on my website can either be extracted from the page, or is the same across all pages. Semantics should be extracted from the available data. So here is the <a href="http://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> document to extract the above RDF data from <a href="http://www.w3.org/TR/rdf-syntax-grammar/">the webpage</a> it describes:</p>
+<pre>&lt;xr:transform 
+  xmlns:xr="http://w3future.com/xr/ns/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:h="http://www.w3.org/1999/xhtml"
+  xmlns="http://www.example.com/terms/">
+  
+  &lt;xr:introducing>
+    &lt;rdfs:Resource xr:uriSelect="$documentURI">
+      &lt;dc:title xr:select="/h:html/h:head/h:title" />
+      &lt;editor xr:select="//h:dt[.='Editor:']/following-sibling::h:dd[1]/h:a[1]">
+        &lt;rdfs:Resource>
+          &lt;fullName xr:select="." />
+          &lt;homePage>
+            &lt;rdfs:Resource xr:uriSelect="@href" />
+          &lt;/homePage>
+        &lt;/rdfs:Resource>
+      &lt;/editor>
+    &lt;/rdfs:Resource>
+  &lt;/xr:introducing>
+  
+&lt;/xr:transform>
+</pre>
+<p>You can try this out on other W3C standards pages as well with the form at the bottom of <a href="http://w3future.com/xr/">the XR homepage</a>. <a href="http://w3future.com/xr/xrexample.xml">Here is the above XR document.</a></p></div>
+			</content>
+		</entry>
+	<entry>
+		<title>XPath 2.0 sequences</title>
+		<summary>One of the new features of XSLT 2.0 are the new sequences in the data model. A sequence is &#8220;an ordered collection of zero or more items&#8221;. So no surprise here, just like arrays or lists in any other programming language. But sequences are special:
+
+Sequences are &#8220;flat&#8221;, they may not contain other sequences. &#x2026;</summary>
+		<modified>2003-05-21T21:01:34Z</modified>
+		<issued>2003-05-21T23:01:34+02:00</issued>
+		<content type="application/xhtml+xml">
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>One of the new features of <a href="http://www.w3.org/TR/xslt20/">XSLT 2.0</a> are the new <a href="http://www.w3.org/TR/xpath-datamodel/#sequences">sequences in the data model</a>. A sequence is &#8220;an ordered collection of zero or more items&#8221;. So no surprise here, just like arrays or lists in any other programming language. But sequences are special:</p>
+<ul>
+<li>Sequences are &#8220;flat&#8221;, they may not contain other sequences.</li>
+<li>An item is equivalent to a singleton sequence containing that item and vice versa.</li>
+</ul>
+<p>To a programmer, this may seem very weird. But to a non-programmer this is obvious. F.e. a sequence of one can of beer is equivalent to one can of beer. And a sequence of 2 times a sequence of 3 cans of beer is only recognizable as a sequence of 6 cans of beer. So this is a beautiful and very natural abstraction.</p>
+<p>Yet I don't know any other language that has something like it. I've been thinking about implementing it in <a href="http://w3future.com/html/loell/">Loell</a>, using the following syntax:</p>
+<pre>x    = 1            // a sequence of one item
+seq1 = 1, 2
+seq2 = 0, seq1, 3   // 0, 1, 2, 3
+seq3 = seq1, seq2   // 1, 2, 0, 1, 2, 3
+ 
+// lists will still be there
+lst1 = [0, seq1]    // [0, 1, 2]
+</pre></div>
+			</content>
+		</entry>
+	</feed>

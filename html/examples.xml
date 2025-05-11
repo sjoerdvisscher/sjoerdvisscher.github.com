@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/html/examples.txt">
+<head>
+<title>Future Technology</title>
+</head>
+<body>
+<section id="content">
+	<h>Future Technology</h>
+	<p>Examples/Tools</p>
+	<section id="note">
+		<h>Note</h><p>Some of these pages may contain outdated information or ideas. In most cases this will only be minor details.</p><h>Last Update</h>
+		<p>10/16/2005; 1:22:34 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/html/examples.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/html/examples.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/html/examples.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+<h>Proof of Concept</h>
+<section>
+<h href="/w3f/">Old main test site.</h>
+<p>This site shows a number of features.</p>
+<ol>
+  <li>Storage: There are no HTML files. All HTML is generated at the client side.</li>
+  <li>Format: All data is stored in one data-tree</li>
+  <li>Programming: View Source and View Data are built-in</li>
+  <li>User Interface: Dynamic help. Extra information is automatically shown when hovering an active object.</li>
+</ol>
+</section>
+</section>
+<section>
+<h>Data Format and Storage</h>
+<section>
+<h href="tryvvm.html">Outliner view for VVM</h>
+<p>The value/vector model is a prototype 
+of a possible data format of the near future. This example contains a minimal XML parser
+that returns VVM models. Then an outliner view is created for that model. It is made to show
+how convenient it often is too differentiate between content (data) and properties (meta-data).</p>
+</section>
+<section>
+<h href="opmlloader.html">OPML loader</h>
+<p>OPML (Outline Processor Markup Language) is 
+"an XML-based format that allows exchange of outline-structured information between applications 
+running on different operating systems and environments." This page loads OPML files and renders it in an outliner view.</p>
+</section>
+<section>
+<h href="xss.html">xmlStorageSystem</h>
+<p>Another technology from <a href="http://www.userland.com">Userland</a>.
+It is a file storage system that can be updated with XML-RPC calls. The files are shared over HTTP.</p>
+</section>
+</section>
+<section>
+<h>Programming Languages</h>
+<section>
+<h href="xmlrpc.html">Spell-Checker</h>
+<p>No, this example does not spell-check programming languages,
+but it uses a programming feature that is particularly useful on the web: remote procedure calls.
+To be precise, it uses XML-RPC.</p>
+</section>
+<section>
+<h href="loell/">Loell</h>
+<p>A powerful object oriented language, which runs in javascript.</p>
+</section>
+</section>
+<section>
+<h>User Interface</h>
+<section>
+<h href="orgcharts.html">Create organizational charts</h>
+<p>This example shows one of many
+possible ways to create and manipulate data trees.</p>
+</section>
+<section>
+<h href="search.html">Weblog search</h>
+<p>This page shows how easy it is to use web services
+to query data results and dynamically create a user interface, instead of generating HTML files on the server.</p>
+</section>
+</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/html/examples.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/dhtml.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/08/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:28:49 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/08/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/08/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/08/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2003/08/31.xml">Sunday, August 31, 2003</a></h>
+<a name="a258"></a>
+<section id="a258">
+<h id='gamesOnTheP800'><a href="http://w3future.com/weblog/2003/08/31.xml#a258" class="weblogItemTitle">Games on the P800</a></h>
+<p>I just finished the adventure game Loom. And I played it on my <em>phone</em>! A lot of games don't work well on the P800 because the jog dial is too clumsy to act as the cursor keys. But the old point and click adventure games work perfect with a touch screen. The EGA and VGA screens actually look really good on the P800's screen. Even the sound is as good as I remember it. <a href="http://dreo.org/p800/escummvm/index.html">EScummVM made this possible.</a> I'm off, I have to become a mighty pirate!</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/08/18.xml">Monday, August 18, 2003</a></h>
+<a name="a257"></a>
+<section id="a257">
+<h id='visitorNotificationUsingAim'><a href="http://w3future.com/weblog/2003/08/18.xml#a257" class="weblogItemTitle">Visitor notification using AIM</a></h>
+<blockquote cite="http://scriptingnews.userland.com/backissues/2003/08/17#When:4:44:03AM"><p><a href="http://www.unpossible.com/blog/archives/000021.html">Dan Grigsby</a>: "I've put together a service to send out alerts via AIM whenever someone reads a blog entry." [<a href="http://scriptingnews.userland.com/backissues/2003/08/17#When:4:44:03AM">Scripting News</a>]</p></blockquote>
+<p>I have this running on my site. It's fun and very easy to set up.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/08/14.xml">Thursday, August 14, 2003</a></h>
+<a name="a256"></a>
+<section id="a256">
+<h id='xmlToRdfTransformationForAtomWithXr'><a href="http://w3future.com/weblog/2003/08/14.xml#a256" class="weblogItemTitle">XML to RDF transformation for Atom with XR</a></h>
+<p><a href="http://www.intertwingly.net/blog/1560.html">Sam Ruby</a> made <a href="http://www.intertwingly.net/stories/2003/08/13/atom2rdf.xsl">an XSLT tranformation from Atom to RDF</a>. He said it was hard to do. On the #echo IRC channel I said that <a href="http://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> would probably make it a lot easier. Then Sam asked me to make an XR transformation that would do the same thing. I did, and <a href="http://w3future.com/tools/atom2rdf.xml">here it is</a>.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/08/13.xml">Wednesday, August 13, 2003</a></h>
+<a name="a255"></a>
+<section id="a255">
+<h id='programmingTheory'><a href="http://w3future.com/weblog/2003/08/13.xml#a255" class="weblogItemTitle">Programming theory</a></h>
+<p>I've been reading <a href="http://citeseer.nj.nec.com/jacobs97tutorial.html">A Tutorial on (Co)Algebras and (Co)Induction</a>. What I'm wondering when reading it, is the use of tuples. Everything is converted to and from tuples. An example:</p>
+<pre>data List = Nil | Cons Integer List
+
+head Cons x xs = x
+tail Cons x xs = xs</pre>
+<p>The <code>Cons</code> constructor creates a tuple. The <code>head</code> and <code>tail</code> destructor extract it again. Now look at a hypothetical "object oriented" system:</p>
+<pre>List = Nil | Cons
+
+Nil = Class[]
+
+Cons = Class[
+  head = Integer
+  tail = List
+]</pre>
+<p>Now the constructors and destructors are defined together. The storage spaces Cons provides are in effect named. This is for me the most important reason why Object Oriented style works. Most if not all functional languages encourage the use of tuples and lists, which makes the purpose of the data anonymous.</p>
+<p>I like almost everything else I read in the tutorial. It's only the product of types that I'd like to change from the positional <code>A x B x C</code> to the named <code>p:A x q:B x r:C</code> (where the order is not important). Maybe the interesting, but hard to understand, theories that are built on top of (co)algebras and (co)induction will actually become readable.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2003/08/04.xml">Monday, August 04, 2003</a></h>
+<a name="a254"></a>
+<section id="a254">
+<h id='theSemanticWebIsDangerous'><a href="http://w3future.com/weblog/2003/08/04.xml#a254" class="weblogItemTitle">The semantic web is dangerous</a></h>
+<p>I went to see <a href="http://us.imdb.com/Title?0181852">Terminator 3</a> with the <a href="http://xopus.com">Xopus</a> team. Afterwards we had some discussion about machine intelligence, not about the movie itself. That's usually a sign of a good movie.</p>
+<p>On a related subject, <a href="http://greg.abstrakt.ch/archives/000312.html">Gregor linked</a> to <a href="http://www.intothematrix.com/rl_cmp/animatrix_site_ep1_480.html">The Second Renaissance</a>, a history of the world before the Matrix was created. Like the Terminator movies, this gave me the feeling that machines will always win, they simply have a evolutionary advantage. Lon told me that <a href="http://www.tecsoc.org/innovate/focusbilljoy.htm">Bill Joy has the same ideas</a>. He even recommended that scientists halt potentially dangerous research. In a certain way, Terminator 3 shows that the Semantic Web is the biggest danger. We should stop developing it!</p>
+<p>I'm not even sure if I should say that I'm only kidding.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/08/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

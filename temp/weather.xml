@@ -1,0 +1,17 @@
+<FL:smarttaglist xmlns:FL="urn:schemas-microsoft-com:smarttags:list">
+   <FL:name>Local Weather</FL:name>
+   <FL:description>Your local weather report on MSNBC.</FL:description>
+   <FL:moreinfourl>http://msdn.microsoft.com/office</FL:moreinfourl>
+   <FL:smarttag type="urn:schemas-microsoft-com:office:smarttags#weather">
+      <FL:caption>Local Weather on MSNBC</FL:caption>
+      <FL:terms>
+         <FL:termlist>98052,02134</FL:termlist>
+      </FL:terms>
+      <FL:actions>
+         <FL:action id="LocalWeather">
+            <FL:caption>Weather by ZIP code</FL:caption>
+                     <FL:url>http://www.msnbc.com/news/wea_front.asp?ta=y&amp;tab=BW&amp;tp=&amp;czstr={TEXT}</FL:url>
+         </FL:action>
+      </FL:actions>
+   </FL:smarttag>
+</FL:smarttaglist>

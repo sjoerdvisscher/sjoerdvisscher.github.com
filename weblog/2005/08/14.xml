@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/08/14.xml">
+<head>
+<title>Sunday, August 14, 2005 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:30:55 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2005/08/14.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2005/08/14.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/08/14.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2005/07/17.xml#a265' title='Sunday, July 17, 2005'>&lt;&#160;</a><a href="http://w3future.com/weblog/2005/08/14.xml">Sunday, August 14, 2005</a></h>
+<a name="a296"></a>
+<section id="a296">
+<h id='noMoreAccesskeys'><a href="http://w3future.com/weblog/2005/08/14.xml#a296" class="weblogItemTitle">No more accesskeys</a></h>
+<p>I had accesskeys for the tabs at the top of this site, but <a href="http://novemberborn.net/">Mark Wubben</a> reminded me that this was very annoying, mainly because <kbd>alt-d</kbd> was one of them (the shortcut to focus the address bar). This makes me think that using accesskeys in webpages is not a very good idea, because you never know what the favorite shortcut keys of your visitor are.</p>
+</section><a name="a295"></a>
+<section id="a295">
+<h id='howToUseBaseUris'><a href="http://w3future.com/weblog/2005/08/14.xml#a295" class="weblogItemTitle">How to use base URIs.</a></h>
+<p>If you're wondering what a base URI is for, you'll always end up being directed to <a href="http://www.apps.ietf.org/rfc/rfc3986.html">RFC 3986</a>, but you won't find much. <a href="http://www.apps.ietf.org/rfc/rfc3986.html#sec-5.1">Section 5.1</a> just says: &#8220;The term "relative" implies that a "base URI" exists against which the relative reference is applied.&#8221;. But that there's more to it becomes apparent when <a href="http://w3future.com/weblog/2005/01/13.xml#stillBugsInTheImplementationOfHtmlHyperlinks">same-document references</a> come into play. One example is <a href="http://www.tbray.org/ongoing/">Tim Bray</a>'s <a href="http://tbray.org/ongoing/ongoing.atom">atom feed</a>. Here is part of it:</p>
+<blockquote><pre>&lt;feed xmlns='http://www.w3.org/2005/Atom'
+      xml:base='http://www.tbray.org/ongoing/'
+      xml:lang='en-us'>
+ &lt;title>ongoing&lt;/title>
+ &lt;link href='' /></pre></blockquote>
+<p>As the base URI is already "http://www.tbray.org/ongoing/", the link to Tim's homepage can be the empty URI. However, according to RFC 3986, this is a same-document reference. It still references the correct URI, so usually you won't notice. But there are cases where this goes wrong, f.e. the XPath 2.0 expression <code>fn:doc(/feed/link/@href)</code> will get you the current atom document, not the document at http://www.tbray.org/ongoing/. What's worse, you can't fix this by changing the link to <code>&lt;link href='http://www.tbray.org/ongoing/' /></code>, as the link is still the same as the base URI, so it still is a same-document reference.</p>
+<p>So it seems you can't just use any base URI, but only the original URI of the content. Final proof comes from <a href="http://lists.w3.org/Archives/Public/uri/2004Jan/0009">a discussion on the W3C URI mailing list</a>. Here <a href="http://www.ics.uci.edu/~fielding/">Roy T. Fielding</a>, the author of RFC 3986, says: &#8220;[...] a person is deliberately abusing the base URI by assigning it an unrelated URI for the purpose of creating an
+artificial shorthand notation for external references.&#8221; Good to know!</p>
+<p>I find it really odd that Roy calls something an abuse, which by most web developers is considered to be the only purpose of a base URI! And that he has added nothing to the new RFC 3986 to make this clear in any way. So we will have to do this ourselves. Spread the word: <em>Stop the abuse of base URIs!</em> I also hope Tim Bray will fix his atom file, as his feed is used as an example by many, so this abuse might spread to a lot of atom files.</p>
+<p>[Update] <a href="http://www-128.ibm.com/developerworks/xml/library/x-atom10.html">Here's another example</a> of base URI abuse in Atom.</p>
+<p>To recap:</p>
+<ul>
+<li>Only use the actual URI of the document as its base URI, or the original URI if the document is moved. (This might actually be a good practice, with the same purpose as the self link in Atom.)</li>
+<li>If you use xml:base, add an xml:base attribute on content that is included from another document. (This happens automatically if you use XInclude.)</li>
+<li>Don't use the base URI for anything else.</li>
+</ul>
+<p>Finally I'd like to share a trick to set the base URI for escaped HTML in RSS and Atom: add a BASE element to the beginning of the HTML content. This will work for most aggregators that run in a browser, like <a href="http://www.bloglines.com/">Bloglines</a>, or use a browser component to display HTML, like most e-mail client based aggregators. Having multiple BASE elements in one HTML document, while not valid, works fine in most browsers. Aggregators can use this trick themselves as well.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/08/14.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

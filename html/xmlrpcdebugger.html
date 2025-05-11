@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>XML-RPC debugger - w3future.com</title>
+  <meta name="author" content="Sjoerd Visscher" />
+  <meta name="keywords" content="w3, www, world, wide, web, future, weblog, latest, news, javascript, js, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic" />
+  <meta name="description" content="My ideas about new web technology that can change the future of the world wide web." />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="author" title="Sjoerd Visscher" href="mailto:sjoerd@w3future.com" />
+  <link rel="top" href="http://w3future.com/weblog/" />
+  <link rel="icon" href="http://w3future.com/w3f/icon.png" type="image/png" />
+  <script type="text/javascript" src="http://w3future.com/w3f/w3f.js"></script>
+  <script type='text/javascript'><!--
+document.write('<'+'style>@import "http://w3future.com/w3f/w3f.phtml?'+document.cookie+'";<'+'/style>');
+//--></script>
+  
+</head>
+<body>
+<div id="header">
+	<a href="#"></a>
+	<div id="header-title-shadow">w3future.com</div>
+	<div id="header-title">w3future.com</div>
+	<div id="header-tabs">
+<div class='tab'><a href='http://w3future.com/weblog/'>Weblog</a></div>
+<div class='tab'><a href='http://w3future.com/html/examples.html'>Examples</a></div>
+<div class='tab'><a href='http://w3future.com/html/stories/'>Articles</a></div>
+<div class='tab'><a href='http://w3future.com/html/download.html'>Downloads</a></div>
+</div>
+</div>
+<div id="layout">
+	<div id="sidebar">
+<div class='sidebar-header'>What I read</div>
+<div class='button2'><a href='http://diveintomark.org/'>Dive into Mark</a></div>
+<div class='button2'><a href='http://www.joelonsoftware.com/'>Joel on Software</a></div>
+<div class='button2'><a href='http://radio.weblogs.com/0100887/'>Jon Udell</a></div>
+<div class='button2'><a href='http://lambda.weblogs.com/'>Lambda the Ultimate</a></div>
+<div class='button2'><a href='http://markpasc.org/blog/'>markpasc_blog</a></div>
+<div class='button2'><a href='http://radio.weblogs.com/0101679/'>Sam Ruby</a></div>
+<div class='button2'><a href='http://www.scripting.com/'>Scripting News</a></div>
+<div class='button2'><a href='http://www.xmlhack.com/'>XMLHack</a></div>
+<div class='button2'><a href='http://w3future.com/html/weblogsources.html'><b>All sources</b></a></div>
+<div class='sidebar-header'>Friends/Family</div>
+<div class='button2'><a href='http://joeri.mulder.com/'>Joeri</a></div>
+<div class='button2'><a href='http://www.maggerydoo.net/'>Marco</a></div>
+<div class='button2'><a href='http://uitdeschaduw.blogspot.com/'>Jelle</a></div>
+<div class='button2'><a href='http://www.q42.nl/'>Q42</a></div>
+</div>
+	<div id="content">
+		<h1>XML-RPC debugger</h1>
+		<p>bare bones XML-RPC calling</p>
+		<div id="note"><h3>Note</h3><p>base64 and float types are currently not supported</p>
+			<h3>Last Update</h3>
+			<p>8/20/2002; 11:15:24 PM</p>
+		</div>
+		<script type="text/javascript"><!--
+		function xmlrpc_call() {
+			
+			var url=document.getElementById('url').value;
+			var methodName=document.getElementById('methodName').value;
+			var args=document.getElementById('args').value;
+			location.replace('#form(url='+fix(url)+',methodName='+fix(methodName)+',args='+fix(args)+')');
+			
+			var service=new w3f_XMLRPCService(url);
+			service.onload=function() {
+				if (this.error) alert(this.error); else
+					'P'.w(inspect(this.result)).into('result');
+			}
+			service.call(methodName,	eval('['+args+']'));
+			//service.inputXml.replace(/&/g,'&amp;').replace(/</g,'&lt;').into('request');
+		}
+		
+		function fix(s) {
+			return s.replace(/,/g,'&#44;');
+		}
+		
+		function loadHash() {
+			var h=location.hash;
+			if (h.indexOf('#form(')!=0) return;
+			h=h.substr(6,h.length-7);
+			var vals=h.split(',');
+			for (var i=0;i<vals.length;i++) {
+				var s=vals[i];
+				var eq=s.indexOf('=');
+				var name=s.substr(0,eq);
+				var el=document.getElementById(name);
+				if (el) el.value=s.substr(eq+1).replace(/&#44;/g,',');
+			}
+			xmlrpc_call();
+		}
+		document.body.setAttribute("onload","loadHash()");
+		document.body.onload=new Function("", "loadHash()");
+	
+	//-->
+	</script>		
+	 
+	<h2>Supply Call Data</h2>
+	<p>Service URL: (<a href="http://">http://</a><i>hostname</i>:<i>portnr</i>/<i>path</i>)<br /><input type="text" size="40" style="width:90%" id="url" value="http://w3future.com/tools/RPC/" /></p>
+	<p>Methodname:<br /><input type="text" size="40" style="width:90%" id="methodName" value="validator1.countTheEntities" /></p>
+	<p>Arguments: (comma separated javascript data)<br /><input type="text" size="40" style="width:90%" id="args" value="'&lt;test&gt;'" /></p>
+	<table cellspacing="0" cellpadding="0"><tr><td>
+	<script type="text/javascript">document.write(createButton({style:'button',content:'Perform XML-RPC Call',action:"xmlrpc_call()"}))</script>
+	</td></tr></table>
+	
+	<!--
+	<h2>Request</h2>
+	<div id="request">
+	</div>
+	-->
+	
+	<h2>Result</h2>
+	<div id="result">
+	</div>
+		
+	<script src="/tools/xmlrpc.js" type="text/javascript"></script>
+	<script src="/tools/funclib.js" type="text/javascript"></script></div>
+	<div id="footer">&#x00A9; Copyright 2002 <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="http://w3future.com/">w3future.com</a></div>
+</div>
+<script type='text/javascript'><!--
+initButtons(true);initSectionTabs();initSidebarButtons();staticSiteStatsImage()
+//--></script>
+</body>
+</html>

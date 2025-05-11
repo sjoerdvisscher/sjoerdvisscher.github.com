@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/cssedit.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Create your own palette for my weblog</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:31:20 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/cssedit.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/cssedit.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/cssedit.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><script src="cssedit.js" type="text/javascript" />
+<section>
+<h>Store or restore colors</h>
+<p><button onclick="setCookie()">Save colors in cookie</button>
+<button onclick="removeCookie()">Remove cookie, use default colors</button></p>
+</section>
+<div style="margin:0em -2.5em; clear: both">
+<div style="float:left; width: 280px; padding: 0em 2.5em">
+<section>
+<h>Color 1 (Top Background)</h>
+<div id="c1">
+<div id="c1-rgb"><input id="c1-input" onchange="setRGB(this.id)" /></div>
+</div>
+</section>
+<section id="buttoncolors">
+<h>Button</h>
+</section>
+<section id="vlink">
+<h>Visited Link</h>
+</section>
+<section id="titleshadow">
+<h>Title Shadow</h>
+</section>
+</div>
+<div style="float:right; width: 280px; padding: 0em 2.5em">
+<section>
+<h>Color 2 (Link)</h>
+<div id="c2">
+<div id="c2-rgb"><input id="c2-input" onchange="setRGB(this.id)" /></div>
+</div>
+</section>
+<section id="hbuttoncolors">
+<h>Hovered Button</h>
+</section>
+<section id="text">
+<h>Text</h>
+</section>
+<section id="backgrounds">
+<h>Text Backgrounds</h>
+</section>
+</div>
+</div>
+<section style="clear:both">
+<h>For bloggers</h>
+<p>
+<line>Use this url to share these colors with other people:</line>
+<line><input id="colorLink" style="width:80%" /></line>
+</p>
+</section>
+<script>
+var b1 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var b2 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var b3 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var b4 = new ColorSlider(new Color('#000000'), new Color('#ffffff'));
+var vl = new ColorSlider(new Color('#000000'), new Color('#ffffff'));
+var ts = new ColorSlider(new Color('#000000'), new Color('#ffffff'));
+var buttoncolors = document.getElementById('buttoncolors');
+buttoncolors.appendChild(b1.el);
+buttoncolors.appendChild(b2.el);
+buttoncolors.appendChild(b3.el);
+buttoncolors.appendChild(b4.el);
+document.getElementById('vlink').appendChild(vl.el);
+document.getElementById('titleshadow').appendChild(ts.el);
+var col1 = initSlider('c1');
+col1.handle = function(c)
+{
+  b1.setTo(c);
+  ts.setTo(c);
+}
+b1.handle = function(c)
+{
+  b2.setTo(c);
+  b4.setTo(c);
+  vl.setTo(c);
+}
+b2.handle = function(c)
+{
+  b3.setTo(c);
+}
+var hb1 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var hb2 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var hb3 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var hb4 = new ColorSlider(new Color('#000000'), new Color('#ffffff'));
+var txt = new ColorSlider(new Color('#000000'), new Color('#ffffff'));
+var tb1 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var tb2 = new ColorSlider(new Color('#ffffff'), new Color('#000000'), 1);
+var hbuttoncolors = document.getElementById('hbuttoncolors');
+hbuttoncolors.appendChild(hb1.el);
+hbuttoncolors.appendChild(hb2.el);
+hbuttoncolors.appendChild(hb3.el);
+hbuttoncolors.appendChild(hb4.el);
+document.getElementById('text').appendChild(txt.el);
+document.getElementById('backgrounds').appendChild(tb1.el);
+document.getElementById('backgrounds').appendChild(tb2.el);
+var col2 = initSlider('c2');
+col2.handle = function(c)
+{
+  hb1.setTo(c);
+  txt.setTo(c);
+  tb1.setTo(c);
+}
+hb1.handle = function(c)
+{
+  hb2.setTo(c);
+  hb4.setTo(c);
+  tb2.setTo(c);
+}
+hb2.handle = function(c)
+{
+  hb3.setTo(c);
+}
+</script>
+<script src="/tools/xmlrpc.js"></script><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/cssedit.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

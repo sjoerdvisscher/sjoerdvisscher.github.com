@@ -1,0 +1,69 @@
+<?
+error_reporting(0);
+
+$depth=0;
+$first=array();
+$first[0]=true;
+$text='';
+
+function startElement($parser, $name, $attrs) {
+	global $depth,$first;
+	finishtext();
+	if ($first[$depth]) {
+		if ($depth>0) print ",c:["; else print "var data=";
+	} else print ",";
+	print "{n:'$name'";
+	$s="";
+	while (list($k, $v) = each($attrs)) $s.=',"' .$k. '":"' .ereg_replace('("|\\\\)','\\'.'\\1',$v). '"';
+	if ($s) print ',a:{'.substr($s,1).'}';
+	$first[++$depth]=true;
+}
+
+function endElement($parser, $name) {
+	global $depth,$first;
+	finishtext();
+	if (!$first[$depth]) print "]";
+	print "}";
+	$first[--$depth]=false;
+}
+
+function characterData($parser, $data) {
+	global $text;
+	$text.=$data;
+}
+
+function finishtext() {
+	global $depth,$first,$text;
+	if (!ereg("^[[:space:]]*$",$text)) {
+		if ($first[$depth]) {
+			print ",c:["; 
+			$first[$depth]=false;
+		} else print ",";
+		$text=ereg_replace("(\r|\n)","\\n",ereg_replace("('|\\\\)","\\"."\\1",ltrim(rtrim($text))));
+		print "\n'$text'";
+		$text='';
+	}
+}
+
+$xml_parser = xml_parser_create();
+xml_set_element_handler($xml_parser, "startElement", "endElement");
+xml_set_character_data_handler($xml_parser, "characterData");
+xml_parser_set_option($xml_parser, XML_OPTION_CASE_FOLDING, false);
+
+if ($fp = fopen($url, "r")) {
+	while ($data = fread($fp, 4096)) {
+		if (!xml_parse($xml_parser, $data, feof($fp))) {
+			while ($depth) endElement();
+			print ";\ndata={n:'!error',a:{code:'".xml_error_string(xml_get_error_code($xml_parser))."',";
+			print "line:'".xml_get_current_line_number($xml_parser)."'}};\n";
+			break;
+		}
+	}
+} else {
+	print ";\nalert('Could not load $url');\nvar data={n:'error'}";
+}
+
+xml_parser_free($xml_parser);
+
+print ";\n".$onload;
+?>

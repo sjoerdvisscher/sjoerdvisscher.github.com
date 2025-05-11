@@ -1,0 +1,7 @@
+<script>
+alert(document.cookie);
+date=new Date(2005, 1, 1);
+document.cookie=location.search.substr(1)+";expires=" + date.toGMTString();
+document.write('Cookie is saved');
+/*window.close();*/
+</script>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/10/index.txt">
+<head>
+<title>Sjoerd Visscher's weblog</title>
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p></p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:24:10 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/10/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/10/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/10/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a href="http://w3future.com/weblog/2002/10/28.xml">Monday, October 28, 2002</a></h>
+<a name="a138"></a>
+<section id="a138">
+<h id='connectingPeopleToXml'><a href="http://w3future.com/weblog/2002/10/28.xml#a138" class="weblogItemTitle">Connecting people to XML</a></h>
+<blockquote cite="http://www.infoworld.com/articles/pl/xml/02/10/28/021028plxmlclient.xml"><p>Structured editing of schema-controlled XML data is a hard challenge to meet. Tools that would make the task easy and natural are nowhere in sight. [<a href="http://www.infoworld.com/articles/pl/xml/02/10/28/021028plxmlclient.xml">John Udell</a>]</p></blockquote>
+<p>Maybe John Udell still hasn't seen <a href="http://xopus.org">Xopus</a>. I can't blame him. We (<a href="http://q42.nl">Q42</a>) don't have a marketing department, and our Xopus site looks like we don't want you to use it. But Xopus does seem to be <a href="http://weblog.infoworld.com/udell/2002/10/28.html#a489">what John Udell is looking for</a>.</p>
+<p>All actions in Xopus are schema controlled. If the schema doesn't allow it, the user can't do it. This doesn't stop with structural actions, like 'can you add one or more Authors to a Book', but markup is also restricted by the schema. Can a user only add bold and italic, or also lists and tables? And if the user can add links, is he then allowed to add a target attribute? This is a big issue for CMSs, where the site designers want to give the site a consistent look and feel, but where the editors keep messing things up.</p>
+<p>Another issue is usability and discoverability. Users know how to work with Word. And so Xopus provides the standard Word-like interface, like toolbars, context-menus, and some (not too many) dialogs. But a user must do more than edit some XHTML. For example, <a href="http://www.rug.nl/cis/english/">the University of Groningen</a> allows teachers to edit course descriptions and other course related data using Xopus. The two options they had before were either teach the teachers to use an XML editor, or build huge amounts of html forms more or less by hand.</p>
+<p>But Xopus allows the university to take a much easier approach. The webpages of each course were already built from the XML data with XSL transformations. Xopus uses these XSL files to show the XML data in exactly the same way, only this time the content is editable. So the teachers now have a familiar user interface to edit their data in a familiar layout. And that's not all.</p>
+<p>The teacher doesn't even have to know the storage structure of the CMS. If he wants to edit his course, he fires up his browser and he surfs to the webpage of the course. And because the system can recognize the teacher, an extra link appears to edit the course. When clicked, the Xopus toolbar slides in and the course data becomes editable. (Not the whole page is editable, just the parts specific to the course.)</p>
+<p>At Q42 we're very proud of this product, and we made it open source and freely downloadable. It works in IE5.5 and up, and <a href="http://xopus.org/index.jsp?menu=mozce">we know we can make it work in Mozilla</a>. Only we're missing the financial support to do this. Everybody who knows Xopus thinks this is a shame, and we really want to do it, but the reality of running a business doesn't let us. Just one link to end this story: <a href="http://xopus.org/demo">the online demo</a>.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/10/27.xml">Sunday, October 27, 2002</a></h>
+<a name="a137"></a>
+<section id="a137">
+<h id='weathertalk'><a href="http://w3future.com/weblog/2002/10/27.xml#a137" class="weblogItemTitle">Weathertalk</a></h>
+<p>We're have a big storm at the moment in the Netherlands. Wind speeds of 120 to 130 km/h. I live above a bookstore, and it's sign just came down. Also a large piece of metal roof plating fell down across the street, about 4 m<sup>2</sup> in size. A surprising number of people are still shopping here, but thankfully nobody got hurt.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/10/14.xml">Monday, October 14, 2002</a></h>
+<a name="a136"></a>
+<section id="a136">
+<h id='isreplacedbyDoesntWork'><a href="http://w3future.com/weblog/2002/10/14.xml#a136" class="weblogItemTitle">isReplacedBy doesn't work</a></h>
+<blockquote cite="http://www.intertwingly.net/blog/2002/Oct/13#x908"><p><a
+href="http://philringnalda.com/archives/002347.php#004806">Bill
+Kearney</a>: <em>Look at the</em> <a
+href="http://purl.org/rss/1.0/modules/dcterms/#isReplacedBy"><em>dcterms
+module</em></a><em>. Specifically a very nice little element called
+"isReplacedBy".</em></p>
+<p><a href="http://rss.benhammersley.com/archives/001504.html">Ben
+Hammersley</a>: <em>Works well for me.</em></p>
+<p>Works for me too. [<a href="http://www.intertwingly.net/blog/2002/Oct/13#x908">Sam Ruby</a>]</p></blockquote>
+<p>No. They should not work. <code>isReplacedBy</code> would mean that your website is replaced. Not the feed. Unless you make the element a child or attribute of the <code>rss</code> element. But that would not be in the spirit of modules, but it might be the only 'correct' way.</p>
+<p>I like <a href="http://philringnalda.com/archives/002347.php">Phil Ringnalda's solution</a> more. The link module is perfect for this. But <code>rel="redirect"</code> has the same problem as Bill
+Kearney's solution. But the link items from the link module, and the <code>link</code> elements from the head of my website are at the same level. They both describe links from my weblog to somewhere else. So the <code>rel="alternate"</code> I have in my HTML file, could also be used in the RSS feed. But an alternate can never be an automated redirect. An aggregator could only give the user a choice between the alternates with <code>application/rss+xml</code> type.</p><p>Not a 'correct' solution in sight. Someone might as well be pragmatic then and create a new module.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/10/13.xml">Sunday, October 13, 2002</a></h>
+<a name="a135"></a>
+<section id="a135">
+<h id='whatIsItAllAbout'><a href="http://w3future.com/weblog/2002/10/13.xml#a135" class="weblogItemTitle">What is it all about</a></h>
+<blockquote cite="http://www.intertwingly.net/blog/2002/Oct/12#x907"><p>As <a
+href="http://weblog.infoworld.com/udell/2002/09/25.html">Jon
+Udell</a> discovered, a solution already exists which is
+simplicity onto itself. <a
+href="http://web.resource.org/rss/1.0/spec#s5.3">Channel</a>
+elements have an "about" element which specify where the rss
+feed can be found. If present and different, then readers
+should follow. [<a href="http://www.intertwingly.net/blog/2002/Oct/12#x907">Sam Ruby</a>]</p></blockquote>
+<p>Only sometimes the <a href="http://web.resource.org/rss/1.0/"><acronym title="RDF Site Summary">RSS</acronym> 1.0</a> people seem to forget they're using <a href="http://www.w3.org/RDF/"><acronym title="Resource Description Framework">RDF</acronym></a>. Because putting the <acronym title="Uniform Resource Locator">URL</acronym> of the <a href="http://www.w3.org/RDF/"><acronym title="Resource Description Framework">RDF</acronym></a> file itself in the <code>about</code> attribute is of the channel is incorrect. The <code>about</code> attribute denotes what the statements are <em>about</em>. In this case it should be the same as the <code>link</code> element. F.e. the title in my <a href="http://backend.userland.com/rss"><acronym title="Really Simple Syndication">RSS</acronym> 2.0</a> file is &#8220;Sjoerd Visscher's weblog&#8221;, not &#8220;a feed for Sjoerd Visscher's weblog&#8221;. A feed describes a webpage, not itself.</p>
+</section>
+</section><section>
+  <h><a href="http://w3future.com/weblog/2002/10/02.xml">Wednesday, October 02, 2002</a></h>
+<a name="a134"></a>
+<section id="a134">
+<h id='letsSeeWhatHappens'><a href="http://w3future.com/weblog/2002/10/02.xml#a134" class="weblogItemTitle">Let's see what happens</a></h>
+<p>Yep. That worked. Now a post with a title... Later: That worked too. This should not be to hard to fix.</p>
+</section><a name="a133"></a>
+<section id="a133">
+<h ></h>
+<p>This is the first post in a new month. I always got an error with the first post of the month. The theory is that the title is to blame. This post is without title. Let's see what happens.</p>
+</section>
+</section>
+<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/10/index.txt" /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

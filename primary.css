@@ -1,0 +1,146 @@
+BODY
+{
+    BACKGROUND: #FFFF99;
+    COLOR: black;
+    SCROLLBAR-FACE-COLOR: #33CB99;
+    SCROLLBAR-HIGHLIGHT-COLOR: #53EBB9;
+    SCROLLBAR-SHADOW-COLOR: #13AB79;
+    SCROLLBAR-3DLIGHT-COLOR: #73FBD9;
+    SCROLLBAR-ARROW-COLOR: #000000;
+    SCROLLBAR-TRACK-COLOR: #13AB79;
+    SCROLLBAR-DARKSHADOW-COLOR: #038B59;
+}
+TABLE.menusection
+{
+    MARGIN: 2px;
+    CURSOR: pointer;
+    CURSOR: hand;
+}
+TD.menutitle
+{
+    FONT-FAMILY: verdana, tahoma, arial;
+    FONT-SIZE: 110%;
+    BORDER-TOP: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 5px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    VERTICAL-ALIGN: middle;
+}
+TD.menuitem
+{
+    MARGIN: 2px;
+    BACKGROUND-COLOR: #FFFFEE;
+    COLOR: black;
+    TEXT-ALIGN: left;
+    BORDER-TOP: #FFFF00 2px inset;
+    BORDER-RIGHT: #FFFF00 2px inset;
+    BORDER-LEFT: #FFFF00 2px inset;
+    BORDER-BOTTOM: #FFFF00 2px inset;
+    PADDING-LEFT: 15px;
+    PADDING-RIGHT: 15px;
+    PADDING-BOTTOM: 10px;
+    PADDING-TOP: 10px;
+}
+INPUT
+{
+    BORDER-RIGHT: #9ca0a3 1px inset;
+    BORDER-TOP: #9ca0a3 1px inset;
+    BORDER-LEFT: #9ca0a3 1px inset;
+    BORDER-BOTTOM: #9ca0a3 1px inset;
+    FONT-FAMILY: Verdana, Tahoma, Arial;
+    BACKGROUND-COLOR: lightgoldenrodyellow;
+}
+TEXTAREA
+{
+    BORDER-RIGHT: #9ca0a3 1px inset;
+    BORDER-TOP: #9ca0a3 1px inset;
+    BORDER-LEFT: #9ca0a3 1px inset;
+    BORDER-BOTTOM: #9ca0a3 1px inset;
+    FONT-FAMILY: Verdana, Tahoma, Arial;
+    BACKGROUND-COLOR: lightgoldenrodyellow;
+}
+A
+{
+    COLOR: #33CB99;
+    TEXT-DECORATION: none;
+}
+A:hover
+{
+    COLOR: #53EBB9;
+    TEXT-DECORATION: none;
+}
+A:visited
+{
+    COLOR: #13AB79;
+    TEXT-DECORATION: none;
+}
+A.menuitem
+{
+    COLOR: #cccccc;
+    TEXT-DECORATION: none;
+}
+A.menuitem:hover
+{
+    COLOR: yellow;
+    TEXT-DECORATION: none;
+}
+.button
+{
+    BORDER-RIGHT: #5c6063 2px outset;
+    PADDING-RIGHT: 4px;
+    BORDER-TOP: #5c6063 2px outset;
+    PADDING-LEFT: 4px;
+    FONT-SIZE: 70%;
+    PADDING-BOTTOM: 2px;
+    MARGIN: 2px;
+    BORDER-LEFT: #5c6063 2px outset;
+    CURSOR: hand;
+    COLOR: lightgrey;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #5c6063 2px outset;
+    BACKGROUND-COLOR: #7c8083;
+}
+.small
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 70%;
+}
+.medium
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 115%;
+}
+.large
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 150%;
+}
+.xlarge
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 175%;
+}
+.hideshow
+{
+    DISPLAY: none;
+}
+P, LI
+{
+    FONT-FAMILY: verdana, tahoma, arial;
+    FONT-SIZE: 70%;
+    MARGIN-TOP: 0.5em;
+    MARGIN-BOTTOM: 0.5em;
+}
+UL
+{
+    MARGIN: 0em;
+    PADDING: 0em;
+}
+LI
+{
+    MARGIN-LEFT: 2em;
+    MARGIN-RIGHT: 0em;
+    PADDING: 0em;
+}

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/09/22.xml">
+<head>
+<title>Wednesday, September 22, 2004 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:30:06 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2004/09/22.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2004/09/22.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/09/22.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2004/07/28.xml#a250' title='Wednesday, July 28, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/09/22.xml">Wednesday, September 22, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/10/31.txt#a252' title='Sunday, October 31, 2004'>&#160;&gt;</a></h>
+<a name="a280"></a>
+<section id="a280">
+<h id='closuresForAnonymousStorage'><a href="http://w3future.com/weblog/2004/09/22.xml#a280" class="weblogItemTitle">Closures for anonymous storage</a></h>
+<p>Via <a href="http://www.eighty-twenty.net/blog/urn:www-eighty-twenty-net:1289.html">The 80/20 Solution</a> I saw <a href="http://www.iunknown.com/000484.html">a piece of Python code</a> by John Lam, which he calls elegant. Now he is right to call it elegant &#8212; he is comparing it with his experience to implement the same in C++. But he uses a technique which you see a lot in scripting, but which I find rather unelegant: creation of property names (or attribute names) with string manipulations. By adding prefixes like "_shadow_" the names are hopefully unique.</p>
+<p>The following Javascript implementation is an example of using closures as storage, &#8220;anonymous&#8221; storage, because you don&#8217;t have to create unique names.</p>
+<pre code="class">function doNothing() {};
+ 
+// Execute once for one method on an object (or prototype)
+function createExecuteOnceMethod(obj, methodName) 
+{
+  var method = obj[methodName];
+  obj[methodName] = function() 
+  {
+    method.apply(this, arguments);
+    this[methodName] = doNothing;
+  }
+}
+ 
+// Execute once for all methods of an object (or prototype)
+function executeOnce(obj)
+{
+  for (var propName in obj)
+    if (typeof(obj[propName]) == "function")
+      createExecuteOnceMethod(obj, propName);
+
+  return obj;
+}
+ 
+function Test(name) 
+{
+  this.name = name;
+}
+Test.prototype = executeOnce({
+  method1: function() {
+    alert("In method1 of " + this.name);
+  },
+  method2: function() {
+    alert("In method2 of " + this.name);
+  }
+});
+ 
+var t = new Test("t");
+var u = new Test("u");
+t.method1();
+u.method1();
+u.method1();
+t.method1();
+t.method2();
+t.method2();</pre>
+<p><code>createExecuteOnceMethod</code> overwrites the method with a new method, that calls the original method, and then overwrites itself with an empty function, so the original method gets called exactly once. This new method is also a closure, which provides storage for the method name and the old method.</p>
+<p>It&#8217;s interesting to note that inlining <code>createExecuteOnceMethod</code> does not work. This was my first attempt:</p>
+<pre class="code">function executeOnce(obj)
+{
+  for (var propName in obj)
+    if (typeof(obj[propName]) == "function")
+    {
+      var method = obj[propName];
+      obj[propName] = function() 
+      {
+        method.apply(this, arguments);
+        this[propName] = doNothing;
+      }
+    }
+}</pre>
+<p>In Javascript only functions get a new scope. Declaring <code>var method</code> inside the loop does work, but is the same as declaring it at the start of <code>executeOnce</code>. So there is just one scope, and one <code>method</code> variable. In Javascript, a closure is created by combining the function body with a pointer to the scope object. In this case that&#8217;s <em>the same scope object</em> for every created closure, and therefore also the same <code>method</code> variable, which contains at the end of the loop the last method of the object.</p>
+<p>Splitting the code into two functions makes sure that each closure gets its own scope. And <code>createExecuteOnceMethod</code> is also usable on its own.</p>
+<p><b>Update:</b> John Lam has <a href="http://www.iunknown.com/000489.html">updated his code</a> to implement the same technique in Python.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/09/22.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

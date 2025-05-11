@@ -1,0 +1,8 @@
+<nl xmlns="http://www.w3.org/2002/06/xhtml2">
+	<label>w3future.com</label>
+	<li href="http://w3future.com/weblog/" title="Here I write about the things that interest me.">Weblog</li>
+	<li href="http://w3future.com/html/examples.xml" title="Here you can see some proof of concept technologies.">Examples</li>
+	<li href="http://w3future.com/html/stories/" title="Sometimes I write in more detail about a topic. You can read that here.">Articles</li>
+	<li href="http://w3future.com/html/download.xml" title="Stuff that just might be useful to you.">Downloads</li>
+	<li href="http://w3future.com/people/sjoerd_visscher/" title="Some personal information.">About Me</li>
+</nl>

@@ -1,0 +1,290 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" 
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg viewBox="-1 -1 2 2" shape-rendering="optimizeSpeed" color-rendering="optimizeSpeed" onload="start()" xmlns="http://www.w3.org/2000/svg">
+  <script type="text/ecmascript"><![CDATA[
+Function.prototype.inherit = function(c) {
+  for (var i in c.prototype)
+    this.prototype[i] = c.prototype[i];
+}
+
+function Point(x, y, z)
+{
+  this.x0 = this.x = x;
+  this.y0 = this.y = y;
+  this.z0 = this.z = z;
+};
+Point.prototype =
+{
+  transform0: function(a, b, r)
+  {
+    var z = (Math.cos(b)*this.z0 + Math.sin(b)*this.y0);
+    this.y = r * (Math.cos(b)*this.y0 - Math.sin(b)*this.z0);
+    this.x = r * (Math.cos(a)*this.x0 + Math.sin(a)*z);
+    this.z = r * (Math.cos(a)*z - Math.sin(a)*this.x0);
+  },
+  
+  to: function(p)
+  {
+    return new Vector(p.x - this.x, p.y - this.y, p.z - this.z);
+  },
+  
+  add: function(dir, f)
+  {
+    if (f === undefined) f = 1;
+    return new Point(this.x + f*dir.x, this.y + f*dir.y, this.z + f*dir.z);
+  },
+
+  render: function()
+  {
+    return new VisiblePoint(this.x, this.y, this.z);
+  },
+  
+  setF: function() {}
+};
+
+function VisiblePoint(x,y,z)
+{
+  Point.apply(this, arguments);
+  this.elt = document.createElement("circle");
+  this.elt.setAttribute("r", "0.01");
+  g_points.appendChild(this.elt);
+  this.to2d();
+};
+VisiblePoint.inherit(Point);
+VisiblePoint.prototype.to2d = function(dx)
+{
+  this.x2d = (dx+this.x)*4/(this.z+12);
+  this.y2d = -this.y*4/(this.z+12);
+  
+  this.elt.setAttribute("cx", this.x2d);
+  this.elt.setAttribute("cy", this.y2d);
+};
+
+function AnimatedPoint(p0, p1)
+{
+  this.p0 = p0;
+  this.p1 = p1;
+  this.f = 0;
+  VisiblePoint.apply(this, [p0.x, p0.y, p0.z]);
+};
+AnimatedPoint.inherit(VisiblePoint);
+AnimatedPoint.prototype.setF = function(f1)
+{
+  this.f = f1; var f0 = 1-f1;
+  this.x0 = this.p0.x0*f0 + this.p1.x0*f1;
+  this.y0 = this.p0.y0*f0 + this.p1.y0*f1;
+  this.z0 = this.p0.z0*f0 + this.p1.z0*f1;
+};
+
+function Vector(x,y,z)
+{
+  Point.apply(this, arguments);
+};
+Vector.prototype = new Point();
+Vector.prototype.times = function(f)
+{
+  return new Vector(f*this.x, f*this.y, f*this.z);
+};  
+Vector.prototype.normalize = function()
+{
+  return this.times(1/Math.sqrt(this.x*this.x + this.y*this.y + this.z*this.z))
+};
+Vector.prototype.crossProduct = function(v)
+{
+  return new Vector(
+    this.y*v.z - this.z*v.y,
+    this.z*v.x - this.x*v.z,
+    this.x*v.y - this.y*v.x);
+};
+
+function Poly(points)
+{
+  this.points = points;
+};
+Poly.prototype = 
+{
+  transform0: function(a, b, r)
+  {
+    //this.normal.transform0(a, b, r);
+  },
+  
+  calculateNormal: function()
+  {
+    return this.normal = this.points[1].to(this.points[0]).crossProduct(
+      this.points[1].to(this.points[2])).normalize();
+  }
+};
+
+function VisiblePoly(points)
+{
+  Poly.apply(this, arguments);
+  this.elt = document.createElement("polygon");
+  g_polys.appendChild(this.elt);
+};
+VisiblePoly.prototype = new Poly();
+VisiblePoly.prototype.to2d = function()
+{
+  var s = "";
+  for (var i=0;i<this.points.length;i++)
+    s+=this.points[i].x2d+" "+this.points[i].y2d+" ";
+  this.elt.setAttribute("points", s);
+  
+  var fill;
+/*  if (this.normal.z>0)
+    fill = "none";
+  else*/ 
+  {
+    var diff = this.normal.y+0.8;
+    if (diff<0) diff=0;
+    var spec = (0.6*this.normal.y+0.8*-this.normal.z);
+    if (spec<0) spec=0;
+    spec*=spec;
+    spec*=spec;
+    spec*=spec;
+    spec*=spec;
+    fill = "rgb("+(50+diff*80+spec*100)+","+(diff*120+spec*100)+","+(diff*120+spec*100)+")";
+  }
+  this.elt.setAttribute("fill", fill);
+};
+
+    
+    var tau = (Math.sqrt(5) + 1)/2;
+    var points = [];
+    var polys = [];
+    
+    var g_points;
+    var g_polys;
+    var t0;
+    var tra = 0;
+    var trb = 0;
+    var trr = 1;
+    
+    function start() 
+    {
+      g_polys = document.getElementById("polys");
+      g_points = document.getElementById("points");
+
+      // Construct cube
+      for (var i = 0; i<8; i++)
+        points[i] = new VisiblePoint(i&1?-1:1, i&2?-1:1, i&4?-1:1);
+        
+      polys = polys.concat(createDodecaCapOnCubeFace(createFace(0,2,3,1)));
+      polys = polys.concat(createDodecaCapOnCubeFace(createFace(0,1,5,4)));
+      polys = polys.concat(createDodecaCapOnCubeFace(createFace(0,4,6,2)));
+      polys = polys.concat(createDodecaCapOnCubeFace(createFace(6,4,5,7)));
+      polys = polys.concat(createDodecaCapOnCubeFace(createFace(3,2,6,7)));
+      polys = polys.concat(createDodecaCapOnCubeFace(createFace(5,1,3,7)));
+      
+      var l = polys.length;
+      for (var i=0; i<l;i++)
+        polys.push(new VisiblePoly(polys[i].points));
+      
+      t0 = +new Date();
+      
+      animate();
+    }
+    
+    function animate()
+    {
+      var t = new Date() - t0;      
+      trb = t/2500;
+      tra = t/822;
+      trf = -Math.cos(t/2000)*0.8 +0.5;
+      if (trf<0) trf = 0;
+      if (trf>1) trf = 1;
+      trr = 1.2-0.2*trf;
+
+      var l = polys.length / 2;
+      render(points, polys.slice(0, l), -2.5);
+      render(points, polys.slice(l), 2.5);
+
+      setTimeout("animate()", 30);
+    }
+    
+    function render(points, polys, dx)
+    {
+      for (var i=0; i<points.length; i++)
+      {
+        points[i].setF(trf);
+        points[i].transform0(tra, trb, trr);
+        points[i].to2d(dx);
+      }
+      for (var i=0; i<polys.length; i++)
+      {
+        polys[i].calculateNormal();
+        polys[i].transform0(tra, trb, trr);
+      }
+      polys.sort(function(p1,p2) {return p2.normal.z-p1.normal.z});
+      for (var i=0; i<polys.length; i++)
+      {
+        polys[i].to2d();
+        g_polys.appendChild(polys[i].elt);
+      }
+    }
+    
+    function createFace()
+    {
+      var pts = [];
+      for (var i=0;i<arguments.length;i++)
+        pts.push(points[arguments[i]]);
+      return new Poly(pts);
+    }
+    
+    function createDodecaCapOnCubeFace(face)
+    {
+      var pts = face.points;
+      var out = face.calculateNormal();
+      var topEdgeDir = pts[0].to(pts[1]).normalize();
+      var middle = average(face.points);
+      var p01 = middle.add(topEdgeDir, 1/tau);
+      var p1 = new AnimatedPoint(p01, p01.add(out, tau-1));
+      var p02 = middle.add(topEdgeDir, -1/tau);
+      var p2 = new AnimatedPoint(p02, p02.add(out, tau-1));
+      points.push(p1);
+      points.push(p2);
+      return [
+        new VisiblePoly([pts[1], pts[2], p1]), 
+        new VisiblePoly([pts[0], pts[1], p1, p2]),
+        new VisiblePoly([pts[3], pts[0], p2]),
+        new VisiblePoly([pts[2], pts[3], p2, p1])
+      ];
+    }
+      
+    function average(pts)
+    {
+      var a = new Point(0,0,0);
+      var f = 1/pts.length;
+      for (var i=0;i<pts.length;i++)
+        a = a.add(pts[i], f);
+      return a;
+    }
+      
+  ]]></script>
+
+  <style type="text/css"><![CDATA[
+    rect
+    {
+      fill: url(#sky);
+    }
+    circle
+    {
+      fill: white;
+      opacity: .5;
+      visibility: hidden;
+    }
+  ]]></style>
+
+  <defs>
+    <linearGradient id="sky" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#369" />
+      <stop offset="20%" stop-color="#336" />
+      <stop offset="100%" stop-color="#300" />
+    </linearGradient>
+  </defs>
+  
+  <rect x="-50%" y="-50%" width="100%" height="100%" />
+  <g id="polys" />
+  <g id="points" />
+
+</svg>

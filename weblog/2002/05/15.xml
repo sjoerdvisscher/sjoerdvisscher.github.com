@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/05/15.xml">
+<head>
+<title>Wednesday, May 15, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:22:14 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/05/15.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/05/15.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/05/15.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/05/11.xml#a99' title='Saturday, May 11, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/05/15.xml">Wednesday, May 15, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/05/20.txt#a101' title='Monday, May 20, 2002'>&#160;&gt;</a></h>
+<a name="a100"></a>
+<section id="a100">
+<h id='aBadUseOfFragmentIdentifiers'><a href="http://w3future.com/weblog/2002/05/15.xml#a100" class="weblogItemTitle">A bad use of fragment identifiers?</a></h>
+<p>I received an e-mail from <a href="http://idontsmoke.co.uk/">Paul Sowden</a>, with his comments about the <a href="http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.html">URIs for dynamic pages</a> article. It is an interesting e-mail, because Paul's conclusion is exactly the opposite of my opinion. I'm showing here a large part of the e-mail.</p>
+<blockquote>
+<blockquote><p>A fragment identifier is the part of the URI after the '#' sign and they are used to scroll to a specific point on the page.</p></blockquote>
+<p>This statement is wrong, the fragment identifier is not part of a URL or its parent family, URIs.</p>
+<blockquote><p>The problem with changing the url is that the browser will unload the current page and do a new http request.</p></blockquote>
+<p>This is obviously what you would expect, the different URL is pointing to a different location and as far as the client is concerned, a completely different document. It would be wrong for the client to
+behave otherwise.</p>
+<blockquote><p>There's one thing the web gurus agree on. It's axiom 0 in Tim Berners-Lee's web architecture: "Any resource of significance should be given a URI."</p></blockquote>
+<p>This statement stays true due to my above statement. Your article is implying otherwise, that a fragment identifier can be used to signify a different document.</p>
+<p>I think it would be extremely bad behaviour to use the fragment
+identifier to refer to a document other than that at the URI. The
+fragment identifier is only meant to reference material inside of the
+document at the current URI. Using the behaviour you have described,
+whilst it could be made to degrade and universily work, would be very
+bad, imo.</p>
+</blockquote>
+<p>I've found <a href="http://www.w3.org/DesignIssues/Fragment.html">a page on the w3c site</a> that says: <q cite="http://www.w3.org/DesignIssues/Fragment.html">Formally, the URI does include the fragment ID</q>. So there's no factual error. But "URI reference" would have been the better term.</p><p>My article is not implying that a fragment identifier can be used to signify a different document. The trick is using the fragment identifier to signify the same document, but in a different state. I think this is a proper use of the fragment ID, certainly when comparing it to the examples in the same w3c document:</p>
+<blockquote cite="http://www.w3.org/DesignIssues/Fragment.html"><p>For example, for a 3D object the fragment ID could give a viewport. For a music object, the Fragment ID could give a section in time, or a set of parts, or it could include a suggested tempo.</p></blockquote>
+<p>I cannot think of a more appropriate use of the fragment ID with framesets than indicating which documents it is showing. And for dynamic pages the fragment ID should indicate as much of the state of the page as possible. My opinion is that is better to use the trick, than not using it. Not only from a usability viewpoint, but also from a technical, semantic viewpoint.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/05/15.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

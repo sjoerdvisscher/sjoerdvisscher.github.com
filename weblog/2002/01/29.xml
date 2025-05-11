@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/01/29.xml">
+<head>
+<title>Tuesday, January 29, 2002 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:19:40 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2002/01/29.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2002/01/29.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/01/29.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2002/01/26.xml#a48' title='Saturday, January 26, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/01/29.xml">Tuesday, January 29, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/01/30.txt#a51' title='Wednesday, January 30, 2002'>&#160;&gt;</a></h>
+<a name="a50"></a>
+<section id="a50">
+<h ></h>
+Have you noticed too that programming, and especially web programming, is more than 50% doing escaping and unescaping, encoding and decoding. Javascript enscaping, XML escaping, URL encoding, SQL statement escaping... It cannot be very hard to do something about that.  But nevertheless things go wrong all the time.
+</section><a name="a49"></a>
+<section id="a49">
+<h ></h>
+<blockquote><p><a href="http://www.theregister.co.uk/content/4/23852.html">According to the Register</a>, Microsoft has a relational database on the front burner for a future version of Windows. Personally, I think they're barking up the wrong tree. If they spent more time building websites they'd know that hierarchical models with very tight scripting connections offer more performance and a higher level application model. Relational databases are good for factories and stores. Object databases map the model of the Web. Just change the slashes to dots and off you go. [<a href="http://scriptingnews.userland.com/backissues/2002/01/29#ldd1eaa295902ea9de04661ea62a2200f" >Scripting News</a>]</p></blockquote>
+<p>I think Microsoft knows that. They're building Exchange on the same database, and the filesystem. My guess is that the registry will be stored in it too. And of course SQL Server already supports XML (in some way). So the engine may be relational, but it won't be hard to store objects in it.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/01/29.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

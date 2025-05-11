@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/03/15.xml">
+<head>
+<title>Saturday, March 15, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:25:58 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/03/15.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/03/15.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/03/15.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/03/11.xml#a172' title='Tuesday, March 11, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/03/15.xml">Saturday, March 15, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/03/16.txt#a174' title='Sunday, March 16, 2003'>&#160;&gt;</a></h>
+<a name="a173"></a>
+<section id="a173">
+<h id='towardsStructuredBlogging'><a href="http://w3future.com/weblog/2003/03/15.xml#a173" class="weblogItemTitle">Towards structured blogging</a></h>
+<blockquote cite="http://www.intertwingly.net/blog/1270.html"><p><a href="http://radio.weblogs.com/0110772/stories/2003/03/13/towardsStructuredBlogging.html">
+Towards structuring blogging, Sebastien Paquet</a>: <em>I believe a critical element to get a sustainable system is for people to get reasonably quick feedback
+in return for the extra effort expended in creating metadata.</em> [<a href="http://www.intertwingly.net/blog/1270.html">Sam Ruby</a>]</p></blockquote>
+<p>Actually I'm more and more loosing faith in anything structured in blogging. It's too hard to do right, and too much work. Also it is hard to agree on categorisations and topics. (How often did you reorder your bookmarks? I've given up.)</p>
+<p>But I've not given up on the semantic web. It's just that the software needs to be smart, not the data. But in this case that's not even necessary. To know if two post are about the same subject is to see if they link to the same location. For example: to know which blog posts talk about &#8220;Towards structuring blogging&#8221;, you can simply <a href="http://www.feedster.com/search.php?hl=en&amp;ie=ISO-8859-1&amp;q=http%3A%2F%2Fradio.weblogs.com%2F0110772%2Fstories%2F2003%2F03%2F13%2FtowardsStructuredBlogging.html&amp;btnG=Search">search for it's <acronym title="Uniform Resource Locator">URL</acronym> with Feedster</a>. If <a href="http://www.feedster.com/">Feedster</a> could provide an RSS service for search results, you get functionality comparable to what is suggested in &#8220;Towards structuring blogging&#8221;. And that is without any change in blogging tools. And the blog posts improve too, when they use more links.</p>
+<p>One problem remains, a problem in general for the semantic web: Often there's not one unique URL for one topic. Try to find the <acronym title="Uniform Resource Locator">URL</acronym> for <a href="http://launch.yahoo.com/album/default.asp?albumID=1030188">Radiohead's album &#8220;Kid A&#8221;</a>. If everyone does that, we'll probably end up with about 10 different <acronym title="Uniform Resource Locator">URL</acronym>s. And at least half of them will break within one year. If the semantic web is ever going to work, we'll need to actively advocate the creation of permalinks for all popular topics.</p>
+<p>And for those who don't believe in the power of linking: it's exactly what your brain does.</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/03/15.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

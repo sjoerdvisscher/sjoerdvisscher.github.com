@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/07/12.xml">
+<head>
+<title>Saturday, July 12, 2003 - Sjoerd Visscher's weblog</title>
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+</head>
+<body>
+<section id="content">
+	<h>Sjoerd Visscher's weblog</h>
+	<p>Pondering those web technologies that may change the future of the world wide web.</p>
+	<section id="note">
+		<h>Last Update</h>
+		<p>10/16/2005; 1:28:14 AM</p>
+		<p id="alternates" class="buttons">
+			<l href="http://w3future.com/weblog/2003/07/12.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:http://w3future.com/weblog/2003/07/12.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/07/12.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+		</p>
+		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+	</section><section>
+  <h><a rel='prev' href='http://w3future.com/weblog/2003/07/06.xml#a217' title='Sunday, July 06, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/07/12.xml">Saturday, July 12, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/07/15.txt#a221' title='Tuesday, July 15, 2003'>&#160;&gt;</a></h>
+<a name="a249"></a>
+<section id="a249">
+<h id='youJustHaveToKnowWhereToLook'><a href="http://w3future.com/weblog/2003/07/12.xml#a249" class="weblogItemTitle">You just have to know where to look</a></h>
+<p>Note to self: If something bugs you in Radio Userland, it is usually very easy to fix. The shortcuts weren't expanded in the RSS feed, so <a href="http://radio.userland.com/discuss/msgReader$26241">I posted a message on de discussion board</a>. Steve Hooker was a great help, and in the meantime I learnt to fix something else that had even annoyed me more the last few years: activeURLs and autoParagraphs. It turns out that it is enough to add this to #prefs.txt:</p>
+<pre>
+#activeURLs false
+#autoParagraphs false
+</pre>
+</section><a name="a248"></a>
+<section id="a248">
+<h id='echoFeedAvailable'><a href="http://w3future.com/weblog/2003/07/12.xml#a248" class="weblogItemTitle">Echo feed available</a></h>
+<p>Yesterday <a href="http://scriptingnews.userland.com/2003/07/11#When:5:35:28PM">Dave Winer added support for Echo to Radio Userland's aggregator</a>. Today I did the same, but at the other end. My Radio Userland now emits <a href="http://w3future.com/weblog/rss.xml?notransform">an Echo feed</a>. <a href="http://w3future.com/weblog/rss.xml">The RSS feed</a> is now created by transforming the Echo feed, using <a href="http://w3future.com/tools/necho2rss091.xsl">this XSLT transformation</a>.</p>
+</section><a name="a247"></a>
+<section id="a247">
+<h id='q42IsHiring'><a href="http://w3future.com/weblog/2003/07/12.xml#a247" class="weblogItemTitle">Q42 is hiring</a></h>
+<p>If you like what <a href="http://q42.nl">Q42</a> is doing, then now is the chance to join us. <a href="http://www.q42.nl" xml:lang="nl">Q42 biedt een uitdaging aan</a>. (You need to be able to read Dutch).</p>
+</section>
+</section>
+<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/07/12.xml' /></section>
+<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Horse Race Gambling</title>
+<script src="beyond.js"></script>
+<script src="beyondBrowser.js"></script>
+<script src="beyondStreams.js"></script>
+</head>
+<body>
+<div id="inputs"></div>
+</body>
+<script>
+function val(v) {
+	var o=new Stream();
+	o.v=v;
+	function f() {
+		switch (arguments.length) {
+			case 0: return o.v;
+			case 1: return o.v[arguments[0]];
+			default:
+				return Function.from(o.v, arguments[0]).curry(
+					Array.from(arguments).slice(1).collect(function(f) {return f.asValue()})
+				);
+		}
+	}
+	f.push=function(v) {return o.v=v;}
+	return f;
+}
+
+var chances=val(0)("to",n-1)("collect", function(i) {
+	var inp="inp"+i, outp="outp"+i;
+	"inputs".append("div".w(i+'. Pay-out: <input id="'+inp+'"> Chance: <input id="'+outp+'">'));
+	return val(1)("/", formValue(inp));
+});
+var total=chances("fold","+");
+
+chances("foreach", function(v, i) {
+	formValue("outp"+i)("=", total("/", v));
+});
+</script>
+</html>

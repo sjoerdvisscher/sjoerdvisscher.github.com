@@ -1,0 +1,36 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<HTML>
+<HEAD>
+	<TITLE>XML Test</TITLE>
+	<SCRIPT SRC=beyond.js></SCRIPT>
+	<SCRIPT SRC=beyondLazy.js></SCRIPT>
+	<SCRIPT SRC=beyondXML.js></SCRIPT>
+</HEAD>
+<BODY>
+	hello there world
+</BODY>
+<SCRIPT>
+	// Use lazy lists
+	// beyondXML.lazyLists = true;
+
+	// Utility function
+	function display(n) {
+		alert("<" + n.nodeName + ">" + n.text + "</" + n.nodeName + ">");
+	}
+
+	// Load xml from string
+	var d = "<test><a>hello</a><a>there</a><b>world</b></test>".parseFromString();
+
+	// Iterate over root node's children
+	beyondXML.invoke("documentElement").andThen("childNodes").andThen(beyondXML.list)(d).foreach(display);
+
+	// A shorter, cleaner way
+	childNodes(d.documentElement).foreach(display);
+
+	// pattern matching
+	"/test/*".selectNodes(d).foreach(display);
+
+	// walking around the tree
+	Function.from("/test/a", "selectSingleNode").andThen("parentNode").andThen(display)(d);
+</SCRIPT>
+</HTML>

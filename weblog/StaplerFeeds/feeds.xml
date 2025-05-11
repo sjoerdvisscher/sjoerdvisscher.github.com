@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!-- generator="Stapler/2.0.3" -->
+<rss version="0.92">
+	<channel>
+		<docs>http://backend.userland.com/rss092</docs>
+		<title>My Stapler Feeds</title>
+		<description></description>
+		<link></link>
+		<managingEditor>sjoerd@w3future.com</managingEditor>
+		<webMaster>sjoerd@w3future.com</webMaster>
+		<lastBuildDate>Sat, 22 Jun 2002 18:09:13 GMT</lastBuildDate>
+		<item>
+			<description></description>
+			<format>http://InternetAlchemy.org/ocs/directory#</format>
+			<link>http://w3future.com/weblog/staplerFeeds/feeds.xml</link>
+			<title>My Stapler Feeds</title>
+			<url>http://w3future.com/weblog/staplerFeeds/feeds.xml</url>
+			</item>
+		<item>
+			<description></description>
+			<format>http://InternetAlchemy.org/ocs/directory#</format>
+			<link>http://w3future.com/weblog/staplerFeeds/feeds.xml</link>
+			<title>My Stapler Feeds</title>
+			<url>http://w3future.com/weblog/staplerFeeds/feeds.xml</url>
+			</item>
+		<item>
+			<description></description>
+			<format>http://InternetAlchemy.org/ocs/directory#</format>
+			<link>http://w3future.com/weblog/staplerFeeds/feeds.xml</link>
+			<title>My Stapler Feeds</title>
+			<url>http://w3future.com/weblog/staplerFeeds/feeds.xml</url>
+			</item>
+		<item>
+			<description></description>
+			<format>http://InternetAlchemy.org/ocs/directory#</format>
+			<link>http://w3future.com/weblog/staplerFeeds/feeds.xml</link>
+			<title>My Stapler Feeds</title>
+			<url>http://w3future.com/weblog/staplerFeeds/feeds.xml</url>
+			</item>
+		<item>
+			<description></description>
+			<format>http://InternetAlchemy.org/ocs/directory#</format>
+			<link>http://w3future.com/weblog/staplerFeeds/feeds.xml</link>
+			<title>My Stapler Feeds</title>
+			<url>http://w3future.com/weblog/staplerFeeds/feeds.xml</url>
+			</item>
+		</channel>
+	</rss>
