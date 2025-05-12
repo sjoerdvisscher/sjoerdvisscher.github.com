@@ -22,7 +22,7 @@
 <a name="a92"></a>
 <section id="a92">
 <h id='opmlWithRelatedPages'><a href="http://w3future.com/weblog/2002/04/20.xml#a92" class="weblogItemTitle">OPML with related pages</a></h>
-<p>I wanted to try the new Google API. And reading that <a href="http://scriptingnews.userland.com/backissues/2002/04/20#l79318edbf1bd2e4ab7c903c3e59756e9">Dave Winer is having fun using his Google Outline Browser</a>, I thought I'd try that too in my <a href="http://w3future.com/html/opmlloader.html#http://w3future.com/weblog/sidebars/opmlloader.opml">OPMLLoader</a>. It's a bit different from Dave's version. You can expand any link to a page and <a href="http://w3future.com/html/opmlloader.html#rel=http://w3future.com/weblog">see the related pages</a>. Dave's right, it's really fun!</p>
+<p>I wanted to try the new Google API. And reading that <a href="http://scriptingnews.userland.com/backissues/2002/04/20#l79318edbf1bd2e4ab7c903c3e59756e9">Dave Winer is having fun using his Google Outline Browser</a>, I thought I'd try that too in my <a href="http://w3future.com/html/opmlloader.xml#http://w3future.com/weblog/sidebars/opmlloader.opml">OPMLLoader</a>. It's a bit different from Dave's version. You can expand any link to a page and <a href="http://w3future.com/html/opmlloader.xml#rel=http://w3future.com/weblog">see the related pages</a>. Dave's right, it's really fun!</p>
 </section>
 </section>
 <xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/04/20.xml' /></section>

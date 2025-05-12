@@ -22,7 +22,7 @@
 <section id="a89">
 <h id='exploringTransclusion'><a href="http://w3future.com/weblog/2002/03/30.xml#a89" class="weblogItemTitle">Exploring transclusion</a></h>
 <blockquote cite="http://radio.weblogs.com/0100887/2002/03/29.html#a156"><p>When I render <a href="http://www.w3.org/2000/06/webdata/xslt?xslfile=http://www.netcrucible.com/xslt/opml.xslt&amp;xmlfile=http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml&amp;transform=Submit">my outline</a> using <a href="http://www.netcrucible.com/xslt/opml.html">Joshua's stuff</a>, <a href="http://www.decafbad.com/deus_x/radio/">Les Orchard's</a> transcluded <a href="http://www.decafbad.com/deus_x/radio/instantOutliner/l.m.orchard.opml">outline</a> is directly included, not linked. Make sense? Yes and no. It can be argued either way. We geeks are going to have infinite amounts of fun with this stuff. [<a href="http://radio.weblogs.com/0100887/2002/03/29.html#a156">Jon's Radio</a>]</p></blockquote>
-<p><a href="http://w3future.com/html/opmlloader.html#http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml">The outline renderer can do both.</a> It should provide the link and dynamically load the transcluded outline when the user expands the link to the opml file.</p>
+<p><a href="http://w3future.com/html/opmlloader.xml#http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml">The outline renderer can do both.</a> It should provide the link and dynamically load the transcluded outline when the user expands the link to the opml file.</p>
 </section>
 </section><section>
   <h><a href="http://w3future.com/weblog/2002/03/14.xml">Thursday, March 14, 2002</a></h>
@@ -58,7 +58,7 @@
 <a name="a83"></a>
 <section id="a83">
 <h id='siteUpdates'><a href="http://w3future.com/weblog/2002/03/12.xml#a83" class="weblogItemTitle">Site updates</a></h>
-<p>I updated <a href="http://w3future.com/html/weblogsources.html">the weblog sources page</a> and <a href="http://w3future.com/html/opmlloader.html">the OPML Loader</a>. These pages now have their own specific sidebar OPML files, which you can load with the OPML loader. I mailed Dave Winer once how OPML could have been much cooler with a more general approach. But some of the nicest demos on w3future are OPML related, which shows clearly that OPML is more than good enough. "Dare to keep it simple" is something Dave keeps reminding me of.</p>
+<p>I updated <a href="http://w3future.com/html/weblogsources.html">the weblog sources page</a> and <a href="http://w3future.com/html/opmlloader.xml">the OPML Loader</a>. These pages now have their own specific sidebar OPML files, which you can load with the OPML loader. I mailed Dave Winer once how OPML could have been much cooler with a more general approach. But some of the nicest demos on w3future are OPML related, which shows clearly that OPML is more than good enough. "Dare to keep it simple" is something Dave keeps reminding me of.</p>
 <p>Sadly the OPML Loader suffers from cutting edge problems. Both IE and Mozilla screw up in completely different ways.</p>
 </section>
 </section><section>

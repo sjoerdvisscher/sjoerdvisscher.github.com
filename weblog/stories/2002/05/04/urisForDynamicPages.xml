@@ -63,7 +63,7 @@ function loadStateFromURL() {
 <section>
 <h>Examples</h>
 <ul>
-<li><a href="http://w3future.com/html/opmlloader.html#http://w3future.com/weblog/sidebars/opmlloader.opml">The OPML loader.</a> I used this fragment id trick in my OPML loader, without explaining the trick. I wanted to see if people would understand that they could use the URL to link to the loader with a given OPML file. And indeed several weblogs have used this feature.</li>
+<li><a href="http://w3future.com/html/opmlloader.xml#http://w3future.com/weblog/sidebars/opmlloader.opml">The OPML loader.</a> I used this fragment id trick in my OPML loader, without explaining the trick. I wanted to see if people would understand that they could use the URL to link to the loader with a given OPML file. And indeed several weblogs have used this feature.</li>
 <li><a href="http://maggerydoo.net/maggerydoo/frames.php3#pid=14">URIs for Frames.</a> The same trick can also be used with frames, which have the same problem as dynamic pages. A friend of mine allowed me to experiment with this in his portal system.</li>
 </ul>
 </section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/stories/2002/05/04/urisForDynamicPages.txt" /></section>

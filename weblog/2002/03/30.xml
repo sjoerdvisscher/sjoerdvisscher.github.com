@@ -23,7 +23,7 @@
 <section id="a89">
 <h id='exploringTransclusion'><a href="http://w3future.com/weblog/2002/03/30.xml#a89" class="weblogItemTitle">Exploring transclusion</a></h>
 <blockquote cite="http://radio.weblogs.com/0100887/2002/03/29.html#a156"><p>When I render <a href="http://www.w3.org/2000/06/webdata/xslt?xslfile=http://www.netcrucible.com/xslt/opml.xslt&amp;xmlfile=http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml&amp;transform=Submit">my outline</a> using <a href="http://www.netcrucible.com/xslt/opml.html">Joshua's stuff</a>, <a href="http://www.decafbad.com/deus_x/radio/">Les Orchard's</a> transcluded <a href="http://www.decafbad.com/deus_x/radio/instantOutliner/l.m.orchard.opml">outline</a> is directly included, not linked. Make sense? Yes and no. It can be argued either way. We geeks are going to have infinite amounts of fun with this stuff. [<a href="http://radio.weblogs.com/0100887/2002/03/29.html#a156">Jon's Radio</a>]</p></blockquote>
-<p><a href="http://w3future.com/html/opmlloader.html#http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml">The outline renderer can do both.</a> It should provide the link and dynamically load the transcluded outline when the user expands the link to the opml file.</p>
+<p><a href="http://w3future.com/html/opmlloader.xml#http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml">The outline renderer can do both.</a> It should provide the link and dynamically load the transcluded outline when the user expands the link to the opml file.</p>
 </section>
 </section>
 <xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/03/30.xml' /></section>

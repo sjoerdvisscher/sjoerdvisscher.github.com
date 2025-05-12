@@ -22,7 +22,7 @@
 <a name="a83"></a>
 <section id="a83">
 <h id='siteUpdates'><a href="http://w3future.com/weblog/2002/03/12.xml#a83" class="weblogItemTitle">Site updates</a></h>
-<p>I updated <a href="http://w3future.com/html/weblogsources.html">the weblog sources page</a> and <a href="http://w3future.com/html/opmlloader.html">the OPML Loader</a>. These pages now have their own specific sidebar OPML files, which you can load with the OPML loader. I mailed Dave Winer once how OPML could have been much cooler with a more general approach. But some of the nicest demos on w3future are OPML related, which shows clearly that OPML is more than good enough. "Dare to keep it simple" is something Dave keeps reminding me of.</p>
+<p>I updated <a href="http://w3future.com/html/weblogsources.html">the weblog sources page</a> and <a href="http://w3future.com/html/opmlloader.xml">the OPML Loader</a>. These pages now have their own specific sidebar OPML files, which you can load with the OPML loader. I mailed Dave Winer once how OPML could have been much cooler with a more general approach. But some of the nicest demos on w3future are OPML related, which shows clearly that OPML is more than good enough. "Dare to keep it simple" is something Dave keeps reminding me of.</p>
 <p>Sadly the OPML Loader suffers from cutting edge problems. Both IE and Mozilla screw up in completely different ways.</p>
 </section>
 </section>

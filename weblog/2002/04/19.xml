@@ -28,7 +28,7 @@
 <h id='someSmallThingsToBreakTheSilence'><a href="http://w3future.com/weblog/2002/04/19.xml#a90" class="weblogItemTitle">Some small things to break the silence</a></h>
 <ul>
 <li>I'm scraping <a href="http://w3future.com/weblog/staplerFeeds/mccusker.xml">David McCusker's weblog</a> and <a href="http://w3future.com/weblog/staplerFeeds/glishcom.xml">Eric Costello's weblog</a>.</li>
-<li>For OPML fans running Mozilla:<ol><li>Bookmark this link:<a href="http://w3future.com/html/opmlloader.html#%s">http://w3future.com/html/opmlloader.html#%s</a>.</li>
+<li>For OPML fans running Mozilla:<ol><li>Bookmark this link:<a href="http://w3future.com/html/opmlloader.xml#%s">http://w3future.com/html/opmlloader.xml#%s</a>.</li>
 <li>Add the keyword "opml" to the properties of that bookmark.</li>
 <li>Type "opml http://radio.weblogs.com/0001015/instantOutliner/daveWiner.opml" in the addressbar.</li></ol></li></ul>
 </section>

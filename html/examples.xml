@@ -33,15 +33,15 @@
 <h>Data Format and Storage</h>
 <section>
 <h href="tryvvm.html">Outliner view for VVM</h>
-<p>The value/vector model is a prototype 
+<p>The value/vector model is a prototype
 of a possible data format of the near future. This example contains a minimal XML parser
 that returns VVM models. Then an outliner view is created for that model. It is made to show
 how convenient it often is too differentiate between content (data) and properties (meta-data).</p>
 </section>
 <section>
-<h href="opmlloader.html">OPML loader</h>
-<p>OPML (Outline Processor Markup Language) is 
-"an XML-based format that allows exchange of outline-structured information between applications 
+<h href="opmlloader.xml">OPML loader</h>
+<p>OPML (Outline Processor Markup Language) is
+"an XML-based format that allows exchange of outline-structured information between applications
 running on different operating systems and environments." This page loads OPML files and renders it in an outliner view.</p>
 </section>
 <section>

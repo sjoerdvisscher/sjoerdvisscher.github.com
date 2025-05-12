@@ -41,7 +41,7 @@ Below I reprint parts of his email, which I expect Sjoerd won't mind.
 <a name="a92"></a>
 <section id="a92">
 <h id='opmlWithRelatedPages'><a href="http://w3future.com/weblog/2002/04/20.xml#a92" class="weblogItemTitle">OPML with related pages</a></h>
-<p>I wanted to try the new Google API. And reading that <a href="http://scriptingnews.userland.com/backissues/2002/04/20#l79318edbf1bd2e4ab7c903c3e59756e9">Dave Winer is having fun using his Google Outline Browser</a>, I thought I'd try that too in my <a href="http://w3future.com/html/opmlloader.html#http://w3future.com/weblog/sidebars/opmlloader.opml">OPMLLoader</a>. It's a bit different from Dave's version. You can expand any link to a page and <a href="http://w3future.com/html/opmlloader.html#rel=http://w3future.com/weblog">see the related pages</a>. Dave's right, it's really fun!</p>
+<p>I wanted to try the new Google API. And reading that <a href="http://scriptingnews.userland.com/backissues/2002/04/20#l79318edbf1bd2e4ab7c903c3e59756e9">Dave Winer is having fun using his Google Outline Browser</a>, I thought I'd try that too in my <a href="http://w3future.com/html/opmlloader.xml#http://w3future.com/weblog/sidebars/opmlloader.opml">OPMLLoader</a>. It's a bit different from Dave's version. You can expand any link to a page and <a href="http://w3future.com/html/opmlloader.xml#rel=http://w3future.com/weblog">see the related pages</a>. Dave's right, it's really fun!</p>
 </section>
 </section><section>
   <h><a href="http://w3future.com/weblog/2002/04/19.xml">Friday, April 19, 2002</a></h>
@@ -54,7 +54,7 @@ Below I reprint parts of his email, which I expect Sjoerd won't mind.
 <h id='someSmallThingsToBreakTheSilence'><a href="http://w3future.com/weblog/2002/04/19.xml#a90" class="weblogItemTitle">Some small things to break the silence</a></h>
 <ul>
 <li>I'm scraping <a href="http://w3future.com/weblog/staplerFeeds/mccusker.xml">David McCusker's weblog</a> and <a href="http://w3future.com/weblog/staplerFeeds/glishcom.xml">Eric Costello's weblog</a>.</li>
-<li>For OPML fans running Mozilla:<ol><li>Bookmark this link:<a href="http://w3future.com/html/opmlloader.html#%s">http://w3future.com/html/opmlloader.html#%s</a>.</li>
+<li>For OPML fans running Mozilla:<ol><li>Bookmark this link:<a href="http://w3future.com/html/opmlloader.xml#%s">http://w3future.com/html/opmlloader.xml#%s</a>.</li>
 <li>Add the keyword "opml" to the properties of that bookmark.</li>
 <li>Type "opml http://radio.weblogs.com/0001015/instantOutliner/daveWiner.opml" in the addressbar.</li></ol></li></ul>
 </section>

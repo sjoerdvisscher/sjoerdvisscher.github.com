@@ -23,7 +23,7 @@
 		<outline type="file" text="mainlib.js" size="5048" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/mainlib.js"/>
 		<outline type="file" text="md5.js" size="5737" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/md5.js"/>
 		<outline type="folder" text="opmlloader">
-			<outline type="file" text="opmlloader.html" size="7050" whenCreated="Fri, 01 Mar 2002 20:18:48 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader/opmlloader.html"/>
+			<outline type="file" text="opmlloader.xml" size="7050" whenCreated="Fri, 01 Mar 2002 20:18:48 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader/opmlloader.xml"/>
 			<outline type="file" text="xmlload.js" size="2988" whenCreated="Fri, 01 Mar 2002 20:19:13 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader/xmlload.js"/>
 			<outline type="file" text="xmlparse.phtml" size="1779" whenCreated="Fri, 01 Mar 2002 20:28:21 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader/xmlparse.phtml"/>
 			</outline>

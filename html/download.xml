@@ -28,7 +28,7 @@
 <p>This is mostly browser code, but it uses some serverside PHP code.</p>
 <section>
 <h href="/tools/opmlloader.zip">OPML Renderer</h>
-<p>This package contains all the code to build a DHTML OPML loader/renderer. XML and RSS files are shown in outliner format too. It needs to be installed on a PHP server. <a href="/tools/opmlloader.zip">Download</a> or <a href="/html/opmlloader.html">Demo</a></p>
+<p>This package contains all the code to build a DHTML OPML loader/renderer. XML and RSS files are shown in outliner format too. It needs to be installed on a PHP server. <a href="/tools/opmlloader.zip">Download</a> or <a href="/html/opmlloader.xml">Demo</a></p>
 </section>
 </section>
 <section>
