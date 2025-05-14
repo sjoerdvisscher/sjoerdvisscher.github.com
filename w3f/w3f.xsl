@@ -23,10 +23,6 @@
         <meta name="ICBM" content="52.0788, 4.3092" />
         <link rel="icon" href="https://w3future.com/favicon.ico" type="application/ico" />
         <link rel="stylesheet" type="text/css" href="https://w3future.com/w3f/xhtml2.css" />
-        <xsl:if test="system-property('xsl:vendor')!='Transformiix'">
-          <script type="text/javascript" src="http://statistics.q42.nl/counter/default.asp?id=w3future"></script>
-        </xsl:if>
-        <script type="text/javascript" src="http://api.flattr.com/js/0.5.0/load.js?mode=auto" async="true"></script>
       </head>
       <body>
         <xsl:apply-templates select="h:body/@*" />
@@ -35,30 +31,14 @@
         <div id="footer">
           <p id="copyright">
             <xsl:if test="system-property('xsl:vendor')!='Transformiix'">
-<script type="text/javascript"><![CDATA[
-    var d=document;
-    var sid="346588";
-    var CONTENTSECTION="";
-    var osp_URL=d.URL;
-    var osp_Title=d.title;
-    var t=new Date();
-    var p="http://stat.onestat.com/stat.aspx?tagver=2&sid="+sid;
-    p+="&url="+escape(osp_URL);
-    p+="&ti="+escape(osp_Title);
-    p+="&section="+escape(CONTENTSECTION);
-    p+="&rf="+escape(parent==self?document.referrer:top.document.referrer);
-    p+="&tz="+escape(t.getTimezoneOffset());
-    p+="&ch="+escape(t.getHours());
-    p+="&js=1";
-    p+="&ul="+escape(navigator.appName=="Netscape"?navigator.language:navigator.userLanguage);
-    if(typeof(screen)=="object"){
-       p+="&sr="+screen.width+"x"+screen.height;p+="&cd="+screen.colorDepth;
-       p+="&jo="+(navigator.javaEnabled()?"Yes":"No");
-    }
-    d.write('<a href="http://www.onestat.com/aspx/login.aspx?sid='+sid+'" target=_blank><img id="ONESTAT_TAG" border="0" src="'+p+'" alt="This site tracked by OneStat.com. Get your own free site counter."></'+'a>');
-]]></script>
-              <script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
-              <script type="text/javascript">_uacct = "UA-61155-1";urchinTracker();</script>
+              <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-P0EFJ92EVZ"></script>
+              <script><![CDATA[
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-P0EFJ92EVZ');
+              ]]></script>
             </xsl:if>
           </p>
           <div id="adsense">
@@ -75,7 +55,7 @@
                 google_color_text = "000033";
                 google_ad_channel = "8852328146";
               ]]></script>
-              <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+              <script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
             </xsl:if>
           </div>
         </div>
@@ -85,9 +65,7 @@
 
   <xsl:template match="h:section[@id='note']">
     <div id="note">
-      <xsl:if test="contains(/*/@xml:base, '/stories/') and not(contains(/*/@xml:base, 'index.txt'))">
-        <p id="flattr"><a class="FlattrButton" rev="flattr" href="{substring-before(/*/@xml:base, '.txt')}.xml"></a></p>
-      </xsl:if>
+      <p id="Flattr"><a class="FlattrButton" rev="flattr;button:compact;" href="{substring-before(/*/@xml:base, '.txt')}.xml"></a></p>
       <xsl:apply-templates select="node()" />
       <div style="clear: both"></div>
     </div>
