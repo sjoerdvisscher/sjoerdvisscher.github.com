@@ -5,7 +5,7 @@ function doSearch(text) {
   } else {
     document.getElementById('url').value=text;
   }
-  try { 
+  try {
     location = '#'+text;
   } catch(e) {}
   var s=new w3f_XMLDocument();
@@ -26,7 +26,7 @@ function doSearch(text) {
             var res=results[i];
             if (!res) continue;
             var url=''+res.URL;
-            if (url=='http://w3future.com/weblog/') continue;
+            if (url=='https://w3future.com/weblog/') continue;
             var title=res.title['#text']||url;
             var m=url.match(/(\d{4})\/(\d{2})\/(\d{2})/);
             if (m&&url.indexOf('w3future.com')!=-1) {
@@ -58,8 +58,8 @@ function doSearch(text) {
     xoomleUrl='http://xoomle.dentedreality.com.au/search/?key=6ycnFAZiVyxI5J5Xu%2B9s6zlKNGx5au02&maxResults=20&filter=1&safeSearch=1&q='+escape(text);
   }
   s.load(xoomleUrl);
-}    
- 
+}
+
 function fixText(s) {
   return s.replace(/</g,'&lt;');
 }

@@ -12,7 +12,7 @@ function serialize(value) {
       return '@['+s+']';
     case Pointer:
       return '*['+value.path+']';
-    default: 
+    default:
       return '['+value+']';
   }
 }
@@ -137,7 +137,7 @@ function Pointer(path) {
    ham    *[/foo/ham]
    fish   *[/foo/fish]
    red    *[/fish/2]
-] 
+]
 
 %[foo%[ham[Yumm!]eggs[Over Easy]fish@[[One Fish][Two Fish][Red Fish][Blue Fish]]]ham*[/foo/ham]fish*[/foo/fish]red*[/fish/2]]
 
@@ -148,6 +148,6 @@ function Pointer(path) {
 </TEXTAREA>
 </FORM>
 <HR>
-<A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A> - <A href="http://w3future.com">w3future.com</A>
+<A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A> - <A href="https://w3future.com">w3future.com</A>
 </BODY>
 </HTML>

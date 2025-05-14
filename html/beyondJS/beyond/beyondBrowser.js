@@ -1,7 +1,7 @@
 /*
    beyondBrowser.js
    by Dan Shappir and Sjoerd Visscher
-   For more information see http://w3future.com/html/beyondJS
+   For more information see https://w3future.com/html/beyondJS
 */
 if ( typeof(beyondVer) !== "number" || beyondVer < 0.98 )
 	alert("beyondBrowser requires beyond JS library ver 0.98 or higher");

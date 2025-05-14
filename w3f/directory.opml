@@ -7,20 +7,20 @@
 		<dateModified>3/30/2002; 5:00:06 PM</dateModified>
 		</head>
 	<body>
-		<outline type="file" text="300x80.jpg" size="6522" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/300x80.jpg"/>
-		<outline type="file" text="data.js" size="8320" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/data.js"/>
-		<outline type="file" text="empty.html" size="526" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/empty.html"/>
-		<outline type="file" text="icon.png" size="1247" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/icon.png"/>
-		<outline type="file" text="index.html" size="350" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/index.html"/>
-		<outline type="file" text="lijn.gif" size="51" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/lijn.gif"/>
-		<outline type="file" text="min.png" size="167" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/min.png"/>
-		<outline type="file" text="plus.png" size="173" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/w3f/plus.png"/>
-		<outline type="file" text="renderer.js" size="10384" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="http://w3future.com/w3f/renderer.js"/>
-		<outline type="file" text="setCookie.phtml" size="206" whenCreated="Sat, 19 Jan 2002 12:27:33 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="http://w3future.com/w3f/setCookie.phtml"/>
-		<outline type="file" text="strip.jpg" size="1535" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="http://w3future.com/w3f/strip.jpg"/>
-		<outline type="file" text="w3f.css" size="5553" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="http://w3future.com/w3f/w3f.css"/>
-		<outline type="file" text="w3f.js" size="6292" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="http://w3future.com/w3f/w3f.js"/>
-		<outline type="file" text="w3f.phtml" size="8369" whenCreated="Sat, 19 Jan 2002 10:47:01 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="http://w3future.com/w3f/w3f.phtml"/>
-		<outline type="file" text="w3future.css" size="3079" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="http://w3future.com/w3f/w3future.css"/>
+		<outline type="file" text="300x80.jpg" size="6522" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/300x80.jpg"/>
+		<outline type="file" text="data.js" size="8320" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/data.js"/>
+		<outline type="file" text="empty.html" size="526" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/empty.html"/>
+		<outline type="file" text="icon.png" size="1247" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/icon.png"/>
+		<outline type="file" text="index.html" size="350" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/index.html"/>
+		<outline type="file" text="lijn.gif" size="51" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/lijn.gif"/>
+		<outline type="file" text="min.png" size="167" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/min.png"/>
+		<outline type="file" text="plus.png" size="173" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/w3f/plus.png"/>
+		<outline type="file" text="renderer.js" size="10384" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="https://w3future.com/w3f/renderer.js"/>
+		<outline type="file" text="setCookie.phtml" size="206" whenCreated="Sat, 19 Jan 2002 12:27:33 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="https://w3future.com/w3f/setCookie.phtml"/>
+		<outline type="file" text="strip.jpg" size="1535" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="https://w3future.com/w3f/strip.jpg"/>
+		<outline type="file" text="w3f.css" size="5553" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="https://w3future.com/w3f/w3f.css"/>
+		<outline type="file" text="w3f.js" size="6292" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="https://w3future.com/w3f/w3f.js"/>
+		<outline type="file" text="w3f.phtml" size="8369" whenCreated="Sat, 19 Jan 2002 10:47:01 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="https://w3future.com/w3f/w3f.phtml"/>
+		<outline type="file" text="w3future.css" size="3079" whenCreated="Tue, 15 Jan 2002 21:11:04 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:06:02 GMT" url="https://w3future.com/w3f/w3future.css"/>
 		</body>
 	</opml>

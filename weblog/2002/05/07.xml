@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/05/07.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/05/07.xml">
 <head>
 <title>Tuesday, May 07, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,22 +12,22 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:21:53 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/05/07.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/05/07.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/05/07.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/05/07.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/05/07.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/05/07.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/05/04.xml#a96' title='Saturday, May 04, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/05/07.xml">Tuesday, May 07, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/05/08.txt#a98' title='Wednesday, May 08, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/05/04.xml#a96' title='Saturday, May 04, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/05/07.xml">Tuesday, May 07, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/05/08.txt#a98' title='Wednesday, May 08, 2002'>&#160;&gt;</a></h>
 <a name="a97"></a>
 <section id="a97">
-<h id='troubleAtHome'><a href="http://w3future.com/weblog/2002/05/07.xml#a97" class="weblogItemTitle">Trouble at home?</a></h>
+<h id='troubleAtHome'><a href="https://w3future.com/weblog/2002/05/07.xml#a97" class="weblogItemTitle">Trouble at home?</a></h>
 <blockquote cite="http://live.curry.com/2002/05/07.html#a1475"><p>Rioting continues at the 'Binnenhof", where parliment sits. Protestors on the scene are blaming incumbent paolitical parties for his murder. It seems to be reasonable under control. Riots always look worse on tv at night. [<a href="http://live.curry.com/2002/05/07.html#a1475">Adam Curry's Weblog</a>]</p></blockquote>
 <p>That's right. I live at the 'Buitenhof', right next to the 'Binnenhof'. And I'm just comming home. (1:15 AM) I was quite nervous to go home, because of the footage on TV about the riots. But thankfully there wasn't any noticable trouble anymore.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/05/07.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/05/07.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

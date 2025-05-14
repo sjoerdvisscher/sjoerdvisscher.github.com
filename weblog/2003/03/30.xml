@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/03/30.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/03/30.xml">
 <head>
 <title>Sunday, March 30, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,20 +12,20 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:26:31 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/03/30.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/03/30.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/03/30.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/03/30.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/03/30.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/03/30.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/03/28.xml#a182' title='Friday, March 28, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/03/30.xml">Sunday, March 30, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/04/04.txt#a186' title='Friday, April 04, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/03/28.xml#a182' title='Friday, March 28, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/03/30.xml">Sunday, March 30, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/04/04.txt#a186' title='Friday, April 04, 2003'>&#160;&gt;</a></h>
 <a name="a185"></a>
 <section id="a185">
-<h id='anotherTeaser'><a href="http://w3future.com/weblog/2003/03/30.xml#a185" class="weblogItemTitle">Another teaser</a></h>
-<p>Again, <a href="http://w3future.com/tools/metatest.html"><acronym title="eXtensible Markup Language">XML</acronym></a> x <a href="http://w3future.com/tools/xhtml2rdf.xml">XML2RDF</a> = <a href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/tools/xhtml2rdf.xml&amp;xml=http://w3future.com/tools/metatest.html"><acronym title="Resource Description Framework">RDF</acronym></a></p>
+<h id='anotherTeaser'><a href="https://w3future.com/weblog/2003/03/30.xml#a185" class="weblogItemTitle">Another teaser</a></h>
+<p>Again, <a href="https://w3future.com/tools/metatest.html"><acronym title="eXtensible Markup Language">XML</acronym></a> x <a href="https://w3future.com/tools/xhtml2rdf.xml">XML2RDF</a> = <a href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/tools/xhtml2rdf.xml&amp;xml=https://w3future.com/tools/metatest.html"><acronym title="Resource Description Framework">RDF</acronym></a></p>
 </section><a name="a184"></a>
 <section id="a184">
-<h id='xhtmlInRss20'><a href="http://w3future.com/weblog/2003/03/30.xml#a184" class="weblogItemTitle">xhtml in rss 2.0</a></h>
+<h id='xhtmlInRss20'><a href="https://w3future.com/weblog/2003/03/30.xml#a184" class="weblogItemTitle">xhtml in rss 2.0</a></h>
 <blockquote cite="http://www.intertwingly.net/blog/1299.html"><p>I've converted
 <a href="http://www.intertwingly.net/blog/index.rss2">my rss 2.0
 feed</a> from &lt;content:encoded&gt; to the more bandwidth
@@ -35,7 +35,7 @@ like</a> <a href="http://www.gotdotnet.com/team/">gotdotnet</a> and
 <a href="http://www.simplegeek.com/CategoryView.aspx?category=BlogX">
 blogx</a> users will soon follow. Hopefully the owners of the
 <a href="http://wellformedweb.org/">wellformedweb</a> and
-<a href="http://w3future.com/weblog/">w3future</a> weblogs will
+<a href="https://w3future.com/weblog/">w3future</a> weblogs will
 take notice.</p>
 <p>The updated feed is <a href="http://feeds.archive.org/validator/check?url=http%3A%2F%2Fwww.intertwingly.net%2Fblog%2Findex.rss2">
 valid</a>, and it uses namespaces in exactly the way that
@@ -48,12 +48,12 @@ and
 <p>Very interesting, this certainly is an improvement, and very much in the spirit of <a href="http://backend.userland.com/rss"><acronym title="Really Simple Syndication">RSS</acronym> 2.0</a>. I tried to implement this with <a href="http://backend.userland.com/stories/storyReader$210">Radio's RSS callback feature</a>, but only string values (and attributes) are allowed. One small note: Maybe <code>xhtml:div</code> is better, because <code>xhtml:body</code> only allows block-like elements.</p>
 </section><a name="a183"></a>
 <section id="a183">
-<h id='teaser'><a href="http://w3future.com/weblog/2003/03/30.xml#a183" class="weblogItemTitle">Teaser</a></h>
-<p><a href="http://w3future.com/weblog/rss.xml"><acronym title="eXtensible Markup Language">XML</acronym></a> x <a href="http://w3future.com/tools/rss2rdf.xml">XML2RDF</a> = <a href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/tools/rss2rdf.xml&amp;xml=http://w3future.com/weblog/rss.xml"><acronym title="Resource Description Framework">RDF</acronym></a></p>
+<h id='teaser'><a href="https://w3future.com/weblog/2003/03/30.xml#a183" class="weblogItemTitle">Teaser</a></h>
+<p><a href="https://w3future.com/weblog/rss.xml"><acronym title="eXtensible Markup Language">XML</acronym></a> x <a href="https://w3future.com/tools/rss2rdf.xml">XML2RDF</a> = <a href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/tools/rss2rdf.xml&amp;xml=https://w3future.com/weblog/rss.xml"><acronym title="Resource Description Framework">RDF</acronym></a></p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/03/30.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/03/30.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

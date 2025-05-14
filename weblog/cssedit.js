@@ -1,5 +1,5 @@
 var hex="0123456789abcdef";
-//document.styleSheets[0].imports[0].href="http://w3future.com/w3f/w3f.phtml?colors=c0ff40,4040a0,176,128,128,32,128,32,96,214,64,128,256,128,192"
+//document.styleSheets[0].imports[0].href="https://w3future.com/w3f/w3f.phtml?colors=c0ff40,4040a0,176,128,128,32,128,32,96,214,64,128,256,128,192"
 var i, colorQS;
 var derived={
 	'#ecffc4':{f:lighten, c:'#c0ff40', v:176},
@@ -131,7 +131,7 @@ function setVal(elt) {
 	var val=2*(event.x-elt.getBoundingClientRect().left)-20;
 	if (val<0) val=0; else if (val>256) val=256;
 	pos(elt, val, 10);
-	if (derived[fromC].f==lighten) 
+	if (derived[fromC].f==lighten)
 		derived[fromC].v=val;
 	else derived[fromC].v=256-val;
 }
@@ -208,7 +208,7 @@ function postPalette() {
 		alert(this.error||this.result);
 	}
 	service.call('radio.addPalette',[
-		palette.paltitle.value, 
+		palette.paltitle.value,
 		palette.paldetails.value,
 		colorQS
 	]);
@@ -225,7 +225,7 @@ function initSlider(id)
 	o.rgbEl=rgbEl;
 	o.el=el;
 	o.handle = function(){}
-	
+
 	input.style.width = '6em';
 	input.style.textAlign = 'center';
 	if (moz)
@@ -235,7 +235,7 @@ function initSlider(id)
 	rgbEl.style.width = '255px';
 	rgbEl.style.padding = '1px';
 	rgbEl.style.textAlign = 'center';
-	
+
 	o.colorSquare = new ColorSquare();
 	o.colorSquare.handle = function(abh) {
     abh.i = 1;
@@ -302,7 +302,7 @@ function ColorSquare()
   this.el.title="Shift: lock Hue, Ctrl: lock Saturation";
 
   var me = this;
-  this.doMouseMove = function(evt) 
+  this.doMouseMove = function(evt)
   {
     var x; var y;
     evt = evt || event;
@@ -369,7 +369,7 @@ function ColorSlider(fromColor, toColor, leftFactor)
   this.el.style.margin = '5px 0px';
   this.el.style.position = 'relative';
   //this.el.unselectable = true;
-  
+
   this.grad = this.createBlock(0, 0, 201, 20, toColor);
   if (moz)
     for (var j=0;j<=200;j++)
@@ -385,14 +385,14 @@ function ColorSlider(fromColor, toColor, leftFactor)
 
   this.result = this.createBlock(207, 0, 48, 18, fromColor);
   this.result.style.border = '1px solid black';
-  
+
   var cursor = this.createBlock(-3, -2, 7, 24, 'url(hpointer.png)');
   cursor.style.fontSize = '20px';
   cursor.style.lineHeight = '18px';
   this.cursor = cursor;
 
   var me = this;
-  this.doMouseMove = function(evt) 
+  this.doMouseMove = function(evt)
   {
     evt = evt || event;
     x = evt.clientX - me.el.offsetLeft;
@@ -470,12 +470,12 @@ Color.prototype = {
   absi2rgb: function()
   {
     var R=0;var G=0;var B=0;
-    
+
     if (this.A==1)
     {
       G = min(1, 1-this.B);
       B = min(1, 1+this.B);
-    } 
+    }
     else if (this.B==1)
     {
       R = min(1, 1-this.A);

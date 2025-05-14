@@ -12,7 +12,7 @@ function saveMultipleFiles($root, $password, $relativepathList, $fileTextList) {
 		$rp=$relativepathList[$i];
 		$s="weblog/".$root.substr($rp,0,2).substr($rp,3,2);
 		$path="weblog/$root/$rp";
-		$r[$i]='http://w3future.com/'.$path;
+		$r[$i]='https://w3future.com/'.$path;
 		if (($s<"weblog/20020125") or ($rp>"99/99.html")) {$r[$i]='not saved';continue;}
 		$o=$fileTextList[$i];
 		if (gettype($o)=="object"&&get_class($o)=="xmlrpcbase64") $o=$o->data;
@@ -59,7 +59,7 @@ function getServerCapabilities($email, $password) {
 		"maxFileSize" => 1000000,
 		"maxBytesPerUser" => 10000000,
 		"ctBytesinUse" => 0,
-		"yourUpstreamFolderUrl" => 'http://w3future.com/tools/getFile.phtml?path='
+		"yourUpstreamFolderUrl" => 'https://w3future.com/tools/getFile.phtml?path='
 	);
 }
 ?>

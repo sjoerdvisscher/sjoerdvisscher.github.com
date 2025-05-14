@@ -3,7 +3,7 @@
 	<service>
 		<engineName>Radio UserLand v8.0.8</engineName>
 		<engineLink>http://radio.userland.com/</engineLink>
-		<homePageLink>http://w3future.com/weblog/</homePageLink>
+		<homePageLink>https://w3future.com/weblog/</homePageLink>
 		<apis>
 			<api name="MetaWeblog" preferred="true" rpcLink="http://127.0.0.1:5335/RPC2" blogID="home"/>
 			<api name="Blogger" preferred="false" rpcLink="http://127.0.0.1:5335/RPC2" blogID="home"/>

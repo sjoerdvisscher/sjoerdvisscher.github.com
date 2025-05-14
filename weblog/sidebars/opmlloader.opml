@@ -1,1 +1,31 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><opml version="1.1">	<head>		<title>opmlloader.opml</title>		<dateCreated>Mon, 11 Mar 2002 23:10:48 GMT</dateCreated>		<dateModified>Sat, 20 Apr 2002 20:47:31 GMT</dateModified>		<ownerName>Sjoerd Visscher</ownerName>		<ownerEmail>sjoerd@w3future.com</ownerEmail>		<expansionState>1, 6</expansionState>		<vertScrollState>1</vertScrollState>		<windowTop>325</windowTop>		<windowLeft>80</windowLeft>		<windowBottom>529</windowBottom>		<windowRight>530</windowRight>		</head>	<body>		<outline text="Links">			<outline text="OPML standard" type="link" url="http://www.opml.org/"/>			<outline text="Radio Userland" type="link" url="http://radio.userland.com/"/>			<outline text="Google XML-RPC Gateway" type="link" url="http://www.xmlrpc.com/googleGateway"/>			<outline text="w3future.com home" type="link" url="http://w3future.com/weblog/"/>			</outline>		<outline text="Examples">			<outline text="This Sidebar (recursive!)" type="link" url="http://w3future.com/weblog/sidebars/opmlloader.opml"/>			<outline text="Weblog Directory" type="link" url="http://w3future.com/weblog/directory.opml"/>			<outline text="My Subscriptions" type="link" url="http://w3future.com/weblog/gems/mySubscriptions.opml"/>			<outline text="Scripting News" type="link" url="http://www.scripting.com/xml/currentOutline.xml"/>			<outline text="Dave Winer's Instant Outline" type="link" url="http://radio.weblogs.com/0001015/instantOutliner/daveWiner.opml"/>			</outline>		</body>	</opml>
+<?xml version="1.0" encoding="ISO-8859-1"?>https://w3future.comhttps://w3future.comhttps://w3future.comhttps://w3future.com
+<opml version="1.1">
+	<head>
+		<title>opmlloader.opml</title>
+		<dateCreated>Mon, 11 Mar 2002 23:10:48 GMT</dateCreated>
+		<dateModified>Sat, 20 Apr 2002 20:47:31 GMT</dateModified>
+		<ownerName>Sjoerd Visscher</ownerName>
+		<ownerEmail>sjoerd@w3future.com</ownerEmail>
+		<expansionState>1, 6</expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>325</windowTop>
+		<windowLeft>80</windowLeft>
+		<windowBottom>529</windowBottom>
+		<windowRight>530</windowRight>
+		</head>
+	<body>
+		<outline text="Links">
+			<outline text="OPML standard" type="link" url="http://www.opml.org/"/>
+			<outline text="Radio Userland" type="link" url="http://radio.userland.com/"/>
+			<outline text="Google XML-RPC Gateway" type="link" url="http://www.xmlrpc.com/googleGateway"/>
+			<outline text="w3future.com home" type="link" url="http://w3future.com/weblog/"/>
+			</outline>
+		<outline text="Examples">
+			<outline text="This Sidebar (recursive!)" type="link" url="http://w3future.com/weblog/sidebars/opmlloader.opml"/>
+			<outline text="Weblog Directory" type="link" url="http://w3future.com/weblog/directory.opml"/>
+			<outline text="My Subscriptions" type="link" url="http://w3future.com/weblog/gems/mySubscriptions.opml"/>
+			<outline text="Scripting News" type="link" url="http://www.scripting.com/xml/currentOutline.xml"/>
+			<outline text="Dave Winer's Instant Outline" type="link" url="http://radio.weblogs.com/0001015/instantOutliner/daveWiner.opml"/>
+			</outline>
+		</body>
+	</opml>

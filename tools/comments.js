@@ -68,7 +68,7 @@ function w3f_comments(subject) {
 
 function w3f_getReplies(uri) {
 	try {
-		var service=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+		var service=new w3f_XMLRPCService('https://w3future.com/tools/RPC/');
 	} catch(e) {
 		setTimeout('w3f_getReplies("'+uri+'")',1000);
 		return;
@@ -127,7 +127,7 @@ function w3f_addComment() {
 		o[e.name]=e.value;
 	}
 	'commentform'.hide();
-	var service=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+	var service=new w3f_XMLRPCService('https://w3future.com/tools/RPC/');
 	service.o=o;
 	service.onload=function() {
 		var o=this.o;

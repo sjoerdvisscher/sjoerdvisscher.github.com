@@ -25,7 +25,7 @@ function Parser(name,doc) {
     var c=doc.getChar();
     this.f=this.stt[this.state][c];
     if (this.f) this.f(); else {
-      if (c=='\0') throw 'Unexpected end of file'; 
+      if (c=='\0') throw 'Unexpected end of file';
       else this[this.state]+=c;
     }
   } catch(e) {throw e+'\nError in '+name;}
@@ -44,7 +44,7 @@ Parser.prototype={
     '>':function () {
       if (!this.tag) throw 'Tag may not be empty';
       var n=new Parser(this.tag,this.doc).node;
-      if (this.tag=='_') {this.node._children[this.node._children.length]=n;this.node._text+=n._text} 
+      if (this.tag=='_') {this.node._children[this.node._children.length]=n;this.node._text+=n._text}
       else {if (this.node[this.tag]) throw 'Double property: '+this.tag; this.node[this.tag]=n}
       this.cont('base');},
     '/':function () {
@@ -120,7 +120,7 @@ In VVM, the value of a node is the value of it's content nodes concatenated.
       &lt;title>Example document&lt;/title>
       &lt;base>
          &lt;target>_blank&lt;/target>
-         &lt;_>http://w3future.com&lt;/_>
+         &lt;_>https://w3future.com&lt;/_>
       &lt;/base>
       &lt;_>&lt;type>H1&lt;/type>
          &lt;_>Outliner view for VVM. &lt;/_>
@@ -129,7 +129,7 @@ In VVM, the value of a node is the value of it's content nodes concatenated.
          &lt;_>In VVM, the value of a node is the value
          of it's content nodes concatenated.
          This allows an outliner view of the document,
-         because the value of the node is the collection 
+         because the value of the node is the collection
          of the content of it's subtree.&lt;/_>
       &lt;/_>
       &lt;_>&lt;type>H1&lt;/type>
@@ -138,10 +138,10 @@ In VVM, the value of a node is the value of it's content nodes concatenated.
       &lt;_>&lt;type>P&lt;/type>
          &lt;_>Some plain text, &lt;/_>
          &lt;_>&lt;type>A&lt;/type>
-            &lt;href>http://w3future.com&lt;/href>
+            &lt;href>https://w3future.com&lt;/href>
             &lt;_>a link to my site&lt;/_>
          &lt;/_>
-         &lt;_> and some character references: 
+         &lt;_> and some character references:
          &amp;#60;(&amp;lt;),&amp;#62;(&amp;gt;) and &amp;#38;(&amp;amp;).&lt;/_>
       &lt;/_>
    &lt;/html>

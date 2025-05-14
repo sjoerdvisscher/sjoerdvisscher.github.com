@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type='text/xsl' href='http://w3future.com/tools/atom2rss091.xsl' ?>
-<feed xml:lang="en-us" xml:base="http://w3future.com/weblog/rss.xml?notransform" xmlns="http://www.w3.org/2005/Atom">
-	<id>http://w3future.com/weblog/</id>
+<?xml-stylesheet type='text/xsl' href='https://w3future.com/tools/atom2rss091.xsl' ?>
+<feed xml:lang="en-us" xml:base="https://w3future.com/weblog/rss.xml?notransform" xmlns="http://www.w3.org/2005/Atom">
+	<id>https://w3future.com/weblog/</id>
 	<title>Sjoerd Visscher&apos;s weblog</title>
 	<subtitle>Pondering those web technologies that may change the future of the world wide web.</subtitle>
-	<link href="http://w3future.com/weblog/" />
+	<link href="https://w3future.com/weblog/" />
 	<link rel="self" href="" />
 	<updated>2006-02-28T19:52:49+01:00</updated>
 	<author>
 		<name>Sjoerd Visscher</name>
-		<uri>http://w3future.com/people/sjoerd_visscher/</uri>
+		<uri>https://w3future.com/people/sjoerd_visscher/</uri>
 		<email>sjoerd@w3future.com</email>
 		</author>
   	<entry>
-  		<id>http://w3future.com/weblog/2008/06/16.xml#a300</id>
-  		<link href='http://w3future.com/weblog/2008/06/16.xml#AlgebraicDataTypesinJavaScript' />
+  		<id>https://w3future.com/weblog/2008/06/16.xml#a300</id>
+  		<link href='https://w3future.com/weblog/2008/06/16.xml#AlgebraicDataTypesinJavaScript' />
   		<title>Algebraic Data Types in JavaScript</title>
   		<updated>2008-06-16T19:49:20+01:00</updated>
   		<content type="xhtml">
   			<div xmlns="http://www.w3.org/1999/xhtml">
   			  <p>Since the weblog system for this site broke down, and I have to manually update all pages, not much is happening here.
             I hope however that some people are still subscribed. If you are reading this then you are probably one of them.</p>
-          <p>The reason I am posting again is that I have written a bit of JavaScript 1.8 recently. 
-            <a href="http://ejohn.org/blog/javascript-18-progress/">John Resig was right</a>, 
+          <p>The reason I am posting again is that I have written a bit of JavaScript 1.8 recently.
+            <a href="http://ejohn.org/blog/javascript-18-progress/">John Resig was right</a>,
             the new expression closures syntax did tickle me. Functional code looks so much nicer!</p>
           <p>The code is a library to work with algebraic data types, which takes some explaining, so
-            <a href="http://w3future.com/weblog/stories/2008/06/16/adtinjs.xml">read more here</a>.</p>
+            <a href="https://w3future.com/weblog/stories/2008/06/16/adtinjs.xml">read more here</a>.</p>
   			</div>
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2006/02/28.xml#a299</id>
-		<link href='http://w3future.com/weblog/2006/02/28.xml#tailCallEliminationInJavascript' />
+		<id>https://w3future.com/weblog/2006/02/28.xml#a299</id>
+		<link href='https://w3future.com/weblog/2006/02/28.xml#tailCallEliminationInJavascript' />
 		<title>Tail call elimination in Javascript</title>
 		<summary>Via LtU I read about a tail call optimization decorator. Of course I immediately wondered if it was possible in JavaScript, and it is:
 Function.prototype.tailCallOptimized = function()
@@ -51,7 +51,7 @@ Function.prototype.tailCallOptimized = function()
     for (var caller = arguments.callee.caller; caller; caller = caller.caller)
       if (caller == arguments.callee)
         throw {tailCallArgs: arguments, tailCallThis: this};
-      
+
     var args = arguments;
     var me   = this;
     while (true)
@@ -64,7 +64,7 @@ Function.prototype.tailCallOptimized = function()
       {
         if (!e.tailCallArgs)
           throw e;
-          
+
         args = e.tailCallArgs;
         me   = e.tailCallThis;
       }
@@ -88,8 +88,8 @@ alert((10001).isEven() ? "even" : "odd");</pre>
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2005/12/21.xml#a298</id>
-		<link href='http://w3future.com/weblog/2005/12/21.xml#technoratiClaim' />
+		<id>https://w3future.com/weblog/2005/12/21.xml#a298</id>
+		<link href='https://w3future.com/weblog/2005/12/21.xml#technoratiClaim' />
 		<title>Technorati claim</title>
 		<summary>Technorati Profile</summary>
 		<updated>2005-12-21T21:42:35+01:00</updated>
@@ -98,8 +98,8 @@ alert((10001).isEven() ? "even" : "odd");</pre>
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2005/10/20.xml#a297</id>
-		<link href='http://w3future.com/weblog/2005/10/20.xml#leakFreeJavascriptClosures' />
+		<id>https://w3future.com/weblog/2005/10/20.xml#a297</id>
+		<link href='https://w3future.com/weblog/2005/10/20.xml#leakFreeJavascriptClosures' />
 		<title>Leak Free Javascript Closures</title>
 		<summary>If you're confused about how closures in JavaScript cause memory leaks in Internet Explorer, this is for you: Leak Free Javascript Closures. Then, without leakage, you can write code like this:
 function attach()
@@ -121,8 +121,8 @@ function attach()
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2005/08/14.xml#a296</id>
-		<link href='http://w3future.com/weblog/2005/08/14.xml#noMoreAccesskeys' />
+		<id>https://w3future.com/weblog/2005/08/14.xml#a296</id>
+		<link href='https://w3future.com/weblog/2005/08/14.xml#noMoreAccesskeys' />
 		<title>No more accesskeys</title>
 		<summary>I had accesskeys for the tabs at the top of this site, but Mark Wubben reminded me that this was very annoying, mainly because alt-d was one of them (the shortcut to focus the address bar). This makes me think that using accesskeys in webpages is not a very good idea, because you never know what the favorite shortcut keys of your visitor are.</summary>
 		<updated>2005-08-14T18:47:24+01:00</updated>
@@ -131,13 +131,13 @@ function attach()
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2005/08/14.xml#a295</id>
-		<link href='http://w3future.com/weblog/2005/08/14.xml#howToUseBaseUris' />
+		<id>https://w3future.com/weblog/2005/08/14.xml#a295</id>
+		<link href='https://w3future.com/weblog/2005/08/14.xml#howToUseBaseUris' />
 		<title>How to use base URIs.</title>
 		<summary>If you're wondering what a base URI is for, you'll always end up being directed to RFC 3986, but you won't find much. Section 5.1 just says: &#8220;The term "relative" implies that a "base URI" exists against which the relative reference is applied.&#8221;. &#x2026;</summary>
 		<updated>2005-08-14T15:17:26+01:00</updated>
 		<content type="xhtml">
-			<div xmlns="http://www.w3.org/1999/xhtml"><p>If you're wondering what a base URI is for, you'll always end up being directed to <a href="http://www.apps.ietf.org/rfc/rfc3986.html">RFC 3986</a>, but you won't find much. <a href="http://www.apps.ietf.org/rfc/rfc3986.html#sec-5.1">Section 5.1</a> just says: &#8220;The term "relative" implies that a "base URI" exists against which the relative reference is applied.&#8221;. But that there's more to it becomes apparent when <a href="http://w3future.com/weblog/2005/01/13.xml#stillBugsInTheImplementationOfHtmlHyperlinks">same-document references</a> come into play. One example is <a href="http://www.tbray.org/ongoing/">Tim Bray</a>'s <a href="http://tbray.org/ongoing/ongoing.atom">atom feed</a>. Here is part of it:</p>
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>If you're wondering what a base URI is for, you'll always end up being directed to <a href="http://www.apps.ietf.org/rfc/rfc3986.html">RFC 3986</a>, but you won't find much. <a href="http://www.apps.ietf.org/rfc/rfc3986.html#sec-5.1">Section 5.1</a> just says: &#8220;The term "relative" implies that a "base URI" exists against which the relative reference is applied.&#8221;. But that there's more to it becomes apparent when <a href="https://w3future.com/weblog/2005/01/13.xml#stillBugsInTheImplementationOfHtmlHyperlinks">same-document references</a> come into play. One example is <a href="http://www.tbray.org/ongoing/">Tim Bray</a>'s <a href="http://tbray.org/ongoing/ongoing.atom">atom feed</a>. Here is part of it:</p>
 <blockquote><pre>&lt;feed xmlns='http://www.w3.org/2005/Atom'
       xml:base='http://www.tbray.org/ongoing/'
       xml:lang='en-us'>
@@ -158,18 +158,18 @@ artificial shorthand notation for external references.&#8221; Good to know!</p>
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2005/07/17.xml#a294</id>
-		<link href='http://w3future.com/weblog/2005/07/17.xml#atom10FeedAvailable' />
+		<id>https://w3future.com/weblog/2005/07/17.xml#a294</id>
+		<link href='https://w3future.com/weblog/2005/07/17.xml#atom10FeedAvailable' />
 		<title>Atom 1.0 feed available</title>
 		<summary>I've updated my Radio Userland Atom code to produce version 1.0. You can find the feed here. My RSS 0.91 feed is created with a simple XSLT transformation from the Atom feed.</summary>
 		<updated>2005-07-17T00:02:25+01:00</updated>
 		<content type="xhtml">
-			<div xmlns="http://www.w3.org/1999/xhtml"><p>I've updated my Radio Userland Atom code to produce version 1.0. <a href="http://w3future.com/weblog/rss.xml?notransform">You can find the feed here.</a> <a href="http://w3future.com/weblog/rss.xml">My RSS 0.91 feed</a> is created with <a href="http://w3future.com/tools/atom2rss091.xsl">a simple XSLT transformation</a> from the Atom feed.</p></div>
+			<div xmlns="http://www.w3.org/1999/xhtml"><p>I've updated my Radio Userland Atom code to produce version 1.0. <a href="https://w3future.com/weblog/rss.xml?notransform">You can find the feed here.</a> <a href="https://w3future.com/weblog/rss.xml">My RSS 0.91 feed</a> is created with <a href="https://w3future.com/tools/atom2rss091.xsl">a simple XSLT transformation</a> from the Atom feed.</p></div>
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2005/06/18.xml#a293</id>
-		<link href='http://w3future.com/weblog/2005/06/18.xml#iLiveInBelgium' />
+		<id>https://w3future.com/weblog/2005/06/18.xml#a293</id>
+		<link href='https://w3future.com/weblog/2005/06/18.xml#iLiveInBelgium' />
 		<title>I live in Belgium</title>
 		<summary>At least, that is what Google shows me, and Google is always right.</summary>
 		<updated>2005-06-18T20:41:41+01:00</updated>
@@ -178,8 +178,8 @@ artificial shorthand notation for external references.&#8221; Good to know!</p>
 			</content>
 		</entry>
 	<entry>
-		<id>http://w3future.com/weblog/2005/06/01.xml#a292</id>
-		<link href='http://w3future.com/weblog/2005/06/01.xml#beingFilmedBy3CamerasAtOnce' />
+		<id>https://w3future.com/weblog/2005/06/01.xml#a292</id>
+		<link href='https://w3future.com/weblog/2005/06/01.xml#beingFilmedBy3CamerasAtOnce' />
 		<title>Being filmed by 3 cameras at once!</title>
 		<summary>Sometimes it's really interesting to live in the centre of the administrative capital of the Netherlands. Today we had a referendum for ratification of the Treaty establishing a Constitution for Europe. I had to vote in the city hall. As this is close to the parliament buildings a lot of camera crews had chosen the city hall to film some voters, including me. &#x2026;</summary>
 		<updated>2005-06-01T22:08:17+01:00</updated>

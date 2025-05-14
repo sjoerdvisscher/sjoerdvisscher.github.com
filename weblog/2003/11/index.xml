@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/11/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/11/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,46 +11,46 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:17 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/11/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/11/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/11/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/11/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/11/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/11/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2003/11/11.xml">Tuesday, November 11, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/11/11.xml">Tuesday, November 11, 2003</a></h>
 <a name="a264"></a>
 <section id="a264">
-<h id='theImpotenceOfFunctionalProgramming'><a href="http://w3future.com/weblog/2003/11/11.xml#a264" class="weblogItemTitle">The impotence of functional programming</a></h>
+<h id='theImpotenceOfFunctionalProgramming'><a href="https://w3future.com/weblog/2003/11/11.xml#a264" class="weblogItemTitle">The impotence of functional programming</a></h>
 <blockquote><p><a href="http://seanmcgrath.blogspot.com/archives/2003_11_09_seanmcgrath_archive.html#106854737902919946">Context - XML's gift to the world (and the impotence of numbers)</a>. Hierarchies are a great modelling tool. Why? Because (a) they map well onto the way our heads manage complexity and (b) they allow us to model <i>context</i>. We can put things within other things and nuance the semantics of the contained by means of the container and the container's container and so on.</p><p>This, for me, is the essence of XML. Throw away the containership model and what have you got? A language that allows you to describe flat structures. Structures in which context does not play an important role. Structures in which semantics are spot-welded to atomic units of data. Structures in which all contextual knowledge is squeezed out in favour of (ugh!) out-of-band storage of semantics and or (double ugh!) ontological particle physics featuring the standard quarks, leptons and guages known as dates, integers and strings. <a href="http://www.itworld.com/nl/ebiz_ent/11112003/">The impotence of numbers</a> is an ITworld article on this topic. [<a href="http://seanmcgrath.blogspot.com">Sean McGrath, CTO, Propylon</a>]</p></blockquote>
 <p>I completely agree. In fact, it's exactly the issue I have with functional programming. Take for example the function <code>zip</code> (or <code>zip3</code>, <code>zip4</code>, exponential ugh-ness), a very popular function in f.e. Haskell. Firstly, if you have two lists, with values that go pairwise together, those values shouldn't have been apart in the first place. Secondly, what you end up with is a list of tuples. Values in a tuple always have more context than just being together. All this information is lost.</p><p>That this issue is completely lost on the functional programming world is very apparent from the research. The holy grail seems to be a generic <code>map</code> on any data structure. But in practice any data structure more complex than a list, is bound to have some meta data. A generic map would map a function over the data and the meta data at the same time. That's almost never usefull. Obviously this encourages the use of a separate data structure for meta data, pulling that data out of context.</p><p>XML has already a nice solution for this. XPath is a very simple syntax for building generators. Esp. the axes (<code>ancestor::*</code>,<code>following-sibling::*</code> etc.) are a nice way of iterating over XML in a specific way/direction. That way it's easy to map a function over a specific part of the data structure.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/11/06.xml">Thursday, November 06, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/11/06.xml">Thursday, November 06, 2003</a></h>
 <a name="a263"></a>
 <section id="a263">
-<h id='multipleVersionsOfIe'><a href="http://w3future.com/weblog/2003/11/06.xml#a263" class="weblogItemTitle">Multiple versions of IE</a></h>
+<h id='multipleVersionsOfIe'><a href="https://w3future.com/weblog/2003/11/06.xml#a263" class="weblogItemTitle">Multiple versions of IE</a></h>
 <blockquote cite="http://web-graphics.com/mtarchive/001068.php"><p>As if magically solving one of the most vexing problems of just about every web designer, Joe Maddalone has discovered how to <a href="http://www.insert-title.com/web_design/?page=articles/dev/multi_IE">run multiple versions of IE side by side</a>. If this works, we can finally say goodbye to rebooting to test web pages on various versions of IE, or if you have multiple windows boxes for this purpose - clear off some desk space. I can&#8217;t wait to try this. Thanks for the link <a href="http://branchleft.co.uk/archives/browsers/running_multiple_versions_of_internet_explorer_simultaneously.php">branchleft</a>. [<a href="http://web-graphics.com/mtarchive/001068.php">web graphics</a>]</p></blockquote>
 <p>I tried, and it works. This certainly saves Martin a lot of trouble, who was the only one at <a href="http://q42.nl">Q42</a> with IE5.5 on his machine, and had to test everything anybody else made.</p>
 </section><a name="a262"></a>
 <section id="a262">
-<h id='windowsLonghornGlassLook'><a href="http://w3future.com/weblog/2003/11/06.xml#a262" class="weblogItemTitle">Windows Longhorn Glass Look</a></h>
-<p><a href="http://www.winsupersite.com/reviews/pdc2003_hillel.asp">The new glass look of Windows Longhorn</a> is very pretty. This is of course a challenge to <a href="http://w3future.com/2003/glass/glass.html">imitate in HTML</a>. It's Internet Explorer for Windows only. CSS does most of the work, and there's a little bit of Javascript. It's slow and useless, but it's pretty!</p>
+<h id='windowsLonghornGlassLook'><a href="https://w3future.com/weblog/2003/11/06.xml#a262" class="weblogItemTitle">Windows Longhorn Glass Look</a></h>
+<p><a href="http://www.winsupersite.com/reviews/pdc2003_hillel.asp">The new glass look of Windows Longhorn</a> is very pretty. This is of course a challenge to <a href="https://w3future.com/2003/glass/glass.html">imitate in HTML</a>. It's Internet Explorer for Windows only. CSS does most of the work, and there's a little bit of Javascript. It's slow and useless, but it's pretty!</p>
 <p>Now if I only had <a href="http://www.intertwingly.net/blog/1625.html">Mozilla's curved borders</a>, <a href="http://web-graphics.com/mtarchive/001062.php">Safari's text-shadow</a>, Opera's speed and <a href="http://www.w3.org/TR/SVG/filters.html#feGaussianBlur">SVG's Gaussian blur</a> to finish it off. Now that I mention it, Lon sais I should try this in SVG, which might be interesting too.</p>
 </section><a name="a261"></a>
 <section id="a261">
-<h id='xopuscomWebsiteUpdated'><a href="http://w3future.com/weblog/2003/11/06.xml#a261" class="weblogItemTitle">Xopus.com website updated</a></h>
+<h id='xopuscomWebsiteUpdated'><a href="https://w3future.com/weblog/2003/11/06.xml#a261" class="weblogItemTitle">Xopus.com website updated</a></h>
 <p>The <a href="http://xopus.com">Xopus</a> website has been updated. There's a lot of new information available, including pricing, 2 online demos and 2 flash tours. A standalone evaluation version can be downloaded.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/11/03.xml">Monday, November 03, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/11/03.xml">Monday, November 03, 2003</a></h>
 <a name="a260"></a>
 <section id="a260">
-<h id='q42IsGoingToSeeTheMatrixRevolutions'><a href="http://w3future.com/weblog/2003/11/03.xml#a260" class="weblogItemTitle">Q42 is going to see the Matrix Revolutions!</a></h>
-<p><object data="http://w3future.com/weblog/images/mailedimages/20031103t1818n1.jpg" class="picture">Q42 is going to see the Matrix Revolutions!</object></p>
+<h id='q42IsGoingToSeeTheMatrixRevolutions'><a href="https://w3future.com/weblog/2003/11/03.xml#a260" class="weblogItemTitle">Q42 is going to see the Matrix Revolutions!</a></h>
+<p><object data="https://w3future.com/weblog/images/mailedimages/20031103t1818n1.jpg" class="picture">Q42 is going to see the Matrix Revolutions!</object></p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/11/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/11/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

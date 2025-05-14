@@ -1,11 +1,11 @@
 <rdf:RDF
-      xml:base="http://w3future.com/people/sjoerd_visscher/foaf.rdf"
+      xml:base="https://w3future.com/people/sjoerd_visscher/foaf.rdf"
       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
       xmlns:dc="http://purl.org/dc/elements/1.1/"
       xmlns:geo="http://www.perceive.net/schemas/geo">
-<foaf:Person rdf:about="http://w3future.com/people/sjoerd_visscher/">
+<foaf:Person rdf:about="https://w3future.com/people/sjoerd_visscher/">
 	<foaf:name>Sjoerd Visscher</foaf:name>
 	<foaf:title>Mr</foaf:title>
 	<foaf:firstName>Sjoerd</foaf:firstName>
@@ -13,15 +13,15 @@
 	<foaf:mbox_sha1sum>eecd181ed69c352b4c3ebb42fb360388736d0aee</foaf:mbox_sha1sum>
 	<foaf:mbox>
 		<rdfs:Resource rdf:about="mailto:sjoerd%40w3future.com"/>
-	</foaf:mbox>	
+	</foaf:mbox>
 	<foaf:homepage>
-	  <foaf:Document rdf:about="http://w3future.com/"/>
+	  <foaf:Document rdf:about="https://w3future.com/"/>
 	</foaf:homepage>
 	<foaf:weblog>
-	  <foaf:Document rdf:about="http://w3future.com/weblog/"/>
+	  <foaf:Document rdf:about="https://w3future.com/weblog/"/>
 	</foaf:weblog>
 	<foaf:depiction>
-	  <foaf:Image rdf:about="http://w3future.com/people/images/sjoerd_front.jpg"/>
+	  <foaf:Image rdf:about="https://w3future.com/people/images/sjoerd_front.jpg"/>
 	</foaf:depiction>
 	<foaf:depiction>
 	  <foaf:Image rdf:about="http://mgnt.khm.de:8080/images/owrede/snd07.jpg"/>
@@ -101,7 +101,7 @@
     <foaf:Document rdf:about="http://owrede.khm.de/stories/storyReader$189" />
   </dc:source>
   <foaf:depicts>
-    <foaf:Person rdf:about="http://w3future.com/people/sjoerd_visscher/" />
+    <foaf:Person rdf:about="https://w3future.com/people/sjoerd_visscher/" />
   </foaf:depicts>
   <foaf:depicts>
     <foaf:Person rdf:about="http://dave.editthispage.com/myNameIsDaveWiner" />

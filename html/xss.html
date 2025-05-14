@@ -21,20 +21,20 @@
 			}
 			service.call('xmlStorageSystem.'+methodName,args);
 		}
-		
+
 		function regUser(form) {
 			xmlrpc_call('registerUser',[
 				document.forms['base'].email.value,
 				form.name.value,
 				getPassword(),
 				0,
-				'http://w3future.com/html/xss.html'],
+				'https://w3future.com/html/xss.html'],
 				function() {
 					'P'.w(this.result.message).into('registered');
 				}
 			)
 		}
-		
+
 		function saveFile(form) {
 			xmlrpc_call('saveMultipleFiles',[
 				document.forms['base'].email.value,
@@ -75,7 +75,7 @@
 				}
 			)
 		}
-		
+
 		function getServerCaps() {
 			xmlrpc_call('getServerCapabilities',[
 				document.forms['base'].email.value,
@@ -104,27 +104,27 @@
 				}
 			)
 		}
-		
+
 		function getPassword() {
 			var f=document.forms['base'];
 			var pw=f.password.value;
 			if (f.md5.checked) pw=calcMD5(pw);
 			return pw;
 		}
-		
+
 		function formatSize(s) {
 			if (s>1024*1024) return oneDecimal(s/1024/1024)+' MB';
 			if (s>1024) return oneDecimal(s/1024)+' KB';
 			return s+'&nbsp;B&nbsp;&nbsp;';
 		}
-		
+
 		function oneDecimal(f) {
 			var s=''+Math.floor(f*10);
 			var l=s.length;
 			s=s.substr(0,l-1)+'.'+s.charAt(l-1);
 			return s;
 		}
-		
+
 		function n2(n) {return (n<10)?'0'+n:''+n;}
 
 		function formatDate(d) {
@@ -230,7 +230,7 @@ initButtons();
 </TD></TR></TABLE>
 
 </TD></TR><TR><TD id="footer">
-&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="https://w3future.com">w3future.com</A>.
 </TD></TR></TABLE>
 </BODY>
 </HTML>

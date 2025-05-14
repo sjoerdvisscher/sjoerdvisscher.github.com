@@ -1,7 +1,7 @@
 /*
 	beyond.js
 	by Dan Shappir and Sjoerd Visscher
-	For more information see http://w3future.com/html/beyondJS
+	For more information see https://w3future.com/html/beyondJS
 */
 var beyondVer = 0.99;
 
@@ -107,7 +107,7 @@ _FP.curry = function(m) {
 	var args = [], extraArgs = [], argSet = new stringSet;
 	var applyArgs = origargs.collect(function(a, i) {
 		if ( isUndefined(a) ) {
-			if ( isDefined(map[i]) ) 
+			if ( isDefined(map[i]) )
 				return createApplyArg(i);
 			a = "arg" + i;
 			args.append(a);
@@ -117,7 +117,7 @@ _FP.curry = function(m) {
 			return createApplyArg(a);
 		if ( isDefined(map[i]) )
 			return createApplyArg(i);
-		if ( isDefined(map[i - self.length]) ) 
+		if ( isDefined(map[i - self.length]) )
 			return createApplyArg(i - self.length);
 		args.append(a);
 		return a;
@@ -211,7 +211,7 @@ _FP.gate = function(cond, els) {
 };
 _FP.loop = function(cond) {
 	var loop = function() {
-		while ( select(loop.cond, { 
+		while ( select(loop.cond, {
 					"function" : function(x) { return x.apply(this, arguments); },
 					"number" : function() { return loop.cond--; },
 					"undefined" : isDefined(loop.cond) ? loop.cond : true
@@ -367,7 +367,7 @@ if ( typeof(_AP.splice) != "function" )
 		this.length = a.length;
 		return deleted;
 	}
-	
+
 _AP.head = function(length) {
 	return isUndefined(length) ? this[0] : this.slice(0, length);
 };
@@ -726,7 +726,7 @@ stringSet.prototype = {
 	},
 	include : function() {
 		return "&&".using(
-			Function.from(this, null), 
+			Function.from(this, null),
 			Function.from(stringSet.prototype, null).andThen(isUndefined));
 	},
 	exclude : function() {

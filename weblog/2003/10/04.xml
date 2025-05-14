@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/10/04.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/10/04.xml">
 <head>
 <title>Saturday, October 04, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:28:51 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/10/04.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/10/04.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/10/04.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/10/04.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/10/04.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/10/04.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/08/31.xml#a229' title='Sunday, August 31, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/10/04.xml">Saturday, October 04, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/11/03.txt#a231' title='Monday, November 03, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/08/31.xml#a229' title='Sunday, August 31, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/10/04.xml">Saturday, October 04, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/11/03.txt#a231' title='Monday, November 03, 2003'>&#160;&gt;</a></h>
 <a name="a259"></a>
 <section id="a259">
-<h id='encloseOrStream'><a href="http://w3future.com/weblog/2003/10/04.xml#a259" class="weblogItemTitle">Enclose or stream</a></h>
+<h id='encloseOrStream'><a href="https://w3future.com/weblog/2003/10/04.xml#a259" class="weblogItemTitle">Enclose or stream</a></h>
 <p><a href="http://blogs.law.harvard.edu/lydon/2003/10/03#a360">Christopher Lydon Interviews Adam Curry</a>. I had not yet listened to any of these interviews, and as <a href="http://live.curry.com/">Adam Curry</a> always as something interesting to say, I thought I'd listen to this one.</p>
 <p>So I clicked on the link to the mp3 of the interview, expecting a Save to disk dialog. To my surprise a Quicktime bar appeared in page, and <em>immediately</em> started playing the interview. The download progress bar vastly outpaced the current playing position slider, and the interview played to the end without interruption.</p>
 <p>In the interview Adam talks about RSS enclosures. I've never really liked enclosures because you can only listen to them the day after you've read the item it belongs to. So I always forget to listen to them because they are by then right at the bottom of the aggregator page, and it fills the harddisks with things you only want listen to once.</p>
@@ -37,8 +37,8 @@
 <p>So the only good reason to use enclosures is when you have high-quality video with high bitrates. That said, it doesn't actually hurt anyone to use enclosures, as long as you also provide a link to the enclosure in the description of the item.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/10/04.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/10/04.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

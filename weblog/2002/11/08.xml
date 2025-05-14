@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/11/08.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/11/08.xml">
 <head>
 <title>Friday, November 08, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,24 +12,24 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:13 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/11/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/11/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/11/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/11/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/11/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/11/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/11/07.xml#a139' title='Thursday, November 07, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/11/08.xml">Friday, November 08, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/11/11.txt#a141' title='Monday, November 11, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/11/07.xml#a139' title='Thursday, November 07, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/11/08.xml">Friday, November 08, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/11/11.txt#a141' title='Monday, November 11, 2002'>&#160;&gt;</a></h>
 <a name="a140"></a>
 <section id="a140">
-<h id='whatDoesTheScopeDo'><a href="http://w3future.com/weblog/2002/11/08.xml#a140" class="weblogItemTitle">What does the scope do?</a></h>
-<p>Because <a href="http://w3future.com/html/loell/">Loell</a> is so centered around scope handling, I needed to think about what the scope is actually for. This is what I came up with:</p>
+<h id='whatDoesTheScopeDo'><a href="https://w3future.com/weblog/2002/11/08.xml#a140" class="weblogItemTitle">What does the scope do?</a></h>
+<p>Because <a href="https://w3future.com/html/loell/">Loell</a> is so centered around scope handling, I needed to think about what the scope is actually for. This is what I came up with:</p>
 <ul><li><b>Temporary storage.</b> In OO languages there's plenty of opportunity to store data, but storing data in the scope can be good for several reasons: 1. You simply don't need the data anymore at the end of the method. 2. You don't know where the data has to be put, f.e. the return value of a method. 3. You might not have the rights to put data anywhere else.</li>
 <li><b>Shortcuts.</b> The code to lookup data could be cumbersome or slow. Then it's easier, faster and more readable to put a pointer to that data in a variable.</li>
 <li><b>Labeling.</b> The code becomes more readable if you put data in a variable that has the proper name for how this data is used in the current context.</li></ul>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/11/08.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/11/08.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/11/11.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/11/11.xml">
 <head>
 <title>Monday, November 11, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,25 +12,25 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:15 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/11/11.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/11/11.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/11/11.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/11/11.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/11/11.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/11/11.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/11/08.xml#a140' title='Friday, November 08, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/11/11.xml">Monday, November 11, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/11/14.txt#a142' title='Thursday, November 14, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/11/08.xml#a140' title='Friday, November 08, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/11/11.xml">Monday, November 11, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/11/14.txt#a142' title='Thursday, November 14, 2002'>&#160;&gt;</a></h>
 <a name="a141"></a>
 <section id="a141">
-<h id='loellUpdate'><a href="http://w3future.com/weblog/2002/11/11.xml#a141" class="weblogItemTitle">Loell update</a></h>
-<p>I worked some more on <a href="http://w3future.com/html/loell/">Loell</a> today. It looks like this is going to give me a lot of fun to work on for a long while. </p>
+<h id='loellUpdate'><a href="https://w3future.com/weblog/2002/11/11.xml#a141" class="weblogItemTitle">Loell update</a></h>
+<p>I worked some more on <a href="https://w3future.com/html/loell/">Loell</a> today. It looks like this is going to give me a lot of fun to work on for a long while. </p>
 <ul><li>The default behavior for closure evaluation is now to use static scoping. (syntax: <code>#closure</code>)</li>
 <li>Closures now have syntax for the argument (like Ruby): <code>{ |arg| ... }</code>. I'm not going to enable multiple arguments. If you want that you can pass an object. (<code>point moveTo &lt;.x=1;.y=2&gt;</code>)</li>
 <li>Added the Boolean type.</li>
 </ul>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/11/11.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/11/11.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

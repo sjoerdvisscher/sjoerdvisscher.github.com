@@ -6,7 +6,7 @@
 	<SCRIPT src="/tools/funclib.js"></SCRIPT>
 	<STYLE>
 		@import "/w3f/w3f.css";
-		
+
 		.show,SPAN.calnav {
 			cursor:pointer;cursor:hand;
 		}
@@ -14,7 +14,7 @@
 			text-align: center;
 		}
 		.show, .calheader {
-			background: #F8F8FC; 
+			background: #F8F8FC;
 			border: 1px solid #4040A0;
 			color: #4040A0;
 		}
@@ -52,16 +52,16 @@
 		var monthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
 		var dayNames=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 		var webmasterTag='CQGWYL6CXN';
-		
+
 		function init() {
-/*			var service=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+/*			var service=new w3f_XMLRPCService('https://w3future.com/tools/RPC/');
 			service.onload=function() {
 				if (this.error) alert(this.error); else init2(this.result);
 			}
 			service.call('rdf.getList',['MID(s,8,8)',"s LIKE 'weblog/%'"]);*/
 			show(1811);
 		}
-		
+
 		function init2(result) {
 			dayI2N=result;
 			dayI2N.each(function(day,index){
@@ -71,7 +71,7 @@
 			makeCalendar(lastDay.substr(0,6));
 			show(lastDay);
 		}
-		
+
 		function show(id) {
 			if (!texts[id]) {
 				(
@@ -93,7 +93,7 @@
 				texts[id].into('weblog');
 			}
 		}
-		
+
 		function renderNews(data) {
 			return inspect(data);
 			/*var year=day.substr(0,4);
@@ -108,13 +108,13 @@
 				)+'P'.w(texts[day])
 			).into('weblog');*/
 		}
-		
+
 		function n2(n) {return (n<10)?'0'+n:''+n;}
-		
+
 		function date2N(d) {
 			return ''+d.getFullYear()+n2(d.getMonth()+1)+n2(d.getDate());
 		}
-		
+
 		function makeCalendar(m) {
 			var year=1*m.substr(0,4);
 			month=1*m.substr(4,2)-1;
@@ -200,7 +200,7 @@
 			}
 			service.call('hpe.search',[webmasterTag,terms]);
 		}
-		
+
 		function searchresult(res) {
 			res=w3f_structToArray(res);
 			(
@@ -284,7 +284,7 @@ doc.load('http://www.ourfavoritesongs.com/users/sjoerd_visscher@hotmail.com/rss/
 </TD></TR></TABLE>
 
 </TD></TR><TR><TD id="footer">
-&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="https://w3future.com">w3future.com</A>.
 </TD></TR></TABLE>
 </BODY>
 </HTML>

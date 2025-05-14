@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/05/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2005/05/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,56 +11,56 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:30:44 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2005/05/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2005/05/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/05/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2005/05/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2005/05/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2005/05/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2005/05/22.xml">Sunday, May 22, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/05/22.xml">Sunday, May 22, 2005</a></h>
 <a name="a291"></a>
 <section id="a291">
-<h id='musicalBaton'><a href="http://w3future.com/weblog/2005/05/22.xml#a291" class="weblogItemTitle">Musical Baton</a></h>
-<section><h>Total volume of music files on my computer</h> 
+<h id='musicalBaton'><a href="https://w3future.com/weblog/2005/05/22.xml#a291" class="weblogItemTitle">Musical Baton</a></h>
+<section><h>Total volume of music files on my computer</h>
 <p><a href="http://music.yahoo.com/musicengine/">Yahoo! Music Engine</a> says &#8220;132 Songs, 9 hrs, 25 min, 03 sec, 553MB&#8221;.</p></section>
-<section><h>The last CD I bought was</h> 
+<section><h>The last CD I bought was</h>
 <p>That's quite a while ago, I don't remember which one was last exactly. Let's say <a href="http://music.yahoo.com/release/48938">Kid A</a> - <a href="http://music.yahoo.com/ar-261564---Radiohead">Radiohead</a>.</p></section>
-<section><h>Song playing right now</h> 
+<section><h>Song playing right now</h>
 <p>Well, I was watching TV, but if I want to hear music I usually listen to <a href="http://launch.yahoo.com/lc/?rt=0&amp;rp1=0&amp;rp2=1026805759">my LAUNCHcast radio station</a>, so I started that. I got <a href="http://music.yahoo.com/track/2075045">A Stranger</a> - <a href="http://music.yahoo.com/ar-295841---A-Perfect-Circle">A Perfect Circle</a>, a very nice song that I had never heard before, which is exactly why I like LAUNCHcast so much.</p></section>
-<section><h>Five songs I listen to a lot, or that mean a lot to me</h> 
+<section><h>Five songs I listen to a lot, or that mean a lot to me</h>
 <p>There are no songs I listen to a lot, that would ruin them. I can't imagine how impressive Bohemian Rhapsody would have been if I could hear it now for the first time.</p></section>
 <section><h>Five people I'm passing the baton to</h>
 <p>There are five <a href="http://q42.nl">Q42</a> collegues who have weblogs (as far as I know):
 <a href="http://laurens.vd.oever.nl/weblog/">Laurens</a>, <a href="http://3l.nl/">Lukas</a>, <a href="http://www.egodrama.com/">Chris</a>, <a href="http://annevankesteren.nl/archives/2005/05/musical-baton">Anne (who passed me the baton)</a> and (soon a colleage) <a href="http://novemberborn.net/2005/05/181300,musical-baton">Mark (already batoned)</a>.</p></section>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/05/16.xml">Monday, May 16, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/05/16.xml">Monday, May 16, 2005</a></h>
 <a name="a290"></a>
 <section id="a290">
-<h id='aboutMyName'><a href="http://w3future.com/weblog/2005/05/16.xml#a290" class="weblogItemTitle">About my name</a></h>
+<h id='aboutMyName'><a href="https://w3future.com/weblog/2005/05/16.xml#a290" class="weblogItemTitle">About my name</a></h>
 <p>If you let an english computerized narrator pronounce my first name, it sounds like sdzowurd, which is completely wrong. It's not really hard, the &#8220;sjoe&#8221; part sound just like shoe. The &#8220;r&#8221; should be <a href="http://en.wikipedia.org/wiki/Alveolar_trill">a trilling r</a>, but you hardly hear that. If you let the narrator say shoerd it sounds quite right.</p>
 <p>Sjoerd is actually a <a href="http://en.wikipedia.org/wiki/Frisian_language">Frisian</a> name (not Dutch), but I have no roots there. My parents just liked the name. A while ago I found its etymology on <a href="http://www.gerardlenting.nl/naam/namens2.html#Sieuwerd">this dutch site</a>, it means victory guardian. Since then I use the name &#8220;Sigward&#8221; as nickname when playing games (which would be the Old German form of my name). Today I found names which mean the same and sort of sound the same too in other languages. In English there is <a href="http://www.behindthename.com/php/view.php?name=seward">Seward</a> which is derived from <a href="http://en.wikipedia.org/wiki/Siward">Siward (from Macbeth)</a>. In Norwegian there is <a href="http://www.behindthename.com/php/view.php?name=sjurd">Sjurd</a> which is derived from <a href="http://www.behindthename.com/php/view.php?name=sigurd">Sigurd</a>, the name of two Norwegian kings.</p>
 <p>My last name, you might have guessed, means (and sounds like) fisher (fisherman).</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/05/11.xml">Wednesday, May 11, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/05/11.xml">Wednesday, May 11, 2005</a></h>
 <a name="a289"></a>
 <section id="a289">
-<h id='setsInJavascript'><a href="http://w3future.com/weblog/2005/05/11.xml#a289" class="weblogItemTitle">Sets in Javascript</a></h>
+<h id='setsInJavascript'><a href="https://w3future.com/weblog/2005/05/11.xml#a289" class="weblogItemTitle">Sets in Javascript</a></h>
 <p>Laurens created <a href="http://laurens.vd.oever.nl/weblog/items2005/setsinjavascript/">a nice hack in Javascript</a>, that allows you to write:</p>
 <pre>var typeInSet = nodeType in set(2, 3, 4, 7, 8);</pre>
 <p>I have never even used the <code>in</code> operator in Javascript for anything else than loops like <code>for (prop in obj)</code>.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/05/08.xml">Sunday, May 08, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/05/08.xml">Sunday, May 08, 2005</a></h>
 <a name="a288"></a>
 <section id="a288">
-<h id='crossBrowserSvg'><a href="http://w3future.com/weblog/2005/05/08.xml#a288" class="weblogItemTitle">Cross browser SVG</a></h>
-<p><a href="ftp://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/">Firefox 1.0+ builds</a> now have SVG enabled by default. To test it out I changed <a href="http://w3future.com/2005/svg/icosa/icosa.svg">an SVG animation</a> I created 2 years ago. It is a 3D animation of a cube morphing into an <a href="http://en.wikipedia.org/wiki/Icosahedron">icosahedron</a>. It works in Firefox 1.0+ and in Internet Explorer with <a href="http://www.adobe.com/svg/viewer/install/beta.html">the Adobe SVG Plugin</a>. Sadly Opera 8, which has some SVG support, shows nothing at all.</p>
+<h id='crossBrowserSvg'><a href="https://w3future.com/weblog/2005/05/08.xml#a288" class="weblogItemTitle">Cross browser SVG</a></h>
+<p><a href="ftp://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/">Firefox 1.0+ builds</a> now have SVG enabled by default. To test it out I changed <a href="https://w3future.com/2005/svg/icosa/icosa.svg">an SVG animation</a> I created 2 years ago. It is a 3D animation of a cube morphing into an <a href="http://en.wikipedia.org/wiki/Icosahedron">icosahedron</a>. It works in Firefox 1.0+ and in Internet Explorer with <a href="http://www.adobe.com/svg/viewer/install/beta.html">the Adobe SVG Plugin</a>. Sadly Opera 8, which has some SVG support, shows nothing at all.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/05/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2005/05/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

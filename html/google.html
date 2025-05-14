@@ -8,7 +8,7 @@
 
 		.em {
 			color:#708020;
-		}			
+		}
 		#ResultDiv {
 			margin-left: 1em;
 		}
@@ -22,7 +22,7 @@
 	<SCRIPT>
 		var GL_terms='';
 		var GL_url='';
-	
+
 		function start_search(terms,start) {
 			start=start||0;
 			GL_terms=terms;
@@ -34,7 +34,7 @@
 			GL_url='http://www.google.com/xml?q='+escape(terms)+'&start='+start;
 			doc.load(GL_url);
 		}
-		
+
 		function render(tree) {
 			var div=document.getElementById('result');
 			var t=tree.getSimpleTree();
@@ -73,18 +73,18 @@
 			s+='</TABLE>';
 			div.innerHTML=s;
 		}
-		
+
 		function fixText(s) {
 			return s.replace(/</g,'&lt;');
 		}
-		
+
 		function err(e,s) {
 		  for (var i in e) {
 		    s+='\n'+i+': '+e[i];
 		  }
 		  alert(s);
 		}
-		
+
 		function show(o) {
 			if (''+o===o||1*o===o) return o;
 			if (o.shown) return '<i>Loop</i>';
@@ -99,7 +99,7 @@
 			return s;
 		}
 
-	</SCRIPT>		
+	</SCRIPT>
 </HEAD>
 <BODY>
 
@@ -157,7 +157,7 @@ document.write('<TR><TD>'+createButton({style:'button2',content:'Google',gonew:'
 
 <H2>Details</H2>
 <P>Google could return it's search results in XML.
-These results were then parsed on the server, and a script would be generated containing the data. 
+These results were then parsed on the server, and a script would be generated containing the data.
 This script would then be loaded by this page using a hidden IFrame.
 However, Google no longer permits this feature, so this doesn't work anymore.
 </P>
@@ -175,7 +175,7 @@ However, Google no longer permits this feature, so this doesn't work anymore.
 </TD></TR></TABLE>
 
 </TD></TR><TR><TD id="footer">
-&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="https://w3future.com">w3future.com</A>.
 </TD></TR></TABLE>
 </BODY>
 </HTML>

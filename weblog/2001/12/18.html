@@ -1,8 +1,89 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><HTML><HEAD>	<TITLE>w3future.com - weblog</TITLE>	<META NAME="author" CONTENT="Sjoerd Visscher">	<META NAME="keywords" CONTENT="w3, www, world, wide, web, future, weblog, latest, news, javascript, js, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic"> 	<META NAME="description" CONTENT="The w3future.com weblog features daily news about technologies that will shape the future of the world wide web.">	<LINK REL="author" TITLE="Sjoerd Visscher" HREF="mailto:sjoerd@w3future.com">	<LINK REL="search" TITLE="Archive Search" HREF="http://w3future.com/html/weblogarchive.html">	<LINK REL="sources" TITLE="Weblog Sources" HREF="http://w3future.com/html/weblogsources.html">	<LINK REL="alternate" TYPE="text/rss" TITLE="RSS 0.92" HREF="http://w3future.com/weblog/rss.xml">	<LINK REL="icon" HREF="http://w3future.com/w3f/icon.png" TYPE="image/png">	<SCRIPT src="http://w3future.com/w3f/w3f.js">	</SCRIPT>	<STYLE>		@import "http://w3future.com/w3f/w3f.css";	</STYLE></HEAD><BODY><TABLE width="100%" height="100%" cellspacing=0 cellpadding=0><TR><TD id="header"><TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR><SCRIPT>createSectionButtons()</SCRIPT></TR></TABLE></TD></TR><TR><TD id="body2"><TABLE cellpadding=0 cellspacing=2 width="100%" height="100%"><TR><TD class="sidebar-container"><SCRIPT>createWeblogSidebar()</SCRIPT></TD><TD id="content"><H1>Sjoerd Visscher's Weblog</H1><P>Welcome to w3future.com</P><TABLE cellpadding=0 cellspacing=0 width="100%"><TR><TD>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">https://w3future.comhttps://w3future.comhttps://w3future.comhttps://w3future.comhttps://w3future.comhttps://w3future.com
+<HTML>
+<HEAD>
+	<TITLE>w3future.com - weblog</TITLE>
+	<META NAME="author" CONTENT="Sjoerd Visscher">
+	<META NAME="keywords" CONTENT="w3, www, world, wide, web, future, weblog, latest, news, javascript, js, soap, xml, rpc, html, mozilla, internet, explorer, netscape, semantic">
+	<META NAME="description" CONTENT="The w3future.com weblog features daily news about technologies that will shape the future of the world wide web.">
+	<LINK REL="author" TITLE="Sjoerd Visscher" HREF="mailto:sjoerd@w3future.com">https://w3future.comhttps://w3future.comhttps://w3future.comhttps://w3future.com
+	<LINK REL="search" TITLE="Archive Search" HREF="http://w3future.com/html/weblogarchive.html">
+	<LINK REL="sources" TITLE="Weblog Sources" HREF="http://w3future.com/html/weblogsources.html">
+	<LINK REL="alternate" TYPE="text/rss" TITLE="RSS 0.92" HREF="http://w3future.com/weblog/rss.xml">
+	<LINK REL="icon" HREF="http://w3future.com/w3f/icon.png" TYPE="image/png">
+	<SCRIPT src="http://w3future.com/w3f/w3f.js">
+	</SCRIPT>
+	<STYLE>
+		@import "http://w3future.com/w3f/w3f.css";
+	</STYLE>
+</HEAD>
+<BODY>
+
+<TABLE width="100%" height="100%" cellspacing=0 cellpadding=0>
+<TR><TD id="header">
+<TABLE cellspacing=0 cellpadding=0 style="margin-left:4px"><TR>
+<SCRIPT>createSectionButtons()</SCRIPT>
+</TR></TABLE>
+</TD></TR><TR><TD id="body2">
+
+<TABLE cellpadding=0 cellspacing=2 width="100%" height="100%">
+<TR><TD class="sidebar-container">
+<SCRIPT>createWeblogSidebar()</SCRIPT>
+</TD><TD id="content">
+
+<H1>Sjoerd Visscher's Weblog</H1>
+<P>Welcome to w3future.com</P>
+
+<TABLE cellpadding=0 cellspacing=0 width="100%">
+<TR><TD>
+
+
 <h2><img src="http://scripting.com/images/dailyLinkIcon.gif" height="15" width="12" alt="Permanent link to archive for 01/12/18." border="0">&nbsp;<b>Tuesday, December 18, 2001</b></h2><p><b><a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML Syntax Specification (Revised)</a></b><br />
 The W3C RDF Working Group is trying to explain RDF again. They try to use the <a href="http://www.w3.org/TR/xml-infoset/">Infoset</a>, but it looks like someone had fun making it a bit more complicated than needed. First they translate the Infoset into a new SAX-like model, choosing incedibly weird terms. An <a href="http://www.w3.org/TR/rdf-syntax-grammar/#section-end-element-node">end element node</a>??? Hello, this isn't the 90's anymore!! At least call them end tag nodes. The term <code>node</code> isn't very smart either, because it's a completely different thing than the nodes defined by the DOM.<br /><br />Then they use this new model to build the RDF/XML Grammar. To make things a little easier they introduce <em>another grammar notation</em>. It looks like the notation used for constuctors in the <a href="http://www.w3.org/TR/query-datamodel/">XQuery 1.0 Data Model</a>. And they could have used large portions of that definition. Yet the W3C wouldn't be the W3C if it wasn't <em>completely different</em>. *Sigh*<br /><br />Finally for each production in the grammar they explain how they add to the real RDF model... Using yet another syntax. (N-Triples)<br /><br />So, if you want to parse RDF, you have to takes these steps: 1. Read the XML syntax 2. Transform it to the Infoset 3. Transform the Infoset into a list of nodes 4. Transform (again?) the list of nodes to RDF triples. And these triples actually form a labeled directed graph (which should be aparent from the original syntax??) To make it more easy: the transformations in step 2 and 3 are only defined in English, and the transformation in step 4 is described in a proprietary grammar. Good luck!
-<br></p>
+<br></p>
+
 <p><blockquote cite="http://markpasc.org/blog/"><p><a href="http://www.python.org/">Python</a> is the language where, before you do a <code>while '' <> line</code> loop, you initialize <code>line</code> like so: <code>line = not ''</code></p></blockquote>
-<p><a href="http://markpasc.org/blog/">Mark Paschal</a> is talking code! If he keeps covering script like this, he's definately a good nominee for Best Scripting Weblog for next year. He certainly has <a href="http://markpasc.home.mindspring.com/code/index.html">cool scripts.</a> (<a href="http://markpasc.home.mindspring.com/code/stapler/index.html">Stapler!!!</a>)</p><br></p>
-
-</TD><TD id="note"><h3>Last Update</h3><P>12/18/2001; 5:56:17 PM</P><P><A href="http://w3future.com/html/weblogarchive.html">Weblog Archive</A></P><h3>RSS link</h3><p>Don't like the look of this site? Just get my data: <a href="http://w3future.com/weblog/rss.xml"><img src="http://scripting.com/images/xml.gif" height="14" width="36" alt="Click here to see the XML version of this weblog." border="0"></a></p><h3>Updated with</h3><p><a href="http://radiodiscuss.userland.com/"><a href="http://radio.userland.com/" title="This site is edited with Radio UserLand, the first personal Web Application server for Windows and Macintosh."><img src="http://www.scripting.com/images/radioUserLandBadge2.gif" width="88" height="31" border="0" alt="This site is edited with Radio UserLand, the first personal Web Application server for Windows and Macintosh."></a></a></p><h3></h3><p><!-- Begin Nedstat Basic code --><!-- Title: w3future.com --><!-- URL: http://w3future.com --><script language='JavaScript' src="http://m1.nedstatbasic.net/basic.js"></script><script language="JavaScript"><!--	nedstatbasic("AA3Q6QSt1y8efNaIz/gpJkmBe5VQ", 0);// --></script><noscript><a target=_blank href="http://v1.nedstatbasic.net/stats?AA3Q6QSt1y8efNaIz/gpJkmBe5VQ"><imgsrc="http://m1.nedstatbasic.net/n?id=AA3Q6QSt1y8efNaIz/gpJkmBe5VQ"border=0 nosave width=18 height=18></a></noscript><!-- End Nedstat Basic code --></p></TD></TR></TABLE></TD></TR></TABLE></TD></TR><TR><TD id="footer">&copy; Copyright 2001 <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A></TD></TR></TABLE><SCRIPT>initButtons()</SCRIPT></BODY></HTML>
+<p><a href="http://markpasc.org/blog/">Mark Paschal</a> is talking code! If he keeps covering script like this, he's definately a good nominee for Best Scripting Weblog for next year. He certainly has <a href="http://markpasc.home.mindspring.com/code/index.html">cool scripts.</a> (<a href="http://markpasc.home.mindspring.com/code/stapler/index.html">Stapler!!!</a>)</p><br></p>
+
+
+
+
+
+</TD><TD id="note">
+<h3>Last Update</h3>
+<P>12/18/2001; 5:56:17 PM</P><P>
+<A href="http://w3future.com/html/weblogarchive.html">Weblog Archive</A>
+</P>
+<h3>RSS link</h3>
+<p>Don't like the look of this site? Just get my data: <a href="http://w3future.com/weblog/rss.xml"><img src="http://scripting.com/images/xml.gif" height="14" width="36" alt="Click here to see the XML version of this weblog." border="0"></a></p>
+<h3>Updated with</h3>
+<p><a href="http://radiodiscuss.userland.com/"><a href="http://radio.userland.com/" title="This site is edited with Radio UserLand, the first personal Web Application server for Windows and Macintosh."><img src="http://www.scripting.com/images/radioUserLandBadge2.gif" width="88" height="31" border="0" alt="This site is edited with Radio UserLand, the first personal Web Application server for Windows and Macintosh."></a></a></p>
+<h3></h3>
+<p>
+<!-- Begin Nedstat Basic code -->
+<!-- Title: w3future.com -->
+<!-- URL: http://w3future.com -->
+<script language='JavaScript' src="http://m1.nedstatbasic.net/basic.js">
+</script>
+<script language="JavaScript">
+<!--
+	nedstatbasic("AA3Q6QSt1y8efNaIz/gpJkmBe5VQ", 0);
+// -->
+</script>
+<noscript>
+<a target=_blank href="http://v1.nedstatbasic.net/stats?AA3Q6QSt1y8efNaIz/gpJkmBe5VQ"><img
+src="http://m1.nedstatbasic.net/n?id=AA3Q6QSt1y8efNaIz/gpJkmBe5VQ"
+border=0 nosave width=18 height=18></a>
+</noscript>
+<!-- End Nedstat Basic code -->
+</p>
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+</TD></TR><TR><TD id="footer">
+&copy; Copyright 2001 <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>
+</TD></TR></TABLE>
+
+<SCRIPT>initButtons()</SCRIPT>
+</BODY>
+</HTML>

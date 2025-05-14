@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/01/13.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2005/01/13.xml">
 <head>
 <title>Thursday, January 13, 2005 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:30:19 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2005/01/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2005/01/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/01/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2005/01/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2005/01/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2005/01/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2004/12/24.xml#a253' title='Friday, December 24, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2005/01/13.xml">Thursday, January 13, 2005</a><a rel='next' href='http://w3future.com/weblog/2005/02/22.txt#a255' title='Tuesday, February 22, 2005'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2004/12/24.xml#a253' title='Friday, December 24, 2004'>&lt;&#160;</a><a href="https://w3future.com/weblog/2005/01/13.xml">Thursday, January 13, 2005</a><a rel='next' href='https://w3future.com/weblog/2005/02/22.txt#a255' title='Tuesday, February 22, 2005'>&#160;&gt;</a></h>
 <a name="a283"></a>
 <section id="a283">
-<h id='stillBugsInTheImplementationOfHtmlHyperlinks'><a href="http://w3future.com/weblog/2005/01/13.xml#a283" class="weblogItemTitle">Still bugs in the implementation of HTML hyperlinks?!</a></h>
+<h id='stillBugsInTheImplementationOfHtmlHyperlinks'><a href="https://w3future.com/weblog/2005/01/13.xml#a283" class="weblogItemTitle">Still bugs in the implementation of HTML hyperlinks?!</a></h>
 <p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=275689">Yes</a>. What's the problem? Same-document references are resolved using the base URI <a href="http://www.hixie.ch/tests/adhoc/uri/002.html">in most browsers</a>. (Only Lynx gets it right!) What does that mean? It means that in most browsers same-document links (like <code>&lt;a href="#identifier"&gt;</code>) don't point to another location in the current document, but point to the document linked to in the base href.</p>
 <p>Is this a rare? Not really. F.e. the Google cache adds a base href to a page. <a href="http://66.102.9.104/search?q=cache:aamBexQO_XMJ:www.w3.org/TR/REC-html40/intro/intro.html">So the links in TOCs are wrong.</a> The Wayback machine uses base href too, and a base href is added when you save an HTML page. Also most people don't know of this bug; <a href="http://annevankesteren.nl/">Anne van Kesteren</a> found <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=275689#c22">an example</a>.</p>
 <p>So how did this happen? The history is interesting. Fragment identifiers and the base address were already clearly specified &#8212; also their interaction &#8212; in the oldest HTML standard I could find, from November 1992. <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html#4">It says:</a></p>
@@ -36,8 +36,8 @@
 <p><em>Update:</em> Somehow I completely missed (or forgot about) <a href="http://gbiv.com/protocols/uri/rev-2002/rfc2396bis.html">RFC 2396 bis</a>. It completely turnes the same-document reference idea around. They <em>must</em> be resolved using the base URI, as the current browsers do. But if you click on a link that &#8212; except for the fragment identifier part &#8212; is the same as the base URI, then you should stay in the current document.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/01/13.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2005/01/13.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

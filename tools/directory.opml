@@ -7,46 +7,46 @@
 		<dateModified>3/24/2002; 4:00:02 PM</dateModified>
 		</head>
 	<body>
-		<outline type="file" text="comments.js" size="4416" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:19 GMT" url="http://w3future.com/tools/comments.js"/>
-		<outline type="file" text="db.inc" size="832" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:19 GMT" url="http://w3future.com/tools/db.inc"/>
-		<outline type="file" text="fileloadjs.phtml" size="368" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:19 GMT" url="http://w3future.com/tools/fileloadjs.phtml"/>
-		<outline type="file" text="funclib.js" size="1847" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/funclib.js"/>
-		<outline type="file" text="getcwd.phtml" size="20" whenCreated="Fri, 25 Jan 2002 20:20:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/getcwd.phtml"/>
-		<outline type="file" text="getFile.phtml" size="453" whenCreated="Sat, 12 Jan 2002 21:21:07 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/getFile.phtml"/>
+		<outline type="file" text="comments.js" size="4416" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:19 GMT" url="https://w3future.com/tools/comments.js"/>
+		<outline type="file" text="db.inc" size="832" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:19 GMT" url="https://w3future.com/tools/db.inc"/>
+		<outline type="file" text="fileloadjs.phtml" size="368" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:19 GMT" url="https://w3future.com/tools/fileloadjs.phtml"/>
+		<outline type="file" text="funclib.js" size="1847" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/funclib.js"/>
+		<outline type="file" text="getcwd.phtml" size="20" whenCreated="Fri, 25 Jan 2002 20:20:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="https://w3future.com/tools/getcwd.phtml"/>
+		<outline type="file" text="getFile.phtml" size="453" whenCreated="Sat, 12 Jan 2002 21:21:07 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/getFile.phtml"/>
 		<outline type="folder" text="jabber">
-			<outline type="file" text="chat.php" size="7158" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/jabber/chat.php"/>
-			<outline type="file" text="login.php" size="2761" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/jabber/login.php"/>
-			<outline type="file" text="register.php" size="4718" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/jabber/register.php"/>
-			<outline type="file" text="xmlparse.inc" size="3224" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/jabber/xmlparse.inc"/>
+			<outline type="file" text="chat.php" size="7158" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/jabber/chat.php"/>
+			<outline type="file" text="login.php" size="2761" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/jabber/login.php"/>
+			<outline type="file" text="register.php" size="4718" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/jabber/register.php"/>
+			<outline type="file" text="xmlparse.inc" size="3224" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/jabber/xmlparse.inc"/>
 			</outline>
-		<outline type="file" text="listFiles.phtml" size="303" whenCreated="Sat, 12 Jan 2002 21:58:09 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/listFiles.phtml"/>
-		<outline type="file" text="mainlib.js" size="5048" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/mainlib.js"/>
-		<outline type="file" text="md5.js" size="5737" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/md5.js"/>
+		<outline type="file" text="listFiles.phtml" size="303" whenCreated="Sat, 12 Jan 2002 21:58:09 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/listFiles.phtml"/>
+		<outline type="file" text="mainlib.js" size="5048" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/mainlib.js"/>
+		<outline type="file" text="md5.js" size="5737" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/md5.js"/>
 		<outline type="folder" text="opmlloader">
-			<outline type="file" text="opmlloader.xml" size="7050" whenCreated="Fri, 01 Mar 2002 20:18:48 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader/opmlloader.xml"/>
-			<outline type="file" text="xmlload.js" size="2988" whenCreated="Fri, 01 Mar 2002 20:19:13 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader/xmlload.js"/>
-			<outline type="file" text="xmlparse.phtml" size="1779" whenCreated="Fri, 01 Mar 2002 20:28:21 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader/xmlparse.phtml"/>
+			<outline type="file" text="opmlloader.xml" size="7050" whenCreated="Fri, 01 Mar 2002 20:18:48 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="https://w3future.com/tools/opmlloader/opmlloader.xml"/>
+			<outline type="file" text="xmlload.js" size="2988" whenCreated="Fri, 01 Mar 2002 20:19:13 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="https://w3future.com/tools/opmlloader/xmlload.js"/>
+			<outline type="file" text="xmlparse.phtml" size="1779" whenCreated="Fri, 01 Mar 2002 20:28:21 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="https://w3future.com/tools/opmlloader/xmlparse.phtml"/>
 			</outline>
-		<outline type="file" text="opmlloader.zip" size="4512" whenCreated="Fri, 01 Mar 2002 22:03:40 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/opmlloader.zip"/>
-		<outline type="file" text="refs.php" size="459" whenCreated="Sun, 24 Mar 2002 13:26:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/refs.php"/>
+		<outline type="file" text="opmlloader.zip" size="4512" whenCreated="Fri, 01 Mar 2002 22:03:40 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="https://w3future.com/tools/opmlloader.zip"/>
+		<outline type="file" text="refs.php" size="459" whenCreated="Sun, 24 Mar 2002 13:26:18 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="https://w3future.com/tools/refs.php"/>
 		<outline type="folder" text="RPC">
-			<outline type="file" text="blogger.lib" size="240" whenCreated="Tue, 22 Jan 2002 09:44:22 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="http://w3future.com/tools/RPC/blogger.lib"/>
-			<outline type="file" text="discuss.lib" size="1052" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/discuss.lib"/>
-			<outline type="file" text="errors.phtml" size="315" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/errors.phtml"/>
-			<outline type="file" text="examples.lib" size="66" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/examples.lib"/>
-			<outline type="file" text="hello.lib" size="69" whenCreated="Thu, 31 Jan 2002 18:06:12 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/tools/RPC/hello.lib"/>
-			<outline type="file" text="index.phtml" size="5195" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/index.phtml"/>
-			<outline type="file" text="manila.homepage.lib" size="404" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/manila.homepage.lib"/>
-			<outline type="file" text="rdf.lib" size="885" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/rdf.lib"/>
-			<outline type="file" text="show.phtml" size="315" whenCreated="Sat, 12 Jan 2002 19:44:02 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/show.phtml"/>
-			<outline type="file" text="validator1.lib" size="1246" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="http://w3future.com/tools/RPC/validator1.lib"/>
-			<outline type="file" text="xmlStorageSystem.lib" size="1921" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/tools/RPC/xmlStorageSystem.lib"/>
+			<outline type="file" text="blogger.lib" size="240" whenCreated="Tue, 22 Jan 2002 09:44:22 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:23 GMT" url="https://w3future.com/tools/RPC/blogger.lib"/>
+			<outline type="file" text="discuss.lib" size="1052" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/discuss.lib"/>
+			<outline type="file" text="errors.phtml" size="315" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/errors.phtml"/>
+			<outline type="file" text="examples.lib" size="66" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/examples.lib"/>
+			<outline type="file" text="hello.lib" size="69" whenCreated="Thu, 31 Jan 2002 18:06:12 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/tools/RPC/hello.lib"/>
+			<outline type="file" text="index.phtml" size="5195" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/index.phtml"/>
+			<outline type="file" text="manila.homepage.lib" size="404" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/manila.homepage.lib"/>
+			<outline type="file" text="rdf.lib" size="885" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/rdf.lib"/>
+			<outline type="file" text="show.phtml" size="315" whenCreated="Sat, 12 Jan 2002 19:44:02 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/show.phtml"/>
+			<outline type="file" text="validator1.lib" size="1246" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:20 GMT" url="https://w3future.com/tools/RPC/validator1.lib"/>
+			<outline type="file" text="xmlStorageSystem.lib" size="1921" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/tools/RPC/xmlStorageSystem.lib"/>
 			</outline>
-		<outline type="file" text="showtable.phtml" size="1314" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/tools/showtable.phtml"/>
-		<outline type="file" text="xmlload.js" size="2995" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="http://w3future.com/tools/xmlload.js"/>
-		<outline type="file" text="xmlparse.phtml" size="1779" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="http://w3future.com/tools/xmlparse.phtml"/>
-		<outline type="file" text="xmlparsejs.phtml" size="1760" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="http://w3future.com/tools/xmlparsejs.phtml"/>
-		<outline type="file" text="xmlrpc.js" size="4813" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="http://w3future.com/tools/xmlrpc.js"/>
-		<outline type="file" text="xmlrpccl.phtml" size="2835" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="http://w3future.com/tools/xmlrpccl.phtml"/>
+		<outline type="file" text="showtable.phtml" size="1314" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/tools/showtable.phtml"/>
+		<outline type="file" text="xmlload.js" size="2995" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 31 Mar 2002 01:05:24 GMT" url="https://w3future.com/tools/xmlload.js"/>
+		<outline type="file" text="xmlparse.phtml" size="1779" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="https://w3future.com/tools/xmlparse.phtml"/>
+		<outline type="file" text="xmlparsejs.phtml" size="1760" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="https://w3future.com/tools/xmlparsejs.phtml"/>
+		<outline type="file" text="xmlrpc.js" size="4813" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="https://w3future.com/tools/xmlrpc.js"/>
+		<outline type="file" text="xmlrpccl.phtml" size="2835" whenCreated="Sat, 12 Jan 2002 15:34:24 GMT" whenLastUploaded="Sun, 13 Jan 2002 09:32:21 GMT" url="https://w3future.com/tools/xmlrpccl.phtml"/>
 		</body>
 	</opml>

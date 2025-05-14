@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/06/01.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/06/01.xml">
 <head>
 <title>Saturday, June 01, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,30 +12,30 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:22:21 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/06/01.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/06/01.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/06/01.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/06/01.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/06/01.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/06/01.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/05/28.xml#a104' title='Tuesday, May 28, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/06/01.xml">Saturday, June 01, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/06/02.txt#a108' title='Sunday, June 02, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/05/28.xml#a104' title='Tuesday, May 28, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/06/01.xml">Saturday, June 01, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/06/02.txt#a108' title='Sunday, June 02, 2002'>&#160;&gt;</a></h>
 <a name="a107"></a>
 <section id="a107">
-<h id='aboutMozilla'><a href="http://w3future.com/weblog/2002/06/01.xml#a107" class="weblogItemTitle">About Mozilla</a></h>
+<h id='aboutMozilla'><a href="https://w3future.com/weblog/2002/06/01.xml#a107" class="weblogItemTitle">About Mozilla</a></h>
 <p>Thanks to <a href="http://surfmind.com/musings/stories/2002/05/27/googlingMozilla.cfm">Surfmind's Googling Mozilla</a> I found out that my weblog is #1 in Google for "mozilla weblog" at the moment. Maybe a good moment to write about a nice Mozilla CSS option. The height and width CSS properties are implemented differently by Internet Explorer and Mozilla. <a href="http://www.alistapart.com/stories/journey/4.html">Zeldman explained</a> this once very clearly. He also gave a solution, but the Mozilla developers have been busy in the mean time. Simply add the property <code>-moz-box-sizing: border-box;</code>, and the width and height of the element will be the same as in Internet Explorer.</p>
 </section><a name="a106"></a>
 <section id="a106">
-<h id='linkingToRss'><a href="http://w3future.com/weblog/2002/06/01.xml#a106" class="weblogItemTitle">Linking to RSS</a></h>
+<h id='linkingToRss'><a href="https://w3future.com/weblog/2002/06/01.xml#a106" class="weblogItemTitle">Linking to RSS</a></h>
 <blockquote cite='http://scriptingnews.userland.com/backissues/2002/06/01#When:11:38:12AM'><p> When this mania launched, <a href="http://matt.griffith.com/weblog/2002/05/30.html">Matt Griffith</a> said: "Now I just need an aggregator that supports it." This comment loomed over my ego. That has to be Radio, I thought to myself. So I got busy and figured out <a href="http://frontier.userland.com/stories/storyReader$10232">how to do it</a>. I'm going to release the two new parts when I am confident that nothing breaks. [<a href='http://scriptingnews.userland.com/backissues/2002/06/01#When:11:38:12AM'>Scripting News</a>]</p></blockquote>
 <p>Ah, I already wondered why suddenly adding a &lt;link> tag became a hot item. w3future has it since about October 2001, when it was <a href="http://groups.yahoo.com/group/syndication/message/2535">discussed on the syndication list</a>. Not that I'm complaining of course. This will hide the RSS technology for the user, who can simply subscribe on the html page.</p>
 </section><a name="a105"></a>
 <section id="a105">
-<h id='weblogHostingProblems'><a href="http://w3future.com/weblog/2002/06/01.xml#a105" class="weblogItemTitle">Weblog hosting problems</a></h>
+<h id='weblogHostingProblems'><a href="https://w3future.com/weblog/2002/06/01.xml#a105" class="weblogItemTitle">Weblog hosting problems</a></h>
 <p>With <a href="http://cedant.com">Cedant</a> I thought I had found the perfect web hosting. Never had any serious problems, and the problems I had were usually solved within 10 minutes after sending an e-mail, 24 hours a day. But this time they blew it. Flawless web hosting seems impossible.</p><p>Cedant upgraded their servers, and it went horribly wrong. Friday I received an e-mail from Cedant, telling me that they were going to upgrade, and asking me to use the new settings starting Thursday. That's right, I received the notification one day <em>after</em> the switch. The switch left my site in complete disorder. 2 weeks old data. PHP settings changed, so most of my examples aren't working. And the CSS is PHP generated, so my site looked like crap. The website root directory changed, so the FTP uploads from Radio Userland failed.</p><p>And of course the <a href="http://cedant.com">site of Cedant</a> remains quiet about the problems. Only after I had sent a complaint, I received a small apology:</p><blockquote><p>We apologize for the abrubtness of these changes.  There are many factors that have caused this and we regret that this has impacted our clients this way.  This was certainly not our intention when these plans were made.</p></blockquote>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/06/01.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/06/01.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

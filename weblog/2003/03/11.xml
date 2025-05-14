@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/03/11.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/03/11.xml">
 <head>
 <title>Tuesday, March 11, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:25:56 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/03/11.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/03/11.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/03/11.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/03/11.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/03/11.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/03/11.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/03/05.xml#a171' title='Wednesday, March 05, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/03/11.xml">Tuesday, March 11, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/03/15.txt#a173' title='Saturday, March 15, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/03/05.xml#a171' title='Wednesday, March 05, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/03/11.xml">Tuesday, March 11, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/03/15.txt#a173' title='Saturday, March 15, 2003'>&#160;&gt;</a></h>
 <a name="a172"></a>
 <section id="a172">
-<h id='firstImpressionOfXmlInOffice2003'><a href="http://w3future.com/weblog/2003/03/11.xml#a172" class="weblogItemTitle">First impression of XML in Office 2003</a></h>
+<h id='firstImpressionOfXmlInOffice2003'><a href="https://w3future.com/weblog/2003/03/11.xml#a172" class="weblogItemTitle">First impression of XML in Office 2003</a></h>
 <p>Today at <a href="http://q42.nl">Q42</a> Laurens looked into <a href="http://www.microsoft.com/office/preview/editions/default.asp">Microsoft Office 2003 beta 2</a>. After reading <a href="http://www.infoworld.com/article/03/02/20/08stratdev_1.html">John Udell's article about InfoPath</a> we thought Microsoft migth have caught up with <a href="http://xopus.com">Xopus</a>. Thankfully this does not seem to be the case:</p>
 <ul>
 <li><a href="http://www.microsoft.com/office/preview/infopath/default.asp">Infopath 2003</a> uses its own templating language. It can only export to XSLT.</li>
@@ -30,8 +30,8 @@
 <p>Office 2003 is actually a good developer tool to use with Xopus. Infopath is a nice editor for data schemas and data views. The schemas and views can then be used with Xopus to edit XML online in the browser.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/03/11.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/03/11.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

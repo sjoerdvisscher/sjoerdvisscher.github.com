@@ -18,10 +18,10 @@
 		var GL_terms='';
 		var GL_words=[];
 		var GL_current=-1;
-	
+
 		function start_check(terms) {
  			GL_terms=terms;
-			var s=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+			var s=new w3f_XMLRPCService('https://w3future.com/tools/RPC/');
 			s.onload=function () {
 				var div=document.getElementById('result');
 				if (this.error) div.innerHTML=this.error; else render(this.result);
@@ -30,7 +30,7 @@
 			var div=document.getElementById('result');
 			div.innerHTML='Working...';
 		}
-		
+
 		function render(r) {
 			var div=document.getElementById('result');
 			div.innerHTML=toList(r);
@@ -45,7 +45,7 @@
 			}
 			return s;
 		}
-	
+
 	</SCRIPT>
 </HEAD>
 <BODY>
@@ -90,7 +90,7 @@ document.write('<TR><TD>'+createButton({style:'button2',content:'XML-RPC Homepag
 <H2>Enter some text to check</H2>
 <FORM onsubmit="start_check(document.forms['loader'].q.value);return false;" name="loader">
 <DIV id="edit">
-<P><INPUT type="text" name="q" size=60 style="width:100%" value=" http://w3future.com/html/showcomment.phtml"></P>
+<P><INPUT type="text" name="q" size=60 style="width:100%" value=" https://w3future.com/html/showcomment.phtml"></P>
 <P><TABLE cellspacing=0 cellpadding=0 style="border:1px solid #000040"><TR><TD>
 <SCRIPT>document.write(createButton({style:'button',content:'Get description',action:"start_check(document.forms['loader'].q.value)"}))</SCRIPT>
 </TD></TR></TABLE></P>
@@ -105,9 +105,9 @@ document.write('<TR><TD>'+createButton({style:'button2',content:'XML-RPC Homepag
 </P>
 
 <H2>Details</H2>
-<P><A href="http://www.stuffeddog.com/index.html">David Adams</A> has created Speller, 
+<P><A href="http://www.stuffeddog.com/index.html">David Adams</A> has created Speller,
 "a lightweight spell-checking application tailored for the web.". It's latest version also has a
-<A href="http://www.stuffeddog.com/speller/doc/rpc.html">RPC interface</A> which uses 
+<A href="http://www.stuffeddog.com/speller/doc/rpc.html">RPC interface</A> which uses
 XML-RPC over HTTP as the RPC mechanism. For me it was the perfect application to test my new
 XML-RPC client for IE5 and Mozilla. The XML-RPC client sends the input text to the spell-check
 service, which returns the misspelled words and the alternatives. Then an interface is dynamically
@@ -127,7 +127,7 @@ the spelling in the box above the suggestions.</P>
 </TD></TR></TABLE>
 
 </TD></TR><TR><TD id="footer">
-&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="https://w3future.com">w3future.com</A>.
 </TD></TR></TABLE>
 </BODY>
 </HTML>

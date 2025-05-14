@@ -6,7 +6,7 @@
 	<SCRIPT src="/tools/funclib.js"></SCRIPT>
 	<STYLE>
 		@import "/w3f/w3f.css";
-		
+
 		.show,SPAN.calnav {
 			cursor:pointer;cursor:hand;
 		}
@@ -14,7 +14,7 @@
 			text-align: center;
 		}
 		.show, .calheader {
-			background: #F8F8FC; 
+			background: #F8F8FC;
 			border: 1px solid #4040A0;
 			color: #4040A0;
 		}
@@ -51,15 +51,15 @@
 		var dayI2N,dayN2I={},firstDay,lastDay,texts={};
 		var monthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
 		var dayNames=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-		
+
 		function init() {
-			var service=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+			var service=new w3f_XMLRPCService('https://w3future.com/tools/RPC/');
 			service.onload=function() {
 				if (this.error) alert(this.error); else init2(this.result);
 			}
 			service.call('rdf.getList',['MID(s,8,8)',"s LIKE 'weblog/%'"]);
 		}
-		
+
 		function init2(result) {
 			dayI2N=result;
 			dayI2N.each(function(day,index){
@@ -69,14 +69,14 @@
 			makeCalendar(lastDay.substr(0,6));
 			show(lastDay);
 		}
-		
+
 		function show(day) {
 			if (!texts[day]) {
 				(
 					'H2'.w('Loading...')+
 					'P'.w('Retrieving data from server.')
 				).into('weblog');
-				var service=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+				var service=new w3f_XMLRPCService('https://w3future.com/tools/RPC/');
 				service.day=day;
 				service.onload=function() {
 					if (this.error) {
@@ -102,13 +102,13 @@
 				renderLinks(texts[day]);
 			}
 		}
-		
+
 		function n2(n) {return (n<10)?'0'+n:''+n;}
-		
+
 		function date2N(d) {
 			return ''+d.getFullYear()+n2(d.getMonth()+1)+n2(d.getDate());
 		}
-		
+
 		function makeCalendar(m) {
 			var year=1*m.substr(0,4);
 			month=1*m.substr(4,2)-1;
@@ -199,7 +199,7 @@
 			terms=terms.replace(/\s*$/,'');
 			terms=terms.replace(/\s+/g,"%') AND (o LIKE '%");
 			terms="(o LIKE '%"+terms+"%')";
-			var service=new w3f_XMLRPCService('http://w3future.com/tools/RPC/');
+			var service=new w3f_XMLRPCService('https://w3future.com/tools/RPC/');
 			service.onload=function() {
 				if (this.error) {
 					(
@@ -212,7 +212,7 @@
 			}
 			service.call('rdf.getList',['MID(s,8,8)',terms,'a DESC']);
 		}
-		
+
 		function searchresult(res) {
 			(
 				'H2'.w('Search Results')+
@@ -283,12 +283,12 @@ Links
 </FORM>
 
 <H2>Technical Details</H2>
-<P>Almost everything on this page is dynamic. First, when the page loads, an 
+<P>Almost everything on this page is dynamic. First, when the page loads, an
 <A href="http://www.xml-rpc.org">XML-RPC</A> call is made to my
-RDF(-like) database, to retrieve the list of dates that have a weblog page. From this the calendar 
-interface is built. When a date is selected, then a new XML-RPC call is made to retrieve the text from 
+RDF(-like) database, to retrieve the list of dates that have a weblog page. From this the calendar
+interface is built. When a date is selected, then a new XML-RPC call is made to retrieve the text from
 the database. This text is shown and scraped to build the links list.</P>
-<P>The data in de database is posted with Radio Userland, through a 
+<P>The data in de database is posted with Radio Userland, through a
 <A href="http://www.xmlrpc.com/manilaRpcSpec">Manila XML-RPC call</A>. The search feature also makes
 an XML-RPC call to retrieve the weblogs that contain certain words.</P>
 
@@ -307,7 +307,7 @@ initButtons();
 </TD></TR></TABLE>
 
 </TD></TR><TR><TD id="footer">
-&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="https://w3future.com">w3future.com</A>.
 </TD></TR></TABLE>
 </BODY>
 </HTML>

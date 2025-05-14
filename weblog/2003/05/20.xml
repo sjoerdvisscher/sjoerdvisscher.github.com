@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/05/20.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/05/20.xml">
 <head>
 <title>Tuesday, May 20, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,22 +12,22 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:27:31 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/05/20.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/05/20.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/05/20.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/05/20.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/05/20.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/05/20.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/05/19.xml#a199' title='Monday, May 19, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/05/20.xml">Tuesday, May 20, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/05/21.txt#a201' title='Wednesday, May 21, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/05/19.xml#a199' title='Monday, May 19, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/05/20.xml">Tuesday, May 20, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/05/21.txt#a201' title='Wednesday, May 21, 2003'>&#160;&gt;</a></h>
 <a name="a229"></a>
 <section id="a229">
-<h id='xmlAllowsDataStructureDesignInSketchingMode'><a href="http://w3future.com/weblog/2003/05/20.xml#a229" class="weblogItemTitle">XML allows data structure design in sketching mode</a></h>
+<h id='xmlAllowsDataStructureDesignInSketchingMode'><a href="https://w3future.com/weblog/2003/05/20.xml#a229" class="weblogItemTitle">XML allows data structure design in sketching mode</a></h>
 <blockquote cite="http://seanmcgrath.blogspot.com/2003_05_18_seanmcgrath_archive.html#200317068"><p>Simon St. Laurent (and Tim O'Reilly) <a href="http://www.oreillynet.com/pub/wlg/3191">nail it</a>. [<a href="http://seanmcgrath.blogspot.com/2003_05_18_seanmcgrath_archive.html#200317068">Sean McGrath</a>]</p></blockquote>
-<p>If you work with XML on a daily basis, but sometimes have to switch back to databases, like I do, then Simon's point is painfully obvious. I also think the restriction RDF puts on XML seriously reduces this flexibility, which makes RDF less ideal for incremental design. Time for me to plug <a href="http://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> again. (Which was finally <a href="http://www.peerfear.org/rss/permalink/2003/05/19/SimpleSemanticResolution/">noticed</a>.)</p>
+<p>If you work with XML on a daily basis, but sometimes have to switch back to databases, like I do, then Simon's point is painfully obvious. I also think the restriction RDF puts on XML seriously reduces this flexibility, which makes RDF less ideal for incremental design. Time for me to plug <a href="https://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> again. (Which was finally <a href="http://www.peerfear.org/rss/permalink/2003/05/19/SimpleSemanticResolution/">noticed</a>.)</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/05/20.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/05/20.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

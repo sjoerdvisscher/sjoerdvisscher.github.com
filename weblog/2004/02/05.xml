@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/02/05.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2004/02/05.xml">
 <head>
 <title>Thursday, February 05, 2004 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,22 +12,22 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:36 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2004/02/05.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2004/02/05.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/02/05.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2004/02/05.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2004/02/05.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2004/02/05.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/12/20.xml#a239' title='Saturday, December 20, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/02/05.xml">Thursday, February 05, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/02/10.txt#a241' title='Tuesday, February 10, 2004'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/12/20.xml#a239' title='Saturday, December 20, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2004/02/05.xml">Thursday, February 05, 2004</a><a rel='next' href='https://w3future.com/weblog/2004/02/10.txt#a241' title='Tuesday, February 10, 2004'>&#160;&gt;</a></h>
 <a name="a269"></a>
 <section id="a269">
-<h id='whenASearchEngineIsntEnoughCallALibrarian'><a href="http://w3future.com/weblog/2004/02/05.xml#a269" class="weblogItemTitle">When a Search Engine Isn't Enough, Call a Librarian?</a></h>
+<h id='whenASearchEngineIsntEnoughCallALibrarian'><a href="https://w3future.com/weblog/2004/02/05.xml#a269" class="weblogItemTitle">When a Search Engine Isn't Enough, Call a Librarian?</a></h>
 <blockquote cite="http://www.nytimes.com/2004/02/05/technology/circuits/05libr.html?ex=1391403600&amp;en=26c6c8a9c0c4212f&amp;ei=5007&amp;partner=USERLAND"><p>"What's the name of the party that Ross Perot established?" a user wanted to know.</p><p>Ms. Tuckerman checked the Internet for a biography of Mr. Perot. Then she quickly switched to an electronic database of biographies to which the library subscribes. But even after scrolling through several screens of text, she was unable to come up with a satisfactory answer.</p><p>So she turned to a rotating bookshelf next to her desk and selected a volume of the World Book Encyclopedia. "Sometimes the old-fashioned sources work the best," she said. Within a few minutes she found the answer in the encyclopedia: the Reform Party. [<a href="http://www.nytimes.com/2004/02/05/technology/circuits/05libr.html?ex=1391403600&amp;en=26c6c8a9c0c4212f&amp;ei=5007&amp;partner=USERLAND">NYTimes</a> via <a href="http://archive.scripting.com/2004/02/05#When:6:01:27AM">Scripting News</a>]</p></blockquote>
 <p>Type in Google: <a href="http://www.google.com/search?q=ross+perot+party">ross perot party</a>. Answer within a few seconds. Old-fashioned sources only work the best when you use old-fashioned search queries.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/02/05.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2004/02/05.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

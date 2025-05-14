@@ -1,12 +1,12 @@
 <div xmlns="http://www.w3.org/2002/06/xhtml2">
 	<p id="tools" class="buttons">
-		<l href="http://w3future.com/html/search.html" rel="search" title="Search this site."><span>Site</span> Search</l>
-		<l href="http://w3future.com/weblog/cssedit.html" title="Don't like the look of this site?"><span>Site</span> Colors</l>
+		<l href="https://w3future.com/html/search.html" rel="search" title="Search this site."><span>Site</span> Search</l>
+		<l href="https://w3future.com/weblog/cssedit.html" title="Don't like the look of this site?"><span>Site</span> Colors</l>
 		<l href="mailto:sjoerd%40w3future.com" rel="author" title="Sjoerd Visscher"><span>Site</span> E-mail Me</l>
 	</p>
 	<p id="syndication" class="buttons">
-		<l href="http://w3future.com/weblog/rss.xml?notransform" rel="alternate" type="application/atom+xml" title="See the syndicated version of this weblog."><span>Syn</span> Atom 1.0</l>
-		<l href="http://w3future.com/weblog/rss.xml" rel="alternate" type="application/rss+xml" title="See the syndicated version of this weblog."><span>Syn</span> RSS 0.91</l>
+		<l href="https://w3future.com/weblog/rss.xml?notransform" rel="alternate" type="application/atom+xml" title="See the syndicated version of this weblog."><span>Syn</span> Atom 1.0</l>
+		<l href="https://w3future.com/weblog/rss.xml" rel="alternate" type="application/rss+xml" title="See the syndicated version of this weblog."><span>Syn</span> RSS 0.91</l>
 		<l href="http://www.syndic8.com/feedinfo.php?FeedID=930&amp;Section=links" title="Subscribe to this weblog."><span>Syn</span> Subscribe</l>
 	</p>
 	<p id="metainformation" class="buttons">

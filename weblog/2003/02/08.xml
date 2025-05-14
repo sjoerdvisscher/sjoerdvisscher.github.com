@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/02/08.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/02/08.xml">
 <head>
 <title>Saturday, February 08, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,21 +12,21 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:25:45 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/02/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/02/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/02/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/02/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/02/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/02/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/02/04.xml#a162' title='Tuesday, February 04, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/02/08.xml">Saturday, February 08, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/02/13.txt#a164' title='Thursday, February 13, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/02/04.xml#a162' title='Tuesday, February 04, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/02/08.xml">Saturday, February 08, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/02/13.txt#a164' title='Thursday, February 13, 2003'>&#160;&gt;</a></h>
 <a name="a163"></a>
 <section id="a163">
-<h id='slashdotTraffic'><a href="http://w3future.com/weblog/2003/02/08.xml#a163" class="weblogItemTitle">Slashdot traffic</a></h>
+<h id='slashdotTraffic'><a href="https://w3future.com/weblog/2003/02/08.xml#a163" class="weblogItemTitle">Slashdot traffic</a></h>
 <p>The amount of Slashdot traffic apparently changes a lot from item to item. <a href="http://scriptingnews.userland.com/backissues/2003/02/04#When:2:49:44PM">Dave</a> usually gets about 5000 visitors, which is about the same with what I've seen before when <a href="http://xopus.org">Xopus</a> was <a href="http://developers.slashdot.org/developers/02/09/20/1227214.shtml?tid=156">mentioned on Slashdot</a>. But yesterday <a href="http://www.goodoldadventures.com">Good Old Adventures</a>, a &#8220;<a href="http://q42.nl">Q42</a> product by Martin Kool&#8221;, was <a href="http://slashdot.org/article.pl?sid=03/02/06/239206">Slashdotted</a>. This time we got 36000 visitors yesterday, and probably still about 8000 today! Still not as much as <a href="http://joelonsoftware.com/news/20030205.html">Joel</a> gets though.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/02/08.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/02/08.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

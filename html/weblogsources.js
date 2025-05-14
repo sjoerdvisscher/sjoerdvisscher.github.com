@@ -33,4 +33,4 @@ doc.onload=function() {
 	renderSubs(this);
 }
 
-doc.load('http://w3future.com/weblog/gems/mySubscriptions.opml');
+doc.load('https://w3future.com/weblog/gems/mySubscriptions.opml');

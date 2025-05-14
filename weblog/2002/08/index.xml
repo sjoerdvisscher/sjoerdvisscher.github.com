@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/08/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/08/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,76 +11,76 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:23:25 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/08/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/08/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/08/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/08/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/08/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/08/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/14.xml">Wednesday, August 14, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/14.xml">Wednesday, August 14, 2002</a></h>
 <a name="a121"></a>
 <section id="a121">
-<h id='revisitingtheQTagRevisited'><a href="http://w3future.com/weblog/2002/08/14.xml#a121" class="weblogItemTitle">Revisiting &#8220;The Q tag revisited&#8221;</a></h>
+<h id='revisitingtheQTagRevisited'><a href="https://w3future.com/weblog/2002/08/14.xml#a121" class="weblogItemTitle">Revisiting &#8220;The Q tag revisited&#8221;</a></h>
 <p><cite><a href="http://diveintomark.org/archives/2002/08/14.html#the_q_tag_revisited">dive into mark</a></cite>: &#8220;<quote cite="http://diveintomark.org/archives/2002/08/14.html#the_q_tag_revisited">I&#8217;ve retired my use of the Q tag, after deciding that it creates more problems than it solves.</quote>&#8221; This time I don't share Marks solution. I'd suggest to still use the Q tag, but add your own quotes around them. And to prevent browsers from adding their own quotes, use this bit of CSS: <code>q:before, q:after { content: ''; }</code></p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/11.xml">Sunday, August 11, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/11.xml">Sunday, August 11, 2002</a></h>
 <a name="a120"></a>
 <section id="a120">
-<h id='newSearchPage'><a href="http://w3future.com/weblog/2002/08/11.xml#a120" class="weblogItemTitle">New search page</a></h>
-<p>My weblog archive page has been defunct for a while now. Today I replaced it with <a href="http://w3future.com/html/search.html">a dynamic search page</a>, which uses the Google web service through <a href="http://www.dentedreality.com.au/xoomle/">XooMLe</a>. The disadvantage of using Google is that it doesn't seem to return every possible result. But the advantages are that the results are ordered by relevance, and it shows the sentences that contain the search terms.</p>
+<h id='newSearchPage'><a href="https://w3future.com/weblog/2002/08/11.xml#a120" class="weblogItemTitle">New search page</a></h>
+<p>My weblog archive page has been defunct for a while now. Today I replaced it with <a href="https://w3future.com/html/search.html">a dynamic search page</a>, which uses the Google web service through <a href="http://www.dentedreality.com.au/xoomle/">XooMLe</a>. The disadvantage of using Google is that it doesn't seem to return every possible result. But the advantages are that the results are ordered by relevance, and it shows the sentences that contain the search terms.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/09.xml">Friday, August 09, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/09.xml">Friday, August 09, 2002</a></h>
 <a name="a119"></a>
 <section id="a119">
-<h id='displayXhtml20WithXsl'><a href="http://w3future.com/weblog/2002/08/09.xml#a119" class="weblogItemTitle">Display XHTML 2.0 with XSL</a></h>
-<p>Today I tried a different approach for XHTML 2.0. I created <a href="http://w3future.com/weblog/gems/xhtml2.xsl">an XSL stylesheet that converts XHTML 2.0 to XHTML 1.0</a>. Mozilla and IE6 can <a href="http://w3future.com/weblog/gems/xhtml2b.xml">apply the tranformation themselves</a>. Other browsers can use the <a href="http://www.w3.org/2000/06/webdata/xslt?xslfile=http%3A%2F%2Fw3future.com%2Fweblog%2Fgems%2Fxhtml2.xsl&amp;xmlfile=http%3A%2F%2Fw3future.com%2Fweblog%2Fgems%2Fxhtml2b.xml&amp;transform=Submit">w3c xslt service.</a></p>
+<h id='displayXhtml20WithXsl'><a href="https://w3future.com/weblog/2002/08/09.xml#a119" class="weblogItemTitle">Display XHTML 2.0 with XSL</a></h>
+<p>Today I tried a different approach for XHTML 2.0. I created <a href="https://w3future.com/weblog/gems/xhtml2.xsl">an XSL stylesheet that converts XHTML 2.0 to XHTML 1.0</a>. Mozilla and IE6 can <a href="https://w3future.com/weblog/gems/xhtml2b.xml">apply the tranformation themselves</a>. Other browsers can use the <a href="http://www.w3.org/2000/06/webdata/xslt?xslfile=http%3A%2F%2Fw3future.com%2Fweblog%2Fgems%2Fxhtml2.xsl&amp;xmlfile=http%3A%2F%2Fw3future.com%2Fweblog%2Fgems%2Fxhtml2b.xml&amp;transform=Submit">w3c xslt service.</a></p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/08.xml">Thursday, August 08, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/08.xml">Thursday, August 08, 2002</a></h>
 <a name="a118"></a>
 <section id="a118">
-<h id='imagesAddedToTheXhtml20Page'><a href="http://w3future.com/weblog/2002/08/08.xml#a118" class="weblogItemTitle">Images added to the XHTML 2.0 page</a></h>
-<p>Some more info for those who'd like to start using XHTML 2.0 for every day use. <a href="http://w3future.com/weblog/gems/xhtml2.xml">The XHTML 2.0 example page</a> is for the browsers plain XML. So absolutely nothing works what you'd expect from normal HTML. Every functionality has to be explained to the browser. CSS makes it easy to provide the site layout. Yesterday I coded the link functionality. Today I added support for images in Mozilla and Opera 6. But don't expect to be able to add an input element any time soon.</p>
+<h id='imagesAddedToTheXhtml20Page'><a href="https://w3future.com/weblog/2002/08/08.xml#a118" class="weblogItemTitle">Images added to the XHTML 2.0 page</a></h>
+<p>Some more info for those who'd like to start using XHTML 2.0 for every day use. <a href="https://w3future.com/weblog/gems/xhtml2.xml">The XHTML 2.0 example page</a> is for the browsers plain XML. So absolutely nothing works what you'd expect from normal HTML. Every functionality has to be explained to the browser. CSS makes it easy to provide the site layout. Yesterday I coded the link functionality. Today I added support for images in Mozilla and Opera 6. But don't expect to be able to add an input element any time soon.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/07.xml">Wednesday, August 07, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/07.xml">Wednesday, August 07, 2002</a></h>
 <a name="a117"></a>
 <section id="a117">
-<h id='aWorkingXhtml20Page'><a href="http://w3future.com/weblog/2002/08/07.xml#a117" class="weblogItemTitle">A working XHTML 2.0 page</a></h>
-<p>I converted an archive page to XHTML 2.0. <a href="http://w3future.com/weblog/gems/xhtml2.xml">It works in IE6, Opera 6 and Mozilla.</a> It is styled with CSS. I had to do some coding to get the links to work. For IE6 I made an HTC behavior that creates handlers for mouse events (yuck). For Mozilla I made an XBL binding that adds XLink attributes. And Opera 6 has CSS extensions for links. Being allowed to make every element a link makes the html code very clean. Sections structure the page very well. And the navigation lists are perfect for weblogs. So don't say it's <a href="http://diveintomark.org/archives/2002/08/06.html#changes_in_xhtml_20">just markupbation</a> or that <a href="http://markpasc.org/blog/2002/08/06.html#i123946">we'll be stuck with XHTML 1.1 for quite a while</a>.</p>
+<h id='aWorkingXhtml20Page'><a href="https://w3future.com/weblog/2002/08/07.xml#a117" class="weblogItemTitle">A working XHTML 2.0 page</a></h>
+<p>I converted an archive page to XHTML 2.0. <a href="https://w3future.com/weblog/gems/xhtml2.xml">It works in IE6, Opera 6 and Mozilla.</a> It is styled with CSS. I had to do some coding to get the links to work. For IE6 I made an HTC behavior that creates handlers for mouse events (yuck). For Mozilla I made an XBL binding that adds XLink attributes. And Opera 6 has CSS extensions for links. Being allowed to make every element a link makes the html code very clean. Sections structure the page very well. And the navigation lists are perfect for weblogs. So don't say it's <a href="http://diveintomark.org/archives/2002/08/06.html#changes_in_xhtml_20">just markupbation</a> or that <a href="http://markpasc.org/blog/2002/08/06.html#i123946">we'll be stuck with XHTML 1.1 for quite a while</a>.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/06.xml">Tuesday, August 06, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/06.xml">Tuesday, August 06, 2002</a></h>
 <a name="a116"></a>
 <section id="a116">
-<h id='xhtml20WorkingDraftPublished'><a href="http://w3future.com/weblog/2002/08/06.xml#a116" class="weblogItemTitle">XHTML 2.0 Working Draft Published</a></h>
+<h id='xhtml20WorkingDraftPublished'><a href="https://w3future.com/weblog/2002/08/06.xml#a116" class="weblogItemTitle">XHTML 2.0 Working Draft Published</a></h>
 <blockquote cite='http://www.w3.org/News/2002#item117'><p>The HTML Working Group has released the first public Working Draft of <a href="http://www.w3.org/TR/2002/WD-xhtml2-20020805/">XHTML 2.0</a>. XHTML 2.0 is a relative of the Web's familiar publishing languages, HTML 4 and XHTML 1.0 and 1.1, and is not intended to be backward compatible with them. The draft contains the XHTML 2.0 markup language in modules for creating rich, portable Web-based applications. [<a href='http://www.w3.org/News/2002#item117'>Archive of W3C News in 2002</a>]</p></blockquote>
 <p>A few new things I noticed: The hypertext and event attribute groups are part of the common attribute group. This means that most elements can be links, and can fire events. Very cool new text elements: <code>&lt;h></code> and <code>&lt;section></code> instead of the <code>&lt;h<i>n</i>></code> elements and <code>&lt;line></code> instead of <code>&lt;br></code>. <code>&lt;q></code> becomes <code>&lt;quote></code>. New list elements: <code>&lt;nl></code> and <code>&lt;name></code> for navigation lists (ie. menus). XFrames is not yet published, but referred to in this standard.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/02.xml">Friday, August 02, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/02.xml">Friday, August 02, 2002</a></h>
 <a name="a115"></a>
 <section id="a115">
-<h id='previousNextLinksMinitutorial'><a href="http://w3future.com/weblog/2002/08/02.xml#a115" class="weblogItemTitle">previous / next links mini-tutorial</a></h>
+<h id='previousNextLinksMinitutorial'><a href="https://w3future.com/weblog/2002/08/02.xml#a115" class="weblogItemTitle">previous / next links mini-tutorial</a></h>
 <p>For all those Radio Userland bloggers who want to have links to the previous and next page in their archives: <a href="http://www.dixiblog.com">Dixiblog</a> has been so very kind to provide a <a href="http://www.dixiblog.com/stories/2002/08/01/previousNextLinksMinitutorial.html">tutorial</a> explaining how to do that. And she's used my macros, for which I was too lazy to provide a proper explanation.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/08/01.xml">Thursday, August 01, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/08/01.xml">Thursday, August 01, 2002</a></h>
 <a name="a114"></a>
 <section id="a114">
-<h id='googleAHarshMistress'><a href="http://w3future.com/weblog/2002/08/01.xml#a114" class="weblogItemTitle">Google a harsh mistress?</a></h>
+<h id='googleAHarshMistress'><a href="https://w3future.com/weblog/2002/08/01.xml#a114" class="weblogItemTitle">Google a harsh mistress?</a></h>
 <blockquote cite='http://diveintomark.org/archives/2002/08/01.html#google_dance_of_death'><p>But what's up with <a href="http://www.bungi.com/">the new #1 Dave</a>?  Methinks there's a kink in the algorithm somewhere. [<a href='http://diveintomark.org/archives/2002/08/01.html#google_dance_of_death'>dive into mark/August 1, 2002</a>]</p></blockquote>
 <p>Try <a href="http://www.google.com/search?q=link:www.bungi.com">this search</a>. This Dave created a multi router traffic grapher. And he made sure to link to his homepage using his name, on <i>every</i> page the tool generated. Thats 10,000 links. Sure, Google knows of more than 20,000 links to scripting.com, but the links apparently say "Scripting News" more often than "Dave Winer".</p>
 </section><a name="a113"></a>
 <section id="a113">
-<h id='letTheSemanticWebBegin'><a href="http://w3future.com/weblog/2002/08/01.xml#a113" class="weblogItemTitle">Let the semantic web begin!</a></h>
+<h id='letTheSemanticWebBegin'><a href="https://w3future.com/weblog/2002/08/01.xml#a113" class="weblogItemTitle">Let the semantic web begin!</a></h>
 <blockquote cite='http://www.w3.org/News/2002#item110'><p>The Web Ontology Working Group has released three first Working Drafts. The <a href="http://w3.org/TR/2002/WD-owl-features-20020729/">Feature Synopsis</a>, <a href="http://w3.org/TR/2002/WD-owl-absyn-20020729/">Abstract Syntax</a> and <a href="http://w3.org/TR/2002/WD-owl-ref-20020729/">Language Reference</a> describe the OWL Web Ontology Language 1.0 and its subset OWL Lite. Automated tools can use common sets of terms called ontologies to power services such as more accurate Web search, intelligent software agents, and knowledge management. OWL is used to publish and share ontologies on the Web. [<a href='http://www.w3.org/News/2002#item110'>Archive of W3C News in 2002</a>]</p></blockquote>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/08/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/08/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

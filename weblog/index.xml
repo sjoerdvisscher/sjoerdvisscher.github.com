@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/index.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/index.xml">
 <head>
 <title>Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -10,28 +10,28 @@
 	<p>Pondering those web technologies that may change the future of the world wide web.</p>
 	<section id="note">
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-    <h><a href="http://w3future.com/weblog/2008/06/16.xml">Monday, June 16, 2008</a></h>
+    <h><a href="https://w3future.com/weblog/2008/06/16.xml">Monday, June 16, 2008</a></h>
   <a name="a300"></a>
   <section id="a300">
-  <h id='AlgebraicDataTypesinJavaScript'><a href="http://w3future.com/weblog/2008/06/16.xml#a300" class="weblogItemTitle">Algebraic Data Types in JavaScript</a></h>
+  <h id='AlgebraicDataTypesinJavaScript'><a href="https://w3future.com/weblog/2008/06/16.xml#a300" class="weblogItemTitle">Algebraic Data Types in JavaScript</a></h>
   <p>Since the weblog system for this site broke down, and I have to manually update all pages, not much is happening here.
     I hope however that some people are still subscribed. If you are reading this then you are probably one of them.</p>
-  <p>The reason I am posting again is that I have written a bit of JavaScript 1.8 recently. 
-    <a href="http://ejohn.org/blog/javascript-18-progress/">John Resig was right</a>, 
+  <p>The reason I am posting again is that I have written a bit of JavaScript 1.8 recently.
+    <a href="http://ejohn.org/blog/javascript-18-progress/">John Resig was right</a>,
     the new expression closures syntax did tickle me. Functional code looks so much nicer!</p>
   <p>The code is a library to work with algebraic data types, which takes some explaining, so
-    <a href="http://w3future.com/weblog/stories/2008/06/16/adtinjs.xml">read more here</a>.</p>
+    <a href="https://w3future.com/weblog/stories/2008/06/16/adtinjs.xml">read more here</a>.</p>
   </section></section><section>
-  <h><a href="http://w3future.com/weblog/2006/02/28.xml">Tuesday, February 28, 2006</a></h>
+  <h><a href="https://w3future.com/weblog/2006/02/28.xml">Tuesday, February 28, 2006</a></h>
 <a name="a299"></a>
 <section id="a299">
-<h id='tailCallEliminationInJavascript'><a href="http://w3future.com/weblog/2006/02/28.xml#a299" class="weblogItemTitle">Tail call elimination in Javascript</a></h>
+<h id='tailCallEliminationInJavascript'><a href="https://w3future.com/weblog/2006/02/28.xml#a299" class="weblogItemTitle">Tail call elimination in Javascript</a></h>
 <p>Via <a href="http://lambda-the-ultimate.org/node/1331">LtU</a> I read about a <a href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/474088">tail call optimization decorator</a>. Of course I immediately wondered if it was possible in JavaScript, and it is:</p>
 <pre>Function.prototype.tailCallOptimized = function()
 {
@@ -41,7 +41,7 @@
     for (var caller = arguments.callee.caller; caller; caller = caller.caller)
       if (caller == arguments.callee)
         throw {tailCallArgs: arguments, tailCallThis: this};
-      
+
     var args = arguments;
     var me   = this;
     while (true)
@@ -54,7 +54,7 @@
       {
         if (!e.tailCallArgs)
           throw e;
-          
+
         args = e.tailCallArgs;
         me   = e.tailCallThis;
       }
@@ -77,17 +77,17 @@ alert((10001).isEven() ? "even" : "odd");</pre>
 <p>Note the &#8216;decorator style&#8217; in Javascript, simply a method call on the function.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/12/21.xml">Wednesday, December 21, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/12/21.xml">Wednesday, December 21, 2005</a></h>
 <a name="a298"></a>
 <section id="a298">
-<h id='technoratiClaim'><a href="http://w3future.com/weblog/2005/12/21.xml#a298" class="weblogItemTitle">Technorati claim</a></h>
+<h id='technoratiClaim'><a href="https://w3future.com/weblog/2005/12/21.xml#a298" class="weblogItemTitle">Technorati claim</a></h>
 <p><a href="http://technorati.com/claim/4bw2tss8ck">Technorati Profile</a></p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/10/20.xml">Thursday, October 20, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/10/20.xml">Thursday, October 20, 2005</a></h>
 <a name="a297"></a>
 <section id="a297">
-<h id='leakFreeJavascriptClosures'><a href="http://w3future.com/weblog/2005/10/20.xml#a297" class="weblogItemTitle">Leak Free Javascript Closures</a></h>
+<h id='leakFreeJavascriptClosures'><a href="https://w3future.com/weblog/2005/10/20.xml#a297" class="weblogItemTitle">Leak Free Javascript Closures</a></h>
 <p>If you're confused about how closures in JavaScript cause memory leaks in Internet Explorer, this is for you: <a href="http://laurens.vd.oever.nl/weblog/items2005/closures/">Leak Free Javascript Closures</a>. Then, without leakage, you can write code like this:</p>
 <pre>function attach()
 {
@@ -100,15 +100,15 @@ alert((10001).isEven() ? "even" : "odd");</pre>
 <p>Also if you want to do something like this: <code>setTimeout(obj.method, 1000)</code>, and you find out that inside the method <code>this</code> is not <code>obj</code>, you can now do this: <code>setTimeout(obj.method.closure(obj), 1000)</code> to fix it.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/08/14.xml">Sunday, August 14, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/08/14.xml">Sunday, August 14, 2005</a></h>
 <a name="a296"></a>
 <section id="a296">
-<h id='noMoreAccesskeys'><a href="http://w3future.com/weblog/2005/08/14.xml#a296" class="weblogItemTitle">No more accesskeys</a></h>
+<h id='noMoreAccesskeys'><a href="https://w3future.com/weblog/2005/08/14.xml#a296" class="weblogItemTitle">No more accesskeys</a></h>
 <p>I had accesskeys for the tabs at the top of this site, but <a href="http://novemberborn.net/">Mark Wubben</a> reminded me that this was very annoying, mainly because <kbd>alt-d</kbd> was one of them (the shortcut to focus the address bar). This makes me think that using accesskeys in webpages is not a very good idea, because you never know what the favorite shortcut keys of your visitor are.</p>
 </section><a name="a295"></a>
 <section id="a295">
-<h id='howToUseBaseUris'><a href="http://w3future.com/weblog/2005/08/14.xml#a295" class="weblogItemTitle">How to use base URIs.</a></h>
-<p>If you're wondering what a base URI is for, you'll always end up being directed to <a href="http://www.apps.ietf.org/rfc/rfc3986.html">RFC 3986</a>, but you won't find much. <a href="http://www.apps.ietf.org/rfc/rfc3986.html#sec-5.1">Section 5.1</a> just says: &#8220;The term "relative" implies that a "base URI" exists against which the relative reference is applied.&#8221;. But that there's more to it becomes apparent when <a href="http://w3future.com/weblog/2005/01/13.xml#stillBugsInTheImplementationOfHtmlHyperlinks">same-document references</a> come into play. One example is <a href="http://www.tbray.org/ongoing/">Tim Bray</a>'s <a href="http://tbray.org/ongoing/ongoing.atom">atom feed</a>. Here is part of it:</p>
+<h id='howToUseBaseUris'><a href="https://w3future.com/weblog/2005/08/14.xml#a295" class="weblogItemTitle">How to use base URIs.</a></h>
+<p>If you're wondering what a base URI is for, you'll always end up being directed to <a href="http://www.apps.ietf.org/rfc/rfc3986.html">RFC 3986</a>, but you won't find much. <a href="http://www.apps.ietf.org/rfc/rfc3986.html#sec-5.1">Section 5.1</a> just says: &#8220;The term "relative" implies that a "base URI" exists against which the relative reference is applied.&#8221;. But that there's more to it becomes apparent when <a href="https://w3future.com/weblog/2005/01/13.xml#stillBugsInTheImplementationOfHtmlHyperlinks">same-document references</a> come into play. One example is <a href="http://www.tbray.org/ongoing/">Tim Bray</a>'s <a href="http://tbray.org/ongoing/ongoing.atom">atom feed</a>. Here is part of it:</p>
 <blockquote><pre>&lt;feed xmlns='http://www.w3.org/2005/Atom'
       xml:base='http://www.tbray.org/ongoing/'
       xml:lang='en-us'>
@@ -128,29 +128,29 @@ artificial shorthand notation for external references.&#8221; Good to know!</p>
 <p>Finally I'd like to share a trick to set the base URI for escaped HTML in RSS and Atom: add a BASE element to the beginning of the HTML content. This will work for most aggregators that run in a browser, like <a href="http://www.bloglines.com/">Bloglines</a>, or use a browser component to display HTML, like most e-mail client based aggregators. Having multiple BASE elements in one HTML document, while not valid, works fine in most browsers. Aggregators can use this trick themselves as well.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/07/17.xml">Sunday, July 17, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/07/17.xml">Sunday, July 17, 2005</a></h>
 <a name="a294"></a>
 <section id="a294">
-<h id='atom10FeedAvailable'><a href="http://w3future.com/weblog/2005/07/17.xml#a294" class="weblogItemTitle">Atom 1.0 feed available</a></h>
-<p>I've updated my Radio Userland Atom code to produce version 1.0. <a href="http://w3future.com/weblog/rss.xml?notransform">You can find the feed here.</a> <a href="http://w3future.com/weblog/rss.xml">My RSS 0.91 feed</a> is created with <a href="http://w3future.com/tools/atom2rss091.xsl">a simple XSLT transformation</a> from the Atom feed.</p>
+<h id='atom10FeedAvailable'><a href="https://w3future.com/weblog/2005/07/17.xml#a294" class="weblogItemTitle">Atom 1.0 feed available</a></h>
+<p>I've updated my Radio Userland Atom code to produce version 1.0. <a href="https://w3future.com/weblog/rss.xml?notransform">You can find the feed here.</a> <a href="https://w3future.com/weblog/rss.xml">My RSS 0.91 feed</a> is created with <a href="https://w3future.com/tools/atom2rss091.xsl">a simple XSLT transformation</a> from the Atom feed.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/06/18.xml">Saturday, June 18, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/06/18.xml">Saturday, June 18, 2005</a></h>
 <a name="a293"></a>
 <section id="a293">
-<h id='iLiveInBelgium'><a href="http://w3future.com/weblog/2005/06/18.xml#a293" class="weblogItemTitle">I live in Belgium</a></h>
+<h id='iLiveInBelgium'><a href="https://w3future.com/weblog/2005/06/18.xml#a293" class="weblogItemTitle">I live in Belgium</a></h>
 <p>At least, <a href="http://maps.google.com/maps?ll=52,5&amp;z=13">that is what Google shows me</a>, and Google is always right.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2005/06/01.xml">Wednesday, June 01, 2005</a></h>
+  <h><a href="https://w3future.com/weblog/2005/06/01.xml">Wednesday, June 01, 2005</a></h>
 <a name="a292"></a>
 <section id="a292">
-<h id='beingFilmedBy3CamerasAtOnce'><a href="http://w3future.com/weblog/2005/06/01.xml#a292" class="weblogItemTitle">Being filmed by 3 cameras at once!</a></h>
+<h id='beingFilmedBy3CamerasAtOnce'><a href="https://w3future.com/weblog/2005/06/01.xml#a292" class="weblogItemTitle">Being filmed by 3 cameras at once!</a></h>
 <p>Sometimes it's really interesting to live in the centre of <a href="http://en.wikipedia.org/wiki/The_Hague">the administrative capital of the Netherlands</a>. Today we had a referendum for ratification of the <a href="http://en.wikipedia.org/wiki/Treaty_establishing_a_Constitution_for_Europe">Treaty establishing a Constitution for Europe</a>. I had to vote in the <a href="http://en.wikipedia.org/wiki/Image:400px-Den_Haag_stadhuis_april_2004.JPG">city hall</a>. As this is close to the parliament buildings a lot of camera crews had chosen the city hall to film some voters, including me. So I ended up on Dutch national television. <a href="http://www.flickr.com/photos/34702619@N00/16918912/in/set-403579/">Here are some screenshots of that.</a> There were more cameras than voters while I was there!</p>
 <p>By the way, I voted in favor of the treaty, but it got rejected by a large majority.</p>
 </section>
 </section></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
 <section id="sidebar"><xi:include href="http://www.bloglines.com/export?id=sjoerdvisscher" /></section>
 </body>
 </html>

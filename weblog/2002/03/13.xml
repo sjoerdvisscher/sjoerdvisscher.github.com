@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/03/13.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/03/13.xml">
 <head>
 <title>Wednesday, March 13, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,30 +12,30 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:21:18 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/03/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/03/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/03/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/03/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/03/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/03/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/03/12.xml#a83' title='Tuesday, March 12, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/03/13.xml">Wednesday, March 13, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/03/14.txt#a87' title='Thursday, March 14, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/03/12.xml#a83' title='Tuesday, March 12, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/03/13.xml">Wednesday, March 13, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/03/14.txt#a87' title='Thursday, March 14, 2002'>&#160;&gt;</a></h>
 <a name="a86"></a>
 <section id="a86">
-<h id='opmlOrXml'><a href="http://w3future.com/weblog/2002/03/13.xml#a86" class="weblogItemTitle">OPML or XML</a></h>
+<h id='opmlOrXml'><a href="https://w3future.com/weblog/2002/03/13.xml#a86" class="weblogItemTitle">OPML or XML</a></h>
 <p><a href="http://radio.weblogs.com/0100812/2002/03/13.html#a337">Patrick asks</a> what the difference is between XML and OPML. OPML has the advantage that it has defined semantics for a few attributes, while being able to represent all XML structures. The <code>text</code> attribute is especially useful, because it gives a reasonable textual representation of each node. And that gives nice options for user-interfaces.</p>
 <p>XML has the advantage of having all kind of tools and schema languages. And with XLink XML now also has linkink, just like OPML. Which made me think: OPML shouldn't have been an XML format, but a set of attributes, using an OPML namespace. First you have the elements in the head. They can all be attributes on the root node and are all optional. Then each element can have an <code>opml:text</code> attribute. Simply adding the OPML namespace definition and <code>opml:text</code> attributes can make any XML document editable by an outliner. Could that be of any use?</p>
 </section><a name="a85"></a>
 <section id="a85">
-<h id='mathmlInMozilla'><a href="http://w3future.com/weblog/2002/03/13.xml#a85" class="weblogItemTitle">MathML in Mozilla</a></h>
-<p>Mozilla 0.9.9 supports MathML. And <a href="http://w3future.com/weblog/stories/2002/03/12/mathml.xml">it looks great</a>, certainly with ClearType enabled in Windows XP. Note that any serious business with XHTML is not possible with the latest version of Internet Explorer. Even when IE6 doesn't choke on the DTD, it has no clue that it is expected to do something with the XHTML data.</p>
+<h id='mathmlInMozilla'><a href="https://w3future.com/weblog/2002/03/13.xml#a85" class="weblogItemTitle">MathML in Mozilla</a></h>
+<p>Mozilla 0.9.9 supports MathML. And <a href="https://w3future.com/weblog/stories/2002/03/12/mathml.xml">it looks great</a>, certainly with ClearType enabled in Windows XP. Note that any serious business with XHTML is not possible with the latest version of Internet Explorer. Even when IE6 doesn't choke on the DTD, it has no clue that it is expected to do something with the XHTML data.</p>
 </section><a name="a84"></a>
 <section id="a84">
-<h id='testing'><a href="http://w3future.com/weblog/2002/03/13.xml#a84" class="weblogItemTitle">Testing...</a></h>
+<h id='testing'><a href="https://w3future.com/weblog/2002/03/13.xml#a84" class="weblogItemTitle">Testing...</a></h>
 <p>This is a test for the autogenerate link option.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/03/13.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/03/13.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

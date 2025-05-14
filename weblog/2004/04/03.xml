@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/04/03.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2004/04/03.xml">
 <head>
 <title>Saturday, April 03, 2004 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:44 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2004/04/03.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2004/04/03.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/04/03.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2004/04/03.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2004/04/03.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2004/04/03.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2004/02/13.xml#a242' title='Friday, February 13, 2004'>&lt;&#160;</a><a href="http://w3future.com/weblog/2004/04/03.xml">Saturday, April 03, 2004</a><a rel='next' href='http://w3future.com/weblog/2004/04/13.txt#a244' title='Tuesday, April 13, 2004'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2004/02/13.xml#a242' title='Friday, February 13, 2004'>&lt;&#160;</a><a href="https://w3future.com/weblog/2004/04/03.xml">Saturday, April 03, 2004</a><a rel='next' href='https://w3future.com/weblog/2004/04/13.txt#a244' title='Tuesday, April 13, 2004'>&#160;&gt;</a></h>
 <a name="a272"></a>
 <section id="a272">
-<h id='areYouAProblemSolverOrAControlFreak'><a href="http://w3future.com/weblog/2004/04/03.xml#a272" class="weblogItemTitle">Are you a problem solver or a control freak?</a></h>
+<h id='areYouAProblemSolverOrAControlFreak'><a href="https://w3future.com/weblog/2004/04/03.xml#a272" class="weblogItemTitle">Are you a problem solver or a control freak?</a></h>
 <p><em>Part of <a href="http://lambda.weblogs.com/discuss/msgReader$11658">a discussion on measuring language quality and utility on LtU</a>.</em></p>
 <p>There are two types of programmers: those who like to solve problems, and those who just like to be in control.</p>
 <p>Problem solvers like bugs, it's a new problem to set your teeth into. Control freaks hate bugs, they just lost a bit of control.</p>
@@ -31,8 +31,8 @@
 <p>Hardware gives the problem solvers more and more the advantage, so ultimately the low level languages will mostly disappear. But this will take a while as long as the older control freak generation make the important decisions.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/04/03.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2004/04/03.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

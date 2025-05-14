@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/10/13.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/10/13.xml">
 <head>
 <title>Sunday, October 13, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:03 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/10/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/10/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/10/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/10/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/10/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/10/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/10/02.xml#a134' title='Wednesday, October 02, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/10/13.xml">Sunday, October 13, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/10/14.txt#a136' title='Monday, October 14, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/10/02.xml#a134' title='Wednesday, October 02, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/10/13.xml">Sunday, October 13, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/10/14.txt#a136' title='Monday, October 14, 2002'>&#160;&gt;</a></h>
 <a name="a135"></a>
 <section id="a135">
-<h id='whatIsItAllAbout'><a href="http://w3future.com/weblog/2002/10/13.xml#a135" class="weblogItemTitle">What is it all about</a></h>
+<h id='whatIsItAllAbout'><a href="https://w3future.com/weblog/2002/10/13.xml#a135" class="weblogItemTitle">What is it all about</a></h>
 <blockquote cite="http://www.intertwingly.net/blog/2002/Oct/12#x907"><p>As <a
 href="http://weblog.infoworld.com/udell/2002/09/25.html">Jon
 Udell</a> discovered, a solution already exists which is
@@ -33,8 +33,8 @@ should follow. [<a href="http://www.intertwingly.net/blog/2002/Oct/12#x907">Sam 
 <p>Only sometimes the <a href="http://web.resource.org/rss/1.0/"><acronym title="RDF Site Summary">RSS</acronym> 1.0</a> people seem to forget they're using <a href="http://www.w3.org/RDF/"><acronym title="Resource Description Framework">RDF</acronym></a>. Because putting the <acronym title="Uniform Resource Locator">URL</acronym> of the <a href="http://www.w3.org/RDF/"><acronym title="Resource Description Framework">RDF</acronym></a> file itself in the <code>about</code> attribute is of the channel is incorrect. The <code>about</code> attribute denotes what the statements are <em>about</em>. In this case it should be the same as the <code>link</code> element. F.e. the title in my <a href="http://backend.userland.com/rss"><acronym title="Really Simple Syndication">RSS</acronym> 2.0</a> file is &#8220;Sjoerd Visscher's weblog&#8221;, not &#8220;a feed for Sjoerd Visscher's weblog&#8221;. A feed describes a webpage, not itself.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/10/13.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/10/13.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

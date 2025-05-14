@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/02/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/02/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,52 +11,52 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:21:04 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/02/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/02/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/02/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/02/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/02/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/02/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/23.xml">Saturday, February 23, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/23.xml">Saturday, February 23, 2002</a></h>
 <a name="a74"></a>
 <section id="a74">
 <h ></h>
-<blockquote cite="http://radio.weblogs.com/0100812/2002/02/22.html#a262"><blockquote cite="http://w3future.com/weblog/2002/02/22.html#a73"><p>OK, <a href="http://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">the Javascript version of Y</a> needs apply too. <a href="http://radio.weblogs.com/0100812/2002/02/22.html#a261">Patrick explains</a>.</p></blockquote><p>I think it is fantastic that relatively new, yet widely popular, languages like Python, Ruby, and JavaScript have adopted such useful Lisp features as closures, apply, etc. (Now if only they'd adopt the syntax!) [<a href="http://radio.weblogs.com/0100812/2002/02/22.html#a262">Patrick Logan's Radio Weblog</a>]</p></blockquote>
+<blockquote cite="http://radio.weblogs.com/0100812/2002/02/22.html#a262"><blockquote cite="https://w3future.com/weblog/2002/02/22.html#a73"><p>OK, <a href="https://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">the Javascript version of Y</a> needs apply too. <a href="http://radio.weblogs.com/0100812/2002/02/22.html#a261">Patrick explains</a>.</p></blockquote><p>I think it is fantastic that relatively new, yet widely popular, languages like Python, Ruby, and JavaScript have adopted such useful Lisp features as closures, apply, etc. (Now if only they'd adopt the syntax!) [<a href="http://radio.weblogs.com/0100812/2002/02/22.html#a262">Patrick Logan's Radio Weblog</a>]</p></blockquote>
 <p>What I like about the Lisp syntax is how it shows the simple model of Lisp so clearly. But I think that syntactic shortcuts makes the code easier to read, although everyone seems to like different shortcuts. Everybody should have his own editor that let's you edit the code in your prefered syntax, but saves it in standard syntax. F.e. I prefer <code>f(a,b)</code> or <code>a.f(b)</code> over <code>f a b</code> and <code>{|x| ...}</code> over <code>(lambda (x) ...)</code>. So the Y combinator should look like this in my editor:</p>
 <pre>define(Y, {|gen| {|f| f(f)}({|f| gen({|x| f(f).apply(x)})})})</pre>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/22.xml">Friday, February 22, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/22.xml">Friday, February 22, 2002</a></h>
 <a name="a73"></a>
 <section id="a73">
 <h ></h>
-<p>OK, <a href="http://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">the Javascript version of Y</a> needs apply too. <a href="http://radio.weblogs.com/0100812/2002/02/22.html#a261">Patrick explains</a>.</p>
+<p>OK, <a href="https://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">the Javascript version of Y</a> needs apply too. <a href="http://radio.weblogs.com/0100812/2002/02/22.html#a261">Patrick explains</a>.</p>
 </section><a name="a72"></a>
 <section id="a72">
 <h ></h>
 <blockquote><p>Here's a <a href="http://www.dreamsongs.com/NewFiles/WhyOfY.pdf">famous</a> and <a href="http://radio.weblogs.com/0100812/stories/2002/02/22/favoriteLambdaTricks.html">amazing lambda trick</a>. [<a href="http://radio.weblogs.com/0100812/">Patrick Logan's Radio Weblog</a>]</p></blockquote>
-<p><a href="http://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">And the same famous trick in Javascript.</a> May I say I like the Javascript function more than the Lisp or Python version? Because there's no <code>apply</code> needed.</p>
+<p><a href="https://w3future.com/weblog/stories/2002/02/22/javascriptYCombinator.html">And the same famous trick in Javascript.</a> May I say I like the Javascript function more than the Lisp or Python version? Because there's no <code>apply</code> needed.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/21.xml">Thursday, February 21, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/21.xml">Thursday, February 21, 2002</a></h>
 <a name="a71"></a>
 <section id="a71">
 <h ></h>
-<p>I've been trying to recreate the layout of w3future.com without tables. I couldn't even get close. Just the main layout was a problem: a header at the top; a footer at the bottom; two blocks, one with a fixed width and the other taking up the rest of the width, both filling the space between header and footer. This while I think I know CSS fairly well and I have been paying attention to all CSS discussions lately. So I challenge anyone to recreate w3future.com without tables, <em>with the least caveats</em>. If you want to give it a try, don't just use any page from w3future.com, but use <a href="http://w3future.com/weblog/plainpage.html">this special simplified self-contained page</a>.</p>
+<p>I've been trying to recreate the layout of w3future.com without tables. I couldn't even get close. Just the main layout was a problem: a header at the top; a footer at the bottom; two blocks, one with a fixed width and the other taking up the rest of the width, both filling the space between header and footer. This while I think I know CSS fairly well and I have been paying attention to all CSS discussions lately. So I challenge anyone to recreate w3future.com without tables, <em>with the least caveats</em>. If you want to give it a try, don't just use any page from w3future.com, but use <a href="https://w3future.com/weblog/plainpage.html">this special simplified self-contained page</a>.</p>
 </section><a name="a70"></a>
 <section id="a70">
 <h ></h>
-<p><a href="http://w3future.com/weblog/cssedit.html?ff9900,000033,176,128,128,32,128,32,0,213,0,128,40,128,256">Orange Delight</a> is a palette that someone created with <a href="http://w3future.com/weblog/cssedit.html">the w3future.com color editor</a>. I had chosen it as my prefered pallete a while ago. Today I've decided I like it so much it should be the default w3future.com palette. To the person who created this palette: Thanks!</p>
+<p><a href="https://w3future.com/weblog/cssedit.html?ff9900,000033,176,128,128,32,128,32,0,213,0,128,40,128,256">Orange Delight</a> is a palette that someone created with <a href="https://w3future.com/weblog/cssedit.html">the w3future.com color editor</a>. I had chosen it as my prefered pallete a while ago. Today I've decided I like it so much it should be the default w3future.com palette. To the person who created this palette: Thanks!</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/16.xml">Saturday, February 16, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/16.xml">Saturday, February 16, 2002</a></h>
 <a name="a69"></a>
 <section id="a69">
 <h ></h>
-<p>I had a <a href="http://w3future.com/html/google.html">Google search page</a> that used the xml form of the Google results. It had stopped working a while ago, because Google does no longer permit accessing results in xml. But I had not yet changed the page. Today I received an e-mail from Ray Sidney of Google to "remove the indication" that it would still work. Pretty cool to receive e-mail from Google (no matter what the message is).</p>
+<p>I had a <a href="https://w3future.com/html/google.html">Google search page</a> that used the xml form of the Google results. It had stopped working a while ago, because Google does no longer permit accessing results in xml. But I had not yet changed the page. Today I received an e-mail from Ray Sidney of Google to "remove the indication" that it would still work. Pretty cool to receive e-mail from Google (no matter what the message is).</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/14.xml">Thursday, February 14, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/14.xml">Thursday, February 14, 2002</a></h>
 <a name="a68"></a>
 <section id="a68">
 <h ></h>
@@ -64,7 +64,7 @@
 <p>At first glance, this looks very promising.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/13.xml">Wednesday, February 13, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/13.xml">Wednesday, February 13, 2002</a></h>
 <a name="a67"></a>
 <section id="a67">
 <h ></h>
@@ -77,7 +77,7 @@ this page</a>. There are no big problems there. A good start would be to change 
 <p>So, can you use tables or not? It depends. I don't think it's wrong to use a table to put a sidebar next to the body. Certainly as long as it is complicated to do with CSS. But if you wrap each post inside a table, together with a number of spacer images, you should look at CSS.  The good news is: in the first case tables are the easiest way to it, and in the second case CSS is the easiest solution. So you not only have nice HTML, but you have it faster.</p><p>Maybe a nice rule of thumb is to think about what would happen if a voice-browser would read your page. A table-based site layout would then sound like this: "w3future.com. Below that on the left 'a sidebar' and on the right 'the body'." etc. This gives a clear translation of you site, and helps the person that hears your page to have some feel of the structure of your site. But using tables to layout a post wouldn't sound as nice: "'A spacer image' next to 'the title'. Below that 'a spacer image' next to 'the text of this post' next to 'a spacer image'." You just want to hear: "'the title'. 'the text of this post'".</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/12.xml">Tuesday, February 12, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/12.xml">Tuesday, February 12, 2002</a></h>
 <a name="a66"></a>
 <section id="a66">
 <h ></h>
@@ -85,7 +85,7 @@ this page</a>. There are no big problems there. A good start would be to change 
 I changed the homepage template a bit to make it validate. I'm still using tables for layout though. It's not that I think it's not possible, but this way I don't need any browser specific hacks. And also I don't think it's worth the trouble. Changing the buttons from table cells to divs don't suddenly make them more meaningful. If you want semantic data, use my rss file; I try to make the HTML in my posts as valid as possible.
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/07.xml">Thursday, February 07, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/07.xml">Thursday, February 07, 2002</a></h>
 <a name="a65"></a>
 <section id="a65">
 <h ></h>
@@ -93,10 +93,10 @@ I changed the homepage template a bit to make it validate. I'm still using table
 <P>The challenge with a "semantic web" is to build powerful *and* <A href="http://www.amazon.com/exec/obidos/ASIN/0201112973/qid=1012966644/sr=8-1/ref=sr_8_7_1/104-8677222-8179152">common levels of "understanding"</A>. In this case, "understanding" means "same set of definitions for the symbols being exchanged". Each system's symbols have to be grounded in the same definitions. (And any of the systems may be human or non-human.)</P>
 <P>Even more challenging is for a system to recognize a "communication breakdown" (i.e. the "<A href="http://cogprints.ecs.soton.ac.uk/~harnad/Papers/Harnad/harnad90.sgproblem.html">symbol grounding problem</A>") and then to repair the problem well enough to accomplish the goal.</P>
 <P>[<a href="http://radio.weblogs.com/0100812/">Patrick Logan's Radio Weblog</a>]</P></blockquote>
-<P>Interesting comments. However I don't think it's a really big challenge to have this common level of "understanding". That is because  the symbols (or the <A href="http://w3future.com/weblog/2002/01/30.html">"things"</A> I talked about) of the semantic web are URI's. This means that anyone can introduce symbols. What I think what will happen is that companies and individuals will introduce task specific symbols. Simply because it makes work much easier.</P><P>Then this company or individual, or maybe someone else, can provide a grounding (transformation) into a set of symbols that is in common use within the appropriate community. And a smart person within that community may provide a transformation to symbols from another community.</P><P>But just like spoken languages, there's not reason to have a basic level. Whenever there's a transformation from one symbol to another, or several others, someone will provide it. And when there is no transformation of symbol A into language B, there's no reason to use symbol A in language B. Spoken languages regularly borrow words from other languages too.</P><P>I see more challenge in building the global system that takes care of all those tranformations. The most logic systems I've seen assume total knowledge. There has to be infrastructure to acquire required knowledge. Anyone has some docs?</P>
+<P>Interesting comments. However I don't think it's a really big challenge to have this common level of "understanding". That is because  the symbols (or the <A href="https://w3future.com/weblog/2002/01/30.html">"things"</A> I talked about) of the semantic web are URI's. This means that anyone can introduce symbols. What I think what will happen is that companies and individuals will introduce task specific symbols. Simply because it makes work much easier.</P><P>Then this company or individual, or maybe someone else, can provide a grounding (transformation) into a set of symbols that is in common use within the appropriate community. And a smart person within that community may provide a transformation to symbols from another community.</P><P>But just like spoken languages, there's not reason to have a basic level. Whenever there's a transformation from one symbol to another, or several others, someone will provide it. And when there is no transformation of symbol A into language B, there's no reason to use symbol A in language B. Spoken languages regularly borrow words from other languages too.</P><P>I see more challenge in building the global system that takes care of all those tranformations. The most logic systems I've seen assume total knowledge. There has to be infrastructure to acquire required knowledge. Anyone has some docs?</P>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/06.xml">Wednesday, February 06, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/06.xml">Wednesday, February 06, 2002</a></h>
 <a name="a64"></a>
 <section id="a64">
 <h ></h>
@@ -105,14 +105,14 @@ I changed the homepage template a bit to make it validate. I'm still using table
 </section><a name="a63"></a>
 <section id="a63">
 <h ></h>
-If you go to the Events page of Radio and see <A href="http://w3future.com/pics/notified.gif">this</A> it worked!
+If you go to the Events page of Radio and see <A href="https://w3future.com/pics/notified.gif">this</A> it worked!
 </section><a name="a62"></a>
 <section id="a62">
 <h ></h>
 A quick post for the 20 people that subscribed to see the notification effect. I hope you notice anything. The next challange is to put this all in a tool so anyone can install it. The step after that is to build XML-RPC feeds in Radio. I mean, why notify when I can just call your Radio app and give you the new content.
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/05.xml">Tuesday, February 05, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/05.xml">Tuesday, February 05, 2002</a></h>
 <a name="a61"></a>
 <section id="a61">
 <h ></h>
@@ -143,15 +143,15 @@ I've received the first two rssPleaseNotify calls, so I suppose that works. But 
 I've changed my rss.xml so that it contains a cloud element, that points to my homecomputer. So if you've subscribed to my rss file with Radio 8, it should call the radio.rssPleaseNotify xml-rpc call I've implemented at home. It's hard to test, so let's just wait and see what happens.
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/02/04.xml">Monday, February 04, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/02/04.xml">Monday, February 04, 2002</a></h>
 <a name="a54"></a>
 <section id="a54">
 <h ></h>
-On the radio-dev list, <a href="http://groups.yahoo.com/group/radio-dev/message/4772">Dave announced</a> DIY Web Services with Radio 8. Of course I had to try this. After a bit of thinking I came up with a useful web service for w3future.com. <a href="http://w3future.com/weblog/cssedit.html">The color editor</a> now has a palette database. When you press "Submit palette" the page fires an XML-RPC call to Radio on my home computer. The call adds the palette to a table in Radio, and touches the color editor file, which is then automatically uploaded showing the new palette. I could also have done it with a http POST, so it's not a cool web service demo. But the fact that all this was actually <em>very easy</em> to build shows that Userland is definitely on the right track.
+On the radio-dev list, <a href="http://groups.yahoo.com/group/radio-dev/message/4772">Dave announced</a> DIY Web Services with Radio 8. Of course I had to try this. After a bit of thinking I came up with a useful web service for w3future.com. <a href="https://w3future.com/weblog/cssedit.html">The color editor</a> now has a palette database. When you press "Submit palette" the page fires an XML-RPC call to Radio on my home computer. The call adds the palette to a table in Radio, and touches the color editor file, which is then automatically uploaded showing the new palette. I could also have done it with a http POST, so it's not a cool web service demo. But the fact that all this was actually <em>very easy</em> to build shows that Userland is definitely on the right track.
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/02/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/02/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

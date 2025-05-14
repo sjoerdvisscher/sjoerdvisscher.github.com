@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/01/26.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/01/26.xml">
 <head>
 <title>Sunday, January 26, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,21 +12,21 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:25:17 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/01/26.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/01/26.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/01/26.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/01/26.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/01/26.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/01/26.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/01/25.xml#a156' title='Saturday, January 25, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/01/26.xml">Sunday, January 26, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/01/28.txt#a158' title='Tuesday, January 28, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/01/25.xml#a156' title='Saturday, January 25, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/01/26.xml">Sunday, January 26, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/01/28.txt#a158' title='Tuesday, January 28, 2003'>&#160;&gt;</a></h>
 <a name="a157"></a>
 <section id="a157">
-<h id='xhtml2OnTheMac'><a href="http://w3future.com/weblog/2003/01/26.xml#a157" class="weblogItemTitle">XHTML 2 on the Mac</a></h>
+<h id='xhtml2OnTheMac'><a href="https://w3future.com/weblog/2003/01/26.xml#a157" class="weblogItemTitle">XHTML 2 on the Mac</a></h>
 <p>The first Mac fan to mail was Mark Pilgrim. The result for the Mac browsers: zero out of four. There were two different problems. OmniWeb and MSIE 5 give 100% width to absolute positioned elements. This was quickly fixed with some CSS. The problem with Chimera and Safari was that they have "Gecko" in the User Agent string. But they both don't support XSLT. So I had to make exceptions for them. And Mark confirmed that this weblog now looks acceptable in all 4 Mac browsers. Yay!</p><p>In the mean time XHTML 2 hasn't let me down. If it turns out that the client side transformations don't work, I'll stick to XHTML2, and just transform it on the server for all browsers. I've started on implementing XML Events. It's already working in IE. I like the syntax. An <code>onclick</code> attribute in HTML becomes a <code>script</code> child element in XML Events, with an <code>ev:event="click"</code> attribute.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/01/26.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/01/26.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

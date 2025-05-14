@@ -4,7 +4,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/TransformAlt"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:xr="http://w3future.com/xr/ns/"
+	xmlns:xr="https://w3future.com/xr/ns/"
 	version="1.0">
 
 <xs:namespace-alias stylesheet-prefix="xsl" result-prefix="xs"/>
@@ -16,7 +16,7 @@
 
     <xsl:param name="documentURI" />
     <xsl:output indent="yes" />
-    
+
     <xs:copy-of select="xs:*" />
 
     <xsl:template match="/">
@@ -31,7 +31,7 @@
         <xs:apply-templates select="*" mode="resourceRef" />
       </xsl:template>
     </xs:for-each>
-    
+
     <xsl:template match="*[not(*)]" mode="object">
       <xsl:copy-of select="@xml:lang" />
       <xsl:value-of select="." />

@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/html/stories/callbacks.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/html/stories/callbacks.txt">
 <head>
 <title>Event Handlers and Callback Functions - article</title>
 </head>
@@ -11,33 +11,33 @@
 		<h>Required knowledge</h><p>You'll have to know how to program object oriented with Javascript. Read the articles at Webreference (links at the left of the article) to catch up on that.</p><h>Last Update</h>
 		<p>10/16/2005; 1:23:17 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/html/stories/callbacks.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/html/stories/callbacks.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/html/stories/callbacks.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/html/stories/callbacks.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/html/stories/callbacks.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/html/stories/callbacks.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
 <h>Introduction</h>
-<p>In <a href="http://w3future.com/html/stories/hop.xml">
+<p>In <a href="https://w3future.com/html/stories/hop.xml">
 Higher Order Programming in Javascript</a> I discussed the various ways of using functions
 as values. One particular trick in that document caught the attention of <a href="http://ericomguy.blogspot.com/">Dan Shappir</a>,
-who pointed out to me: "your technique shows how JavaScript supported delegates all 
-along, so this is not some great C#/.NET invention." While searching for some more 
+who pointed out to me: "your technique shows how JavaScript supported delegates all
+along, so this is not some great C#/.NET invention." While searching for some more
 information about these delegates, I found out that Microsoft has added them to
 Visual J++ too, invoking an <a href="http://java.sun.com/docs/white/delegates.html">
 interesting response</a> from Sun, where it's discussed how delegates can much better be
-implemented with Inner Classes. As this is aparently a hot issue in other languages, and 
+implemented with Inner Classes. As this is aparently a hot issue in other languages, and
 because event handlers and callbacks are useful in webpages too, I decided to write
 a new article to discuss this.</p>
 </section>
- 
+
 <section>
 <h>The Trick</h>
 <p>The problem is as follows: Methods use <code>this</code> to refer to the object it is
-a method of. But, when using a method as event handler or callback function, 
+a method of. But, when using a method as event handler or callback function,
 <code>this</code> does no longer point to that object. The trick is to use the closure like
 behaviour of functions, so that the method will always have access to it's object.</p>
-<p>Let's look at an example: We want to use a method of an Alerter class as an event 
+<p>Let's look at an example: We want to use a method of an Alerter class as an event
 handler.</p>
 <blockcode>function Alerter(text) {
   this.text=text;
@@ -46,16 +46,16 @@ handler.</p>
     alert(<b>me</b>.text);
   }
 }
- 
+
 var sayHi=new Alerter('Hello, world!');
 div.attachEvent('onclick', sayHi.invoke);</blockcode>
 <p>So, instead of using <code>this</code>, we use a variable <code>me</code>, that
 equals <code>this</code> when the <code>invoke</code> method is created. And, in contrast
-to <code>this</code>, <code>me</code> will keep refering to the correct 
+to <code>this</code>, <code>me</code> will keep refering to the correct
 <code>Alerter</code> object, even when it's passed as a function to the attachEvent
 method of an HTML element.</p>
 </section>
- 
+
 <section>
 <h>Higher Order Programming again</h>
 <section>
@@ -65,7 +65,7 @@ The above defined <code>sayHi</code> function can be used as a callback function
 <code>setTimeout(sayHi.invoke,2000)</code> will show an alert box after 2 seconds.
 But what if we want to be extra cool and show 2 alert boxes after those 2 seconds?
 Then we'd have to create a new function that calls both Alerter objects:</p>
-<pre>var sayHi=new Alerter('Hello, world!');  
+<pre>var sayHi=new Alerter('Hello, world!');
 var sayBye=new Alerter('Bye, world!');
 setTimeout(function() {sayHi.invoke();sayBye.invoke();},2000);</pre>
 <p>A nice feature of Microsoft's delegates is that you can create a single composite
@@ -90,13 +90,13 @@ allows several other objects to register callbacks.</p>
     this.callback=(this.callback).andThen(callbackFunction);
   }
 }
- 
+
 var manager=new Manager();
 manager.registerCallback(sayHi.invoke);
 manager.registerCallback(sayBye.invoke);
 manager.callback();</blockcode>
 </section></section>
- 
+
 <section>
 <h>Conclusion</h>
 <p>With a simple technique event handlers and callback functions become a lot more
@@ -105,8 +105,8 @@ interesting in Javascript. As Dan Shappir pointed this out to me, just this morn
 I hope you can't too, and if you've got something to show, don't hesitate to
 <a href="mailto:sjoerd@w3future.com">contact me</a>.
 </p>
-</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/html/stories/callbacks.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/stories.opml" /></section>
+</section><xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/html/stories/callbacks.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/stories.opml" /></section>
 </body>
 </html>

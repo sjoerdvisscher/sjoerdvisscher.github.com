@@ -1,7 +1,7 @@
 /*****
 * 3D SVG Library
 * Sjoerd Visscher
-* http://w3future.com/
+* https://w3future.com/
 */
 
 
@@ -31,12 +31,12 @@ Point.prototype =
     this.x = r * (Math.cos(a)*this.x0 + Math.sin(a)*z);
     this.z = r * (Math.cos(a)*z - Math.sin(a)*this.x0);
   },
-  
+
   to: function(p)
   {
     return new Vector(p.x - this.x, p.y - this.y, p.z - this.z);
   },
-  
+
   add: function(dir, f)
   {
     if (f === undefined) f = 1;
@@ -47,13 +47,13 @@ Point.prototype =
   {
     return new VisiblePoint(this.x, this.y, this.z);
   },
-  
+
   to2d: function()
   {
     this.x2d = this.x*2/(this.z+7);
     this.y2d = -0.4+(0.4-this.y)*2/(this.z+7);
   },
-  
+
   setF: function() {}
 };
 
@@ -87,7 +87,7 @@ Vector.prototype = new Point();
 Vector.prototype.times = function(f)
 {
   return new Vector(f*this.x, f*this.y, f*this.z);
-};  
+};
 
 Vector.prototype.normalize = function()
 {
@@ -109,7 +109,7 @@ function Poly(points)
   this.points = points;
 };
 
-Poly.prototype = 
+Poly.prototype =
 {
   calculateNormal: function()
   {
@@ -140,11 +140,11 @@ VisiblePoly.prototype.to2d = function()
 	a.push(this.points[i].y2d);
   }
   this.elt.setAttribute("points", a.join(" "));
-      
+
   var fill;
   if (this.normal.z>0)
     fill = "none";
-  else 
+  else
   {
     var diff = this.normal.y+0.8;
     if (diff<0) diff=0;

@@ -6,7 +6,7 @@
 <link href="http://www.blogger.com/atom/3171313" rel="service.feed" title="w3future.com" type="application/x.atom+xml"/>
 <title mode="escaped" type="text/html">w3future.com</title>
 <tagline mode="escaped" type="text/html">this is a Blogger test site with an XHTML 2.0 template</tagline>
-<link href="http://w3future.com/" rel="alternate" title="w3future.com" type="text/html"/>
+<link href="https://w3future.com/" rel="alternate" title="w3future.com" type="text/html"/>
 <id>tag:blogger.com,1999:blog-3171313</id>
 <modified>2004-04-25T16:40:56Z</modified>
 <generator url="http://www.blogger.com/" version="5.15">Blogger</generator>
@@ -24,7 +24,7 @@
 <link href="#108291125598679616" rel="alternate" title="Testing..." type="text/html"/>
 <id>tag:blogger.com,1999:blog-3171313.post-108291125598679616</id>
 <title mode="escaped" type="text/html">Testing...</title>
-<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<summary type="application/xhtml+xml" xml:base="https://w3future.com/" xml:lang="en-US" xml:space="preserve">
 <div xmlns="http://www.w3.org/1999/xhtml">Testing...</div>
 </summary>
 </entry>
@@ -40,7 +40,7 @@
 <id>tag:blogger.com,1999:blog-3171313.post-83312835</id>
 <title mode="escaped" type="text/html">Another test post.&#13;
 A couple of New Jersey hunters...</title>
-<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<summary type="application/xhtml+xml" xml:base="https://w3future.com/" xml:lang="en-US" xml:space="preserve">
 <div xmlns="http://www.w3.org/1999/xhtml">Another test post.
 A couple of New Jersey hunters are out in the woods when one of them falls to the ground. He doesn't seem to be breathing, his eyes are rolled back in his head. The other guy whips out his cell phone and calls the emergency services. He gasps to the operator: "My friend is dead! What can I do?" The operator, in a calm soothing voice says: "Just take it easy. I can help. First,</div>
 </summary>
@@ -57,7 +57,7 @@ A couple of New Jersey hunters are out in the woods when one of them falls to th
 <id>tag:blogger.com,1999:blog-3171313.post-83309075</id>
 <title mode="escaped" type="text/html">XHTML 2.0 template&#13;
 I have created an XHTML 2.0 te...</title>
-<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<summary type="application/xhtml+xml" xml:base="https://w3future.com/" xml:lang="en-US" xml:space="preserve">
 <div xmlns="http://www.w3.org/1999/xhtml">XHTML 2.0 template
 I have created an XHTML 2.0 template for Blogger. It works quite nicely. There's only one empty section at the top.</div>
 </summary>
@@ -74,7 +74,7 @@ I have created an XHTML 2.0 template for Blogger. It works quite nicely. There's
 <id>tag:blogger.com,1999:blog-3171313.post-7542245</id>
 <title mode="escaped" type="text/html">Watch out!&#13;
 A test</title>
-<summary type="application/xhtml+xml" xml:base="http://w3future.com/" xml:lang="en-US" xml:space="preserve">
+<summary type="application/xhtml+xml" xml:base="https://w3future.com/" xml:lang="en-US" xml:space="preserve">
 <div xmlns="http://www.w3.org/1999/xhtml">Watch out!
 A test</div>
 </summary>

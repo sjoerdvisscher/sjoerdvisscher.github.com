@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/02/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2004/02/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,16 +11,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:42 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2004/02/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2004/02/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/02/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2004/02/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2004/02/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2004/02/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2004/02/13.xml">Friday, February 13, 2004</a></h>
+  <h><a href="https://w3future.com/weblog/2004/02/13.xml">Friday, February 13, 2004</a></h>
 <a name="a271"></a>
 <section id="a271">
-<h id='liberalXmlParsingRelatedToPersonality'><a href="http://w3future.com/weblog/2004/02/13.xml#a271" class="weblogItemTitle">Liberal XML parsing related to personality?</a></h>
+<h id='liberalXmlParsingRelatedToPersonality'><a href="https://w3future.com/weblog/2004/02/13.xml#a271" class="weblogItemTitle">Liberal XML parsing related to personality?</a></h>
 <p>The heat of the discussion on liberal XML parsing has subsided, so this is actually a little late. That's because I wasn't sure if I should post this. But <a href="http://archive.scripting.com/2004/02/12#When:10:44:01AM">a post by Dave Winer today</a> convinced me to post it anyway. Let me just say up front that I could be completely wrong.</p>
 <p>First let me quote <a href="http://www.w3.org/TR/2004/REC-xml-20040204/#dt-fatal">the definition of a fatal error in the XML recommendation</a>:</p>
 <blockquote cite="http://www.w3.org/TR/2004/REC-xml-20040204/#dt-fatal"><p>An error which a conforming XML processor MUST detect and report to the application. After encountering a fatal error, the processor MAY continue processing the data to search for further errors and MAY report such errors to the application. In order to support correction of errors, the processor MAY make unprocessed data from the document (with intermingled character data and markup) available to the application. Once a fatal error is detected, however, the processor MUST NOT continue normal processing (i.e., it MUST NOT continue to pass character data and information about the document's logical structure to the application in the normal way).</p></blockquote>
@@ -30,11 +30,11 @@
 <p>But this could just be a coincidence.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2004/02/10.xml">Tuesday, February 10, 2004</a></h>
+  <h><a href="https://w3future.com/weblog/2004/02/10.xml">Tuesday, February 10, 2004</a></h>
 <a name="a270"></a>
 <section id="a270">
-<h id='providingContextInProgrammingpart2'><a href="http://w3future.com/weblog/2004/02/10.xml#a270" class="weblogItemTitle">Providing context in programming (part 2)</a></h>
-<p>(Read <a href="http://w3future.com/weblog/2003/12/15.xml#providingContextInProgrammingpart1">part 1</a> first.)</p>
+<h id='providingContextInProgrammingpart2'><a href="https://w3future.com/weblog/2004/02/10.xml#a270" class="weblogItemTitle">Providing context in programming (part 2)</a></h>
+<p>(Read <a href="https://w3future.com/weblog/2003/12/15.xml#providingContextInProgrammingpart1">part 1</a> first.)</p>
 <p>When reading code, a lot of people like to <a href="http://lambda.weblogs.com/discuss/msgReader$10353">print out the code</a> and read it on paper. One of the reasons for that is that it is easier to switch from function call to the function specification and back. However functions are supposed to provide abstraction. You should be able to understand the function call without the function specification. Why is this often not possible? Because the function call doesn't provide enough context for the arguments.</p>
 <p>Take for example this function from the DOM: <code>parent.insertBefore(nodeA, nodeB)</code>. Is nodeA inserted before nodeB, or is nodeB inserted before nodeA? I keep forgetting that. And the more arguments, the more ridiculous it gets: <code>mouseEvent.initMouseEvent("DOMMouseScroll", true, true, view, numLines, refPoint.x, refPoint.y, point.x, point.y, isControl, isAlt, isShift, isMeta, 0, null)</code> (Simplified from <a href="http://lxr.mozilla.org/seamonkey/source/content/events/src/nsEventStateManager.cpp#1565">the Mozilla source code</a>). It's impossible to tell what each argument does.</p>
 <p>I think almost any programmer can relate to this problem. But functions with multiple arguments seem to be so fundamental in programming that solutions to this problem never actually involve abandoning their use. These solutions are f.e. IntelliSense and using properly named constants. They reintroduce the missing context.</p>
@@ -44,16 +44,16 @@
 <p>More later&#8230;</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2004/02/05.xml">Thursday, February 05, 2004</a></h>
+  <h><a href="https://w3future.com/weblog/2004/02/05.xml">Thursday, February 05, 2004</a></h>
 <a name="a269"></a>
 <section id="a269">
-<h id='whenASearchEngineIsntEnoughCallALibrarian'><a href="http://w3future.com/weblog/2004/02/05.xml#a269" class="weblogItemTitle">When a Search Engine Isn't Enough, Call a Librarian?</a></h>
+<h id='whenASearchEngineIsntEnoughCallALibrarian'><a href="https://w3future.com/weblog/2004/02/05.xml#a269" class="weblogItemTitle">When a Search Engine Isn't Enough, Call a Librarian?</a></h>
 <blockquote cite="http://www.nytimes.com/2004/02/05/technology/circuits/05libr.html?ex=1391403600&amp;en=26c6c8a9c0c4212f&amp;ei=5007&amp;partner=USERLAND"><p>"What's the name of the party that Ross Perot established?" a user wanted to know.</p><p>Ms. Tuckerman checked the Internet for a biography of Mr. Perot. Then she quickly switched to an electronic database of biographies to which the library subscribes. But even after scrolling through several screens of text, she was unable to come up with a satisfactory answer.</p><p>So she turned to a rotating bookshelf next to her desk and selected a volume of the World Book Encyclopedia. "Sometimes the old-fashioned sources work the best," she said. Within a few minutes she found the answer in the encyclopedia: the Reform Party. [<a href="http://www.nytimes.com/2004/02/05/technology/circuits/05libr.html?ex=1391403600&amp;en=26c6c8a9c0c4212f&amp;ei=5007&amp;partner=USERLAND">NYTimes</a> via <a href="http://archive.scripting.com/2004/02/05#When:6:01:27AM">Scripting News</a>]</p></blockquote>
 <p>Type in Google: <a href="http://www.google.com/search?q=ross+perot+party">ross perot party</a>. Answer within a few seconds. Old-fashioned sources only work the best when you use old-fashioned search queries.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/02/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2004/02/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/12/20.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/12/20.xml">
 <head>
 <title>Saturday, December 20, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,26 +12,26 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:24 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/12/20.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/12/20.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/12/20.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/12/20.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/12/20.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/12/20.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/12/17.xml#a238' title='Wednesday, December 17, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/12/20.xml">Saturday, December 20, 2003</a><a rel='next' href='http://w3future.com/weblog/2004/02/05.txt#a240' title='Thursday, February 05, 2004'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/12/17.xml#a238' title='Wednesday, December 17, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/12/20.xml">Saturday, December 20, 2003</a><a rel='next' href='https://w3future.com/weblog/2004/02/05.txt#a240' title='Thursday, February 05, 2004'>&#160;&gt;</a></h>
 <a name="a268"></a>
 <section id="a268">
-<h id='xqueryxToXsltConversion'><a href="http://w3future.com/weblog/2003/12/20.xml#a268" class="weblogItemTitle">XQueryX to XSLT conversion</a></h>
+<h id='xqueryxToXsltConversion'><a href="https://w3future.com/weblog/2003/12/20.xml#a268" class="weblogItemTitle">XQueryX to XSLT conversion</a></h>
 <blockquote cite="http://www.w3.org/News/2003#item212"><p>The XML Query Working Group has released an updated Working Draft of XML Syntax for XQuery 1.0 (XQueryX). Designed to be read with the XQuery language and its formal semantics, the document proposes that XQueryX will be an optional conformance level. The Working Group invites comments.[<a href="http://www.w3.org/News/2003#item212">World Wide Web Consortium</a>]</p></blockquote>
 <p>I missed the previous draft, which is 2.5 years old. My first impression: weird. Being used to XSLT, I had not expected that the XPath expression would also be converted to XML. But the XQuery designers see XQuery as an extension to XPath, so it makes sense that way. It also makes XQueryX more interesting.</p><p>The XML is full of constructs like this:</p>
 <pre>&lt;xqx:expr xsi:type="xqx:flworExpr"&gt;</pre>
 <p>I find this very ugly. This is probably done because <code>xqx:expr</code> is allowed at a lot of places, and there are numerous subtypes of <code>xqx:expr</code>. But adding the following line to the schema would make it possible to simply write <code>&lt;xqx:flworExpr&gt;</code></p>
 <pre>&lt;xsd:element name="flworExpr" type="flworExpr" substitutionGroup="expr" /></pre>
-<p>Just to play with it (it's so much easier to play with a language when the parser is ubiquitously available), I created an <a href="http://w3future.com/2003/xqx2xslt/xqx2xslt.xsl">XSLT stylesheet that tries to transform XQueryX to XSLT</a>. It created XSLT 1.0 stylesheets, but if XPath 2.0 functions are used (like <code>distinct()</code>) the version has to be changed to 2.0 to get a valid XSLT document. Here are the converted examples: <a href="http://w3future.com/2003/xqx2xslt/example1.xml">example 1</a>, <a href="http://w3future.com/2003/xqx2xslt/example2.xml">example 2</a>, <a href="http://w3future.com/2003/xqx2xslt/example3.xml">example 3</a>.</p>
+<p>Just to play with it (it's so much easier to play with a language when the parser is ubiquitously available), I created an <a href="https://w3future.com/2003/xqx2xslt/xqx2xslt.xsl">XSLT stylesheet that tries to transform XQueryX to XSLT</a>. It created XSLT 1.0 stylesheets, but if XPath 2.0 functions are used (like <code>distinct()</code>) the version has to be changed to 2.0 to get a valid XSLT document. Here are the converted examples: <a href="https://w3future.com/2003/xqx2xslt/example1.xml">example 1</a>, <a href="https://w3future.com/2003/xqx2xslt/example2.xml">example 2</a>, <a href="https://w3future.com/2003/xqx2xslt/example3.xml">example 3</a>.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/12/20.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/12/20.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

@@ -11,7 +11,7 @@ header("Content-type: text/xml");
 echo '<?xml version="1.0" encoding="UTF-8" ?>';
 
 $nslist = array(
-  "http://w3future.com/rdf#" => "w3f",
+  "https://w3future.com/rdf#" => "w3f",
   "http://purl.org/dc/elements/1.1/" => "dc",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#" => "rdf"
 );
@@ -22,23 +22,23 @@ function getName($p)
 {
   global $nslist;
   global $names;
-  
+
   if (isset($names[$p])) return $names[$p];
-  
+
   reset($nslist);
   $name = $p;
   while (list ($ns, $prefix) = each ($nslist))
     $name = str_replace($ns, $prefix.":", $name);
-  
+
   return $names[$p] = $name;
 }
 
 function makeDescription($about)
 {
   global $level;
-  
+
   echo "\n\n  <rdf:Description rdf:about='" . htmlspecialchars($about) . "'>";
-  
+
   $desc = getRows("p,o", "s='".addslashes($about)."'", 's,p,o DESC');
   while (list ($key, $row) = each ($desc))
   {
@@ -63,7 +63,7 @@ function makeDescription($about)
       echo "\n    <$p>".$s."</$p>";
     }
   }
-    
+
   echo "\n  </rdf:Description>\n";
 }
 

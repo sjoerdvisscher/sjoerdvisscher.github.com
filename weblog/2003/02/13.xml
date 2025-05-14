@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/02/13.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/02/13.xml">
 <head>
 <title>Thursday, February 13, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,28 +12,28 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:25:47 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/02/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/02/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/02/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/02/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/02/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/02/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/02/08.xml#a163' title='Saturday, February 08, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/02/13.xml">Thursday, February 13, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/02/16.txt#a166' title='Sunday, February 16, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/02/08.xml#a163' title='Saturday, February 08, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/02/13.xml">Thursday, February 13, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/02/16.txt#a166' title='Sunday, February 16, 2003'>&#160;&gt;</a></h>
 <a name="a165"></a>
 <section id="a165">
-<h id='itsTheFirstTimeIHearThis'><a href="http://w3future.com/weblog/2003/02/13.xml#a165" class="weblogItemTitle">It's the first time I hear this.</a></h>
+<h id='itsTheFirstTimeIHearThis'><a href="https://w3future.com/weblog/2003/02/13.xml#a165" class="weblogItemTitle">It's the first time I hear this.</a></h>
 <blockquote><p>
 In HTML, &lt;script> blocks have a CDATA context, and therefore &lt;!-- and --&gt; characters do not indicate comments. CDATA blocks are terminated at the first instance of the two character sequence "&lt;/".</p></blockquote>
 <p>This is the very informative reply I received from <a href="http://ln.hixie.ch">Ian Hickson</a>. Making sure no &lt;/ occurred did make <a href="http://validator.w3.org/check?uri=http%3A//w3future.com/weblog/">the validator</a> happy. But then <a href="http://www.w3.org/TR/html401/interact/scripts.html#idx-user_agent">this passage in the HTML spec</a> makes no sense to me at all. It's a dirty mess this HTML, hurrah for XML!</p>
 <p>Later: I just figured it out. Older browsers don't know the script tag, so they also don't know it has CDATA content and they do see the comment as a real comment.</p>
 </section><a name="a164"></a>
 <section id="a164">
-<h id='tagsInCommentsNotValid'><a href="http://w3future.com/weblog/2003/02/13.xml#a164" class="weblogItemTitle">Tags in comments not valid?</a></h>
-<p><a href="http://ln.hixie.ch">Ian Hickson</a> pointed out to me that <a href="http://w3future.com/tools/x.pl?weblog/index">the HTML result of the XSL transformations</a> isn't valid. I fixed most of the reported bugs, but <a href="http://validator.w3.org/check?uri=http%3A//w3future.com/weblog/">the W3C validator still thinks it's not valid</a>. Somehow it tries to parse the javascript code, which I put inside a comment. This seems like a bug in the W3C validator to me, or am I missing something?</p>
+<h id='tagsInCommentsNotValid'><a href="https://w3future.com/weblog/2003/02/13.xml#a164" class="weblogItemTitle">Tags in comments not valid?</a></h>
+<p><a href="http://ln.hixie.ch">Ian Hickson</a> pointed out to me that <a href="https://w3future.com/tools/x.pl?weblog/index">the HTML result of the XSL transformations</a> isn't valid. I fixed most of the reported bugs, but <a href="http://validator.w3.org/check?uri=http%3A//w3future.com/weblog/">the W3C validator still thinks it's not valid</a>. Somehow it tries to parse the javascript code, which I put inside a comment. This seems like a bug in the W3C validator to me, or am I missing something?</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/02/13.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/02/13.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

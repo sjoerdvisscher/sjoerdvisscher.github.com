@@ -8,7 +8,7 @@
 
 		.em {
 			color:#708020;
-		}			
+		}
 		#ResultDiv {
 			margin-left: 1em;
 		}
@@ -35,7 +35,7 @@
 		var GL_terms='';
 		var GL_words=[];
 		var GL_current=-1;
-	
+
 		function start_check(terms) {
  			GL_terms=terms.replace(/(\n|\r)+/g,' ').replace(/&/g,'&amp;').replace(/</g,'&lt;');
 			var s=new w3f_XMLRPCService('http://www.stuffeddog.com/speller/speller-rpc.cgi');
@@ -54,7 +54,7 @@
 			document.getElementById('correct').style.display='block';
 			document.getElementById('edit').style.display='none';
 		}
-		
+
 		function render(r) {
 			var t=GL_terms;var s='';
 			var l0=0;
@@ -74,18 +74,18 @@
 			var div=document.getElementById('result');
 			div.innerHTML=s;
 		}
-		
+
 		function fixText(s) {
 			return s
 		}
-		
+
 		function err(e,s) {
 		  for (var i in e) {
 		    s+='\n'+i+': '+e[i];
 		  }
 		  alert(s);
 		}
-		
+
 		function show(o) {
 			if (''+o===o||1*o===o) return o;
 			if (o.shown) return '<i>Loop</i>';
@@ -99,7 +99,7 @@
 			delete o.shown;
 			return s;
 		}
-		
+
 		function choose(nr) {
 			if (GL_current>-1) document.getElementById('word'+GL_current).className='badword';
 			var w=document.getElementById('word'+nr);
@@ -108,7 +108,7 @@
 			document.getElementById('sugs').innerHTML=GL_words[nr];
 			GL_current=nr;
 		}
-		
+
 		function selectbox(opts) {
 			for (var p=0;p<opts.length;p++) {
 				if (opts[p].selected) {
@@ -122,7 +122,7 @@
 			if (!fromInput) document.getElementById('word').value=newtext;
 			document.getElementById('word'+GL_current).innerHTML=newtext;
 		}
-		
+
 		function go_edit() {
 			var s=document.getElementById('result').innerHTML;
 			if (s=='Working...') return;
@@ -200,9 +200,9 @@ document.write('<TR><TD>'+createButton({style:'button2',content:'XML-RPC Homepag
 </DIV>
 
 <H2>Details</H2>
-<P><A href="http://www.stuffeddog.com/index.html">David Adams</A> has created Speller, 
+<P><A href="http://www.stuffeddog.com/index.html">David Adams</A> has created Speller,
 "a lightweight spell-checking application tailored for the web.". It's latest version also has a
-<A href="http://www.stuffeddog.com/speller/doc/rpc.html">RPC interface</A> which uses 
+<A href="http://www.stuffeddog.com/speller/doc/rpc.html">RPC interface</A> which uses
 XML-RPC over HTTP as the RPC mechanism. For me it was the perfect application to test my new
 XML-RPC client for IE5 and Mozilla. The XML-RPC client sends the input text to the spell-check
 service, which returns the misspelled words and the alternatives. Then an interface is dynamically
@@ -222,7 +222,7 @@ the spelling in the box above the suggestions.</P>
 </TD></TR></TABLE>
 
 </TD></TR><TR><TD id="footer">
-&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="https://w3future.com">w3future.com</A>.
 </TD></TR></TABLE>
 </BODY>
 </HTML>

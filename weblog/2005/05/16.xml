@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/05/16.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2005/05/16.xml">
 <head>
 <title>Monday, May 16, 2005 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,23 +12,23 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:30:41 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2005/05/16.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2005/05/16.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/05/16.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2005/05/16.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2005/05/16.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2005/05/16.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2005/05/11.xml#a260' title='Wednesday, May 11, 2005'>&lt;&#160;</a><a href="http://w3future.com/weblog/2005/05/16.xml">Monday, May 16, 2005</a><a rel='next' href='http://w3future.com/weblog/2005/05/22.txt#a262' title='Sunday, May 22, 2005'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2005/05/11.xml#a260' title='Wednesday, May 11, 2005'>&lt;&#160;</a><a href="https://w3future.com/weblog/2005/05/16.xml">Monday, May 16, 2005</a><a rel='next' href='https://w3future.com/weblog/2005/05/22.txt#a262' title='Sunday, May 22, 2005'>&#160;&gt;</a></h>
 <a name="a290"></a>
 <section id="a290">
-<h id='aboutMyName'><a href="http://w3future.com/weblog/2005/05/16.xml#a290" class="weblogItemTitle">About my name</a></h>
+<h id='aboutMyName'><a href="https://w3future.com/weblog/2005/05/16.xml#a290" class="weblogItemTitle">About my name</a></h>
 <p>If you let an english computerized narrator pronounce my first name, it sounds like sdzowurd, which is completely wrong. It's not really hard, the &#8220;sjoe&#8221; part sound just like shoe. The &#8220;r&#8221; should be <a href="http://en.wikipedia.org/wiki/Alveolar_trill">a trilling r</a>, but you hardly hear that. If you let the narrator say shoerd it sounds quite right.</p>
 <p>Sjoerd is actually a <a href="http://en.wikipedia.org/wiki/Frisian_language">Frisian</a> name (not Dutch), but I have no roots there. My parents just liked the name. A while ago I found its etymology on <a href="http://www.gerardlenting.nl/naam/namens2.html#Sieuwerd">this dutch site</a>, it means victory guardian. Since then I use the name &#8220;Sigward&#8221; as nickname when playing games (which would be the Old German form of my name). Today I found names which mean the same and sort of sound the same too in other languages. In English there is <a href="http://www.behindthename.com/php/view.php?name=seward">Seward</a> which is derived from <a href="http://en.wikipedia.org/wiki/Siward">Siward (from Macbeth)</a>. In Norwegian there is <a href="http://www.behindthename.com/php/view.php?name=sjurd">Sjurd</a> which is derived from <a href="http://www.behindthename.com/php/view.php?name=sigurd">Sigurd</a>, the name of two Norwegian kings.</p>
 <p>My last name, you might have guessed, means (and sounds like) fisher (fisherman).</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/05/16.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2005/05/16.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

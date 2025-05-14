@@ -1,7 +1,7 @@
 /*
    BeyondLazy.JS
    by Dan Shappir and Sjoerd Visscher
-   For more information see http://w3future.com/html/beyondJS
+   For more information see https://w3future.com/html/beyondJS
 */
 if ( typeof(beyondVer) !== "number" || beyondVer < 0.98 )
 	alert("beyondLazy requires Beyond JS library ver 0.98 or higher");
@@ -234,7 +234,7 @@ _NP.lazyDown = function(end, step) {
 		return value >= end ? [ value, undef ] : [];
 	}.lazy();
 };
-_NP.lazy = function(end, step) { 
+_NP.lazy = function(end, step) {
 	if ( isUndefined(end) || end === null ) end = Number.POSITIVE_INFINITY;
 	return this < end ? this.lazyUp(end, step) : this.lazyDown(end, step);
 };

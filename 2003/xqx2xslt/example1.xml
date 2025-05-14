@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type='text/xsl' href='http://w3future.com/2003/xqx2xslt/xqx2xslt.xsl'?>
-<xqx:module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-      xmlns:xqx="http://www.w3.org/2003/12/XQueryX" 
+<?xml-stylesheet type='text/xsl' href='https://w3future.com/2003/xqx2xslt/xqx2xslt.xsl'?>
+<xqx:module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xqx="http://www.w3.org/2003/12/XQueryX"
       xsi:schemaLocation="http://www.w3.org/2003/12/XQueryX xqueryx.xsd">
   <xqx:mainModule>
     <xqx:queryBody>

@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/07/03.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/07/03.xml">
 <head>
 <title>Thursday, July 03, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,27 +12,27 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:28:11 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/07/03.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/07/03.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/07/03.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/07/03.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/07/03.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/07/03.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/06/30.xml#a212' title='Monday, June 30, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/07/03.xml">Thursday, July 03, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/07/06.txt#a215' title='Sunday, July 06, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/06/30.xml#a212' title='Monday, June 30, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/07/03.xml">Thursday, July 03, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/07/06.txt#a215' title='Sunday, July 06, 2003'>&#160;&gt;</a></h>
 <a name="a243"></a>
 <section id="a243">
-<h id='xmlrpcSoapApisDerivedFromARestfulApi'><a href="http://w3future.com/weblog/2003/07/03.xml#a243" class="weblogItemTitle">XML-RPC, SOAP APIs derived from a RESTful API</a></h>
+<h id='xmlrpcSoapApisDerivedFromARestfulApi'><a href="https://w3future.com/weblog/2003/07/03.xml#a243" class="weblogItemTitle">XML-RPC, SOAP APIs derived from a RESTful API</a></h>
 <p>This is an idea I had, which I posted on the <a href="http://www.intertwingly.net/blog/1507.html">XML-RPC, SOAP, and/or REST discussion</a>. <a href="http://www.intertwingly.net/blog/1507.html#c1057267860">Sam Ruby thinks</a> this is a &#8220;real winner of an idea&#8221;, so I'll repeat it here:</p><p>I think we can use the general idea from the MetaWeblog API: apply a given set of rules to convert XML data to the XML-RPC model. The problem with the MetaWeblog API is that the XML data model isn't clear enough: If an element can occur more than once, the member in the struct has to contain an array. But it is not clear enough in RSS which items are allowed to occur more than once. Necho doesn't have this problem, because it has a schema.</p><p>It would be very easy to create an XSLT that converts a Necho document into an XML-RPC document. It would even be doable to create an XSLT that converts the Necho schema to a Necho-to-XML-RPC XSLT. I think I'll have a go at that, it's a fun challenge I think.</p><p>The bottomline: let's first create a RESTful API. The SOAP and XML-RPC APIs can then easily be derived from that.</p>
 </section><a name="a242"></a>
 <section id="a242">
-<h id='creatingWellformedXhtmlWithIeOrMozilla'><a href="http://w3future.com/weblog/2003/07/03.xml#a242" class="weblogItemTitle">Creating well-formed XHTML with IE or Mozilla</a></h>
+<h id='creatingWellformedXhtmlWithIeOrMozilla'><a href="https://w3future.com/weblog/2003/07/03.xml#a242" class="weblogItemTitle">Creating well-formed XHTML with IE or Mozilla</a></h>
 <blockquote cite="http://weblog.infoworld.com/udell/2003/06/29.html#a734"><p>Sam, we are in violent agreement as to the value of well-formed and XPATH-searchable content, something I have recently sought to demonstrate. I think -- no, I am sure -- that you radically underestimate the distance between possession of a tool (IE or Mozilla) that can validate well-formedness, and ability to produce well-formed content in routine written communication.[<a href="http://weblog.infoworld.com/udell/2003/06/29.html#a734">Jon Udell</a>]</p></blockquote>
 <p>At <a href="http://q42.nl">Q42</a> we deploy purpose-built CMSes with simple WYSIWYG in-browser editors on a regular basis. The editors are comparable to what blogging tools like Radio Userland are using (using the <code>contentEditable</code> attribute). We have a simple client-side clean-up script that extracts well-formed XHTML from the WYSIWYG editor. It even handles pasted HTML from Word rather well. I discussed it with my collegues today, and we are willing to make that script available as open source if people are interested. (We'll have to wrap it up nicely first, so it can be used easily by others.)</p>
 <p>John Udell also talks about credible competition for Microsoft's InfoPath. That's nice timing, because we (Q42) are about to release the first commercial version of <a href="http://xopus.com">Xopus, the friendly XML editor</a>. There's a nicely designed new homepage, not much there yet, but 2 nice screenshots. You can ask for a beta trial version.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/07/03.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/07/03.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

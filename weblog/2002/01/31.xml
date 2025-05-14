@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/01/31.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/01/31.xml">
 <head>
 <title>Thursday, January 31, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,13 +12,13 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:19:43 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/01/31.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/01/31.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/01/31.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/01/31.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/01/31.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/01/31.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/01/30.xml#a51' title='Wednesday, January 30, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/01/31.xml">Thursday, January 31, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/02/04.txt#a54' title='Monday, February 04, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/01/30.xml#a51' title='Wednesday, January 30, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/01/31.xml">Thursday, January 31, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/02/04.txt#a54' title='Monday, February 04, 2002'>&#160;&gt;</a></h>
 <a name="a53"></a>
 <section id="a53">
 <h ></h>
@@ -42,14 +42,14 @@ function sayHello($name) {
 }
 ?&gt;
 </pre>
-<p>I save this as <code>hello.lib</code> in the right directory, <a href="http://w3future.com/pics/xmlrpc.png">et voila</a>.</p>
+<p>I save this as <code>hello.lib</code> in the right directory, <a href="https://w3future.com/pics/xmlrpc.png">et voila</a>.</p>
 <p>Dave and I are both having fun seeing how others say the comparison isn't fair. Oh sure, it really isn't. The .Net example only excepts strings. This example also does a good job on numbers and dates. And we don't have to learn new things, only that functions created in a special place automatically become webservices. It saves us time so we can keep our weblogs updated.</p>
 <blockquote><p> It might look very hard to write a "Hello world" routine in C#, Java or even Assembler and expose that as a Web Service. On the other hand, it might look very hard to write a Pascal-Compiler in UserTalk, PHP or Python and expose that as a Web Service. [<a href="http://radio.weblogs.com/0100430/2002/01/31.html">A Practising Maniac at Work</a>]</p></blockquote>
 <p>Christian Riege has a good point. However most webservices are more like a "Hello World" routine than like a compiler. (anyone up for a Java Compiler webservice?)</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/01/31.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/01/31.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

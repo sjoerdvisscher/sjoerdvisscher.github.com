@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/09/06.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/09/06.xml">
 <head>
 <title>Friday, September 06, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,21 +12,21 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:23:29 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/09/06.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/09/06.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/09/06.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/09/06.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/09/06.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/09/06.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/09/02.xml#a122' title='Monday, September 02, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/09/06.xml">Friday, September 06, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/09/07.txt#a124' title='Saturday, September 07, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/09/02.xml#a122' title='Monday, September 02, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/09/06.xml">Friday, September 06, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/09/07.txt#a124' title='Saturday, September 07, 2002'>&#160;&gt;</a></h>
 <a name="a123"></a>
 <section id="a123">
-<h id='theFutureOfRss'><a href="http://w3future.com/weblog/2002/09/06.xml#a123" class="weblogItemTitle">The future of RSS</a></h>
+<h id='theFutureOfRss'><a href="https://w3future.com/weblog/2002/09/06.xml#a123" class="weblogItemTitle">The future of RSS</a></h>
 <p>It seems that the future of RSS is emerging. &#8220;What do you think?&#8221; <a href="http://scriptingnews.userland.com/backissues/2002/09/05#addingNamespacesTo094">asks Dave</a>. I like it! Modules are just perfect for the next step in RSS use. And there's no burdon of the crippled syntax of RDF. There's no doubt in my mind that this is the way to go. But then there remains the issue of putting some of the old elements in modules.</p><p>Imagine a core RSS  of these elements: <code>rss</code>, <code>channel</code> with <code>title</code>, <code>link</code>, <code>description</code> and <code>language</code>, and <code>item</code> with <code>title</code>, <code>link</code> and <code>description</code>. This is a core which you can't touch, because most older RSS implementations use these. This is also a core that's very useful and a low barrier to implement. The other elements should be grouped in modules, using namespaces. I believe that applications that use these elements are in active development, and can be easily changed. This requires some effort from implementors, but the result is a clean future-compatible RSS basis, that can remain popular as long as XML remains popular.</p><p>It is important though that older RSS files never become invalid, and that never any essential information is lost.  So elements like <code>image</code> should become <em>deprecated</em>. And future RSS application might only support the module version of the  <code>image</code> element, and they will ignore the old <code>image</code> element without namespace. But the application will still read the essential information that is available in the old RSS file.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/09/06.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/09/06.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

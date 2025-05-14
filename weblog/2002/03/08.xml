@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/03/08.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/03/08.xml">
 <head>
 <title>Friday, March 08, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,27 +12,27 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:21:10 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/03/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/03/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/03/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/03/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/03/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/03/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section>
 <section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/03/06.xml#a77' title='Wednesday, March 06, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/03/08.xml">Friday, March 08, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/03/09.txt#a80' title='Saturday, March 09, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/03/06.xml#a77' title='Wednesday, March 06, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/03/08.xml">Friday, March 08, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/03/09.txt#a80' title='Saturday, March 09, 2002'>&#160;&gt;</a></h>
 <a name="a79"></a>
 <section id="a79">
-<h id='xopusInMozillaAndIe5'><a href="http://w3future.com/weblog/2002/03/08.xml#a79" class="weblogItemTitle">Xopus in Mozilla and IE5</a></h>
+<h id='xopusInMozillaAndIe5'><a href="https://w3future.com/weblog/2002/03/08.xml#a79" class="weblogItemTitle">Xopus in Mozilla and IE5</a></h>
 <blockquote cite="http://radio.weblogs.com/0101679/2002/03/08.html#a203"><p>Ross Gardler just received <a href="http://marc.theaimsgroup.com/?l=xml-cocoon-dev&amp;m=101558847309397&amp;w=2">this</a> from an <a href="http://www.q42.nl/products/xopus/">Xopus</a> developer: "The next version will be open sourced once it has reached the release level. The next Xopus will be IE5.0 and Netscape 6 compliant." [<a href="http://radio.weblogs.com/0101679/2002/03/08.html#a203">Sam Ruby's Radio Weblog</a>]</p></blockquote>
 <p>It's cool to read that Sam Ruby is interested in Xopus. Of course Xopus is less cool without IE5.5's <code>contentEditable</code>. But it's nice that Xopus will be cross-platform. And we also already noticed an IE-only product is not really taken serious in the open source world.</p>
 </section><a name="a78"></a>
 <section id="a78">
-<h id='radioUserlandTogetherWithJabber'><a href="http://w3future.com/weblog/2002/03/08.xml#a78" class="weblogItemTitle">Radio Userland together with Jabber</a></h>
+<h id='radioUserlandTogetherWithJabber'><a href="https://w3future.com/weblog/2002/03/08.xml#a78" class="weblogItemTitle">Radio Userland together with Jabber</a></h>
 <p><a href="http://groups.yahoo.com/group/radio-dev/message/5272">Mindblowing!</a>. RPC to clients without a fixed IP address. The aggregator posting its stories to a chat room so anyone can read them 'live'. A remote command line interface with Radio Userland in your chatclient. A good programmable client (and server?) like Radio is exactly what Jabber needed.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/03/08.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/03/08.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

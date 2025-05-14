@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/03/28.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/03/28.xml">
 <head>
 <title>Friday, March 28, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:26:29 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/03/28.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/03/28.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/03/28.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/03/28.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/03/28.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/03/28.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/03/25.xml#a181' title='Tuesday, March 25, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/03/28.xml">Friday, March 28, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/03/30.txt#a183' title='Sunday, March 30, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/03/25.xml#a181' title='Tuesday, March 25, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/03/28.xml">Friday, March 28, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/03/30.txt#a183' title='Sunday, March 30, 2003'>&#160;&gt;</a></h>
 <a name="a182"></a>
 <section id="a182">
-<h id='howHardIsRdf'><a href="http://w3future.com/weblog/2003/03/28.xml#a182" class="weblogItemTitle">How hard is RDF</a></h>
+<h id='howHardIsRdf'><a href="https://w3future.com/weblog/2003/03/28.xml#a182" class="weblogItemTitle">How hard is RDF</a></h>
 <blockquote cite="http://dannyayers.com/archives/001035.html"><p>My only remaining concern is that Sean's piece could be seen to be adding to the misconception that RDF is especially difficult. In his response to Sean's piece, <a href="http://www.oreillynet.com/pub/wlg/2961">Uche</a> goes for the throat (in the nicest possible way). Classic quote, easily worth bold and italics :</p>
 <blockquote cite="http://www.oreillynet.com/pub/wlg/2961"><p><b><i>
 "...anyone who can't get RDF can't get relational databases or any other sort of formal information modeling, and they can't get code..."</i></b></p></blockquote>
@@ -30,8 +30,8 @@
 <p>I'm wondering how many people actually get what relational modeling is about. A lot of people use SQL tables, but a lot of them do that by following some rules they learnt at school. But there's a huge difference between XML or relational databases and <a href="http://www.w3.org/RDF/"><acronym title="Resource Description Framework">RDF</acronym></a>. If the XML model or the relational model works for you, you're done. Even if the design goes against all rules. But the whole point of RDF is that the model has meaning. If you screw up, and the meaning conveyed by your RDF data is different from what you want to say, the data is effectively useless.</p><p>I really think that creating an RDF model is difficult. You not only have to wonder &#8220;does this model work for me&#8221;, but also &#8220;does this model convey what I want to say&#8221;. RDF is the only standard format that conveys meaning. That's what is great about it, and the only thing that's great about it. And your RDF is useless if it does not convey your meaning. Maybe it's not even so hard to use RDF to express what you want to say, but it is hard to say what you mean. People constantly make mistakes and don't say what to mean. (&#8220;You didn't read your e-mail?&#8221; &#8220;No, I didn't.&#8221;)</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/03/28.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/03/28.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

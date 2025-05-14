@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/html/weblogsources.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/html/weblogsources.txt">
 <head>
 <title>My Weblog Sources</title>
 </head>
@@ -8,14 +8,14 @@
 	<h>My Weblog Sources</h>
 	<p>Credit where credit is due</p>
 	<section id="note">
-		<h3>Note</h3><p>This page is generated from <a rel='alternate' type='text/x-opml' href='http://w3future.com/weblog/gems/mySubscriptions.opml'>mySubscriptions.opml</a>, an XML file maintained by <a href='http://radio.userland.com'>Radio Userland</a>, my news aggregator. So this page is always up-to-date.</p><h>Last Update</h>
+		<h3>Note</h3><p>This page is generated from <a rel='alternate' type='text/x-opml' href='https://w3future.com/weblog/gems/mySubscriptions.opml'>mySubscriptions.opml</a>, an XML file maintained by <a href='http://radio.userland.com'>Radio Userland</a>, my news aggregator. So this page is always up-to-date.</p><h>Last Update</h>
 		<p>10/16/2005; 1:23:51 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/html/weblogsources.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/html/weblogsources.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/html/weblogsources.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/html/weblogsources.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/html/weblogsources.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/html/weblogsources.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><script type="text/javascript" src="/tools/funclib.js"></script>
 <div id="subscriptions">
 <h2>Loading...</h2>
@@ -24,8 +24,8 @@
 <script type="text/javascript" src="/tools/xmlrpc.js"></script>
 <script type="text/javascript" src="/tools/xmlload.js"></script>
 <script type="text/javascript" src="weblogsources.js"></script>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/html/weblogsources.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblogSources.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/html/weblogsources.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblogSources.opml" /></section>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/04/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2004/04/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,16 +11,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:47 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2004/04/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2004/04/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/04/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2004/04/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2004/04/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2004/04/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2004/04/13.xml">Tuesday, April 13, 2004</a></h>
+  <h><a href="https://w3future.com/weblog/2004/04/13.xml">Tuesday, April 13, 2004</a></h>
 <a name="a273"></a>
 <section id="a273">
-<h id='googlesGmailCouldBeBlocked'><a href="http://w3future.com/weblog/2004/04/13.xml#a273" class="weblogItemTitle">&#8220;Google&#8217;s Gmail could be blocked&#8221;</a></h>
+<h id='googlesGmailCouldBeBlocked'><a href="https://w3future.com/weblog/2004/04/13.xml#a273" class="weblogItemTitle">&#8220;Google&#8217;s Gmail could be blocked&#8221;</a></h>
 <blockquote cite="http://news.bbc.co.uk/2/hi/business/3621169.stm"><p>Gmail, the planned free e-mail service from Google, could be facing strong legal opposition in California.</p><p>Google's plans have already come under fire from privacy campaigners objecting to adverts linked to the content of messages, and to the permanent storage of email. [<a href="http://news.bbc.co.uk/2/hi/business/3621169.stm">BBC News</a>]</p></blockquote>
 <p>I find this <em>so</em> annoying. Gmail should not be cancelled because of this! I think it's time to start an anti privacy lobby:</p>
 <ul>
@@ -31,10 +31,10 @@
 </ul>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2004/04/03.xml">Saturday, April 03, 2004</a></h>
+  <h><a href="https://w3future.com/weblog/2004/04/03.xml">Saturday, April 03, 2004</a></h>
 <a name="a272"></a>
 <section id="a272">
-<h id='areYouAProblemSolverOrAControlFreak'><a href="http://w3future.com/weblog/2004/04/03.xml#a272" class="weblogItemTitle">Are you a problem solver or a control freak?</a></h>
+<h id='areYouAProblemSolverOrAControlFreak'><a href="https://w3future.com/weblog/2004/04/03.xml#a272" class="weblogItemTitle">Are you a problem solver or a control freak?</a></h>
 <p><em>Part of <a href="http://lambda.weblogs.com/discuss/msgReader$11658">a discussion on measuring language quality and utility on LtU</a>.</em></p>
 <p>There are two types of programmers: those who like to solve problems, and those who just like to be in control.</p>
 <p>Problem solvers like bugs, it's a new problem to set your teeth into. Control freaks hate bugs, they just lost a bit of control.</p>
@@ -44,8 +44,8 @@
 <p>Hardware gives the problem solvers more and more the advantage, so ultimately the low level languages will mostly disappear. But this will take a while as long as the older control freak generation make the important decisions.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/04/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2004/04/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/01/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/01/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,18 +11,18 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:25:22 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/01/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/01/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/01/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/01/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/01/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/01/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2003/01/30.xml">Thursday, January 30, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/01/30.xml">Thursday, January 30, 2003</a></h>
 <a name="a159"></a>
 <section id="a159">
-<h id='xincludeSupport'><a href="http://w3future.com/weblog/2003/01/30.xml#a159" class="weblogItemTitle">XInclude support</a></h>
+<h id='xincludeSupport'><a href="https://w3future.com/weblog/2003/01/30.xml#a159" class="weblogItemTitle">XInclude support</a></h>
 <p>I'm now reaping the benefits of having an xml weblog. I wanted referrers on each page. But Radio generates static pages, and only the server knows the referrers. I now include the referrers using <a href="http://www.w3.org/TR/xinclude/">XInclude</a>:</p>
-<pre>&lt;xi:include 
+<pre>&lt;xi:include
   href="/tools/refs.php?url=<em>url</em>"
   xmlns:xi="http://www.w3.org/2001/XInclude" /></pre>
 <p>The task of implementing something like this seems a lot of work at first, but it was rather easy. Thanks to <a href="http://www.w3.org/TR/xslt#document">the <code>document()</code>  function from XSL</a>:</p>
@@ -31,10 +31,10 @@
 &lt;/xsl:template></pre>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/01/28.xml">Tuesday, January 28, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/01/28.xml">Tuesday, January 28, 2003</a></h>
 <a name="a158"></a>
 <section id="a158">
-<h id='dynamicallyExtendingApis'><a href="http://w3future.com/weblog/2003/01/28.xml#a158" class="weblogItemTitle">Dynamically extending APIs</a></h>
+<h id='dynamicallyExtendingApis'><a href="https://w3future.com/weblog/2003/01/28.xml#a158" class="weblogItemTitle">Dynamically extending APIs</a></h>
 <p>Usually when a cool Python script comes along, I'm thinking if Javascript can do this too. It almost always can. Yet there are so few Javascript fans that I can't help but showing what Javascript can do to anybody that will listen.</p>
 <p>Today <a href="http://diveintomark.org/archives/2003/01/27/dynamically_extending_apis.html">
 Mark Pilgrim shows how to dynamically extend APIs with Python</a>. Javascript can do this too, it's almost trivial even. At <a href="http://q42.nl">Q42</a> we use this a lot in Mozilla to extend the DOM with some of the more useful Internet Explorer features. (We would like to be able to do this the other way around, but IE's DOM is not implemented in a very Javascript compatible way.) Here's one example how to extend the DOM to support the selectSingleNode method. Note that after the code has executed, all XML <em>and HTML</em> nodes support the method.</p>
@@ -42,23 +42,23 @@ Mark Pilgrim shows how to dynamically extend APIs with Python</a>. Javascript ca
 Node.prototype.selectSingleNode = function(xpath)
 {
   var xpe = new XPathEvaluator();
-  return xpe.evaluate(xpath, this, xpe.createNSResolver(this), 
+  return xpe.evaluate(xpath, this, xpe.createNSResolver(this),
     XPathResult.FIRST_ORDERED_NODE_TYPE, null);
 };
 </pre>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/01/26.xml">Sunday, January 26, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/01/26.xml">Sunday, January 26, 2003</a></h>
 <a name="a157"></a>
 <section id="a157">
-<h id='xhtml2OnTheMac'><a href="http://w3future.com/weblog/2003/01/26.xml#a157" class="weblogItemTitle">XHTML 2 on the Mac</a></h>
+<h id='xhtml2OnTheMac'><a href="https://w3future.com/weblog/2003/01/26.xml#a157" class="weblogItemTitle">XHTML 2 on the Mac</a></h>
 <p>The first Mac fan to mail was Mark Pilgrim. The result for the Mac browsers: zero out of four. There were two different problems. OmniWeb and MSIE 5 give 100% width to absolute positioned elements. This was quickly fixed with some CSS. The problem with Chimera and Safari was that they have "Gecko" in the User Agent string. But they both don't support XSLT. So I had to make exceptions for them. And Mark confirmed that this weblog now looks acceptable in all 4 Mac browsers. Yay!</p><p>In the mean time XHTML 2 hasn't let me down. If it turns out that the client side transformations don't work, I'll stick to XHTML2, and just transform it on the server for all browsers. I've started on implementing XML Events. It's already working in IE. I like the syntax. An <code>onclick</code> attribute in HTML becomes a <code>script</code> child element in XML Events, with an <code>ev:event="click"</code> attribute.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/01/25.xml">Saturday, January 25, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/01/25.xml">Saturday, January 25, 2003</a></h>
 <a name="a156"></a>
 <section id="a156">
-<h id='conditionalServerSideTransformations'><a href="http://w3future.com/weblog/2003/01/25.xml#a156" class="weblogItemTitle">Conditional server side transformations</a></h>
+<h id='conditionalServerSideTransformations'><a href="https://w3future.com/weblog/2003/01/25.xml#a156" class="weblogItemTitle">Conditional server side transformations</a></h>
 <p>If you do not have Internet Explorer 6 or a Gecko based browser, you should be able to read this site again. The transformation of XHTML 2, which IE6 and Mozilla can do themselves, is now done on the server.  <a href="http://diveintomark.org/archives/2003/01/16/the_one_ive_never_tried.html">Inspired by Mark Pilgrim</a> I did this using mod_rewrite.</p>
 <pre>
 RewriteEngine on
@@ -70,20 +70,20 @@ RewriteRule ^/(.*).xml$ /tools/x.pl?$1 [L]
 <p>This means that a url like <code>/weblog/2003/01/25.xml</code> is rewritten as <code>/tools/x.pl?weblog/2003/01/25</code>. <code>x.pl</code> is a small perl script (my first perl script actually) that transforms the xhtml 2 file to html 4.01. I hope this site now displays properly on most browsers, unless it can't handle the CSS. I don't have a Mac to test it on, but I'm sure I'll get a report from a Mac fan ;).</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/01/16.xml">Thursday, January 16, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/01/16.xml">Thursday, January 16, 2003</a></h>
 <a name="a155"></a>
 <section id="a155">
-<h id='bug1'><a href="http://w3future.com/weblog/2003/01/16.xml#a155" class="weblogItemTitle">Bug #1</a></h>
+<h id='bug1'><a href="https://w3future.com/weblog/2003/01/16.xml#a155" class="weblogItemTitle">Bug #1</a></h>
 <p><a href="http://scriptingnews.userland.com/backissues/2003/01/15#When:4:25:48PM">Dave</a> is linking to me, but that didn't show up in the stats. Maybe that is fixed with this update. (It's not clean XHTML 2, but I have to have my stats!)</p>
 </section><a name="a154"></a>
 <section id="a154">
-<h id='switchedToXhtml20'><a href="http://w3future.com/weblog/2003/01/16.xml#a154" class="weblogItemTitle">Switched to XHTML 2.0</a></h>
+<h id='switchedToXhtml20'><a href="https://w3future.com/weblog/2003/01/16.xml#a154" class="weblogItemTitle">Switched to XHTML 2.0</a></h>
 <p>OK, if <a href="http://diveintomark.org/archives/2003/01/13.html#semantic_obsolescence">Mark is going back to HTML 4</a>, then I'm going forward to XHTML 2.0. I don't care it means that <a href="http://www.nedstatbasic.net/s?tab=1&amp;link=5&amp;id=905449">about 10 to 15 percent of my visitors</a> will see garbage. Maybe I'll add a fallback trick later.</p>
 <p>You see, XHTML 2.0 is not the format for the next generation browsers. It has nothing to do with browsers. XHTML is an XML Hypertext Markup Language. Browsers can do much more than displaying (X)HTML, and their behaviour is defined using CSS, and HTC or XBL. The browser needs to recognize links so they can be bookmarked, and recognize a title for the titlebar of the window. It is very inconvenient that these functions are tied to HTML elements, and a hiatus in the W3C specs.</p><p>XHTML, and specifically version 2.0, is a perfect dataformat for weblogs. And ever since I made my first XHTML 2.0 page, its clean markup was begging to be used on the whole site. So I made the switch. I changed the templates to let Radio spit out nice XHTML 2.0 documents for me, and the default file on this server is now index.xml. Things will probably get buggy for some weeks. It'll be interesting to see how this turns out.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/01/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/01/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

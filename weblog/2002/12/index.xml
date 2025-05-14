@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/12/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/12/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,29 +11,29 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:50 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/12/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/12/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/12/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/12/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/12/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/12/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2002/12/28.xml">Saturday, December 28, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/12/28.xml">Saturday, December 28, 2002</a></h>
 <a name="a153"></a>
 <section id="a153">
-<h id='accidentalWebarcheology'><a href="http://w3future.com/weblog/2002/12/28.xml#a153" class="weblogItemTitle">Accidental web-archeology</a></h>
+<h id='accidentalWebarcheology'><a href="https://w3future.com/weblog/2002/12/28.xml#a153" class="weblogItemTitle">Accidental web-archeology</a></h>
 <p>While searching for something completely different, <a href="http://ksi.cpsc.ucalgary.ca/archives/WWW-TALK/www-talk-1993q3.messages/722.html">I found this message</a> from August 1993. What if Marc Andreessen had written &#8220;OK, we'll add an error indicator&#8221;.</p>
 </section><a name="a152"></a>
 <section id="a152">
-<h id='reANoteOnTheDesignOfMarkupLanguages'><a href="http://w3future.com/weblog/2002/12/28.xml#a152" class="weblogItemTitle">Re: A note on the design of markup languages</a></h>
+<h id='reANoteOnTheDesignOfMarkupLanguages'><a href="https://w3future.com/weblog/2002/12/28.xml#a152" class="weblogItemTitle">Re: A note on the design of markup languages</a></h>
 <p><a href="http://mpt.phrasewise.com/2002/12/18#a415">Matthew Thomas pointed to me</a> some days ago. I have to respond (though a bit late) because I'm a big fan of Matthew's ideas about UI design. They are a lot more refreshing and inspiring than the usual 'look at the Mac' UI suggestions. At <a href="http://q42.nl">Q42</a> we try to avoid a save button in our web applications since Matthew wrote <a href="http://mpt.phrasewise.com/stories/storyReader$374">When good interfaces go crufty</a>.</p>
 <p>About Matthew's note: I don't really agree. The main reason is that it's a bit late. RSS always has had links in the contents of elements. For the sake of consistency it's better to leave it that way, even for new elements. Matthew's main argument is that an attribute would work better for styling with CSS. But making a arbitrary XML document readable with CSS should be considered nothing more than a trick, XSL should be used instead. The fact that CSS makes better use of attributes than element content, is a design issue of CSS. If that doesn't fit well with the RSS format, then CSS shouldn't be used with RSS.</p><p>I do agree with Matthew's argument that because the URIs are intended more for machine consumption than human consumption, it should be an attribute, rather than the contents of an element. When I design XML formats I always put URIs in attributes, even if they are the only attributes in the whole format. In this case I would have preferred the rdf:resource attribute, because that's the suggested use of the element, and it's also used with the <code>admin</code> elements.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/12/16.xml">Monday, December 16, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/12/16.xml">Monday, December 16, 2002</a></h>
 <a name="a151"></a>
 <section id="a151">
-<h id='theFriendlierLoell'><a href="http://w3future.com/weblog/2002/12/16.xml#a151" class="weblogItemTitle">The friendlier Loell</a></h>
-<p>Since the last <a href="http://w3future.com/html/loell/">Loell</a> update, the language has become a lot more user friendly. Precedence and unary operators are implemented, so arithmetic formulas now work as expected. The <code>;</code> expression separator is now optional at the end of a line. Extra indentation on new lines prevents the insertion of a separator. Lists are now built-in. The list syntax uses the <code>;</code> expression separator too, which is also optional at the end of a line. Lists have support for <a href="http://www.rubycentral.com/ref/ref_c_array.html#collect">Ruby-like <code>collect</code></a>, in the form of two methods: <code>all</code> and <code>some</code>. The difference is in the handling of failures:</p>
+<h id='theFriendlierLoell'><a href="https://w3future.com/weblog/2002/12/16.xml#a151" class="weblogItemTitle">The friendlier Loell</a></h>
+<p>Since the last <a href="https://w3future.com/html/loell/">Loell</a> update, the language has become a lot more user friendly. Precedence and unary operators are implemented, so arithmetic formulas now work as expected. The <code>;</code> expression separator is now optional at the end of a line. Extra indentation on new lines prevents the insertion of a separator. Lists are now built-in. The list syntax uses the <code>;</code> expression separator too, which is also optional at the end of a line. Lists have support for <a href="http://www.rubycentral.com/ref/ref_c_array.html#collect">Ruby-like <code>collect</code></a>, in the form of two methods: <code>all</code> and <code>some</code>. The difference is in the handling of failures:</p>
 <pre>
 [1; 'a'; 3] all {that*2} // --> failure
 [1; 'a'; 3] some {that*2} // --> [2; 6]
@@ -47,30 +47,30 @@ Number.sign = {this gt 0;  1}
 </pre>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/12/10.xml">Tuesday, December 10, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/12/10.xml">Tuesday, December 10, 2002</a></h>
 <a name="a150"></a>
 <section id="a150">
-<h id='contenteditableInMozilla13'><a href="http://w3future.com/weblog/2002/12/10.xml#a150" class="weblogItemTitle">ContentEditable in Mozilla 1.3</a></h>
-<p>My colleague Lon Boonen has built <a href="http://xopus.org/index.jsp?menu=downloads">a much improved version of contentEditable for Mozilla</a>. It uses the new <a href="http://w3future.com/weblog/2002/11/14.html#a142">designMode feature</a> in Mozilla 1.3, which makes cursor and selection handling much better. And, because at <a href="http://q42.nl">Q42</a> we can't resist to sometimes just give things away for free, you can <a href="http://xopus.org/index.jsp?menu=downloads">download it from the Xopus site</a>.</p>
+<h id='contenteditableInMozilla13'><a href="https://w3future.com/weblog/2002/12/10.xml#a150" class="weblogItemTitle">ContentEditable in Mozilla 1.3</a></h>
+<p>My colleague Lon Boonen has built <a href="http://xopus.org/index.jsp?menu=downloads">a much improved version of contentEditable for Mozilla</a>. It uses the new <a href="https://w3future.com/weblog/2002/11/14.html#a142">designMode feature</a> in Mozilla 1.3, which makes cursor and selection handling much better. And, because at <a href="http://q42.nl">Q42</a> we can't resist to sometimes just give things away for free, you can <a href="http://xopus.org/index.jsp?menu=downloads">download it from the Xopus site</a>.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/12/08.xml">Sunday, December 08, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/12/08.xml">Sunday, December 08, 2002</a></h>
 <a name="a149"></a>
 <section id="a149">
-<h id='assertionsInLoell'><a href="http://w3future.com/weblog/2002/12/08.xml#a149" class="weblogItemTitle">Assertions in Loell</a></h>
+<h id='assertionsInLoell'><a href="https://w3future.com/weblog/2002/12/08.xml#a149" class="weblogItemTitle">Assertions in Loell</a></h>
 <p>I've found 2 good uses of the new goal directed execution of Loell. One is that <code>failure</code> together with <code>else</code> works the same as <code>throw</code> and <code>catch</code> in Javascript. The other one (maybe rather obvious) is assertions. To the shapes example I added this precondition to the moveTo method:</p>
 <p><code>pos {.x isA Number gt 0;.y isA Number gt 0};</code></p>
 <p>Which means that <code>pos</code> has to be an object with 2 properties, <code>x</code> and <code>y</code>, which both have to be of type Number, and greater than 0. You see that you don't have to write <code>.x isA Number;.x gt 0</code>. This is because the methods that previously returned a boolean value, now return <code>this</code> (the left-hand expression) instead of <code>true</code>. In <a href="http://www.cs.arizona.edu/icon/">Icon</a> tests return the right-hand expression with success, but I figured the left-hand side makes more sense in an OO language.</p>
 </section><a name="a148"></a>
 <section id="a148">
-<h id='goalDirectedProgrammingWithLoell'><a href="http://w3future.com/weblog/2002/12/08.xml#a148" class="weblogItemTitle">Goal directed programming with Loell</a></h>
-<p>Inspired by <a href="http://lambda.weblogs.com/discuss/msgReader$5239">an article on Ltu</a> today, I implemented a goal directed programming feature into <a href="http://w3future.com/html/loell/">Loell</a>. No more booleans, instead there are now <code>success</code> and <code>failure</code>. When an expression returns <code>failure</code>, the whole closure immediately returns <code>failure</code>. This was only a small change in the code, and the examples hardly changed. I only had to add <code>else success</code> to the while code to indicate that failing the while test is not a failure. I haven't found a really cool example for this yet, but you can try the following in the shapes example:</p>
+<h id='goalDirectedProgrammingWithLoell'><a href="https://w3future.com/weblog/2002/12/08.xml#a148" class="weblogItemTitle">Goal directed programming with Loell</a></h>
+<p>Inspired by <a href="http://lambda.weblogs.com/discuss/msgReader$5239">an article on Ltu</a> today, I implemented a goal directed programming feature into <a href="https://w3future.com/html/loell/">Loell</a>. No more booleans, instead there are now <code>success</code> and <code>failure</code>. When an expression returns <code>failure</code>, the whole closure immediately returns <code>failure</code>. This was only a small change in the code, and the examples hardly changed. I only had to add <code>else success</code> to the while code to indicate that failing the while test is not a failure. I haven't found a really cool example for this yet, but you can try the following in the shapes example:</p>
 <p><code>scribble each {that isA Shape}</code></p>
 <p>This will test if the <code>scribble</code> list only contains shapes. (Remember that <code>that</code> is the default method argument)</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/12/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/12/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

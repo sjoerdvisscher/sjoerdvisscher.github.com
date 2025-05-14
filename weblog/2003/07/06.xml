@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/07/06.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/07/06.xml">
 <head>
 <title>Sunday, July 06, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,29 +12,29 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:28:13 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/07/06.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/07/06.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/07/06.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/07/06.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/07/06.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/07/06.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/07/03.xml#a214' title='Thursday, July 03, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/07/06.xml">Sunday, July 06, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/07/12.txt#a218' title='Saturday, July 12, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/07/03.xml#a214' title='Thursday, July 03, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/07/06.xml">Sunday, July 06, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/07/12.txt#a218' title='Saturday, July 12, 2003'>&#160;&gt;</a></h>
 <a name="a246"></a>
 <section id="a246">
-<h id='thatsMyBrother'><a href="http://w3future.com/weblog/2003/07/06.xml#a246" class="weblogItemTitle">That's my brother!</a></h>
+<h id='thatsMyBrother'><a href="https://w3future.com/weblog/2003/07/06.xml#a246" class="weblogItemTitle">That's my brother!</a></h>
 <p>No, that wasn't a typo. My brother did indeed walk 80km, in one stretch. From here again congratulations, Jelle! Some background information: Jelle participated in what is called the <a href="http://www.kennedymars.nl">Kennedy March</a> in Someren. He and 2444 others started at 10 o'clock in the evening. They walked straight through the night without sleep. Jelle finished more than 18 and a half hours later. A marvelous achievement!</p>
 </section><a name="a245"></a>
 <section id="a245">
-<h id='myBrotherJustWalked80km'><a href="http://w3future.com/weblog/2003/07/06.xml#a245" class="weblogItemTitle">My brother just walked 80km!</a></h>
-<p><object data="http://w3future.com/weblog/images/mailedimages/20030706t1655n2.jpg" class="picture">My brother just walked 80km!</object></p>
+<h id='myBrotherJustWalked80km'><a href="https://w3future.com/weblog/2003/07/06.xml#a245" class="weblogItemTitle">My brother just walked 80km!</a></h>
+<p><object data="https://w3future.com/weblog/images/mailedimages/20030706t1655n2.jpg" class="picture">My brother just walked 80km!</object></p>
 </section><a name="a244"></a>
 <section id="a244">
-<h id='programmingVsXml'><a href="http://w3future.com/weblog/2003/07/06.xml#a244" class="weblogItemTitle">Programming vs. XML</a></h>
-<p>The API discussions during the last week showed clearly that a lot of programmers are not ready for XML. They prefer XML-RPC because they want to send and receive data structures that are in native form for their programming language. Yet everybody seems to agree that when you are creating a new data format, it should use XML.</p><p>For this friction to disappear one of two things has to happen: Either the programming languages change to match XML better, or the other way around. The W3C XML Schema standard was an attempt to the latter, and it works great when you're working in a programming environment like Microsoft's .Net, because it tries to give XML an Object Oriented feel. But when you're working directly with XML, RelaxNG seems to be the better match. RelaxNG works a bit like regular expressions. This is not a coincidence, because regular expressions were designed for text processing, and that's where XML has its roots too.</p><p>In the end I think XML will win. The data structures in programming languages are designed to match the computer's memory model. XML's data structures are a result from it's syntax. Although this does lead to some peculiarities, it has some interesting properties that are <a href="http://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">more natural for the human's memory model</a>. Compare the data model of a book with one author with the data model of a book with one ore more authors. In the human's memory model these are almost similar. In XML it is equally similar, you have either one or one or more author elements. In most programming languages the second suddenly needs an extra data structure: a list of authors.</p><p>As programming languages abstract away from the hardware, they'll probably keep getting better support for XML. But changing the actual data structures, and certainly lists, is a big step for a programming language. This will stay interesting to follow for years to come.</p>
+<h id='programmingVsXml'><a href="https://w3future.com/weblog/2003/07/06.xml#a244" class="weblogItemTitle">Programming vs. XML</a></h>
+<p>The API discussions during the last week showed clearly that a lot of programmers are not ready for XML. They prefer XML-RPC because they want to send and receive data structures that are in native form for their programming language. Yet everybody seems to agree that when you are creating a new data format, it should use XML.</p><p>For this friction to disappear one of two things has to happen: Either the programming languages change to match XML better, or the other way around. The W3C XML Schema standard was an attempt to the latter, and it works great when you're working in a programming environment like Microsoft's .Net, because it tries to give XML an Object Oriented feel. But when you're working directly with XML, RelaxNG seems to be the better match. RelaxNG works a bit like regular expressions. This is not a coincidence, because regular expressions were designed for text processing, and that's where XML has its roots too.</p><p>In the end I think XML will win. The data structures in programming languages are designed to match the computer's memory model. XML's data structures are a result from it's syntax. Although this does lead to some peculiarities, it has some interesting properties that are <a href="https://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">more natural for the human's memory model</a>. Compare the data model of a book with one author with the data model of a book with one ore more authors. In the human's memory model these are almost similar. In XML it is equally similar, you have either one or one or more author elements. In most programming languages the second suddenly needs an extra data structure: a list of authors.</p><p>As programming languages abstract away from the hardware, they'll probably keep getting better support for XML. But changing the actual data structures, and certainly lists, is a big step for a programming language. This will stay interesting to follow for years to come.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/07/06.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/07/06.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

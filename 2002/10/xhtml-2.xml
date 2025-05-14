@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="http://w3future.com/weblog/gems/xhtml2.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="https://w3future.com/weblog/gems/xhtml2.xsl" ?>
 <html xmlns="http://www.w3.org/2002/06/xhtml2" xml:lang="en">
 <head>
   <title>w3future.com</title>
-  <link rel="stylesheet" type="text/css" href="http://w3future.com/weblog/gems/xhtml2b.css" />
+  <link rel="stylesheet" type="text/css" href="https://w3future.com/weblog/gems/xhtml2b.css" />
 </head>
 <body>
 <h id="pagetitle">w3future.com</h>
@@ -26,16 +26,16 @@
 
 </section>
 <section id="footer">
-	<p>&#x00A9; Copyright 2002 <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="http://w3future.com/">w3future.com</a></p>
+	<p>&#x00A9; Copyright 2002 <a href="mailto:sjoerd@w3future.com">Sjoerd Visscher</a>, <a href="https://w3future.com/">w3future.com</a></p>
 </section>
 
-<div id="navigation"> 
+<div id="navigation">
 	<nl>
 		<name>w3future.com</name>
-		<li href='http://w3future.com/weblog/'>Weblog</li>
-		<li href='http://w3future.com/html/examples.html'>Examples</li>
-		<li href='http://w3future.com/html/stories/'>Articles</li>
-		<li href='http://w3future.com/html/download.html'>Downloads</li>
+		<li href='https://w3future.com/weblog/'>Weblog</li>
+		<li href='https://w3future.com/html/examples.html'>Examples</li>
+		<li href='https://w3future.com/html/stories/'>Articles</li>
+		<li href='https://w3future.com/html/download.html'>Downloads</li>
 	</nl>
 </div>
 
@@ -50,7 +50,7 @@
 		<li href='http://radio.weblogs.com/0101679/'>Sam Ruby</li>
 		<li href='http://www.scripting.com/'>Scripting News</li>
 		<li href='http://www.xmlhack.com/'>XMLHack</li>
-		<li href='http://w3future.com/html/weblogsources.html'><strong>All sources</strong></li>
+		<li href='https://w3future.com/html/weblogsources.html'><strong>All sources</strong></li>
 	</nl>
 	<nl>
 		<name>Friends/Family</name>

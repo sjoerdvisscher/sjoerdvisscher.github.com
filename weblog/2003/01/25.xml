@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/01/25.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/01/25.xml">
 <head>
 <title>Saturday, January 25, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:25:15 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/01/25.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/01/25.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/01/25.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/01/25.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/01/25.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/01/25.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/01/16.xml#a155' title='Thursday, January 16, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/01/25.xml">Saturday, January 25, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/01/26.txt#a157' title='Sunday, January 26, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/01/16.xml#a155' title='Thursday, January 16, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/01/25.xml">Saturday, January 25, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/01/26.txt#a157' title='Sunday, January 26, 2003'>&#160;&gt;</a></h>
 <a name="a156"></a>
 <section id="a156">
-<h id='conditionalServerSideTransformations'><a href="http://w3future.com/weblog/2003/01/25.xml#a156" class="weblogItemTitle">Conditional server side transformations</a></h>
+<h id='conditionalServerSideTransformations'><a href="https://w3future.com/weblog/2003/01/25.xml#a156" class="weblogItemTitle">Conditional server side transformations</a></h>
 <p>If you do not have Internet Explorer 6 or a Gecko based browser, you should be able to read this site again. The transformation of XHTML 2, which IE6 and Mozilla can do themselves, is now done on the server.  <a href="http://diveintomark.org/archives/2003/01/16/the_one_ive_never_tried.html">Inspired by Mark Pilgrim</a> I did this using mod_rewrite.</p>
 <pre>
 RewriteEngine on
@@ -33,8 +33,8 @@ RewriteRule ^/(.*).xml$ /tools/x.pl?$1 [L]
 <p>This means that a url like <code>/weblog/2003/01/25.xml</code> is rewritten as <code>/tools/x.pl?weblog/2003/01/25</code>. <code>x.pl</code> is a small perl script (my first perl script actually) that transforms the xhtml 2 file to html 4.01. I hope this site now displays properly on most browsers, unless it can't handle the CSS. I don't have a Mac to test it on, but I'm sure I'll get a report from a Mac fan ;).</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/01/25.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/01/25.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

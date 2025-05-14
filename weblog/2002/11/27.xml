@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/11/27.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/11/27.xml">
 <head>
 <title>Wednesday, November 27, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,26 +12,26 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:39 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/11/27.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/11/27.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/11/27.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/11/27.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/11/27.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/11/27.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/11/25.xml#a144' title='Monday, November 25, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/11/27.xml">Wednesday, November 27, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/12/08.txt#a148' title='Sunday, December 08, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/11/25.xml#a144' title='Monday, November 25, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/11/27.xml">Wednesday, November 27, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/12/08.txt#a148' title='Sunday, December 08, 2002'>&#160;&gt;</a></h>
 <a name="a147"></a>
 <section id="a147">
-<h id='aBitOfAdvertisingForAFriend'><a href="http://w3future.com/weblog/2002/11/27.xml#a147" class="weblogItemTitle">A bit of advertising for a friend</a></h>
+<h id='aBitOfAdvertisingForAFriend'><a href="https://w3future.com/weblog/2002/11/27.xml#a147" class="weblogItemTitle">A bit of advertising for a friend</a></h>
 <p>All Queen fans are adviced to check out the new <a href="http://www.queenfind.com/">Queen Search Engine and Site Directory</a>. Or at least try to remember the url: <a href="http://www.queenfind.com/">www.queenfind.com</a>.</p>
 </section><a name="a146"></a>
 <section id="a146">
-<h id='thanksTo'><a href="http://w3future.com/weblog/2002/11/27.xml#a146" class="weblogItemTitle">Thanks to...</a></h>
+<h id='thanksTo'><a href="https://w3future.com/weblog/2002/11/27.xml#a146" class="weblogItemTitle">Thanks to...</a></h>
 <p><a href="http://scriptingnews.userland.com/backissues/2002/11/26#thanksTo">Dave Winer is acting out the thanksgiving ritual.</a> Thanksgiving is generally not celebrated here in the Netherlands. But I like the idea, because people quickly forget the positive things and only remember the negative things. (which results in Murphy's law btw.) It's not in my nature to spontaneously thank people, so I thought it would be a good idea to practice here on my weblog. The first 10 minutes I couldn't think of anything for which I had a real heartfelt need to say thank you. Then I realized something:</p>
 <p>I want to thank my colleagues, friends and family for being such nice people to be around with (and to instant message with). I'm thoroughly enjoying every day of my life because of that. Thank you! I specifically want to thank my mother, because she asked for it, literally :)</p>
 </section><a name="a145"></a>
 <section id="a145">
-<h id='typeCheckingInLoell'><a href="http://w3future.com/weblog/2002/11/27.xml#a145" class="weblogItemTitle">Type checking in Loell</a></h>
-<p>Today I remembered a type checking idea I had a while ago, which is perfect for <a href="http://w3future.com/html/loell/">Loell</a>. It is dynamic type checking based on prototyping. There's no need to store type information anywhere. When setting a property, <code>o.p=v</code> the simple rules are:</p>
+<h id='typeCheckingInLoell'><a href="https://w3future.com/weblog/2002/11/27.xml#a145" class="weblogItemTitle">Type checking in Loell</a></h>
+<p>Today I remembered a type checking idea I had a while ago, which is perfect for <a href="https://w3future.com/html/loell/">Loell</a>. It is dynamic type checking based on prototyping. There's no need to store type information anywhere. When setting a property, <code>o.p=v</code> the simple rules are:</p>
 <ul>
 <li>If <code>o.proto.p</code> is undefined, all values are allowed.</li>
 <li>If <code>v isA o.proto.p.proto</code>, the set is allowed.</li>
@@ -40,8 +40,8 @@
 <p>It's rather basic type checking, but it fits the small core (currently 150 lines of javascript) of the language. It's hard to be sure if this checking is helpful, or just a pain. I'll just have to actually program something with it, but for that I first need to build proper access to the browser DOM.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/11/27.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/11/27.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

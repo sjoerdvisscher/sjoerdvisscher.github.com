@@ -109,7 +109,7 @@
 <xsl:template match="h:script[@ev:event]" mode="eventattr">
   <xsl:attribute name="on{@ev:event}">return handleEvent<xsl:value-of select="count(preceding::h:script)" />()</xsl:attribute>
 </xsl:template>
-    
+
 <xsl:template match="h:script[@ev:event]">
   <script type="text/javascript"><xsl:comment>
   function handleEvent<xsl:value-of select="count(preceding::h:script)" />() {
@@ -198,7 +198,7 @@
 
 <xsl:template match="xi:include">
   <xsl:variable name="href">
-    <xsl:if test="starts-with(@href, '/')">http://w3future.com</xsl:if><xsl:value-of select="@href" />
+    <xsl:if test="starts-with(@href, '/')">https://w3future.com</xsl:if><xsl:value-of select="@href" />
   </xsl:variable>
   <xsl:apply-templates select="document($href)/*" />
 </xsl:template>

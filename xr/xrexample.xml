@@ -1,10 +1,10 @@
-<xr:transform 
-  xmlns:xr="http://w3future.com/xr/ns/"
+<xr:transform
+  xmlns:xr="https://w3future.com/xr/ns/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:h="http://www.w3.org/1999/xhtml"
   xmlns="http://www.example.com/terms/">
-  
+
   <xr:introducing>
     <rdfs:Resource xr:uriSelect="$documentURI">
       <dc:title xr:select="/h:html/h:head/h:title" />
@@ -18,5 +18,5 @@
       </editor>
     </rdfs:Resource>
   </xr:introducing>
-  
+
 </xr:transform>

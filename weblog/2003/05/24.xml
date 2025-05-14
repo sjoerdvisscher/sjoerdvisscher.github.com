@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/05/24.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/05/24.xml">
 <head>
 <title>Saturday, May 24, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,29 +12,29 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:27:36 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/05/24.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/05/24.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/05/24.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/05/24.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/05/24.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/05/24.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/05/22.xml#a202' title='Thursday, May 22, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/05/24.xml">Saturday, May 24, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/05/29.txt#a205' title='Thursday, May 29, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/05/22.xml#a202' title='Thursday, May 22, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/05/24.xml">Saturday, May 24, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/05/29.txt#a205' title='Thursday, May 29, 2003'>&#160;&gt;</a></h>
 <a name="a233"></a>
 <section id="a233">
-<h id='daveBeckettJoinsTheRdfConversation'><a href="http://w3future.com/weblog/2003/05/24.xml#a233" class="weblogItemTitle">Dave Beckett joins the RDF conversation</a></h>
-<p>5 people arrested and a few broken windows was the result of the ADO Den Haag &#8220;party&#8221;, and <a href="http://journal.dajobe.org/journal/archives/2003_05.html#001355">a response from Dave Beckett</a> was the result from <a href="http://w3future.com/weblog/2003/05/24.xml#a232">yesterday's post</a>. Yes, that's the Dave Beckett from the examples, the man currently responsible for the RDF/XML syntax. He was already following the conversation, and he has pointed to &#8220;<a href="http://ilrt.org/people/cmdjb/2003/05/iswc/">A retrospective on the development of the RDF/XML Revised Syntax</a>&#8221;. Most of that I had already heard in <a href="http://ilrt.org/people/cmdjb/talks/xmleurope2003/">his presentation at XML Europe 2003</a>. He also has news: &#8220;the W3C's HTML and RDF people are looking at things with respect to syntax&#8221;. But now Dave's response to my post:</p>
+<h id='daveBeckettJoinsTheRdfConversation'><a href="https://w3future.com/weblog/2003/05/24.xml#a233" class="weblogItemTitle">Dave Beckett joins the RDF conversation</a></h>
+<p>5 people arrested and a few broken windows was the result of the ADO Den Haag &#8220;party&#8221;, and <a href="http://journal.dajobe.org/journal/archives/2003_05.html#001355">a response from Dave Beckett</a> was the result from <a href="https://w3future.com/weblog/2003/05/24.xml#a232">yesterday's post</a>. Yes, that's the Dave Beckett from the examples, the man currently responsible for the RDF/XML syntax. He was already following the conversation, and he has pointed to &#8220;<a href="http://ilrt.org/people/cmdjb/2003/05/iswc/">A retrospective on the development of the RDF/XML Revised Syntax</a>&#8221;. Most of that I had already heard in <a href="http://ilrt.org/people/cmdjb/talks/xmleurope2003/">his presentation at XML Europe 2003</a>. He also has news: &#8220;the W3C's HTML and RDF people are looking at things with respect to syntax&#8221;. But now Dave's response to my post:</p>
 <blockquote cite="http://journal.dajobe.org/journal/archives/2003_05.html#001355"><p>Sjoerd Visscher compains in Graph or triples that the RDF/XML revised syntax specification uses all the abbreviated forms. That, duh, was the point - it is the specification. If he wants examples that use a sensible portion of the syntax, look at the RDF Primer.</p></blockquote>
 <p>Hmm. So examples in a specification don't have to be sensible? That might not the smartest way to get your technology implemented. If you know that Tim Bray's problem is actually <a href="http://ilrt.org/people/cmdjb/2003/05/iswc/paper.html#prob-stripe">RDF/XML's number 1 problem</a>, then why not make sure that every example you publish tries to be as clear on this problem as possible. <a href="http://www.w3.org/TR/rdf-syntax-grammar/#section-Syntax-property-attributes">In section 2.5 property attributes are introduced</a>, thereby breaking the striping technique. Yet almost any example that follows keeps using property attributes.</p>
 </section><a name="a232"></a>
 <section id="a232">
-<h id='graphOrTriples'><a href="http://w3future.com/weblog/2003/05/24.xml#a232" class="weblogItemTitle">Graph or triples</a></h>
+<h id='graphOrTriples'><a href="https://w3future.com/weblog/2003/05/24.xml#a232" class="weblogItemTitle">Graph or triples</a></h>
 <p>It is noisy outside, and 2 riot police cars are racing by, because <a href="http://www.adodenhaag.nl/">ADO Den Haag</a> has won the 1st division soccer leage. In the meantime I'm going to continue <a href="http://www.tbray.org/ongoing/When/200x/2003/05/22/RDFagain">the RDF conversation</a>.</p>
 <p>Tim Bray wants a <code>property</code> element, because element names should be labels to indicate what the content is. I agree, and I think RDF does exactly that. Only on one meta-level higher than Tim Bray is thinking in. Call it an abstraction if you want. So I don't think it is needed to specify which element is a property and which a resource. If you stick to the style of writing RDF I showed yesterday, <a href="http://www.w3.org/2001/10/stripes/">striping</a> makes that rather easy.</p>
 <pre>&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:ex="http://www.example.com/terms/">
-  
+
   <strong>&lt;rdfs:Resource rdf:about="http://www.w3.org/TR/rdf-syntax-grammar"></strong>
     &lt;dc:title>
       <strong>RDF/XML Syntax Specification (Revised)</strong>
@@ -50,15 +50,15 @@
       <strong>&lt;/rdfs:Resource></strong>
     &lt;/ex:editor>
   <strong>&lt;/rdfs:Resource></strong>
-  
+
 &lt;/rdf:RDF></pre>
 <p>Here the bold nodes are resources (or text) and the unbold nodes are properties. Notice that resource element names start with upper case letters, and property element names start with lower case letters.</p>
 <p>Tim Bray thinks of RDF in terms of triples. Maybe that is the best way for him to visualise RDF, but I prefer graphs. Thinking in graphs probably also helps understanding the RDF/XML syntax better. You can think of the bold elements as nodes, and the unbold elements as arcs. (It's unfortunate that <a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF/XML Syntax Specification</a> uses all the shortcut syntaxes in most examples, breaking the simple striping rules.)</p>
-<p>So maybe syntax is a problem, but RDF is cool, so if it were the only problem, then the web would already have routed around it long ago. So I agree with <a href="http://blogs.law.harvard.edu/isItTheSyntax">Dave Winer</a> that the killer app is missing. For <a href="http://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> I can't find any decent examples besides extracting from XHTML and RSS. If you have suggestions for other sources of XML data, please let me know.</p>
+<p>So maybe syntax is a problem, but RDF is cool, so if it were the only problem, then the web would already have routed around it long ago. So I agree with <a href="http://blogs.law.harvard.edu/isItTheSyntax">Dave Winer</a> that the killer app is missing. For <a href="https://w3future.com/xr/"><acronym title="RDF Extraction from XML">XR</acronym></a> I can't find any decent examples besides extracting from XHTML and RSS. If you have suggestions for other sources of XML data, please let me know.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/05/24.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/05/24.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

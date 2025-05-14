@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/xr/tutorial.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/xr/tutorial.txt">
 <head>
 <title>XR Tutorial</title>
 </head>
@@ -11,11 +11,11 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:31 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/xr/tutorial.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/xr/tutorial.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/xr/tutorial.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/xr/tutorial.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/xr/tutorial.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/xr/tutorial.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
 <h>Introduction</h>
 <p>The tutorial will first show
@@ -27,18 +27,18 @@ RDF to an XML to RDF transformation by adding XPath expressions.</p>
 <p>Resources have properties. The following example shows that the
 resource at URI <code>http://www.w3.org/</code> has a <code>dc:title</code>
 property with value "World Wide Web Consortium".</p>
-<blockcode>&lt;xr:transform 
-  xmlns:xr="http://w3future.com/xr/ns/"
+<blockcode>&lt;xr:transform
+  xmlns:xr="https://w3future.com/xr/ns/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:h="http://www.w3.org/1999/xhtml">
-  
+
   &lt;xr:introducing>
     &lt;rdfs:Resource xr:uri="http://www.w3.org/">
       &lt;dc:title>World Wide Web Consortium&lt;/dc:title>
     &lt;/rdfs:Resource>
   &lt;/xr:introducing>
-  
+
 &lt;/xr:transform></blockcode>
 <p>A property value can also be another resource.
 <code>http://www.w3.org/</code> also has a <code>dc:rights</code>
@@ -98,14 +98,14 @@ properties point to the same resource.</p>
     &lt;dc:rights xr:select="//h:a[@rel='Copyright']" />
   &lt;/rdfs:Resource>
 &lt;/xr:introducing>
- 
+
 &lt;xr:introducing xr:select="//h:a[@rel='Copyright']">
   &lt;rdfs:Resource xr:uriSelect="@href">
     &lt;dc:title xr:select="document(@href)/h:html/h:head/h:title" />
   &lt;/rdfs:Resource>
 &lt;/xr:introducing></blockcode>
-</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/xr/tutorial.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/xr.opml" /></section>
+</section><xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/xr/tutorial.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/xr.opml" /></section>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/02/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/02/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,44 +11,44 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:25:52 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/02/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/02/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/02/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/02/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/02/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/02/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2003/02/27.xml">Thursday, February 27, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/02/27.xml">Thursday, February 27, 2003</a></h>
 <a name="a170"></a>
 <section id="a170">
-<h id='libeskindPlanChosenForWtcSite'><a href="http://w3future.com/weblog/2003/02/27.xml#a170" class="weblogItemTitle">Libeskind plan chosen for WTC site</a></h>
+<h id='libeskindPlanChosenForWtcSite'><a href="https://w3future.com/weblog/2003/02/27.xml#a170" class="weblogItemTitle">Libeskind plan chosen for WTC site</a></h>
 <p>It's a beautiful design. <a href="http://www.daniel-libeskind.com/press/index.html?ID=41">Libeskind's design study for the WTC site</a> is a very interesting read. (Why couldn't I find this link on any of the news sites?)</p>
 </section><a name="a169"></a>
 <section id="a169">
-<h id='moreSiteRenderingChanges'><a href="http://w3future.com/weblog/2003/02/27.xml#a169" class="weblogItemTitle">More site rendering changes</a></h>
+<h id='moreSiteRenderingChanges'><a href="https://w3future.com/weblog/2003/02/27.xml#a169" class="weblogItemTitle">More site rendering changes</a></h>
 <p>I've turned off client-side XSLT transformations for all browsers. Neither IE6 nor Mozilla 1.3a+ have all the DOM features available in script when the HTML is from a client-side XSLT transformation. So all pages are now served again in good old HTML 4.01.</p>
 <p>The XHTML 2.0 with XIncludes isn't gone though. It's just tranformed on the server. If you want to see this page with XHTML 2.0, you can click on the grey XML icon to the right. Or, if you want to peek in the source, click View Source next to it.</p>
 </section><a name="a168"></a>
 <section id="a168">
-<h id='redirectingToTheProperDomainName'><a href="http://w3future.com/weblog/2003/02/27.xml#a168" class="weblogItemTitle">Redirecting to the proper domain name</a></h>
+<h id='redirectingToTheProperDomainName'><a href="https://w3future.com/weblog/2003/02/27.xml#a168" class="weblogItemTitle">Redirecting to the proper domain name</a></h>
 <p>It always annoyed me that in the various statistics and blog indexes, this site always showed up twice: as w3future.com and as www.w3future.com. You cannot entirely prevent that, but I changed my <code>.htaccess</code> file to redirect anything that does not use w3future.com as a domain name:</p>
 <pre>RewriteCond %{HTTP_HOST} !^w3future.com$
-RewriteRule ^/(.*)$ http://w3future.com/$1 [R=301]</pre>
+RewriteRule ^/(.*)$ https://w3future.com/$1 [R=301]</pre>
 </section><a name="a167"></a>
 <section id="a167">
-<h id='doesntTheEcmaUnderstandTheInternet'><a href="http://w3future.com/weblog/2003/02/27.xml#a167" class="weblogItemTitle">Doesn't the ECMA understand the internet?</a></h>
+<h id='doesntTheEcmaUnderstandTheInternet'><a href="https://w3future.com/weblog/2003/02/27.xml#a167" class="weblogItemTitle">Doesn't the ECMA understand the internet?</a></h>
 <p><a href="http://cap-lore.com/">Norman Hardy</a> informed me that the link to Javascript on the Loell page was no longer valid. The page is moved to <a href="http://www.ecma-international.org/publications/standards/ECMA-262.HTM">a new location</a>. What were they thinking. There's not even a redirect on the <a href="http://www.ecma.ch/STAND/Ecma-262.htm">old address</a>, you get a 404 error.</p><p>When I read Norman's mail I thought, at least they finally did something about that ugly old site. But they even didn't do that. It's surely the ugliest site on the web with important internet related information on it. (A tip when you don't have any feeling for web design: don't touch that color selector!)</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/02/16.xml">Sunday, February 16, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/02/16.xml">Sunday, February 16, 2003</a></h>
 <a name="a166"></a>
 <section id="a166">
-<h id='paulGrahamsAccumulatorGeneratorInLoell'><a href="http://w3future.com/weblog/2003/02/16.xml#a166" class="weblogItemTitle">Paul Graham's Accumulator Generator in Loell</a></h>
-<p>When I read about <a href="http://www.paulgraham.com/accgen.html">Paul Graham's Accumulator Generator</a> on <a href="http://lambda.weblogs.com/discuss/msgReader$5779">Lambda the Ultimate</a>, I tried it in <a href="http://w3future.com/html/loell/">Loell</a>. As it turned out the solution was shorter than any of the solutions on Paul's page, without being complex. So I wrote an e-mail to Paul Graham:</p>
+<h id='paulGrahamsAccumulatorGeneratorInLoell'><a href="https://w3future.com/weblog/2003/02/16.xml#a166" class="weblogItemTitle">Paul Graham's Accumulator Generator in Loell</a></h>
+<p>When I read about <a href="http://www.paulgraham.com/accgen.html">Paul Graham's Accumulator Generator</a> on <a href="http://lambda.weblogs.com/discuss/msgReader$5779">Lambda the Ultimate</a>, I tried it in <a href="https://w3future.com/html/loell/">Loell</a>. As it turned out the solution was shorter than any of the solutions on Paul's page, without being complex. So I wrote an e-mail to Paul Graham:</p>
 <blockquote><p>I don't know if you accept personal pet programming languages for your Accumulator Generator. Anyway I hope you are interested in Loell, because the solution seems to be the shortest one yet:</p>
 <pre>foo={\n;{n+=that}}</pre>
-<p>To test this go to http://w3future.com/html/loell/ and run this piece of code:</p>
+<p>To test this go to https://w3future.com/html/loell/ and run this piece of code:</p>
 <pre>foo={\n;{n+=that}}
- 
+
 x = $ foo 1
 $ x 5
 $ foo 3
@@ -58,53 +58,53 @@ $ x 2.3</pre>
 <p>Note that there are no tricks involved, it's just that the syntax for closures is so short: {}.</p></blockquote>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/02/13.xml">Thursday, February 13, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/02/13.xml">Thursday, February 13, 2003</a></h>
 <a name="a165"></a>
 <section id="a165">
-<h id='itsTheFirstTimeIHearThis'><a href="http://w3future.com/weblog/2003/02/13.xml#a165" class="weblogItemTitle">It's the first time I hear this.</a></h>
+<h id='itsTheFirstTimeIHearThis'><a href="https://w3future.com/weblog/2003/02/13.xml#a165" class="weblogItemTitle">It's the first time I hear this.</a></h>
 <blockquote><p>
 In HTML, &lt;script> blocks have a CDATA context, and therefore &lt;!-- and --&gt; characters do not indicate comments. CDATA blocks are terminated at the first instance of the two character sequence "&lt;/".</p></blockquote>
 <p>This is the very informative reply I received from <a href="http://ln.hixie.ch">Ian Hickson</a>. Making sure no &lt;/ occurred did make <a href="http://validator.w3.org/check?uri=http%3A//w3future.com/weblog/">the validator</a> happy. But then <a href="http://www.w3.org/TR/html401/interact/scripts.html#idx-user_agent">this passage in the HTML spec</a> makes no sense to me at all. It's a dirty mess this HTML, hurrah for XML!</p>
 <p>Later: I just figured it out. Older browsers don't know the script tag, so they also don't know it has CDATA content and they do see the comment as a real comment.</p>
 </section><a name="a164"></a>
 <section id="a164">
-<h id='tagsInCommentsNotValid'><a href="http://w3future.com/weblog/2003/02/13.xml#a164" class="weblogItemTitle">Tags in comments not valid?</a></h>
-<p><a href="http://ln.hixie.ch">Ian Hickson</a> pointed out to me that <a href="http://w3future.com/tools/x.pl?weblog/index">the HTML result of the XSL transformations</a> isn't valid. I fixed most of the reported bugs, but <a href="http://validator.w3.org/check?uri=http%3A//w3future.com/weblog/">the W3C validator still thinks it's not valid</a>. Somehow it tries to parse the javascript code, which I put inside a comment. This seems like a bug in the W3C validator to me, or am I missing something?</p>
+<h id='tagsInCommentsNotValid'><a href="https://w3future.com/weblog/2003/02/13.xml#a164" class="weblogItemTitle">Tags in comments not valid?</a></h>
+<p><a href="http://ln.hixie.ch">Ian Hickson</a> pointed out to me that <a href="https://w3future.com/tools/x.pl?weblog/index">the HTML result of the XSL transformations</a> isn't valid. I fixed most of the reported bugs, but <a href="http://validator.w3.org/check?uri=http%3A//w3future.com/weblog/">the W3C validator still thinks it's not valid</a>. Somehow it tries to parse the javascript code, which I put inside a comment. This seems like a bug in the W3C validator to me, or am I missing something?</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/02/08.xml">Saturday, February 08, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/02/08.xml">Saturday, February 08, 2003</a></h>
 <a name="a163"></a>
 <section id="a163">
-<h id='slashdotTraffic'><a href="http://w3future.com/weblog/2003/02/08.xml#a163" class="weblogItemTitle">Slashdot traffic</a></h>
+<h id='slashdotTraffic'><a href="https://w3future.com/weblog/2003/02/08.xml#a163" class="weblogItemTitle">Slashdot traffic</a></h>
 <p>The amount of Slashdot traffic apparently changes a lot from item to item. <a href="http://scriptingnews.userland.com/backissues/2003/02/04#When:2:49:44PM">Dave</a> usually gets about 5000 visitors, which is about the same with what I've seen before when <a href="http://xopus.org">Xopus</a> was <a href="http://developers.slashdot.org/developers/02/09/20/1227214.shtml?tid=156">mentioned on Slashdot</a>. But yesterday <a href="http://www.goodoldadventures.com">Good Old Adventures</a>, a &#8220;<a href="http://q42.nl">Q42</a> product by Martin Kool&#8221;, was <a href="http://slashdot.org/article.pl?sid=03/02/06/239206">Slashdotted</a>. This time we got 36000 visitors yesterday, and probably still about 8000 today! Still not as much as <a href="http://joelonsoftware.com/news/20030205.html">Joel</a> gets though.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/02/04.xml">Tuesday, February 04, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/02/04.xml">Tuesday, February 04, 2003</a></h>
 <a name="a162"></a>
 <section id="a162">
-<h id='usingTheRdfReferrerData'><a href="http://w3future.com/weblog/2003/02/04.xml#a162" class="weblogItemTitle">Using the RDF referrer data</a></h>
-<p>The RDF data that I have available since yesterday, is now put to good use. <a href="http://w3future.com/weblog/2003/01/26.xml#a157">Take a look at the archive page of January 26.</a> At the bottom you see two referrers with excerpts. This information comes from <a href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/01/26.xml">the RDF data for that page</a>. <a href="http://w3future.com/w3f/w3f.xsl">The XSL stylesheet for this site</a> converts the RDF data to HTML.</p>
-<p>This is a really nice thing about using XML/XSL for your weblog: the possibility to use several data sources at once. That I'm using XHTML 2.0 is hardly relevant. It's just the format I use for the textual content. The next datasource on the list to use is <a href="http://w3future.com/weblog/sidebars/weblog.opml">the OPML file I have for the sidebar</a>. This would finally make it possible to change the sidebar without having to republish all the weblog pages.</p>
+<h id='usingTheRdfReferrerData'><a href="https://w3future.com/weblog/2003/02/04.xml#a162" class="weblogItemTitle">Using the RDF referrer data</a></h>
+<p>The RDF data that I have available since yesterday, is now put to good use. <a href="https://w3future.com/weblog/2003/01/26.xml#a157">Take a look at the archive page of January 26.</a> At the bottom you see two referrers with excerpts. This information comes from <a href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/01/26.xml">the RDF data for that page</a>. <a href="https://w3future.com/w3f/w3f.xsl">The XSL stylesheet for this site</a> converts the RDF data to HTML.</p>
+<p>This is a really nice thing about using XML/XSL for your weblog: the possibility to use several data sources at once. That I'm using XHTML 2.0 is hardly relevant. It's just the format I use for the textual content. The next datasource on the list to use is <a href="https://w3future.com/weblog/sidebars/weblog.opml">the OPML file I have for the sidebar</a>. This would finally make it possible to change the sidebar without having to republish all the weblog pages.</p>
 <p>Each page now also has a <code>&lt;link></code> element that points to the RDF metadata for that page. I used <code>rel="meta"</code> as suggested in <a href="http://www.w3.org/TR/rdf-syntax-grammar/#section-rdf-in-HTML">the RDF/XML Syntax Spec</a>. Does anybody know an application that might do something with this link?</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/02/03.xml">Monday, February 03, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/02/03.xml">Monday, February 03, 2003</a></h>
 <a name="a161"></a>
 <section id="a161">
-<h id='fixingBugs'><a href="http://w3future.com/weblog/2003/02/03.xml#a161" class="weblogItemTitle">Fixing bugs</a></h>
+<h id='fixingBugs'><a href="https://w3future.com/weblog/2003/02/03.xml#a161" class="weblogItemTitle">Fixing bugs</a></h>
 <p>Thanks to a number of e-mails notifying me to some problems, and giving useful debuging information, I've been able to track down some problems with the site:</p><ul><li>Mozilla based browsers before version 1.3a crashed on the XSL. These browsers now get the server side generated HTML.</li><li>Opera 7 identifies itself as Internet Explorer 6, but does not do  XSL.</li><li>And finally the server tried to convert all rss files to html too. (Oops). The Perl script now checks for an xml-stylesheet processing instruction, instead of always using the XHTML2 stylesheet. Files that don't have the PI, like the RSS files, are left alone.</li></ul>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/02/02.xml">Sunday, February 02, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/02/02.xml">Sunday, February 02, 2003</a></h>
 <a name="a160"></a>
 <section id="a160">
-<h id='noMoreReferrerHunting'><a href="http://w3future.com/weblog/2003/02/02.xml#a160" class="weblogItemTitle">No more referrer hunting</a></h>
-<p>It's hard not to check the stats every 10 minutes to see if anybody linked to me. To help my weak will not to do this, I created <a href="http://w3future.com/tools/refsrss.php">an RSS file that shows all referrers of the current day</a>. It even tries to show the title of the referring page and an excerpt. The excerpt is simply the whole line that contains "w3future.com", with the html tags stripped. It works surprisingly well for such a simple hack.</p>
-<p>The information that is gathered for the referrer RSS is stored in my RDF database. You can now query this information. An example: <a href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/">RDF data for http://w3future.com/weblog/</a>.</p>
+<h id='noMoreReferrerHunting'><a href="https://w3future.com/weblog/2003/02/02.xml#a160" class="weblogItemTitle">No more referrer hunting</a></h>
+<p>It's hard not to check the stats every 10 minutes to see if anybody linked to me. To help my weak will not to do this, I created <a href="https://w3future.com/tools/refsrss.php">an RSS file that shows all referrers of the current day</a>. It even tries to show the title of the referring page and an excerpt. The excerpt is simply the whole line that contains "w3future.com", with the html tags stripped. It works surprisingly well for such a simple hack.</p>
+<p>The information that is gathered for the referrer RSS is stored in my RDF database. You can now query this information. An example: <a href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/">RDF data for https://w3future.com/weblog/</a>.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/02/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/02/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

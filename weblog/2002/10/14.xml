@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/10/14.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/10/14.xml">
 <head>
 <title>Monday, October 14, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:05 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/10/14.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/10/14.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/10/14.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/10/14.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/10/14.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/10/14.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/10/13.xml#a135' title='Sunday, October 13, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/10/14.xml">Monday, October 14, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/10/27.txt#a137' title='Sunday, October 27, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/10/13.xml#a135' title='Sunday, October 13, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/10/14.xml">Monday, October 14, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/10/27.txt#a137' title='Sunday, October 27, 2002'>&#160;&gt;</a></h>
 <a name="a136"></a>
 <section id="a136">
-<h id='isreplacedbyDoesntWork'><a href="http://w3future.com/weblog/2002/10/14.xml#a136" class="weblogItemTitle">isReplacedBy doesn't work</a></h>
+<h id='isreplacedbyDoesntWork'><a href="https://w3future.com/weblog/2002/10/14.xml#a136" class="weblogItemTitle">isReplacedBy doesn't work</a></h>
 <blockquote cite="http://www.intertwingly.net/blog/2002/Oct/13#x908"><p><a
 href="http://philringnalda.com/archives/002347.php#004806">Bill
 Kearney</a>: <em>Look at the</em> <a
@@ -36,8 +36,8 @@ Hammersley</a>: <em>Works well for me.</em></p>
 Kearney's solution. But the link items from the link module, and the <code>link</code> elements from the head of my website are at the same level. They both describe links from my weblog to somewhere else. So the <code>rel="alternate"</code> I have in my HTML file, could also be used in the RSS feed. But an alternate can never be an automated redirect. An aggregator could only give the user a choice between the alternates with <code>application/rss+xml</code> type.</p><p>Not a 'correct' solution in sight. Someone might as well be pragmatic then and create a new module.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/10/14.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/10/14.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

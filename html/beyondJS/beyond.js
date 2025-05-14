@@ -1,7 +1,7 @@
 /*
 	beyond.js
 	by Dan Shappir and Sjoerd Visscher
-	For more information see http://w3future.com/html/beyondJS
+	For more information see https://w3future.com/html/beyondJS
 */
 var beyondVer = 0.99;
 
@@ -110,7 +110,7 @@ _FP.curry = function(m) {
 			return createApplyArgs(a);
 		if ( isDefined(map[i]) )
 			return createApplyArgs(i);
-		if ( isDefined(map[i - self.length]) ) 
+		if ( isDefined(map[i - self.length]) )
 			return createApplyArgs(i - self.length);
 		args.append(a);
 		return a;
@@ -316,7 +316,7 @@ if ( typeof(_AP.splice) != "function" )
 		this.length = a.length;
 		return deleted;
 	}
-	
+
 _AP.head = function(length) {
 	return isUndefined(length) ? this[0] : this.slice(0, length);
 };
@@ -667,7 +667,7 @@ stringSet.prototype = {
 	},
 	include : function() {
 		return "&&".using(
-			Function.from(this, null), 
+			Function.from(this, null),
 			Function.from(stringSet.prototype, null).andThen(isUndefined));
 	},
 	exclude : function() {

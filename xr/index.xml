@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/xr/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/xr/index.txt">
 <head>
 <title>RDF Extraction from XML (XR)</title>
 </head>
@@ -11,11 +11,11 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:29:08 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/xr/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/xr/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/xr/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/xr/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/xr/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/xr/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
 <h>Purpose</h>
 <p>XR (XML -> RDF) is a transformation format that indicates how RDF can be extracted from
@@ -37,7 +37,7 @@ RDF to an XML to RDF transformation by adding XPath expressions.</p>
 </section>
 <section>
 <h>Execute XR transformation</h>
-<form method="get" action="http://w3future.com/tools/xr.pl" target="_blank">
+<form method="get" action="https://w3future.com/tools/xr.pl" target="_blank">
 <xf:input id="xr"><xf:label>XR document URI:</xf:label></xf:input>
 <xf:input id="xml"><xf:label>Source XML: (leave empty to convert the XR document to XSL)</xf:label></xf:input>
 <xf:submit><xf:label>Transform</xf:label></xf:submit>
@@ -46,11 +46,11 @@ RDF to an XML to RDF transformation by adding XPath expressions.</p>
 <section>
 <h>Technology</h>
 <p>To perform an XR transformation, it is first converted to an XSLT tranformation.
-This is done with <a href="http://w3future.com/tools/xr.xsl">another XSLT transformation</a>.
-The execution of the transformation above is done with 
-<a href="http://w3future.com/tools/xr.txt">this perl script</a>.</p>
-</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/xr/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/xr.opml" /></section>
+This is done with <a href="https://w3future.com/tools/xr.xsl">another XSLT transformation</a>.
+The execution of the transformation above is done with
+<a href="https://w3future.com/tools/xr.txt">this perl script</a>.</p>
+</section><xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/xr/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/xr.opml" /></section>
 </body>
 </html>

@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/09/08.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/09/08.xml">
 <head>
 <title>Sunday, September 08, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,26 +12,26 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:23:33 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/09/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/09/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/09/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/09/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/09/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/09/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/09/07.xml#a125' title='Saturday, September 07, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/09/08.xml">Sunday, September 08, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/09/09.txt#a128' title='Monday, September 09, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/09/07.xml#a125' title='Saturday, September 07, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/09/08.xml">Sunday, September 08, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/09/09.txt#a128' title='Monday, September 09, 2002'>&#160;&gt;</a></h>
 <a name="a127"></a>
 <section id="a127">
-<h id='anotherProblemWithRdf'><a href="http://w3future.com/weblog/2002/09/08.xml#a127" class="weblogItemTitle">Another problem with RDF</a></h>
-<p><a href="http://weblog.burningbird.net/archives/000516.php">Shelley Powers proposed an RDF friendly version of RSS 2.0.</a> I have a <a href="http://w3future.com/weblog/gems/rdf_rss_example.xml">proposal</a> too. It uses <a href="http://lists.w3.org/Archives/Public/www-webont-wg/2002Jun/0003.html"><code>rdf:parseType="Collection"</code></a>.
+<h id='anotherProblemWithRdf'><a href="https://w3future.com/weblog/2002/09/08.xml#a127" class="weblogItemTitle">Another problem with RDF</a></h>
+<p><a href="http://weblog.burningbird.net/archives/000516.php">Shelley Powers proposed an RDF friendly version of RSS 2.0.</a> I have a <a href="https://w3future.com/weblog/gems/rdf_rss_example.xml">proposal</a> too. It uses <a href="http://lists.w3.org/Archives/Public/www-webont-wg/2002Jun/0003.html"><code>rdf:parseType="Collection"</code></a>.
 This is new. And that the problem. RDF is in a state of flux. Yes, there is a <a href="http://www.w3.org/TR/1999/REC-rdf-syntax-19990222">recommendation</a>, but later it was realised that a few mistakes were made. And work was started on <a href="http://www.w3.org/TR/rdf-syntax-grammar/">refactoring the RDF/XML syntax</a>. RDF is simply not a solid foundation on which to build RSS.</p>
 </section><a name="a126"></a>
 <section id="a126">
-<h id='theRss094Spec'><a href="http://w3future.com/weblog/2002/09/08.xml#a126" class="weblogItemTitle">The RSS 0.94 spec</a></h>
+<h id='theRss094Spec'><a href="https://w3future.com/weblog/2002/09/08.xml#a126" class="weblogItemTitle">The RSS 0.94 spec</a></h>
 <p>The new <a href="http://backend.userland.com/rss#channelElements">table of elements in the RSS 0.94 spec</a> is a big improvement in clearity. One small suggestion: split it in two, required elements and optional elements. That saves one column.</p><p>By the way, if everybody hates <code>textInput</code> and <code>skipHours</code>, can't we just say so in the spec? Actually I think that's what <a href="http://scriptingnews.userland.com/stories/storyReader$1744#discontinuities">deprecated</a> means: Everybody hates it, but it's there so use it if you want to, but don't use it if you don't have to.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/09/08.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/09/08.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

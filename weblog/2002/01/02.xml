@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/01/02.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/01/02.txt">
 <head>
 <title>Wednesday, January 02, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,11 +12,11 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:19:31 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/01/02.txt?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/01/02.txt?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/01/02.txt%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/01/02.txt?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/01/02.txt?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/01/02.txt%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
 <h>Wednesday, January 02, 2002</h>
 <section>
@@ -27,8 +27,8 @@
 <blockquote><p>The first new verb for 2002, <a href="http://docserver.userland.com/file/synchTableWithFolder">file.synchTableWithFolder</a>, is a dandy. We couldn't do it earlier because the CPUs weren't fast enough. Now we can do callbacks, macros, renderers, etc that live in the file system, not the object database; and make upgrades easier. Should be fun. (It's not released yet, but will be shortly. Discuss on the <a href="http://groups.yahoo.com/group/Frontier-server/?yguid=4984648">Frontier-server</a> list.) [<a href="http://scriptingnews.userland.com/">Scripting News</a>]</p></blockquote>
 <p>Dave Winer and his team really got something interesting here: synchronisation. <a href="http://www.opml.org/">OPML</a> is going to get it too. Querying is old fashioned, from the time only a few needed to view the data. With webservers, every visitor wants realtime data, so synchronisation is much better. But we have to work with a lousy infrastructure for realtime data. Automatically sending notifications that a file has changed is nice, but it would be nicer to receive the changes, which can update a copy of the file automatically. And if I'm transforming an XML file with XSLT, and the source XML file changes, I want to see the result change too, in realtime. Nevertheless, Userland is going to have something running shortly, which is a nice start.</p>
 </section>
-</section><xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/01/02.txt' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</section><xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/01/02.txt' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

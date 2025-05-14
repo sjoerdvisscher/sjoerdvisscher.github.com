@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/03/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/03/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,75 +11,75 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:21:41 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/03/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/03/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/03/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/03/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/03/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/03/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/30.xml">Saturday, March 30, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/30.xml">Saturday, March 30, 2002</a></h>
 <a name="a89"></a>
 <section id="a89">
-<h id='exploringTransclusion'><a href="http://w3future.com/weblog/2002/03/30.xml#a89" class="weblogItemTitle">Exploring transclusion</a></h>
+<h id='exploringTransclusion'><a href="https://w3future.com/weblog/2002/03/30.xml#a89" class="weblogItemTitle">Exploring transclusion</a></h>
 <blockquote cite="http://radio.weblogs.com/0100887/2002/03/29.html#a156"><p>When I render <a href="http://www.w3.org/2000/06/webdata/xslt?xslfile=http://www.netcrucible.com/xslt/opml.xslt&amp;xmlfile=http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml&amp;transform=Submit">my outline</a> using <a href="http://www.netcrucible.com/xslt/opml.html">Joshua's stuff</a>, <a href="http://www.decafbad.com/deus_x/radio/">Les Orchard's</a> transcluded <a href="http://www.decafbad.com/deus_x/radio/instantOutliner/l.m.orchard.opml">outline</a> is directly included, not linked. Make sense? Yes and no. It can be argued either way. We geeks are going to have infinite amounts of fun with this stuff. [<a href="http://radio.weblogs.com/0100887/2002/03/29.html#a156">Jon's Radio</a>]</p></blockquote>
-<p><a href="http://w3future.com/html/opmlloader.xml#http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml">The outline renderer can do both.</a> It should provide the link and dynamically load the transcluded outline when the user expands the link to the opml file.</p>
+<p><a href="https://w3future.com/html/opmlloader.xml#http://radio.weblogs.com/0100887/instantOutliner/jonUdell.opml">The outline renderer can do both.</a> It should provide the link and dynamically load the transcluded outline when the user expands the link to the opml file.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/14.xml">Thursday, March 14, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/14.xml">Thursday, March 14, 2002</a></h>
 <a name="a88"></a>
 <section id="a88">
-<h id='urlsInsteadOfPostids'><a href="http://w3future.com/weblog/2002/03/14.xml#a88" class="weblogItemTitle">URLs instead of postids?</a></h>
+<h id='urlsInsteadOfPostids'><a href="https://w3future.com/weblog/2002/03/14.xml#a88" class="weblogItemTitle">URLs instead of postids?</a></h>
 <blockquote cite="http://scriptingnews.userland.com/backissues/2002/03/14#lb2dde3aeeb8e10d87743183699a6a826">
 <p>RFC: <a href="http://www.xmlrpc.com/metaWeblogApi">MetaWeblog API</a>. "It's time to broaden the XML-RPC pipe that tools use to connect to Radio, and in doing so offer an evolution to the art of scripting weblog tools." [<a href="http://scriptingnews.userland.com/backissues/2002/03/14#lb2dde3aeeb8e10d87743183699a6a826">Scripting News</a>]</p></blockquote>
 <p>To add a sprinkle of the semantic web to the api: Instead of the postid, use permalinks. The cool thing is that permalinks are globally unique. So maybe you could call getPost to a community server, which knows where to get the posts. And an edit tool using the api can provide a link to the online version of the post. Blogid could also be changed to the home url of the blog, but I'm not yet sure if that will actually help, or if it is possible for every blogging software.</p>
 </section><a name="a87"></a>
 <section id="a87">
-<h id='opmlToXml'><a href="http://w3future.com/weblog/2002/03/14.xml#a87" class="weblogItemTitle">OPML to XML</a></h>
-<p>To clarify my previous post, I made <a href="http://w3future.com/html/opml2xml.html">a little demo that transforms OPML to XML</a>. You can see how you can add <code>opml:text</code> and <code>xlink:href</code> attributes to any XML file. Note that OPML is just fine. It's just me enjoying the exploration of theoretical alternatives.</p>
+<h id='opmlToXml'><a href="https://w3future.com/weblog/2002/03/14.xml#a87" class="weblogItemTitle">OPML to XML</a></h>
+<p>To clarify my previous post, I made <a href="https://w3future.com/html/opml2xml.html">a little demo that transforms OPML to XML</a>. You can see how you can add <code>opml:text</code> and <code>xlink:href</code> attributes to any XML file. Note that OPML is just fine. It's just me enjoying the exploration of theoretical alternatives.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/13.xml">Wednesday, March 13, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/13.xml">Wednesday, March 13, 2002</a></h>
 <a name="a86"></a>
 <section id="a86">
-<h id='opmlOrXml'><a href="http://w3future.com/weblog/2002/03/13.xml#a86" class="weblogItemTitle">OPML or XML</a></h>
+<h id='opmlOrXml'><a href="https://w3future.com/weblog/2002/03/13.xml#a86" class="weblogItemTitle">OPML or XML</a></h>
 <p><a href="http://radio.weblogs.com/0100812/2002/03/13.html#a337">Patrick asks</a> what the difference is between XML and OPML. OPML has the advantage that it has defined semantics for a few attributes, while being able to represent all XML structures. The <code>text</code> attribute is especially useful, because it gives a reasonable textual representation of each node. And that gives nice options for user-interfaces.</p>
 <p>XML has the advantage of having all kind of tools and schema languages. And with XLink XML now also has linkink, just like OPML. Which made me think: OPML shouldn't have been an XML format, but a set of attributes, using an OPML namespace. First you have the elements in the head. They can all be attributes on the root node and are all optional. Then each element can have an <code>opml:text</code> attribute. Simply adding the OPML namespace definition and <code>opml:text</code> attributes can make any XML document editable by an outliner. Could that be of any use?</p>
 </section><a name="a85"></a>
 <section id="a85">
-<h id='mathmlInMozilla'><a href="http://w3future.com/weblog/2002/03/13.xml#a85" class="weblogItemTitle">MathML in Mozilla</a></h>
-<p>Mozilla 0.9.9 supports MathML. And <a href="http://w3future.com/weblog/stories/2002/03/12/mathml.xml">it looks great</a>, certainly with ClearType enabled in Windows XP. Note that any serious business with XHTML is not possible with the latest version of Internet Explorer. Even when IE6 doesn't choke on the DTD, it has no clue that it is expected to do something with the XHTML data.</p>
+<h id='mathmlInMozilla'><a href="https://w3future.com/weblog/2002/03/13.xml#a85" class="weblogItemTitle">MathML in Mozilla</a></h>
+<p>Mozilla 0.9.9 supports MathML. And <a href="https://w3future.com/weblog/stories/2002/03/12/mathml.xml">it looks great</a>, certainly with ClearType enabled in Windows XP. Note that any serious business with XHTML is not possible with the latest version of Internet Explorer. Even when IE6 doesn't choke on the DTD, it has no clue that it is expected to do something with the XHTML data.</p>
 </section><a name="a84"></a>
 <section id="a84">
-<h id='testing'><a href="http://w3future.com/weblog/2002/03/13.xml#a84" class="weblogItemTitle">Testing...</a></h>
+<h id='testing'><a href="https://w3future.com/weblog/2002/03/13.xml#a84" class="weblogItemTitle">Testing...</a></h>
 <p>This is a test for the autogenerate link option.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/12.xml">Tuesday, March 12, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/12.xml">Tuesday, March 12, 2002</a></h>
 <a name="a83"></a>
 <section id="a83">
-<h id='siteUpdates'><a href="http://w3future.com/weblog/2002/03/12.xml#a83" class="weblogItemTitle">Site updates</a></h>
-<p>I updated <a href="http://w3future.com/html/weblogsources.html">the weblog sources page</a> and <a href="http://w3future.com/html/opmlloader.xml">the OPML Loader</a>. These pages now have their own specific sidebar OPML files, which you can load with the OPML loader. I mailed Dave Winer once how OPML could have been much cooler with a more general approach. But some of the nicest demos on w3future are OPML related, which shows clearly that OPML is more than good enough. "Dare to keep it simple" is something Dave keeps reminding me of.</p>
+<h id='siteUpdates'><a href="https://w3future.com/weblog/2002/03/12.xml#a83" class="weblogItemTitle">Site updates</a></h>
+<p>I updated <a href="https://w3future.com/html/weblogsources.html">the weblog sources page</a> and <a href="https://w3future.com/html/opmlloader.xml">the OPML Loader</a>. These pages now have their own specific sidebar OPML files, which you can load with the OPML loader. I mailed Dave Winer once how OPML could have been much cooler with a more general approach. But some of the nicest demos on w3future are OPML related, which shows clearly that OPML is more than good enough. "Dare to keep it simple" is something Dave keeps reminding me of.</p>
 <p>Sadly the OPML Loader suffers from cutting edge problems. Both IE and Mozilla screw up in completely different ways.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/11.xml">Monday, March 11, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/11.xml">Monday, March 11, 2002</a></h>
 <a name="a82"></a>
 <section id="a82">
-<h id='funWithFilters'><a href="http://w3future.com/weblog/2002/03/11.xml#a82" class="weblogItemTitle">Fun with filters</a></h>
+<h id='funWithFilters'><a href="https://w3future.com/weblog/2002/03/11.xml#a82" class="weblogItemTitle">Fun with filters</a></h>
 <p>At <a href="http://www.q42.nl">Q42</a> I created a <a href="http://www.q42.nl/demos/colorblindnesssimulator/">color blindness simulator</a> using the filters of Internet Explorer. There are in total 6 layers of filters and it's horribly slow, but <a href="http://www.q42.nl/demos/colorblindnesssimulator/colors.html?http%3A//images.google.com/images%3Fas_q%3Dheadshot%26imgsz%3Dmedium%26as_filetype%3Djpg%26imgc%3Dcolor"> it looks very cool on photographs</a>.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/10.xml">Sunday, March 10, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/10.xml">Sunday, March 10, 2002</a></h>
 <a name="a81"></a>
 <section id="a81">
-<h id='navigationMacros'><a href="http://w3future.com/weblog/2002/03/10.xml#a81" class="weblogItemTitle">Navigation Macros</a></h>
-<p>On my archive pages I added links to the next and previous archive pages. I also added top, prev and next &lt;link> elements, so you can navigate the archives with the Site Navigation Bar if you use Mozilla. And as these macros aren't site specific, I thought I could just as well make them <a href="http://w3future.com/html/download.html">available for download</a>.</p>
+<h id='navigationMacros'><a href="https://w3future.com/weblog/2002/03/10.xml#a81" class="weblogItemTitle">Navigation Macros</a></h>
+<p>On my archive pages I added links to the next and previous archive pages. I also added top, prev and next &lt;link> elements, so you can navigate the archives with the Site Navigation Bar if you use Mozilla. And as these macros aren't site specific, I thought I could just as well make them <a href="https://w3future.com/html/download.html">available for download</a>.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/09.xml">Saturday, March 09, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/09.xml">Saturday, March 09, 2002</a></h>
 <a name="a80"></a>
 <section id="a80">
-<h id='languagesUsedToBeTheOnlyCarriersForAbstractions'><a href="http://w3future.com/weblog/2002/03/09.xml#a80" class="weblogItemTitle">Languages used to be the only carriers for abstractions.</a></h>
+<h id='languagesUsedToBeTheOnlyCarriersForAbstractions'><a href="https://w3future.com/weblog/2002/03/09.xml#a80" class="weblogItemTitle">Languages used to be the only carriers for abstractions.</a></h>
 <blockquote cite="http://lambda.weblogs.com/discuss/msgReader$2946?mode=topic&amp;y=2002&amp;m=3&amp;d=9"><p><a href="http://www.omniscium.com/nerdy/ip/">Intentional Programming FAQ</a>. <small>(via comp.compilers)</small></p><blockquote cite="http://www.omniscium.com/nerdy/ip/"><p>
 Intentional Programming (IP) is an extendible programming environment based on Active Source which was being researched by Microsoft. Program source is represented as a data structure rather than plain text. One of the most exciting concepts is that you can implement a system using domain-specific abstractions.</p></blockquote>
 <p>Some of the links look interesting. IP is related to aspect oriented programming and subject oriented programming. Last time these were discussed I mentioned my doubts about their adoption by the programming community. I am still interested to hear what others think about these ideas in general, and any practical experience you might have. [<a href="http://lambda.weblogs.com/discuss/msgReader$2946?mode=topic&amp;y=2002&amp;m=3&amp;d=9">Lambda the Ultimate</a>]</p></blockquote>
@@ -88,33 +88,33 @@ Intentional Programming (IP) is an extendible programming environment based on A
 <p>I think this will happen within the next 5 years. It could be the "killer app" of RDF.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/08.xml">Friday, March 08, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/08.xml">Friday, March 08, 2002</a></h>
 <a name="a79"></a>
 <section id="a79">
-<h id='xopusInMozillaAndIe5'><a href="http://w3future.com/weblog/2002/03/08.xml#a79" class="weblogItemTitle">Xopus in Mozilla and IE5</a></h>
+<h id='xopusInMozillaAndIe5'><a href="https://w3future.com/weblog/2002/03/08.xml#a79" class="weblogItemTitle">Xopus in Mozilla and IE5</a></h>
 <blockquote cite="http://radio.weblogs.com/0101679/2002/03/08.html#a203"><p>Ross Gardler just received <a href="http://marc.theaimsgroup.com/?l=xml-cocoon-dev&amp;m=101558847309397&amp;w=2">this</a> from an <a href="http://www.q42.nl/products/xopus/">Xopus</a> developer: "The next version will be open sourced once it has reached the release level. The next Xopus will be IE5.0 and Netscape 6 compliant." [<a href="http://radio.weblogs.com/0101679/2002/03/08.html#a203">Sam Ruby's Radio Weblog</a>]</p></blockquote>
 <p>It's cool to read that Sam Ruby is interested in Xopus. Of course Xopus is less cool without IE5.5's <code>contentEditable</code>. But it's nice that Xopus will be cross-platform. And we also already noticed an IE-only product is not really taken serious in the open source world.</p>
 </section><a name="a78"></a>
 <section id="a78">
-<h id='radioUserlandTogetherWithJabber'><a href="http://w3future.com/weblog/2002/03/08.xml#a78" class="weblogItemTitle">Radio Userland together with Jabber</a></h>
+<h id='radioUserlandTogetherWithJabber'><a href="https://w3future.com/weblog/2002/03/08.xml#a78" class="weblogItemTitle">Radio Userland together with Jabber</a></h>
 <p><a href="http://groups.yahoo.com/group/radio-dev/message/5272">Mindblowing!</a>. RPC to clients without a fixed IP address. The aggregator posting its stories to a chat room so anyone can read them 'live'. A remote command line interface with Radio Userland in your chatclient. A good programmable client (and server?) like Radio is exactly what Jabber needed.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/06.xml">Wednesday, March 06, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/06.xml">Wednesday, March 06, 2002</a></h>
 <a name="a77"></a>
 <section id="a77">
-<h id='typeFiltering'><a href="http://w3future.com/weblog/2002/03/06.xml#a77" class="weblogItemTitle">Type filtering?</a></h>
+<h id='typeFiltering'><a href="https://w3future.com/weblog/2002/03/06.xml#a77" class="weblogItemTitle">Type filtering?</a></h>
 <blockquote cite="http://radio.weblogs.com/0100812/2002/03/05.html#a304"><blockquote cite="http://radio.weblogs.com/0101679/"><p>In the long run the scripting culture has to win. Tightly coupled and brittle interfaces aren't particularly enduring. We also need a protocol which enables people to initially develop simple interfaces and then gradually evolve them to be more adaptive without breaking deployed clients and servers. [<A href="http://radio.weblogs.com/0101679/">Sam Ruby's Radio Weblog</A>]</p></blockquote>
 <p>I could not agree more with this. The software world is becoming more dynamic, not less. We need more runtime tools. Here's some <a href="http://www.adaptiveobjectmodel.com/">interesting reading</a> along those lines. [<a href="http://radio.weblogs.com/0100812/2002/03/05.html#a304">Patrick Logan's Radio Weblog</a>]</p></blockquote>
 <p>We need more freedom, that's true. But type freedom the way Javascript has is not the solution. Type filtering is something I'm looking for. In a far from perfect way this is possible in XSLT. For example a template that requires an <code>x</code> element with an <code>a</code> subelement, would have a <code>match="x[a]"</code> attribute. If then later <code>x</code> elements need more subelements, the template won't break. And if the template needs a subelement, say <code>b</code>, you change the match to <code>match="x[a][b]"</code>. And then <code>x</code> elements without <code>b</code> will simply not match anymore. There's no "<code>b is not defined</code>" error.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/03/01.xml">Friday, March 01, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/03/01.xml">Friday, March 01, 2002</a></h>
 <a name="a76"></a>
 <section id="a76">
 <h ></h>
 <blockquote cite="http://weblog.masukomi.org/2002/02/28.html#a491"><p>Ps I am aware of Sjoerd Visscher's OPML Loader web app but he hasn't responded to my e-mails. [<a href="http://weblog.masukomi.org/2002/02/28.html#a491">weblog.masukomi.org</a>]</p></blockquote>
-<p>Oops. Well, better late then never, so the OPML Loader is now <a href="http://w3future.com/html/download.html">available for download</a>.</p>
+<p>Oops. Well, better late then never, so the OPML Loader is now <a href="https://w3future.com/html/download.html">available for download</a>.</p>
 </section><a name="a75"></a>
 <section id="a75">
 <h ></h>
@@ -122,8 +122,8 @@ Intentional Programming (IP) is an extendible programming environment based on A
 <p>It's probably on Userland's ToDo list. But I fixed it for my installation. It's the most convenient solution for bloggers who would want to blog my blogging. However, if I'm blogging about another webpage (which is usually the case), the link should actually contain the link to that item. But in blogging practice, the comments are more important than the original item. (And the original link is usually in the quoted part.) Or maybe that's a bit too general. But there certainly is a big difference between blogging news or blogging blogs.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/03/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/03/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

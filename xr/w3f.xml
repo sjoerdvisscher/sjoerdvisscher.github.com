@@ -1,12 +1,12 @@
-<xr:transform 
-  xmlns:xr="http://w3future.com/xr/ns/"
+<xr:transform
+  xmlns:xr="https://w3future.com/xr/ns/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:h="http://www.w3.org/2002/06/xhtml2"
   xmlns:geo="http://www.perceive.net/schemas/geo">
-  
+
   <xr:introducing xr:select="/h:html">
     <foaf:Document xr:uriSelect="substring-before($documentURI, '?notransform')">
       <dc:title xr:select="h:head/h:title" />
@@ -15,10 +15,10 @@
       <dc:format>text/html</dc:format>
       <dc:language xr:select="@xml:lang" />
       <dc:contributor>
-        <foaf:Person xr:uri="http://w3future.com/people/sjoerd_visscher/" />
+        <foaf:Person xr:uri="https://w3future.com/people/sjoerd_visscher/" />
       </dc:contributor>
       <dc:creator>
-        <foaf:Person xr:uri="http://w3future.com/people/sjoerd_visscher/" />
+        <foaf:Person xr:uri="https://w3future.com/people/sjoerd_visscher/" />
       </dc:creator>
       <dc:rights>
         <foaf:Document xr:uri="http://creativecommons.org/licenses/by/1.0/" />
@@ -30,21 +30,21 @@
         </geo:Position>
       </geo:location>
       <rdfs:seeAlso>
-        <rdfs:Resource xr:uriSelect="concat('http://w3future.com/tools/rdf.php?about=',substring-before($documentURI, '?notransform'))" />
+        <rdfs:Resource xr:uriSelect="concat('https://w3future.com/tools/rdf.php?about=',substring-before($documentURI, '?notransform'))" />
       </rdfs:seeAlso>
     </foaf:Document>
   </xr:introducing>
 
   <xr:introducing>
-    <foaf:Person xr:uri="http://w3future.com/people/sjoerd_visscher/">
+    <foaf:Person xr:uri="https://w3future.com/people/sjoerd_visscher/">
       <foaf:mbox>
         <rdfs:Resource xr:uri="mailto:sjoerd%40w3future.com" />
       </foaf:mbox>
       <foaf:name>Sjoerd Visscher</foaf:name>
       <rdfs:seeAlso>
-        <rdfs:Resource xr:uri="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+        <rdfs:Resource xr:uri="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
       </rdfs:seeAlso>
     </foaf:Person>
   </xr:introducing>
-  
+
 </xr:transform>

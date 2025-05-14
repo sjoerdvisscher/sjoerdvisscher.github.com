@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2005/05/08.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2005/05/08.xml">
 <head>
 <title>Sunday, May 08, 2005 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,21 +12,21 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:30:38 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2005/05/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2005/05/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2005/05/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2005/05/08.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2005/05/08.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2005/05/08.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2005/04/21.xml#a258' title='Thursday, April 21, 2005'>&lt;&#160;</a><a href="http://w3future.com/weblog/2005/05/08.xml">Sunday, May 08, 2005</a><a rel='next' href='http://w3future.com/weblog/2005/05/11.txt#a260' title='Wednesday, May 11, 2005'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2005/04/21.xml#a258' title='Thursday, April 21, 2005'>&lt;&#160;</a><a href="https://w3future.com/weblog/2005/05/08.xml">Sunday, May 08, 2005</a><a rel='next' href='https://w3future.com/weblog/2005/05/11.txt#a260' title='Wednesday, May 11, 2005'>&#160;&gt;</a></h>
 <a name="a288"></a>
 <section id="a288">
-<h id='crossBrowserSvg'><a href="http://w3future.com/weblog/2005/05/08.xml#a288" class="weblogItemTitle">Cross browser SVG</a></h>
-<p><a href="ftp://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/">Firefox 1.0+ builds</a> now have SVG enabled by default. To test it out I changed <a href="http://w3future.com/2005/svg/icosa/icosa.svg">an SVG animation</a> I created 2 years ago. It is a 3D animation of a cube morphing into an <a href="http://en.wikipedia.org/wiki/Icosahedron">icosahedron</a>. It works in Firefox 1.0+ and in Internet Explorer with <a href="http://www.adobe.com/svg/viewer/install/beta.html">the Adobe SVG Plugin</a>. Sadly Opera 8, which has some SVG support, shows nothing at all.</p>
+<h id='crossBrowserSvg'><a href="https://w3future.com/weblog/2005/05/08.xml#a288" class="weblogItemTitle">Cross browser SVG</a></h>
+<p><a href="ftp://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/">Firefox 1.0+ builds</a> now have SVG enabled by default. To test it out I changed <a href="https://w3future.com/2005/svg/icosa/icosa.svg">an SVG animation</a> I created 2 years ago. It is a 3D animation of a cube morphing into an <a href="http://en.wikipedia.org/wiki/Icosahedron">icosahedron</a>. It works in Firefox 1.0+ and in Internet Explorer with <a href="http://www.adobe.com/svg/viewer/install/beta.html">the Adobe SVG Plugin</a>. Sadly Opera 8, which has some SVG support, shows nothing at all.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2005/05/08.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2005/05/08.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

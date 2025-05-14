@@ -87,13 +87,13 @@ A book containing two chapters could look like this:</P>
     &lt;/_v>
   &lt;/book>
 </PRE>
-<P>Here <CODE>&lt;title></CODE> and <CODE>&lt;author></CODE> are 
+<P>Here <CODE>&lt;title></CODE> and <CODE>&lt;author></CODE> are
 property elements. <BR />The contents of the book, and the contents of
 the chapters use the <CODE>&lt;_v&gt;</CODE> element.</P>
 <H3>2.3 The value algorithm explained</H3>
 <P>The value of an element is either it's textual content, or the value of
 it's first content element (<CODE>&lt;_v&gt;</CODE>). <BR />
-This means that in the following examples, 
+This means that in the following examples,
 the <CODE>&lt;title&gt;</CODE> element has always the same value:</P>
 <PRE>
   &lt;title>A title element&lt;/title>
@@ -153,7 +153,7 @@ can be placed anywhere in a document, without breaking applications that follow 
 <H3>3.1 the <CODE>getValue</CODE> method</H3>
 <PRE>
   <B>getValue</B>([Path])
-    
+
      Path ::= ( elementname? ('[' index ']')? '/')* elementname? ('[' index ']')?
 </PRE>
 <P>Such a getValue function makes it easy to retrieve content. The elementname
@@ -216,7 +216,7 @@ content elements, a <CODE>&lt;type></CODE> property element is introduced.</P>
       &lt;_v>&lt;type>P&lt;/type>
           &lt;_v>Some plain text&lt;/_v>
           &lt;_v>&lt;type>A&lt;/_type>
-              &lt;href>http://w3future.com&lt;/href>
+              &lt;href>https://w3future.com&lt;/href>
               &lt;_v>A link to my site&lt;/_v>
           &lt;/_v>
           &lt;_v>Some plain text&lt;/_v>
@@ -227,7 +227,7 @@ content elements, a <CODE>&lt;type></CODE> property element is introduced.</P>
 as do most other attempts to store HTML in Minimal XML.
 However, it does look much like the DOM for HTML: the type element is the nodeName property
 from the DOM and the content elements are the childNodes list.</P>
-<P>The mess could be reduced by a VVM aware editor, which could render it 
+<P>The mess could be reduced by a VVM aware editor, which could render it
 somewhat more attractive.<BR />Here properties are grey and content white:</P>
 
 <STYLE>
@@ -260,7 +260,7 @@ TABLE {margin:0px 0px 0px 5px}
     <TR><TD colspan=2 style="padding-top:7px">
       <TABLE cellspacing=0>
       <TR><TH>type&nbsp;</TH><TD>A</TD></TR>
-      <TR><TH>href&nbsp;</TH><TD>http://w3future.com</TD></TR>
+      <TR><TH>href&nbsp;</TH><TD>https://w3future.com</TD></TR>
       <TR><TD colspan=2>A link to my site</TD></TR>
       </TABLE>
     </TD></TR>

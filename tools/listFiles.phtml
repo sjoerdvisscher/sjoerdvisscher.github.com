@@ -3,12 +3,12 @@
 <TABLE>
 <?
 	include_once("db.inc");
-	
+
 	$r = new resultSet("SELECT * FROM rdf WHERE p='fileText'");
-	
+
 	while ($r->findItem()) {
 		$s=$r->val('s');
-		print "\n<TR><TD><A href='http://w3future.com/tools/getFile.phtml?path=$s'>$s</A></TD></TR>";
+		print "\n<TR><TD><A href='https://w3future.com/tools/getFile.phtml?path=$s'>$s</A></TD></TR>";
 	}
 ?>
 </TABLE>

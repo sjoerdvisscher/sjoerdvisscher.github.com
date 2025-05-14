@@ -1,5 +1,5 @@
-<xr:transform 
-  xmlns:xr="http://w3future.com/xr/ns/"
+<xr:transform
+  xmlns:xr="https://w3future.com/xr/ns/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -26,5 +26,5 @@
       </dc:rights>
     </rdfs:Resource>
   </xr:introducing>
-  
+
 </xr:transform>

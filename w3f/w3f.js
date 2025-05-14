@@ -61,7 +61,7 @@ function initButtonFromLink(elt) {
 function createCollapser(data) {
 	var i=collapserCnt++;
 	data.id=data.id||'collapser'+i;
-	
+
 		'P'.w(
 			'TABLE cellspacing=0 cellpadding=0'.w(
 				'TR'.w(
@@ -77,10 +77,10 @@ function createCollapser(data) {
 */
 
 function createSectionButtons() {
-	document.write('<td>'+createButton({style:'tab',content:'Weblog',go:'http://w3future.com/weblog'})+'</td>');
-	document.write('<td>&nbsp;</td><td>'+createButton({style:'tab',content:'Examples',go:'http://w3future.com/html/tools.html'})+'</td>');
-	document.write('<td>&nbsp;</td><td>'+createButton({style:'tab',content:'Articles',go:'http://w3future.com/html/stories/'})+'</td>');
-	document.write('<td>&nbsp;</td><td>'+createButton({style:'tab',content:'Downloads',go:'http://w3future.com/html/download.html'})+'</td>');
+	document.write('<td>'+createButton({style:'tab',content:'Weblog',go:'https://w3future.com/weblog'})+'</td>');
+	document.write('<td>&nbsp;</td><td>'+createButton({style:'tab',content:'Examples',go:'https://w3future.com/html/tools.html'})+'</td>');
+	document.write('<td>&nbsp;</td><td>'+createButton({style:'tab',content:'Articles',go:'https://w3future.com/html/stories/'})+'</td>');
+	document.write('<td>&nbsp;</td><td>'+createButton({style:'tab',content:'Downloads',go:'https://w3future.com/html/download.html'})+'</td>');
 }
 
 function createSectionButtonsTable() {
@@ -90,10 +90,10 @@ function createSectionButtonsTable() {
 }
 
 function createSectionButtonsDivs() {
-	document.write(createButton({style:'tab',content:'Weblog',go:'http://w3future.com/weblog'}));
-	document.write(createButton({style:'tab',content:'Examples',go:'http://w3future.com/html/tools.html'}));
-	document.write(createButton({style:'tab',content:'Articles',go:'http://w3future.com/html/stories/'}));
-	document.write(createButton({style:'tab',content:'Downloads',go:'http://w3future.com/html/download.html'}));
+	document.write(createButton({style:'tab',content:'Weblog',go:'https://w3future.com/weblog'}));
+	document.write(createButton({style:'tab',content:'Examples',go:'https://w3future.com/html/tools.html'}));
+	document.write(createButton({style:'tab',content:'Articles',go:'https://w3future.com/html/stories/'}));
+	document.write(createButton({style:'tab',content:'Downloads',go:'https://w3future.com/html/download.html'}));
 }
 
 function createWeblogSidebar() {
@@ -129,7 +129,7 @@ var weblogSidebar={
 		{style:'button2',content:'owrede_log',gonew:'http://owrede.khm.de/'},
 		{style:'button2',content:'Scripting News',gonew:'http://www.scripting.com'},
 		{style:'button2',content:'XMLHack',gonew:'http://www.xmlhack.com/'},
-		{style:'button2',content:'<B>All sources</B>',go:'http://w3future.com/html/weblogsources.html'}
+		{style:'button2',content:'<B>All sources</B>',go:'https://w3future.com/html/weblogsources.html'}
 	],
 	'Friends/Family':[
 		{style:'button2',content:'Joeri',gonew:'http://joeri.mulder.com'},

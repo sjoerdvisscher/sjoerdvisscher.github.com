@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/html/stories/hop.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/html/stories/hop.txt">
 <head>
 <title>Higher Order Programming - article</title>
 </head>
@@ -11,11 +11,11 @@
 		<h>Required knowledge</h><p>You'll have to know how to program object oriented with Javascript. Read the articles at Webreference (links at the left of the article) to catch up on that.</p><h>Last Update</h>
 		<p>10/16/2005; 1:23:45 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/html/stories/hop.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/html/stories/hop.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/html/stories/hop.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/html/stories/hop.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/html/stories/hop.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/html/stories/hop.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
 <h>Introduction</h>
 <section>
@@ -25,14 +25,14 @@ functions can be the return value of other functions.
 This style of programming is mostly used in functional programming,
 but it can also be very useful in 'regular' object oriented
 programming. A good example of this is the Ruby Scripting Language,
-which combines all the advantages of pure object oriented programming 
+which combines all the advantages of pure object oriented programming
 and higher order programming. Sadly, Ruby is not supported by
-any browser, so it cannot be used for websites. We are lucky 
-however that Javascript is available in every browser, and that 
-Javascript is so flexible that it can be extended to make higher 
+any browser, so it cannot be used for websites. We are lucky
+however that Javascript is available in every browser, and that
+Javascript is so flexible that it can be extended to make higher
 order programming a helpful tool in scripting webpages.</p>
 </section>
- 
+
 <section>
 <h>The <code>sort</code> method</h>
 <p>Most people will know Javascript only as a scripting language
@@ -40,7 +40,7 @@ that makes image switching and annoying popup windows possible.
 However the Javascript implementations hint at the more advanced
 programming possibilities through the sort Method of arrays.
 In it's simple form <code>sort()</code> will just sort the array:
-The code <code>document.write([2,3,1,4].sort())</code> will 
+The code <code>document.write([2,3,1,4].sort())</code> will
 write "1,2,3,4". But the sort method can do more. It allows a
 compare function as an optional argument. That's higher order
 programming right there. Suppose we have an array of objects.
@@ -53,13 +53,13 @@ sort the objects by their date value:</p>
 );</blockcode>
 <p>The compare function is called regularly during sorting.
 It must return a negative value when <code>x</code> comes
-before <code>y</code>, zero when the are equal and a 
+before <code>y</code>, zero when the are equal and a
 possitive value when <code>x</code> comes after <code>y</code>.
 This is exactly what substraction does for numbers and dates,
-for strings you can just use <code>&lt;</code> and 
+for strings you can just use <code>&lt;</code> and
 <code>&gt;</code>.</p>
 </section></section>
- 
+
 <section>
 <h>Generating HTML</h>
 <section>
@@ -89,7 +89,7 @@ have the reduce method available:</p>
   return s;
 }</blockcode>
 </section>
- 
+
 <section>
 <h>Using a function as return value</h>
 <p>The template function will often be simple: It will just wrap
@@ -103,20 +103,20 @@ create a function that generates these simple element wrappers:</p>
   return function(x) {
     return stag+x+etag;
   }
-}  
- 
+}
+
 // examples:
- 
+
 document.write(wrap('B')('This is bold.'));
 var B=wrap('B');
 document.write(B('This is bold too.'));
- 
+
 document.write(
   '&lt;TABLE>&lt;TR>'+
     arr.reduce(wrap('TD class="small"'))+
   '&lt;/TR>&lt;/TABLE>'
 );</blockcode>
-<p>In the first example you can see that you can immediately call 
+<p>In the first example you can see that you can immediately call
 the returned function, which results in a somewhat unusual syntax
 of two argument lists next to eachother.
 There's another special thing happening here: the returned function
@@ -127,7 +127,7 @@ functions in Javascript. When a function is defined, it stores a
 pointer to the current scope. This scope is restored when the
 function is called.</p>
 </section>
- 
+
 <section>
 <h>Using functions as objects</h>
 <p>In the last example, an array is converted to a table,
@@ -141,11 +141,11 @@ document.write(TABLE(arr.reduce(
     return TR(TD(item));
   }
 )));</blockcode>
-<p><code>TR(TD(item))</code> is like function composition, 
-written as 'TR o TD', and pronounced as 'TR after TD'. 
+<p><code>TR(TD(item))</code> is like function composition,
+written as 'TR o TD', and pronounced as 'TR after TD'.
 So we'd like to write this as:</p>
 <pre>document.write(TABLE(arr.reduce(TR.after(TD))));</pre>
-<p>In Javascript functions are objects too, and they can also have 
+<p>In Javascript functions are objects too, and they can also have
 methods. So we can extend the function prototype so that the
 <code>after</code> method is available to all functions.</p>
 <blockcode>Function.prototype.after=function(g) {
@@ -155,13 +155,13 @@ methods. So we can extend the function prototype so that the
   }
 }</blockcode>
 </section></section>
- 
+
 <section>
 <h>Using methods as functions</h>
 <section>
 <p><em>Update: Dan Shappir pointed out to me that is useful for
-event handlers and callback function too. 
-<a href="http://w3future.com/html/stories/callbacks.xml">Read more
+event handlers and callback function too.
+<a href="https://w3future.com/html/stories/callbacks.xml">Read more
 about that here.</a></em></p>
 <p>When doing higher order programming in an object oriented language,
 you'd want to pass methods as arguments. But there's a problem.
@@ -173,14 +173,14 @@ Let's make an <code>element</code> class with a <code>wrap</code> method:</p>
     return this.stag+x+this.etag;
   }
 }
- 
+
 P=new element('P');
 // this works:
 document.write(P.wrap('This is a paragraph.'));
 // this fails:
 document.write(arr.reduce(P.wrap));</blockcode>
 <p>Why does this fail? Because when <code>P.wrap</code> is passed
-to the reduce function, only the function is passed, where 
+to the reduce function, only the function is passed, where
 <code>this</code> has a different meaning. But there's a little
 trick that makes method passing work:</p>
 <blockcode>function element(tag) {
@@ -191,7 +191,7 @@ trick that makes method passing work:</p>
     return me.stag+x+me.etag;
   }
 }
- 
+
 P=new element('P');
 // this still works:
 document.write(P.wrap('This is a paragraph.'));
@@ -203,26 +203,26 @@ Javascript will make sure the <code>wrap</code> method will still
 know what <code>me</code> points to, no matter where the method is used.
 </p>
 </section></section>
- 
+
 <section>
 <h>When should you use this?</h>
 <section>
 <h>Modularisation</h>
-<p>When you have 2 (or several) functions that are almost the same 
+<p>When you have 2 (or several) functions that are almost the same
 except for a small part of the code, then you should consider to
 combine these functions into one. Replace the part that is different
 with a function call to a separate function. This function is passed
 to the new more general function as an argument.</p>
 </section>
- 
+
 <section>
 <h>Something different</h>
-<p>When you've grown bored of writing for-loops (like I did), 
-methods like <code>reduce</code> will be a welcome change in 
+<p>When you've grown bored of writing for-loops (like I did),
+methods like <code>reduce</code> will be a welcome change in
 programming style. For me, higher order programming has made Javascript
 a lot more fun, and I hope you'll have fun with this too!</p>
-</section></section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/html/stories/hop.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/stories.opml" /></section>
+</section></section><xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/html/stories/hop.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/stories.opml" /></section>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/06/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/06/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,20 +11,20 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:28:09 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/06/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/06/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/06/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/06/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/06/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/06/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2003/06/30.xml">Monday, June 30, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/06/30.xml">Monday, June 30, 2003</a></h>
 <a name="a241"></a>
 <section id="a241">
-<h id='whyDaveWinersStandardsAreSoPopular'><a href="http://w3future.com/weblog/2003/06/30.xml#a241" class="weblogItemTitle">Why Dave Winer's standards are so popular</a></h>
+<h id='whyDaveWinersStandardsAreSoPopular'><a href="https://w3future.com/weblog/2003/06/30.xml#a241" class="weblogItemTitle">Why Dave Winer's standards are so popular</a></h>
 <p><a href="http://www.scripting.com">Dave Winer</a> is an incredibly interesting person. I just read that he's shutting down Scripting News and then went to bed. But I couldn't sleep. I just have to write down my thoughts. There's no one else that has this effect on me.</p>
 <p>An indirect cause of the shutting down of Scripting News is <a href="http://www.intertwingly.net/blog/1472.html">Sam Ruby starting a wiki &#8220;to describing a conceptual data model of what constitutes a well formed log entry&#8221;</a>. I am participating too, and one of the reasons is that I see a lot of room for technical improvement on RSS 2.0. I think a lot of people agree. Actually I see room for technical improvement in OPML and XML-RPC too. And I know I am not the only one. And Dave Winer knows it: </p>
 <blockquote cite="http://scriptingnews.userland.com/2003/06/29#When:6:21:27AM">Disclaimer: I make shitty software and I write shitty specs, but for all that shittyness, they're amazingly popular and somewhat useful. [<a href="http://scriptingnews.userland.com/2003/06/29#When:6:21:27AM">Scripting News</a>]</blockquote>
-<p><a href="http://w3future.com/html/examples.xml">Most of the experiments I did on this websites</a> involves one of Dave Winer's technologies. How does this work:</p>
+<p><a href="https://w3future.com/html/examples.xml">Most of the experiments I did on this websites</a> involves one of Dave Winer's technologies. How does this work:</p>
 <ol><li>I want to experiment and show it to the world.</li>
 <li>The world reads Scripting News.</li>
 <li>I experiment with Dave Winer technology.</li>
@@ -32,13 +32,13 @@
 <li>The world sees my experiment.</li></ol>
 <p>#2 and #4 is what's special about Dave Winer. There's no other name that you can insert in this list and make it still work. For some reason Dave Winer is able to maintain a constant high volume stream of interesting information on Scripting News. He has good ideas, a nose for good ideas and the ability to discover good ideas in high volume. It must be incredible hard work to keep that up.</p>
 <blockquote cite="http://www.scripting.com/defaultJul29.html"><p>Give it some thought. This is what it would look like if there were no Scripting News. What would it be worth to you, not in monetary terms, but in support terms, to keep this going. [<a href="http://www.scripting.com/defaultJul29.html">Dave Winer</a>]</p></blockquote>
-<p>Dave, my life wouldn't be half as interesting as it is today if it weren't for you. I wouldn't have <a href="http://w3future.com/weblog/2001/05/27.html">met Adam Curry</a>. And most importantly, I wouldn't be <a href="http://w3future.com/weblog/2001/07/10.html">working at Q42</a>. You bet I'm going to give it some thought.</p>
+<p>Dave, my life wouldn't be half as interesting as it is today if it weren't for you. I wouldn't have <a href="https://w3future.com/weblog/2001/05/27.html">met Adam Curry</a>. And most importantly, I wouldn't be <a href="https://w3future.com/weblog/2001/07/10.html">working at Q42</a>. You bet I'm going to give it some thought.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/06/29.xml">Sunday, June 29, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/06/29.xml">Sunday, June 29, 2003</a></h>
 <a name="a240"></a>
 <section id="a240">
-<h id='theDifferenceBetweenRssAndEcho'><a href="http://w3future.com/weblog/2003/06/29.xml#a240" class="weblogItemTitle">The difference between RSS and Echo</a></h>
+<h id='theDifferenceBetweenRssAndEcho'><a href="https://w3future.com/weblog/2003/06/29.xml#a240" class="weblogItemTitle">The difference between RSS and Echo</a></h>
 <p>In the recent heated debates about Echo (<a href="http://intertwingly.net/wiki/pie/NameItEchoConflict">I'll call it that for now</a>) the prevailing comment is that Echo is a replacement of RSS because of political issues. While this is not entirely untrue, there are actually big differences between Echo and RSS. I'm going to address the main difference for each version of RSS.</p>
 <ol><li><em>Why Echo is different from RSS 1.0</em> Echo is XML. RSS 1.0 is RDF.</li>
 <li><em>Why Echo is different from RSS 0.91</em> RSS 0.91 is designed as a site summary. There is an item for each page on your site with a link and a title and maybe a description. This is the way the BBC and Microsoft use RSS. Echo is for distributing/transmitting content. Each entry contains things like author, an id, a permalink (if it is already published online), the relevant dates, and the actual content. This can be a weblog entry, or a comment or what else.</li>
@@ -46,25 +46,25 @@
 <p>These differences are IMHO big enough to warrant a new format, and Echo deserves a fair chance.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/06/25.xml">Wednesday, June 25, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/06/25.xml">Wednesday, June 25, 2003</a></h>
 <a name="a239"></a>
 <section id="a239">
-<h id='anEveningOfDebuggingXopus'><a href="http://w3future.com/weblog/2003/06/25.xml#a239" class="weblogItemTitle">An evening of debugging Xopus.</a></h>
-<p><object data="http://w3future.com/weblog/images/mailedimages/20030625t2134n2.jpg" class="picture">An evening of debugging Xopus.</object></p>
+<h id='anEveningOfDebuggingXopus'><a href="https://w3future.com/weblog/2003/06/25.xml#a239" class="weblogItemTitle">An evening of debugging Xopus.</a></h>
+<p><object data="https://w3future.com/weblog/images/mailedimages/20030625t2134n2.jpg" class="picture">An evening of debugging Xopus.</object></p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/06/24.xml">Tuesday, June 24, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/06/24.xml">Tuesday, June 24, 2003</a></h>
 <a name="a238"></a>
 <section id="a238">
-<h id='replacingTheOrangeXmlIcon'><a href="http://w3future.com/weblog/2003/06/24.xml#a238" class="weblogItemTitle">Replacing the orange XML icon</a></h>
+<h id='replacingTheOrangeXmlIcon'><a href="https://w3future.com/weblog/2003/06/24.xml#a238" class="weblogItemTitle">Replacing the orange XML icon</a></h>
 <blockquote cite="http://backend.userland.com/2003/06/24#a302"><p>We haven't quite worked out how to publicise them yet, we need to persuade our graphic designers that the orange XML lozenge is a beautiful complement for their delightful layout. [<a href="http://backend.userland.com/2003/06/24#a302">Kevin Hinde at BBC News Interactive</a>]</p></blockquote>
 <p>The orange button was fine for weblogs, but on websites with corporate design it's not going to work. Also technical terms like XML should be avoided. The BBC has a line at the bottom with the items &#8220;E-mail services | Desktop ticker | News on mobiles/PDAs&#8221;. It is the obvious place to add a link to the RSS feed. But what should the text of the link be?</p>
 </section><a name="a237"></a>
 <section id="a237">
-<h id='unboxedSequences'><a href="http://w3future.com/weblog/2003/06/24.xml#a237" class="weblogItemTitle">Unboxed sequences</a></h>
-<p>About a month ago I wrote about <a href="http://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">XPath 2.0 Sequences</a>. This weekend I read <a href="http://www.jsoftware.com/books/help/primer/contents.htm">a primer about the language J</a> which has lists that work similarly to the XPath sequences. What's interesting about J is that when you apply a function to a sequence, f.e. <code>1,2,3 + 2</code>, the function is applied to each item in the sequence, and the results are collected in a new sequence, giving <code>3,4,5</code>.</p>
+<h id='unboxedSequences'><a href="https://w3future.com/weblog/2003/06/24.xml#a237" class="weblogItemTitle">Unboxed sequences</a></h>
+<p>About a month ago I wrote about <a href="https://w3future.com/weblog/2003/05/21.xml#xpath20Sequences">XPath 2.0 Sequences</a>. This weekend I read <a href="http://www.jsoftware.com/books/help/primer/contents.htm">a primer about the language J</a> which has lists that work similarly to the XPath sequences. What's interesting about J is that when you apply a function to a sequence, f.e. <code>1,2,3 + 2</code>, the function is applied to each item in the sequence, and the results are collected in a new sequence, giving <code>3,4,5</code>.</p>
 <p>J also has something called <a href="http://www.jsoftware.com/books/help/primer/box_monad.htm">boxing</a> which literally puts a box around a sequence, so it can be treated as one item. In OOP terms you could say that a boxed sequence is an object, but an unboxed sequence is not. (This is a nice match with the current use of the term boxing in C# and Java.)</p>
-<p>Now I want to implement this in <a href="http://w3future.com/html/loell/">Loell</a>. If you know J a little bit, you'll understand I'm not going to borrow the syntax, so I had to look elsewhere. The syntax for boxing a sequence is easy: just put square brackets around it. For unboxing I'm thinking to use the <code>*</code> as a prefix operator. This is taken from Python, where AFAIK it only works when you want to use the items in a list as arguments to a function.</p><p>Some code with the new syntax:</p>
+<p>Now I want to implement this in <a href="https://w3future.com/html/loell/">Loell</a>. If you know J a little bit, you'll understand I'm not going to borrow the syntax, so I had to look elsewhere. The syntax for boxing a sequence is easy: just put square brackets around it. For unboxing I'm thinking to use the <code>*</code> as a prefix operator. This is taken from Python, where AFAIK it only works when you want to use the items in a list as arguments to a function.</p><p>Some code with the new syntax:</p>
 <pre>  a = [1 to 3]   // [1, 2, 3]
   // old code for adding 2 to each item:
   a all {this + 2}
@@ -79,15 +79,15 @@
 <p>Another interesting effect I discovered when wondering how I should  model boxing. Because properties can store sequences, I only have to create a new object and assign the sequence to a property. And because all properties by default don't contain a value, or put differently, contain an empty sequence, every object is automatically an empty list. Then I remembered something I read a while ago about <a href="http://www.prescod.net/groves/shorttut/">groves</a>, so I'm going to use the property named <code>content</code>. Which brings us back at where I started this post: XML. Then things become really interesting...</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2003/06/08.xml">Sunday, June 08, 2003</a></h>
+  <h><a href="https://w3future.com/weblog/2003/06/08.xml">Sunday, June 08, 2003</a></h>
 <a name="a236"></a>
 <section id="a236">
-<h id='meAtPinkpop2003'><a href="http://w3future.com/weblog/2003/06/08.xml#a236" class="weblogItemTitle">Me at Pinkpop 2003!</a></h>
-<p><object data="http://w3future.com/weblog/images/mailedimages/20030608t1059n2.jpg" class="picture">Me at Pinkpop 2003!</object></p>
+<h id='meAtPinkpop2003'><a href="https://w3future.com/weblog/2003/06/08.xml#a236" class="weblogItemTitle">Me at Pinkpop 2003!</a></h>
+<p><object data="https://w3future.com/weblog/images/mailedimages/20030608t1059n2.jpg" class="picture">Me at Pinkpop 2003!</object></p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/06/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/06/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

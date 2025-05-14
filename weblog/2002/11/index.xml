@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/11/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/11/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,26 +11,26 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:41 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/11/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/11/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/11/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/11/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/11/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/11/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2002/11/27.xml">Wednesday, November 27, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/11/27.xml">Wednesday, November 27, 2002</a></h>
 <a name="a147"></a>
 <section id="a147">
-<h id='aBitOfAdvertisingForAFriend'><a href="http://w3future.com/weblog/2002/11/27.xml#a147" class="weblogItemTitle">A bit of advertising for a friend</a></h>
+<h id='aBitOfAdvertisingForAFriend'><a href="https://w3future.com/weblog/2002/11/27.xml#a147" class="weblogItemTitle">A bit of advertising for a friend</a></h>
 <p>All Queen fans are adviced to check out the new <a href="http://www.queenfind.com/">Queen Search Engine and Site Directory</a>. Or at least try to remember the url: <a href="http://www.queenfind.com/">www.queenfind.com</a>.</p>
 </section><a name="a146"></a>
 <section id="a146">
-<h id='thanksTo'><a href="http://w3future.com/weblog/2002/11/27.xml#a146" class="weblogItemTitle">Thanks to...</a></h>
+<h id='thanksTo'><a href="https://w3future.com/weblog/2002/11/27.xml#a146" class="weblogItemTitle">Thanks to...</a></h>
 <p><a href="http://scriptingnews.userland.com/backissues/2002/11/26#thanksTo">Dave Winer is acting out the thanksgiving ritual.</a> Thanksgiving is generally not celebrated here in the Netherlands. But I like the idea, because people quickly forget the positive things and only remember the negative things. (which results in Murphy's law btw.) It's not in my nature to spontaneously thank people, so I thought it would be a good idea to practice here on my weblog. The first 10 minutes I couldn't think of anything for which I had a real heartfelt need to say thank you. Then I realized something:</p>
 <p>I want to thank my colleagues, friends and family for being such nice people to be around with (and to instant message with). I'm thoroughly enjoying every day of my life because of that. Thank you! I specifically want to thank my mother, because she asked for it, literally :)</p>
 </section><a name="a145"></a>
 <section id="a145">
-<h id='typeCheckingInLoell'><a href="http://w3future.com/weblog/2002/11/27.xml#a145" class="weblogItemTitle">Type checking in Loell</a></h>
-<p>Today I remembered a type checking idea I had a while ago, which is perfect for <a href="http://w3future.com/html/loell/">Loell</a>. It is dynamic type checking based on prototyping. There's no need to store type information anywhere. When setting a property, <code>o.p=v</code> the simple rules are:</p>
+<h id='typeCheckingInLoell'><a href="https://w3future.com/weblog/2002/11/27.xml#a145" class="weblogItemTitle">Type checking in Loell</a></h>
+<p>Today I remembered a type checking idea I had a while ago, which is perfect for <a href="https://w3future.com/html/loell/">Loell</a>. It is dynamic type checking based on prototyping. There's no need to store type information anywhere. When setting a property, <code>o.p=v</code> the simple rules are:</p>
 <ul>
 <li>If <code>o.proto.p</code> is undefined, all values are allowed.</li>
 <li>If <code>v isA o.proto.p.proto</code>, the set is allowed.</li>
@@ -39,64 +39,64 @@
 <p>It's rather basic type checking, but it fits the small core (currently 150 lines of javascript) of the language. It's hard to be sure if this checking is helpful, or just a pain. I'll just have to actually program something with it, but for that I first need to build proper access to the browser DOM.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/11/25.xml">Monday, November 25, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/11/25.xml">Monday, November 25, 2002</a></h>
 <a name="a144"></a>
 <section id="a144">
-<h id='fpWithLoell'><a href="http://w3future.com/weblog/2002/11/25.xml#a144" class="weblogItemTitle">FP with Loell</a></h>
-<p>I've updated <a href="http://w3future.com/html/loell/">Loell</a> to better support functional programming. In Javascript you can do functional programming, but you cannot do it in an object oriented way. You can hardly ever use a method, because for <code>this</code> to have a value, the method has to be a property of an object. In Loell, a method call looks like this:</p>
+<h id='fpWithLoell'><a href="https://w3future.com/weblog/2002/11/25.xml#a144" class="weblogItemTitle">FP with Loell</a></h>
+<p>I've updated <a href="https://w3future.com/html/loell/">Loell</a> to better support functional programming. In Javascript you can do functional programming, but you cannot do it in an object oriented way. You can hardly ever use a method, because for <code>this</code> to have a value, the method has to be a property of an object. In Loell, a method call looks like this:</p>
 <p><code><i>expr method expr</i></code></p>
 <p>The value of the left-hand expression is assigned to <code>this</code> and the value of the right-hand expression is assigned to <code>that</code>. So <code>1 {this+that} 2</code> evaluates to 3. On the Loell page I've added an example that implements lists and adds foldr and foldl, in a proper object oriented way (I think).</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/11/23.xml">Saturday, November 23, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/11/23.xml">Saturday, November 23, 2002</a></h>
 <a name="a143"></a>
 <section id="a143">
-<h id='tagSoup'><a href="http://w3future.com/weblog/2002/11/23.xml#a143" class="weblogItemTitle">Tag Soup</a></h>
+<h id='tagSoup'><a href="https://w3future.com/weblog/2002/11/23.xml#a143" class="weblogItemTitle">Tag Soup</a></h>
 <p><a href="http://ln.hixie.ch/?start=1037910467&amp;count=1">Hixie</a> is showing how browsers handle tag soup. The way IE does it, is a serious problem for <a href="http://xopus.org">Xopus</a>. Xopus allows pasting of HTML. Unfortunately tools like Outlook paste HTML like this:</p><p><code>&lt;P>text&lt;FONT COLOR=#0000FF>&lt;P>text&lt;P>text&lt;/FONT></code></p><p>Xopus then walks the DOM tree. The parent element has 3 <code>&lt;P></code> elements. The first <code>&lt;P></code> element has 2 childnodes, a textnode and a <code>&lt;FONT></code> element. But then when you ask IE's DOM the childnodes of the <code>&lt;FONT></code> element, it gives the last 2 <code>&lt;P></code> elements, again. Xopus can validate this, to get proper XHTML, but rule no.1 of the validation routine is to never throw away content. The result: pasting from Outlook sometimes gives you part of the text twice. Those are the bugs you just don't want to fix...</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/11/14.xml">Thursday, November 14, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/11/14.xml">Thursday, November 14, 2002</a></h>
 <a name="a142"></a>
 <section id="a142">
-<h id='mozillaHasEditingInTheBrowser'><a href="http://w3future.com/weblog/2002/11/14.xml#a142" class="weblogItemTitle">Mozilla has editing in the browser</a></h>
+<h id='mozillaHasEditingInTheBrowser'><a href="https://w3future.com/weblog/2002/11/14.xml#a142" class="weblogItemTitle">Mozilla has editing in the browser</a></h>
 <p><a href="http://bugzilla.mozilla.org/show_bug.cgi?id=97284#c162">Robert O'Callahan brought this good news to the contentEditable bug page.</a> A colleague at <a href="http://q42.nl">Q42</a> did some testing. It's not true contentEditable yet, you can only make an IFrame editable (the designMode feature from IE). But execCommand and related functions from IE seem to work. So I think the wysiwyg editor from Radio can be made to work in <a href="ftp://ftp.mozilla.org/pub/mozilla/nightly/latest/">Mozilla 1.3a</a> without much change.</p>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/11/11.xml">Monday, November 11, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/11/11.xml">Monday, November 11, 2002</a></h>
 <a name="a141"></a>
 <section id="a141">
-<h id='loellUpdate'><a href="http://w3future.com/weblog/2002/11/11.xml#a141" class="weblogItemTitle">Loell update</a></h>
-<p>I worked some more on <a href="http://w3future.com/html/loell/">Loell</a> today. It looks like this is going to give me a lot of fun to work on for a long while. </p>
+<h id='loellUpdate'><a href="https://w3future.com/weblog/2002/11/11.xml#a141" class="weblogItemTitle">Loell update</a></h>
+<p>I worked some more on <a href="https://w3future.com/html/loell/">Loell</a> today. It looks like this is going to give me a lot of fun to work on for a long while. </p>
 <ul><li>The default behavior for closure evaluation is now to use static scoping. (syntax: <code>#closure</code>)</li>
 <li>Closures now have syntax for the argument (like Ruby): <code>{ |arg| ... }</code>. I'm not going to enable multiple arguments. If you want that you can pass an object. (<code>point moveTo &lt;.x=1;.y=2&gt;</code>)</li>
 <li>Added the Boolean type.</li>
 </ul>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/11/08.xml">Friday, November 08, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/11/08.xml">Friday, November 08, 2002</a></h>
 <a name="a140"></a>
 <section id="a140">
-<h id='whatDoesTheScopeDo'><a href="http://w3future.com/weblog/2002/11/08.xml#a140" class="weblogItemTitle">What does the scope do?</a></h>
-<p>Because <a href="http://w3future.com/html/loell/">Loell</a> is so centered around scope handling, I needed to think about what the scope is actually for. This is what I came up with:</p>
+<h id='whatDoesTheScopeDo'><a href="https://w3future.com/weblog/2002/11/08.xml#a140" class="weblogItemTitle">What does the scope do?</a></h>
+<p>Because <a href="https://w3future.com/html/loell/">Loell</a> is so centered around scope handling, I needed to think about what the scope is actually for. This is what I came up with:</p>
 <ul><li><b>Temporary storage.</b> In OO languages there's plenty of opportunity to store data, but storing data in the scope can be good for several reasons: 1. You simply don't need the data anymore at the end of the method. 2. You don't know where the data has to be put, f.e. the return value of a method. 3. You might not have the rights to put data anywhere else.</li>
 <li><b>Shortcuts.</b> The code to lookup data could be cumbersome or slow. Then it's easier, faster and more readable to put a pointer to that data in a variable.</li>
 <li><b>Labeling.</b> The code becomes more readable if you put data in a variable that has the proper name for how this data is used in the current context.</li></ul>
 </section>
 </section><section>
-  <h><a href="http://w3future.com/weblog/2002/11/07.xml">Thursday, November 07, 2002</a></h>
+  <h><a href="https://w3future.com/weblog/2002/11/07.xml">Thursday, November 07, 2002</a></h>
 <a name="a139"></a>
 <section id="a139">
-<h id='loellANewProgrammingLanguage'><a href="http://w3future.com/weblog/2002/11/07.xml#a139" class="weblogItemTitle">Loell, a new programming language</a></h>
-<p>When Dan Shappir and I were working on <a href="http://w3future.com/html/beyondJS/">Beyond JS</a> we agreed that Javascript is a powerful language. But we couldn't do all the tricks we wanted to do. One problem is the lack of control over the scope. And to keep the story short, I have created a language that gives full controle over scope: 
-<a href="http://w3future.com/html/loell/">Loell</a>.</p>
+<h id='loellANewProgrammingLanguage'><a href="https://w3future.com/weblog/2002/11/07.xml#a139" class="weblogItemTitle">Loell, a new programming language</a></h>
+<p>When Dan Shappir and I were working on <a href="https://w3future.com/html/beyondJS/">Beyond JS</a> we agreed that Javascript is a powerful language. But we couldn't do all the tricks we wanted to do. One problem is the lack of control over the scope. And to keep the story short, I have created a language that gives full controle over scope:
+<a href="https://w3future.com/html/loell/">Loell</a>.</p>
 <p>Traditional languages either have static or dynamic scoping. With Loell you can have both. When a closure is created, the scope it is created in is stored in the scope property of the closure. When you use that scope when evaluating the closure (<code>closure.scope#closure</code>) you have static scoping. But when you use the current scope (<code>$#closure</code>) you get dynamic scoping. But you can use any object as scope.</p>
 <p>It turns out that this is powerful enough to implement <code>if</code>, while the language has no actual branching built in. Even <code>while</code> is implementable which I had never anticipated.</p>
 <p>I've got the parser running for just 3 days now, so Loell is nowhere near finished.
-There's no precedence and it's slow, but if you are interested in programming languages I hope you'll like to <a href="http://w3future.com/html/loell/">experiment with Loell</a> already. If you know other languages that have special scope control, or research in scope control, I'd like to hear from you.</p>
+There's no precedence and it's slow, but if you are interested in programming languages I hope you'll like to <a href="https://w3future.com/html/loell/">experiment with Loell</a> already. If you know other languages that have special scope control, or research in scope control, I'd like to hear from you.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/11/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/11/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

@@ -40,7 +40,7 @@
 	</STYLE>
 	<SCRIPT>
 		var nodeBag={};
-		
+
 		function loadXML(url,rootId) {
 			rootId=rootId||'/';
 			var doc=new ActiveXObject("Microsoft.XMLDOM");
@@ -51,12 +51,12 @@
 			doc.validateOnParse = false;
 			doc.async = false;
 			doc.load(url);
-			if (doc.documentElement.nodeName.toLowerCase()=='opml') 
+			if (doc.documentElement.nodeName.toLowerCase()=='opml')
 				return loadOPML(doc,rootId);
 			else
 				return parseNode(doc.documentElement,rootId);
 		}
-		
+
 		function loadOPML(doc,rootId) {
 			var root=doc.documentElement;
 			var tree=parseOPMLNode(root.childNodes.item(1),rootId);
@@ -71,7 +71,7 @@
 			tree.type='opml';
 			return tree;
 		}
-		
+
 		function parseOPMLNode(node,id) {
 			var o={id:id,childNodes:[]};
 			var attrs=node.attributes;
@@ -89,7 +89,7 @@
 			}
 			return nodeBag[id]=o;
 		}
-		
+
 		function parseNode(node,id) {
 			var o={id:id,childNodes:[],text:'&lt'+node.nodeName};
 			var attrs=node.attributes;
@@ -114,7 +114,7 @@
 			}
 			return nodeBag[id]=o;
 		}
-		
+
 		function expandNode(id,render) {
 			var target=document.getElementById('childrenOf'+id);
 			if (!target.innerHTML||render) {
@@ -139,7 +139,7 @@
 			nodeBag[id].text=t;
 			expandNode(id,true);
 		}
-		
+
 		function collapseNode(id) {
 			var target=document.getElementById('childrenOf'+id);
 			target.style.display='none';
@@ -185,7 +185,7 @@
 			} else s='<SPAN class="text">'+s+'</SPAN>';
 			return s;
 		}
-		
+
 		function renderOPML(doc) {
 		  document.getElementById('OPMLDiv').innerHTML=renderNode(doc);
 		}
@@ -193,7 +193,7 @@
 		function fixText(s) {
 			return s.replace(/</g,'&lt;');
 		}
-		
+
 		function err(e,s) {
 		  for (var i in e) {
 		    s+='\n'+i+': '+e[i];
@@ -201,7 +201,7 @@
 		  alert(s);
 		}
 
-	</SCRIPT>		
+	</SCRIPT>
 </HEAD>
 <BODY>
 
@@ -286,7 +286,7 @@ Miscellaneous -> Access data sources across domains)</P>
 </TD></TR></TABLE>
 
 </TD></TR><TR><TD id="footer">
-&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="http://w3future.com">w3future.com</A>.
+&copy; Copyright <SCRIPT>document.write((new Date()).getFullYear())</SCRIPT> <A href="mailto:sjoerd@w3future.com">Sjoerd Visscher</A>, <A href="https://w3future.com">w3future.com</A>.
 </TD></TR></TABLE>
 
 <SCRIPT>initButtons()</SCRIPT>

@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/10/28.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/10/28.xml">
 <head>
 <title>Monday, October 28, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:24:08 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/10/28.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/10/28.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/10/28.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/10/28.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/10/28.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/10/28.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/10/27.xml#a137' title='Sunday, October 27, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/10/28.xml">Monday, October 28, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/11/07.txt#a139' title='Thursday, November 07, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/10/27.xml#a137' title='Sunday, October 27, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/10/28.xml">Monday, October 28, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/11/07.txt#a139' title='Thursday, November 07, 2002'>&#160;&gt;</a></h>
 <a name="a138"></a>
 <section id="a138">
-<h id='connectingPeopleToXml'><a href="http://w3future.com/weblog/2002/10/28.xml#a138" class="weblogItemTitle">Connecting people to XML</a></h>
+<h id='connectingPeopleToXml'><a href="https://w3future.com/weblog/2002/10/28.xml#a138" class="weblogItemTitle">Connecting people to XML</a></h>
 <blockquote cite="http://www.infoworld.com/articles/pl/xml/02/10/28/021028plxmlclient.xml"><p>Structured editing of schema-controlled XML data is a hard challenge to meet. Tools that would make the task easy and natural are nowhere in sight. [<a href="http://www.infoworld.com/articles/pl/xml/02/10/28/021028plxmlclient.xml">John Udell</a>]</p></blockquote>
 <p>Maybe John Udell still hasn't seen <a href="http://xopus.org">Xopus</a>. I can't blame him. We (<a href="http://q42.nl">Q42</a>) don't have a marketing department, and our Xopus site looks like we don't want you to use it. But Xopus does seem to be <a href="http://weblog.infoworld.com/udell/2002/10/28.html#a489">what John Udell is looking for</a>.</p>
 <p>All actions in Xopus are schema controlled. If the schema doesn't allow it, the user can't do it. This doesn't stop with structural actions, like 'can you add one or more Authors to a Book', but markup is also restricted by the schema. Can a user only add bold and italic, or also lists and tables? And if the user can add links, is he then allowed to add a target attribute? This is a big issue for CMSs, where the site designers want to give the site a consistent look and feel, but where the editors keep messing things up.</p>
@@ -31,8 +31,8 @@
 <p>At Q42 we're very proud of this product, and we made it open source and freely downloadable. It works in IE5.5 and up, and <a href="http://xopus.org/index.jsp?menu=mozce">we know we can make it work in Mozilla</a>. Only we're missing the financial support to do this. Everybody who knows Xopus thinks this is a shame, and we really want to do it, but the reality of running a business doesn't let us. Just one link to end this story: <a href="http://xopus.org/demo">the online demo</a>.</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/10/28.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/10/28.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

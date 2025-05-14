@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2002/02/13.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2002/02/13.xml">
 <head>
 <title>Wednesday, February 13, 2002 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,13 +12,13 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:20:35 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2002/02/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2002/02/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2002/02/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2002/02/13.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2002/02/13.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2002/02/13.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2002/02/12.xml#a66' title='Tuesday, February 12, 2002'>&lt;&#160;</a><a href="http://w3future.com/weblog/2002/02/13.xml">Wednesday, February 13, 2002</a><a rel='next' href='http://w3future.com/weblog/2002/02/14.txt#a68' title='Thursday, February 14, 2002'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2002/02/12.xml#a66' title='Tuesday, February 12, 2002'>&lt;&#160;</a><a href="https://w3future.com/weblog/2002/02/13.xml">Wednesday, February 13, 2002</a><a rel='next' href='https://w3future.com/weblog/2002/02/14.txt#a68' title='Thursday, February 14, 2002'>&#160;&gt;</a></h>
 <a name="a67"></a>
 <section id="a67">
 <h ></h>
@@ -31,8 +31,8 @@ this page</a>. There are no big problems there. A good start would be to change 
 <p>So, can you use tables or not? It depends. I don't think it's wrong to use a table to put a sidebar next to the body. Certainly as long as it is complicated to do with CSS. But if you wrap each post inside a table, together with a number of spacer images, you should look at CSS.  The good news is: in the first case tables are the easiest way to it, and in the second case CSS is the easiest solution. So you not only have nice HTML, but you have it faster.</p><p>Maybe a nice rule of thumb is to think about what would happen if a voice-browser would read your page. A table-based site layout would then sound like this: "w3future.com. Below that on the left 'a sidebar' and on the right 'the body'." etc. This gives a clear translation of you site, and helps the person that hears your page to have some feel of the structure of your site. But using tables to layout a post wouldn't sound as nice: "'A spacer image' next to 'the title'. Below that 'a spacer image' next to 'the text of this post' next to 'a spacer image'." You just want to hear: "'the title'. 'the text of this post'".</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2002/02/13.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2002/02/13.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

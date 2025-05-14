@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2004/09/index.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2004/09/index.txt">
 <head>
 <title>Sjoerd Visscher's weblog</title>
 </head>
@@ -11,31 +11,31 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:30:08 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2004/09/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2004/09/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2004/09/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2004/09/index.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2004/09/index.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2004/09/index.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a href="http://w3future.com/weblog/2004/09/22.xml">Wednesday, September 22, 2004</a></h>
+  <h><a href="https://w3future.com/weblog/2004/09/22.xml">Wednesday, September 22, 2004</a></h>
 <a name="a280"></a>
 <section id="a280">
-<h id='closuresForAnonymousStorage'><a href="http://w3future.com/weblog/2004/09/22.xml#a280" class="weblogItemTitle">Closures for anonymous storage</a></h>
+<h id='closuresForAnonymousStorage'><a href="https://w3future.com/weblog/2004/09/22.xml#a280" class="weblogItemTitle">Closures for anonymous storage</a></h>
 <p>Via <a href="http://www.eighty-twenty.net/blog/urn:www-eighty-twenty-net:1289.html">The 80/20 Solution</a> I saw <a href="http://www.iunknown.com/000484.html">a piece of Python code</a> by John Lam, which he calls elegant. Now he is right to call it elegant &#8212; he is comparing it with his experience to implement the same in C++. But he uses a technique which you see a lot in scripting, but which I find rather unelegant: creation of property names (or attribute names) with string manipulations. By adding prefixes like "_shadow_" the names are hopefully unique.</p>
 <p>The following Javascript implementation is an example of using closures as storage, &#8220;anonymous&#8221; storage, because you don&#8217;t have to create unique names.</p>
 <pre code="class">function doNothing() {};
- 
+
 // Execute once for one method on an object (or prototype)
-function createExecuteOnceMethod(obj, methodName) 
+function createExecuteOnceMethod(obj, methodName)
 {
   var method = obj[methodName];
-  obj[methodName] = function() 
+  obj[methodName] = function()
   {
     method.apply(this, arguments);
     this[methodName] = doNothing;
   }
 }
- 
+
 // Execute once for all methods of an object (or prototype)
 function executeOnce(obj)
 {
@@ -45,8 +45,8 @@ function executeOnce(obj)
 
   return obj;
 }
- 
-function Test(name) 
+
+function Test(name)
 {
   this.name = name;
 }
@@ -58,7 +58,7 @@ Test.prototype = executeOnce({
     alert("In method2 of " + this.name);
   }
 });
- 
+
 var t = new Test("t");
 var u = new Test("u");
 t.method1();
@@ -75,7 +75,7 @@ t.method2();</pre>
     if (typeof(obj[propName]) == "function")
     {
       var method = obj[propName];
-      obj[propName] = function() 
+      obj[propName] = function()
       {
         method.apply(this, arguments);
         this[propName] = doNothing;
@@ -87,8 +87,8 @@ t.method2();</pre>
 <p><b>Update:</b> John Lam has <a href="http://www.iunknown.com/000489.html">updated his code</a> to implement the same technique in Python.</p>
 </section>
 </section>
-<xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2004/09/index.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2004/09/index.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/html/stories/elemvsattrs.txt">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/html/stories/elemvsattrs.txt">
 <head>
 <title>Elements vs. Attributes - article</title>
 </head>
@@ -11,14 +11,14 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:23:22 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/html/stories/elemvsattrs.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/html/stories/elemvsattrs.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/html/stories/elemvsattrs.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/html/stories/elemvsattrs.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/html/stories/elemvsattrs.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/html/stories/elemvsattrs.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
 <h>Introduction</h>
-<p>The question if certain information should be encoded in XML using elements, 
+<p>The question if certain information should be encoded in XML using elements,
 or using attributes predates XML. Already in SGML this was an issue.
 Robin Cover has created an <a href="http://xml.coverpages.org/elementsAndAttrs.html">
 excellent page</a> containing opinions and practical issues from various people.
@@ -30,26 +30,26 @@ If we want to answer these questions, we must first know what an attribute means
 and what an element means.
 </p>
 </section>
- 
+
 <section>
 <h>What data model are we talking about?</h>
 <p>
-Robin Cover writes: "Experienced markup-language experts offer different opinions 
-as to whether general principles can be given for choosing attributes over elements, 
-and if so, what principles are most useful. 
-Most agree that it's an 'implementation decision,' which reveals (arguably) 
-that SGML/XML is not an ideal language for data modelling." 
+Robin Cover writes: "Experienced markup-language experts offer different opinions
+as to whether general principles can be given for choosing attributes over elements,
+and if so, what principles are most useful.
+Most agree that it's an 'implementation decision,' which reveals (arguably)
+that SGML/XML is not an ideal language for data modelling."
 So maybe there isn't a proper data model. But we find more clues in the
 <a href="http://xml.coverpages.org/attrSperberg92.html">
 commentary by Michael Sperberg-McQueen</a>.
 He writes:</p>
 <ul>
-<li>use an embedded element when the information you are recording is a 
+<li>use an embedded element when the information you are recording is a
 constituent part of the parent element</li>
-<li>use an attribute when the information is inherent to the parent but 
-not a constituent part (one's head and one's height are both inherent to 
-a human being, i.e. you can't be a conventionally structured human being 
-without having a head, and having a height, but one's head is a constituent 
+<li>use an attribute when the information is inherent to the parent but
+not a constituent part (one's head and one's height are both inherent to
+a human being, i.e. you can't be a conventionally structured human being
+without having a head, and having a height, but one's head is a constituent
 part and one's height isn't -- you can cut off my head, but not my height)</li>
 </ul>
 <p>
@@ -63,7 +63,7 @@ In practice this has proven to be too restrictive, i.e. property values
 require some structure, so they had to be stored in elements.
 </p>
 </section>
- 
+
 <section>
 <h>What do element names mean?</h>
 <p>
@@ -92,7 +92,7 @@ tree:
 &lt;Jefferson&gt;...&lt;/Jefferson&gt;
 &lt;Madison&gt;...&lt;/Madison&gt;
 </pre>
-<p>Here the element names are actually the value of the lastname property. 
+<p>Here the element names are actually the value of the lastname property.
 The element name functions as an index, and is practical for XPath expressions.
 </p>
 </li>
@@ -118,22 +118,22 @@ But it could be used to ensure that the element order is preserved.</p>
 </ol>
 <p>To make things even worse (from a data modelling perspective) in practice you'll find that
 several forms are mixed.<br />
-Kind #2 is most often used, especially with the type property. RDF specifically allows this, through 
+Kind #2 is most often used, especially with the type property. RDF specifically allows this, through
 <a href="http://www.w3.org/TR/REC-rdf-syntax/#abbreviatedSyntax">the third abbreviated form</a>.
 </p>
 </section>
- 
+
 <section>
 <h>What does the W3C have to say about this?</h>
 <p><a href="http://www.w3.org/TR/2000/REC-xml-20001006#sec-starttags">The XML specification</a>
 says "The Name in the start- and end-tags gives the element's type." To be clear: what they say is the
-type of the element, which does not have to be the type of the content of the element. Later, in 
+type of the element, which does not have to be the type of the content of the element. Later, in
 <a href="http://www.w3.org/TR/xmlschema-0/">XML Schema</a> the element name and it's type are
-completely decoupled. In <a href="http://www.w3.org/TR/REC-rdf-syntax/">RDF</a> the element name 
-can either be the value of the <code>rdf:type</code> property or a property name, 
+completely decoupled. In <a href="http://www.w3.org/TR/REC-rdf-syntax/">RDF</a> the element name
+can either be the value of the <code>rdf:type</code> property or a property name,
 depending on context.</p>
 </section>
- 
+
 <section>
 <h>Can we bring order in this chaos?</h>
 <p>We have seen that there are two problems when trying to match the attributed tree with the
@@ -148,20 +148,20 @@ about what each element name means. This can be different for each possible comb
 child element. It's not an elegant solution, but at least would make all current XML files more
 meaningfull to a computer, and maybe even parsable into an RDF database.</p>
 <p>Another solution is given by <a href="http://xml.coverpages.org/attrKimber9711.html">
-Eliot Kimber</a>: "Many DTD designers provide a metadata container that distinquishes metadata 
+Eliot Kimber</a>: "Many DTD designers provide a metadata container that distinquishes metadata
 for an element from its content". This design can be recognized in the <code>&lt;head&gt;</code>
 and <code>&lt;body&gt;</code> elements in HTML. This solution is usually not used throughout
 the whole document.</p>
 <p>A third possible solution emerged in <a href="http://groups.yahoo.com/group/sml-dev">
 the SML-DEV discussion group</a>. A large portion of the group had agreed on the minimalistic syntax
 of <a href="http://www.docuverse.com/smldev/minxmlspec.html">Minimal XML</a>. Minimal XML is a
-stripped down version of XML, leaving only elements. Trying to work with this format made the 
+stripped down version of XML, leaving only elements. Trying to work with this format made the
 overloaded use of the element name very clear. And the group could not agree on a simple data model
 for Minimal XML. Both the list model (normal indexed arrays) and the map model (associative arrays)
 are required, with only elements to work with. The solution was as follows:</p>
 <ol>
-<li><i>For lists</i>: Reserve one element name. This name is then used for elements that build up 
-the list of childnodes. In the SML-DEV group this name was "_" (the underscore), 
+<li><i>For lists</i>: Reserve one element name. This name is then used for elements that build up
+the list of childnodes. In the SML-DEV group this name was "_" (the underscore),
 for 'historic' reasons, but the underscore also represents the unnamed nature of lists.</li>
 <li><i>For maps</i>: All other element names are used to represent the properties. Between
 sibling elements, these names must be unique.</li>
@@ -169,16 +169,16 @@ sibling elements, these names must be unique.</li>
 <p>This leaves a very small subset of all possible XML documents, that's easy to parse, has
 a clear and simple data model and is therefore easy to handle.</p>
 </section>
- 
+
 <section>
 <h>Conclusion</h>
 <p>Although it will often not be possible to create XML documents that have meaningfull element names
 and wise use of attributes, the notion of how the elements and attributes should fit in a data model
-helps. It also helps to explain why some of the W3C standards are so complicated or so lengthy: 
+helps. It also helps to explain why some of the W3C standards are so complicated or so lengthy:
 It's impossible to make any assumptions about the meaning of each part of the XML file, so every
 possibility has to be covered.</p>
-</section><xi:include href="http://w3future.com/tools/rdf.php?about=http://w3future.com/html/stories/elemvsattrs.txt" /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+</section><xi:include href="https://w3future.com/tools/rdf.php?about=https://w3future.com/html/stories/elemvsattrs.txt" /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>

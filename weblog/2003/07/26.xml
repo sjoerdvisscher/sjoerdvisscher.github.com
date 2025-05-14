@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='http://w3future.com/w3f/w3f.xsl' ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="http://w3future.com/weblog/2003/07/26.xml">
+<?xml version='1.0' encoding='iso-8859-1'?><?xml-stylesheet type='text/xsl' href='https://w3future.com/w3f/w3f.xsl' ?>
+<html xmlns="http://www.w3.org/2002/06/xhtml2" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xf="http://www.w3.org/2002/xforms/cr" xml:lang="en" xml:base="https://w3future.com/weblog/2003/07/26.xml">
 <head>
 <title>Saturday, July 26, 2003 - Sjoerd Visscher's weblog</title>
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://w3future.com/people/sjoerd_visscher/foaf.rdf" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="https://w3future.com/people/sjoerd_visscher/foaf.rdf" />
 </head>
 <body>
 <section id="content">
@@ -12,16 +12,16 @@
 		<h>Last Update</h>
 		<p>10/16/2005; 1:28:37 AM</p>
 		<p id="alternates" class="buttons">
-			<l href="http://w3future.com/weblog/2003/07/26.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
-			<l href="view-source:http://w3future.com/weblog/2003/07/26.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
-			<l href="http://w3future.com/tools/xr.pl?xr=http://w3future.com/xr/w3f.xml&amp;xml=http://w3future.com/weblog/2003/07/26.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
+			<l href="https://w3future.com/weblog/2003/07/26.xml?notransform" rel="alternate" type="application/xml" title="See this web page with XHTML 2.0 technology."><span>Try</span> XHTML 2.0</l>
+			<l href="view-source:https://w3future.com/weblog/2003/07/26.xml?notransform" title="View the XHTML 2.0 source of this page."><span>Src</span> XHTML 2.0</l>
+			<l href="https://w3future.com/tools/xr.pl?xr=https://w3future.com/xr/w3f.xml&amp;xml=https://w3future.com/weblog/2003/07/26.xml%3Fnotransform" rel="meta" type="application/rdf+xml" title="RDF metadata"><span>RDF</span> Metadata</l>
 		</p>
-		<xi:include href="http://w3future.com/w3f/buttons.xml" />
+		<xi:include href="https://w3future.com/w3f/buttons.xml" />
 	</section><section>
-  <h><a rel='prev' href='http://w3future.com/weblog/2003/07/19.xml#a223' title='Saturday, July 19, 2003'>&lt;&#160;</a><a href="http://w3future.com/weblog/2003/07/26.xml">Saturday, July 26, 2003</a><a rel='next' href='http://w3future.com/weblog/2003/08/04.txt#a225' title='Monday, August 04, 2003'>&#160;&gt;</a></h>
+  <h><a rel='prev' href='https://w3future.com/weblog/2003/07/19.xml#a223' title='Saturday, July 19, 2003'>&lt;&#160;</a><a href="https://w3future.com/weblog/2003/07/26.xml">Saturday, July 26, 2003</a><a rel='next' href='https://w3future.com/weblog/2003/08/04.txt#a225' title='Monday, August 04, 2003'>&#160;&gt;</a></h>
 <a name="a253"></a>
 <section id="a253">
-<h id='onResources'><a href="http://w3future.com/weblog/2003/07/26.xml#a253" class="weblogItemTitle">On Resources</a></h>
+<h id='onResources'><a href="https://w3future.com/weblog/2003/07/26.xml#a253" class="weblogItemTitle">On Resources</a></h>
 <p><a href="http://www.tbray.org/ongoing/When/200x/2003/07/24/HTTP-14">Tim Bray has posted his view on resources</a>. He asks in what way the TAG should deal with them. He gives two unsatifactory options: either don't mention them at all, or say that the nature of resources is outside of the scope of the Architecture document. Here's my take on this.</p>
 <p>First we should collect minimal requirements about resources and URIs, <a href="http://www.w3.org/DesignIssues/Axioms">the axioms of the web</a>. Let's start with this one:</p>
 <ul><li>A URI identifies a resource.</li></ul>
@@ -33,8 +33,8 @@
 <p>(It's very late, and it is very well possible that my logic is flawed. It certainly isn't solid enough to be called a proof.)</p>
 </section>
 </section>
-<xi:include href='http://w3future.com/tools/rdf.php?about=http://w3future.com/weblog/2003/07/26.xml' /></section>
-<section id="navigation"><xi:include href="http://w3future.com/w3f/sections.xml" /></section>
-<section id="sidebar"><xi:include href="http://w3future.com/weblog/sidebars/weblog.opml" /></section>
+<xi:include href='https://w3future.com/tools/rdf.php?about=https://w3future.com/weblog/2003/07/26.xml' /></section>
+<section id="navigation"><xi:include href="https://w3future.com/w3f/sections.xml" /></section>
+<section id="sidebar"><xi:include href="https://w3future.com/weblog/sidebars/weblog.opml" /></section>
 </body>
 </html>
