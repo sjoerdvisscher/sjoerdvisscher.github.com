@@ -1,3 +1,6 @@
+@view-transition {
+  navigation: auto;
+}
 BODY,TD,TH {
   font-family: Tahoma;
   font-size: 70%;
